@@ -33,7 +33,7 @@ BleKeyboard bleKeyboard("ModularKeyboard_MainBoard");
 
 void setup() {
   Serial.begin(115200);
-  Serial.println("Starting BLE work!");
+  Serial.println("Starting BLE");
   bleKeyboard.begin();
   for (int i=0; i<COLS; i++){
     pinMode(ROW[i], INPUT);
@@ -55,7 +55,7 @@ void loop() {
       digitalWrite(COL[i], HIGH);
       for(int j=0; j < ROWS; j++){
         //Read row input
-        old_report = keyboard_report[i][j];
+        old_report = keyboard_report[i][j]; //See line 25
         new_report = digitalRead(ROW[j]);
         if(old_report!=new_report){
           if(new_report){
