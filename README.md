@@ -1,4 +1,4 @@
-# Senior Project: Modular Keyboard
+# Modular Keyboard
 
 ## Folder Structure
 case: STL/CAD for the 3D models of the keyboard case
