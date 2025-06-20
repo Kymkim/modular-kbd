@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
-#include "stm32f1xx_hal.h"
+#include "stm32f4xx_hal.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -57,6 +57,54 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define B1_Pin GPIO_PIN_13
+#define B1_GPIO_Port GPIOC
+#define B1_EXTI_IRQn EXTI15_10_IRQn
+#define SCRATCH_A_Pin GPIO_PIN_0
+#define SCRATCH_A_GPIO_Port GPIOA
+#define SCRATCH_B_Pin GPIO_PIN_1
+#define SCRATCH_B_GPIO_Port GPIOA
+#define USART_TX_Pin GPIO_PIN_2
+#define USART_TX_GPIO_Port GPIOA
+#define USART_RX_Pin GPIO_PIN_3
+#define USART_RX_GPIO_Port GPIOA
+#define LD2_Pin GPIO_PIN_5
+#define LD2_GPIO_Port GPIOA
+#define LEFT_LASER_A_Pin GPIO_PIN_6
+#define LEFT_LASER_A_GPIO_Port GPIOA
+#define LEFT_LASER_B_Pin GPIO_PIN_7
+#define LEFT_LASER_B_GPIO_Port GPIOA
+#define EFFECT_Pin GPIO_PIN_12
+#define EFFECT_GPIO_Port GPIOB
+#define VEFX_Pin GPIO_PIN_13
+#define VEFX_GPIO_Port GPIOB
+#define SEL_Pin GPIO_PIN_14
+#define SEL_GPIO_Port GPIOB
+#define START_Pin GPIO_PIN_15
+#define START_GPIO_Port GPIOB
+#define KEY_1_Pin GPIO_PIN_6
+#define KEY_1_GPIO_Port GPIOC
+#define KEY_1_EXTI_IRQn EXTI9_5_IRQn
+#define ROW_3_Pin GPIO_PIN_7
+#define ROW_3_GPIO_Port GPIOC
+#define ROW_2_Pin GPIO_PIN_8
+#define ROW_2_GPIO_Port GPIOC
+#define ROW_1_Pin GPIO_PIN_9
+#define ROW_1_GPIO_Port GPIOC
+#define COL_3_Pin GPIO_PIN_8
+#define COL_3_GPIO_Port GPIOA
+#define COL_2_Pin GPIO_PIN_9
+#define COL_2_GPIO_Port GPIOA
+#define COL_1_Pin GPIO_PIN_10
+#define COL_1_GPIO_Port GPIOA
+#define TMS_Pin GPIO_PIN_13
+#define TMS_GPIO_Port GPIOA
+#define TCK_Pin GPIO_PIN_14
+#define TCK_GPIO_Port GPIOA
+#define RIGHT_LASER_B_Pin GPIO_PIN_6
+#define RIGHT_LASER_B_GPIO_Port GPIOB
+#define RIGHT_LASER_A_Pin GPIO_PIN_7
+#define RIGHT_LASER_A_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 

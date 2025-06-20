@@ -1,7 +1,7 @@
 /* USER CODE BEGIN Header */
 /**
   ******************************************************************************
-  * @file    stm32f1xx_it.h
+  * @file    stm32f4xx_it.h
   * @brief   This file contains the headers of the interrupt handlers.
   ******************************************************************************
   * @attention
@@ -18,8 +18,8 @@
 /* USER CODE END Header */
 
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __STM32F1xx_IT_H
-#define __STM32F1xx_IT_H
+#ifndef __STM32F4xx_IT_H
+#define __STM32F4xx_IT_H
 
 #ifdef __cplusplus
  extern "C" {
@@ -55,8 +55,9 @@ void SVC_Handler(void);
 void DebugMon_Handler(void);
 void PendSV_Handler(void);
 void SysTick_Handler(void);
-void USB_LP_CAN1_RX0_IRQHandler(void);
-void CAN1_RX1_IRQHandler(void);
+void EXTI9_5_IRQHandler(void);
+void EXTI15_10_IRQHandler(void);
+void OTG_FS_IRQHandler(void);
 /* USER CODE BEGIN EFP */
 
 /* USER CODE END EFP */
@@ -65,4 +66,4 @@ void CAN1_RX1_IRQHandler(void);
 }
 #endif
 
-#endif /* __STM32F1xx_IT_H */
+#endif /* __STM32F4xx_IT_H */
