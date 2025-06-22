@@ -25,6 +25,8 @@
 #include "gpio.h"
 
 void SystemClock_Config(void);
+int8_t NormalizeEncoder(int16_t raw_delta, uint8_t type);
+
 //Matrix
 uint16_t COL_ARR[] = {COL_1_Pin,COL_2_Pin,COL_3_Pin};
 uint16_t ROW_ARR[] = {ROW_1_Pin, ROW_2_Pin, ROW_3_Pin};
@@ -49,9 +51,9 @@ int8_t LZ_MAXDELTA = 15;
 
 typedef struct{
   uint16_t buttons;
-  uint8_t scratch;
-  uint8_t left_laser;
-  uint8_t right_laser;
+  int8_t scratch;
+  int8_t left_laser;
+  int8_t right_laser;
 } controllerReport;
 
 /**
@@ -116,7 +118,6 @@ int main(void)
         report.buttons |= (0x1 << (i + 9));
       }
     }
-
     HAL_Delay(10);
   }
 }
@@ -150,7 +151,7 @@ int8_t NormalizeEncoder(int16_t raw_delta, uint8_t type){
   if (normalized < -1.0f) normalized = -1.0f; 
 
   //Scale up to -127 to 127
-  return(int8_t)(normalized*127.0f)
+  return(int8_t)(normalized*127.0f);
 }
 
 /**
