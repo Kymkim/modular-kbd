@@ -1,24 +1,72 @@
-/*
-Sub-module CAN. Sends data to the master (CAN-A)
-*/
-
+/* USER CODE BEGIN Header */
+/**
+  ******************************************************************************
+  * @file           : main.c
+  * @brief          : Main program body
+  ******************************************************************************
+  * @attention
+  *
+  * Copyright (c) 2025 STMicroelectronics.
+  * All rights reserved.
+  *
+  * This software is licensed under terms that can be found in the LICENSE file
+  * in the root directory of this software component.
+  * If no LICENSE file comes with this software, it is provided AS-IS.
+  *
+  ******************************************************************************
+  */
+/* USER CODE END Header */
+/* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "can.h"
-#include "usb_device.h"
-#include "usbd_cdc_if.h"
-#include "string.h"
 #include "gpio.h"
 
+/* Private includes ----------------------------------------------------------*/
+/* USER CODE BEGIN Includes */
+
+/* USER CODE END Includes */
+
+/* Private typedef -----------------------------------------------------------*/
+/* USER CODE BEGIN PTD */
+
+/* USER CODE END PTD */
+
+/* Private define ------------------------------------------------------------*/
+/* USER CODE BEGIN PD */
+
+/* USER CODE END PD */
+
+/* Private macro -------------------------------------------------------------*/
+/* USER CODE BEGIN PM */
+
+/* USER CODE END PM */
+
+/* Private variables ---------------------------------------------------------*/
+
+/* USER CODE BEGIN PV */
+
+/* USER CODE END PV */
+
+/* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
+/* USER CODE BEGIN PFP */
+
+/* USER CODE END PFP */
+
+/* Private user code ---------------------------------------------------------*/
+/* USER CODE BEGIN 0 */
 
 CAN_TxHeaderTypeDef TxHeader;
 CAN_RxHeaderTypeDef RxHeader;
 
-uint8_t TxData[8]; //Buffer for output data
-uint8_t RxData[8]; //Buffer for input data (probably will never get used)
+uint8_t TxData[8];
+uint8_t RxData[8];
 
-//Think of this as a location that will hold the pending data to send untill its ready.
-uint32_t TxMailbox; 
+uint32_t TxMailbox;
+
+uint8_t isValidData;
+
+/* USER CODE END 0 */
 
 /**
   * @brief  The application entry point.
@@ -27,70 +75,78 @@ uint32_t TxMailbox;
 int main(void)
 {
 
+  /* USER CODE BEGIN 1 */
 
+  /* USER CODE END 1 */
+
+  /* MCU Configuration--------------------------------------------------------*/
+
+  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
   HAL_Init();
+
+  /* USER CODE BEGIN Init */
+
+  /* USER CODE END Init */
+
+  /* Configure the system clock */
   SystemClock_Config();
 
-  /*
-    FIXME: USB CDC would be super useful in debugging. This might be also
-    Related to doing the USB HID since there are something going on with the
-    USB not getting detected on my device properly
-
-    At the mmoment, I'm getting device "address not responding" error using dmesg } grep usb
-    Some searching up hints that this is a common problem with Bluepills but because BP comes from many
-    Manufacturers its pretty hard to track it down to one problem. Can't find the schematic for ours too
-    The problem seems to be related to the resistor on the DP+ and DP- on the USB
-
-    Either that or we got a counterfiet STM32 board. I'll test it with a reputable brand to see. Other functionalities work though
-  */
   /* USER CODE BEGIN SysInit */
-  GPIO_InitTypeDef USB_RESISTOR = {0};
-  USB_RESISTOR.Pin = GPIO_PIN_12;
-  USB_RESISTOR.Mode = GPIO_MODE_OUTPUT_OD;
-  USB_RESISTOR.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(GPIOA,&USB_RESISTOR);
 
-  //Force Reset USB
-  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_12, GPIO_PIN_RESET);
-  HAL_Delay(50);
-  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_12, GPIO_PIN_SET);
-  
+  /* USER CODE END SysInit */
+
+  /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_CAN_Init();
-  
-  //Enables an interrupt when a data is recieved. 
-  //This includes your own data you sent so this is when filters comes to play
-  HAL_CAN_ActivateNotification(&hcan, CAN_IT_RX_FIFO0_MSG_PENDING);
+  /* USER CODE BEGIN 2 */
 
   HAL_CAN_Start(&hcan);
+  HAL_CAN_ActivateNotification(&hcan, CAN_IT_RX_FIFO1_MSG_PENDING);
 
-  TxHeader.DLC = 1; //The lenght of data to send (in bytes)
-  TxHeader.ExtId = 0; //The ext. ID of the device
-  TxHeader.IDE = CAN_ID_STD; //No need for us to use ext. ID
-  TxHeader.RTR = CAN_RTR_DATA; //We are sending data...
-  TxHeader.StdId = 0x100; //The ID of this module is now 100. Any devices with a filter matching this ID would read it
-  TxHeader.TransmitGlobalTime = DISABLE; 
+  TxHeader.DLC = 2;
+  TxHeader.IDE = CAN_ID_STD;
+  TxHeader.RTR = CAN_RTR_DATA;
+  TxHeader.StdId = 0x399;
 
-  //Sample message send
-  TxData[0] = 0xf1;  
+  TxData[0] = 100;
+  TxData[1] = 255;
 
-  MX_USB_DEVICE_Init();
+  int GPIOSTATUS = 0;
+  int oldGPIOSTATUS = 0;
 
+  /* USER CODE END 2 */
+
+  /* Infinite loop */
+  /* USER CODE BEGIN WHILE */
   while (1)
   {
-    HAL_CAN_AddTxMessage(&hcan, &TxHeader, TxData, &TxMailbox);
-    HAL_Delay(1000);
-  }
+    /* USER CODE END WHILE */
+    GPIOSTATUS = HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_10);
+    if(GPIOSTATUS && !oldGPIOSTATUS){
+      HAL_Delay(20);
+      HAL_CAN_AddTxMessage(&hcan, &TxHeader, TxData, &TxMailbox);
+    }
+    oldGPIOSTATUS = GPIOSTATUS;
 
+    if(isValidData){
+      isValidData = 0;
+      for(int i = 0; i < RxData[0]; i++){
+        HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+        HAL_Delay(RxData[1]);
+      }
+    }
+    /* USER CODE BEGIN 3 */
+  }
+  /* USER CODE END 3 */
 }
 
-void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan)
-{
-  //Read message from the RxCAN and store it on RxHeader
-  HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO0, &RxHeader, RxData);
-  HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
-  char *buf = RxData[0];
-  CDC_Transmit_FS((uint8_t *)buf,strlen(buf));
+void HAL_CAN_RxFifo1MsgPendingCallback(CAN_HandleTypeDef *hcan){
+  if (HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO1, &RxHeader, RxData) != HAL_OK) {
+    return;
+  };
+  if(RxHeader.DLC == 2){
+    isValidData = 1;
+  }
 }
 
 /**
@@ -101,7 +157,6 @@ void SystemClock_Config(void)
 {
   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
-  RCC_PeriphCLKInitTypeDef PeriphClkInit = {0};
 
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
@@ -112,7 +167,7 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
-  RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL6;
+  RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL9;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
     Error_Handler();
@@ -127,13 +182,7 @@ void SystemClock_Config(void)
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_1) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_USB;
-  PeriphClkInit.UsbClockSelection = RCC_USBCLKSOURCE_PLL;
-  if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)
   {
     Error_Handler();
   }
