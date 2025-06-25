@@ -67,6 +67,10 @@ uint32_t TxMailbox;
 uint8_t isValidData;
 uint8_t status;
 
+uint32_t lastDebounceTime = 0;
+const uint32_t debounceDelay = 50;
+uint8_t delayLED = 0 ;
+
 /* USER CODE END 0 */
 
 /**
@@ -112,13 +116,16 @@ int main(void)
 
   TxData[0] = 0x1;
 
+   // milliseconds
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    //HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+    HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+    HAL_Delay(delayLED*100);
   }
   /* USER CODE END 3 */
 }
@@ -126,15 +133,20 @@ int main(void)
 void HAL_CAN_RxFifo1MsgPendingCallback(CAN_HandleTypeDef *hcan)
 {
   HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO1, &RxHeader, RxData);
-  HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13,RxData[0]);
+  delayLED+=RxData[0];
 }
 
-void HAL_GPIO_EXTI15_Callback(uint16_t GPIO_Pin)
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
-  if(GPIO_Pin == GPIO_PIN_15)
+  if(GPIO_Pin == GPIO_PIN_7)
   {
-    TxData[0] ^= 1;
-    HAL_CAN_AddTxMessage(&hcan, &TxHeader, TxData, &TxMailbox);
+    uint32_t currentTime = HAL_GetTick();
+    if ((currentTime - lastDebounceTime) > debounceDelay)
+    {
+      lastDebounceTime = currentTime;
+      TxData[0] ^= 1;
+      HAL_CAN_AddTxMessage(&hcan, &TxHeader, TxData, &TxMailbox);
+    }
   }
 }
 
