@@ -65,6 +65,7 @@ uint8_t RxData[8];
 uint32_t TxMailbox;
 
 uint8_t isValidData;
+uint8_t status;
 
 /* USER CODE END 0 */
 
@@ -102,17 +103,14 @@ int main(void)
 
   HAL_CAN_Start(&hcan);
   HAL_CAN_ActivateNotification(&hcan, CAN_IT_RX_FIFO1_MSG_PENDING);
+  HAL_Delay(50);
 
-  TxHeader.DLC = 2;
+  TxHeader.DLC = 1;
   TxHeader.IDE = CAN_ID_STD;
   TxHeader.RTR = CAN_RTR_DATA;
   TxHeader.StdId = 0x399;
 
-  TxData[0] = 100;
-  TxData[1] = 255;
-
-  int GPIOSTATUS = 0;
-  int oldGPIOSTATUS = 0;
+  TxData[0] = 0x1;
 
   /* USER CODE END 2 */
 
@@ -120,34 +118,26 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    /* USER CODE END WHILE */
-    GPIOSTATUS = HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_10);
-    if(GPIOSTATUS && !oldGPIOSTATUS){
-      HAL_Delay(20);
-      HAL_CAN_AddTxMessage(&hcan, &TxHeader, TxData, &TxMailbox);
-    }
-    oldGPIOSTATUS = GPIOSTATUS;
-
-    if(isValidData){
-      isValidData = 0;
-      for(int i = 0; i < RxData[0]; i++){
-        HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
-        HAL_Delay(RxData[1]);
-      }
-    }
-    /* USER CODE BEGIN 3 */
+    //HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
   }
   /* USER CODE END 3 */
 }
 
-void HAL_CAN_RxFifo1MsgPendingCallback(CAN_HandleTypeDef *hcan){
-  if (HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO1, &RxHeader, RxData) != HAL_OK) {
-    return;
-  };
-  if(RxHeader.DLC == 2){
-    isValidData = 1;
+void HAL_CAN_RxFifo1MsgPendingCallback(CAN_HandleTypeDef *hcan)
+{
+  HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO1, &RxHeader, RxData);
+  HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13,RxData[0]);
+}
+
+void HAL_GPIO_EXTI15_Callback(uint16_t GPIO_Pin)
+{
+  if(GPIO_Pin == GPIO_PIN_15)
+  {
+    TxData[0] ^= 1;
+    HAL_CAN_AddTxMessage(&hcan, &TxHeader, TxData, &TxMailbox);
   }
 }
+
 
 /**
   * @brief System Clock Configuration
