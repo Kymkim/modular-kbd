@@ -56,7 +56,11 @@ void MX_CAN_Init(void)
   /* USER CODE BEGIN CAN_Init 2 */
   CAN_FilterTypeDef canfilterconf;
   canfilterconf.FilterActivation = CAN_FILTER_ENABLE;
+<<<<<<< HEAD
   canfilterconf.FilterBank = 0;
+=======
+  canfilterconf.FilterBank = 18; // The STM32F103 has 14 CAN Filter Banks: Use values 0-13. [CHANGE ME]
+>>>>>>> 7a9bf363716f955a2aa1b346551f29afe8b322af
   canfilterconf.FilterFIFOAssignment = CAN_FILTER_FIFO1;
   canfilterconf.FilterIdHigh = 0x399 << 5;
   canfilterconf.FilterIdLow = 0x0000; 
