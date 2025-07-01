@@ -33,20 +33,13 @@
 typedef struct{
   uint8_t MODIFIER;
   uint8_t RESERVED;
-  uint8_t KEYSTATUS[13];
+  uint8_t KEYPRESS[13];
 } HIDReport;
 
 typedef struct{
-  uint16_t PORT;
+  GPIO_TypeDef* PORT;
   uint16_t PIN;
 } KbdPins;
-
-typedef struct{
-  uint8_t PREV;    //Previous State
-  uint8_t CURR;    //Current State
-  uint8_t KEYCODE;
-} Key;
-
 
 extern USBD_HandleTypeDef hUsbDeviceFS;
 /* USER CODE END PTD */
@@ -65,9 +58,9 @@ extern USBD_HandleTypeDef hUsbDeviceFS;
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-Key matrix[ROWS][COLS] = {
-  {{0,0,0x01},{0,0,0x0C}},
-  {{0,0,0x0E},{0,0,0x18}},
+uint8_t matrix[ROWS][COLS] = {
+  {KEY_M, KEY_K},
+  {KEY_I, KEY_U}
 };
 KbdPins row_pins[ROWS] = {
   {GPIOC, GPIO_PIN_6},
@@ -77,12 +70,13 @@ KbdPins col_pins[COLS] = {
   {GPIOB, GPIO_PIN_14},
   {GPIOB, GPIO_PIN_13}
 };
+HIDReport REPORT = {0,0,0,0,0,0,0,0};
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
-
+void addHIDReport(uint8_t usageID, uint8_t isPressed);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -98,8 +92,6 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
-  HIDReport report = {0,0,0,0,0,0,0,0};
-  uint8_t report_buff[] = {0,0,0,0,0,0};
 
   /* USER CODE END 1 */
 
@@ -131,33 +123,26 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-
     //Keycode Scan
-    // for(int col = 0; col < COLS; col++){
-    //   HAL_GPIO_WritePin(col_pins[col].PORT, col_pins[col].PIN, GPIO_PIN_SET);
-    //   for(int row = 0; row < ROWS; row++){
-    //     uint8_t state = HAL_GPIO_ReadPin(row_pins[row].PORT, col_pins[row].PIN);
-    //     if(state != matrix[row][col].PREV){
-    //       matrix[row][col].PREV = matrix[row][col].CURR;
-    //       matrix[row][col].CURR = state;
-    //       if(state){
-    //         //Put into the buffer
-    //         if(report_buff)
-    //       }
-    //     }
-        
-    //   }
-    // }
-
     /* USER CODE END WHILE */
-    report.KEYSTATUS[0] = 0x01;
-    USBD_HID_SendReport(&hUsbDeviceFS, (uint8_t*)&report, sizeof(report));
-    HAL_Delay(1000);
+    for(int col = 0; col < COLS; col++){
+      HAL_GPIO_WritePin(col_pins[col].PORT, col_pins[col].PIN, GPIO_PIN_SET);
+      HAL_Delay(1);
+      for(int row = 0; row < ROWS; row++){
+        if(HAL_GPIO_ReadPin(row_pins[row].PORT, row_pins[row].PIN)){
+          addHIDReport(matrix[row][col], 1);
+        }else{
+          addHIDReport(matrix[row][col], 0);
+        }
+      }
+      HAL_GPIO_WritePin(col_pins[col].PORT, col_pins[col].PIN, GPIO_PIN_RESET);
+    }
+    USBD_HID_SendReport(&hUsbDeviceFS, (uint8_t*)&REPORT, sizeof(REPORT));
+    HAL_Delay(20);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
 }
-
 /**
   * @brief System Clock Configuration
   * @retval None
@@ -205,7 +190,19 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
+//Converts UsageID to NKRO bit field and add it to the report
+void addHIDReport(uint8_t usageID, uint8_t isPressed){
+  if(usageID < 0x04 || usageID > 0x73) return; //Usage ID is out of bounds
+  uint16_t bit_index = usageID - 0x04; //Offset, UsageID starts with 0x04. Gives us the actual value of the bit
+  uint8_t byte_index = bit_index/8;    //Calculates which byte in the REPORT array 
+  uint8_t bit_offset = bit_index%8;    //Calculates which bits in the REPORT[byte_index] should be set/unset
 
+  if(isPressed){
+    REPORT.KEYPRESS[byte_index] |= (1 << bit_offset);
+  }else{
+    REPORT.KEYPRESS[byte_index] &= ~(1 << bit_offset);
+  }
+}
 /* USER CODE END 4 */
 
 /**
