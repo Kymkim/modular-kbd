@@ -20,7 +20,7 @@
 #include "main.h"
 #include "can.h"
 #include "usb_device.h"
-#include "usbd_hid.h"
+#include "mainboard_usb.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -122,7 +122,7 @@ int main(void)
   HAL_CAN_ActivateNotification(&hcan1, CAN_IT_RX_FIFO0_MSG_PENDING);
   HAL_Delay(50);
   /* USER CODE END 2 */
-
+  
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
@@ -131,6 +131,7 @@ int main(void)
     /* USER CODE END WHILE */
     for(int col = 0; col < COLS; col++){
       HAL_GPIO_WritePin(col_pins[col].PORT, col_pins[col].PIN, GPIO_PIN_SET);
+      HAL_Delay(1);
       for(int row = 0; row < ROWS; row++){
         if(HAL_GPIO_ReadPin(row_pins[row].PORT, row_pins[row].PIN)){
           addHIDReport(matrix[row][col], 1);
