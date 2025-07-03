@@ -33,8 +33,14 @@
 typedef struct{
   uint8_t MODIFIER;
   uint8_t RESERVED;
+  uint8_t KEYPRESS[13];
+} HIDReportNKRO;
+
+typedef struct{
+  uint8_t MODIFIER;
+  uint8_t RESERVED;
   uint8_t KEYPRESS[6]; // for 6 Key Rollover, changed index to 6.
-} HIDReport;
+} HIDReport6KRO;
 
 typedef struct{
   GPIO_TypeDef* PORT;
@@ -70,7 +76,7 @@ KbdPins col_pins[COLS] = {
   {GPIOB, GPIO_PIN_14},
   {GPIOB, GPIO_PIN_13}
 };
-HIDReport REPORT = {0,0,0,0,0,0,0,0};
+HIDReportNKRO REPORT = {0,0,0,0,0,0,0,0};
 CAN_RxHeaderTypeDef RxHeader;
 uint8_t RxData[8];
 /* USER CODE END PV */
