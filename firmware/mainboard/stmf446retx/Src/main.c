@@ -33,7 +33,7 @@
 typedef struct{
   uint8_t MODIFIER;
   uint8_t RESERVED;
-  uint8_t KEYPRESS[13];
+  uint8_t KEYPRESS[12];
 } HIDReportNKRO;
 
 typedef struct{
@@ -134,22 +134,18 @@ int main(void)
   while (1)
   {
     //Keycode Scan
-   
-    // memset(REPORT.KEYPRESS, 0, 6); // Clear keypresses at the start of each scan for 6 key rollover
-   
+    // Clear keypresses at the start of each scan for 6 key rollover
     /* USER CODE END WHILE */
-    for(int col = 0; col < COLS; col++){
-      HAL_GPIO_WritePin(col_pins[col].PORT, col_pins[col].PIN, GPIO_PIN_SET);
-      HAL_Delay(1);
-      for(int row = 0; row < ROWS; row++){
-        if(HAL_GPIO_ReadPin(row_pins[row].PORT, row_pins[row].PIN)){
-          addHIDReport(matrix[row][col], 1);
-        }else{
-          addHIDReport(matrix[row][col], 0);
-        }
-      }
-      HAL_GPIO_WritePin(col_pins[col].PORT, col_pins[col].PIN, GPIO_PIN_RESET);
-    }
+    // for(int col = 0; col < COLS; col++){
+    //   HAL_GPIO_WritePin(col_pins[col].PORT, col_pins[col].PIN, GPIO_PIN_SET);
+    //   HAL_Delay(1);
+    //   for(int row = 0; row < ROWS; row++){
+    //     if(HAL_GPIO_ReadPin(row_pins[row].PORT, row_pins[row].PIN)){
+    //       addHIDReport(matrix[row][col], 1);
+    //     }
+    //   }
+    //   HAL_GPIO_WritePin(col_pins[col].PORT, col_pins[col].PIN, GPIO_PIN_RESET);
+    // }
     USBD_HID_SendReport(&hUsbDeviceFS, (uint8_t*)&REPORT, sizeof(REPORT));
     HAL_Delay(20);
     /* USER CODE BEGIN 3 */
@@ -160,7 +156,7 @@ int main(void)
 void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan)
 {
   HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO0, &RxHeader, RxData);
-  addHIDReport(RxData[0], (RxData[1] & (1 << 7)) ? 1 : 0);
+  addHIDReport(RxData[0], (RxData[1] & 0x01) ? 1 : 0);
 }
 /**
   * @brief System Clock Configuration
