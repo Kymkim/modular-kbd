@@ -8,8 +8,8 @@
         {
             "name": "PlatformIO",
             "includePath": [
-                "/home/kymkim/Projects/CSULB/modular-kbd/firmware/components/can_testing/canblinker/Inc",
-                "/home/kymkim/Projects/CSULB/modular-kbd/firmware/components/can_testing/canblinker/Src",
+                "/home/kymkim/Projects/CSULB/modular-kbd/firmware/components/modules/sample_module/Inc",
+                "/home/kymkim/Projects/CSULB/modular-kbd/firmware/components/modules/sample_module/Src",
                 "/home/kymkim/.platformio/packages/framework-stm32cubef1/Drivers/CMSIS/Include",
                 "/home/kymkim/.platformio/packages/framework-stm32cubef1/Drivers/CMSIS/Device/ST/STM32F1xx/Include",
                 "/home/kymkim/.platformio/packages/framework-stm32cubef1/Drivers/STM32F1xx_HAL_Driver/Inc",
@@ -61,8 +61,8 @@
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "/home/kymkim/Projects/CSULB/modular-kbd/firmware/components/can_testing/canblinker/Inc",
-                    "/home/kymkim/Projects/CSULB/modular-kbd/firmware/components/can_testing/canblinker/Src",
+                    "/home/kymkim/Projects/CSULB/modular-kbd/firmware/components/modules/sample_module/Inc",
+                    "/home/kymkim/Projects/CSULB/modular-kbd/firmware/components/modules/sample_module/Src",
                     "/home/kymkim/.platformio/packages/framework-stm32cubef1/Drivers/CMSIS/Include",
                     "/home/kymkim/.platformio/packages/framework-stm32cubef1/Drivers/CMSIS/Device/ST/STM32F1xx/Include",
                     "/home/kymkim/.platformio/packages/framework-stm32cubef1/Drivers/STM32F1xx_HAL_Driver/Inc",
