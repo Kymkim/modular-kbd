@@ -34,7 +34,13 @@ typedef struct{
   uint8_t MODIFIER;
   uint8_t RESERVED;
   uint8_t KEYPRESS[13];
-} HIDReport;
+} HIDReportNKRO;
+
+typedef struct{
+  uint8_t MODIFIER;
+  uint8_t RESERVED;
+  uint8_t KEYPRESS[6]; // for 6 Key Rollover, changed index to 6.
+} HIDReport6KRO;
 
 typedef struct{
   GPIO_TypeDef* PORT;
@@ -70,7 +76,7 @@ KbdPins col_pins[COLS] = {
   {GPIOB, GPIO_PIN_14},
   {GPIOB, GPIO_PIN_13}
 };
-HIDReport REPORT = {0,0,0,0,0,0,0,0};
+HIDReportNKRO REPORT = {0,0,0,0,0,0,0,0};
 CAN_RxHeaderTypeDef RxHeader;
 uint8_t RxData[8];
 /* USER CODE END PV */
@@ -128,6 +134,9 @@ int main(void)
   while (1)
   {
     //Keycode Scan
+   
+    // memset(REPORT.KEYPRESS, 0, 6); // Clear keypresses at the start of each scan for 6 key rollover
+   
     /* USER CODE END WHILE */
     for(int col = 0; col < COLS; col++){
       HAL_GPIO_WritePin(col_pins[col].PORT, col_pins[col].PIN, GPIO_PIN_SET);
@@ -213,6 +222,31 @@ void addHIDReport(uint8_t usageID, uint8_t isPressed){
     REPORT.KEYPRESS[byte_index] &= ~(1 << bit_offset);
   }
 }
+
+// 6 KEY ROLLOVER CODE STRUCTURE
+/*
+if (usageID < 0x04 || usageID > 0x73) return;
+
+    int i, empty = -1;
+    if (isPressed) {
+        for (i = 0; i < 6; i++) {
+            if (REPORT.KEYPRESS[i] == usageID) return; // Already present
+            if (REPORT.KEYPRESS[i] == 0 && empty == -1) empty = i;
+        }
+        if (empty != -1) {
+            REPORT.KEYPRESS[empty] = usageID;
+        }
+        // If no empty slot, ignore (6KRO: only 6 keys allowed)
+    } else {
+        // Remove from the array when released
+        for (i = 0; i < 6; i++) {
+            if (REPORT.KEYPRESS[i] == usageID) {
+                REPORT.KEYPRESS[i] = 0;
+            }
+        }
+    }
+*/
+
 /* USER CODE END 4 */
 
 /**
