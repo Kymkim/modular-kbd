@@ -7,4 +7,4 @@ docs:  BOM, build instructions, and documentation for functions if necessary
 
 firmware: Code for the microcontrollers or modules
 
-hardware: KiCad/EasyEDA files for the PCB
+hardware: KiCad/EasyEDA files for the PCBMainboard for the keyboard. 
