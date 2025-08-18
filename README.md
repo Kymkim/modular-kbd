@@ -1,7 +1,7 @@
 # MSKBD - Modularly Simple KeyBoarD
 
 > [!WARNING]  
-> This is the dev branch!
+> This is under development. If you want the latest developments check out the `dev` branch.
 
 A customizable modular keyboard system where each key cluster is its own module, connected through a grid-like commnication. The goal is to create a flexible keyboard that can scale, reconfigure layouts, and support hot-swapping modules.
 
