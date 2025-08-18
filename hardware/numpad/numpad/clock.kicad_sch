@@ -1,0 +1,41 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "bd7a78ae-d57e-4c8d-8079-f4714c8f1856")
+	(paper "A4")
+	(lib_symbols)
+	(text "24MHz external clock. \n\nOutput\nOSC_OUT\nOSC_IN"
+		(exclude_from_sim no)
+		(at 128.27 99.568 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0b078972-8867-4a81-bdfc-f286a00b7261")
+	)
+	(hierarchical_label "OSC_OUT"
+		(shape input)
+		(at 186.69 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fccd57b1-b731-4457-b9bb-32fe414af52c")
+	)
+	(hierarchical_label "OSC_IN"
+		(shape input)
+		(at 186.69 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fe808684-ead0-47da-b31a-21623b281a81")
+	)
+)
