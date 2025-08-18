@@ -1,0 +1,5502 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "54b7e9cd-059c-4f85-969a-fc3ee3a9125c")
+	(paper "A4")
+	(lib_symbols
+		(symbol "PCM_Diode_AKL:1N4148W"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "1N4148W"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "PCM_Diode_SMD_AKL:D_SOD-123"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode 1N4148W"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "1N4148W_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27) (xy 1.27 0) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "1N4148W_0_2"
+				(polyline
+					(pts
+						(xy -2.54 -2.54) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.889 -0.889) (xy -1.778 0) (xy 0.889 0.889) (xy 0 -1.778) (xy -0.889 -0.889)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.778) (xy 1.778 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "1N4148W_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "1N4148W_1_2"
+				(pin passive line
+					(at -2.54 -2.54 0)
+					(length 0)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 2.54 180)
+					(length 0)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PCM_SL_Connectors:JST_05"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "JST_05"
+				(at 0 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Connector_JST:JST_EH_B5B-EH-A_1x05_P2.50mm_Vertical"
+				(at 0 10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "JST Connector  5 pins"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "JST"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector_JST:JST_EH_S5B-EH_1x05_P2.50mm_Horizontal"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "JST_05_0_1"
+				(rectangle
+					(start -1.27 6.35)
+					(end 1.27 -6.35)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -5.588) (xy -1.27 -6.35) (xy 1.27 -6.35) (xy 1.27 -5.588) (xy 1.016 -5.588) (xy 1.016 -6.096)
+						(xy -1.016 -6.096) (xy -1.016 -5.588) (xy -1.27 -5.588)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 0 5.08)
+					(radius 0.381)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 0 2.54)
+					(radius 0.381)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 0.381)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 0 -2.54)
+					(radius 0.381)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 0 -5.08)
+					(radius 0.381)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 1.016 5.588)
+					(end 1.27 -5.588)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 5.588) (xy 1.27 6.35) (xy -1.27 6.35) (xy -1.27 5.588) (xy -1.016 5.588) (xy -1.016 6.096)
+						(xy 1.016 6.096) (xy 1.016 5.588) (xy 1.27 5.588)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "JST_05_1_1"
+				(pin passive line
+					(at -3.81 5.08 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -3.81 2.54 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -3.81 -2.54 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -3.81 -5.08 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PCM_marbastlib-choc:choc_stab"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "S"
+				(at -5.08 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "choc_stab"
+				(at -5.08 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "PCM_marbastlib-xp-choc:STAB_choc_2u"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Kailh Choc-style stabilizer"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "kailh choc low profile keyswitch keyboard stabilizer stab"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "choc_stab_0_1"
+				(rectangle
+					(start -5.08 1.27)
+					(end -2.54 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -5.08 -1.524)
+					(end -2.54 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -4.826 2.794)
+					(end -2.794 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -4.064 1.27)
+					(end -3.556 2.794)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -4.064 -1.778)
+					(end 4.064 -2.286)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -4.064 -2.286)
+					(end -3.556 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 2.54 1.27)
+					(end 5.08 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 2.54 -1.524)
+					(end 5.08 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 2.794 2.794)
+					(end 4.826 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.556 1.27)
+					(end 4.064 2.794)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 4.064 -2.286)
+					(end 3.556 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PCM_marbastlib-choc:choc_v1_SW_HS_CPG135001S30"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "CH"
+				(at 3.048 1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "choc_v1_SW_HS"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_HS_CPG135001S30_1u"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "choc_v1_SW_HS_CPG135001S30_0_1"
+				(polyline
+					(pts
+						(xy -2.54 2.54) (xy -1.524 1.524) (xy -1.524 1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -1.1684 1.1684)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 2.54) (xy 2.54 -0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 1.016) (xy 2.032 2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.143 -1.1938)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 -1.524) (xy 2.54 -2.54) (xy 2.54 -2.54) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -2.54 2.54 0)
+					(length 0)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -2.54 180)
+					(length 0)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(junction
+		(at 76.2 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0acb2e9d-dc4d-40cb-a345-3d7fd9d1d459")
+	)
+	(junction
+		(at 25.4 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1c0fe438-08d8-4629-aeff-74d5c8be63cd")
+	)
+	(junction
+		(at 82.55 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "263a4bb5-5738-44b5-af10-37d18694ba9a")
+	)
+	(junction
+		(at 76.2 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3b31ccfe-8e6e-4d34-9b8c-fb065f039fe3")
+	)
+	(junction
+		(at 82.55 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3ba9205b-6e3d-4a91-b75e-a9553bbcbe5e")
+	)
+	(junction
+		(at 82.55 31.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3bb81189-dacc-470a-9b77-5ba102bd5cd1")
+	)
+	(junction
+		(at 57.15 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3dff879d-456c-440f-a57a-fe21bef692c2")
+	)
+	(junction
+		(at 95.25 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "41b4aedd-80b7-43b1-b3cb-f154a9b6a3d4")
+	)
+	(junction
+		(at 76.2 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "490e8333-271a-482b-a62c-f541b763e654")
+	)
+	(junction
+		(at 25.4 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "51182ac7-0990-4731-bb07-034ccb4d9f2c")
+	)
+	(junction
+		(at 63.5 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "515dd405-2786-431a-8a2e-ddf434a87b33")
+	)
+	(junction
+		(at 95.25 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "60bad1a6-711b-44ac-a10b-c53760e7ea1b")
+	)
+	(junction
+		(at 63.5 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6450983b-dba8-46a9-bfd6-b1221643a272")
+	)
+	(junction
+		(at 25.4 31.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "668946e3-3992-4a37-bb0b-8798a16ecdc3")
+	)
+	(junction
+		(at 57.15 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6c36fe39-49a0-4919-9993-4ae606784357")
+	)
+	(junction
+		(at 63.5 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6cd7e4c7-2def-4511-9acb-653ed553d326")
+	)
+	(junction
+		(at 57.15 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6d54eeff-5cf0-436e-a6ad-e5b2729c36f4")
+	)
+	(junction
+		(at 95.25 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7c8e4573-2440-4548-8fff-718732a003ac")
+	)
+	(junction
+		(at 76.2 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "89f6ca03-7799-4d34-b5a2-48f1a6bce1a3")
+	)
+	(junction
+		(at 76.2 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a124eb1d-91b9-4e2b-8764-cbc8d33cb182")
+	)
+	(junction
+		(at 63.5 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "acc107b8-1b83-4416-bee6-4a97fef6489b")
+	)
+	(junction
+		(at 44.45 31.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "afc51701-48e0-4fde-9560-cfb00eec7453")
+	)
+	(junction
+		(at 63.5 31.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b356ee7a-4a33-47b1-aef1-986ddc2e37d0")
+	)
+	(junction
+		(at 95.25 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c0bb4678-04ef-4f21-9d5a-449c19e8aaf9")
+	)
+	(junction
+		(at 76.2 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c1e36efb-1405-4c85-9f69-609ddefda26d")
+	)
+	(junction
+		(at 25.4 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c45a50d6-0382-4595-a52f-6d0867dabdce")
+	)
+	(junction
+		(at 44.45 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c7ab6bd2-e77b-4e72-a75a-1ab2f32d48b8")
+	)
+	(junction
+		(at 44.45 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ce743a44-a705-4086-ae47-6a24be7bf701")
+	)
+	(junction
+		(at 44.45 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d20c9596-1abd-48ab-a948-f2a4f64170bc")
+	)
+	(junction
+		(at 57.15 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e76db111-7d13-4c55-8582-10109681b555")
+	)
+	(junction
+		(at 44.45 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ef6040db-c245-474d-b5eb-fd47cde37951")
+	)
+	(junction
+		(at 57.15 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f7a4e863-8dfc-45cd-b47e-8599c1a16d94")
+	)
+	(bus_entry
+		(at 148.59 26.67)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "052e2b27-9b6e-47f7-895a-e92f2cea4d91")
+	)
+	(bus_entry
+		(at 148.59 31.75)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05bf70aa-16b7-4854-9774-5c7abee02c21")
+	)
+	(bus_entry
+		(at 148.59 44.45)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "088965b5-8676-49ab-862f-e2c10817009d")
+	)
+	(bus_entry
+		(at 148.59 36.83)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0fa16889-161f-41bf-80d0-9b4c4f7f634a")
+	)
+	(bus_entry
+		(at 135.89 36.83)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e19468b-6566-4e93-a3db-933671e029e2")
+	)
+	(bus_entry
+		(at 135.89 46.99)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a27675e-0f45-4878-9d4b-26cfbd2fe1dd")
+	)
+	(bus_entry
+		(at 148.59 29.21)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a5de69d-8e62-44d5-b36c-6b8677141461")
+	)
+	(bus_entry
+		(at 135.89 44.45)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d16eb79-cd5e-4e17-8615-a539bb6f121c")
+	)
+	(bus_entry
+		(at 148.59 34.29)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6dd29a18-1331-4ad3-878a-c0514122870f")
+	)
+	(bus_entry
+		(at 135.89 41.91)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e4199f8-b828-4d4c-88c5-f44d2b4432bc")
+	)
+	(bus_entry
+		(at 135.89 52.07)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e92d21d-bcbf-4a09-9be1-dd26dbde880a")
+	)
+	(bus_entry
+		(at 148.59 49.53)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70207896-819a-44d7-b1c0-c8284839b1e5")
+	)
+	(bus_entry
+		(at 148.59 46.99)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "790cb953-bfba-4ba6-83b0-6f1056934865")
+	)
+	(bus_entry
+		(at 135.89 26.67)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a06dd84-17c5-4dc4-a409-2f9713da2e57")
+	)
+	(bus_entry
+		(at 148.59 41.91)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7aca2f87-e707-4975-bade-7a3b0d8fef82")
+	)
+	(bus_entry
+		(at 135.89 49.53)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c58c1661-6903-4ab9-b3e3-c0890f425c71")
+	)
+	(bus_entry
+		(at 135.89 29.21)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "caeb53a7-ed51-43b6-ab78-4a490e1ffe73")
+	)
+	(bus_entry
+		(at 135.89 31.75)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd47e83b-80cd-4e86-8c1e-2b29a0f4def9")
+	)
+	(bus_entry
+		(at 148.59 52.07)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9b4061c-3d1c-4c16-97cd-622ee6206dd2")
+	)
+	(bus_entry
+		(at 135.89 34.29)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efdd8dc7-b99d-4879-b312-98488479f833")
+	)
+	(wire
+		(pts
+			(xy 63.5 31.75) (xy 63.5 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "018383b3-5fca-42c8-90b5-58a7b9e3b5f5")
+	)
+	(bus
+		(pts
+			(xy 138.43 46.99) (xy 146.05 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02270179-6e3e-4bdb-97c3-bfd1bd37548a")
+	)
+	(wire
+		(pts
+			(xy 57.15 50.8) (xy 57.15 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02b45926-def1-4bd3-9aff-e18d7ec873f6")
+	)
+	(wire
+		(pts
+			(xy 63.5 87.63) (xy 63.5 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0325c44b-beba-45fa-8e07-4b8f53b210f3")
+	)
+	(wire
+		(pts
+			(xy 57.15 95.25) (xy 76.2 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07fd985c-9c7b-489a-9c08-fe1176f345c9")
+	)
+	(wire
+		(pts
+			(xy 57.15 92.71) (xy 57.15 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "095598d2-77e0-4d76-bb79-6a1e046a4d84")
+	)
+	(bus
+		(pts
+			(xy 138.43 36.83) (xy 146.05 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a0f5b82-4218-4443-b66b-96dbd2461ae2")
+	)
+	(bus
+		(pts
+			(xy 138.43 44.45) (xy 146.05 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "138a6b5c-c924-48b6-b5c2-eadefd712e4f")
+	)
+	(wire
+		(pts
+			(xy 76.2 110.49) (xy 104.14 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14ec78e7-0b33-4c1e-a4d6-ea26d25310d7")
+	)
+	(wire
+		(pts
+			(xy 38.1 92.71) (xy 38.1 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ed02a4c-85b4-4ec8-af55-4d16c4130e6b")
+	)
+	(wire
+		(pts
+			(xy 76.2 39.37) (xy 95.25 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27e8ee98-95da-4008-b837-c068732ffefa")
+	)
+	(wire
+		(pts
+			(xy 95.25 67.31) (xy 95.25 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "281e55ce-6f4e-4234-9dc1-31cd6f712c7c")
+	)
+	(wire
+		(pts
+			(xy 95.25 95.25) (xy 95.25 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a3ef4fb-4fff-4480-aea1-41a8610add4d")
+	)
+	(wire
+		(pts
+			(xy 82.55 31.75) (xy 82.55 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b43d917-c2ba-4bc4-b769-6e4c061e6392")
+	)
+	(wire
+		(pts
+			(xy 38.1 36.83) (xy 38.1 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "303350ca-6af9-40ce-8d51-a8e2f5479c5e")
+	)
+	(wire
+		(pts
+			(xy 57.15 36.83) (xy 57.15 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "343e5729-1ac8-4e99-9508-b6fac11a8b86")
+	)
+	(wire
+		(pts
+			(xy 82.55 20.32) (xy 82.55 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38037acc-2707-43bf-b5e8-4cf314149e77")
+	)
+	(wire
+		(pts
+			(xy 95.25 39.37) (xy 105.41 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38dd2894-3314-4b16-9194-4a1875ea58e5")
+	)
+	(wire
+		(pts
+			(xy 38.1 50.8) (xy 38.1 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b6e9578-fa4f-4ea3-b983-c7e575950df7")
+	)
+	(wire
+		(pts
+			(xy 63.5 73.66) (xy 63.5 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e06d7cb-64a5-4f41-8e40-564abe662e3f")
+	)
+	(wire
+		(pts
+			(xy 25.4 59.69) (xy 25.4 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46fd719b-2ce7-4736-b6f8-4cc854c4a98d")
+	)
+	(wire
+		(pts
+			(xy 44.45 20.32) (xy 44.45 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ba4cfa3-231c-48e0-b1ce-42808a0e65b9")
+	)
+	(wire
+		(pts
+			(xy 95.25 39.37) (xy 95.25 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4de3ee24-d728-43fa-906b-985cf1d03b91")
+	)
+	(wire
+		(pts
+			(xy 76.2 67.31) (xy 95.25 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e836b82-a5de-4b4b-b2e9-1db0340da5e5")
+	)
+	(wire
+		(pts
+			(xy 25.4 20.32) (xy 25.4 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ff7a04b-9dce-4279-a13b-06ed3c371719")
+	)
+	(wire
+		(pts
+			(xy 76.2 50.8) (xy 76.2 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50a5beb1-56bc-4fb1-89fd-d0820befd99a")
+	)
+	(wire
+		(pts
+			(xy 57.15 107.95) (xy 57.15 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5726c28d-fead-4dde-a099-5cbd8c553ecd")
+	)
+	(wire
+		(pts
+			(xy 76.2 81.28) (xy 76.2 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64a95d85-d68a-44a0-8211-5e4517aa0383")
+	)
+	(wire
+		(pts
+			(xy 57.15 39.37) (xy 76.2 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a1debfe-26f6-4a68-b1a9-3746f749d1d6")
+	)
+	(bus
+		(pts
+			(xy 138.43 39.37) (xy 146.05 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b88b42d-c083-4075-a9f6-6e6e3e7178c9")
+	)
+	(bus
+		(pts
+			(xy 138.43 49.53) (xy 146.05 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e2926b6-20cf-46f6-bd84-683403be38c1")
+	)
+	(bus
+		(pts
+			(xy 138.43 29.21) (xy 146.05 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ee02f29-5dce-41e8-af2a-e691bb2e5bae")
+	)
+	(wire
+		(pts
+			(xy 76.2 36.83) (xy 76.2 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71b3039f-41c2-4942-be43-53bfb868d828")
+	)
+	(wire
+		(pts
+			(xy 76.2 53.34) (xy 95.25 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7215e304-60a7-4142-adb0-7832e5e82d87")
+	)
+	(wire
+		(pts
+			(xy 95.25 95.25) (xy 104.14 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a541218-6fe8-4aca-8543-e4b1cc35dc7d")
+	)
+	(wire
+		(pts
+			(xy 38.1 39.37) (xy 57.15 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e2cbaa5-ae31-4760-92a7-e3703f328105")
+	)
+	(wire
+		(pts
+			(xy 63.5 20.32) (xy 63.5 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e67182f-79e4-46db-a4f6-9a4d75c5240e")
+	)
+	(wire
+		(pts
+			(xy 44.45 59.69) (xy 44.45 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8480d572-df6c-4e05-94f4-4b070f6928c1")
+	)
+	(wire
+		(pts
+			(xy 25.4 73.66) (xy 25.4 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "902d43f3-62d5-4628-ab73-2250927cb918")
+	)
+	(bus
+		(pts
+			(xy 138.43 54.61) (xy 146.05 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90d2da13-dd7e-4c42-962d-1e9a3d0c0d43")
+	)
+	(wire
+		(pts
+			(xy 76.2 95.25) (xy 95.25 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91d2748e-c04c-4a12-a781-7014eb207560")
+	)
+	(wire
+		(pts
+			(xy 25.4 31.75) (xy 25.4 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92fc171e-a238-4bfd-8c04-259900e5261b")
+	)
+	(wire
+		(pts
+			(xy 63.5 59.69) (xy 63.5 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99655d45-4a68-4909-b3ce-56f72122b4b7")
+	)
+	(wire
+		(pts
+			(xy 95.25 53.34) (xy 105.41 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9db0f201-7d21-4e41-aa6c-5685b65258bb")
+	)
+	(wire
+		(pts
+			(xy 44.45 31.75) (xy 44.45 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e6aa054-9808-4b72-8a71-ba2558b1e272")
+	)
+	(wire
+		(pts
+			(xy 38.1 78.74) (xy 38.1 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9fbbae0a-7693-49bf-97ab-d9a81cb7fa54")
+	)
+	(wire
+		(pts
+			(xy 63.5 45.72) (xy 63.5 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3addc42-ac39-421e-aab0-37688de9fcc6")
+	)
+	(bus
+		(pts
+			(xy 138.43 34.29) (xy 146.05 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4b633a0-f4cb-44f1-a5de-393dbc9303eb")
+	)
+	(wire
+		(pts
+			(xy 38.1 95.25) (xy 57.15 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7267bdd-c3c1-4d4c-a7dc-cfbb92640cb7")
+	)
+	(wire
+		(pts
+			(xy 76.2 92.71) (xy 76.2 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7e45bd9-2d12-43e5-b2c5-85c306bbd30e")
+	)
+	(wire
+		(pts
+			(xy 38.1 67.31) (xy 57.15 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a86f4f80-4ea8-4e4f-a637-6e5f1a642878")
+	)
+	(wire
+		(pts
+			(xy 95.25 53.34) (xy 95.25 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a94063fd-a1ab-4555-9f4b-cbed7dd9326e")
+	)
+	(wire
+		(pts
+			(xy 57.15 67.31) (xy 76.2 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac2d3bd4-e50e-4a60-a8a5-2e8c0a7a663d")
+	)
+	(wire
+		(pts
+			(xy 25.4 45.72) (xy 25.4 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9d5a443-d5b2-48c5-9772-590289b256d1")
+	)
+	(bus
+		(pts
+			(xy 138.43 52.07) (xy 146.05 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1893c85-d9cc-427d-b50c-45b224e83fd0")
+	)
+	(wire
+		(pts
+			(xy 76.2 81.28) (xy 104.14 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c35bc0ff-5675-4346-8006-4b9180056f20")
+	)
+	(wire
+		(pts
+			(xy 95.25 67.31) (xy 105.41 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7fbf1b6-e7fc-4adf-9afa-7e6e85737911")
+	)
+	(wire
+		(pts
+			(xy 82.55 59.69) (xy 82.55 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db6295a9-aad8-4e1b-b3e2-42cd4bd9bb92")
+	)
+	(wire
+		(pts
+			(xy 57.15 78.74) (xy 57.15 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc40307c-325e-453c-89cc-84ac5c31033f")
+	)
+	(wire
+		(pts
+			(xy 57.15 64.77) (xy 57.15 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ddd613f4-217b-42a0-b7c6-3598523ea748")
+	)
+	(wire
+		(pts
+			(xy 76.2 64.77) (xy 76.2 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df0c65c7-aef7-4dc8-af13-57fb5dc927b4")
+	)
+	(wire
+		(pts
+			(xy 38.1 81.28) (xy 57.15 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e18fdd77-f8e2-40ff-9970-29079ec6eee9")
+	)
+	(bus
+		(pts
+			(xy 138.43 31.75) (xy 146.05 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e62af83a-bfa2-4b45-933a-bd4cb0f4bb29")
+	)
+	(wire
+		(pts
+			(xy 38.1 64.77) (xy 38.1 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e65dc29d-c9ed-4612-a82e-b705d9953598")
+	)
+	(wire
+		(pts
+			(xy 44.45 87.63) (xy 44.45 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0a9a234-bf49-4565-b100-179ec9b95421")
+	)
+	(wire
+		(pts
+			(xy 44.45 45.72) (xy 44.45 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3220647-70ac-4672-8b7d-7dbfff853a49")
+	)
+	(wire
+		(pts
+			(xy 82.55 45.72) (xy 82.55 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3a4c509-838f-47e9-b84a-e07e5b388092")
+	)
+	(wire
+		(pts
+			(xy 38.1 53.34) (xy 57.15 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5443dec-d1a7-4d8b-9008-78c3b76266ea")
+	)
+	(wire
+		(pts
+			(xy 57.15 110.49) (xy 76.2 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f69bde65-a8b8-4db0-9761-3836d14bd0c3")
+	)
+	(wire
+		(pts
+			(xy 76.2 110.49) (xy 76.2 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6b367ea-4958-47c5-93d8-33147cbcccce")
+	)
+	(wire
+		(pts
+			(xy 57.15 53.34) (xy 76.2 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc1f7dd1-8870-4468-8cbd-be0c52475db8")
+	)
+	(wire
+		(pts
+			(xy 44.45 73.66) (xy 44.45 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fcdc41ba-a524-4917-a03c-e5502275452d")
+	)
+	(wire
+		(pts
+			(xy 57.15 81.28) (xy 76.2 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff8e4cfa-329c-43c5-89da-4201a2538e71")
+	)
+	(label "COL3"
+		(at 63.5 20.32 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0655a8b7-1ab6-47ae-a443-19c74d3a304c")
+	)
+	(label "ROW6"
+		(at 104.14 110.49 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1565ea1c-9125-4f92-a908-d579ddd0463c")
+	)
+	(label "ROW3"
+		(at 105.41 67.31 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "17266d58-0e1d-49c1-bd99-b41a115cf69f")
+	)
+	(label "GND"
+		(at 138.43 34.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "26e09130-4334-41c2-b83d-c3d97cd3c145")
+	)
+	(label "3.3V"
+		(at 138.43 54.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2e48a891-19f5-4e30-b944-f300740c966a")
+	)
+	(label "ROW5"
+		(at 104.14 95.25 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "36aba3a8-8efd-4590-ade6-4c4494341a06")
+	)
+	(label "COL1"
+		(at 25.4 20.32 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "57d1c4f8-6681-4f1c-9778-6bbeb16415dc")
+	)
+	(label "5V"
+		(at 138.43 36.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "66380f2d-de74-4c87-a6ca-90e5a66f0f6b")
+	)
+	(label "CANL2"
+		(at 138.43 46.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6e13b7be-9598-481c-ad66-39d0cd902878")
+	)
+	(label "COL2"
+		(at 44.45 20.32 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6e4522ad-b09d-4f3b-bc17-0acf261b1309")
+	)
+	(label "COL4"
+		(at 82.55 20.32 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "70885dc1-3e39-44d1-8d40-16da1d92ef45")
+	)
+	(label "3.3V"
+		(at 138.43 39.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8ee9d702-9380-49f9-b7fe-47cad1aa39a3")
+	)
+	(label "5V"
+		(at 138.43 52.07 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a4645690-4500-4a7c-a3e5-0bb6fbabce9b")
+	)
+	(label "ROW4"
+		(at 104.14 81.28 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d2128ce5-42e3-4aba-8001-40741ddcc6a7")
+	)
+	(label "GND"
+		(at 138.43 49.53 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d2ea4895-99b0-4b48-8fbb-9e1f18859193")
+	)
+	(label "CANH2"
+		(at 138.43 44.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d2f02e23-9b04-4d5f-9ccc-e46770dacddc")
+	)
+	(label "CANL1"
+		(at 138.43 31.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d906fb1a-def8-45ef-8369-e4bc877a4eb8")
+	)
+	(label "ROW1"
+		(at 105.41 39.37 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d9faa88c-27b8-4490-ae68-6ce120f75823")
+	)
+	(label "ROW2"
+		(at 105.41 53.34 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "eefe06ca-3748-4731-a336-9496e8f60fa1")
+	)
+	(label "CANH1"
+		(at 138.43 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fb68cdbc-2125-44dc-b666-40ad0cf69c3f")
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 53.34 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0154da98-bae8-4888-9cfc-33229d0983c4")
+		(property "Reference" "D10"
+			(at 54.102 59.436 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 54.102 61.976 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_Handsoldering_AKL:D_0805_2012Metric_Castellated"
+			(at 53.34 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 53.34 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 53.34 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "adc9c3a0-a2ca-4a0e-999d-a1ff5d4e0f7a")
+		)
+		(pin "1"
+			(uuid "6c871c07-fe33-4c98-97fa-056ac986e79a")
+		)
+		(instances
+			(project "4x4macropad"
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "D10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 91.44 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "025ade26-58f1-40a5-8073-ea60157bac3a")
+		(property "Reference" "D19"
+			(at 92.202 87.376 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 92.202 89.916 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_Handsoldering_AKL:D_0805_2012Metric_Castellated"
+			(at 91.44 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 91.44 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 91.44 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "dd888fa3-418b-414b-bf28-8df7778a4eb0")
+		)
+		(pin "1"
+			(uuid "db931be9-452a-40bf-9d7b-38dd495efd55")
+		)
+		(instances
+			(project "4x4macropad"
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "D19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-choc:choc_v1_SW_HS_CPG135001S30")
+		(at 66.04 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0d2094f5-f23d-49ce-9551-c8f247780b45")
+		(property "Reference" "NUM6"
+			(at 66.04 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "choc_v1_SW_HS"
+			(at 66.04 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_HS_CPG135001S30_1u"
+			(at 66.04 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 66.04 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 66.04 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c61cf216-a8cf-4855-b428-8a86628185f2")
+		)
+		(pin "1"
+			(uuid "7aeb1c33-1159-4443-8c19-e60686bf4b90")
+		)
+		(instances
+			(project "4x4macropad"
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "NUM6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-choc:choc_v1_SW_HS_CPG135001S30")
+		(at 85.09 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "12391278-be51-40bc-bda2-a3df0a956438")
+		(property "Reference" "M4"
+			(at 85.09 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "choc_v1_SW_HS"
+			(at 85.09 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_HS_CPG135001S30_1u"
+			(at 85.09 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 85.09 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 85.09 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "405afce8-5209-4d72-b6d3-0e791ba4ba31")
+		)
+		(pin "1"
+			(uuid "98f52f80-d900-4b37-8ec3-30c1aa54dea7")
+		)
+		(instances
+			(project "4x4macropad"
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "M4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 53.34 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "12e53817-3670-4ed1-a6a9-62bc41741ba6")
+		(property "Reference" "D6"
+			(at 54.102 45.466 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 54.102 48.006 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_Handsoldering_AKL:D_0805_2012Metric_Castellated"
+			(at 53.34 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 53.34 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 53.34 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a1dd5222-2206-4b26-ac32-fc55e9433801")
+		)
+		(pin "1"
+			(uuid "093b4969-73f2-496a-bb9e-e04c2859ebf7")
+		)
+		(instances
+			(project "4x4macropad"
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 34.29 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1a07e105-f21a-4c97-ad05-25b704139cd5")
+		(property "Reference" "D9"
+			(at 35.052 59.436 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 35.052 61.976 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_Handsoldering_AKL:D_0805_2012Metric_Castellated"
+			(at 34.29 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 34.29 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 34.29 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "980c239f-e580-414b-ac50-63dc7ed666fb")
+		)
+		(pin "1"
+			(uuid "9036b922-a102-4a3c-8a91-5008ff3c3e4c")
+		)
+		(instances
+			(project "4x4macropad"
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "D9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 91.44 36.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1c673cf7-c88b-446c-9037-37f97992e49b")
+		(property "Reference" "D4"
+			(at 92.202 31.496 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 92.202 34.036 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_Handsoldering_AKL:D_0805_2012Metric_Castellated"
+			(at 91.44 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 91.44 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 91.44 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ce22a5b2-1f66-4b30-8211-b2c8525ac567")
+		)
+		(pin "1"
+			(uuid "697683c9-9c88-4ecf-86bf-46cfe61071b0")
+		)
+		(instances
+			(project "4x4macropad"
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-choc:choc_v1_SW_HS_CPG135001S30")
+		(at 46.99 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1ca7ec4c-e7f6-4def-97f7-7b9348ae8d7c")
+		(property "Reference" "NUM2"
+			(at 46.99 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "choc_v1_SW_HS"
+			(at 46.99 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_HS_CPG135001S30_1u"
+			(at 46.99 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 46.99 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 46.99 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7667d872-b016-4693-9e98-6d9cbfa50b27")
+		)
+		(pin "1"
+			(uuid "b835a920-6b74-48a8-9b19-5f14c9f2a6dc")
+		)
+		(instances
+			(project "4x4macropad"
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "NUM2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-choc:choc_v1_SW_HS_CPG135001S30")
+		(at 27.94 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1f4de768-5b6b-4e53-bee5-0ddce28dae0d")
+		(property "Reference" "NUM7"
+			(at 27.94 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "choc_v1_SW_HS"
+			(at 27.94 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_HS_CPG135001S30_1u"
+			(at 27.94 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 27.94 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 27.94 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f16fa0d9-c584-40b5-856c-0d98f8b01f64")
+		)
+		(pin "1"
+			(uuid "049112c3-d0ab-4bc2-9488-b71b23b3a82b")
+		)
+		(instances
+			(project "4x4macropad"
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "NUM7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-choc:choc_v1_SW_HS_CPG135001S30")
+		(at 66.04 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "23948aeb-903c-4de9-8939-39e2061cfd3e")
+		(property "Reference" "PERIOD"
+			(at 66.04 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "choc_v1_SW_HS"
+			(at 66.04 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_HS_CPG135001S30_1u"
+			(at 66.04 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 66.04 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 66.04 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9c629cae-535b-4f81-ae7e-329bbd80686f")
+		)
+		(pin "1"
+			(uuid "906e2240-0df6-4aa6-9ca1-8e6a6906c846")
+		)
+		(instances
+			(project "4x4macropad"
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "PERIOD")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 53.34 36.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "25f8695f-09d3-41c4-9a66-d31a3388b178")
+		(property "Reference" "D2"
+			(at 54.102 31.496 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 54.102 34.036 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_Handsoldering_AKL:D_0805_2012Metric_Castellated"
+			(at 53.34 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 53.34 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 53.34 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6064f66a-ec0b-4138-9c73-b2dbc3d5daf8")
+		)
+		(pin "1"
+			(uuid "4d13124d-246f-4596-b7ad-8015e3da1a92")
+		)
+		(instances
+			(project "4x4macropad"
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 72.39 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2712117d-e516-4709-8654-e6bc0b8a9cf2")
+		(property "Reference" "D21"
+			(at 73.152 102.616 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 73.152 105.156 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_Handsoldering_AKL:D_0805_2012Metric_Castellated"
+			(at 72.39 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 72.39 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 72.39 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ab84a5de-6333-4dc6-bbfc-f003b54c985f")
+		)
+		(pin "1"
+			(uuid "cbcdf718-1282-4923-85a2-f3857919c7f1")
+		)
+		(instances
+			(project "4x4macropad"
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "D21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-choc:choc_v1_SW_HS_CPG135001S30")
+		(at 46.99 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "279f7969-f897-405a-af72-f38f967acda3")
+		(property "Reference" "NUM8"
+			(at 46.99 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "choc_v1_SW_HS"
+			(at 46.99 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_HS_CPG135001S30_1u"
+			(at 46.99 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 46.99 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 46.99 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5c8783d2-abca-4ec6-a2dc-ec433f611366")
+		)
+		(pin "1"
+			(uuid "d7b29d9c-79fc-4628-8765-b7e831133170")
+		)
+		(instances
+			(project "4x4macropad"
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "NUM8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-choc:choc_v1_SW_HS_CPG135001S30")
+		(at 85.09 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "36b0ebaa-3558-41b7-93cc-67cd6ec51efc")
+		(property "Reference" "SUB"
+			(at 85.09 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "choc_v1_SW_HS"
+			(at 85.09 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_HS_CPG135001S30_1u"
+			(at 85.09 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 85.09 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 85.09 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "623b1046-2038-4841-9b24-e4e949f27761")
+		)
+		(pin "1"
+			(uuid "15d3daee-09cf-4d08-a711-1f3e76a8f449")
+		)
+		(instances
+			(project "4x4macropad"
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "SUB")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_SL_Connectors:JST_05")
+		(at 152.4 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "37ad9943-a3f2-49e3-b99e-03b0dbb8485d")
+		(property "Reference" "DOWN_PORT"
+			(at 154.94 45.7199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "JST_05"
+			(at 154.94 48.2599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_EH_B5B-EH-A_1x05_P2.50mm_Vertical"
+			(at 152.4 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "JST Connector  5 pins"
+			(at 152.4 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "301b79d0-7c81-4d37-a9c1-75fee32a2acf")
+		)
+		(pin "4"
+			(uuid "522e5d73-4e76-4e27-ac28-09421a6643f6")
+		)
+		(pin "3"
+			(uuid "437314ae-2cea-4cbe-994f-98349ff84b75")
+		)
+		(pin "5"
+			(uuid "dfa3be50-a7d5-4761-86b1-30046952c16d")
+		)
+		(pin "1"
+			(uuid "382b4524-c855-4ef5-aac2-4fb552122bc4")
+		)
+		(instances
+			(project "4x4macropad"
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "DOWN_PORT")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-choc:choc_v1_SW_HS_CPG135001S30")
+		(at 85.09 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "43104a0f-1c74-4b90-9c32-3eced4ca733a")
+		(property "Reference" "ENTR"
+			(at 85.09 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "choc_v1_SW_HS"
+			(at 85.09 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_HS_CPG135001S30_1u"
+			(at 85.09 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 85.09 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 85.09 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "cfb512da-d2d5-4974-be76-e45a26205262")
+		)
+		(pin "1"
+			(uuid "b4dbbd1d-941c-4d87-8e62-49abfdcafb28")
+		)
+		(instances
+			(project "4x4macropad"
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "ENTR")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-choc:choc_stab")
+		(at 90.17 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "45e6bf12-2b5d-4466-b316-4f505cec3e22")
+		(property "Reference" "ENTR_STAB"
+			(at 84.836 104.902 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "choc_stab"
+			(at 84.836 107.442 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-xp-choc:STAB_choc_2u"
+			(at 90.17 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 90.17 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Kailh Choc-style stabilizer"
+			(at 90.17 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "4x4macropad"
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "ENTR_STAB")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-choc:choc_v1_SW_HS_CPG135001S30")
+		(at 27.94 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4c78b0dc-99fb-4625-b7f2-1774ff2d7986")
+		(property "Reference" "NUM1"
+			(at 27.94 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "choc_v1_SW_HS"
+			(at 27.94 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_HS_CPG135001S30_1u"
+			(at 27.94 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 27.94 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 27.94 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "81972234-5c04-4bbc-b3d7-bee262e04e30")
+		)
+		(pin "1"
+			(uuid "6bbd57bd-3159-40c7-9ed1-a6fad98b22ed")
+		)
+		(instances
+			(project "4x4macropad"
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "NUM1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_SL_Connectors:JST_05")
+		(at 132.08 46.99 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4f792180-0ff7-499f-8230-f1a8ea4f1d41")
+		(property "Reference" "TOP_PORT"
+			(at 124.46 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "JST_05"
+			(at 124.46 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_EH_B5B-EH-A_1x05_P2.50mm_Vertical"
+			(at 132.08 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "JST Connector  5 pins"
+			(at 132.08 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7f34af1b-4320-4049-941c-921a2f97ec9b")
+		)
+		(pin "4"
+			(uuid "94c9182a-82de-485c-9217-1abd8484515b")
+		)
+		(pin "3"
+			(uuid "e33dbeec-4f2e-44c2-ad9c-799e1b4c6823")
+		)
+		(pin "5"
+			(uuid "f4256d11-7bf9-4de5-8827-cd0b1018de4a")
+		)
+		(pin "1"
+			(uuid "0758b86f-fb68-4177-9c7b-153e424251e6")
+		)
+		(instances
+			(project "4x4macropad"
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "TOP_PORT")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-choc:choc_v1_SW_HS_CPG135001S30")
+		(at 27.94 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4fc1b4de-9203-4450-b76e-3309ff3967f4")
+		(property "Reference" "M1"
+			(at 27.94 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "choc_v1_SW_HS"
+			(at 27.94 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_HS_CPG135001S30_1u"
+			(at 27.94 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 27.94 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 27.94 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4e8f1de4-e785-4f41-9117-a7af176d5501")
+		)
+		(pin "1"
+			(uuid "ace5025c-2994-482a-af3a-bed7fd099c07")
+		)
+		(instances
+			(project ""
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "M1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-choc:choc_v1_SW_HS_CPG135001S30")
+		(at 66.04 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5105fcad-1b6d-4b71-be15-d0361dd305ad")
+		(property "Reference" "NUM3"
+			(at 66.04 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "choc_v1_SW_HS"
+			(at 66.04 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_HS_CPG135001S30_1u"
+			(at 66.04 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 66.04 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 66.04 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "af2c9e6e-cbec-452c-b060-c82562d599b3")
+		)
+		(pin "1"
+			(uuid "12586178-4490-4930-a9d3-88f47e2e873f")
+		)
+		(instances
+			(project "4x4macropad"
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "NUM3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 53.34 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "626a7432-6798-4ae6-86e3-9e72629f01aa")
+		(property "Reference" "D20"
+			(at 54.102 102.616 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 54.102 105.156 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_Handsoldering_AKL:D_0805_2012Metric_Castellated"
+			(at 53.34 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 53.34 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 53.34 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d172310b-9acc-4758-8521-511e94e962ce")
+		)
+		(pin "1"
+			(uuid "943e5339-35cc-472c-86cd-d61764c8707a")
+		)
+		(instances
+			(project "4x4macropad"
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "D20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 91.44 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "644fbd3e-1eaf-40b4-b751-94382c974a8a")
+		(property "Reference" "D8"
+			(at 92.202 45.466 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 92.202 48.006 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_Handsoldering_AKL:D_0805_2012Metric_Castellated"
+			(at 91.44 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 91.44 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 91.44 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c6e18d62-4378-4732-8a22-6e06f45a07be")
+		)
+		(pin "1"
+			(uuid "ef22c4ee-e6bb-4988-9310-dc404aff4b94")
+		)
+		(instances
+			(project "4x4macropad"
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 72.39 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7ac1fef1-bee6-43b9-a8b2-f1919f1d92a0")
+		(property "Reference" "D18"
+			(at 73.152 87.376 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 73.152 89.916 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_Handsoldering_AKL:D_0805_2012Metric_Castellated"
+			(at 72.39 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 72.39 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 72.39 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3fa14f5c-4fcd-4475-bf6b-d2c70fb40bac")
+		)
+		(pin "1"
+			(uuid "1a00fddb-e365-459e-a18e-51afe0639193")
+		)
+		(instances
+			(project "4x4macropad"
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "D18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-choc:choc_v1_SW_HS_CPG135001S30")
+		(at 27.94 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7b068145-f751-4d72-8263-a45c3152bace")
+		(property "Reference" "NUM_LOCK"
+			(at 27.94 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "choc_v1_SW_HS"
+			(at 27.94 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_HS_CPG135001S30_1u"
+			(at 27.94 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 27.94 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 27.94 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "628d442a-0d59-4717-8a14-315df032c8d6")
+		)
+		(pin "1"
+			(uuid "97dba45c-361d-4392-b822-1a6044ea32e7")
+		)
+		(instances
+			(project "4x4macropad"
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "NUM_LOCK")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 72.39 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "81975d24-2de7-47c4-bdde-f2839afe6f6c")
+		(property "Reference" "D7"
+			(at 73.152 45.466 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 73.152 48.006 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_Handsoldering_AKL:D_0805_2012Metric_Castellated"
+			(at 72.39 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 72.39 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 72.39 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0f39b424-4358-40dd-ad8a-3cca237ad05f")
+		)
+		(pin "1"
+			(uuid "988b4a75-fccf-4d8e-bcb5-62f1f6fd6598")
+		)
+		(instances
+			(project "4x4macropad"
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 72.39 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "86eaa8c6-5279-4d15-9c79-b4fd1b26f48b")
+		(property "Reference" "D11"
+			(at 73.152 59.436 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 73.152 61.976 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_Handsoldering_AKL:D_0805_2012Metric_Castellated"
+			(at 72.39 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 72.39 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 72.39 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "fe92df59-bb63-40e1-962d-77e3d7b7987b")
+		)
+		(pin "1"
+			(uuid "65b55382-552e-43e2-8bf4-4ef95c357e41")
+		)
+		(instances
+			(project "4x4macropad"
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "D11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 91.44 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "89699556-5e87-4d31-b4a9-07a0fa9607de")
+		(property "Reference" "D12"
+			(at 92.202 59.436 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 92.202 61.976 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_Handsoldering_AKL:D_0805_2012Metric_Castellated"
+			(at 91.44 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 91.44 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 91.44 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0cfea3f4-4254-4f19-9ffe-327084a217e9")
+		)
+		(pin "1"
+			(uuid "72c299aa-3322-4768-9bfb-cf29a5ba1037")
+		)
+		(instances
+			(project "4x4macropad"
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "D12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-choc:choc_stab")
+		(at 33.02 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8a122ef5-105a-49b3-a538-5e330f0a380f")
+		(property "Reference" "NUM0_STAB"
+			(at 27.686 104.902 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "choc_stab"
+			(at 27.686 107.442 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-xp-choc:STAB_choc_2u"
+			(at 33.02 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 33.02 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Kailh Choc-style stabilizer"
+			(at 33.02 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "NUM0_STAB")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-choc:choc_v1_SW_HS_CPG135001S30")
+		(at 85.09 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8e56e536-c7ef-4c66-b1c5-08cf3d24e738")
+		(property "Reference" "ADD"
+			(at 85.09 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "choc_v1_SW_HS"
+			(at 85.09 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_HS_CPG135001S30_1u"
+			(at 85.09 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 85.09 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 85.09 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "34ff06de-4d69-4111-a914-f745b802bf53")
+		)
+		(pin "1"
+			(uuid "18750196-1ee9-46f4-a27a-bfab4149a2c4")
+		)
+		(instances
+			(project "4x4macropad"
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "ADD")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 72.39 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "903f46ab-f72c-419b-b159-bea01c7e9b4d")
+		(property "Reference" "D15"
+			(at 73.152 73.406 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 73.152 75.946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_Handsoldering_AKL:D_0805_2012Metric_Castellated"
+			(at 72.39 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 72.39 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 72.39 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9deedebc-4244-496d-a7a8-e2221c4932c1")
+		)
+		(pin "1"
+			(uuid "22085d94-eb58-4686-b5d9-a759a86c7e78")
+		)
+		(instances
+			(project "4x4macropad"
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "D15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-choc:choc_v1_SW_HS_CPG135001S30")
+		(at 66.04 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "965a66bd-8b6e-4313-84f0-66dacad2a065")
+		(property "Reference" "MULT"
+			(at 66.04 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "choc_v1_SW_HS"
+			(at 66.04 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_HS_CPG135001S30_1u"
+			(at 66.04 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 66.04 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 66.04 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "13c07ce9-a893-4d0e-9e08-deda4d01de92")
+		)
+		(pin "1"
+			(uuid "6956868b-2c24-48fd-9891-0964620112a5")
+		)
+		(instances
+			(project "4x4macropad"
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "MULT")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-choc:choc_v1_SW_HS_CPG135001S30")
+		(at 46.99 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a200cb9a-02f8-45d1-851e-7fdd9244a581")
+		(property "Reference" "NUM5"
+			(at 46.99 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "choc_v1_SW_HS"
+			(at 46.99 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_HS_CPG135001S30_1u"
+			(at 46.99 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 46.99 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 46.99 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "cfc85356-47f6-4711-b286-2646d6e102c9")
+		)
+		(pin "1"
+			(uuid "ddd86b41-fd17-4c84-a9a5-e669d8865386")
+		)
+		(instances
+			(project "4x4macropad"
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "NUM5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_SL_Connectors:JST_05")
+		(at 152.4 31.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a2b25a53-3e1a-4f32-9678-1effa701e030")
+		(property "Reference" "RIGHT_PORT"
+			(at 154.94 30.4799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "JST_05"
+			(at 154.94 33.0199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_EH_B5B-EH-A_1x05_P2.50mm_Vertical"
+			(at 152.4 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "JST Connector  5 pins"
+			(at 152.4 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "dfcf2dfb-ddb2-41ea-95cf-8d563d3887cb")
+		)
+		(pin "4"
+			(uuid "5966318c-d9bd-477c-be27-af700fb56dc4")
+		)
+		(pin "3"
+			(uuid "abdfd679-0b92-4c67-a280-09483a43ca59")
+		)
+		(pin "5"
+			(uuid "fc245886-34d4-4df5-8e17-64d2a50e75e7")
+		)
+		(pin "1"
+			(uuid "5ba8dc95-a5c5-4b8b-8def-cd77f801e11a")
+		)
+		(instances
+			(project "4x4macropad"
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "RIGHT_PORT")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-choc:choc_v1_SW_HS_CPG135001S30")
+		(at 46.99 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b273146b-51a5-4a90-baec-c1d9312bc67b")
+		(property "Reference" "DIV"
+			(at 46.99 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "choc_v1_SW_HS"
+			(at 46.99 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_HS_CPG135001S30_1u"
+			(at 46.99 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 46.99 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 46.99 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "01150f2d-627c-4ffa-b500-14e2bde82716")
+		)
+		(pin "1"
+			(uuid "df31c3a6-8de4-4b70-9c28-bba40bc8b7a4")
+		)
+		(instances
+			(project "4x4macropad"
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "DIV")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 34.29 36.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bf52c5a1-62bd-4ab2-bc8e-d77ca955ec2a")
+		(property "Reference" "D1"
+			(at 35.052 31.496 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 35.052 34.036 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_Handsoldering_AKL:D_0805_2012Metric_Castellated"
+			(at 34.29 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 34.29 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 34.29 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d7e4e932-4572-49e4-81df-e119758350fe")
+		)
+		(pin "1"
+			(uuid "7c0c9752-af21-4be0-9332-07691dd55dcb")
+		)
+		(instances
+			(project ""
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 34.29 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bf6be568-ed01-42f0-a356-e8e21cc5015c")
+		(property "Reference" "D5"
+			(at 35.052 45.466 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 35.052 48.006 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_Handsoldering_AKL:D_0805_2012Metric_Castellated"
+			(at 34.29 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 34.29 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 34.29 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0be9df54-d1cf-4738-8f3d-acd324f2372e")
+		)
+		(pin "1"
+			(uuid "40b05c76-9cda-4a1b-b784-ddf0110c5f0a")
+		)
+		(instances
+			(project "4x4macropad"
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-choc:choc_stab")
+		(at 90.17 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c16b81b4-d053-4631-945e-3c88c6f23b1e")
+		(property "Reference" "ADD_STAB"
+			(at 84.836 76.962 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "choc_stab"
+			(at 84.836 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-xp-choc:STAB_choc_2u"
+			(at 90.17 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 90.17 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Kailh Choc-style stabilizer"
+			(at 90.17 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "4x4macropad"
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "ADD_STAB")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 34.29 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c28f908c-7a90-42f2-bf6b-48701bc7ca56")
+		(property "Reference" "D13"
+			(at 35.052 73.406 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 35.052 75.946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_Handsoldering_AKL:D_0805_2012Metric_Castellated"
+			(at 34.29 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 34.29 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 34.29 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b63923d4-e637-41ba-97ab-920c96d3e521")
+		)
+		(pin "1"
+			(uuid "b89e622f-517e-44e4-8268-317869120523")
+		)
+		(instances
+			(project "4x4macropad"
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "D13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-choc:choc_v1_SW_HS_CPG135001S30")
+		(at 66.04 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c8fa05e3-c6a0-422d-a70e-4d2685c76293")
+		(property "Reference" "NUM9"
+			(at 66.04 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "choc_v1_SW_HS"
+			(at 66.04 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_HS_CPG135001S30_1u"
+			(at 66.04 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 66.04 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 66.04 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ab0f01fe-a681-480a-85d0-fc62775b76ea")
+		)
+		(pin "1"
+			(uuid "84a75589-5c78-4b71-8d1c-3d8d5d45f26c")
+		)
+		(instances
+			(project "4x4macropad"
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "NUM9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 72.39 36.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "caf216be-4012-4cd2-89e8-723f6b99c0c0")
+		(property "Reference" "D3"
+			(at 73.152 31.496 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 73.152 34.036 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_Handsoldering_AKL:D_0805_2012Metric_Castellated"
+			(at 72.39 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 72.39 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 72.39 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0b05ad32-08fb-4860-8b99-2a7168de1722")
+		)
+		(pin "1"
+			(uuid "c46a103d-7644-4386-b14c-fb97e063adb6")
+		)
+		(instances
+			(project "4x4macropad"
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 53.34 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ceaa1a2a-710b-417c-8aa7-743eb9c19421")
+		(property "Reference" "D17"
+			(at 54.102 87.376 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 54.102 89.916 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_Handsoldering_AKL:D_0805_2012Metric_Castellated"
+			(at 53.34 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 53.34 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 53.34 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b08fdf6c-0484-46f8-9eb5-6954f4031a74")
+		)
+		(pin "1"
+			(uuid "930544a7-cb39-49a9-a671-9a1f6507590c")
+		)
+		(instances
+			(project "4x4macropad"
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "D17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-choc:choc_v1_SW_HS_CPG135001S30")
+		(at 66.04 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d3dd5221-7ccb-4be5-bb35-773563aee9cc")
+		(property "Reference" "M3"
+			(at 66.04 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "choc_v1_SW_HS"
+			(at 66.04 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_HS_CPG135001S30_1u"
+			(at 66.04 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 66.04 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 66.04 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8159ef76-cad9-4fe8-85bd-e90a6e0483ed")
+		)
+		(pin "1"
+			(uuid "dad3b776-3b2b-4ceb-bbca-b6cdb17e6218")
+		)
+		(instances
+			(project "4x4macropad"
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "M3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 34.29 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e739ad18-e0ac-4a63-8275-516c48d963d2")
+		(property "Reference" "D16"
+			(at 35.052 87.376 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 35.052 89.916 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_Handsoldering_AKL:D_0805_2012Metric_Castellated"
+			(at 34.29 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 34.29 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 34.29 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d6d203ee-c524-40b8-8a57-8dd9419452af")
+		)
+		(pin "1"
+			(uuid "f5bf2b27-9b3a-4256-b464-8c3abb19f7b4")
+		)
+		(instances
+			(project "4x4macropad"
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "D16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-choc:choc_v1_SW_HS_CPG135001S30")
+		(at 46.99 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e7a67b7c-d197-4703-ba3e-d87f054f30c9")
+		(property "Reference" "M2"
+			(at 46.99 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "choc_v1_SW_HS"
+			(at 46.99 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_HS_CPG135001S30_1u"
+			(at 46.99 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 46.99 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 46.99 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "500569be-7aa0-495c-82b1-35ffad5d62fd")
+		)
+		(pin "1"
+			(uuid "3f890046-cf00-4557-88ac-f359cdafcbe4")
+		)
+		(instances
+			(project "4x4macropad"
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "M2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-choc:choc_v1_SW_HS_CPG135001S30")
+		(at 27.94 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f1e72eac-7944-4cf6-a65e-499526815c1c")
+		(property "Reference" "NUM4"
+			(at 27.94 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "choc_v1_SW_HS"
+			(at 27.94 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_HS_CPG135001S30_1u"
+			(at 27.94 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 27.94 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 27.94 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c7a3cf62-3c50-434c-aea0-f69a0d870397")
+		)
+		(pin "1"
+			(uuid "75189477-2946-45a5-bc3a-7e8c6ac59a00")
+		)
+		(instances
+			(project "4x4macropad"
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "NUM4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_SL_Connectors:JST_05")
+		(at 132.08 31.75 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f848ae25-0a5a-4bec-a391-5631a036d764")
+		(property "Reference" "LEFT_PORT"
+			(at 124.46 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "JST_05"
+			(at 124.46 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_EH_B5B-EH-A_1x05_P2.50mm_Vertical"
+			(at 132.08 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "JST Connector  5 pins"
+			(at 132.08 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "776a3f36-f130-48e0-bad4-e61cf610adb2")
+		)
+		(pin "4"
+			(uuid "0034a754-ae34-4ee0-9b0c-9970bc240b98")
+		)
+		(pin "3"
+			(uuid "354bc04a-9cb5-4802-9934-03f5d188fc07")
+		)
+		(pin "5"
+			(uuid "b5105073-6787-43d0-9991-9ccfd39b126c")
+		)
+		(pin "1"
+			(uuid "3720d8ee-ce76-4c29-8a97-5288f8ce701d")
+		)
+		(instances
+			(project ""
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "LEFT_PORT")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-choc:choc_v1_SW_HS_CPG135001S30")
+		(at 46.99 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fac26762-eedd-4c45-83d8-8134e7f51800")
+		(property "Reference" "NUM0"
+			(at 46.99 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "choc_v1_SW_HS"
+			(at 46.99 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_HS_CPG135001S30_1u"
+			(at 46.99 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 46.99 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 46.99 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3090589f-99a8-4da6-9c21-d74a4054980b")
+		)
+		(pin "1"
+			(uuid "e68e8e4e-405f-4150-8b5a-c1c9f356baa8")
+		)
+		(instances
+			(project "4x4macropad"
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "NUM0")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 53.34 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fc1cac1d-63d4-4e57-ba22-eaac57852375")
+		(property "Reference" "D14"
+			(at 54.102 73.406 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 54.102 75.946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_Handsoldering_AKL:D_0805_2012Metric_Castellated"
+			(at 53.34 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 53.34 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 53.34 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3d38d6ca-3496-41a6-a463-257bb946eb4b")
+		)
+		(pin "1"
+			(uuid "08648587-a71b-4df9-94dd-f4f38bab8745")
+		)
+		(instances
+			(project "4x4macropad"
+				(path "/54b7e9cd-059c-4f85-969a-fc3ee3a9125c"
+					(reference "D14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
