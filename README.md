@@ -36,11 +36,9 @@ main              # Stable, production-ready code (only tested & reviewed change
 ```
 
 ## Contributors
-<a href = "https://github.com/Kymkim/modular-kbd/graphs/contributors">
-  <img src = "https://contrib.rocks/image?repo = Kymkim/modular-kbd"/>
+<a href="https://github.com/Kymkim/modular-kbd/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Kymkim/modular-kbd" />
 </a>
-
-Made with [contributors-img](https://contrib.rocks).
 
 ## License
 [GNU GPL](LICENSE) – free to use, modify, and share.
