@@ -35,6 +35,12 @@ main              # Stable, production-ready code (only tested & reviewed change
     └─ docs/protocol-update
 ```
 
+## Contributors
+<a href = "https://github.com/Kymkim/modular-kbd/graphs/contributors">
+  <img src = "https://contrib.rocks/image?repo = Kymkim/modular-kbd"/>
+</a>
+
+Made with [contributors-img](https://contrib.rocks).
 
 ## License
-[MIT](LICENSE) – free to use, modify, and share.
+[GNU GPL](LICENSE) – free to use, modify, and share.
