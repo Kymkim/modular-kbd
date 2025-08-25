@@ -115,15 +115,19 @@ int main(void)
 
       case MODE_MODULE:
         DMA_Queue_Init(&RxQueue);
+        //TODO: Keyscanning. And transporting signals
         break;
       
       case MODE_MASTER:
-        
-        
-
-      break;  
+        DMA_Queue_Init(&RxQueue);
+        //TODO: Sending to USB and key keyscanning
+        break;  
     }
   }
+}
+
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
+  //TODO: Handle recieved message here
 }
 
 void DMA_Queue_Init(DMA_QUEUE* q){
