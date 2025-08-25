@@ -94,9 +94,6 @@ The **same queue system** also handles the module’s own keypresses:
 * The main loop processes the queue, sending keypresses to the master device.
 
 This unified queue system ensures **non-blocking, deterministic communication** between modules and the master, even under high data load.
-
-Ooo~ let’s give your UART message section a little sparkle ✨ and make it clearer, more structured, and easier to read. I’ll also fix formatting inconsistencies and clarify the purpose of each field. 💙  
-
 ---
 
 # UART Message Structure  
