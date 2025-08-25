@@ -20,6 +20,7 @@ typedef struct {
 } DMA_QUEUE;
 
 DMA_QUEUE RxQueue;
+uint8_t DMA_RX_BUFFER[4];
 
 I2C_HandleTypeDef hi2c1;
 TIM_HandleTypeDef htim3;
@@ -51,8 +52,6 @@ void DMA_Queue_Init(DMA_QUEUE* q);
 
 int main(void)
 {
-
-
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
   HAL_Init();
 
@@ -77,12 +76,14 @@ int main(void)
     switch(CURRENT_MODE){
 
       case MODE_INACTIVE:
+        //TODO: Check if connected VIA USB, If so switch to master mode 
         uint8_t candidates_depth[] = {0xFF, 0xFF, 0xFF, 0xFF};
 
         //Poll all UART Ports
         for(uint8_t i = 0; i<4; i++){
           uint8_t rxBuffer[4] = {0};
-          HAL_UART_Transmit(UART_PORTS[i], MODULE_HANDSHAKE_REQUEST, 4, HAL_MAX_DELAY);
+          uint8_t msg[4] = {0x00, 0x0F, 0x00, 0x00};
+          HAL_UART_Transmit(UART_PORTS[i], msg, 4, HAL_MAX_DELAY);
           if (HAL_UART_Receive(UART_PORTS[i], rxBuffer, 4, 500) == HAL_OK) {
             //Is a type of confirmation message
             if(rxBuffer[1] == 0xFF){
@@ -108,13 +109,13 @@ int main(void)
         }
         if(best_parent != 0xFF){      // found a valid parent
           PARENT = UART_PORTS[best_parent];  // assign UART handle pointer
-          DMA_Queue_Init(&RxQueue);
           CURRENT_MODE = MODE_MODULE;
         }
-      break;
+        break;
 
       case MODE_MODULE:
-      break;
+        DMA_Queue_Init(&RxQueue);
+        break;
       
       case MODE_MASTER:
         
@@ -130,7 +131,7 @@ void DMA_Queue_Init(DMA_QUEUE* q){
   q->tail = 0;
   //Activate DMA to all ports
   for(uint8_t i = 0; i<4; i++){
-    HAL_UART_Receive_DMA(&UART_PORTS[i], RxQueue.buffer, 4);
+    HAL_UART_Receive_DMA(UART_PORTS[i], DMA_RX_BUFFER, 4);
   }
 }
 
