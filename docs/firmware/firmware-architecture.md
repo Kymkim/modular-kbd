@@ -54,9 +54,6 @@ After selecting a parent, the device transitions from **Inactive Mode → Module
 
 Devices already in Master or Module mode should respond to discovery queries with their current depth value.
 
-Ooh\~ let’s make your UART DMA explanation sparkle ✨ I’ll clean it up, add clarity on why interrupts could be tricky, and make the flow a bit more structured. Here’s a polished version:
-
-
 # UART Queue with DMA
 
 Data transmission in this system is handled via **UART**. However, standard UART operations are **blocking**:
