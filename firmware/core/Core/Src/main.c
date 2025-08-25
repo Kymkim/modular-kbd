@@ -7,6 +7,8 @@
 #define MODE_MODULE 2
 #define DMA_BUFFER_SIZE 16
 
+#define MODULE_HANDSHAKE_REQUEST 0x000F0000
+
 typedef struct{
   uint8_t data[4];
 } Packet;
@@ -26,6 +28,8 @@ UART_HandleTypeDef huart4;
 UART_HandleTypeDef huart5;
 UART_HandleTypeDef huart1;
 UART_HandleTypeDef huart2;
+UART_HandleTypeDef* UART_PORTS[] = { &huart4, &huart5, &huart1, &huart2 };
+UART_HandleTypeDef* PARENT;
 DMA_HandleTypeDef hdma_uart4_rx;
 DMA_HandleTypeDef hdma_uart5_rx;
 DMA_HandleTypeDef hdma_usart1_rx;
@@ -70,13 +74,64 @@ int main(void)
 
   while (1)
   {
+    switch(CURRENT_MODE){
 
+      case MODE_INACTIVE:
+        uint8_t candidates_depth[] = {0xFF, 0xFF, 0xFF, 0xFF};
+
+        //Poll all UART Ports
+        for(uint8_t i = 0; i<4; i++){
+          uint8_t rxBuffer[4] = {0};
+          HAL_UART_Transmit(UART_PORTS[i], MODULE_HANDSHAKE_REQUEST, 4, HAL_MAX_DELAY);
+          if (HAL_UART_Receive(UART_PORTS[i], rxBuffer, 4, 500) == HAL_OK) {
+            //Is a type of confirmation message
+            if(rxBuffer[1] == 0xFF){
+              candidates_depth[i] = rxBuffer[0];
+            }else{
+              candidates_depth[i] = 0xFF;
+            }
+          } else {
+            // Timeout or error
+            candidates_depth[i] = 0xFF; 
+          } 
+        }
+
+        // Arbitration: 0xFF means invalid
+        uint8_t min = 0xFF;           // start with invalid value
+        uint8_t best_parent = 0xFF;   // invalid index by default
+
+        for(uint8_t i = 0; i < 4; i++){
+          if(candidates_depth[i] != 0xFF && candidates_depth[i] < min){
+            min = candidates_depth[i];
+            best_parent = i;
+          }
+        }
+        if(best_parent != 0xFF){      // found a valid parent
+          PARENT = UART_PORTS[best_parent];  // assign UART handle pointer
+          DMA_Queue_Init(&RxQueue);
+          CURRENT_MODE = MODE_MODULE;
+        }
+      break;
+
+      case MODE_MODULE:
+      break;
+      
+      case MODE_MASTER:
+        
+        
+
+      break;  
+    }
   }
 }
 
 void DMA_Queue_Init(DMA_QUEUE* q){
   q->head = 0;
   q->tail = 0;
+  //Activate DMA to all ports
+  for(uint8_t i = 0; i<4; i++){
+    HAL_UART_Receive_DMA(&UART_PORTS[i], RxQueue.buffer, 4);
+  }
 }
 
 bool DMA_Queue_IsFull(DMA_QUEUE* q){
