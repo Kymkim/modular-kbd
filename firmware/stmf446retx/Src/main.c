@@ -145,6 +145,15 @@ int main(void)
     //     }
     //   }
     //   HAL_GPIO_WritePin(col_pins[col].PORT, col_pins[col].PIN, GPIO_PIN_RESET);
+    // } for(int col = 0; col < COLS; col++){
+    //   HAL_GPIO_WritePin(col_pins[col].PORT, col_pins[col].PIN, GPIO_PIN_SET);
+    //   HAL_Delay(1);
+    //   for(int row = 0; row < ROWS; row++){
+    //     if(HAL_GPIO_ReadPin(row_pins[row].PORT, row_pins[row].PIN)){
+    //       addHIDReport(matrix[row][col], 1);
+    //     }
+    //   }
+    //   HAL_GPIO_WritePin(col_pins[col].PORT, col_pins[col].PIN, GPIO_PIN_RESET);
     // }
     USBD_HID_SendReport(&hUsbDeviceFS, (uint8_t*)&REPORT, sizeof(REPORT));
     HAL_Delay(20);
