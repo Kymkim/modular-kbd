@@ -1,5 +1,7 @@
 #include "main.h"
+#include "numpad.h"
 #include "usb_device.h"
+#include "usbd_hid.h"
 #include <stdbool.h>
 
 #define MODE_INACTIVE 0
@@ -8,6 +10,8 @@
 #define DMA_BUFFER_SIZE 16
 
 #define MODULE_HANDSHAKE_REQUEST 0x000F0000
+
+extern USBD_HandleTypeDef hUsbDeviceFS;
 
 typedef struct{
   uint8_t data[4];
@@ -19,17 +23,28 @@ typedef struct {
   volatile uint16_t tail;
 } DMA_QUEUE;
 
+typedef struct{
+  uint8_t MODIFIER;
+  uint8_t RESERVED;
+  uint8_t KEYPRESS[12];
+} HIDReportNKRO;
+
 DMA_QUEUE RxQueue;
-uint8_t DMA_RX_BUFFER[4];
+uint8_t DMA_RX_BUFFER_N[4];
+uint8_t DMA_RX_BUFFER_E[4];
+uint8_t DMA_RX_BUFFER_S[4];
+uint8_t DMA_RX_BUFFER_W[4];
 
 I2C_HandleTypeDef hi2c1;
 TIM_HandleTypeDef htim3;
 
-UART_HandleTypeDef huart4;
-UART_HandleTypeDef huart5;
-UART_HandleTypeDef huart1;
-UART_HandleTypeDef huart2;
-UART_HandleTypeDef* UART_PORTS[] = { &huart4, &huart5, &huart1, &huart2 };
+HIDReportNKRO USB_REPORT;
+
+UART_HandleTypeDef huart4; //West
+UART_HandleTypeDef huart5; //North
+UART_HandleTypeDef huart1; //East
+UART_HandleTypeDef huart2; //South
+UART_HandleTypeDef* UART_PORTS[] = { &huart5, &huart1, &huart2, &huart4 };
 UART_HandleTypeDef* PARENT;
 DMA_HandleTypeDef hdma_uart4_rx;
 DMA_HandleTypeDef hdma_uart5_rx;
@@ -48,7 +63,7 @@ static void MX_UART5_Init(void);
 static void MX_USART1_UART_Init(void);
 static void MX_USART2_UART_Init(void);
 void DMA_Queue_Init(DMA_QUEUE* q);
-
+void addHIDReport(uint8_t usageID, uint8_t isPressed);
 
 int main(void)
 {
@@ -76,14 +91,32 @@ int main(void)
     switch(CURRENT_MODE){
 
       case MODE_INACTIVE:
-        //TODO: Check if connected VIA USB, If so switch to master mode 
+        
+        if (hUsbDeviceFS.dev_state == USBD_STATE_CONFIGURED) {
+          CURRENT_MODE = MODE_MASTER;
+          HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, GPIO_PIN_SET);
+          HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);
+          HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_SET);
+          HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_SET);
+          break;
+        }
+
         uint8_t candidates_depth[] = {0xFF, 0xFF, 0xFF, 0xFF};
 
         //Poll all UART Ports
         for(uint8_t i = 0; i<4; i++){
+
           uint8_t rxBuffer[4] = {0};
           uint8_t msg[4] = {0x00, 0x0F, 0x00, 0x00};
+
+          //Send request
           HAL_UART_Transmit(UART_PORTS[i], msg, 4, HAL_MAX_DELAY);
+          
+          HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, GPIO_PIN_RESET);
+          HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);
+          HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_RESET);
+          HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_SET);
+          //Await Response
           if (HAL_UART_Receive(UART_PORTS[i], rxBuffer, 4, 500) == HAL_OK) {
             //Is a type of confirmation message
             if(rxBuffer[1] == 0xFF){
@@ -94,7 +127,11 @@ int main(void)
           } else {
             // Timeout or error
             candidates_depth[i] = 0xFF; 
-          } 
+          }
+          HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, GPIO_PIN_SET);
+          HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
+          HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_SET);
+          HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_RESET);
         }
 
         // Arbitration: 0xFF means invalid
@@ -107,10 +144,30 @@ int main(void)
             best_parent = i;
           }
         }
+
         if(best_parent != 0xFF){      // found a valid parent
           PARENT = UART_PORTS[best_parent];  // assign UART handle pointer
           CURRENT_MODE = MODE_MODULE;
+          HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, GPIO_PIN_RESET);
+          HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
+          HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_RESET);
+          HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_RESET);
+          switch(best_parent){
+            case 0:
+              HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, GPIO_PIN_SET);
+              break;
+            case 1:
+              HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);
+              break;
+            case 2:
+              HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_SET);
+              break;
+            case 3:
+              HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_SET);
+              break;
+          }
         }
+        
         break;
 
       case MODE_MODULE:
@@ -120,23 +177,59 @@ int main(void)
       
       case MODE_MASTER:
         DMA_Queue_Init(&RxQueue);
-        //TODO: Sending to USB and key keyscanning
+        
+        for(int col = 0; col < COLS; col++){
+          HAL_GPIO_WritePin(col_pins[col].PORT, col_pins[col].PIN, GPIO_PIN_SET);
+          HAL_Delay(1);
+          for(int row = 0; row < ROWS; row++){
+            if(HAL_GPIO_ReadPin(row_pins[row].PORT, row_pins[row].PIN)){
+              addHIDReport(matrix[row][col], 1);
+            }
+          }
+          HAL_GPIO_WritePin(col_pins[col].PORT, col_pins[col].PIN, GPIO_PIN_RESET);
+        } 
+        //Send USB Report
+        USBD_HID_SendReport(&hUsbDeviceFS, (uint8_t*)&USB_REPORT, sizeof(USB_REPORT));
+
+        HAL_Delay(20);
         break;  
     }
   }
 }
 
+void addHIDReport(uint8_t usageID, uint8_t isPressed){
+  if(usageID < 0x04 || usageID > 0x73) return; //Usage ID is out of bounds
+  uint16_t bit_index = usageID - 0x04; //Offset, UsageID starts with 0x04. Gives us the actual value of the bit
+  uint8_t byte_index = bit_index/8;    //Calculates which byte in the REPORT array 
+  uint8_t bit_offset = bit_index%8;    //Calculates which bits in the REPORT[byte_index] should be set/unset
+
+  if(isPressed){
+    USB_REPORT.KEYPRESS[byte_index] |= (1 << bit_offset);
+  }else{
+    USB_REPORT.KEYPRESS[byte_index] &= ~(1 << bit_offset);
+  }
+}
+
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
   //TODO: Handle recieved message here
+  switch(CURRENT_MODE){
+    case MODE_MODULE:
+      
+      break;
+    case MODE_MASTER:
+      //Handle master message and add to USB_REPORT
+      break;
+  }
 }
 
 void DMA_Queue_Init(DMA_QUEUE* q){
   q->head = 0;
   q->tail = 0;
   //Activate DMA to all ports
-  for(uint8_t i = 0; i<4; i++){
-    HAL_UART_Receive_DMA(UART_PORTS[i], DMA_RX_BUFFER, 4);
-  }
+  HAL_UART_Receive_DMA(&huart5, DMA_RX_BUFFER_N, 4);
+  HAL_UART_Receive_DMA(&huart1, DMA_RX_BUFFER_E, 4);
+  HAL_UART_Receive_DMA(&huart2, DMA_RX_BUFFER_S, 4);
+  HAL_UART_Receive_DMA(&huart4, DMA_RX_BUFFER_W, 4);
 }
 
 bool DMA_Queue_IsFull(DMA_QUEUE* q){
@@ -406,15 +499,23 @@ static void MX_DMA_Init(void)
   /* DMA1_Stream0_IRQn interrupt configuration */
   HAL_NVIC_SetPriority(DMA1_Stream0_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(DMA1_Stream0_IRQn);
+  HAL_NVIC_SetPriority(DMA1_Stream7_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(DMA1_Stream7_IRQn);
   /* DMA1_Stream2_IRQn interrupt configuration */
   HAL_NVIC_SetPriority(DMA1_Stream2_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(DMA1_Stream2_IRQn);
+  HAL_NVIC_SetPriority(DMA1_Stream4_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(DMA1_Stream4_IRQn);
   /* DMA1_Stream5_IRQn interrupt configuration */
   HAL_NVIC_SetPriority(DMA1_Stream5_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(DMA1_Stream5_IRQn);
+  HAL_NVIC_SetPriority(DMA1_Stream6_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(DMA1_Stream6_IRQn);
   /* DMA2_Stream2_IRQn interrupt configuration */
   HAL_NVIC_SetPriority(DMA2_Stream2_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(DMA2_Stream2_IRQn);
+  HAL_NVIC_SetPriority(DMA2_Stream7_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(DMA2_Stream7_IRQn);
 
 }
 
