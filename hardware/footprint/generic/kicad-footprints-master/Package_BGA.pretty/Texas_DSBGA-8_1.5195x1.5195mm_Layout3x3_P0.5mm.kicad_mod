@@ -1,0 +1,229 @@
+(footprint "Texas_DSBGA-8_1.5195x1.5195mm_Layout3x3_P0.5mm"
+	(version 20241229)
+	(generator "kicad-footprint-generator")
+	(layer "F.Cu")
+	(descr "Texas Instruments, DSBGA, area grid, YZR pad definition, 1.5195x1.5195mm, 8 Ball, 3x3 Layout, 0.5mm Pitch, generated with kicad-footprint-generator ipc_bga_generator.py, http://www.ti.com/lit/ml/mxbg270/mxbg270.pdf")
+	(tags "BGA 8 0.5")
+	(solder_mask_margin 0.05)
+	(property "Reference" "REF**"
+		(at 0 -1.75975 0)
+		(layer "F.SilkS")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Texas_DSBGA-8_1.5195x1.5195mm_Layout3x3_P0.5mm"
+		(at 0 1.75975 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -0.89125 0.89125)
+		(end -0.89125 -0.500625)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start -0.500625 -0.89125)
+		(end 0.89125 -0.89125)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start 0.89125 -0.89125)
+		(end 0.89125 0.89125)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start 0.89125 0.89125)
+		(end -0.89125 0.89125)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_poly
+		(pts
+			(xy -0.89125 -0.89125)
+			(xy -1.39125 -0.89125)
+			(xy -0.89125 -1.39125)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start -1.76 -1.76)
+		(end -1.76 1.76)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+	)
+	(fp_line
+		(start -1.76 1.76)
+		(end 1.76 1.76)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+	)
+	(fp_line
+		(start 1.76 -1.76)
+		(end -1.76 -1.76)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+	)
+	(fp_line
+		(start 1.76 1.76)
+		(end 1.76 -1.76)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+	)
+	(fp_line
+		(start -0.75975 -0.379875)
+		(end -0.379875 -0.75975)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start -0.75975 0.75975)
+		(end -0.75975 -0.379875)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start -0.379875 -0.75975)
+		(end 0.75975 -0.75975)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 0.75975 -0.75975)
+		(end 0.75975 0.75975)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 0.75975 0.75975)
+		(end -0.75975 0.75975)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 0.35 0.35)
+				(thickness 0.0525)
+			)
+		)
+	)
+	(pad "A1" smd circle
+		(at -0.5 -0.5)
+		(size 0.2625 0.2625)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "A2" smd circle
+		(at 0 -0.5)
+		(size 0.2625 0.2625)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "A3" smd circle
+		(at 0.5 -0.5)
+		(size 0.2625 0.2625)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "B1" smd circle
+		(at -0.5 0)
+		(size 0.2625 0.2625)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "B3" smd circle
+		(at 0.5 0)
+		(size 0.2625 0.2625)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "C1" smd circle
+		(at -0.5 0.5)
+		(size 0.2625 0.2625)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "C2" smd circle
+		(at 0 0.5)
+		(size 0.2625 0.2625)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "C3" smd circle
+		(at 0.5 0.5)
+		(size 0.2625 0.2625)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/Package_BGA.3dshapes/Texas_DSBGA-8_1.5195x1.5195mm_Layout3x3_P0.5mm.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

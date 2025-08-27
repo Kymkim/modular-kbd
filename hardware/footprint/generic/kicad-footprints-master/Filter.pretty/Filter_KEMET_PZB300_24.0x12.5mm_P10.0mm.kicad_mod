@@ -1,0 +1,138 @@
+(footprint "Filter_KEMET_PZB300_24.0x12.5mm_P10.0mm"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "EMI suppression capacitor PZB300 series, length 24.0 mm, width 12.5 mm, drill hole 1.00mm ( https://content.kemet.com/datasheets/KEM_F3019_PZB300X2_2XY2_275.pdf )")
+	(tags "suppressor filter cap")
+	(property "Reference" "REF**"
+		(at 0 -7.62 0)
+		(layer "F.SilkS")
+		(uuid "70dad36f-202c-4ef8-af87-c2ad8592a670")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Filter_KEMET_PZB300_24.0x12.5mm_P10.0mm"
+		(at 10 7.62 0)
+		(layer "F.Fab")
+		(uuid "68f21b39-bf4e-4319-9343-8cc00ab9f73b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 10 0 90)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a2f435df-ed14-4a6f-93be-e9fd8a1c5193")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 90)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f4134f17-31a3-4aca-9a31-e5732170c7c0")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -2.1 -6.35)
+		(end 22.1 6.35)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "f9e2ba1a-4fd0-402a-bf47-fa30a87d1cd7")
+	)
+	(fp_rect
+		(start -2.25 -6.5)
+		(end 22.25 6.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "2f7372ac-d235-48cb-b5c2-7a9271b8515f")
+	)
+	(fp_rect
+		(start -2 -6.25)
+		(end 22 6.25)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "2ea2a072-42c8-48ef-a36b-bbe27a4609f1")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 10 0 180)
+		(layer "F.Fab")
+		(uuid "8e9e56f2-976a-4605-af25-a4091a5da855")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0 180)
+		(size 2 2)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 90)
+		(uuid "5165ed41-4397-4c5b-ba8e-da373868bed0")
+	)
+	(pad "2" thru_hole circle
+		(at 20 0 180)
+		(size 2 2)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "10837b0b-975f-4586-8103-bc0a155f46bf")
+	)
+	(pad "3" thru_hole circle
+		(at 10 0 180)
+		(size 2 2)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "9b0b3a88-91f8-485f-9d46-859ff8df5358")
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/Filter.3dshapes/Filter_KEMET_PZB300_24.0x12.5mm_P10.0mm.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

@@ -1,0 +1,254 @@
+(footprint "Texas_DSBGA-6_0.757x1.01mm_Layout2x3_P0.35mm"
+	(version 20241229)
+	(generator "kicad-footprint-generator")
+	(layer "F.Cu")
+	(descr "Texas Instruments, DSBGA-6, 0.757x1.01mm, SMD, YKA0006 pad definition, 0.757x1.01mm, 6 Ball, 2x3 Layout, 0.35mm Pitch, generated with kicad-footprint-generator ipc_bga_generator.py, https://www.ti.com/lit/ds/symlink/tps62843.pdf")
+	(tags "BGA 6 0.35 TI 0.787x1.04mm (max)")
+	(solder_mask_margin -0.0325)
+	(solder_paste_margin -0.0275)
+	(property "Reference" "REF**"
+		(at 0 -1.505 0)
+		(layer "F.SilkS")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Texas_DSBGA-6_0.757x1.01mm_Layout2x3_P0.35mm"
+		(at 0 1.505 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -0.5675 0.7425)
+		(end -0.5675 -0.51375)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start -0.33875 -0.7425)
+		(end 0.5675 -0.7425)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start 0.5675 -0.7425)
+		(end 0.5675 0.7425)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start 0.5675 0.7425)
+		(end -0.5675 0.7425)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_poly
+		(pts
+			(xy -0.5675 -0.7425)
+			(xy -1.0675 -0.7425)
+			(xy -0.5675 -1.2425)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start -1.38 -1.51)
+		(end -1.38 1.51)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+	)
+	(fp_line
+		(start -1.38 1.51)
+		(end 1.38 1.51)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+	)
+	(fp_line
+		(start 1.38 -1.51)
+		(end -1.38 -1.51)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+	)
+	(fp_line
+		(start 1.38 1.51)
+		(end 1.38 -1.51)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+	)
+	(fp_line
+		(start -0.3785 -0.31575)
+		(end -0.18925 -0.505)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start -0.3785 0.505)
+		(end -0.3785 -0.31575)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start -0.18925 -0.505)
+		(end 0.3785 -0.505)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 0.3785 -0.505)
+		(end 0.3785 0.505)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 0.3785 0.505)
+		(end -0.3785 0.505)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 -90)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 0.23 0.23)
+				(thickness 0.0345)
+			)
+		)
+	)
+	(pad "" smd roundrect
+		(at -0.175 -0.35)
+		(size 0.21 0.21)
+		(layers "F.Paste")
+		(roundrect_rratio 0.184524)
+	)
+	(pad "" smd roundrect
+		(at -0.175 0)
+		(size 0.21 0.21)
+		(layers "F.Paste")
+		(roundrect_rratio 0.184524)
+	)
+	(pad "" smd roundrect
+		(at -0.175 0.35)
+		(size 0.21 0.21)
+		(layers "F.Paste")
+		(roundrect_rratio 0.184524)
+	)
+	(pad "" smd roundrect
+		(at 0.175 -0.35)
+		(size 0.21 0.21)
+		(layers "F.Paste")
+		(roundrect_rratio 0.184524)
+	)
+	(pad "" smd roundrect
+		(at 0.175 0)
+		(size 0.21 0.21)
+		(layers "F.Paste")
+		(roundrect_rratio 0.184524)
+	)
+	(pad "" smd roundrect
+		(at 0.175 0.35)
+		(size 0.21 0.21)
+		(layers "F.Paste")
+		(roundrect_rratio 0.184524)
+	)
+	(pad "A1" smd circle
+		(at -0.175 -0.35)
+		(size 0.265 0.265)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask")
+	)
+	(pad "A2" smd circle
+		(at 0.175 -0.35)
+		(size 0.265 0.265)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask")
+	)
+	(pad "B1" smd circle
+		(at -0.175 0)
+		(size 0.265 0.265)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask")
+	)
+	(pad "B2" smd circle
+		(at 0.175 0)
+		(size 0.265 0.265)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask")
+	)
+	(pad "C1" smd circle
+		(at -0.175 0.35)
+		(size 0.265 0.265)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask")
+	)
+	(pad "C2" smd circle
+		(at 0.175 0.35)
+		(size 0.265 0.265)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask")
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/Package_BGA.3dshapes/Texas_DSBGA-6_0.757x1.01mm_Layout2x3_P0.35mm.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

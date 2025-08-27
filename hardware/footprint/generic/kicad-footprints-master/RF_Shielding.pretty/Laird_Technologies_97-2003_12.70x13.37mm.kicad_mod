@@ -1,0 +1,120 @@
+(footprint "Laird_Technologies_97-2003_12.70x13.37mm"
+	(version 20241229)
+	(generator "kicad-footprint-generator")
+	(layer "F.Cu")
+	(descr "Laird Technologies 97-2003 EZ PEEL Shielding Cabinet One Piece SMD 12.70x13.37mm, http://cdn.lairdtech.com/home/brandworld/files/Board%20Level%20Shields%20Catalog%20Download.pdf")
+	(tags "Shielding Cabinet")
+	(property "Reference" "REF**"
+		(at 0 -7.91 0)
+		(layer "F.SilkS")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Laird_Technologies_97-2003_12.70x13.37mm"
+		(at 0 7.91 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -6.73 -7.21)
+		(end 6.73 7.21)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+	)
+	(fp_rect
+		(start -5.84 -6.33)
+		(end 5.84 6.33)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+	)
+	(fp_rect
+		(start -6.35 -6.685)
+		(end 6.35 6.685)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -6.285 -6.77)
+		(size 0.38 0.38)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "1" smd rect
+		(at -6.285 0)
+		(size 0.38 13.16)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "1" smd rect
+		(at -6.285 6.77)
+		(size 0.38 0.38)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "1" smd rect
+		(at 0 -6.77)
+		(size 12.19 0.38)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "1" smd rect
+		(at 0 6.77)
+		(size 12.19 0.38)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "1" smd rect
+		(at 6.285 -6.77)
+		(size 0.38 0.38)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "1" smd rect
+		(at 6.285 0)
+		(size 0.38 13.16)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "1" smd rect
+		(at 6.285 6.77)
+		(size 0.38 0.38)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/RF_Shielding.3dshapes/Laird_Technologies_97-2003_12.70x13.37mm.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
