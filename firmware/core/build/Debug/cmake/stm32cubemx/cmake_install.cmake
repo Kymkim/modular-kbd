@@ -1,4 +1,4 @@
-# Install script for directory: /home/kymkim/Projects/modular-kbd/firmware/core/cmake/stm32cubemx
+# Install script for directory: /home/ukim/Projects/modular-kbd/firmware/core/cmake/stm32cubemx
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,6 +34,6 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/home/kymkim/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/arm-none-eabi-objdump")
+  set(CMAKE_OBJDUMP "/usr/bin/arm-none-eabi-objdump")
 endif()
 

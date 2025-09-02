@@ -10,11 +10,7 @@
              */
             "name": "STM32",
             "configurationProvider": "ms-vscode.cmake-tools",
-            "intelliSenseMode": "${default}",
-            "defines": [
-              "STM32F446xx",
-              "USE_HAL_DRIVER"
-            ]
+            "intelliSenseMode": "${default}"
         }
     ]
 }

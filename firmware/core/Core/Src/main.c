@@ -29,6 +29,14 @@ typedef struct{
   uint8_t KEYPRESS[12];
 } HIDReportNKRO;
 
+typedef struct{
+  uint8_t MODIFIER;
+  uint8_t RESERVED;
+  uint8_t KEYPRESS[6]; // for 6 Key Rollover, changed index to 6.
+} HIDReport6KRO;
+
+extern USBD_HandleTypeDef hUsbDeviceFS;
+
 DMA_QUEUE RxQueue;
 uint8_t DMA_RX_BUFFER_N[4];
 uint8_t DMA_RX_BUFFER_E[4];
@@ -84,7 +92,12 @@ int main(void)
   MX_USART2_UART_Init();
   MX_USB_DEVICE_Init();
 
-  CURRENT_MODE = MODE_INACTIVE;
+  CURRENT_MODE = MODE_MASTER;
+
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_RESET);
 
   while (1)
   {
@@ -176,22 +189,28 @@ int main(void)
         break;
       
       case MODE_MASTER:
-        DMA_Queue_Init(&RxQueue);
+        // DMA_Queue_Init(&RxQueue);
         
-        for(int col = 0; col < COLS; col++){
-          HAL_GPIO_WritePin(col_pins[col].PORT, col_pins[col].PIN, GPIO_PIN_SET);
-          HAL_Delay(1);
-          for(int row = 0; row < ROWS; row++){
-            if(HAL_GPIO_ReadPin(row_pins[row].PORT, row_pins[row].PIN)){
-              addHIDReport(matrix[row][col], 1);
-            }
-          }
-          HAL_GPIO_WritePin(col_pins[col].PORT, col_pins[col].PIN, GPIO_PIN_RESET);
-        } 
-        //Send USB Report
-        USBD_HID_SendReport(&hUsbDeviceFS, (uint8_t*)&USB_REPORT, sizeof(USB_REPORT));
+        // for(int col = 0; col < COLS; col++){
+        //   HAL_GPIO_WritePin(col_pins[col].PORT, col_pins[col].PIN, GPIO_PIN_SET);
+        //   HAL_Delay(1);
+        //   for(int row = 0; row < ROWS; row++){
+        //     if(HAL_GPIO_ReadPin(row_pins[row].PORT, row_pins[row].PIN)){
+        //       addHIDReport(matrix[row][col], 1);
+        //     }
+        //   }
+        //   HAL_GPIO_WritePin(col_pins[col].PORT, col_pins[col].PIN, GPIO_PIN_RESET);
+        // } 
+        // //Send USB Report
+        // USBD_HID_SendReport(&hUsbDeviceFS, (uint8_t*)&USB_REPORT, sizeof(USB_REPORT));
 
-        HAL_Delay(20);
+        // HAL_Delay(20);
+        addHIDReport(KEY_A, 1);
+        HAL_Delay(500);
+        USBD_HID_SendReport(&hUsbDeviceFS, (uint8_t*)&USB_REPORT, sizeof(USB_REPORT));
+        addHIDReport(KEY_A, 0);
+        HAL_Delay(500);
+        USBD_HID_SendReport(&hUsbDeviceFS, (uint8_t*)&USB_REPORT, sizeof(USB_REPORT));
         break;  
     }
   }
@@ -574,6 +593,14 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
+  GPIO_InitStruct.Pin = GPIO_PIN_5;         // PA5
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP; // Push-pull output
+  GPIO_InitStruct.Pull = GPIO_NOPULL;       // No pull-up/down
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET); // Turn LED off initially
 
   /* USER CODE BEGIN MX_GPIO_Init_2 */
 

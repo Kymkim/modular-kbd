@@ -17,7 +17,7 @@
 rule ASM_COMPILER__core_unscanned_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = ${LAUNCHER}${CODE_CHECK}/home/kymkim/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ${LAUNCHER}${CODE_CHECK}/opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building ASM object $out
 
 
@@ -27,7 +27,7 @@ rule ASM_COMPILER__core_unscanned_Debug
 rule C_COMPILER__core_unscanned_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = ${LAUNCHER}${CODE_CHECK}/home/kymkim/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ${LAUNCHER}${CODE_CHECK}/opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -35,7 +35,7 @@ rule C_COMPILER__core_unscanned_Debug
 # Rule for linking C executable.
 
 rule C_EXECUTABLE_LINKER__core_Debug
-  command = $PRE_LINK && /home/kymkim/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  command = $PRE_LINK && /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking C executable $TARGET_FILE
   restat = $RESTAT
 
@@ -54,7 +54,7 @@ rule CUSTOM_COMMAND
 rule C_COMPILER__STM32_Drivers_unscanned_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = ${LAUNCHER}${CODE_CHECK}/home/kymkim/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ${LAUNCHER}${CODE_CHECK}/opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -64,7 +64,7 @@ rule C_COMPILER__STM32_Drivers_unscanned_Debug
 rule C_COMPILER__USB_Device_Library_unscanned_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = ${LAUNCHER}${CODE_CHECK}/home/kymkim/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ${LAUNCHER}${CODE_CHECK}/opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -72,7 +72,7 @@ rule C_COMPILER__USB_Device_Library_unscanned_Debug
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /home/kymkim/st/stm32cubeclt_1.19.0/CMake/bin/cmake --regenerate-during-build -S/home/kymkim/Projects/modular-kbd/firmware/core -B/home/kymkim/Projects/modular-kbd/firmware/core/build/Debug
+  command = /opt/st/stm32cubeclt_1.19.0/CMake/bin/cmake --regenerate-during-build -S/home/ukim/Projects/modular-kbd/firmware/core -B/home/ukim/Projects/modular-kbd/firmware/core/build/Debug
   description = Re-running CMake...
   generator = 1
 
@@ -81,7 +81,7 @@ rule RERUN_CMAKE
 # Rule for cleaning additional files.
 
 rule CLEAN_ADDITIONAL
-  command = /home/kymkim/st/stm32cubeclt_1.19.0/CMake/bin/cmake -DCONFIG=$CONFIG -P CMakeFiles/clean_additional.cmake
+  command = /opt/st/stm32cubeclt_1.19.0/CMake/bin/cmake -DCONFIG=$CONFIG -P CMakeFiles/clean_additional.cmake
   description = Cleaning additional files...
 
 
@@ -89,7 +89,7 @@ rule CLEAN_ADDITIONAL
 # Rule for cleaning all built files.
 
 rule CLEAN
-  command = /home/kymkim/st/stm32cubeclt_1.19.0/Ninja/bin/ninja $FILE_ARG -t clean $TARGETS
+  command = /usr/bin/ninja $FILE_ARG -t clean $TARGETS
   description = Cleaning all built files...
 
 
@@ -97,6 +97,6 @@ rule CLEAN
 # Rule for printing all primary targets available.
 
 rule HELP
-  command = /home/kymkim/st/stm32cubeclt_1.19.0/Ninja/bin/ninja -t targets
+  command = /usr/bin/ninja -t targets
   description = All primary targets available:
 

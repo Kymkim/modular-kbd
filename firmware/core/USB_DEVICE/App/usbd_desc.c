@@ -1,7 +1,7 @@
 /* USER CODE BEGIN Header */
 /**
   ******************************************************************************
-  * @file           : App/usbd_desc.c
+  * @file           : usbd_desc.c
   * @version        : v1.0_Cube
   * @brief          : This file implements the USB device descriptors.
   ******************************************************************************
@@ -62,11 +62,11 @@
   * @{
   */
 
-#define USBD_VID     1155
+#define USBD_VID     0xCAFE
 #define USBD_LANGID_STRING     1033
-#define USBD_MANUFACTURER_STRING     "STMicroelectronics"
+#define USBD_MANUFACTURER_STRING     "TeamSKBD"
 #define USBD_PID_FS     22315
-#define USBD_PRODUCT_STRING_FS     "STM32 Human interface"
+#define USBD_PRODUCT_STRING_FS     "MSKBD Mainboard"
 #define USBD_CONFIGURATION_STRING_FS     "HID Config"
 #define USBD_INTERFACE_STRING_FS     "HID Interface"
 

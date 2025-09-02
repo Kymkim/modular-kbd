@@ -1,4 +1,4 @@
-set(CMAKE_C_COMPILER "/home/kymkim/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc")
+set(CMAKE_C_COMPILER "/opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc")
 set(CMAKE_C_COMPILER_ARG1 "")
 set(CMAKE_C_COMPILER_ID "GNU")
 set(CMAKE_C_COMPILER_VERSION "13.3.1")
@@ -21,11 +21,11 @@ set(CMAKE_C_SIMULATE_VERSION "")
 
 
 
-set(CMAKE_AR "/home/kymkim/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/arm-none-eabi-ar")
-set(CMAKE_C_COMPILER_AR "/home/kymkim/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc-ar")
-set(CMAKE_RANLIB "/home/kymkim/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/arm-none-eabi-ranlib")
-set(CMAKE_C_COMPILER_RANLIB "/home/kymkim/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc-ranlib")
-set(CMAKE_LINKER "/home/kymkim/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/arm-none-eabi-g++")
+set(CMAKE_AR "/usr/bin/arm-none-eabi-ar")
+set(CMAKE_C_COMPILER_AR "/usr/bin/arm-none-eabi-gcc-ar")
+set(CMAKE_RANLIB "/usr/bin/arm-none-eabi-ranlib")
+set(CMAKE_C_COMPILER_RANLIB "/usr/bin/arm-none-eabi-gcc-ranlib")
+set(CMAKE_LINKER "/opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/arm-none-eabi-g++")
 set(CMAKE_MT "")
 set(CMAKE_TAPI "CMAKE_TAPI-NOTFOUND")
 set(CMAKE_COMPILER_IS_GNUCC 1)
@@ -68,7 +68,7 @@ endif()
 
 
 
-set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "/home/kymkim/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/lib/gcc/arm-none-eabi/13.3.1/include;/home/kymkim/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/lib/gcc/arm-none-eabi/13.3.1/include-fixed;/home/kymkim/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/arm-none-eabi/include")
+set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "/opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/lib/gcc/arm-none-eabi/13.3.1/include;/opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/lib/gcc/arm-none-eabi/13.3.1/include-fixed;/opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/arm-none-eabi/include")
 set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "")
 set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "")
 set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")

@@ -76,7 +76,7 @@ KbdPins col_pins[COLS] = {
   {GPIOB, GPIO_PIN_14},
   {GPIOB, GPIO_PIN_13}
 };
-HIDReportNKRO REPORT = {0,0,0,0,0,0,0,0};
+HIDReportNKRO REPORT = {0};
 CAN_RxHeaderTypeDef RxHeader;
 uint8_t RxData[8];
 /* USER CODE END PV */
@@ -123,12 +123,13 @@ int main(void)
   MX_GPIO_Init();
   MX_CAN1_Init();
   MX_USB_DEVICE_Init();
+  HAL_Delay(200);
   /* USER CODE BEGIN 2 */
   HAL_CAN_Start(&hcan1);
   HAL_CAN_ActivateNotification(&hcan1, CAN_IT_RX_FIFO0_MSG_PENDING);
   HAL_Delay(50);
   /* USER CODE END 2 */
-  
+  uint8_t state = 0;
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
@@ -146,8 +147,14 @@ int main(void)
     //   }
     //   HAL_GPIO_WritePin(col_pins[col].PORT, col_pins[col].PIN, GPIO_PIN_RESET);
     // }
+    addHIDReport(KEY_A, 1);
     USBD_HID_SendReport(&hUsbDeviceFS, (uint8_t*)&REPORT, sizeof(REPORT));
-    HAL_Delay(20);
+    HAL_Delay(500);
+
+    addHIDReport(KEY_A, 0);
+    USBD_HID_SendReport(&hUsbDeviceFS, (uint8_t*)&REPORT, sizeof(REPORT));
+    HAL_Delay(500);
+
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */

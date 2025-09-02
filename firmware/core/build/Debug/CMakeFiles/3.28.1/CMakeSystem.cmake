@@ -1,9 +1,9 @@
-set(CMAKE_HOST_SYSTEM "Linux-6.15.7-2-cachyos")
+set(CMAKE_HOST_SYSTEM "Linux-6.16.4-arch1-1")
 set(CMAKE_HOST_SYSTEM_NAME "Linux")
-set(CMAKE_HOST_SYSTEM_VERSION "6.15.7-2-cachyos")
+set(CMAKE_HOST_SYSTEM_VERSION "6.16.4-arch1-1")
 set(CMAKE_HOST_SYSTEM_PROCESSOR "x86_64")
 
-include("/home/kymkim/Projects/modular-kbd/firmware/core/cmake/gcc-arm-none-eabi.cmake")
+include("/home/ukim/Projects/modular-kbd/firmware/core/cmake/gcc-arm-none-eabi.cmake")
 
 set(CMAKE_SYSTEM "Generic")
 set(CMAKE_SYSTEM_NAME "Generic")
