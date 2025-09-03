@@ -64,10 +64,14 @@ extern USBD_HandleTypeDef hUsbDeviceFS;
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
+
+//Keymap
 uint8_t matrix[ROWS][COLS] = {
   {KEY_M, KEY_K},
   {KEY_I, KEY_U}
 };
+
+//Pins For the column {PORT, PIN}
 KbdPins row_pins[ROWS] = {
   {GPIOC, GPIO_PIN_6},
   {GPIOB, GPIO_PIN_15}
@@ -76,7 +80,10 @@ KbdPins col_pins[COLS] = {
   {GPIOB, GPIO_PIN_14},
   {GPIOB, GPIO_PIN_13}
 };
+
+//Report - This what get sent to the USB 
 HIDReportNKRO REPORT = {0};
+
 CAN_RxHeaderTypeDef RxHeader;
 uint8_t RxData[8];
 /* USER CODE END PV */
@@ -128,12 +135,10 @@ int main(void)
   HAL_CAN_Start(&hcan1);
   HAL_CAN_ActivateNotification(&hcan1, CAN_IT_RX_FIFO0_MSG_PENDING);
   HAL_Delay(50);
-  /* USER CODE END 2 */
-  uint8_t state = 0;
-  /* Infinite loop */
-  /* USER CODE BEGIN WHILE */
+
   while (1)
   {
+    //TODO: FIX ME
     //Keycode Scan
     // Clear keypresses at the start of each scan for 6 key rollover
     /* USER CODE END WHILE */
