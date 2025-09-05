@@ -269,14 +269,14 @@ __ALIGN_BEGIN static uint8_t HID_MOUSE_ReportDesc[HID_MOUSE_REPORT_DESC_SIZE] __
   0x95, 0x01,        // Report Count (1)
   0x81, 0x01,        // Input (Constant)
 
-  // Key bitfield (96 bits = 12 bytes)
+  // Key bitfield (112 bits = 14 bytes)
   0x05, 0x07,        // Usage Page (Keyboard/Keypad)
-  0x19, 0x04,        // Usage Minimum (4) — 'A' key
-  0x29, 0x63,        // Usage Maximum (99) — 96 keys total (4 to 99)
+  0x19, 0x04,        // Usage Minimum (4)
+  0x29, 0x73,        // Usage Maximum (115) -- 0x73
   0x15, 0x00,        // Logical Minimum (0)
   0x25, 0x01,        // Logical Maximum (1)
   0x75, 0x01,        // Report Size (1 bit)
-  0x95, 0x60,        // Report Count (96 bits)
+  0x95, 0x70,        // Report Count (112 bits, 0x70)
   0x81, 0x02,        // Input (Data, Variable, Absolute)
 
   0xC0               // End Collection

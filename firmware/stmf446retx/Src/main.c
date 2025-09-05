@@ -33,7 +33,7 @@
 typedef struct{
   uint8_t MODIFIER;
   uint8_t RESERVED;
-  uint8_t KEYPRESS[12];
+  uint8_t KEYPRESS[14];
 } HIDReportNKRO;
 
 typedef struct{
@@ -154,12 +154,7 @@ int main(void)
     // }
     addHIDReport(KEY_A, 1);
     USBD_HID_SendReport(&hUsbDeviceFS, (uint8_t*)&REPORT, sizeof(REPORT));
-    HAL_Delay(500);
-
-    addHIDReport(KEY_A, 0);
-    USBD_HID_SendReport(&hUsbDeviceFS, (uint8_t*)&REPORT, sizeof(REPORT));
-    HAL_Delay(500);
-
+    HAL_Delay(50);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
