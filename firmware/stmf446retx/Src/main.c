@@ -120,7 +120,9 @@ int main(void)
   /* USER CODE END Init */
 
   /* Configure the system clock */
+
   SystemClock_Config();
+  HAL_Delay(50); // Wait for clock to stabilize. 
 
   /* USER CODE BEGIN SysInit */
 
@@ -130,11 +132,11 @@ int main(void)
   MX_GPIO_Init();
   MX_CAN1_Init();
   MX_USB_DEVICE_Init();
-  HAL_Delay(200);
-  /* USER CODE BEGIN 2 */
-  HAL_CAN_Start(&hcan1);
-  HAL_CAN_ActivateNotification(&hcan1, CAN_IT_RX_FIFO0_MSG_PENDING);
-  HAL_Delay(50);
+
+  /* Force software re-enumeration */
+  USBD_Stop(&hUsbDeviceFS);
+  HAL_Delay(150);
+  USBD_Start(&hUsbDeviceFS);
 
   while (1)
   {
