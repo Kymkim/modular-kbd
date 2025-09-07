@@ -1,63 +1,33 @@
-!SESSION 2025-09-07 10:43:02.002 -----------------------------------------------
+!SESSION 2025-09-07 16:32:37.643 -----------------------------------------------
 eclipse.buildId=Version 1.19.0
 java.version=21.0.3
 java.vendor=Eclipse Adoptium
 BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
 Command-line arguments:  -os linux -ws gtk -arch x86_64
 
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-09-07 10:43:41.540
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-09-07 16:32:44.046
 !MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
 
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-09-07 10:43:41.541
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-09-07 16:32:44.047
 !MESSAGE Log4j2 initialized with config file /home/ukim/Projects/modular-kbd/firmware/stm32cubeide_workspace/.metadata/.log4j2.xml
 
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-09-07 10:43:43.673
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-09-07 16:32:45.943
 !MESSAGE Started RMI Server, listening on port 41337
-!SESSION 2025-09-07 10:44:59.880 -----------------------------------------------
+!SESSION 2025-09-07 16:34:03.442 -----------------------------------------------
 eclipse.buildId=Version 1.19.0
 java.version=21.0.3
 java.vendor=Eclipse Adoptium
 BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
 Command-line arguments:  -os linux -ws gtk -arch x86_64
 
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-09-07 10:45:04.080
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-09-07 16:34:08.446
 !MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
 
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-09-07 10:45:04.080
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-09-07 16:34:08.446
 !MESSAGE Log4j2 initialized with config file /home/ukim/Projects/modular-kbd/firmware/stm32cubeide_workspace/.metadata/.log4j2.xml
 
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-09-07 10:45:06.096
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-09-07 16:34:29.892
 !MESSAGE Started RMI Server, listening on port 41337
 
-!ENTRY org.eclipse.cdt.core 1 0 2025-09-07 11:02:46.216
-!MESSAGE Indexed 'modularkbd' (19 sources, 81 headers) in 1.92 sec: 4,563 declarations; 21,879 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0076%)
-!SESSION 2025-09-07 11:05:36.548 -----------------------------------------------
-eclipse.buildId=Version 1.19.0
-java.version=21.0.3
-java.vendor=Eclipse Adoptium
-BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
-Command-line arguments:  -os linux -ws gtk -arch x86_64
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-09-07 11:05:41.790
-!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-09-07 11:05:41.790
-!MESSAGE Log4j2 initialized with config file /home/ukim/Projects/modular-kbd/firmware/stm32cubeide_workspace/.metadata/.log4j2.xml
-
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-09-07 11:05:44.684
-!MESSAGE Started RMI Server, listening on port 41337
-!SESSION 2025-09-07 11:10:37.548 -----------------------------------------------
-eclipse.buildId=Version 1.19.0
-java.version=21.0.3
-java.vendor=Eclipse Adoptium
-BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
-Command-line arguments:  -os linux -ws gtk -arch x86_64
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-09-07 11:10:43.375
-!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-09-07 11:10:43.376
-!MESSAGE Log4j2 initialized with config file /home/ukim/Projects/modular-kbd/firmware/stm32cubeide_workspace/.metadata/.log4j2.xml
-
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-09-07 11:10:46.384
-!MESSAGE Started RMI Server, listening on port 41337
+!ENTRY org.eclipse.cdt.core 1 0 2025-09-07 16:35:33.921
+!MESSAGE Indexed 'modularkbd' (34 sources, 137 headers) in 2.67 sec: 16,076 declarations; 91,424 references; 1 unresolved inclusions; 92 syntax errors; 240 unresolved names (0.22%)

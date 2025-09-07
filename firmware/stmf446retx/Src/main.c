@@ -34,13 +34,20 @@ typedef struct{
   uint8_t MODIFIER;
   uint8_t RESERVED;
   uint8_t KEYPRESS[14];
-} HIDReportNKRO;
+} USBHIDReportNKRO;
 
-typedef struct{
-  uint8_t MODIFIER;
-  uint8_t RESERVED;
-  uint8_t KEYPRESS[6]; // for 6 Key Rollover, changed index to 6.
-} HIDReport6KRO;
+typedef struct {
+	uint8_t MODIFIER;
+	uint8_t RESERVED;
+	uint8_t KEYCODE1;
+	uint8_t KEYCODE2;
+	uint8_t KEYCODE3;
+	uint8_t KEYCODE4;
+	uint8_t KEYCODE5;
+	uint8_t KEYCODE6;
+}USBHIDReport6KRO;
+
+USBHIDReport6KRO USBREPORT = {0,0,0,0,0,0,0,0};
 
 typedef struct{
   GPIO_TypeDef* PORT;
@@ -82,7 +89,7 @@ KbdPins col_pins[COLS] = {
 };
 
 //Report - This what get sent to the USB 
-HIDReportNKRO REPORT = {0};
+USBHIDReportNKRO REPORT = {0};
 
 CAN_RxHeaderTypeDef RxHeader;
 uint8_t RxData[8];
@@ -154,9 +161,9 @@ int main(void)
     //   }
     //   HAL_GPIO_WritePin(col_pins[col].PORT, col_pins[col].PIN, GPIO_PIN_RESET);
     // }
-    addHIDReport(KEY_A, 1);
-    USBD_HID_SendReport(&hUsbDeviceFS, (uint8_t*)&REPORT, sizeof(REPORT));
-    HAL_Delay(50);
+    USBREPORT.KEYCODE1 = 0x0A;
+    USBD_HID_SendReport(&hUsbDeviceFS, (uint8_t*)&USBREPORT, sizeof(USBREPORT));
+    HAL_Delay(100);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
