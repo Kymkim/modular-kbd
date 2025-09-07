@@ -1,0 +1,10 @@
+11:16:44 **** Incremental Build of configuration Debug for project modularkbd ****
+make -j16 all 
+arm-none-eabi-size  modularkbd.elf 
+   text	   data	    bss	    dec	    hex	filename
+  35328	    300	   4676	  40304	   9d70	modularkbd.elf
+Finished building: default.size.stdout
+ 
+
+11:16:44 Build Finished. 0 errors, 0 warnings. (took 76ms)
+
