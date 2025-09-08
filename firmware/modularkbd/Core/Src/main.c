@@ -131,11 +131,38 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  // 2x2 Matrix Keyboard: Rows = PC6, PC7; Cols = PC4, PC5
+  // Key mapping: [Row0-Col0]='M', [Row0-Col1]='I', [Row1-Col0]='K', [Row1-Col1]='U'
+  const uint8_t keycodes[2][2] = {
+    {0x10, 0x0C}, // 'M', 'I' (HID keycodes)
+    {0x0E, 0x18}  // 'K', 'U'
+  };
+  uint8_t prev_state[2][2] = {{1,1},{1,1}}; // Inputs are HIGH by default
   while (1)
   {
-	  USBREPORT.KEYCODE1 = 0x0A;
-	  USBD_HID_SendReport(&hUsbDeviceFS, &USBREPORT, sizeof(USBREPORT));
-	  HAL_Delay(1000);
+    for (int row = 0; row < 2; row++) {
+      // Set current row LOW, other HIGH
+      HAL_GPIO_WritePin(GPIOC, GPIO_PIN_6, (row == 0) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      HAL_GPIO_WritePin(GPIOC, GPIO_PIN_7, (row == 1) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      HAL_Delay(1);
+      uint8_t col0 = HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_4);
+      uint8_t col1 = HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_5);
+      uint8_t curr_state[2] = {col0, col1};
+      for (int col = 0; col < 2; col++) {
+        if (curr_state[col] == GPIO_PIN_RESET && prev_state[row][col] == GPIO_PIN_SET) {
+          // Key pressed (edge, input goes LOW)
+          USBREPORT.KEYCODE1 = keycodes[row][col];
+          USBD_HID_SendReport(&hUsbDeviceFS, &USBREPORT, sizeof(USBREPORT));
+        }
+        if (curr_state[col] == GPIO_PIN_SET && prev_state[row][col] == GPIO_PIN_RESET) {
+          // Key released (input goes HIGH)
+          USBREPORT.KEYCODE1 = 0;
+          USBD_HID_SendReport(&hUsbDeviceFS, &USBREPORT, sizeof(USBREPORT));
+        }
+        prev_state[row][col] = curr_state[col];
+      }
+    }
+    HAL_Delay(10);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -514,7 +541,7 @@ static void MX_GPIO_Init(void)
   /*Configure GPIO pins : PC4 PC5 */
   GPIO_InitStruct.Pin = GPIO_PIN_4|GPIO_PIN_5;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
   /*Configure GPIO pins : PB0 PB1 PB2 PB10 */
