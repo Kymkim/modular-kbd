@@ -105,7 +105,7 @@
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
 		(tenting front back)
-		(grid_origin 78.65 90.2)
+		(grid_origin 50.165 109.22)
 		(pcbplotparams
 			(layerselection 0x00000000_00000000_55555555_5755f5ff)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
@@ -2977,13 +2977,13 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "0714ceb4-f80e-4cd6-aa78-bff3f837cdd6")
-		(at -6.8575 61.354999)
+		(at 130.874999 118.7225 90)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "LED11"
-			(at 0 -2.6 0)
+			(at 0 -2.6 90)
 			(layer "B.SilkS")
-			(uuid "1afc092a-69f9-4e27-b8ea-86c668648114")
+			(uuid "1720e898-03e4-4867-825c-08ca7df4da87")
 			(effects
 				(font
 					(size 1 1)
@@ -2993,9 +2993,9 @@
 			)
 		)
 		(property "Value" "MX_SK6812MINI-E"
-			(at -9.425 -3.47 0)
+			(at -9.425 -3.47 90)
 			(layer "B.Fab")
-			(uuid "286bcbcc-09d8-45cc-83f8-1806595c8b03")
+			(uuid "a9754677-cd66-46b0-89f6-5a5435f9b6fd")
 			(effects
 				(font
 					(size 1 1)
@@ -3005,11 +3005,11 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 180)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "07b5301f-1424-424d-a360-5880089aad97")
+			(uuid "5d0cbb83-89a3-4c6d-95fb-b2e2375cc6b9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3019,11 +3019,11 @@
 			)
 		)
 		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
-			(at 0 0 180)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "7ef3bf12-ed8e-40fa-91f0-2e02c37eaf42")
+			(uuid "0ae4d17f-f029-48c1-be0b-5d3cfb71e088")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3049,6 +3049,16 @@
 			(uuid "ca1488b6-e1e1-4552-aee7-b07236ad2492")
 		)
 		(fp_line
+			(start 9.525 -4.445)
+			(end 9.525 14.605)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "79ea5f04-78ca-48fe-89cc-19f141bad52b")
+		)
+		(fp_line
 			(start -9.525 -4.445)
 			(end 9.525 -4.445)
 			(stroke
@@ -3057,6 +3067,16 @@
 			)
 			(layer "Dwgs.User")
 			(uuid "1d8beece-3df6-4a8b-8727-c764780807f3")
+		)
+		(fp_line
+			(start 9.525 14.605)
+			(end -9.525 14.605)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "831fc837-8358-4198-af10-a4da8c300657")
 		)
 		(fp_line
 			(start -9.525 14.605)
@@ -3069,24 +3089,14 @@
 			(uuid "c7b23a89-560b-4818-ab3c-d984af8743ba")
 		)
 		(fp_line
-			(start 9.525 -4.445)
-			(end 9.525 14.605)
+			(start 0.25 4.83)
+			(end 0 5.08)
 			(stroke
-				(width 0.15)
+				(width 0.12)
 				(type solid)
 			)
-			(layer "Dwgs.User")
-			(uuid "79ea5f04-78ca-48fe-89cc-19f141bad52b")
-		)
-		(fp_line
-			(start 9.525 14.605)
-			(end -9.525 14.605)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "Dwgs.User")
-			(uuid "831fc837-8358-4198-af10-a4da8c300657")
+			(layer "Cmts.User")
+			(uuid "ec3507b3-2d55-4dd2-b090-cdecb7f342b1")
 		)
 		(fp_line
 			(start -0.25 4.83)
@@ -3100,16 +3110,6 @@
 		)
 		(fp_line
 			(start 0 5.08)
-			(end -0.25 5.33)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "Cmts.User")
-			(uuid "6495dbd5-7ba4-4f63-ba40-9d67a17bc2fb")
-		)
-		(fp_line
-			(start 0 5.08)
 			(end 0.25 5.33)
 			(stroke
 				(width 0.12)
@@ -3119,24 +3119,14 @@
 			(uuid "7981c0b0-164c-4546-ac35-cfc740f9fe1e")
 		)
 		(fp_line
-			(start 0.25 4.83)
-			(end 0 5.08)
+			(start 0 5.08)
+			(end -0.25 5.33)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "ec3507b3-2d55-4dd2-b090-cdecb7f342b1")
-		)
-		(fp_line
-			(start -1.699999 0.702843)
-			(end -1.699999 -0.702841)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "Edge.Cuts")
-			(uuid "968e6fd4-728e-40ed-8d2a-2201a4dda1ad")
+			(uuid "6495dbd5-7ba4-4f63-ba40-9d67a17bc2fb")
 		)
 		(fp_line
 			(start -0.794452 -1.499999)
@@ -3149,16 +3139,6 @@
 			(uuid "e06ce72d-8389-4872-ad14-797a5924c204")
 		)
 		(fp_line
-			(start 0.794452 1.5)
-			(end -0.794453 1.5)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "Edge.Cuts")
-			(uuid "99ed8df1-8f9f-4faf-acff-c3289299aa6c")
-		)
-		(fp_line
 			(start 1.699999 -0.702841)
 			(end 1.699999 0.702843)
 			(stroke
@@ -3168,82 +3148,25 @@
 			(layer "Edge.Cuts")
 			(uuid "c388e931-0bda-4d69-9be8-dd6cffb1a94d")
 		)
-		(fp_arc
-			(start -1.749484 -0.919719)
-			(mid -1.712527 -0.814067)
+		(fp_line
+			(start -1.699999 0.702843)
 			(end -1.699999 -0.702841)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "48db23f5-48a1-481c-adb9-67c049352a4a")
+			(uuid "968e6fd4-728e-40ed-8d2a-2201a4dda1ad")
 		)
-		(fp_arc
-			(start -1.749484 -0.919718)
-			(mid -1.638072 -1.504034)
-			(end -1.046711 -1.568298)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "Edge.Cuts")
-			(uuid "ede6ffa3-3827-4c7a-a9d0-a6be4fab9144")
-		)
-		(fp_arc
-			(start -1.699999 0.702844)
-			(mid -1.712527 0.814069)
-			(end -1.749484 0.919721)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "Edge.Cuts")
-			(uuid "88c1e040-2f50-43dc-b0b0-147223b290a8")
-		)
-		(fp_arc
-			(start -1.046711 1.568299)
-			(mid -1.63807 1.504035)
-			(end -1.749484 0.919721)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "Edge.Cuts")
-			(uuid "8258ee43-376a-4ab9-85b2-11a1b55706c5")
-		)
-		(fp_arc
-			(start -1.046711 1.568299)
-			(mid -0.925123 1.517377)
+		(fp_line
+			(start 0.794452 1.5)
 			(end -0.794453 1.5)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "51a3281b-a77c-4a45-9ddd-6f0433a0c5c2")
-		)
-		(fp_arc
-			(start -0.794452 -1.499999)
-			(mid -0.925123 -1.517376)
-			(end -1.046711 -1.568298)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "Edge.Cuts")
-			(uuid "04d7fb45-fe1b-44c3-a08a-b961ceb00860")
-		)
-		(fp_arc
-			(start 0.794453 1.500001)
-			(mid 0.925123 1.517378)
-			(end 1.046711 1.5683)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "Edge.Cuts")
-			(uuid "b0b6b728-7ec1-40d9-a133-7f6854ba79ff")
+			(uuid "99ed8df1-8f9f-4faf-acff-c3289299aa6c")
 		)
 		(fp_arc
 			(start 1.04671 -1.568298)
@@ -3268,6 +3191,39 @@
 			(uuid "1c276318-4148-461b-954a-70e61776ceb6")
 		)
 		(fp_arc
+			(start -0.794452 -1.499999)
+			(mid -0.925123 -1.517376)
+			(end -1.046711 -1.568298)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "04d7fb45-fe1b-44c3-a08a-b961ceb00860")
+		)
+		(fp_arc
+			(start -1.749484 -0.919719)
+			(mid -1.712527 -0.814067)
+			(end -1.699999 -0.702841)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "48db23f5-48a1-481c-adb9-67c049352a4a")
+		)
+		(fp_arc
+			(start -1.749484 -0.919718)
+			(mid -1.638072 -1.504034)
+			(end -1.046711 -1.568298)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "ede6ffa3-3827-4c7a-a9d0-a6be4fab9144")
+		)
+		(fp_arc
 			(start 1.699999 -0.702842)
 			(mid 1.712536 -0.814064)
 			(end 1.749484 -0.919719)
@@ -3277,6 +3233,28 @@
 			)
 			(layer "Edge.Cuts")
 			(uuid "ec13cdee-aa10-4e25-80d6-59e5202ba389")
+		)
+		(fp_arc
+			(start -1.699999 0.702844)
+			(mid -1.712527 0.814069)
+			(end -1.749484 0.919721)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "88c1e040-2f50-43dc-b0b0-147223b290a8")
+		)
+		(fp_arc
+			(start 1.749484 0.919721)
+			(mid 1.712526 0.814069)
+			(end 1.699999 0.702843)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "fe2fd39e-aa7e-428b-a88f-16cbc2c49e84")
 		)
 		(fp_arc
 			(start 1.749484 0.919721)
@@ -3290,35 +3268,37 @@
 			(uuid "06a7452e-8329-4c08-a8d1-70d845896628")
 		)
 		(fp_arc
-			(start 1.749484 0.919721)
-			(mid 1.712526 0.814069)
-			(end 1.699999 0.702843)
+			(start 0.794453 1.500001)
+			(mid 0.925123 1.517378)
+			(end 1.046711 1.5683)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "fe2fd39e-aa7e-428b-a88f-16cbc2c49e84")
+			(uuid "b0b6b728-7ec1-40d9-a133-7f6854ba79ff")
 		)
-		(fp_line
-			(start -3.8 -1.999999)
-			(end -3.8 2.000001)
+		(fp_arc
+			(start -1.046711 1.568299)
+			(mid -1.63807 1.504035)
+			(end -1.749484 0.919721)
 			(stroke
-				(width 0.05)
+				(width 0.1)
 				(type solid)
 			)
-			(layer "B.CrtYd")
-			(uuid "97fac46a-0568-49aa-801b-0de29a0c49bb")
+			(layer "Edge.Cuts")
+			(uuid "8258ee43-376a-4ab9-85b2-11a1b55706c5")
 		)
-		(fp_line
-			(start -3.8 2.000001)
-			(end 3.8 2.000001)
+		(fp_arc
+			(start -1.046711 1.568299)
+			(mid -0.925123 1.517377)
+			(end -0.794453 1.5)
 			(stroke
-				(width 0.05)
+				(width 0.1)
 				(type solid)
 			)
-			(layer "B.CrtYd")
-			(uuid "99044c3e-0e52-482f-8f9d-6323c49dc9bb")
+			(layer "Edge.Cuts")
+			(uuid "51a3281b-a77c-4a45-9ddd-6f0433a0c5c2")
 		)
 		(fp_line
 			(start 3.8 -1.999999)
@@ -3331,6 +3311,16 @@
 			(uuid "daf5ebdf-7609-4e3d-89c0-f9ba9a4e97ee")
 		)
 		(fp_line
+			(start -3.8 -1.999999)
+			(end -3.8 2.000001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "97fac46a-0568-49aa-801b-0de29a0c49bb")
+		)
+		(fp_line
 			(start 3.8 2.000001)
 			(end 3.8 -1.999999)
 			(stroke
@@ -3341,34 +3331,14 @@
 			(uuid "0c0b28c4-ac2a-4847-9012-adf111ce64e2")
 		)
 		(fp_line
-			(start -1.6 -0.899999)
-			(end -1.6 1.400001)
+			(start -3.8 2.000001)
+			(end 3.8 2.000001)
 			(stroke
-				(width 0.12)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "B.Fab")
-			(uuid "524c2563-e2a0-4e26-90ce-de72e262112f")
-		)
-		(fp_line
-			(start -1.6 -0.899999)
-			(end -1.1 -1.399999)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "B.Fab")
-			(uuid "03211856-3821-41fb-994e-d73d97eaacf9")
-		)
-		(fp_line
-			(start -1.6 1.400001)
-			(end 1.6 1.400001)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "B.Fab")
-			(uuid "248771bc-c7d9-44de-a9f2-13c54366e7c0")
+			(layer "B.CrtYd")
+			(uuid "99044c3e-0e52-482f-8f9d-6323c49dc9bb")
 		)
 		(fp_line
 			(start 1.6 -1.399999)
@@ -3381,6 +3351,26 @@
 			(uuid "32822c79-814d-4684-83e5-7535d448524b")
 		)
 		(fp_line
+			(start -1.6 -0.899999)
+			(end -1.1 -1.399999)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "03211856-3821-41fb-994e-d73d97eaacf9")
+		)
+		(fp_line
+			(start -1.6 -0.899999)
+			(end -1.6 1.400001)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "524c2563-e2a0-4e26-90ce-de72e262112f")
+		)
+		(fp_line
 			(start 1.6 1.400001)
 			(end 1.6 -1.399999)
 			(stroke
@@ -3390,8 +3380,18 @@
 			(layer "B.Fab")
 			(uuid "2c475dfc-12d4-4057-b2be-4a8744d01414")
 		)
+		(fp_line
+			(start -1.6 1.400001)
+			(end 1.6 1.400001)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "248771bc-c7d9-44de-a9f2-13c54366e7c0")
+		)
 		(fp_text user "offset: 5.08"
-			(at 0 3 0)
+			(at 0 3 90)
 			(layer "Dwgs.User")
 			(uuid "56a05fcf-bfda-44dd-aed9-0135e35f3735")
 			(effects
@@ -3402,7 +3402,7 @@
 			)
 		)
 		(fp_text user "switch center"
-			(at 0 6.25 0)
+			(at 0 6.25 90)
 			(layer "Cmts.User")
 			(uuid "1f413684-19e3-4f14-9f02-03d29a8ff1da")
 			(effects
@@ -3413,7 +3413,7 @@
 			)
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "B.Fab")
 			(uuid "3cfca5aa-3aa0-4a2b-91a6-f11b30610eb2")
 			(effects
@@ -3425,7 +3425,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at 2.725 0.75 270)
+			(at 2.725 0.75)
 			(size 0.82 1.35)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.1)
@@ -3435,7 +3435,7 @@
 			(uuid "1cc3b98d-d24d-4cac-8051-1ec085813f69")
 		)
 		(pad "2" smd roundrect
-			(at 2.725 -0.75 270)
+			(at 2.725 -0.75)
 			(size 0.82 1.35)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.1)
@@ -3445,7 +3445,7 @@
 			(uuid "add923ba-94e3-446d-98ff-59ac018ca7a7")
 		)
 		(pad "3" smd roundrect
-			(at -2.725 0.75 270)
+			(at -2.725 0.75)
 			(size 0.82 1.35)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.1)
@@ -3455,7 +3455,7 @@
 			(uuid "7cadf503-758b-44bf-b787-7aa0f4a13924")
 		)
 		(pad "4" smd roundrect
-			(at -2.725 -0.75 270)
+			(at -2.725 -0.75)
 			(size 0.82 1.35)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.1)
@@ -4307,7 +4307,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "0ad91ea4-5ccd-4b1a-9ef7-09a422c2c9cc")
-		(at 10.8725 71.454999)
+		(at 97.765 142.31)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "LED23"
@@ -8037,13 +8037,13 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "1b8bd5c4-dfd1-423f-89aa-cd96a5310b7c")
-		(at -15.7225 71.454999)
+		(at 116.855866 56.615888)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "LED2"
 			(at 0 -2.6 0)
 			(layer "B.SilkS")
-			(uuid "643d4dd9-58a6-4ee7-9607-94542dc96d31")
+			(uuid "740fd6b5-3c24-4316-914d-758649f3149d")
 			(effects
 				(font
 					(size 1 1)
@@ -8055,7 +8055,7 @@
 		(property "Value" "MX_SK6812MINI-E"
 			(at -9.425 -3.47 0)
 			(layer "B.Fab")
-			(uuid "bb346fa6-7707-4ecc-a8f3-2020623da873")
+			(uuid "59d1bdcb-3886-498d-b247-8fe1700b19aa")
 			(effects
 				(font
 					(size 1 1)
@@ -8069,7 +8069,7 @@
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "0830d738-fe29-46ef-8fd0-97f349664003")
+			(uuid "a28d2eaf-95a6-461e-8d28-ae00ae7e5c7c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8083,7 +8083,7 @@
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "c16e59a0-299f-4c21-88e5-5933efe3e4a9")
+			(uuid "c0e186fc-ae06-4d85-9a1b-52875cdf7340")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11642,7 +11642,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "3a876b78-5155-4b38-b079-a2cd917313a1")
-		(at -6.8575 76.504999)
+		(at 97.800866 85.085888)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "LED8"
@@ -12147,7 +12147,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "3ad377d6-b8fe-4e69-b600-1d4e09e34cff")
-		(at 2.0075 51.254999)
+		(at 88.3525 161.389999)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "LED20"
@@ -13584,7 +13584,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "48fdc226-92db-48db-ab05-4029fc1008d3")
-		(at 10.8725 56.304999)
+		(at 50.22 161.24)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "LED26"
@@ -14089,7 +14089,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "49dd4602-6c3a-4e34-9dff-376beef266b2")
-		(at 10.8725 66.404999)
+		(at 116.825 142.26)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "LED24"
@@ -14594,7 +14594,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "49e120c5-9367-46b9-a1b0-6dba8b2400ae")
-		(at -6.8575 46.204999)
+		(at 78.77 104.18)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "LED14"
@@ -15099,7 +15099,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "4a03de3c-2488-4cc6-8d2b-7e732724ea2c")
-		(at 2.0075 71.454999)
+		(at 50.195 123.26)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "LED16"
@@ -16536,7 +16536,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "5a4b530e-fd58-4b00-85f8-6b1cad6973e0")
-		(at -6.8575 71.454999)
+		(at 116.850866 85.065888)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "LED9"
@@ -17041,7 +17041,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "5e76b36c-ebfc-47e3-a45c-8040e2eb6256")
-		(at 2.0075 66.404999)
+		(at 78.61 123.18)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "LED17"
@@ -17771,11 +17771,11 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "62103b21-67b8-4d42-a94e-594e6175e8a5")
-		(at 10.8725 61.354999)
+		(at 130.855 156.935 90)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "LED25"
-			(at 0 -2.6 0)
+			(at 0 -2.6 90)
 			(layer "B.SilkS")
 			(uuid "ef65ac00-d572-4b67-a856-046f9cde10f8")
 			(effects
@@ -17787,7 +17787,7 @@
 			)
 		)
 		(property "Value" "MX_SK6812MINI-E"
-			(at -9.425 -3.47 0)
+			(at -9.425 -3.47 90)
 			(layer "B.Fab")
 			(uuid "6489e718-bc9e-4fb9-b26b-bed6f0688e57")
 			(effects
@@ -17799,7 +17799,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 180)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -17813,7 +17813,7 @@
 			)
 		)
 		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
-			(at 0 0 180)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -17843,6 +17843,16 @@
 			(uuid "12173837-cd9f-4796-9455-6814b7e12f0a")
 		)
 		(fp_line
+			(start 9.525 -4.445)
+			(end 9.525 14.605)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "6779f4a3-e46b-4e59-a8de-9b17d4155da6")
+		)
+		(fp_line
 			(start -9.525 -4.445)
 			(end 9.525 -4.445)
 			(stroke
@@ -17851,6 +17861,16 @@
 			)
 			(layer "Dwgs.User")
 			(uuid "da9b52af-a612-4f3e-a013-e67fe75b83f0")
+		)
+		(fp_line
+			(start 9.525 14.605)
+			(end -9.525 14.605)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "e4774326-7dad-49d7-8352-165b4c524fef")
 		)
 		(fp_line
 			(start -9.525 14.605)
@@ -17863,24 +17883,14 @@
 			(uuid "39f85e47-6ac4-4bde-b825-6cd953934147")
 		)
 		(fp_line
-			(start 9.525 -4.445)
-			(end 9.525 14.605)
+			(start 0.25 4.83)
+			(end 0 5.08)
 			(stroke
-				(width 0.15)
+				(width 0.12)
 				(type solid)
 			)
-			(layer "Dwgs.User")
-			(uuid "6779f4a3-e46b-4e59-a8de-9b17d4155da6")
-		)
-		(fp_line
-			(start 9.525 14.605)
-			(end -9.525 14.605)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "Dwgs.User")
-			(uuid "e4774326-7dad-49d7-8352-165b4c524fef")
+			(layer "Cmts.User")
+			(uuid "21f58b7b-a803-47bf-aae6-17d8620e15c8")
 		)
 		(fp_line
 			(start -0.25 4.83)
@@ -17894,16 +17904,6 @@
 		)
 		(fp_line
 			(start 0 5.08)
-			(end -0.25 5.33)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "Cmts.User")
-			(uuid "56ebc812-c8f5-4bd4-b26d-b3d78bd11a2a")
-		)
-		(fp_line
-			(start 0 5.08)
 			(end 0.25 5.33)
 			(stroke
 				(width 0.12)
@@ -17913,24 +17913,14 @@
 			(uuid "21698dfc-f0e5-4b35-827c-5566e7ec29bb")
 		)
 		(fp_line
-			(start 0.25 4.83)
-			(end 0 5.08)
+			(start 0 5.08)
+			(end -0.25 5.33)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "21f58b7b-a803-47bf-aae6-17d8620e15c8")
-		)
-		(fp_line
-			(start -1.699999 0.702843)
-			(end -1.699999 -0.702841)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "Edge.Cuts")
-			(uuid "ece4fb23-6d75-4d5f-9217-35d799f87110")
+			(uuid "56ebc812-c8f5-4bd4-b26d-b3d78bd11a2a")
 		)
 		(fp_line
 			(start -0.794452 -1.499999)
@@ -17943,16 +17933,6 @@
 			(uuid "4480619f-94ac-4532-b7f8-7662f46d7592")
 		)
 		(fp_line
-			(start 0.794452 1.5)
-			(end -0.794453 1.5)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "Edge.Cuts")
-			(uuid "988caebf-6410-460d-a968-cb02b47b0564")
-		)
-		(fp_line
 			(start 1.699999 -0.702841)
 			(end 1.699999 0.702843)
 			(stroke
@@ -17962,82 +17942,25 @@
 			(layer "Edge.Cuts")
 			(uuid "c5ab7008-3d4a-426f-87c2-c83c96d38195")
 		)
-		(fp_arc
-			(start -1.749484 -0.919719)
-			(mid -1.712527 -0.814067)
+		(fp_line
+			(start -1.699999 0.702843)
 			(end -1.699999 -0.702841)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "fdcb2573-1a2e-4554-90c7-25d1c146a694")
+			(uuid "ece4fb23-6d75-4d5f-9217-35d799f87110")
 		)
-		(fp_arc
-			(start -1.749484 -0.919718)
-			(mid -1.638072 -1.504034)
-			(end -1.046711 -1.568298)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "Edge.Cuts")
-			(uuid "392f99db-19bb-4b4a-aac6-388c1e0dbe94")
-		)
-		(fp_arc
-			(start -1.699999 0.702844)
-			(mid -1.712527 0.814069)
-			(end -1.749484 0.919721)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "Edge.Cuts")
-			(uuid "353e6ba8-8129-4199-85ed-e5bc0cb4dd24")
-		)
-		(fp_arc
-			(start -1.046711 1.568299)
-			(mid -1.63807 1.504035)
-			(end -1.749484 0.919721)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "Edge.Cuts")
-			(uuid "10034bce-7a36-4337-88d2-2adfed17c09e")
-		)
-		(fp_arc
-			(start -1.046711 1.568299)
-			(mid -0.925123 1.517377)
+		(fp_line
+			(start 0.794452 1.5)
 			(end -0.794453 1.5)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "810d72c2-75dc-4dd5-a2a9-0e90283212c1")
-		)
-		(fp_arc
-			(start -0.794452 -1.499999)
-			(mid -0.925123 -1.517376)
-			(end -1.046711 -1.568298)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "Edge.Cuts")
-			(uuid "d63b662f-ee1f-4fca-a9ca-14bc6845e3f7")
-		)
-		(fp_arc
-			(start 0.794453 1.500001)
-			(mid 0.925123 1.517378)
-			(end 1.046711 1.5683)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "Edge.Cuts")
-			(uuid "5dfa414d-5b86-4537-b9eb-3a6526a00217")
+			(uuid "988caebf-6410-460d-a968-cb02b47b0564")
 		)
 		(fp_arc
 			(start 1.04671 -1.568298)
@@ -18062,6 +17985,39 @@
 			(uuid "8f2840ad-6420-4d1c-8152-3dc453dd3016")
 		)
 		(fp_arc
+			(start -0.794452 -1.499999)
+			(mid -0.925123 -1.517376)
+			(end -1.046711 -1.568298)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "d63b662f-ee1f-4fca-a9ca-14bc6845e3f7")
+		)
+		(fp_arc
+			(start -1.749484 -0.919719)
+			(mid -1.712527 -0.814067)
+			(end -1.699999 -0.702841)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "fdcb2573-1a2e-4554-90c7-25d1c146a694")
+		)
+		(fp_arc
+			(start -1.749484 -0.919718)
+			(mid -1.638072 -1.504034)
+			(end -1.046711 -1.568298)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "392f99db-19bb-4b4a-aac6-388c1e0dbe94")
+		)
+		(fp_arc
 			(start 1.699999 -0.702842)
 			(mid 1.712536 -0.814064)
 			(end 1.749484 -0.919719)
@@ -18071,6 +18027,28 @@
 			)
 			(layer "Edge.Cuts")
 			(uuid "f8780ce1-e08d-4392-9914-46f07c3eb11c")
+		)
+		(fp_arc
+			(start -1.699999 0.702844)
+			(mid -1.712527 0.814069)
+			(end -1.749484 0.919721)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "353e6ba8-8129-4199-85ed-e5bc0cb4dd24")
+		)
+		(fp_arc
+			(start 1.749484 0.919721)
+			(mid 1.712526 0.814069)
+			(end 1.699999 0.702843)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "fa75f43a-8377-442b-adfe-bd7b5b5d3a75")
 		)
 		(fp_arc
 			(start 1.749484 0.919721)
@@ -18084,35 +18062,37 @@
 			(uuid "9c9c726f-1477-47d7-bd82-14bcc4dd9745")
 		)
 		(fp_arc
-			(start 1.749484 0.919721)
-			(mid 1.712526 0.814069)
-			(end 1.699999 0.702843)
+			(start 0.794453 1.500001)
+			(mid 0.925123 1.517378)
+			(end 1.046711 1.5683)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "fa75f43a-8377-442b-adfe-bd7b5b5d3a75")
+			(uuid "5dfa414d-5b86-4537-b9eb-3a6526a00217")
 		)
-		(fp_line
-			(start -3.8 -1.999999)
-			(end -3.8 2.000001)
+		(fp_arc
+			(start -1.046711 1.568299)
+			(mid -1.63807 1.504035)
+			(end -1.749484 0.919721)
 			(stroke
-				(width 0.05)
+				(width 0.1)
 				(type solid)
 			)
-			(layer "B.CrtYd")
-			(uuid "5af3e7d0-d46b-4e74-92c6-b4a0000585c7")
+			(layer "Edge.Cuts")
+			(uuid "10034bce-7a36-4337-88d2-2adfed17c09e")
 		)
-		(fp_line
-			(start -3.8 2.000001)
-			(end 3.8 2.000001)
+		(fp_arc
+			(start -1.046711 1.568299)
+			(mid -0.925123 1.517377)
+			(end -0.794453 1.5)
 			(stroke
-				(width 0.05)
+				(width 0.1)
 				(type solid)
 			)
-			(layer "B.CrtYd")
-			(uuid "d4ffd499-e0d5-4c21-834c-e75ac0bd0fae")
+			(layer "Edge.Cuts")
+			(uuid "810d72c2-75dc-4dd5-a2a9-0e90283212c1")
 		)
 		(fp_line
 			(start 3.8 -1.999999)
@@ -18125,6 +18105,16 @@
 			(uuid "7ad1dd15-f147-464a-a811-242c80e8fa5b")
 		)
 		(fp_line
+			(start -3.8 -1.999999)
+			(end -3.8 2.000001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "5af3e7d0-d46b-4e74-92c6-b4a0000585c7")
+		)
+		(fp_line
 			(start 3.8 2.000001)
 			(end 3.8 -1.999999)
 			(stroke
@@ -18135,34 +18125,14 @@
 			(uuid "5324c00e-2b68-4db4-a992-3b7dc3bf43f0")
 		)
 		(fp_line
-			(start -1.6 -0.899999)
-			(end -1.6 1.400001)
+			(start -3.8 2.000001)
+			(end 3.8 2.000001)
 			(stroke
-				(width 0.12)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "B.Fab")
-			(uuid "6e77e931-395d-4a67-8d42-3ec2561f7118")
-		)
-		(fp_line
-			(start -1.6 -0.899999)
-			(end -1.1 -1.399999)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "B.Fab")
-			(uuid "7e3863d5-38b6-46cc-ac0c-d93dcde2e2cb")
-		)
-		(fp_line
-			(start -1.6 1.400001)
-			(end 1.6 1.400001)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "B.Fab")
-			(uuid "39019b8b-b74c-4500-b48c-4c096becc7bc")
+			(layer "B.CrtYd")
+			(uuid "d4ffd499-e0d5-4c21-834c-e75ac0bd0fae")
 		)
 		(fp_line
 			(start 1.6 -1.399999)
@@ -18175,6 +18145,26 @@
 			(uuid "ff611c57-eaaa-4cb7-877f-9c095eaa93bf")
 		)
 		(fp_line
+			(start -1.6 -0.899999)
+			(end -1.1 -1.399999)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "7e3863d5-38b6-46cc-ac0c-d93dcde2e2cb")
+		)
+		(fp_line
+			(start -1.6 -0.899999)
+			(end -1.6 1.400001)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "6e77e931-395d-4a67-8d42-3ec2561f7118")
+		)
+		(fp_line
 			(start 1.6 1.400001)
 			(end 1.6 -1.399999)
 			(stroke
@@ -18184,8 +18174,18 @@
 			(layer "B.Fab")
 			(uuid "32f956f2-3c10-4eb9-adb4-349d996920ab")
 		)
+		(fp_line
+			(start -1.6 1.400001)
+			(end 1.6 1.400001)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "39019b8b-b74c-4500-b48c-4c096becc7bc")
+		)
 		(fp_text user "offset: 5.08"
-			(at 0 3 0)
+			(at 0 3 90)
 			(layer "Dwgs.User")
 			(uuid "8852b96b-5fc0-444d-89e7-f73c7a2fcf34")
 			(effects
@@ -18196,7 +18196,7 @@
 			)
 		)
 		(fp_text user "switch center"
-			(at 0 6.25 0)
+			(at 0 6.25 90)
 			(layer "Cmts.User")
 			(uuid "b310ca01-75b2-4b29-9c80-c64646d3ffb4")
 			(effects
@@ -18207,7 +18207,7 @@
 			)
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "B.Fab")
 			(uuid "6cb71c9b-dc6c-4713-90f6-51dfc81569ff")
 			(effects
@@ -18219,7 +18219,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at 2.725 0.75 270)
+			(at 2.725 0.75)
 			(size 0.82 1.35)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.1)
@@ -18229,7 +18229,7 @@
 			(uuid "3d1056b9-026c-4bcd-85ae-5ac56b56e4b6")
 		)
 		(pad "2" smd roundrect
-			(at 2.725 -0.75 270)
+			(at 2.725 -0.75)
 			(size 0.82 1.35)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.1)
@@ -18239,7 +18239,7 @@
 			(uuid "ab56d177-86cc-466c-be05-0232e0f24a49")
 		)
 		(pad "3" smd roundrect
-			(at -2.725 0.75 270)
+			(at -2.725 0.75)
 			(size 0.82 1.35)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.1)
@@ -18249,7 +18249,7 @@
 			(uuid "aae60486-d05d-45bf-9cc1-bd693e61e6fe")
 		)
 		(pad "4" smd roundrect
-			(at -2.725 -0.75 270)
+			(at -2.725 -0.75)
 			(size 0.82 1.35)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.1)
@@ -18276,13 +18276,13 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "634755dd-ead3-413d-990e-b732e66ba2d0")
-		(at 28.575 20.75)
+		(at 135.930866 56.625888)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "LED1"
 			(at 0 -2.6 0)
 			(layer "B.SilkS")
-			(uuid "ee3f414e-c42b-4bbd-8538-0e3a0d3ed57d")
+			(uuid "3a4141ad-5d93-4829-9e55-9c53aea38136")
 			(effects
 				(font
 					(size 1 1)
@@ -18294,7 +18294,7 @@
 		(property "Value" "MX_SK6812MINI-E"
 			(at -9.425 -3.47 0)
 			(layer "B.Fab")
-			(uuid "4c36e243-793c-4840-9935-34562d02ce14")
+			(uuid "b971af96-8058-4f04-9ef5-244023d6d583")
 			(effects
 				(font
 					(size 1 1)
@@ -18308,7 +18308,7 @@
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "a320344f-d323-460a-b4c8-6b60ba55655e")
+			(uuid "d2399eb1-72cf-43ac-ab99-a7c9dbd6583d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18322,7 +18322,7 @@
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "f60564d8-d059-49c2-98c8-33b1a3150a80")
+			(uuid "99a7cccc-dc74-436c-b7c1-4a12d6252999")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24458,13 +24458,13 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "7cd4fbf7-7d9c-4d51-8014-a281833703ee")
-		(at -15.7225 51.254999)
+		(at 50.158366 85.155887)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "LED6"
 			(at 0 -2.6 0)
 			(layer "B.SilkS")
-			(uuid "c4d16f7b-25e8-4ef6-a97d-520c26cd1203")
+			(uuid "bb943b95-3fed-465c-813e-2275a1b85fc2")
 			(effects
 				(font
 					(size 1 1)
@@ -24476,7 +24476,7 @@
 		(property "Value" "MX_SK6812MINI-E"
 			(at -9.425 -3.47 0)
 			(layer "B.Fab")
-			(uuid "245b977c-0254-483a-b41c-fddcff2910b9")
+			(uuid "48cef1e8-10b6-4a66-add0-e7a0c7818457")
 			(effects
 				(font
 					(size 1 1)
@@ -24490,7 +24490,7 @@
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "0b972411-dcd4-4e38-855c-d688b9d9c4a2")
+			(uuid "d24ebf4b-b0e3-4e5b-a56b-075832b40bea")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24504,7 +24504,7 @@
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "953016c5-41b1-4352-92c5-6bc1576ed37a")
+			(uuid "6807eeb5-9fb6-4933-a250-8e26cf6fd454")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26163,7 +26163,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "81e08e11-0f24-4ae9-8704-618c8f027628")
-		(at 10.8725 76.504999)
+		(at 78.77 142.32)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "LED22"
@@ -27268,7 +27268,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "842609bc-3011-43b6-bb26-0d92332d79b7")
-		(at -6.8575 51.254999)
+		(at 97.765 104.13)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "LED13"
@@ -27773,7 +27773,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "8c555b22-83f7-4d40-9536-c26b7c89802e")
-		(at 2.0075 46.204999)
+		(at 50.2 142.3)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "LED21"
@@ -28283,7 +28283,7 @@
 		(property "Reference" "MACRO_D1"
 			(at -5.265 1.905 0)
 			(layer "B.SilkS")
-			(uuid "6a7b0815-023d-4c05-9743-12b21e5b9858")
+			(uuid "07b7defc-f0d0-4714-bc8c-9a1d846f13e7")
 			(effects
 				(font
 					(size 1 1)
@@ -28295,7 +28295,7 @@
 		(property "Value" "MX_SW_HS"
 			(at 0 0 0)
 			(layer "B.Fab")
-			(uuid "12b4b771-a914-4d45-a8b1-f53e91cd3f03")
+			(uuid "c5b571a6-9610-4008-812c-f1d6a2b1fdfe")
 			(effects
 				(font
 					(size 1 1)
@@ -28308,7 +28308,7 @@
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "c09b64f8-e08e-4356-9c76-12e1c3dff567")
+			(uuid "ae252576-d69d-43b4-8fe3-3a33ae732b5a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28321,7 +28321,7 @@
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "fc705e6e-8691-40db-ba99-82b785e9e7bd")
+			(uuid "5713d605-bf90-483f-b340-efdf892d0efa")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29542,7 +29542,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "915f2f3d-25a2-46b6-aeed-11d482bb3645")
-		(at -15.7225 46.204999)
+		(at 78.805866 85.145888)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "LED7"
@@ -31681,7 +31681,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "a04b52d2-2f7f-43f2-a915-4e70ac3d6e1a")
-		(at 2.0075 56.304999)
+		(at 116.79 123.28)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "LED19"
@@ -32786,13 +32786,13 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "a0aa7452-bb30-4915-b7d7-aca8c1081fda")
-		(at -15.7225 66.404999)
+		(at 97.725 56.58)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "LED3"
 			(at 0 -2.6 0)
 			(layer "B.SilkS")
-			(uuid "0aebcbf7-e5e9-4391-93b9-32ab4a183590")
+			(uuid "c7e21261-bb5a-4e07-ac53-22a5f91b90c2")
 			(effects
 				(font
 					(size 1 1)
@@ -32804,7 +32804,7 @@
 		(property "Value" "MX_SK6812MINI-E"
 			(at -9.425 -3.47 0)
 			(layer "B.Fab")
-			(uuid "0635be0b-995c-4974-9305-39155bee8b2e")
+			(uuid "e72e042a-8132-460e-b509-d9d749ea0086")
 			(effects
 				(font
 					(size 1 1)
@@ -32818,7 +32818,7 @@
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "6bfc9b4f-6175-4cb7-ae29-bc34af97b741")
+			(uuid "bcb9d47b-03ba-4f1a-9f96-b55ed4ae8cbb")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32832,7 +32832,7 @@
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "fcb2cacb-5068-4639-8982-9f5772943b2c")
+			(uuid "db5958b0-7dfd-4b67-aa4b-881703c3b51d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36875,13 +36875,13 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "b184032d-6c2e-4bbf-b5a8-9600acc5d319")
-		(at 2.0075 76.504999)
+		(at 50.16 104.13)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "LED15"
 			(at 0 -2.6 0)
 			(layer "B.SilkS")
-			(uuid "3338beba-9592-4b44-8219-da1ac4603592")
+			(uuid "13f5123b-73ae-4328-ad3a-aae0a9c994af")
 			(effects
 				(font
 					(size 1 1)
@@ -36893,7 +36893,7 @@
 		(property "Value" "MX_SK6812MINI-E"
 			(at -9.425 -3.47 0)
 			(layer "B.Fab")
-			(uuid "e9cb814b-b151-494a-bed2-81dd59b540e7")
+			(uuid "65db28e6-7356-4555-9926-9d163dbb3c82")
 			(effects
 				(font
 					(size 1 1)
@@ -36907,7 +36907,7 @@
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "a9df4727-bd66-4056-9163-fe967e088d7e")
+			(uuid "7b21917e-e364-47d9-b80d-64c9cab91634")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36921,7 +36921,7 @@
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "7346e68c-82f6-4637-8fdc-ca9d6440ca03")
+			(uuid "4017d944-3c76-46d6-ba6b-10a7c1a6ac8c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39244,13 +39244,13 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "c158e3e1-3ee1-4484-9257-f8bc58ff11c4")
-		(at -6.8575 66.404999)
+		(at 135.945866 85.155888)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "LED10"
 			(at 0 -2.6 0)
 			(layer "B.SilkS")
-			(uuid "fdda2232-c61f-4a3a-b389-cb397eb3da61")
+			(uuid "8295715e-5ff8-40b1-b5dc-ca4918b1aea0")
 			(effects
 				(font
 					(size 1 1)
@@ -39262,7 +39262,7 @@
 		(property "Value" "MX_SK6812MINI-E"
 			(at -9.425 -3.47 0)
 			(layer "B.Fab")
-			(uuid "390e95a6-3c57-45ec-99f9-173becb60bc6")
+			(uuid "157c7166-89a0-44ec-bff2-9e40e73c4c73")
 			(effects
 				(font
 					(size 1 1)
@@ -39276,7 +39276,7 @@
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "f38babe3-2f3a-4669-8b8a-482a97fe3aff")
+			(uuid "f982db51-9f28-4ec3-a1ff-8a03ec12e20a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39290,7 +39290,7 @@
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "c06ea814-bd91-43a7-84fe-e2bd8f32fea1")
+			(uuid "d422187f-0284-416c-be6f-9b264caf4033")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40638,7 +40638,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "cd799f82-fe35-40ed-94f9-c5f98232f424")
-		(at 10.8725 51.254999)
+		(at 116.815 161.28)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "LED27"
@@ -42570,7 +42570,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "da48e48e-085d-45e6-a464-ccd77a9faf9f")
-		(at -6.8575 56.304999)
+		(at 116.87 104.21)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "LED12"
@@ -43964,7 +43964,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "e01c82e7-7d5e-4be3-93ce-4b2421b85c34")
-		(at 2.0075 61.354999)
+		(at 97.79 123.18)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "LED18"
