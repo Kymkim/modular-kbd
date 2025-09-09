@@ -56,6 +56,11 @@
           "gap": 0.0,
           "via_gap": 0.0,
           "width": 0.0
+        },
+        {
+          "gap": 0.4,
+          "via_gap": 0.4,
+          "width": 0.8
         }
       ],
       "drc_exclusions": [],
@@ -188,7 +193,8 @@
       ],
       "track_widths": [
         0.0,
-        0.2
+        0.2,
+        0.6
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -475,7 +481,7 @@
         "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
+        "diff_pair_width": 0.8,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
@@ -630,11 +636,7 @@
     ],
     [
       "1d905906-6e74-4741-8b2e-53dc470a7c79",
-      "Numpad Matrix + Rotary Encoder"
-    ],
-    [
-      "ead3be26-7f43-4289-81f3-aae72a11e5f1",
-      "RGB Matrix"
+      "NumpadRGB"
     ]
   ],
   "text_variables": {}
