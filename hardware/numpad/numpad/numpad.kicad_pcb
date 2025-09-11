@@ -2697,7 +2697,7 @@
 				(justify left bottom mirror)
 			)
 		)
-		(property "Value" "LD1117"
+		(property "Value" "LD1117-3.3V-SOT223"
 			(at -10.825 -3.95 0)
 			(layer "B.SilkS")
 			(uuid "24090841-56d1-4137-a477-53f461ce6028")
@@ -2981,7 +2981,7 @@
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "LED11"
-			(at 0 -2.6 90)
+			(at -5.4775 0.015001 180)
 			(layer "B.SilkS")
 			(uuid "1720e898-03e4-4867-825c-08ca7df4da87")
 			(effects
@@ -3485,9 +3485,9 @@
 		(at 135.89 156.845 90)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "NUM_ENTER1"
-			(at 0 -3.515 90)
+			(at -7.775 -1.67 180)
 			(layer "B.SilkS")
-			(uuid "b46d3515-37ca-48d0-99f8-b188526e94b7")
+			(uuid "33ad30d8-3458-4a3e-ada9-d0a4d9f1e196")
 			(effects
 				(font
 					(size 1 1)
@@ -3499,7 +3499,7 @@
 		(property "Value" "MX_SW_HS"
 			(at 0 0 90)
 			(layer "B.Fab")
-			(uuid "bc6a2671-94e4-4b03-81c2-da1e944fb36f")
+			(uuid "b858028b-e309-4000-a5e3-6eb0e79dcfec")
 			(effects
 				(font
 					(size 1 1)
@@ -3512,7 +3512,7 @@
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "d78a2b23-d64e-4917-8ae4-bafff611a785")
+			(uuid "2f07954b-5676-44c1-9870-495ca67a0e30")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3525,7 +3525,7 @@
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "9acbcbf7-a0f6-4ef9-9b1e-2566b5e9f926")
+			(uuid "9e4fafc5-c5a6-4da0-876a-7f297a85e000")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4311,7 +4311,7 @@
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "LED23"
-			(at 0 -2.6 0)
+			(at -6.315 -0.11 0)
 			(layer "B.SilkS")
 			(uuid "f7cc20fd-a6d3-4b90-8de9-610bfb87eff9")
 			(effects
@@ -8546,7 +8546,7 @@
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D17"
-			(at 0 2.127 0)
+			(at -3.5 -0.01 90)
 			(layer "B.SilkS")
 			(uuid "7cbb3a56-b71e-429a-a50d-874343dc3904")
 			(effects
@@ -8878,7 +8878,7 @@
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D23"
-			(at 0 2.127 0)
+			(at -3.42 -0.01 90)
 			(layer "B.SilkS")
 			(uuid "cf06e6c4-4fe0-4bae-9124-53b4597831a1")
 			(effects
@@ -10220,9 +10220,9 @@
 		(at 50.165 166.37)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "MACRO_I1"
-			(at -2.54 -4.745 0)
+			(at -6.475 1.78 0)
 			(layer "B.SilkS")
-			(uuid "a47717e8-788a-4437-800f-db156caeea8e")
+			(uuid "01c7e151-c6db-4e3d-a0f0-08730a9e5b35")
 			(effects
 				(font
 					(size 1 1)
@@ -10234,7 +10234,7 @@
 		(property "Value" "MX_SW_HS"
 			(at 0 0 0)
 			(layer "B.Fab")
-			(uuid "2c2466ce-0862-4258-877c-ca4b1f8a2a1c")
+			(uuid "48426a44-dd71-4506-9401-77625d8b8ec8")
 			(effects
 				(font
 					(size 1 1)
@@ -10247,7 +10247,7 @@
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "c92a5a9a-d9c6-4ac4-bb35-b9ac852dd2f3")
+			(uuid "1e5b0441-22b7-4ff9-b7e4-85c73ec93bed")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10260,7 +10260,7 @@
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "254e6b3a-bea6-4d2f-bdfb-7dd2e2dfa473")
+			(uuid "91b2ab15-7840-4e69-a4f0-655fcf56e07c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12656,7 +12656,7 @@
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D15"
-			(at 0 2.127 0)
+			(at -3.24 -0.03 90)
 			(layer "B.SilkS")
 			(uuid "509e3a9a-2bb4-464f-b7a8-d42ceb227fb0")
 			(effects
@@ -13588,7 +13588,7 @@
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "LED26"
-			(at 0 -2.6 0)
+			(at -6.65 -0.04 0)
 			(layer "B.SilkS")
 			(uuid "8f8c540f-0a9d-447f-9777-2d1e57bc3fa2")
 			(effects
@@ -14093,7 +14093,7 @@
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "LED24"
-			(at 0 -2.6 0)
+			(at -5.985 -0.03 0)
 			(layer "B.SilkS")
 			(uuid "77f0110a-a9c6-4696-baaa-4794e63f711b")
 			(effects
@@ -15103,7 +15103,7 @@
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "LED16"
-			(at 0 -2.6 0)
+			(at -5.955 0.02 0)
 			(layer "B.SilkS")
 			(uuid "b5c480cd-67ed-4d31-9697-821dcf1df024")
 			(effects
@@ -15608,7 +15608,7 @@
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D21"
-			(at 0 2.127 90)
+			(at -3.13 -0.07 180)
 			(layer "B.SilkS")
 			(uuid "068a8e01-5db6-4f44-a2f7-d2bed8f88927")
 			(effects
@@ -17045,7 +17045,7 @@
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "LED17"
-			(at 0 -2.6 0)
+			(at -6.36 -0.07 180)
 			(layer "B.SilkS")
 			(uuid "59f79149-9e0e-498d-b102-e82aff853276")
 			(effects
@@ -17775,7 +17775,7 @@
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "LED25"
-			(at 0 -2.6 90)
+			(at -4.685 0.035 0)
 			(layer "B.SilkS")
 			(uuid "ef65ac00-d572-4b67-a856-046f9cde10f8")
 			(effects
@@ -19612,7 +19612,7 @@
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D12"
-			(at 0 2.127 0)
+			(at -3.26 -0.07 90)
 			(layer "B.SilkS")
 			(uuid "f5b69d64-fa22-4133-80b0-9bd6b96ab8c4")
 			(effects
@@ -24130,7 +24130,7 @@
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D25"
-			(at 0 2.127 0)
+			(at -3.36 -0.015 90)
 			(layer "B.SilkS")
 			(uuid "62c8e8d1-58b1-4bc1-8515-dd30c8fb970e")
 			(effects
@@ -26167,7 +26167,7 @@
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "LED22"
-			(at 0 -2.6 0)
+			(at -6.41 -0.09 0)
 			(layer "B.SilkS")
 			(uuid "f9362f76-6f68-4493-b52d-e71c408fd588")
 			(effects
@@ -26671,9 +26671,9 @@
 		(at 135.89 118.745 90)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "NUM_ADD1"
-			(at 0 -3.965 90)
+			(at 5.225 -5.37 180)
 			(layer "B.SilkS")
-			(uuid "24046432-7f9d-4220-9186-5d384d1739ff")
+			(uuid "5d153d5c-af09-4612-b85a-7031faf0bbb9")
 			(effects
 				(font
 					(size 1 1)
@@ -26685,7 +26685,7 @@
 		(property "Value" "MX_SW_HS"
 			(at 0 0 90)
 			(layer "B.Fab")
-			(uuid "173d3c19-9e82-411d-8f83-a1203636d8b5")
+			(uuid "2f39487b-fe23-406f-9467-b4f93434e4e7")
 			(effects
 				(font
 					(size 1 1)
@@ -26698,7 +26698,7 @@
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "cfe91760-0ce0-40ae-860e-9f1160892e8f")
+			(uuid "9f4c2b36-9618-472a-acd5-6c7ab74b7564")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26711,7 +26711,7 @@
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "663ea076-bd49-4404-9a70-677e272c08ba")
+			(uuid "f5365d86-1877-4707-b5e7-d9a9eec6a556")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27777,7 +27777,7 @@
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "LED21"
-			(at 0 -2.6 0)
+			(at -6.68 -0.05 0)
 			(layer "B.SilkS")
 			(uuid "fddf1790-1a2f-4e24-891f-228540006f12")
 			(effects
@@ -28882,7 +28882,7 @@
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D27"
-			(at 0 2.127 0)
+			(at -3.285 -0.01 90)
 			(layer "B.SilkS")
 			(uuid "a33b585e-7819-4904-844f-9337a48c22c9")
 			(effects
@@ -29214,7 +29214,7 @@
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D26"
-			(at 0 2.127 0)
+			(at -3.265 0 90)
 			(layer "B.SilkS")
 			(uuid "977ba06d-9354-4c3a-81ae-638b08a84503")
 			(effects
@@ -30051,7 +30051,7 @@
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D18"
-			(at 0 2.127 0)
+			(at -3.28 0 90)
 			(layer "B.SilkS")
 			(uuid "e1fa85e6-a2fc-442f-8657-c87fb3ef4601")
 			(effects
@@ -31685,7 +31685,7 @@
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "LED19"
-			(at 0 -2.6 0)
+			(at -6.33 0.03 180)
 			(layer "B.SilkS")
 			(uuid "9106d1cb-37f3-489d-8f6f-8d747d71c5d0")
 			(effects
@@ -35719,9 +35719,9 @@
 		(at 116.84 166.37)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "NUM_PERIOD1"
-			(at -2.54 -4.17 0)
+			(at -7.18 1.81 0)
 			(layer "B.SilkS")
-			(uuid "ae4140d0-66a3-4471-95fd-ee1b22583e89")
+			(uuid "0776b03c-7141-4992-be1c-889499d86734")
 			(effects
 				(font
 					(size 1 1)
@@ -35733,7 +35733,7 @@
 		(property "Value" "MX_SW_HS"
 			(at 0 8.334375 0)
 			(layer "B.Fab")
-			(uuid "0133a0c1-6720-4fd1-a0be-ebfc39fbe841")
+			(uuid "8625133a-e407-45b4-9f69-cb4416da7d01")
 			(effects
 				(font
 					(size 1 1)
@@ -35746,7 +35746,7 @@
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "ca0e41c8-fd18-4084-be27-83c5bd1a802e")
+			(uuid "11299b90-1b51-4b85-b73c-b9212cac5f8a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35759,7 +35759,7 @@
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "50066368-1200-4200-acd4-040875f1e14b")
+			(uuid "4d01fc41-66fb-4060-ba80-4edf878c59ab")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36879,7 +36879,7 @@
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "LED15"
-			(at 0 -2.6 0)
+			(at -6.03 0.02 0)
 			(layer "B.SilkS")
 			(uuid "13f5123b-73ae-4328-ad3a-aae0a9c994af")
 			(effects
@@ -38312,12 +38312,12 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "b65a1688-e602-4367-8713-0b6988e56ce5")
-		(at 88.265 166.37)
+		(at 88.254824 166.33)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "NUM_0"
-			(at 0 -4.995 0)
+			(at -6.994824 1.9 0)
 			(layer "B.SilkS")
-			(uuid "97c81e49-b566-42c7-bf73-84122208d469")
+			(uuid "2fdaed7a-3842-4dc4-af0c-fb1e8280b63b")
 			(effects
 				(font
 					(size 1 1)
@@ -38329,7 +38329,7 @@
 		(property "Value" "MX_SW_HS"
 			(at 0 0 0)
 			(layer "B.Fab")
-			(uuid "f876326b-40ac-421c-be4c-e9d8869d9df4")
+			(uuid "ebfd3073-7351-428d-9f18-4f482512d894")
 			(effects
 				(font
 					(size 1 1)
@@ -38342,7 +38342,7 @@
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "ff0df337-5ae7-4553-a270-05f1f5b8a4e1")
+			(uuid "d3993b17-1380-4f89-b828-f9306c122c80")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38355,7 +38355,7 @@
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "79a22a0b-8a34-437f-8225-0e9300488c01")
+			(uuid "d3d6c7db-8892-4dbe-b93c-31c8113b9ffb")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38916,7 +38916,7 @@
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D16"
-			(at 0 2.127 0)
+			(at -3.45 -0.03 270)
 			(layer "B.SilkS")
 			(uuid "dc9c3a1e-2f40-4c1c-86fb-7365fae4cae7")
 			(effects
@@ -39753,7 +39753,7 @@
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D22"
-			(at 0 2.127 0)
+			(at -3.32 -0.01 270)
 			(layer "B.SilkS")
 			(uuid "82338a4b-c879-4d3c-8f00-eb1f7d7504c4")
 			(effects
@@ -43968,7 +43968,7 @@
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "LED18"
-			(at 0 -2.6 0)
+			(at -6.22 0.06 0)
 			(layer "B.SilkS")
 			(uuid "c39cfc96-73c2-432d-b06c-840b58a306de")
 			(effects
@@ -44473,7 +44473,7 @@
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D20"
-			(at 0 2.127 0)
+			(at -3.49 0 270)
 			(layer "B.SilkS")
 			(uuid "58853f68-36f7-4ec3-9de1-dc2aebac59f7")
 			(effects
@@ -46330,7 +46330,7 @@
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D11"
-			(at 0 2.127 0)
+			(at -3.26 0 90)
 			(layer "B.SilkS")
 			(uuid "7a0cb485-b281-4912-96da-b73558016aaf")
 			(effects
@@ -48589,7 +48589,7 @@
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D13"
-			(at 0 2.127 0)
+			(at -3.25 0.02 90)
 			(layer "B.SilkS")
 			(uuid "749802ee-19f6-46f9-ae3b-17b26d4dcb04")
 			(effects
@@ -49148,7 +49148,7 @@
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D19"
-			(at 0 2.127 0)
+			(at -3.21 0.04 90)
 			(layer "B.SilkS")
 			(uuid "cddc77c0-d782-4ac1-a686-ec94642a4f5c")
 			(effects
@@ -49480,7 +49480,7 @@
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D14"
-			(at 0 2.127 0)
+			(at 3.23 0.11 270)
 			(layer "B.SilkS")
 			(uuid "3ca67c16-b22f-4f5f-b8bb-5cf2ee42b1ea")
 			(effects
