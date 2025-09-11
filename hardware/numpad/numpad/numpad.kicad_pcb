@@ -30607,7 +30607,7 @@
 		(at 64.29375 76.2 180)
 		(tags "STM32F446RET6 ")
 		(property "Reference" "U1"
-			(at 0 0 0)
+			(at 0.14375 0.17 0)
 			(unlocked yes)
 			(layer "B.SilkS")
 			(uuid "7ab225f2-429f-45d8-80da-38927931f513")
@@ -50554,6 +50554,31 @@
 		(fill no)
 		(layer "Edge.Cuts")
 		(uuid "ec7f38bf-a8e0-4042-b04c-08aa3a1c4714")
+	)
+	(gr_text "Team SKBD\nNumpad"
+		(at 64.41 77.68 0)
+		(layer "F.SilkS")
+		(uuid "ce9bc2e6-2ccf-4759-a057-b08bb8de52ca")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.25)
+				(bold yes)
+			)
+			(justify bottom)
+		)
+	)
+	(gr_text "ARHKEIA"
+		(at 139.8 169.55 -0)
+		(layer "B.SilkS")
+		(uuid "2f91eb4d-a568-46e1-bf84-af2236d8a114")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom mirror)
+		)
 	)
 	(gr_text "5VD\n"
 		(at 71.25 44.775 0)
