@@ -1,0 +1,411 @@
+(footprint "BJB_Pico_46.110.1001_Receptacle_Horizontal"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "BJB Pico, single terminal block/receptacle, uninsulated, SMD, 6.9x2.3x2.7mm, https://www.bjb.com/media/7a/b3/df/1740905546/DM-6265102-v6_BJB_Datasheet_46.110.1001-0_SMD_Terminal_block_without_housing_Update_03_2022.PDF")
+	(tags "socket")
+	(property "Reference" "REF**"
+		(at 0 -2 0)
+		(layer "F.SilkS")
+		(uuid "2ec05b90-c354-49df-94fa-455ae12e480a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "BJB_Pico_46.110.1001_Receptacle_Horizontal"
+		(at 0 2.5 0)
+		(layer "F.Fab")
+		(uuid "bc2ddebd-ed86-489e-b8f6-84b991ccf233")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0.45 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3561be30-ee40-46b6-aa1d-59999ee85dc9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0.45 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c52783ab-0e46-4a14-9799-100bda30d32e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -4.05 -1.24)
+		(end -3.65 -1.11)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "f29deae5-7132-4105-8224-5a3bd550cfb5")
+	)
+	(fp_line
+		(start -4.05 1.24)
+		(end -3.65 1.11)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "9c0307b8-e252-4ff6-96d6-64875a7a71a8")
+	)
+	(fp_line
+		(start -3.65 -1.11)
+		(end -2 -1.11)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "df32cfb4-e0ed-41c7-b71a-7c94555ec3b3")
+	)
+	(fp_line
+		(start -3.65 1.11)
+		(end -2 1.11)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "6f1a799b-3eec-4c52-ab9c-8dc171d20e93")
+	)
+	(fp_line
+		(start -2 -1.11)
+		(end -1.9 -1.26)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "5688255d-cad6-4729-82b7-3ea01201bef9")
+	)
+	(fp_line
+		(start -2 1.11)
+		(end -1.9 1.26)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "14521aa8-5338-4b66-bc6f-20ca32b176db")
+	)
+	(fp_line
+		(start -1.9 -1.26)
+		(end 3.81 -1.26)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "57112709-6d8b-45a2-ae3e-fbeefaa8b83c")
+	)
+	(fp_line
+		(start -1.9 1.26)
+		(end 3.81 1.26)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "c5616b53-4299-443f-84fa-8bb8aa0a3e5d")
+	)
+	(fp_line
+		(start 3.81 -1.26)
+		(end 3.81 1.26)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "83b767d4-774f-4b32-b8fe-ea99a0bbbce4")
+	)
+	(fp_line
+		(start -12.1 -1.6)
+		(end -12.1 1.6)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Dwgs.User")
+		(uuid "7a67fe86-1ee6-4b55-9638-fa941ea83667")
+	)
+	(fp_line
+		(start -5.9 -1.6)
+		(end -5.9 1.6)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Dwgs.User")
+		(uuid "0d024e63-eec7-4d4b-a5ea-60b9ce256c1d")
+	)
+	(fp_line
+		(start -4.9 -1.6)
+		(end -4.9 1.6)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Dwgs.User")
+		(uuid "d1643588-30e5-4192-bc4d-9cad12ab99a5")
+	)
+	(fp_rect
+		(start -4.8 -1.65)
+		(end 4.2 1.65)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "8f3db721-a8cf-4fe9-949c-6010e4021d5c")
+	)
+	(fp_line
+		(start -4.3 -1.15)
+		(end -3.3 -0.85)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "f06d610f-811a-4947-91d8-a0de2b894029")
+	)
+	(fp_line
+		(start -4.3 1.15)
+		(end -4.3 -1.15)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "1811b686-ecf0-402e-9b95-b82a4d18d341")
+	)
+	(fp_line
+		(start -4.3 1.15)
+		(end -3.3 0.85)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "ec777840-7ad8-4273-99ad-3e9a32fa1a0d")
+	)
+	(fp_line
+		(start -3.3 -0.85)
+		(end -1.95 -0.85)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "7e683cd1-4e70-4cf2-9490-4ba2b883fd43")
+	)
+	(fp_line
+		(start -3.3 0.85)
+		(end -1.95 0.85)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "4fb5dfb5-a6be-4e9b-a90e-44afaf6e1e05")
+	)
+	(fp_line
+		(start -1.95 -0.85)
+		(end -1.8 -1.15)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "81760eda-6b6a-4c75-a829-f60ad2e8190e")
+	)
+	(fp_line
+		(start -1.95 0.85)
+		(end -1.8 1.15)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "bb41a9a5-4457-4b2a-a8eb-080233ffe60c")
+	)
+	(fp_line
+		(start -1.8 -1.15)
+		(end 3.7 -1.15)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "47b483fe-b1d2-496b-810f-2d908c67afa0")
+	)
+	(fp_line
+		(start -1.8 1.15)
+		(end 3.7 1.15)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "8053bdd0-ba02-4759-b460-16924fdc4729")
+	)
+	(fp_line
+		(start 3.7 -1.15)
+		(end 3.7 1.15)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "3b079c76-bfd2-4246-93cd-504f8f55f23e")
+	)
+	(fp_text user "PCB Edge"
+		(at -12.6 0 90)
+		(unlocked yes)
+		(layer "Dwgs.User")
+		(uuid "014f9920-6f9e-4512-bbec-34720ae5f6ec")
+		(effects
+			(font
+				(size 0.4 0.4)
+				(thickness 0.06)
+			)
+		)
+	)
+	(fp_text user "MiniFlex 30"
+		(at -11.7 0 90)
+		(unlocked yes)
+		(layer "Dwgs.User")
+		(uuid "36b49252-c34d-40c8-983f-d7731949a229")
+		(effects
+			(font
+				(size 0.4 0.4)
+				(thickness 0.06)
+			)
+		)
+	)
+	(fp_text user "15.6mm conn"
+		(at -4.5 0 90)
+		(unlocked yes)
+		(layer "Dwgs.User")
+		(uuid "7ea2b9b2-5afe-43dc-aa79-14e3b45e7048")
+		(effects
+			(font
+				(size 0.3 0.3)
+				(thickness 0.045)
+			)
+		)
+	)
+	(fp_text user "17.6mm conn"
+		(at -6.3 0 90)
+		(unlocked yes)
+		(layer "Dwgs.User")
+		(uuid "9767aef2-b32b-4698-bdc0-187e443c8b35")
+		(effects
+			(font
+				(size 0.3 0.3)
+				(thickness 0.045)
+			)
+		)
+	)
+	(fp_text user "PCB Edges"
+		(at -5.4 0 90)
+		(unlocked yes)
+		(layer "Dwgs.User")
+		(uuid "b2bce4a5-97a6-40ff-b1c5-473ffa25fbcc")
+		(effects
+			(font
+				(size 0.4 0.4)
+				(thickness 0.06)
+			)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "49f30297-9c29-4dce-a3fe-aac861ad057c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" smd roundrect
+		(at -3.1 -0.025)
+		(size 2.1 1.65)
+		(layers "F.Paste")
+		(roundrect_rratio 0.1515151515)
+		(thermal_bridge_angle 45)
+		(uuid "5589455a-cfc9-46f1-95dd-c6737acf4d73")
+	)
+	(pad "" smd roundrect
+		(at -0.7 0)
+		(size 2.3 2)
+		(layers "F.Paste")
+		(roundrect_rratio 0.125)
+		(thermal_bridge_angle 45)
+		(uuid "de43c6df-1e79-4d99-9deb-d2a0870cf25a")
+	)
+	(pad "" smd roundrect
+		(at 1.7 0)
+		(size 2.1 2)
+		(layers "F.Paste")
+		(roundrect_rratio 0.125)
+		(thermal_bridge_angle 45)
+		(uuid "6b53701f-4748-4b6b-b8b5-33f6e02b743a")
+	)
+	(pad "1" smd roundrect
+		(at -2.6 -0.025)
+		(size 3.1 1.65)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.1515151515)
+		(thermal_bridge_angle 45)
+		(uuid "30829e38-c8e7-462c-9e9b-0ec2dfeab80a")
+	)
+	(pad "1" smd roundrect
+		(at 0.45 0)
+		(size 4.6 2)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.125)
+		(thermal_bridge_angle 45)
+		(uuid "f994c8c5-d50b-4220-abc5-61c2aad59fbc")
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/Connector.3dshapes/BJB_Pico_46.110.1001_Receptacle_Horizontal.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

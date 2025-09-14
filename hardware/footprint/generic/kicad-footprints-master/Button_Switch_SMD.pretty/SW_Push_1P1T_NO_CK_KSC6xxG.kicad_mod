@@ -1,0 +1,219 @@
+(footprint "SW_Push_1P1T_NO_CK_KSC6xxG"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Tactile switch, 6.2x6.25 mm, H7.7 mm, gullwing leads, https://www.ckswitches.com/media/1972/ksc6.pdf")
+	(tags "CK C&K SPST")
+	(property "Reference" "REF**"
+		(at 0 4.24 0)
+		(layer "F.SilkS")
+		(uuid "67177f75-9959-48fb-930d-f5090138b982")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "SW_Push_1P1T_NO_CK_KSC6xxG"
+		(at 0 -4.23 0)
+		(layer "F.Fab")
+		(uuid "fe2b3723-d0b3-41b0-b881-31510a87cc2d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ed275d2b-4907-4f00-9176-7459235a0891")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ab21929b-328c-4ac8-991c-53f49405cd5b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -3.21 -3.235)
+		(end -3.21 -2.8)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "48d781ee-486e-42d3-8f96-85589ac81e8a")
+	)
+	(fp_line
+		(start -3.21 -1.2)
+		(end -3.21 1.2)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "36946ff0-e832-4946-8993-1e01808fb45c")
+	)
+	(fp_line
+		(start -3.21 2.8)
+		(end -3.21 3.235)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "fd3a409a-65ea-4662-8a09-dfd1aa9a2fbb")
+	)
+	(fp_line
+		(start -3.21 3.235)
+		(end 3.21 3.235)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d842b985-0462-4a48-8f61-edbb1fd418d0")
+	)
+	(fp_line
+		(start 3.21 -3.235)
+		(end -3.21 -3.235)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "61e65515-f7c2-4d3c-8e1e-a3cf202ef285")
+	)
+	(fp_line
+		(start 3.21 -2.8)
+		(end 3.21 -3.235)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "87c6dd89-1c02-40df-bd15-68cf6a8e6c8c")
+	)
+	(fp_line
+		(start 3.21 1.2)
+		(end 3.21 -1.2)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e33a857d-7015-4d2b-ab54-0e0a5291f686")
+	)
+	(fp_line
+		(start 3.21 3.235)
+		(end 3.21 2.93)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7d32279f-71f4-4220-8f4c-c577499207aa")
+	)
+	(fp_rect
+		(start -6.25 -3.38)
+		(end 6.25 3.38)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "3c7c46a5-228e-4e36-8084-ccab847b4455")
+	)
+	(fp_rect
+		(start -3.1 -3.125)
+		(end 3.1 3.125)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "1913d34c-3865-42aa-86eb-b117faab3952")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 1.475 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "552de40f-c054-4d97-92da-c7dacf926f68")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "3d272031-4790-4f93-ba29-aed4b9a9820b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -4.45 -2)
+		(size 3.1 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "57a849e0-1264-4c78-b44f-60e66530d138")
+	)
+	(pad "1" smd roundrect
+		(at 4.45 -2)
+		(size 3.1 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "56ade057-1bd3-4846-9790-86556159c6ab")
+	)
+	(pad "2" smd roundrect
+		(at -4.45 2)
+		(size 3.1 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "8485b137-1ad7-4b93-8d74-4a64c5c8af3c")
+	)
+	(pad "2" smd roundrect
+		(at 4.45 2)
+		(size 3.1 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "9434f712-3a2c-4ad9-8063-03ae2214cb94")
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_Push_1P1T_NO_CK_KSC6xxG.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

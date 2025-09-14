@@ -1,0 +1,232 @@
+(footprint "L_Toroid_Horizontal_D21.8mm_P19.60mm_Bourns_2100"
+	(version 20241229)
+	(generator "kicad-footprint-generator")
+	(layer "F.Cu")
+	(descr "L_Toroid, Horizontal series, Radial, pin pitch=19.60mm, diameter=21.8mm, height=10.4mm, Bourns, 2100, http://www.bourns.com/docs/Product-Datasheets/2100_series.pdf?sfvrsn=3")
+	(tags "L_Toroid Horizontal series Radial pin pitch 19.60mm  diameter 21.8mm height 10.4mm Bourns 2100")
+	(property "Reference" "REF**"
+		(at 9.8 -12.15 0)
+		(layer "F.SilkS")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "L_Toroid_Horizontal_D21.8mm_P19.60mm_Bourns_2100"
+		(at 9.8 12.15 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_arc
+		(start -1.025747 -2.06)
+		(mid 9.8 -11.02)
+		(end 20.625747 -2.06)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_arc
+		(start 20.625747 2.06)
+		(mid 9.8 11.02)
+		(end -1.025747 2.06)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_circle
+		(center 9.8 0)
+		(end 13.313333 0)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+	)
+	(fp_rect
+		(start -2.06 -11.15)
+		(end 21.65 11.15)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+	)
+	(fp_line
+		(start -0.9996 0)
+		(end 6.338508 -0.927504)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 0.447272 -5.3998)
+		(end 7.266012 -2.533988)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 0.447272 5.3998)
+		(end 6.338508 0.927504)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 4.4002 -9.352728)
+		(end 8.872496 -3.461492)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 4.4002 9.352728)
+		(end 7.266012 2.533988)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 9.8 -10.7996)
+		(end 10.727504 -3.461492)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 9.8 10.7996)
+		(end 8.872496 3.461492)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 15.1998 -9.352728)
+		(end 12.333988 -2.533988)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 15.1998 9.352728)
+		(end 10.727504 3.461492)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 19.152728 -5.3998)
+		(end 13.261492 -0.927504)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 19.152728 5.3998)
+		(end 12.333988 2.533988)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 20.5996 0)
+		(end 13.261492 0.927504)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_circle
+		(center 9.8 0)
+		(end 13.433333 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+	)
+	(fp_circle
+		(center 9.8 0)
+		(end 20.7 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 9.8 0 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 3.6 3.6)
+		(drill 1.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+	)
+	(pad "2" thru_hole circle
+		(at 19.6 0)
+		(size 3.6 3.6)
+		(drill 1.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/Inductor_THT.3dshapes/L_Toroid_Horizontal_D21.8mm_P19.60mm_Bourns_2100.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

@@ -1,0 +1,424 @@
+(footprint "Samtec_MECF-08-0_-L-DV_2x08_P1.27mm_Polarized_Edge"
+	(version 20241229)
+	(generator "kicad-footprint-generator")
+	(layer "F.Cu")
+	(descr "Highspeed card edge connector for PCB's with 08 contacts (polarized)")
+	(tags "conn samtec card-edge high-speed")
+	(property "Reference" "REF**"
+		(at 0 -5.95 0)
+		(layer "F.SilkS")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Samtec_MECF-08-0_-L-DV_2x08_P1.27mm_Polarized_Edge"
+		(at 0 5.7 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr exclude_from_pos_files exclude_from_bom)
+	(fp_line
+		(start -6.07 -5.11)
+		(end 6.07 -5.11)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start -6.07 3.73)
+		(end -6.07 -5.11)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start -4.8 5)
+		(end -6.07 3.73)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start -4.8 5)
+		(end 6.07 5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start 6.07 5)
+		(end 6.07 -5.11)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start -6.07 -5.11)
+		(end 6.07 -5.11)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "B.SilkS")
+	)
+	(fp_line
+		(start -6.07 5)
+		(end -6.07 -5.11)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "B.SilkS")
+	)
+	(fp_line
+		(start -6.07 5)
+		(end 6.07 5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "B.SilkS")
+	)
+	(fp_line
+		(start 6.07 5)
+		(end 6.07 -5.11)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "B.SilkS")
+	)
+	(fp_line
+		(start -6.25 -5)
+		(end -5.955 -5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+	)
+	(fp_line
+		(start -5.955 5)
+		(end -5.955 -5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+	)
+	(fp_line
+		(start -5.955 5)
+		(end -2.515 5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+	)
+	(fp_line
+		(start -2.515 -2)
+		(end -1.275 -2)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+	)
+	(fp_line
+		(start -2.515 5)
+		(end -2.515 -2)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+	)
+	(fp_line
+		(start -1.275 5)
+		(end -1.275 -2)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+	)
+	(fp_line
+		(start -1.275 5)
+		(end 5.955 5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+	)
+	(fp_line
+		(start 5.955 5)
+		(end 5.955 -5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+	)
+	(fp_line
+		(start 6.25 -5)
+		(end 5.955 -5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+	)
+	(fp_line
+		(start -6.2 -5.25)
+		(end -6.2 5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "B.CrtYd")
+	)
+	(fp_line
+		(start -6.2 5)
+		(end 6.2 5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "B.CrtYd")
+	)
+	(fp_line
+		(start 6.2 -5.25)
+		(end -6.2 -5.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "B.CrtYd")
+	)
+	(fp_line
+		(start 6.2 5)
+		(end 6.2 -5.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "B.CrtYd")
+	)
+	(fp_line
+		(start -6.2 -5.25)
+		(end -6.2 5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+	)
+	(fp_line
+		(start -6.2 5)
+		(end 6.2 5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+	)
+	(fp_line
+		(start 6.2 -5.25)
+		(end -6.2 -5.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+	)
+	(fp_line
+		(start 6.2 5)
+		(end 6.2 -5.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+	)
+	(fp_line
+		(start -5.955 -5)
+		(end 5.955 -5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "B.Fab")
+	)
+	(fp_line
+		(start -5.955 5)
+		(end -5.955 -5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "B.Fab")
+	)
+	(fp_line
+		(start -5.955 5)
+		(end 5.955 5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "B.Fab")
+	)
+	(fp_line
+		(start 5.955 5)
+		(end 5.955 -5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "B.Fab")
+	)
+	(fp_line
+		(start -5.955 -5)
+		(end 5.955 -5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start -5.955 3.73)
+		(end -5.955 -5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start -5.955 3.73)
+		(end -4.685 5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start -4.685 5)
+		(end 5.955 5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 5.955 5)
+		(end 5.955 -5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -2.54 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" connect rect
+		(at -4.435 2.5)
+		(size 0.56 4)
+		(layers "F.Cu" "F.Mask")
+	)
+	(pad "2" connect rect
+		(at -4.435 2.5)
+		(size 0.56 4)
+		(layers "B.Cu" "B.Mask")
+	)
+	(pad "3" connect rect
+		(at -3.165 2.5)
+		(size 0.56 4)
+		(layers "F.Cu" "F.Mask")
+	)
+	(pad "4" connect rect
+		(at -3.165 2.5)
+		(size 0.56 4)
+		(layers "B.Cu" "B.Mask")
+	)
+	(pad "7" connect rect
+		(at -0.625 2.5)
+		(size 0.56 4)
+		(layers "F.Cu" "F.Mask")
+	)
+	(pad "8" connect rect
+		(at -0.625 2.5)
+		(size 0.56 4)
+		(layers "B.Cu" "B.Mask")
+	)
+	(pad "9" connect rect
+		(at 0.645 2.5)
+		(size 0.56 4)
+		(layers "F.Cu" "F.Mask")
+	)
+	(pad "10" connect rect
+		(at 0.645 2.5)
+		(size 0.56 4)
+		(layers "B.Cu" "B.Mask")
+	)
+	(pad "11" connect rect
+		(at 1.915 2.5)
+		(size 0.56 4)
+		(layers "F.Cu" "F.Mask")
+	)
+	(pad "12" connect rect
+		(at 1.915 2.5)
+		(size 0.56 4)
+		(layers "B.Cu" "B.Mask")
+	)
+	(pad "13" connect rect
+		(at 3.185 2.5)
+		(size 0.56 4)
+		(layers "F.Cu" "F.Mask")
+	)
+	(pad "14" connect rect
+		(at 3.185 2.5)
+		(size 0.56 4)
+		(layers "B.Cu" "B.Mask")
+	)
+	(pad "15" connect rect
+		(at 4.455 2.5)
+		(size 0.56 4)
+		(layers "F.Cu" "F.Mask")
+	)
+	(pad "16" connect rect
+		(at 4.455 2.5)
+		(size 0.56 4)
+		(layers "B.Cu" "B.Mask")
+	)
+	(embedded_fonts no)
+)

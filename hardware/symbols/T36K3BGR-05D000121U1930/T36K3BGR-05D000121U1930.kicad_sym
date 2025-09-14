@@ -1,0 +1,228 @@
+
+(kicad_symbol_lib (version 20211014) (generator kicad_symbol_editor)
+  (symbol "T36K3BGR-05D000121U1930" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (property "Reference" "D" (id 0) (at -10.16 12.7 0)
+      (effects (font (size 1.27 1.27)) (justify bottom left))
+    )
+    (property "Value" "T36K3BGR-05D000121U1930" (id 1) (at -10.16 10.16 0)
+      (effects (font (size 1.27 1.27)) (justify bottom left))
+    )
+    (property "Footprint" "T36K3BGR-05D000121U1930:LED_T36K3BGR-05D000121U1930" (id 2) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MF" "Harvatek Corporation" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MAXIMUM_PACKAGE_HEIGHT" "1.0mm" (id 5) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Package" "SMD-4 Harvatek" (id 6) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Price" "None" (id 7) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Check_prices" "https://www.snapeda.com/parts/T36K3BGR-05D000121U1930/Harvatek/view-part/?ref=eda" (id 8) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "STANDARD" "Manufacturer Recommendations" (id 9) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "PARTREV" "1.1" (id 10) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "SnapEDA_Link" "https://www.snapeda.com/parts/T36K3BGR-05D000121U1930/Harvatek/view-part/?ref=snap" (id 11) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MP" "T36K3BGR-05D000121U1930" (id 12) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Description" "\n                        \n                            Red, Green, Blue (RGB) - LED Indication - Discrete 2V Red, 2.6V Green, 2.6V Blue 4-SMD, Flat Leads\n                        \n" (id 13) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Availability" "In Stock" (id 14) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MANUFACTURER" "Harvatek" (id 15) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (symbol "T36K3BGR-05D000121U1930_0_0"
+      (polyline
+        (pts (xy 0.0 9.144) (xy 0.0 7.62)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.0 7.62) (xy 0.0 6.096)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.0 6.096) (xy 2.54 7.62)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 2.54 7.62) (xy 0.0 9.144)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 2.54 9.144) (xy 2.54 6.096)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.0 1.524) (xy 0.0 0.0)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.0 0.0) (xy 0.0 -1.524)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.0 -1.524) (xy 2.54 0.0)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 2.54 0.0) (xy 0.0 1.524)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 2.54 1.524) (xy 2.54 -1.524)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.0 -6.096) (xy 0.0 -7.62)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.0 -7.62) (xy 0.0 -9.144)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.0 -9.144) (xy 2.54 -7.62)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 2.54 -7.62) (xy 0.0 -6.096)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 2.54 -6.096) (xy 2.54 -9.144)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.0 7.62) (xy -2.54 7.62)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -2.54 7.62) (xy -2.54 0.0)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -2.54 0.0) (xy -2.54 -7.62)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -2.54 -7.62) (xy 0.0 -7.62)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 0.0 0.0) (xy -2.54 0.0)) (stroke (width 0.1524))
+      )
+      (circle (center -2.54 0.0) (radius 0.2032)
+        (stroke (width 0.4064)) (fill (type none))
+      )
+      (polyline
+        (pts (xy 1.27 -4.572) (xy 0.381 -5.588)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts
+          (xy 1.016 -4.318)
+          (xy 1.524 -4.826)
+          (xy 1.905 -3.81)
+          (xy 1.016 -4.318)
+        )
+        (stroke (width 0.1524)) (fill (type outline))
+      )
+      (polyline
+        (pts (xy 2.159 -5.207) (xy 1.27 -6.223)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts
+          (xy 1.905 -4.953)
+          (xy 2.413 -5.461)
+          (xy 2.794 -4.445)
+          (xy 1.905 -4.953)
+        )
+        (stroke (width 0.1524)) (fill (type outline))
+      )
+      (polyline
+        (pts (xy 1.27 3.048) (xy 0.381 2.032)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts
+          (xy 1.016 3.302)
+          (xy 1.524 2.794)
+          (xy 1.905 3.81)
+          (xy 1.016 3.302)
+        )
+        (stroke (width 0.1524)) (fill (type outline))
+      )
+      (polyline
+        (pts (xy 2.159 2.413) (xy 1.27 1.397)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts
+          (xy 1.905 2.667)
+          (xy 2.413 2.159)
+          (xy 2.794 3.175)
+          (xy 1.905 2.667)
+        )
+        (stroke (width 0.1524)) (fill (type outline))
+      )
+      (polyline
+        (pts (xy 1.27 10.668) (xy 0.381 9.652)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts
+          (xy 1.016 10.922)
+          (xy 1.524 10.414)
+          (xy 1.905 11.43)
+          (xy 1.016 10.922)
+        )
+        (stroke (width 0.1524)) (fill (type outline))
+      )
+      (polyline
+        (pts (xy 2.159 10.033) (xy 1.27 9.017)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts
+          (xy 1.905 10.287)
+          (xy 2.413 9.779)
+          (xy 2.794 10.795)
+          (xy 1.905 10.287)
+        )
+        (stroke (width 0.1524)) (fill (type outline))
+      )
+      (text "RED" (at 3.81 10.16 0)
+        (effects (font (size 1.016 1.016)) (justify bottom left))
+      )
+      (text "GREEN" (at 3.81 -5.08 0)
+        (effects (font (size 1.016 1.016)) (justify bottom left))
+      )
+      (text "BLUE" (at 3.81 2.54 0)
+        (effects (font (size 1.016 1.016)) (justify bottom left))
+      )
+      (pin passive line (at 7.62 7.62 180.0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "1"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at -7.62 0.0 0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "2"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at 7.62 -7.62 180.0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "4"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at 7.62 0.0 180.0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "3"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+    )
+  )
+)

@@ -1,0 +1,243 @@
+(footprint "Hamamatsu_S14160-6050HS"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Hamamatsu single MPPC, 6x6mm,  50um pixel pitch, 14331 pixels, 57% geometric fill factor, https://www.hamamatsu.com/content/dam/hamamatsu-photonics/sites/documents/99_SALES_LIBRARY/ssd/s14160_s14161_series_kapd1064e.pdf")
+	(tags "Hamamatsu MPPC photon counter SMD SiPM")
+	(property "Reference" "REF**"
+		(at 0 4 0)
+		(layer "F.SilkS")
+		(uuid "7c7eeab1-3e8c-42da-83f5-39a8e5b1ad8e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Hamamatsu_S14160-6050HS"
+		(at 0 5.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "37ddcf8d-8b78-41d9-bae5-5cd584c36d3a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b9994827-aeae-4923-b84c-dd74c2158f45")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2ac5b6cc-8af6-498b-8a2b-89649e48dac9")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -3.4 -3.4)
+		(end -3.4 -2.3)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "e22b406a-02a8-4e21-b70b-a2cc73afe710")
+	)
+	(fp_line
+		(start -3.4 -3.4)
+		(end -2.3 -3.4)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "82dee3b7-f3fd-4c5b-8727-0c1b59b7996c")
+	)
+	(fp_line
+		(start -3.4 3.4)
+		(end -3.4 2.4)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "5160e44c-1515-4b3c-84be-c81a8b770792")
+	)
+	(fp_line
+		(start -2.3 3.4)
+		(end -3.4 3.4)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "a86d4e0c-6951-430b-aa17-56afbcecd2d3")
+	)
+	(fp_line
+		(start 2.3 -3.4)
+		(end 3.4 -3.4)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "d6c8a2ff-b85e-4515-9675-b210dac9b1ad")
+	)
+	(fp_line
+		(start 2.3 3.4)
+		(end 3.4 3.4)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "79041664-849b-4733-8d1c-0dc4fc597b78")
+	)
+	(fp_line
+		(start 3.4 -3.4)
+		(end 3.4 -2.3)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "5387bf43-67d6-4f77-bd76-40f8ca44ef59")
+	)
+	(fp_line
+		(start 3.4 3.4)
+		(end 3.4 2.3)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "da6371a2-214c-4e60-ab77-5823b0d7a6e3")
+	)
+	(fp_rect
+		(start 3.3 3.3)
+		(end -3.3 -3.3)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "248d6168-b61b-4c0a-afa8-b94e17d3b67d")
+	)
+	(fp_rect
+		(start -3.2 -3.2)
+		(end 3.2 3.2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "b7fa9331-5591-426b-bbc8-19f4c2c9fd6e")
+	)
+	(fp_rect
+		(start -0.15 -3.1)
+		(end 0.15 -2.6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "b19ecaea-177c-4ea6-8835-7bc492502da1")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 7 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "db9933f3-5229-4ab7-bcb2-cbc583f597f9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "A" smd circle
+		(at -1.25 -1.25)
+		(size 0.7 0.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "1100d09f-f449-4ae1-9c16-ca060e5ca466")
+	)
+	(pad "A" smd circle
+		(at -1.25 1.25)
+		(size 0.7 0.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "1dce992d-c711-4122-b11a-6a955160f063")
+	)
+	(pad "A" smd circle
+		(at 1.25 -1.25)
+		(size 0.7 0.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "8b083063-cbbe-4809-abfe-6920e43e3ffd")
+	)
+	(pad "A" smd circle
+		(at 1.25 1.25)
+		(size 0.7 0.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "ffd9a8d3-b75c-4023-9cef-49ceb82466c6")
+	)
+	(pad "K" smd circle
+		(at -2.5 -2.5)
+		(size 0.7 0.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "0b563725-8e64-4299-8ac6-79596412abb6")
+	)
+	(pad "K" smd circle
+		(at -2.5 2.5)
+		(size 0.7 0.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "3dd861e4-eb3b-449b-af1e-53498ea67db1")
+	)
+	(pad "K" smd circle
+		(at 2.5 -2.5)
+		(size 0.7 0.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "4c77b12a-5ceb-48f0-8d7a-91a833000795")
+	)
+	(pad "K" smd circle
+		(at 2.5 2.5)
+		(size 0.7 0.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "b0d5f876-4338-4f7b-bef4-52a1d910e93e")
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/OptoDevice.3dshapes/Hamamatsu_S14160-6050HS.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

@@ -1,0 +1,3144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/home/ukim/Projects/modular-kbd/hardware/numpad/numpad/numpad.kicad_sch</source>
+    <date>2025-09-10T13:41:15-0700</date>
+    <tool>Eeschema 9.0.4</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>numpad.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>matrixrot.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>20pF</value>
+      <footprint>PCM_Capacitor_SMD_AKL:C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>SMD 0805 MLCC capacitor, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Capacitor_SMD_AKL:C_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">SMD 0805 MLCC capacitor, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Capacitor_AKL" part="C_0805" description="SMD 0805 MLCC capacitor, Alternate KiCad Library"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="numpad.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor ceramic chip mlcc smd 0805"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3cf6d79a-8b3d-4cf7-a145-285fd4bdd59f</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>20pF</value>
+      <footprint>PCM_Capacitor_SMD_AKL:C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>SMD 0805 MLCC capacitor, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Capacitor_SMD_AKL:C_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">SMD 0805 MLCC capacitor, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Capacitor_AKL" part="C_0805" description="SMD 0805 MLCC capacitor, Alternate KiCad Library"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="numpad.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor ceramic chip mlcc smd 0805"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6bbda6bc-f811-45ca-81a4-9ccc00f06fab</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>100nF</value>
+      <footprint>PCM_Capacitor_SMD_AKL:C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>SMD 0805 MLCC capacitor, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Capacitor_SMD_AKL:C_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">SMD 0805 MLCC capacitor, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Capacitor_AKL" part="C_0805" description="SMD 0805 MLCC capacitor, Alternate KiCad Library"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="numpad.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor ceramic chip mlcc smd 0805"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8b2a8a82-737e-4e1c-b010-75e324eaa549</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>100nF</value>
+      <footprint>PCM_Capacitor_SMD_AKL:C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>SMD 0805 MLCC capacitor, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Capacitor_SMD_AKL:C_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">SMD 0805 MLCC capacitor, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Capacitor_AKL" part="C_0805" description="SMD 0805 MLCC capacitor, Alternate KiCad Library"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="numpad.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor ceramic chip mlcc smd 0805"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5d7500da-bd2b-4c6a-9047-3e2d6a3165ca</tstamps>
+    </comp>
+    <comp ref="C5">
+      <value>100nF</value>
+      <footprint>PCM_Capacitor_SMD_AKL:C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>SMD 0805 MLCC capacitor, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Capacitor_SMD_AKL:C_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">SMD 0805 MLCC capacitor, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Capacitor_AKL" part="C_0805" description="SMD 0805 MLCC capacitor, Alternate KiCad Library"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="numpad.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor ceramic chip mlcc smd 0805"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6ac435e0-7961-4dbe-9c30-dbf9204a8e02</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>100nF</value>
+      <footprint>PCM_Capacitor_SMD_AKL:C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>SMD 0805 MLCC capacitor, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Capacitor_SMD_AKL:C_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">SMD 0805 MLCC capacitor, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Capacitor_AKL" part="C_0805" description="SMD 0805 MLCC capacitor, Alternate KiCad Library"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="numpad.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor ceramic chip mlcc smd 0805"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>260e3606-a354-4351-a844-1997c309f36f</tstamps>
+    </comp>
+    <comp ref="C7">
+      <value>1uF</value>
+      <footprint>PCM_Capacitor_SMD_AKL:C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>SMD 0805 MLCC capacitor, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Capacitor_SMD_AKL:C_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">SMD 0805 MLCC capacitor, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Capacitor_AKL" part="C_0805" description="SMD 0805 MLCC capacitor, Alternate KiCad Library"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="numpad.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor ceramic chip mlcc smd 0805"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>acdb7e2a-dbdd-410b-b924-7a3e541f44dd</tstamps>
+    </comp>
+    <comp ref="C8">
+      <value>10uF</value>
+      <footprint>PCM_Capacitor_SMD_AKL:C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>SMD 0805 MLCC capacitor, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Capacitor_SMD_AKL:C_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">SMD 0805 MLCC capacitor, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Capacitor_AKL" part="C_0805" description="SMD 0805 MLCC capacitor, Alternate KiCad Library"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="numpad.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor ceramic chip mlcc smd 0805"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>35f94759-1894-4596-badb-3697130513d4</tstamps>
+    </comp>
+    <comp ref="C9">
+      <value>4.7uF</value>
+      <footprint>PCM_Capacitor_SMD_AKL:C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>SMD 0805 MLCC capacitor, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Capacitor_SMD_AKL:C_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">SMD 0805 MLCC capacitor, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Capacitor_AKL" part="C_0805" description="SMD 0805 MLCC capacitor, Alternate KiCad Library"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="numpad.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor ceramic chip mlcc smd 0805"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>68cc06c9-d019-47d1-bae7-2856c48d1f53</tstamps>
+    </comp>
+    <comp ref="C10">
+      <value>1uF</value>
+      <footprint>PCM_Capacitor_SMD_AKL:C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>SMD 0805 MLCC capacitor, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Capacitor_SMD_AKL:C_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">SMD 0805 MLCC capacitor, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Capacitor_AKL" part="C_0805" description="SMD 0805 MLCC capacitor, Alternate KiCad Library"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="numpad.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor ceramic chip mlcc smd 0805"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>94a0fdd0-56a6-4942-8589-01a86c805627</tstamps>
+    </comp>
+    <comp ref="C11">
+      <value>0.1uF</value>
+      <footprint>PCM_Capacitor_SMD_AKL:C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>SMD 0805 MLCC capacitor, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Capacitor_SMD_AKL:C_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">SMD 0805 MLCC capacitor, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Capacitor_AKL" part="C_0805" description="SMD 0805 MLCC capacitor, Alternate KiCad Library"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="numpad.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor ceramic chip mlcc smd 0805"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f4ed843a-a837-4644-ab1e-a88bfeb2df84</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>PRTR5V0U2X</value>
+      <footprint>PCM_Package_TO_SOT_SMD_AKL:SOT-143_Handsoldering</footprint>
+      <datasheet>https://www.tme.eu/Document/4eac14af69261014af6cc93b35742953/PRTR5V0U2X-DTE.pdf</datasheet>
+      <description>SOT-143 TVS Diode Array, 2 protected lines, 5.5V, Alternate KiCAD Library</description>
+      <fields>
+        <field name="Footprint">PCM_Package_TO_SOT_SMD_AKL:SOT-143_Handsoldering</field>
+        <field name="Datasheet">https://www.tme.eu/Document/4eac14af69261014af6cc93b35742953/PRTR5V0U2X-DTE.pdf</field>
+        <field name="Description">SOT-143 TVS Diode Array, 2 protected lines, 5.5V, Alternate KiCAD Library</field>
+      </fields>
+      <libsource lib="PCM_Diode_TVS_AKL" part="PRTR5V0U2X" description="SOT-143 TVS Diode Array, 2 protected lines, 5.5V, Alternate KiCAD Library"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="numpad.kicad_sch"/>
+      <property name="ki_keywords" value="diode TVS array PRTR5V0U2X"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c7c4756e-a5bf-4567-914d-57c2ffef1bc4</tstamps>
+    </comp>
+    <comp ref="D2">
+      <value>BAT60JFILM</value>
+      <footprint>PCM_Diode_SMD_AKL:D_SOD-323</footprint>
+      <description>Diode</description>
+      <fields>
+        <field name="Footprint">PCM_Diode_SMD_AKL:D_SOD-323</field>
+        <field name="Datasheet"/>
+        <field name="Description">Diode</field>
+      </fields>
+      <libsource lib="PCM_4ms_Diode" part="D_Generic" description="Diode"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="numpad.kicad_sch"/>
+      <property name="ki_keywords" value="diode"/>
+      <property name="ki_fp_filters" value="TO-???* *SingleDiode *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3e4adb9d-795b-4ed4-9421-13dd684d8460</tstamps>
+    </comp>
+    <comp ref="East1">
+      <value>Conn_01x04</value>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical</footprint>
+      <description>HEADER 1x4 MALE PINS 0.100” 180deg</description>
+      <fields>
+        <field name="Specifications">HEADER 1x4 MALE PINS 0.100” 180deg</field>
+        <field name="Manufacturer">TAD</field>
+        <field name="Part Number">1-0401FBV0T</field>
+        <field name="Footprint">Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description">HEADER 1x4 MALE PINS 0.100” 180deg</field>
+      </fields>
+      <libsource lib="PCM_4ms_Connector" part="Conn_01x04" description="HEADER 1x4 MALE PINS 0.100” 180deg"/>
+      <property name="Specifications" value="HEADER 1x4 MALE PINS 0.100” 180deg"/>
+      <property name="Manufacturer" value="TAD"/>
+      <property name="Part Number" value="1-0401FBV0T"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="numpad.kicad_sch"/>
+      <property name="ki_keywords" value="Conn_01x04"/>
+      <property name="ki_fp_filters" value="Connector*:*_??x*mm* Connector*:*1x??x*mm* Pin?Header?Straight?1X* Pin?Header?Angled?1X* Socket?Strip?Straight?1X* Socket?Strip?Angled?1X*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>16dff95b-3e36-4af3-b88b-15fb8adc8e2f</tstamps>
+    </comp>
+    <comp ref="FB1">
+      <value>Ferrite_Bead</value>
+      <footprint>PCM_Fuse_AKL:Fuse_0805_2012Metric_Pad1.15x1.40mm_BigPads</footprint>
+      <datasheet>~</datasheet>
+      <description>Ferrite bead, Alternate KiCAD Library</description>
+      <fields>
+        <field name="Footprint">PCM_Fuse_AKL:Fuse_0805_2012Metric_Pad1.15x1.40mm_BigPads</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Ferrite bead, Alternate KiCAD Library</field>
+      </fields>
+      <libsource lib="PCM_Device_AKL" part="Ferrite_Bead" description="Ferrite bead, Alternate KiCAD Library"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="numpad.kicad_sch"/>
+      <property name="ki_keywords" value="ferrite bead emc"/>
+      <property name="ki_fp_filters" value="*Fuse*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>419d9c4f-4ab7-4264-9f26-8a0424a1c835</tstamps>
+    </comp>
+    <comp ref="IC1">
+      <value>LD1117-3.3V-SOT223</value>
+      <footprint>PCM_4ms_Package_SOT:SOT223</footprint>
+      <datasheet>https://www.mouser.com/datasheet/2/389/cd00000544-1795431.pdf</datasheet>
+      <description>3.3V Voltage Regulator, SOT-223-3, Imax=0.8A, VinMax=15V, Vdrop=1V</description>
+      <fields>
+        <field name="Manufacturer">STMicroelectronics</field>
+        <field name="Part Number">LD1117S33CTR</field>
+        <field name="Footprint">PCM_4ms_Package_SOT:SOT223</field>
+        <field name="Datasheet">https://www.mouser.com/datasheet/2/389/cd00000544-1795431.pdf</field>
+        <field name="Description">3.3V Voltage Regulator, SOT-223-3, Imax=0.8A, VinMax=15V, Vdrop=1V</field>
+      </fields>
+      <libsource lib="PCM_4ms_Regulator" part="LD1117-3.3V-SOT223" description="3.3V Voltage Regulator, SOT-223-3, Imax=0.8A, VinMax=15V, Vdrop=1V"/>
+      <property name="Manufacturer" value="STMicroelectronics"/>
+      <property name="Part Number" value="LD1117S33CTR"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="numpad.kicad_sch"/>
+      <property name="ki_fp_filters" value="*TO-252-2* *TO?252?2*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>780e4915-82a4-4658-81f3-960aa1d9fc82</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>Conn_01x06</value>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Horizontal</footprint>
+      <description>HEADER 1x6 MALE PINS 0.100” 180deg</description>
+      <fields>
+        <field name="Specifications">HEADER 1x6 MALE PINS 0.100” 180deg</field>
+        <field name="Manufacturer">TAD</field>
+        <field name="Part Number">1-0601FBV0T</field>
+        <field name="Footprint">Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description">HEADER 1x6 MALE PINS 0.100” 180deg</field>
+      </fields>
+      <libsource lib="PCM_4ms_Connector" part="Conn_01x06" description="HEADER 1x6 MALE PINS 0.100” 180deg"/>
+      <property name="Specifications" value="HEADER 1x6 MALE PINS 0.100” 180deg"/>
+      <property name="Manufacturer" value="TAD"/>
+      <property name="Part Number" value="1-0601FBV0T"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="numpad.kicad_sch"/>
+      <property name="ki_keywords" value="Conn_01x06"/>
+      <property name="ki_fp_filters" value="Connector*:*_??x*mm* Connector*:*1x??x*mm* Pin?Header?Straight?1X* Pin?Header?Angled?1X* Socket?Strip?Straight?1X* Socket?Strip?Angled?1X*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b0e5479b-55c8-4df5-bbc5-a0d68647dbd2</tstamps>
+    </comp>
+    <comp ref="North1">
+      <value>Conn_01x04</value>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical</footprint>
+      <description>HEADER 1x4 MALE PINS 0.100” 180deg</description>
+      <fields>
+        <field name="Specifications">HEADER 1x4 MALE PINS 0.100” 180deg</field>
+        <field name="Manufacturer">TAD</field>
+        <field name="Part Number">1-0401FBV0T</field>
+        <field name="Footprint">Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description">HEADER 1x4 MALE PINS 0.100” 180deg</field>
+      </fields>
+      <libsource lib="PCM_4ms_Connector" part="Conn_01x04" description="HEADER 1x4 MALE PINS 0.100” 180deg"/>
+      <property name="Specifications" value="HEADER 1x4 MALE PINS 0.100” 180deg"/>
+      <property name="Manufacturer" value="TAD"/>
+      <property name="Part Number" value="1-0401FBV0T"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="numpad.kicad_sch"/>
+      <property name="ki_keywords" value="Conn_01x04"/>
+      <property name="ki_fp_filters" value="Connector*:*_??x*mm* Connector*:*1x??x*mm* Pin?Header?Straight?1X* Pin?Header?Angled?1X* Socket?Strip?Straight?1X* Socket?Strip?Angled?1X*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>38beb260-5ceb-4b19-afa7-0dbaab81122b</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>5.1k</value>
+      <footprint>PCM_Resistor_SMD_AKL:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>SMD 0805 Chip Resistor, European Symbol, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Resistor_SMD_AKL:R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">SMD 0805 Chip Resistor, European Symbol, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Resistor_AKL" part="R_0805" description="SMD 0805 Chip Resistor, European Symbol, Alternate KiCad Library"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="numpad.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor eu  smd 0805"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>55fe11de-2a05-4ff1-bc3a-63c075a9f29d</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>5.1k</value>
+      <footprint>PCM_Resistor_SMD_AKL:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>SMD 0805 Chip Resistor, European Symbol, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Resistor_SMD_AKL:R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">SMD 0805 Chip Resistor, European Symbol, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Resistor_AKL" part="R_0805" description="SMD 0805 Chip Resistor, European Symbol, Alternate KiCad Library"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="numpad.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor eu  smd 0805"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e43ed88a-0b7c-4dfb-9632-55636cb7c7cb</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>22</value>
+      <footprint>PCM_Resistor_SMD_AKL:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>SMD 0805 Chip Resistor, European Symbol, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Resistor_SMD_AKL:R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">SMD 0805 Chip Resistor, European Symbol, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Resistor_AKL" part="R_0805" description="SMD 0805 Chip Resistor, European Symbol, Alternate KiCad Library"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="numpad.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor eu  smd 0805"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9a64bac4-da04-48a9-9702-7209f655d06c</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>22</value>
+      <footprint>PCM_Resistor_SMD_AKL:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>SMD 0805 Chip Resistor, European Symbol, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Resistor_SMD_AKL:R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">SMD 0805 Chip Resistor, European Symbol, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Resistor_AKL" part="R_0805" description="SMD 0805 Chip Resistor, European Symbol, Alternate KiCad Library"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="numpad.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor eu  smd 0805"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7cafd78e-827b-4512-9029-08dc37727121</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>10k</value>
+      <footprint>PCM_Resistor_SMD_AKL:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>SMD 0805 Chip Resistor, European Symbol, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Resistor_SMD_AKL:R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">SMD 0805 Chip Resistor, European Symbol, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Resistor_AKL" part="R_0805" description="SMD 0805 Chip Resistor, European Symbol, Alternate KiCad Library"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="numpad.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor eu  smd 0805"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bb837909-857a-4e99-a0d4-4f703a793296</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>22</value>
+      <footprint>PCM_Resistor_SMD_AKL:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>SMD 0805 Chip Resistor, European Symbol, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Resistor_SMD_AKL:R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">SMD 0805 Chip Resistor, European Symbol, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Resistor_AKL" part="R_0805" description="SMD 0805 Chip Resistor, European Symbol, Alternate KiCad Library"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="numpad.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor eu  smd 0805"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>870bee74-1b94-44bc-97d7-e29667be0724</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>22</value>
+      <footprint>PCM_Resistor_SMD_AKL:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>SMD 0805 Chip Resistor, European Symbol, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Resistor_SMD_AKL:R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">SMD 0805 Chip Resistor, European Symbol, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Resistor_AKL" part="R_0805" description="SMD 0805 Chip Resistor, European Symbol, Alternate KiCad Library"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="numpad.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor eu  smd 0805"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5c57828a-36bc-4da4-bfd6-d3d5666e7619</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>22</value>
+      <footprint>PCM_Resistor_SMD_AKL:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>SMD 0805 Chip Resistor, European Symbol, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Resistor_SMD_AKL:R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">SMD 0805 Chip Resistor, European Symbol, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Resistor_AKL" part="R_0805" description="SMD 0805 Chip Resistor, European Symbol, Alternate KiCad Library"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="numpad.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor eu  smd 0805"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7efd55f9-94bc-4e0f-acd8-78533ca71252</tstamps>
+    </comp>
+    <comp ref="R9">
+      <value>22</value>
+      <footprint>PCM_Resistor_SMD_AKL:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>SMD 0805 Chip Resistor, European Symbol, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Resistor_SMD_AKL:R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">SMD 0805 Chip Resistor, European Symbol, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Resistor_AKL" part="R_0805" description="SMD 0805 Chip Resistor, European Symbol, Alternate KiCad Library"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="numpad.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor eu  smd 0805"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9c5f0493-d680-4847-8e64-3696158e4f7e</tstamps>
+    </comp>
+    <comp ref="R10">
+      <value>DNP</value>
+      <footprint>PCM_Resistor_SMD_AKL:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>SMD 0805 Chip Resistor, European Symbol, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Resistor_SMD_AKL:R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">SMD 0805 Chip Resistor, European Symbol, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Resistor_AKL" part="R_0805" description="SMD 0805 Chip Resistor, European Symbol, Alternate KiCad Library"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="numpad.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor eu  smd 0805"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f01e28d6-c99b-4363-922d-8d4ade2b1113</tstamps>
+    </comp>
+    <comp ref="R13">
+      <value>DNP</value>
+      <footprint>PCM_Resistor_SMD_AKL:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>SMD 0805 Chip Resistor, European Symbol, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Resistor_SMD_AKL:R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">SMD 0805 Chip Resistor, European Symbol, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Resistor_AKL" part="R_0805" description="SMD 0805 Chip Resistor, European Symbol, Alternate KiCad Library"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="numpad.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor eu  smd 0805"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>db62a6df-f2f1-4431-8846-a6dc2b8040af</tstamps>
+    </comp>
+    <comp ref="South1">
+      <value>Conn_01x04</value>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical</footprint>
+      <description>HEADER 1x4 MALE PINS 0.100” 180deg</description>
+      <fields>
+        <field name="Specifications">HEADER 1x4 MALE PINS 0.100” 180deg</field>
+        <field name="Manufacturer">TAD</field>
+        <field name="Part Number">1-0401FBV0T</field>
+        <field name="Footprint">Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description">HEADER 1x4 MALE PINS 0.100” 180deg</field>
+      </fields>
+      <libsource lib="PCM_4ms_Connector" part="Conn_01x04" description="HEADER 1x4 MALE PINS 0.100” 180deg"/>
+      <property name="Specifications" value="HEADER 1x4 MALE PINS 0.100” 180deg"/>
+      <property name="Manufacturer" value="TAD"/>
+      <property name="Part Number" value="1-0401FBV0T"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="numpad.kicad_sch"/>
+      <property name="ki_keywords" value="Conn_01x04"/>
+      <property name="ki_fp_filters" value="Connector*:*_??x*mm* Connector*:*1x??x*mm* Pin?Header?Straight?1X* Pin?Header?Angled?1X* Socket?Strip?Straight?1X* Socket?Strip?Angled?1X*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9676fbe1-cd81-4f09-9a64-1e08ed9b6d67</tstamps>
+    </comp>
+    <comp ref="SW2">
+      <value>Push_Button</value>
+      <footprint>PCM_marbastlib-various:SW_SPST_SKQG_WithStem</footprint>
+      <description>Common 6mmx6mm Push Button</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-various:SW_SPST_SKQG_WithStem</field>
+        <field name="Datasheet"/>
+        <field name="Description">Common 6mmx6mm Push Button</field>
+      </fields>
+      <libsource lib="PCM_SL_Devices" part="Push_Button" description="Common 6mmx6mm Push Button"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="numpad.kicad_sch"/>
+      <property name="ki_keywords" value="Switch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3cd8ba19-3dca-4432-8dd9-49896aa80d3e</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>~</value>
+      <footprint>footprints:LQFP64-10x10mm</footprint>
+      <fields>
+        <field name="Footprint">footprints:LQFP64-10x10mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="stm32f446ret6" part="STM32F446RET6" description=""/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="numpad.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>31831253-77ba-4c6e-9363-32c75e9e329b</tstamps>
+    </comp>
+    <comp ref="USB1">
+      <value>HRO-TYPE-C-31-M-12</value>
+      <footprint>Type-C.pretty-master:HRO-TYPE-C-31-M-12-HandSoldering</footprint>
+      <fields>
+        <field name="Footprint">Type-C.pretty-master:HRO-TYPE-C-31-M-12-HandSoldering</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Type-C" part="HRO-TYPE-C-31-M-12" description=""/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="numpad.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d9f634d1-10e6-4463-addc-35893eef8711</tstamps>
+    </comp>
+    <comp ref="West1">
+      <value>Conn_01x04</value>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical</footprint>
+      <description>HEADER 1x4 MALE PINS 0.100” 180deg</description>
+      <fields>
+        <field name="Specifications">HEADER 1x4 MALE PINS 0.100” 180deg</field>
+        <field name="Manufacturer">TAD</field>
+        <field name="Part Number">1-0401FBV0T</field>
+        <field name="Footprint">Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description">HEADER 1x4 MALE PINS 0.100” 180deg</field>
+      </fields>
+      <libsource lib="PCM_4ms_Connector" part="Conn_01x04" description="HEADER 1x4 MALE PINS 0.100” 180deg"/>
+      <property name="Specifications" value="HEADER 1x4 MALE PINS 0.100” 180deg"/>
+      <property name="Manufacturer" value="TAD"/>
+      <property name="Part Number" value="1-0401FBV0T"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="numpad.kicad_sch"/>
+      <property name="ki_keywords" value="Conn_01x04"/>
+      <property name="ki_fp_filters" value="Connector*:*_??x*mm* Connector*:*1x??x*mm* Pin?Header?Straight?1X* Pin?Header?Angled?1X* Socket?Strip?Straight?1X* Socket?Strip?Angled?1X*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e9c07dcf-7c62-4e0f-b7d8-bffddad87ab1</tstamps>
+    </comp>
+    <comp ref="Y1">
+      <value>8MHz</value>
+      <footprint>PCM_Crystal_AKL:Crystal_HC52-U_Vertical</footprint>
+      <description>8Mz Crystal</description>
+      <fields>
+        <field name="Footprint">PCM_Crystal_AKL:Crystal_HC52-U_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description">8Mz Crystal</field>
+      </fields>
+      <libsource lib="PCM_SL_Devices" part="Crystal_8MHz" description="8Mz Crystal"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="numpad.kicad_sch"/>
+      <property name="ki_keywords" value="8Mz Crystal"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8f6ee047-3b69-4415-a3d3-f3f35ce3c89b</tstamps>
+    </comp>
+    <comp ref="D3">
+      <value>1N4148W</value>
+      <footprint>PCM_Diode_SMD_AKL:D_SOD-123</footprint>
+      <datasheet>https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</datasheet>
+      <description>SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Diode_SMD_AKL:D_SOD-123</field>
+        <field name="Datasheet">https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</field>
+        <field name="Description">SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Diode_AKL" part="1N4148W" description="SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="diode 1N4148W"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>716f5e2b-a1a4-40d2-9258-0313cc440edc</tstamps>
+    </comp>
+    <comp ref="D4">
+      <value>1N4148W</value>
+      <footprint>PCM_Diode_SMD_AKL:D_SOD-123</footprint>
+      <datasheet>https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</datasheet>
+      <description>SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Diode_SMD_AKL:D_SOD-123</field>
+        <field name="Datasheet">https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</field>
+        <field name="Description">SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Diode_AKL" part="1N4148W" description="SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="diode 1N4148W"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>cc726127-88ff-41a5-a711-cab3c7660493</tstamps>
+    </comp>
+    <comp ref="D5">
+      <value>1N4148W</value>
+      <footprint>PCM_Diode_SMD_AKL:D_SOD-123</footprint>
+      <datasheet>https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</datasheet>
+      <description>SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Diode_SMD_AKL:D_SOD-123</field>
+        <field name="Datasheet">https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</field>
+        <field name="Description">SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Diode_AKL" part="1N4148W" description="SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="diode 1N4148W"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>aa9bd0f2-4da3-4e62-8b60-0a6ff3a008f5</tstamps>
+    </comp>
+    <comp ref="D6">
+      <value>1N4148W</value>
+      <footprint>PCM_Diode_SMD_AKL:D_SOD-123</footprint>
+      <datasheet>https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</datasheet>
+      <description>SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Diode_SMD_AKL:D_SOD-123</field>
+        <field name="Datasheet">https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</field>
+        <field name="Description">SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Diode_AKL" part="1N4148W" description="SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="diode 1N4148W"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>3923659b-2635-4a70-815b-c68b3decf44f</tstamps>
+    </comp>
+    <comp ref="D7">
+      <value>1N4148W</value>
+      <footprint>PCM_Diode_SMD_AKL:D_SOD-123</footprint>
+      <datasheet>https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</datasheet>
+      <description>SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Diode_SMD_AKL:D_SOD-123</field>
+        <field name="Datasheet">https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</field>
+        <field name="Description">SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Diode_AKL" part="1N4148W" description="SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="diode 1N4148W"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>7551672b-f337-4d74-a934-a2b453557782</tstamps>
+    </comp>
+    <comp ref="D8">
+      <value>1N4148W</value>
+      <footprint>PCM_Diode_SMD_AKL:D_SOD-123</footprint>
+      <datasheet>https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</datasheet>
+      <description>SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Diode_SMD_AKL:D_SOD-123</field>
+        <field name="Datasheet">https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</field>
+        <field name="Description">SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Diode_AKL" part="1N4148W" description="SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="diode 1N4148W"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>0133a3aa-53b2-4592-a877-17e97a27d78a</tstamps>
+    </comp>
+    <comp ref="D9">
+      <value>1N4148W</value>
+      <footprint>PCM_Diode_SMD_AKL:D_SOD-123</footprint>
+      <datasheet>https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</datasheet>
+      <description>SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Diode_SMD_AKL:D_SOD-123</field>
+        <field name="Datasheet">https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</field>
+        <field name="Description">SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Diode_AKL" part="1N4148W" description="SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="diode 1N4148W"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>8e41580b-a036-45e9-a6f4-e69ea6f67370</tstamps>
+    </comp>
+    <comp ref="D10">
+      <value>1N4148W</value>
+      <footprint>PCM_Diode_SMD_AKL:D_SOD-123</footprint>
+      <datasheet>https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</datasheet>
+      <description>SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Diode_SMD_AKL:D_SOD-123</field>
+        <field name="Datasheet">https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</field>
+        <field name="Description">SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Diode_AKL" part="1N4148W" description="SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="diode 1N4148W"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>537b6b9a-0fe2-4ce2-8555-70aa0c8b4fb1</tstamps>
+    </comp>
+    <comp ref="D11">
+      <value>1N4148W</value>
+      <footprint>PCM_Diode_SMD_AKL:D_SOD-123</footprint>
+      <datasheet>https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</datasheet>
+      <description>SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Diode_SMD_AKL:D_SOD-123</field>
+        <field name="Datasheet">https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</field>
+        <field name="Description">SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Diode_AKL" part="1N4148W" description="SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="diode 1N4148W"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>88f537b8-d8cd-4be2-8eb3-033601afac42</tstamps>
+    </comp>
+    <comp ref="D12">
+      <value>1N4148W</value>
+      <footprint>PCM_Diode_SMD_AKL:D_SOD-123</footprint>
+      <datasheet>https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</datasheet>
+      <description>SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Diode_SMD_AKL:D_SOD-123</field>
+        <field name="Datasheet">https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</field>
+        <field name="Description">SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Diode_AKL" part="1N4148W" description="SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="diode 1N4148W"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>7b50c475-625a-46fa-9b37-abddd970d149</tstamps>
+    </comp>
+    <comp ref="D13">
+      <value>1N4148W</value>
+      <footprint>PCM_Diode_SMD_AKL:D_SOD-123</footprint>
+      <datasheet>https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</datasheet>
+      <description>SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Diode_SMD_AKL:D_SOD-123</field>
+        <field name="Datasheet">https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</field>
+        <field name="Description">SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Diode_AKL" part="1N4148W" description="SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="diode 1N4148W"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>23517552-178e-43d9-b4fc-447626944d6c</tstamps>
+    </comp>
+    <comp ref="D14">
+      <value>1N4148W</value>
+      <footprint>PCM_Diode_SMD_AKL:D_SOD-123</footprint>
+      <datasheet>https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</datasheet>
+      <description>SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Diode_SMD_AKL:D_SOD-123</field>
+        <field name="Datasheet">https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</field>
+        <field name="Description">SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Diode_AKL" part="1N4148W" description="SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="diode 1N4148W"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>12660e1d-42b4-4472-be67-72e1d21689fb</tstamps>
+    </comp>
+    <comp ref="D15">
+      <value>1N4148W</value>
+      <footprint>PCM_Diode_SMD_AKL:D_SOD-123</footprint>
+      <datasheet>https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</datasheet>
+      <description>SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Diode_SMD_AKL:D_SOD-123</field>
+        <field name="Datasheet">https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</field>
+        <field name="Description">SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Diode_AKL" part="1N4148W" description="SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="diode 1N4148W"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>7bcdef09-f169-4f97-a67e-b4b5361138c6</tstamps>
+    </comp>
+    <comp ref="D16">
+      <value>1N4148W</value>
+      <footprint>PCM_Diode_SMD_AKL:D_SOD-123</footprint>
+      <datasheet>https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</datasheet>
+      <description>SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Diode_SMD_AKL:D_SOD-123</field>
+        <field name="Datasheet">https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</field>
+        <field name="Description">SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Diode_AKL" part="1N4148W" description="SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="diode 1N4148W"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>dac5d451-a0dd-4cdf-ba33-f1707e46d17c</tstamps>
+    </comp>
+    <comp ref="D17">
+      <value>1N4148W</value>
+      <footprint>PCM_Diode_SMD_AKL:D_SOD-123</footprint>
+      <datasheet>https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</datasheet>
+      <description>SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Diode_SMD_AKL:D_SOD-123</field>
+        <field name="Datasheet">https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</field>
+        <field name="Description">SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Diode_AKL" part="1N4148W" description="SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="diode 1N4148W"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>3c8cf6b9-a35f-4e23-8216-151940527958</tstamps>
+    </comp>
+    <comp ref="D18">
+      <value>1N4148W</value>
+      <footprint>PCM_Diode_SMD_AKL:D_SOD-123</footprint>
+      <datasheet>https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</datasheet>
+      <description>SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Diode_SMD_AKL:D_SOD-123</field>
+        <field name="Datasheet">https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</field>
+        <field name="Description">SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Diode_AKL" part="1N4148W" description="SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="diode 1N4148W"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>43d82dbd-a959-459a-8ef5-01ec3f31b79a</tstamps>
+    </comp>
+    <comp ref="D19">
+      <value>1N4148W</value>
+      <footprint>PCM_Diode_SMD_AKL:D_SOD-123</footprint>
+      <datasheet>https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</datasheet>
+      <description>SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Diode_SMD_AKL:D_SOD-123</field>
+        <field name="Datasheet">https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</field>
+        <field name="Description">SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Diode_AKL" part="1N4148W" description="SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="diode 1N4148W"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>3b80e858-a211-4fde-9ab8-06990c56e6d0</tstamps>
+    </comp>
+    <comp ref="D20">
+      <value>1N4148W</value>
+      <footprint>PCM_Diode_SMD_AKL:D_SOD-123</footprint>
+      <datasheet>https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</datasheet>
+      <description>SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Diode_SMD_AKL:D_SOD-123</field>
+        <field name="Datasheet">https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</field>
+        <field name="Description">SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Diode_AKL" part="1N4148W" description="SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="diode 1N4148W"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>4e23ad4a-3ade-426a-b3fc-392af4edb91b</tstamps>
+    </comp>
+    <comp ref="D21">
+      <value>1N4148W</value>
+      <footprint>PCM_Diode_SMD_AKL:D_SOD-123</footprint>
+      <datasheet>https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</datasheet>
+      <description>SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Diode_SMD_AKL:D_SOD-123</field>
+        <field name="Datasheet">https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</field>
+        <field name="Description">SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Diode_AKL" part="1N4148W" description="SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="diode 1N4148W"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>920e126e-ce4d-4b6b-aee9-6b859ced378f</tstamps>
+    </comp>
+    <comp ref="D22">
+      <value>1N4148W</value>
+      <footprint>PCM_Diode_SMD_AKL:D_SOD-123</footprint>
+      <datasheet>https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</datasheet>
+      <description>SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Diode_SMD_AKL:D_SOD-123</field>
+        <field name="Datasheet">https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</field>
+        <field name="Description">SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Diode_AKL" part="1N4148W" description="SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="diode 1N4148W"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>c94b7192-44f0-46ae-8a6f-b8558554fbc5</tstamps>
+    </comp>
+    <comp ref="D23">
+      <value>1N4148W</value>
+      <footprint>PCM_Diode_SMD_AKL:D_SOD-123</footprint>
+      <datasheet>https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</datasheet>
+      <description>SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Diode_SMD_AKL:D_SOD-123</field>
+        <field name="Datasheet">https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</field>
+        <field name="Description">SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Diode_AKL" part="1N4148W" description="SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="diode 1N4148W"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>ba4717c3-fdb9-4f5b-a19f-64011e5e2983</tstamps>
+    </comp>
+    <comp ref="D24">
+      <value>1N4148W</value>
+      <footprint>PCM_Diode_SMD_AKL:D_SOD-123</footprint>
+      <datasheet>https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</datasheet>
+      <description>SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Diode_SMD_AKL:D_SOD-123</field>
+        <field name="Datasheet">https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</field>
+        <field name="Description">SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Diode_AKL" part="1N4148W" description="SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="diode 1N4148W"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>6fd0994f-04f5-4629-8cc5-6a469fdccd7a</tstamps>
+    </comp>
+    <comp ref="D25">
+      <value>1N4148W</value>
+      <footprint>PCM_Diode_SMD_AKL:D_SOD-123</footprint>
+      <datasheet>https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</datasheet>
+      <description>SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Diode_SMD_AKL:D_SOD-123</field>
+        <field name="Datasheet">https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</field>
+        <field name="Description">SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Diode_AKL" part="1N4148W" description="SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="diode 1N4148W"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>03c03eeb-73e2-493d-bc20-09cdc8bf5b4a</tstamps>
+    </comp>
+    <comp ref="D26">
+      <value>1N4148W</value>
+      <footprint>PCM_Diode_SMD_AKL:D_SOD-123</footprint>
+      <datasheet>https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</datasheet>
+      <description>SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Diode_SMD_AKL:D_SOD-123</field>
+        <field name="Datasheet">https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</field>
+        <field name="Description">SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Diode_AKL" part="1N4148W" description="SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="diode 1N4148W"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>df4bafed-3fdc-4898-a2b6-3a28a8e5037e</tstamps>
+    </comp>
+    <comp ref="D27">
+      <value>1N4148W</value>
+      <footprint>PCM_Diode_SMD_AKL:D_SOD-123</footprint>
+      <datasheet>https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</datasheet>
+      <description>SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Diode_SMD_AKL:D_SOD-123</field>
+        <field name="Datasheet">https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</field>
+        <field name="Description">SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Diode_AKL" part="1N4148W" description="SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="diode 1N4148W"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>b036b3a5-2be3-4694-9970-4fb2a259f212</tstamps>
+    </comp>
+    <comp ref="D28">
+      <value>1N4148W</value>
+      <footprint>PCM_Diode_SMD_AKL:D_SOD-123</footprint>
+      <datasheet>https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</datasheet>
+      <description>SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Diode_SMD_AKL:D_SOD-123</field>
+        <field name="Datasheet">https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</field>
+        <field name="Description">SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Diode_AKL" part="1N4148W" description="SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="diode 1N4148W"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>53520587-5eb6-4757-8b59-99da306ddd47</tstamps>
+    </comp>
+    <comp ref="D29">
+      <value>1N4148W</value>
+      <footprint>PCM_Diode_SMD_AKL:D_SOD-123</footprint>
+      <datasheet>https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</datasheet>
+      <description>SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</description>
+      <fields>
+        <field name="Footprint">PCM_Diode_SMD_AKL:D_SOD-123</field>
+        <field name="Datasheet">https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</field>
+        <field name="Description">SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</field>
+      </fields>
+      <libsource lib="PCM_Diode_AKL" part="1N4148W" description="SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="diode 1N4148W"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>cc851d90-221e-460b-b09f-39b52bc0d98e</tstamps>
+    </comp>
+    <comp ref="LED1">
+      <value>MX_SK6812MINI-E</value>
+      <footprint>PCM_marbastlib-mx:LED_MX_6028R</footprint>
+      <description>Reverse mount adressable LED (WS2812 protocol)</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:LED_MX_6028R</field>
+        <field name="Datasheet"/>
+        <field name="Description">Reverse mount adressable LED (WS2812 protocol)</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SK6812MINI-E" description="Reverse mount adressable LED (WS2812 protocol)"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="reverse mount led revmount rgb"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>dee203b7-42ee-4b98-9003-936a09310fc6</tstamps>
+    </comp>
+    <comp ref="LED2">
+      <value>MX_SK6812MINI-E</value>
+      <footprint>PCM_marbastlib-mx:LED_MX_6028R</footprint>
+      <description>Reverse mount adressable LED (WS2812 protocol)</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:LED_MX_6028R</field>
+        <field name="Datasheet"/>
+        <field name="Description">Reverse mount adressable LED (WS2812 protocol)</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SK6812MINI-E" description="Reverse mount adressable LED (WS2812 protocol)"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="reverse mount led revmount rgb"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>3f18367a-e7ab-4bf8-a918-1679dee249d2</tstamps>
+    </comp>
+    <comp ref="LED3">
+      <value>MX_SK6812MINI-E</value>
+      <footprint>PCM_marbastlib-mx:LED_MX_6028R</footprint>
+      <description>Reverse mount adressable LED (WS2812 protocol)</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:LED_MX_6028R</field>
+        <field name="Datasheet"/>
+        <field name="Description">Reverse mount adressable LED (WS2812 protocol)</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SK6812MINI-E" description="Reverse mount adressable LED (WS2812 protocol)"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="reverse mount led revmount rgb"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>cda862bf-b586-4a88-bb53-5ab8cfcddcf2</tstamps>
+    </comp>
+    <comp ref="LED4">
+      <value>MX_SK6812MINI-E</value>
+      <footprint>PCM_marbastlib-mx:LED_MX_6028R</footprint>
+      <description>Reverse mount adressable LED (WS2812 protocol)</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:LED_MX_6028R</field>
+        <field name="Datasheet"/>
+        <field name="Description">Reverse mount adressable LED (WS2812 protocol)</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SK6812MINI-E" description="Reverse mount adressable LED (WS2812 protocol)"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="reverse mount led revmount rgb"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>d8e7947b-5bb2-4fc1-a4f6-847dc2f131bc</tstamps>
+    </comp>
+    <comp ref="LED5">
+      <value>MX_SK6812MINI-E</value>
+      <footprint>PCM_marbastlib-mx:LED_MX_6028R</footprint>
+      <description>Reverse mount adressable LED (WS2812 protocol)</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:LED_MX_6028R</field>
+        <field name="Datasheet"/>
+        <field name="Description">Reverse mount adressable LED (WS2812 protocol)</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SK6812MINI-E" description="Reverse mount adressable LED (WS2812 protocol)"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="reverse mount led revmount rgb"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>417e6a0d-21f7-4ded-893d-c50349f4cc71</tstamps>
+    </comp>
+    <comp ref="LED6">
+      <value>MX_SK6812MINI-E</value>
+      <footprint>PCM_marbastlib-mx:LED_MX_6028R</footprint>
+      <description>Reverse mount adressable LED (WS2812 protocol)</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:LED_MX_6028R</field>
+        <field name="Datasheet"/>
+        <field name="Description">Reverse mount adressable LED (WS2812 protocol)</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SK6812MINI-E" description="Reverse mount adressable LED (WS2812 protocol)"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="reverse mount led revmount rgb"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>d03dbe4c-acca-4050-bde4-c62996f00590</tstamps>
+    </comp>
+    <comp ref="LED7">
+      <value>MX_SK6812MINI-E</value>
+      <footprint>PCM_marbastlib-mx:LED_MX_6028R</footprint>
+      <description>Reverse mount adressable LED (WS2812 protocol)</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:LED_MX_6028R</field>
+        <field name="Datasheet"/>
+        <field name="Description">Reverse mount adressable LED (WS2812 protocol)</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SK6812MINI-E" description="Reverse mount adressable LED (WS2812 protocol)"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="reverse mount led revmount rgb"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>d3a33e1e-f3e2-44ea-ac8a-cb7c0b62224a</tstamps>
+    </comp>
+    <comp ref="LED8">
+      <value>MX_SK6812MINI-E</value>
+      <footprint>PCM_marbastlib-mx:LED_MX_6028R</footprint>
+      <description>Reverse mount adressable LED (WS2812 protocol)</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:LED_MX_6028R</field>
+        <field name="Datasheet"/>
+        <field name="Description">Reverse mount adressable LED (WS2812 protocol)</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SK6812MINI-E" description="Reverse mount adressable LED (WS2812 protocol)"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="reverse mount led revmount rgb"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>e6475c77-d9d0-400d-830e-67d85df91641</tstamps>
+    </comp>
+    <comp ref="LED9">
+      <value>MX_SK6812MINI-E</value>
+      <footprint>PCM_marbastlib-mx:LED_MX_6028R</footprint>
+      <description>Reverse mount adressable LED (WS2812 protocol)</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:LED_MX_6028R</field>
+        <field name="Datasheet"/>
+        <field name="Description">Reverse mount adressable LED (WS2812 protocol)</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SK6812MINI-E" description="Reverse mount adressable LED (WS2812 protocol)"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="reverse mount led revmount rgb"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>2573f3d4-31a3-4e08-b8ac-4e4e3f70b942</tstamps>
+    </comp>
+    <comp ref="LED10">
+      <value>MX_SK6812MINI-E</value>
+      <footprint>PCM_marbastlib-mx:LED_MX_6028R</footprint>
+      <description>Reverse mount adressable LED (WS2812 protocol)</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:LED_MX_6028R</field>
+        <field name="Datasheet"/>
+        <field name="Description">Reverse mount adressable LED (WS2812 protocol)</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SK6812MINI-E" description="Reverse mount adressable LED (WS2812 protocol)"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="reverse mount led revmount rgb"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>ef05aa19-4aa8-4d80-b620-2dfd117a6c79</tstamps>
+    </comp>
+    <comp ref="LED11">
+      <value>MX_SK6812MINI-E</value>
+      <footprint>PCM_marbastlib-mx:LED_MX_6028R</footprint>
+      <description>Reverse mount adressable LED (WS2812 protocol)</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:LED_MX_6028R</field>
+        <field name="Datasheet"/>
+        <field name="Description">Reverse mount adressable LED (WS2812 protocol)</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SK6812MINI-E" description="Reverse mount adressable LED (WS2812 protocol)"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="reverse mount led revmount rgb"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>8f78aa94-6c1c-472c-8739-8eac1ad7fc27</tstamps>
+    </comp>
+    <comp ref="LED12">
+      <value>MX_SK6812MINI-E</value>
+      <footprint>PCM_marbastlib-mx:LED_MX_6028R</footprint>
+      <description>Reverse mount adressable LED (WS2812 protocol)</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:LED_MX_6028R</field>
+        <field name="Datasheet"/>
+        <field name="Description">Reverse mount adressable LED (WS2812 protocol)</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SK6812MINI-E" description="Reverse mount adressable LED (WS2812 protocol)"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="reverse mount led revmount rgb"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>76af5763-9399-44c4-a498-bbedcbf14668</tstamps>
+    </comp>
+    <comp ref="LED13">
+      <value>MX_SK6812MINI-E</value>
+      <footprint>PCM_marbastlib-mx:LED_MX_6028R</footprint>
+      <description>Reverse mount adressable LED (WS2812 protocol)</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:LED_MX_6028R</field>
+        <field name="Datasheet"/>
+        <field name="Description">Reverse mount adressable LED (WS2812 protocol)</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SK6812MINI-E" description="Reverse mount adressable LED (WS2812 protocol)"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="reverse mount led revmount rgb"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>79a22889-017f-4b61-a508-61202e7e1b02</tstamps>
+    </comp>
+    <comp ref="LED14">
+      <value>MX_SK6812MINI-E</value>
+      <footprint>PCM_marbastlib-mx:LED_MX_6028R</footprint>
+      <description>Reverse mount adressable LED (WS2812 protocol)</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:LED_MX_6028R</field>
+        <field name="Datasheet"/>
+        <field name="Description">Reverse mount adressable LED (WS2812 protocol)</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SK6812MINI-E" description="Reverse mount adressable LED (WS2812 protocol)"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="reverse mount led revmount rgb"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>7b6a7c1d-7b0e-4b7e-8ef9-98572626e35d</tstamps>
+    </comp>
+    <comp ref="LED15">
+      <value>MX_SK6812MINI-E</value>
+      <footprint>PCM_marbastlib-mx:LED_MX_6028R</footprint>
+      <description>Reverse mount adressable LED (WS2812 protocol)</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:LED_MX_6028R</field>
+        <field name="Datasheet"/>
+        <field name="Description">Reverse mount adressable LED (WS2812 protocol)</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SK6812MINI-E" description="Reverse mount adressable LED (WS2812 protocol)"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="reverse mount led revmount rgb"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>3d0bc790-52d9-4c4f-b369-0844c87f9f1e</tstamps>
+    </comp>
+    <comp ref="LED16">
+      <value>MX_SK6812MINI-E</value>
+      <footprint>PCM_marbastlib-mx:LED_MX_6028R</footprint>
+      <description>Reverse mount adressable LED (WS2812 protocol)</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:LED_MX_6028R</field>
+        <field name="Datasheet"/>
+        <field name="Description">Reverse mount adressable LED (WS2812 protocol)</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SK6812MINI-E" description="Reverse mount adressable LED (WS2812 protocol)"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="reverse mount led revmount rgb"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>d1ca3e75-9af4-4b49-893f-aca04ea59f9a</tstamps>
+    </comp>
+    <comp ref="LED17">
+      <value>MX_SK6812MINI-E</value>
+      <footprint>PCM_marbastlib-mx:LED_MX_6028R</footprint>
+      <description>Reverse mount adressable LED (WS2812 protocol)</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:LED_MX_6028R</field>
+        <field name="Datasheet"/>
+        <field name="Description">Reverse mount adressable LED (WS2812 protocol)</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SK6812MINI-E" description="Reverse mount adressable LED (WS2812 protocol)"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="reverse mount led revmount rgb"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>a1f2c2c1-c214-422d-b4a0-56c925c218b1</tstamps>
+    </comp>
+    <comp ref="LED18">
+      <value>MX_SK6812MINI-E</value>
+      <footprint>PCM_marbastlib-mx:LED_MX_6028R</footprint>
+      <description>Reverse mount adressable LED (WS2812 protocol)</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:LED_MX_6028R</field>
+        <field name="Datasheet"/>
+        <field name="Description">Reverse mount adressable LED (WS2812 protocol)</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SK6812MINI-E" description="Reverse mount adressable LED (WS2812 protocol)"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="reverse mount led revmount rgb"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>bc5a282c-1530-41df-ad00-5906e66a0f25</tstamps>
+    </comp>
+    <comp ref="LED19">
+      <value>MX_SK6812MINI-E</value>
+      <footprint>PCM_marbastlib-mx:LED_MX_6028R</footprint>
+      <description>Reverse mount adressable LED (WS2812 protocol)</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:LED_MX_6028R</field>
+        <field name="Datasheet"/>
+        <field name="Description">Reverse mount adressable LED (WS2812 protocol)</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SK6812MINI-E" description="Reverse mount adressable LED (WS2812 protocol)"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="reverse mount led revmount rgb"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>68ddcec0-82fc-44e2-bf40-3722a1f9dfce</tstamps>
+    </comp>
+    <comp ref="LED20">
+      <value>MX_SK6812MINI-E</value>
+      <footprint>PCM_marbastlib-mx:LED_MX_6028R</footprint>
+      <description>Reverse mount adressable LED (WS2812 protocol)</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:LED_MX_6028R</field>
+        <field name="Datasheet"/>
+        <field name="Description">Reverse mount adressable LED (WS2812 protocol)</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SK6812MINI-E" description="Reverse mount adressable LED (WS2812 protocol)"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="reverse mount led revmount rgb"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>3ed2f7a5-b2d8-453f-a297-6695939d1bd6</tstamps>
+    </comp>
+    <comp ref="LED21">
+      <value>MX_SK6812MINI-E</value>
+      <footprint>PCM_marbastlib-mx:LED_MX_6028R</footprint>
+      <description>Reverse mount adressable LED (WS2812 protocol)</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:LED_MX_6028R</field>
+        <field name="Datasheet"/>
+        <field name="Description">Reverse mount adressable LED (WS2812 protocol)</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SK6812MINI-E" description="Reverse mount adressable LED (WS2812 protocol)"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="reverse mount led revmount rgb"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>dac7346a-b010-4167-8fdb-9c0d91941d89</tstamps>
+    </comp>
+    <comp ref="LED22">
+      <value>MX_SK6812MINI-E</value>
+      <footprint>PCM_marbastlib-mx:LED_MX_6028R</footprint>
+      <description>Reverse mount adressable LED (WS2812 protocol)</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:LED_MX_6028R</field>
+        <field name="Datasheet"/>
+        <field name="Description">Reverse mount adressable LED (WS2812 protocol)</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SK6812MINI-E" description="Reverse mount adressable LED (WS2812 protocol)"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="reverse mount led revmount rgb"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>9a9bca09-b516-45c6-8261-d3f4f94874d1</tstamps>
+    </comp>
+    <comp ref="LED23">
+      <value>MX_SK6812MINI-E</value>
+      <footprint>PCM_marbastlib-mx:LED_MX_6028R</footprint>
+      <description>Reverse mount adressable LED (WS2812 protocol)</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:LED_MX_6028R</field>
+        <field name="Datasheet"/>
+        <field name="Description">Reverse mount adressable LED (WS2812 protocol)</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SK6812MINI-E" description="Reverse mount adressable LED (WS2812 protocol)"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="reverse mount led revmount rgb"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>3a5f0ace-38cc-41ba-ab1d-6ee059890fc7</tstamps>
+    </comp>
+    <comp ref="LED24">
+      <value>MX_SK6812MINI-E</value>
+      <footprint>PCM_marbastlib-mx:LED_MX_6028R</footprint>
+      <description>Reverse mount adressable LED (WS2812 protocol)</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:LED_MX_6028R</field>
+        <field name="Datasheet"/>
+        <field name="Description">Reverse mount adressable LED (WS2812 protocol)</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SK6812MINI-E" description="Reverse mount adressable LED (WS2812 protocol)"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="reverse mount led revmount rgb"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>1fd9c9e4-2dfd-4151-b309-9c4511e3ed2e</tstamps>
+    </comp>
+    <comp ref="LED25">
+      <value>MX_SK6812MINI-E</value>
+      <footprint>PCM_marbastlib-mx:LED_MX_6028R</footprint>
+      <description>Reverse mount adressable LED (WS2812 protocol)</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:LED_MX_6028R</field>
+        <field name="Datasheet"/>
+        <field name="Description">Reverse mount adressable LED (WS2812 protocol)</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SK6812MINI-E" description="Reverse mount adressable LED (WS2812 protocol)"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="reverse mount led revmount rgb"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>58f77366-401d-4764-9c9b-850d5763a77d</tstamps>
+    </comp>
+    <comp ref="LED26">
+      <value>MX_SK6812MINI-E</value>
+      <footprint>PCM_marbastlib-mx:LED_MX_6028R</footprint>
+      <description>Reverse mount adressable LED (WS2812 protocol)</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:LED_MX_6028R</field>
+        <field name="Datasheet"/>
+        <field name="Description">Reverse mount adressable LED (WS2812 protocol)</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SK6812MINI-E" description="Reverse mount adressable LED (WS2812 protocol)"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="reverse mount led revmount rgb"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>7523b190-7540-4ca2-9c9d-04a935cf41be</tstamps>
+    </comp>
+    <comp ref="LED27">
+      <value>MX_SK6812MINI-E</value>
+      <footprint>PCM_marbastlib-mx:LED_MX_6028R</footprint>
+      <description>Reverse mount adressable LED (WS2812 protocol)</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:LED_MX_6028R</field>
+        <field name="Datasheet"/>
+        <field name="Description">Reverse mount adressable LED (WS2812 protocol)</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SK6812MINI-E" description="Reverse mount adressable LED (WS2812 protocol)"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="reverse mount led revmount rgb"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>9936daa4-e475-45c1-81b1-ca1f304d8886</tstamps>
+    </comp>
+    <comp ref="MACRO_A1">
+      <value>MX_SW_HS</value>
+      <footprint>PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</footprint>
+      <datasheet>~</datasheet>
+      <description>Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SW_HS_CPG151101S11" description="Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>cc7bdce4-a588-484c-971f-43ed8f72830b</tstamps>
+    </comp>
+    <comp ref="MACRO_B1">
+      <value>MX_SW_HS</value>
+      <footprint>PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</footprint>
+      <datasheet>~</datasheet>
+      <description>Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SW_HS_CPG151101S11" description="Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>9a7e85b2-7bbf-440e-895d-6af39b87a65a</tstamps>
+    </comp>
+    <comp ref="MACRO_C1">
+      <value>MX_SW_HS</value>
+      <footprint>PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</footprint>
+      <datasheet>~</datasheet>
+      <description>Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SW_HS_CPG151101S11" description="Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>04570110-d5f4-4d09-a56e-5447e4a0b6d8</tstamps>
+    </comp>
+    <comp ref="MACRO_D1">
+      <value>MX_SW_HS</value>
+      <footprint>PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</footprint>
+      <datasheet>~</datasheet>
+      <description>Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SW_HS_CPG151101S11" description="Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>164bfbfa-196e-4228-af45-b943f8e2a6f5</tstamps>
+    </comp>
+    <comp ref="MACRO_E1">
+      <value>MX_SW_HS</value>
+      <footprint>PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</footprint>
+      <datasheet>~</datasheet>
+      <description>Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SW_HS_CPG151101S11" description="Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>fec703e3-40b4-4132-8eb5-22897674cf66</tstamps>
+    </comp>
+    <comp ref="MACRO_F1">
+      <value>MX_SW_HS</value>
+      <footprint>PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</footprint>
+      <datasheet>~</datasheet>
+      <description>Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SW_HS_CPG151101S11" description="Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>9f668a27-88c9-4b7d-b7b5-e1f71f63631e</tstamps>
+    </comp>
+    <comp ref="MACRO_G1">
+      <value>MX_SW_HS</value>
+      <footprint>PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</footprint>
+      <datasheet>~</datasheet>
+      <description>Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SW_HS_CPG151101S11" description="Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>1ce31e91-544f-4a26-b029-901d48deb831</tstamps>
+    </comp>
+    <comp ref="MACRO_H1">
+      <value>MX_SW_HS</value>
+      <footprint>PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</footprint>
+      <datasheet>~</datasheet>
+      <description>Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SW_HS_CPG151101S11" description="Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>0f8a26af-6635-4234-a4e6-da17b3c1c738</tstamps>
+    </comp>
+    <comp ref="MACRO_I1">
+      <value>MX_SW_HS</value>
+      <footprint>PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</footprint>
+      <datasheet>~</datasheet>
+      <description>Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SW_HS_CPG151101S11" description="Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>32876d67-168c-43d8-926e-9516ba6d84f4</tstamps>
+    </comp>
+    <comp ref="NUM_0">
+      <value>MX_SW_HS</value>
+      <footprint>PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</footprint>
+      <datasheet>~</datasheet>
+      <description>Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SW_HS_CPG151101S11" description="Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>9871e6b0-1d50-4020-bebb-7a217308629d</tstamps>
+    </comp>
+    <comp ref="NUM_1">
+      <value>MX_SW_HS</value>
+      <footprint>PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</footprint>
+      <datasheet>~</datasheet>
+      <description>Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SW_HS_CPG151101S11" description="Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>0a3c8be3-8a11-4183-875e-d30b950cb419</tstamps>
+    </comp>
+    <comp ref="NUM_2">
+      <value>MX_SW_HS</value>
+      <footprint>PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</footprint>
+      <datasheet>~</datasheet>
+      <description>Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SW_HS_CPG151101S11" description="Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>54869f3d-a9cc-46a0-9eb1-3c4f3e82f0f5</tstamps>
+    </comp>
+    <comp ref="NUM_3">
+      <value>MX_SW_HS</value>
+      <footprint>PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</footprint>
+      <datasheet>~</datasheet>
+      <description>Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SW_HS_CPG151101S11" description="Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>30eee7ea-caee-49e3-b52c-a56fcbfdfefd</tstamps>
+    </comp>
+    <comp ref="NUM_4">
+      <value>MX_SW_HS</value>
+      <footprint>PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</footprint>
+      <datasheet>~</datasheet>
+      <description>Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SW_HS_CPG151101S11" description="Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>290f0ca9-397d-4585-91e6-101ac6c53390</tstamps>
+    </comp>
+    <comp ref="NUM_5">
+      <value>MX_SW_HS</value>
+      <footprint>PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</footprint>
+      <datasheet>~</datasheet>
+      <description>Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SW_HS_CPG151101S11" description="Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>45d1db8f-67fb-47d3-a2f4-f09c0e38e0d9</tstamps>
+    </comp>
+    <comp ref="NUM_6">
+      <value>MX_SW_HS</value>
+      <footprint>PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</footprint>
+      <datasheet>~</datasheet>
+      <description>Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SW_HS_CPG151101S11" description="Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>65d5c4fc-b773-4299-bb4b-0b9148783218</tstamps>
+    </comp>
+    <comp ref="NUM_7">
+      <value>MX_SW_HS</value>
+      <footprint>PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</footprint>
+      <datasheet>~</datasheet>
+      <description>Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SW_HS_CPG151101S11" description="Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>94428564-4565-4185-8d39-8439354fcd28</tstamps>
+    </comp>
+    <comp ref="NUM_8">
+      <value>MX_SW_HS</value>
+      <footprint>PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</footprint>
+      <datasheet>~</datasheet>
+      <description>Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SW_HS_CPG151101S11" description="Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>b2fdb8cf-0409-4d22-b1b8-f8b1aa580f39</tstamps>
+    </comp>
+    <comp ref="NUM_10">
+      <value>MX_SW_HS</value>
+      <footprint>PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</footprint>
+      <datasheet>~</datasheet>
+      <description>Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SW_HS_CPG151101S11" description="Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>381f0f6a-29e2-4cba-9a24-5b4322168187</tstamps>
+    </comp>
+    <comp ref="NUM_ADD1">
+      <value>MX_SW_HS</value>
+      <footprint>PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</footprint>
+      <datasheet>~</datasheet>
+      <description>Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SW_HS_CPG151101S11" description="Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>e536db38-4810-4e54-b8a7-517a3fd0a23c</tstamps>
+    </comp>
+    <comp ref="NUM_DIV1">
+      <value>MX_SW_HS</value>
+      <footprint>PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</footprint>
+      <datasheet>~</datasheet>
+      <description>Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SW_HS_CPG151101S11" description="Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>7b4d79de-83e6-4bf8-8928-10aa4fa671c3</tstamps>
+    </comp>
+    <comp ref="NUM_ENTER1">
+      <value>MX_SW_HS</value>
+      <footprint>PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</footprint>
+      <datasheet>~</datasheet>
+      <description>Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SW_HS_CPG151101S11" description="Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>9860ce82-5f3f-4c27-842c-b9cc6eac7104</tstamps>
+    </comp>
+    <comp ref="NUM_LOCK1">
+      <value>MX_SW_HS</value>
+      <footprint>PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</footprint>
+      <datasheet>~</datasheet>
+      <description>Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SW_HS_CPG151101S11" description="Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>a43a151f-ab8e-4d96-bcf4-ac87897a3fc4</tstamps>
+    </comp>
+    <comp ref="NUM_MULT1">
+      <value>MX_SW_HS</value>
+      <footprint>PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</footprint>
+      <datasheet>~</datasheet>
+      <description>Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SW_HS_CPG151101S11" description="Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>71950fdc-53df-43d9-bcc4-c625e042b701</tstamps>
+    </comp>
+    <comp ref="NUM_PERIOD1">
+      <value>MX_SW_HS</value>
+      <footprint>PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</footprint>
+      <datasheet>~</datasheet>
+      <description>Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SW_HS_CPG151101S11" description="Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>96534273-fbf0-4ed0-ab70-54689e6b120e</tstamps>
+    </comp>
+    <comp ref="NUM_SUB1">
+      <value>MX_SW_HS</value>
+      <footprint>PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</footprint>
+      <datasheet>~</datasheet>
+      <description>Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_SW_HS_CPG151101S11" description="Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>fe702d2b-4af9-4145-9488-d6672b067e4c</tstamps>
+    </comp>
+    <comp ref="S1">
+      <value>MX_stab</value>
+      <footprint>PCM_marbastlib-mx:STAB_MX_P_2u</footprint>
+      <description>Cherry MX-style stabilizer</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:STAB_MX_P_2u</field>
+        <field name="Datasheet"/>
+        <field name="Description">Cherry MX-style stabilizer</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_stab" description="Cherry MX-style stabilizer"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="cherry mx stabilizer stab"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>9ce3718c-02fe-4f65-a92e-129d95abd6b8</tstamps>
+    </comp>
+    <comp ref="S2">
+      <value>MX_stab</value>
+      <footprint>PCM_marbastlib-mx:STAB_MX_P_2u</footprint>
+      <description>Cherry MX-style stabilizer</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:STAB_MX_P_2u</field>
+        <field name="Datasheet"/>
+        <field name="Description">Cherry MX-style stabilizer</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_stab" description="Cherry MX-style stabilizer"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="cherry mx stabilizer stab"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>a6c3c728-89ec-4de9-9896-f757014c0e08</tstamps>
+    </comp>
+    <comp ref="S3">
+      <value>MX_stab</value>
+      <footprint>PCM_marbastlib-mx:STAB_MX_P_2u</footprint>
+      <description>Cherry MX-style stabilizer</description>
+      <fields>
+        <field name="Footprint">PCM_marbastlib-mx:STAB_MX_P_2u</field>
+        <field name="Datasheet"/>
+        <field name="Description">Cherry MX-style stabilizer</field>
+      </fields>
+      <libsource lib="PCM_marbastlib-mx" part="MX_stab" description="Cherry MX-style stabilizer"/>
+      <property name="Sheetname" value="NumpadRGB"/>
+      <property name="Sheetfile" value="matrixrot.kicad_sch"/>
+      <property name="ki_keywords" value="cherry mx stabilizer stab"/>
+      <sheetpath names="/NumpadRGB/" tstamps="/1d905906-6e74-4741-8b2e-53dc470a7c79/"/>
+      <tstamps>ddd973a8-a0df-4313-a2f8-5926d451c302</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="PCM_4ms_Connector" part="Conn_01x04">
+      <description>HEADER 1x4 MALE PINS 0.100” 180deg</description>
+      <footprints>
+        <fp>Connector*:*_??x*mm*</fp>
+        <fp>Connector*:*1x??x*mm*</fp>
+        <fp>Pin?Header?Straight?1X*</fp>
+        <fp>Pin?Header?Angled?1X*</fp>
+        <fp>Socket?Strip?Straight?1X*</fp>
+        <fp>Socket?Strip?Angled?1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x04</field>
+        <field name="Footprint">4ms_Connector:Pins_1x04_2.54mm_TH_SWD</field>
+        <field name="Datasheet"/>
+        <field name="Description">HEADER 1x4 MALE PINS 0.100” 180deg</field>
+        <field name="Specifications">HEADER 1x4 MALE PINS 0.100” 180deg</field>
+        <field name="Manufacturer">TAD</field>
+        <field name="Part Number">1-0401FBV0T</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="PCM_4ms_Connector" part="Conn_01x06">
+      <description>HEADER 1x6 MALE PINS 0.100” 180deg</description>
+      <footprints>
+        <fp>Connector*:*_??x*mm*</fp>
+        <fp>Connector*:*1x??x*mm*</fp>
+        <fp>Pin?Header?Straight?1X*</fp>
+        <fp>Pin?Header?Angled?1X*</fp>
+        <fp>Socket?Strip?Straight?1X*</fp>
+        <fp>Socket?Strip?Angled?1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x06</field>
+        <field name="Footprint">4ms_Connector:Pins_1x06_2.54mm_TH_SWD</field>
+        <field name="Datasheet"/>
+        <field name="Description">HEADER 1x6 MALE PINS 0.100” 180deg</field>
+        <field name="Specifications">HEADER 1x6 MALE PINS 0.100” 180deg</field>
+        <field name="Manufacturer">TAD</field>
+        <field name="Part Number">1-0601FBV0T</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="PCM_4ms_Diode" part="D_Generic">
+      <description>Diode</description>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*SingleDiode</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Generic</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Diode</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="PCM_4ms_Regulator" part="LD1117-3.3V-SOT223">
+      <description>3.3V Voltage Regulator, SOT-223-3, Imax=0.8A, VinMax=15V, Vdrop=1V</description>
+      <docs>https://www.mouser.com/datasheet/2/389/cd00000544-1795431.pdf</docs>
+      <footprints>
+        <fp>*TO-252-2*</fp>
+        <fp>*TO?252?2*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">LD1117-3.3V-SOT223</field>
+        <field name="Footprint">4ms_Package_SOT:SOT223</field>
+        <field name="Datasheet">https://www.mouser.com/datasheet/2/389/cd00000544-1795431.pdf</field>
+        <field name="Description">3.3V Voltage Regulator, SOT-223-3, Imax=0.8A, VinMax=15V, Vdrop=1V</field>
+        <field name="Manufacturer">STMicroelectronics</field>
+        <field name="Part Number">LD1117S33CTR</field>
+      </fields>
+      <pins>
+        <pin num="1" name="ADJ" type="input"/>
+        <pin num="2" name="OUT" type="passive"/>
+        <pin num="3" name="IN" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="PCM_Capacitor_AKL" part="C_0805">
+      <description>SMD 0805 MLCC capacitor, Alternate KiCad Library</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_0805</field>
+        <field name="Footprint">PCM_Capacitor_SMD_AKL:C_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">SMD 0805 MLCC capacitor, Alternate KiCad Library</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="PCM_Device_AKL" part="Ferrite_Bead">
+      <description>Ferrite bead, Alternate KiCAD Library</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>*Fuse*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">FB</field>
+        <field name="Value">Ferrite_Bead</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Ferrite bead, Alternate KiCAD Library</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="PCM_Diode_AKL" part="1N4148W">
+      <description>SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</description>
+      <docs>https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">1N4148W</field>
+        <field name="Footprint">PCM_Diode_SMD_AKL:D_SOD-123</field>
+        <field name="Datasheet">https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf</field>
+        <field name="Description">SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="PCM_Diode_TVS_AKL" part="PRTR5V0U2X">
+      <description>SOT-143 TVS Diode Array, 2 protected lines, 5.5V, Alternate KiCAD Library</description>
+      <docs>https://www.tme.eu/Document/4eac14af69261014af6cc93b35742953/PRTR5V0U2X-DTE.pdf</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">PRTR5V0U2X</field>
+        <field name="Footprint">PCM_Package_TO_SOT_SMD_AKL:SOT-143</field>
+        <field name="Datasheet">https://www.tme.eu/Document/4eac14af69261014af6cc93b35742953/PRTR5V0U2X-DTE.pdf</field>
+        <field name="Description">SOT-143 TVS Diode Array, 2 protected lines, 5.5V, Alternate KiCAD Library</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VN" type="passive"/>
+        <pin num="2" name="L1" type="passive"/>
+        <pin num="3" name="L2" type="passive"/>
+        <pin num="4" name="VP" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="PCM_Resistor_AKL" part="R_0805">
+      <description>SMD 0805 Chip Resistor, European Symbol, Alternate KiCad Library</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_0805</field>
+        <field name="Footprint">PCM_Resistor_SMD_AKL:R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">SMD 0805 Chip Resistor, European Symbol, Alternate KiCad Library</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="PCM_SL_Devices" part="Crystal_8MHz">
+      <description>8Mz Crystal</description>
+      <fields>
+        <field name="Reference">Y</field>
+        <field name="Value">Crystal_8MHz</field>
+        <field name="Footprint">Crystal:Crystal_HC49-4H_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description">8Mz Crystal</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="PCM_SL_Devices" part="Push_Button">
+      <description>Common 6mmx6mm Push Button</description>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">Push_Button</field>
+        <field name="Footprint">Button_Switch_THT:SW_PUSH_6mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">Common 6mmx6mm Push Button</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="PCM_marbastlib-mx" part="MX_SK6812MINI-E">
+      <description>Reverse mount adressable LED (WS2812 protocol)</description>
+      <fields>
+        <field name="Reference">LED</field>
+        <field name="Value">MX_SK6812MINI-E</field>
+        <field name="Footprint">PCM_marbastlib-mx:LED_MX_6028R</field>
+        <field name="Datasheet"/>
+        <field name="Description">Reverse mount adressable LED (WS2812 protocol)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VDD" type="power_in"/>
+        <pin num="2" name="DOUT" type="output"/>
+        <pin num="3" name="DIN" type="input"/>
+        <pin num="4" name="VSS" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="PCM_marbastlib-mx" part="MX_SW_HS_CPG151101S11">
+      <description>Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">MX</field>
+        <field name="Value">MX_SW_HS</field>
+        <field name="Footprint">PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="PCM_marbastlib-mx" part="MX_stab">
+      <description>Cherry MX-style stabilizer</description>
+      <fields>
+        <field name="Reference">S</field>
+        <field name="Value">MX_stab</field>
+        <field name="Footprint">PCM_marbastlib-mx:STAB_MX_P_6.25u</field>
+        <field name="Datasheet"/>
+        <field name="Description">Cherry MX-style stabilizer</field>
+      </fields>
+    </libpart>
+    <libpart lib="PCM_marbastlib-various" part="ROT_SKYLOONG_HS-Switch">
+      <description>SKYLOONG hotswap encoder module</description>
+      <docs>https://skyloong.vip/products/abs-hot-swappable-knobs-madule</docs>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">ROT_SKYLOONG_HS</field>
+        <field name="Footprint">PCM_marbastlib-various:ROT_SKYLOONG_HS-Switch</field>
+        <field name="Datasheet">https://skyloong.vip/products/abs-hot-swappable-knobs-madule</field>
+        <field name="Description">SKYLOONG hotswap encoder module</field>
+      </fields>
+      <pins>
+        <pin num="A" name="A" type="passive"/>
+        <pin num="B" name="B" type="passive"/>
+        <pin num="C" name="C" type="passive"/>
+        <pin num="S" name="S" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Type-C" part="HRO-TYPE-C-31-M-12">
+      <fields>
+        <field name="Reference">USB</field>
+        <field name="Value">HRO-TYPE-C-31-M-12</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="input"/>
+        <pin num="2" name="VBUS" type="input"/>
+        <pin num="3" name="SBU2" type="input"/>
+        <pin num="4" name="CC1" type="input"/>
+        <pin num="5" name="DN2" type="input"/>
+        <pin num="6" name="DP1" type="input"/>
+        <pin num="7" name="DN1" type="input"/>
+        <pin num="8" name="DP2" type="input"/>
+        <pin num="9" name="SBU1" type="input"/>
+        <pin num="10" name="CC2" type="input"/>
+        <pin num="11" name="VBUS" type="input"/>
+        <pin num="12" name="GND" type="input"/>
+        <pin num="13" name="SHIELD" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="stm32f446ret6" part="STM32F446RET6">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="VBAT" type="bidirectional"/>
+        <pin num="2" name="PC13" type="bidirectional"/>
+        <pin num="3" name="PC14" type="bidirectional"/>
+        <pin num="4" name="PC15" type="bidirectional"/>
+        <pin num="5" name="OSCIN" type="bidirectional"/>
+        <pin num="6" name="OSCOUT" type="bidirectional"/>
+        <pin num="7" name="NRST" type="bidirectional"/>
+        <pin num="8" name="PC0" type="bidirectional"/>
+        <pin num="9" name="PC1" type="bidirectional"/>
+        <pin num="10" name="PC2" type="bidirectional"/>
+        <pin num="11" name="PC3" type="bidirectional"/>
+        <pin num="12" name="VSSA" type="bidirectional"/>
+        <pin num="13" name="VDDA" type="bidirectional"/>
+        <pin num="14" name="PA0" type="bidirectional"/>
+        <pin num="15" name="PA1" type="bidirectional"/>
+        <pin num="16" name="PA2" type="bidirectional"/>
+        <pin num="17" name="PA3" type="bidirectional"/>
+        <pin num="18" name="VSS" type="bidirectional"/>
+        <pin num="19" name="VDD" type="bidirectional"/>
+        <pin num="20" name="PA4" type="bidirectional"/>
+        <pin num="21" name="PA5" type="bidirectional"/>
+        <pin num="22" name="PA6" type="bidirectional"/>
+        <pin num="23" name="PA7" type="bidirectional"/>
+        <pin num="24" name="PC4" type="bidirectional"/>
+        <pin num="25" name="PC5" type="bidirectional"/>
+        <pin num="26" name="PB0" type="bidirectional"/>
+        <pin num="27" name="PB1" type="bidirectional"/>
+        <pin num="28" name="PB2" type="bidirectional"/>
+        <pin num="29" name="PB10" type="bidirectional"/>
+        <pin num="30" name="VCAP" type="bidirectional"/>
+        <pin num="31" name="VSS" type="bidirectional"/>
+        <pin num="32" name="VDD" type="bidirectional"/>
+        <pin num="33" name="PB12" type="bidirectional"/>
+        <pin num="34" name="PB13" type="bidirectional"/>
+        <pin num="35" name="PB14" type="bidirectional"/>
+        <pin num="36" name="PB15" type="bidirectional"/>
+        <pin num="37" name="PC6" type="bidirectional"/>
+        <pin num="38" name="PC7" type="bidirectional"/>
+        <pin num="39" name="PC8" type="bidirectional"/>
+        <pin num="40" name="PC9" type="bidirectional"/>
+        <pin num="41" name="PA8" type="bidirectional"/>
+        <pin num="42" name="PA9" type="bidirectional"/>
+        <pin num="43" name="PA10" type="bidirectional"/>
+        <pin num="44" name="PA11" type="bidirectional"/>
+        <pin num="45" name="PA12" type="bidirectional"/>
+        <pin num="46" name="PA13" type="bidirectional"/>
+        <pin num="47" name="VSS" type="bidirectional"/>
+        <pin num="48" name="VDD" type="bidirectional"/>
+        <pin num="49" name="PA14" type="bidirectional"/>
+        <pin num="50" name="PA15" type="bidirectional"/>
+        <pin num="51" name="PA10" type="bidirectional"/>
+        <pin num="52" name="PC11" type="bidirectional"/>
+        <pin num="53" name="PC12" type="bidirectional"/>
+        <pin num="54" name="PD2" type="bidirectional"/>
+        <pin num="55" name="PB3" type="bidirectional"/>
+        <pin num="56" name="PB4" type="bidirectional"/>
+        <pin num="57" name="PB5" type="bidirectional"/>
+        <pin num="58" name="PB6" type="bidirectional"/>
+        <pin num="59" name="PB7" type="bidirectional"/>
+        <pin num="60" name="BOOT" type="bidirectional"/>
+        <pin num="61" name="PB8" type="bidirectional"/>
+        <pin num="62" name="PB9" type="bidirectional"/>
+        <pin num="63" name="VSS" type="bidirectional"/>
+        <pin num="64" name="VDD" type="bidirectional"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="PCM_4ms_Connector">
+      <uri>/home/ukim/.local/share/kicad/9.0/3rdparty//symbols/com_github_4ms_4ms-kicad-lib/4ms_Connector.kicad_sym</uri>
+    </library>
+    <library logical="PCM_4ms_Diode">
+      <uri>/home/ukim/.local/share/kicad/9.0/3rdparty//symbols/com_github_4ms_4ms-kicad-lib/4ms_Diode.kicad_sym</uri>
+    </library>
+    <library logical="PCM_4ms_Regulator">
+      <uri>/home/ukim/.local/share/kicad/9.0/3rdparty//symbols/com_github_4ms_4ms-kicad-lib/4ms_Regulator.kicad_sym</uri>
+    </library>
+    <library logical="PCM_Capacitor_AKL">
+      <uri>/home/ukim/.local/share/kicad/9.0/3rdparty//symbols/com_github_dawidcislo_alternate-kicad-library/Capacitor_AKL.kicad_sym</uri>
+    </library>
+    <library logical="PCM_Device_AKL">
+      <uri>/home/ukim/.local/share/kicad/9.0/3rdparty//symbols/com_github_dawidcislo_alternate-kicad-library/Device_AKL.kicad_sym</uri>
+    </library>
+    <library logical="PCM_Diode_AKL">
+      <uri>/home/ukim/.local/share/kicad/9.0/3rdparty//symbols/com_github_dawidcislo_alternate-kicad-library/Diode_AKL.kicad_sym</uri>
+    </library>
+    <library logical="PCM_Diode_TVS_AKL">
+      <uri>/home/ukim/.local/share/kicad/9.0/3rdparty//symbols/com_github_dawidcislo_alternate-kicad-library/Diode_TVS_AKL.kicad_sym</uri>
+    </library>
+    <library logical="PCM_Resistor_AKL">
+      <uri>/home/ukim/.local/share/kicad/9.0/3rdparty//symbols/com_github_dawidcislo_alternate-kicad-library/Resistor_AKL.kicad_sym</uri>
+    </library>
+    <library logical="PCM_SL_Devices">
+      <uri>/home/ukim/.local/share/kicad/9.0/3rdparty//symbols/com_github_Sajitha-Aldeniya_KiCad-Simple-Libraries/SL_Devices.kicad_sym</uri>
+    </library>
+    <library logical="PCM_marbastlib-mx">
+      <uri>/home/ukim/.local/share/kicad/9.0/3rdparty//symbols/com_github_ebastler_marbastlib/marbastlib-mx.kicad_sym</uri>
+    </library>
+    <library logical="PCM_marbastlib-various">
+      <uri>/home/ukim/.local/share/kicad/9.0/3rdparty//symbols/com_github_ebastler_marbastlib/marbastlib-various.kicad_sym</uri>
+    </library>
+    <library logical="Type-C">
+      <uri>/home/kymkim/Projects/modular-kbd/hardware/Type-C.pretty-master/Type-C.lib</uri>
+    </library>
+    <library logical="stm32f446ret6">
+      <uri>/home/kymkim/Projects/modular-kbd/hardware/symbols/stm32f446ret6/stm32f446ret6.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+3.3V" class="Default">
+      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="FB1" pin="2" pintype="passive"/>
+      <node ref="IC1" pin="2" pinfunction="OUT" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="R13" pin="2" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="VBAT" pintype="bidirectional"/>
+      <node ref="U1" pin="19" pinfunction="VDD" pintype="bidirectional"/>
+      <node ref="U1" pin="32" pinfunction="VDD" pintype="bidirectional"/>
+      <node ref="U1" pin="48" pinfunction="VDD" pintype="bidirectional"/>
+      <node ref="U1" pin="64" pinfunction="VDD" pintype="bidirectional"/>
+    </net>
+    <net code="2" name="+5V" class="Default">
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="D1" pin="4" pinfunction="VP" pintype="passive"/>
+      <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="East1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="IC1" pin="3" pinfunction="IN" pintype="input"/>
+      <node ref="LED1" pin="1" pinfunction="VDD" pintype="power_in"/>
+      <node ref="LED10" pin="1" pinfunction="VDD" pintype="power_in"/>
+      <node ref="LED11" pin="1" pinfunction="VDD" pintype="power_in"/>
+      <node ref="LED12" pin="1" pinfunction="VDD" pintype="power_in"/>
+      <node ref="LED13" pin="1" pinfunction="VDD" pintype="power_in"/>
+      <node ref="LED14" pin="1" pinfunction="VDD" pintype="power_in"/>
+      <node ref="LED15" pin="1" pinfunction="VDD" pintype="power_in"/>
+      <node ref="LED16" pin="1" pinfunction="VDD" pintype="power_in"/>
+      <node ref="LED17" pin="1" pinfunction="VDD" pintype="power_in"/>
+      <node ref="LED18" pin="1" pinfunction="VDD" pintype="power_in"/>
+      <node ref="LED19" pin="1" pinfunction="VDD" pintype="power_in"/>
+      <node ref="LED2" pin="1" pinfunction="VDD" pintype="power_in"/>
+      <node ref="LED20" pin="1" pinfunction="VDD" pintype="power_in"/>
+      <node ref="LED21" pin="1" pinfunction="VDD" pintype="power_in"/>
+      <node ref="LED22" pin="1" pinfunction="VDD" pintype="power_in"/>
+      <node ref="LED23" pin="1" pinfunction="VDD" pintype="power_in"/>
+      <node ref="LED24" pin="1" pinfunction="VDD" pintype="power_in"/>
+      <node ref="LED25" pin="1" pinfunction="VDD" pintype="power_in"/>
+      <node ref="LED26" pin="1" pinfunction="VDD" pintype="power_in"/>
+      <node ref="LED27" pin="1" pinfunction="VDD" pintype="power_in"/>
+      <node ref="LED3" pin="1" pinfunction="VDD" pintype="power_in"/>
+      <node ref="LED4" pin="1" pinfunction="VDD" pintype="power_in"/>
+      <node ref="LED5" pin="1" pinfunction="VDD" pintype="power_in"/>
+      <node ref="LED6" pin="1" pinfunction="VDD" pintype="power_in"/>
+      <node ref="LED7" pin="1" pinfunction="VDD" pintype="power_in"/>
+      <node ref="LED8" pin="1" pinfunction="VDD" pintype="power_in"/>
+      <node ref="LED9" pin="1" pinfunction="VDD" pintype="power_in"/>
+      <node ref="North1" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="South1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="West1" pin="4" pinfunction="Pin_4" pintype="passive"/>
+    </net>
+    <net code="3" name="/COL1" class="Default">
+      <node ref="MACRO_E1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="MACRO_F1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="MACRO_G1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="MACRO_H1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="MACRO_I1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="41" pinfunction="PA8" pintype="bidirectional"/>
+    </net>
+    <net code="4" name="/COL2" class="Default">
+      <node ref="MACRO_A1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="NUM_0" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="NUM_1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="NUM_4" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="NUM_7" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="NUM_LOCK1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="40" pinfunction="PC9" pintype="bidirectional"/>
+    </net>
+    <net code="5" name="/COL3" class="Default">
+      <node ref="MACRO_B1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="NUM_2" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="NUM_5" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="NUM_8" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="NUM_DIV1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="39" pinfunction="PC8" pintype="bidirectional"/>
+    </net>
+    <net code="6" name="/COL4" class="Default">
+      <node ref="MACRO_C1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="NUM_10" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="NUM_3" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="NUM_6" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="NUM_MULT1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="NUM_PERIOD1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="38" pinfunction="PC7" pintype="bidirectional"/>
+    </net>
+    <net code="7" name="/COL5" class="Default">
+      <node ref="MACRO_D1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="NUM_ADD1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="NUM_ENTER1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="NUM_SUB1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="37" pinfunction="PC6" pintype="bidirectional"/>
+    </net>
+    <net code="8" name="/D+" class="Default">
+      <node ref="D1" pin="3" pinfunction="L2" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="USB1" pin="6" pinfunction="DP1" pintype="input"/>
+      <node ref="USB1" pin="8" pinfunction="DP2" pintype="input"/>
+    </net>
+    <net code="9" name="/D-" class="Default">
+      <node ref="D1" pin="2" pinfunction="L1" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="USB1" pin="5" pinfunction="DN2" pintype="input"/>
+      <node ref="USB1" pin="7" pinfunction="DN1" pintype="input"/>
+    </net>
+    <net code="10" name="/JTCLK" class="Default">
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="U1" pin="49" pinfunction="PA14" pintype="bidirectional"/>
+    </net>
+    <net code="11" name="/JTMS" class="Default">
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="U1" pin="46" pinfunction="PA13" pintype="bidirectional"/>
+    </net>
+    <net code="12" name="/NRST" class="Default">
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="R13" pin="1" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+      <node ref="SW2" pin="1" pintype="passive"/>
+      <node ref="U1" pin="7" pinfunction="NRST" pintype="bidirectional"/>
+    </net>
+    <net code="17" name="/RGB_DATAIN" class="Default">
+      <node ref="LED5" pin="3" pinfunction="DIN" pintype="input"/>
+      <node ref="U1" pin="21" pinfunction="PA5" pintype="bidirectional"/>
+    </net>
+    <net code="18" name="/ROT_SW" class="Default">
+      <node ref="D29" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="U1" pin="20" pinfunction="PA4" pintype="bidirectional"/>
+    </net>
+    <net code="19" name="/ROT_TIMA" class="Default">
+      <node ref="U1" pin="23" pinfunction="PA7" pintype="bidirectional"/>
+    </net>
+    <net code="20" name="/ROT_TIMB" class="Default">
+      <node ref="U1" pin="22" pinfunction="PA6" pintype="bidirectional"/>
+    </net>
+    <net code="21" name="/ROW1" class="Default">
+      <node ref="D3" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D4" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D5" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D6" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="U1" pin="29" pinfunction="PB10" pintype="bidirectional"/>
+    </net>
+    <net code="22" name="/ROW2" class="Default">
+      <node ref="D10" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D24" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D7" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D8" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D9" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="U1" pin="28" pinfunction="PB2" pintype="bidirectional"/>
+    </net>
+    <net code="23" name="/ROW3" class="Default">
+      <node ref="D11" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D12" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D13" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D14" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D25" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="U1" pin="27" pinfunction="PB1" pintype="bidirectional"/>
+    </net>
+    <net code="24" name="/ROW4" class="Default">
+      <node ref="D15" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D16" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D17" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D26" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="U1" pin="26" pinfunction="PB0" pintype="bidirectional"/>
+    </net>
+    <net code="25" name="/ROW5" class="Default">
+      <node ref="D18" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D19" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D20" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D21" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D27" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="U1" pin="25" pinfunction="PC5" pintype="bidirectional"/>
+    </net>
+    <net code="26" name="/ROW6" class="Default">
+      <node ref="D22" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D23" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D28" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="U1" pin="24" pinfunction="PC4" pintype="bidirectional"/>
+    </net>
+    <net code="27" name="/SWO" class="Default">
+      <node ref="R9" pin="2" pintype="passive"/>
+      <node ref="U1" pin="55" pinfunction="PB3" pintype="bidirectional"/>
+    </net>
+    <net code="28" name="/UART_RX_EAST" class="Default">
+      <node ref="East1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U1" pin="14" pinfunction="PA0" pintype="bidirectional"/>
+    </net>
+    <net code="29" name="/UART_RX_NORTH" class="Default">
+      <node ref="North1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U1" pin="54" pinfunction="PD2" pintype="bidirectional"/>
+    </net>
+    <net code="30" name="/UART_RX_SOUTH" class="Default">
+      <node ref="South1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U1" pin="17" pinfunction="PA3" pintype="bidirectional"/>
+    </net>
+    <net code="31" name="/UART_RX_WEST" class="Default">
+      <node ref="U1" pin="42" pinfunction="PA9" pintype="bidirectional"/>
+      <node ref="West1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+    </net>
+    <net code="32" name="/UART_TX_EAST" class="Default">
+      <node ref="East1" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="U1" pin="15" pinfunction="PA1" pintype="bidirectional"/>
+    </net>
+    <net code="33" name="/UART_TX_NORTH" class="Default">
+      <node ref="North1" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="U1" pin="53" pinfunction="PC12" pintype="bidirectional"/>
+    </net>
+    <net code="34" name="/UART_TX_SOUTH" class="Default">
+      <node ref="South1" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="U1" pin="16" pinfunction="PA2" pintype="bidirectional"/>
+    </net>
+    <net code="35" name="/UART_TX_WEST" class="Default">
+      <node ref="U1" pin="43" pinfunction="PA10" pintype="bidirectional"/>
+      <node ref="West1" pin="3" pinfunction="Pin_3" pintype="passive"/>
+    </net>
+    <net code="36" name="AGND" class="Default">
+      <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="U1" pin="12" pinfunction="VSSA" pintype="bidirectional"/>
+    </net>
+    <net code="37" name="GND" class="Default">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="D1" pin="1" pinfunction="VN" pintype="passive"/>
+      <node ref="East1" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="IC1" pin="1" pinfunction="ADJ" pintype="input"/>
+      <node ref="J1" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="LED1" pin="4" pinfunction="VSS" pintype="power_in"/>
+      <node ref="LED10" pin="4" pinfunction="VSS" pintype="power_in"/>
+      <node ref="LED11" pin="4" pinfunction="VSS" pintype="power_in"/>
+      <node ref="LED12" pin="4" pinfunction="VSS" pintype="power_in"/>
+      <node ref="LED13" pin="4" pinfunction="VSS" pintype="power_in"/>
+      <node ref="LED14" pin="4" pinfunction="VSS" pintype="power_in"/>
+      <node ref="LED15" pin="4" pinfunction="VSS" pintype="power_in"/>
+      <node ref="LED16" pin="4" pinfunction="VSS" pintype="power_in"/>
+      <node ref="LED17" pin="4" pinfunction="VSS" pintype="power_in"/>
+      <node ref="LED18" pin="4" pinfunction="VSS" pintype="power_in"/>
+      <node ref="LED19" pin="4" pinfunction="VSS" pintype="power_in"/>
+      <node ref="LED2" pin="4" pinfunction="VSS" pintype="power_in"/>
+      <node ref="LED20" pin="4" pinfunction="VSS" pintype="power_in"/>
+      <node ref="LED21" pin="4" pinfunction="VSS" pintype="power_in"/>
+      <node ref="LED22" pin="4" pinfunction="VSS" pintype="power_in"/>
+      <node ref="LED23" pin="4" pinfunction="VSS" pintype="power_in"/>
+      <node ref="LED24" pin="4" pinfunction="VSS" pintype="power_in"/>
+      <node ref="LED25" pin="4" pinfunction="VSS" pintype="power_in"/>
+      <node ref="LED26" pin="4" pinfunction="VSS" pintype="power_in"/>
+      <node ref="LED27" pin="4" pinfunction="VSS" pintype="power_in"/>
+      <node ref="LED3" pin="4" pinfunction="VSS" pintype="power_in"/>
+      <node ref="LED4" pin="4" pinfunction="VSS" pintype="power_in"/>
+      <node ref="LED5" pin="4" pinfunction="VSS" pintype="power_in"/>
+      <node ref="LED6" pin="4" pinfunction="VSS" pintype="power_in"/>
+      <node ref="LED7" pin="4" pinfunction="VSS" pintype="power_in"/>
+      <node ref="LED8" pin="4" pinfunction="VSS" pintype="power_in"/>
+      <node ref="LED9" pin="4" pinfunction="VSS" pintype="power_in"/>
+      <node ref="North1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="SW2" pin="2" pintype="passive"/>
+      <node ref="South1" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="U1" pin="18" pinfunction="VSS" pintype="bidirectional"/>
+      <node ref="U1" pin="31" pinfunction="VSS" pintype="bidirectional"/>
+      <node ref="U1" pin="47" pinfunction="VSS" pintype="bidirectional"/>
+      <node ref="U1" pin="63" pinfunction="VSS" pintype="bidirectional"/>
+      <node ref="USB1" pin="1" pinfunction="GND" pintype="input"/>
+      <node ref="USB1" pin="12" pinfunction="GND" pintype="input"/>
+      <node ref="USB1" pin="13" pinfunction="SHIELD" pintype="input"/>
+      <node ref="West1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+    </net>
+    <net code="38" name="Net-(D2-A)" class="Default">
+      <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="USB1" pin="11" pinfunction="VBUS" pintype="input"/>
+      <node ref="USB1" pin="2" pinfunction="VBUS" pintype="input"/>
+    </net>
+    <net code="39" name="Net-(D3-A)" class="Default">
+      <node ref="D3" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="MACRO_A1" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="40" name="Net-(D4-A)" class="Default">
+      <node ref="D4" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="MACRO_B1" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="41" name="Net-(D5-A)" class="Default">
+      <node ref="D5" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="MACRO_C1" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="42" name="Net-(D6-A)" class="Default">
+      <node ref="D6" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="MACRO_D1" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="43" name="Net-(D7-A)" class="Default">
+      <node ref="D7" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="NUM_LOCK1" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="44" name="Net-(D8-A)" class="Default">
+      <node ref="D8" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="NUM_DIV1" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="45" name="Net-(D9-A)" class="Default">
+      <node ref="D9" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="NUM_MULT1" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="46" name="Net-(D10-A)" class="Default">
+      <node ref="D10" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="NUM_SUB1" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="47" name="Net-(D11-A)" class="Default">
+      <node ref="D11" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="NUM_7" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="48" name="Net-(D12-A)" class="Default">
+      <node ref="D12" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="NUM_8" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="49" name="Net-(D13-A)" class="Default">
+      <node ref="D13" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="NUM_10" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="50" name="Net-(D14-A)" class="Default">
+      <node ref="D14" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="NUM_ADD1" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="51" name="Net-(D15-A)" class="Default">
+      <node ref="D15" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="NUM_4" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="52" name="Net-(D16-A)" class="Default">
+      <node ref="D16" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="NUM_5" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="53" name="Net-(D17-A)" class="Default">
+      <node ref="D17" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="NUM_6" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="54" name="Net-(D18-A)" class="Default">
+      <node ref="D18" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="NUM_1" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="55" name="Net-(D19-A)" class="Default">
+      <node ref="D19" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="NUM_2" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="56" name="Net-(D20-A)" class="Default">
+      <node ref="D20" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="NUM_3" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="57" name="Net-(D21-A)" class="Default">
+      <node ref="D21" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="NUM_ENTER1" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="58" name="Net-(D22-A)" class="Default">
+      <node ref="D22" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="NUM_0" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="59" name="Net-(D23-A)" class="Default">
+      <node ref="D23" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="NUM_PERIOD1" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="60" name="Net-(D24-A)" class="Default">
+      <node ref="D24" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="MACRO_E1" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="61" name="Net-(D25-A)" class="Default">
+      <node ref="D25" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="MACRO_F1" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="62" name="Net-(D26-A)" class="Default">
+      <node ref="D26" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="MACRO_G1" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="63" name="Net-(D27-A)" class="Default">
+      <node ref="D27" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="MACRO_H1" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="64" name="Net-(D28-A)" class="Default">
+      <node ref="D28" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="MACRO_I1" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="65" name="Net-(D29-A)" class="Default">
+      <node ref="D29" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="66" name="Net-(J1-Pin_2)" class="Default">
+      <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+    </net>
+    <net code="67" name="Net-(J1-Pin_4)" class="Default">
+      <node ref="J1" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+    </net>
+    <net code="68" name="Net-(J1-Pin_5)" class="Default">
+      <node ref="J1" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="R8" pin="2" pintype="passive"/>
+    </net>
+    <net code="69" name="Net-(J1-Pin_6)" class="Default">
+      <node ref="J1" pin="6" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="R9" pin="1" pintype="passive"/>
+    </net>
+    <net code="70" name="Net-(LED1-DIN)" class="Default">
+      <node ref="LED1" pin="3" pinfunction="DIN" pintype="input"/>
+      <node ref="LED2" pin="2" pinfunction="DOUT" pintype="output"/>
+    </net>
+    <net code="71" name="Net-(LED1-DOUT)" class="Default">
+      <node ref="LED1" pin="2" pinfunction="DOUT" pintype="output"/>
+      <node ref="LED10" pin="3" pinfunction="DIN" pintype="input"/>
+    </net>
+    <net code="72" name="Net-(LED2-DIN)" class="Default">
+      <node ref="LED2" pin="3" pinfunction="DIN" pintype="input"/>
+      <node ref="LED3" pin="2" pinfunction="DOUT" pintype="output"/>
+    </net>
+    <net code="73" name="Net-(LED3-DIN)" class="Default">
+      <node ref="LED3" pin="3" pinfunction="DIN" pintype="input"/>
+      <node ref="LED4" pin="2" pinfunction="DOUT" pintype="output"/>
+    </net>
+    <net code="74" name="Net-(LED4-DIN)" class="Default">
+      <node ref="LED4" pin="3" pinfunction="DIN" pintype="input"/>
+      <node ref="LED5" pin="2" pinfunction="DOUT" pintype="output"/>
+    </net>
+    <net code="75" name="Net-(LED6-DIN)" class="Default">
+      <node ref="LED6" pin="3" pinfunction="DIN" pintype="input"/>
+      <node ref="LED7" pin="2" pinfunction="DOUT" pintype="output"/>
+    </net>
+    <net code="76" name="Net-(LED7-DIN)" class="Default">
+      <node ref="LED7" pin="3" pinfunction="DIN" pintype="input"/>
+      <node ref="LED8" pin="2" pinfunction="DOUT" pintype="output"/>
+    </net>
+    <net code="77" name="Net-(LED8-DIN)" class="Default">
+      <node ref="LED8" pin="3" pinfunction="DIN" pintype="input"/>
+      <node ref="LED9" pin="2" pinfunction="DOUT" pintype="output"/>
+    </net>
+    <net code="78" name="Net-(LED10-DOUT)" class="Default">
+      <node ref="LED10" pin="2" pinfunction="DOUT" pintype="output"/>
+      <node ref="LED9" pin="3" pinfunction="DIN" pintype="input"/>
+    </net>
+    <net code="79" name="Net-(LED11-DIN)" class="Default">
+      <node ref="LED11" pin="3" pinfunction="DIN" pintype="input"/>
+      <node ref="LED12" pin="2" pinfunction="DOUT" pintype="output"/>
+    </net>
+    <net code="80" name="Net-(LED11-DOUT)" class="Default">
+      <node ref="LED11" pin="2" pinfunction="DOUT" pintype="output"/>
+      <node ref="LED19" pin="3" pinfunction="DIN" pintype="input"/>
+    </net>
+    <net code="81" name="Net-(LED12-DIN)" class="Default">
+      <node ref="LED12" pin="3" pinfunction="DIN" pintype="input"/>
+      <node ref="LED13" pin="2" pinfunction="DOUT" pintype="output"/>
+    </net>
+    <net code="82" name="Net-(LED13-DIN)" class="Default">
+      <node ref="LED13" pin="3" pinfunction="DIN" pintype="input"/>
+      <node ref="LED14" pin="2" pinfunction="DOUT" pintype="output"/>
+    </net>
+    <net code="83" name="Net-(LED14-DIN)" class="Default">
+      <node ref="LED14" pin="3" pinfunction="DIN" pintype="input"/>
+      <node ref="LED15" pin="2" pinfunction="DOUT" pintype="output"/>
+    </net>
+    <net code="84" name="Net-(LED15-DIN)" class="Default">
+      <node ref="LED15" pin="3" pinfunction="DIN" pintype="input"/>
+      <node ref="LED6" pin="2" pinfunction="DOUT" pintype="output"/>
+    </net>
+    <net code="85" name="Net-(LED16-DIN)" class="Default">
+      <node ref="LED16" pin="3" pinfunction="DIN" pintype="input"/>
+      <node ref="LED17" pin="2" pinfunction="DOUT" pintype="output"/>
+    </net>
+    <net code="86" name="Net-(LED16-DOUT)" class="Default">
+      <node ref="LED16" pin="2" pinfunction="DOUT" pintype="output"/>
+      <node ref="LED21" pin="3" pinfunction="DIN" pintype="input"/>
+    </net>
+    <net code="87" name="Net-(LED17-DIN)" class="Default">
+      <node ref="LED17" pin="3" pinfunction="DIN" pintype="input"/>
+      <node ref="LED18" pin="2" pinfunction="DOUT" pintype="output"/>
+    </net>
+    <net code="88" name="Net-(LED18-DIN)" class="Default">
+      <node ref="LED18" pin="3" pinfunction="DIN" pintype="input"/>
+      <node ref="LED19" pin="2" pinfunction="DOUT" pintype="output"/>
+    </net>
+    <net code="89" name="Net-(LED20-DIN)" class="Default">
+      <node ref="LED20" pin="3" pinfunction="DIN" pintype="input"/>
+      <node ref="LED27" pin="2" pinfunction="DOUT" pintype="output"/>
+    </net>
+    <net code="90" name="Net-(LED20-DOUT)" class="Default">
+      <node ref="LED20" pin="2" pinfunction="DOUT" pintype="output"/>
+      <node ref="LED26" pin="3" pinfunction="DIN" pintype="input"/>
+    </net>
+    <net code="91" name="Net-(LED21-DOUT)" class="Default">
+      <node ref="LED21" pin="2" pinfunction="DOUT" pintype="output"/>
+      <node ref="LED22" pin="3" pinfunction="DIN" pintype="input"/>
+    </net>
+    <net code="92" name="Net-(LED22-DOUT)" class="Default">
+      <node ref="LED22" pin="2" pinfunction="DOUT" pintype="output"/>
+      <node ref="LED23" pin="3" pinfunction="DIN" pintype="input"/>
+    </net>
+    <net code="93" name="Net-(LED23-DOUT)" class="Default">
+      <node ref="LED23" pin="2" pinfunction="DOUT" pintype="output"/>
+      <node ref="LED24" pin="3" pinfunction="DIN" pintype="input"/>
+    </net>
+    <net code="94" name="Net-(LED24-DOUT)" class="Default">
+      <node ref="LED24" pin="2" pinfunction="DOUT" pintype="output"/>
+      <node ref="LED25" pin="3" pinfunction="DIN" pintype="input"/>
+    </net>
+    <net code="95" name="Net-(LED25-DOUT)" class="Default">
+      <node ref="LED25" pin="2" pinfunction="DOUT" pintype="output"/>
+      <node ref="LED27" pin="3" pinfunction="DIN" pintype="input"/>
+    </net>
+    <net code="96" name="Net-(U1-BOOT)" class="Default">
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="U1" pin="60" pinfunction="BOOT" pintype="bidirectional"/>
+    </net>
+    <net code="97" name="Net-(U1-OSCIN)" class="Default">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="OSCIN" pintype="bidirectional"/>
+      <node ref="Y1" pin="2" pintype="passive"/>
+    </net>
+    <net code="98" name="Net-(U1-OSCOUT)" class="Default">
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="OSCOUT" pintype="bidirectional"/>
+      <node ref="Y1" pin="1" pintype="passive"/>
+    </net>
+    <net code="99" name="Net-(U1-PA11)" class="Default">
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="U1" pin="44" pinfunction="PA11" pintype="bidirectional"/>
+    </net>
+    <net code="100" name="Net-(U1-PA12)" class="Default">
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="U1" pin="45" pinfunction="PA12" pintype="bidirectional"/>
+    </net>
+    <net code="101" name="Net-(U1-VCAP)" class="Default">
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="U1" pin="30" pinfunction="VCAP" pintype="bidirectional"/>
+    </net>
+    <net code="102" name="Net-(U1-VDDA)" class="Default">
+      <node ref="FB1" pin="1" pintype="passive"/>
+      <node ref="U1" pin="13" pinfunction="VDDA" pintype="bidirectional"/>
+    </net>
+    <net code="103" name="Net-(USB1-CC1)" class="Default">
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="USB1" pin="4" pinfunction="CC1" pintype="input"/>
+    </net>
+    <net code="104" name="Net-(USB1-CC2)" class="Default">
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="USB1" pin="10" pinfunction="CC2" pintype="input"/>
+    </net>
+    <net code="105" name="unconnected-(LED26-DOUT-Pad2)" class="Default">
+      <node ref="LED26" pin="2" pinfunction="DOUT" pintype="output"/>
+    </net>
+    <net code="106" name="unconnected-(U1-PA10-Pad51)" class="Default">
+      <node ref="U1" pin="51" pinfunction="PA10" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="107" name="unconnected-(U1-PA15-Pad50)" class="Default">
+      <node ref="U1" pin="50" pinfunction="PA15" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="108" name="unconnected-(U1-PB4-Pad56)" class="Default">
+      <node ref="U1" pin="56" pinfunction="PB4" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="109" name="unconnected-(U1-PB5-Pad57)" class="Default">
+      <node ref="U1" pin="57" pinfunction="PB5" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="110" name="unconnected-(U1-PB6-Pad58)" class="Default">
+      <node ref="U1" pin="58" pinfunction="PB6" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="111" name="unconnected-(U1-PB7-Pad59)" class="Default">
+      <node ref="U1" pin="59" pinfunction="PB7" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="112" name="unconnected-(U1-PB8-Pad61)" class="Default">
+      <node ref="U1" pin="61" pinfunction="PB8" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="113" name="unconnected-(U1-PB9-Pad62)" class="Default">
+      <node ref="U1" pin="62" pinfunction="PB9" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="114" name="unconnected-(U1-PB12-Pad33)" class="Default">
+      <node ref="U1" pin="33" pinfunction="PB12" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="115" name="unconnected-(U1-PB13-Pad34)" class="Default">
+      <node ref="U1" pin="34" pinfunction="PB13" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="116" name="unconnected-(U1-PB14-Pad35)" class="Default">
+      <node ref="U1" pin="35" pinfunction="PB14" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="117" name="unconnected-(U1-PB15-Pad36)" class="Default">
+      <node ref="U1" pin="36" pinfunction="PB15" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="118" name="unconnected-(U1-PC0-Pad8)" class="Default">
+      <node ref="U1" pin="8" pinfunction="PC0" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="119" name="unconnected-(U1-PC1-Pad9)" class="Default">
+      <node ref="U1" pin="9" pinfunction="PC1" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="120" name="unconnected-(U1-PC2-Pad10)" class="Default">
+      <node ref="U1" pin="10" pinfunction="PC2" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="121" name="unconnected-(U1-PC3-Pad11)" class="Default">
+      <node ref="U1" pin="11" pinfunction="PC3" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="122" name="unconnected-(U1-PC11-Pad52)" class="Default">
+      <node ref="U1" pin="52" pinfunction="PC11" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="123" name="unconnected-(U1-PC13-Pad2)" class="Default">
+      <node ref="U1" pin="2" pinfunction="PC13" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="124" name="unconnected-(U1-PC14-Pad3)" class="Default">
+      <node ref="U1" pin="3" pinfunction="PC14" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="125" name="unconnected-(U1-PC15-Pad4)" class="Default">
+      <node ref="U1" pin="4" pinfunction="PC15" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="126" name="unconnected-(USB1-SBU1-Pad9)" class="Default">
+      <node ref="USB1" pin="9" pinfunction="SBU1" pintype="input+no_connect"/>
+    </net>
+    <net code="127" name="unconnected-(USB1-SBU2-Pad3)" class="Default">
+      <node ref="USB1" pin="3" pinfunction="SBU2" pintype="input+no_connect"/>
+    </net>
+  </nets>
+</export>

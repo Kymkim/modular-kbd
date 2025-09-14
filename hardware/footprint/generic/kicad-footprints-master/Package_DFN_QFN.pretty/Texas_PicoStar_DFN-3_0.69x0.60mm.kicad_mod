@@ -1,0 +1,208 @@
+(footprint "Texas_PicoStar_DFN-3_0.69x0.60mm"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Texas Picostar DFN-3, 0.73x0.64mm max, 0.69x0.60mm nom, https://www.ti.com/lit/ds/symlink/csd13380f3.pdf")
+	(tags "TI YJM0003A")
+	(property "Reference" "REF**"
+		(at -0.45 -1.25 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "a8e9d986-b106-4b44-96ad-e6aa8a0ac9bd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Texas_PicoStar_DFN-3_0.69x0.60mm"
+		(at 0 1.35 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "f318e81a-afd5-44ee-97f2-4fbf3b44ac03")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 1.35 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "29067c8b-1e07-42d3-bdf2-82869ca5ef6b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 1.35 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "58e7f05f-23b4-45dc-921b-375f95a9224b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -0.56 -0.51)
+		(end 0.5 -0.51)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "8648c7f1-173b-4b8d-9b01-0a92b9f6f938")
+	)
+	(fp_line
+		(start -0.56 0.45)
+		(end -0.56 -0.51)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "b5b8519b-d108-4db2-b55a-f87e3551d0a2")
+	)
+	(fp_rect
+		(start -0.5 -0.45)
+		(end 0.5 0.45)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "9f1c0ccf-05e9-4b39-bb6c-e0de3d7eabf5")
+	)
+	(fp_line
+		(start -0.345 -0.15)
+		(end -0.195 -0.3)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "c80f653a-79ae-4d25-a6ed-cd1be6d45e26")
+	)
+	(fp_line
+		(start -0.345 0.3)
+		(end -0.345 -0.15)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "dd26ae02-bae6-417d-8931-8b040d6f2443")
+	)
+	(fp_line
+		(start -0.195 -0.3)
+		(end 0.345 -0.3)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "b0804222-3685-4162-8d04-e664c6c1ae76")
+	)
+	(fp_line
+		(start 0.345 -0.3)
+		(end 0.345 0.3)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "fe62f55d-4015-423c-b1a0-1c6432580e82")
+	)
+	(fp_line
+		(start 0.345 0.3)
+		(end -0.345 0.3)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "1d15eb44-ad73-44b9-8e91-1fc01e033382")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "9e920502-b340-4471-9d45-c373d120aa4e")
+		(effects
+			(font
+				(size 0.25 0.25)
+				(thickness 0.025)
+			)
+		)
+	)
+	(pad "" smd roundrect
+		(at -0.175 -0.2)
+		(size 0.25 0.2)
+		(layers "F.Paste")
+		(roundrect_rratio 0.25)
+		(thermal_bridge_angle 45)
+		(uuid "07cc0eb1-b2f5-4460-b858-5930206e72d7")
+	)
+	(pad "" smd roundrect
+		(at -0.175 0.2)
+		(size 0.25 0.2)
+		(layers "F.Paste")
+		(roundrect_rratio 0.25)
+		(thermal_bridge_angle 45)
+		(uuid "af030ea4-091a-4100-bba3-f992d7765805")
+	)
+	(pad "1" smd roundrect
+		(at -0.175 -0.175)
+		(size 0.35 0.25)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.4)
+		(solder_mask_margin -0.05)
+		(thermal_bridge_angle 45)
+		(uuid "fd254618-aeb9-4231-9256-41eb0c2cffa9")
+	)
+	(pad "2" smd roundrect
+		(at -0.175 0.175)
+		(size 0.35 0.25)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.4)
+		(solder_mask_margin -0.05)
+		(thermal_bridge_angle 45)
+		(uuid "a982f1eb-3b1f-4bff-bb88-96071536a0db")
+	)
+	(pad "3" smd roundrect
+		(at 0.225 0)
+		(size 0.25 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.4)
+		(solder_mask_margin -0.05)
+		(solder_paste_margin -0.05)
+		(thermal_bridge_angle 45)
+		(uuid "c710e97e-05c5-433d-93d8-c4ce72cdaffe")
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/Texas_PicoStar_DFN-3_0.69x0.60mm.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

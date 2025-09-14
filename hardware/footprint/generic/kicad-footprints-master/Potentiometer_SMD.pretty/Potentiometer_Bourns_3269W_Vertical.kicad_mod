@@ -1,0 +1,161 @@
+(footprint "Potentiometer_Bourns_3269W_Vertical"
+	(version 20241229)
+	(generator "kicad-footprint-generator")
+	(layer "F.Cu")
+	(descr "Potentiometer, vertical, Bourns 3269W, https://www.bourns.com/docs/Product-Datasheets/3269.pdf")
+	(tags "Potentiometer vertical Bourns 3269W")
+	(property "Reference" "REF**"
+		(at 0 -5.06 0)
+		(layer "F.SilkS")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Potentiometer_Bourns_3269W_Vertical"
+		(at 0 5.06 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -3.285 2.265)
+		(end -3.285 -0.79)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start -1.715 -2.275)
+		(end 1.715 -2.275)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start -0.825 2.265)
+		(end -3.285 2.265)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start 3.285 -0.79)
+		(end 3.285 2.265)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start 3.285 2.265)
+		(end 0.825 2.265)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_rect
+		(start -3.43 -4.07)
+		(end 3.43 4.06)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+	)
+	(fp_line
+		(start 2.739 -0.04)
+		(end 1.498 1.201)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 2.848 0.069)
+		(end 1.607 1.31)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_rect
+		(start -3.175 -2.165)
+		(end 3.175 2.155)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+	)
+	(fp_circle
+		(center 2.173 0.635)
+		(end 3.063 0.635)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -0.501 -0.005 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 0.89 0.89)
+				(thickness 0.13)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at 2.54 -2.415)
+		(size 1.19 2.79)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.210084)
+	)
+	(pad "2" smd roundrect
+		(at 0 2.415)
+		(size 1.19 2.79)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.210084)
+	)
+	(pad "3" smd roundrect
+		(at -2.54 -2.415)
+		(size 1.19 2.79)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.210084)
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/Potentiometer_SMD.3dshapes/Potentiometer_Bourns_3269W_Vertical.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

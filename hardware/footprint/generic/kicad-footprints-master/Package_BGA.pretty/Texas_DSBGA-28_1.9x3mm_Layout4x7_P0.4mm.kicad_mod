@@ -1,0 +1,349 @@
+(footprint "Texas_DSBGA-28_1.9x3mm_Layout4x7_P0.4mm"
+	(version 20241229)
+	(generator "kicad-footprint-generator")
+	(layer "F.Cu")
+	(descr "Texas Instruments, DSBGA, area grid, 1.9x3.0mm, 28 Ball, 4x7 Layout, 0.4mm Pitch, generated with kicad-footprint-generator ipc_bga_generator.py, http://www.ti.com/lit/ds/symlink/bq51050b.pdf, http://www.ti.com/lit/an/snva009ag/snva009ag.pdf")
+	(tags "BGA 28 0.4 TI 28-ball YFP R-XBGA-N28")
+	(solder_mask_margin 0.05)
+	(property "Reference" "REF**"
+		(at 0 -2.5 0)
+		(layer "F.SilkS")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Texas_DSBGA-28_1.9x3mm_Layout4x7_P0.4mm"
+		(at 0 2.5 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1.06 1.61)
+		(end -1.06 -1.135)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start -0.585 -1.61)
+		(end 1.06 -1.61)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start 1.06 -1.61)
+		(end 1.06 1.61)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start 1.06 1.61)
+		(end -1.06 1.61)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_poly
+		(pts
+			(xy -1.06 -1.61)
+			(xy -1.56 -1.61)
+			(xy -1.06 -2.11)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start -1.95 -2.5)
+		(end -1.95 2.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+	)
+	(fp_line
+		(start -1.95 2.5)
+		(end 1.95 2.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+	)
+	(fp_line
+		(start 1.95 -2.5)
+		(end -1.95 -2.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+	)
+	(fp_line
+		(start 1.95 2.5)
+		(end 1.95 -2.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+	)
+	(fp_line
+		(start -0.95 -1.025)
+		(end -0.475 -1.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start -0.95 1.5)
+		(end -0.95 -1.025)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start -0.475 -1.5)
+		(end 0.95 -1.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 0.95 -1.5)
+		(end 0.95 1.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 0.95 1.5)
+		(end -0.95 1.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 -90)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.105)
+			)
+		)
+	)
+	(pad "A1" smd circle
+		(at -0.6 -1.2)
+		(size 0.225 0.225)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "A2" smd circle
+		(at -0.2 -1.2)
+		(size 0.225 0.225)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "A3" smd circle
+		(at 0.2 -1.2)
+		(size 0.225 0.225)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "A4" smd circle
+		(at 0.6 -1.2)
+		(size 0.225 0.225)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "B1" smd circle
+		(at -0.6 -0.8)
+		(size 0.225 0.225)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "B2" smd circle
+		(at -0.2 -0.8)
+		(size 0.225 0.225)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "B3" smd circle
+		(at 0.2 -0.8)
+		(size 0.225 0.225)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "B4" smd circle
+		(at 0.6 -0.8)
+		(size 0.225 0.225)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "C1" smd circle
+		(at -0.6 -0.4)
+		(size 0.225 0.225)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "C2" smd circle
+		(at -0.2 -0.4)
+		(size 0.225 0.225)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "C3" smd circle
+		(at 0.2 -0.4)
+		(size 0.225 0.225)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "C4" smd circle
+		(at 0.6 -0.4)
+		(size 0.225 0.225)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "D1" smd circle
+		(at -0.6 0)
+		(size 0.225 0.225)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "D2" smd circle
+		(at -0.2 0)
+		(size 0.225 0.225)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "D3" smd circle
+		(at 0.2 0)
+		(size 0.225 0.225)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "D4" smd circle
+		(at 0.6 0)
+		(size 0.225 0.225)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "E1" smd circle
+		(at -0.6 0.4)
+		(size 0.225 0.225)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "E2" smd circle
+		(at -0.2 0.4)
+		(size 0.225 0.225)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "E3" smd circle
+		(at 0.2 0.4)
+		(size 0.225 0.225)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "E4" smd circle
+		(at 0.6 0.4)
+		(size 0.225 0.225)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "F1" smd circle
+		(at -0.6 0.8)
+		(size 0.225 0.225)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "F2" smd circle
+		(at -0.2 0.8)
+		(size 0.225 0.225)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "F3" smd circle
+		(at 0.2 0.8)
+		(size 0.225 0.225)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "F4" smd circle
+		(at 0.6 0.8)
+		(size 0.225 0.225)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "G1" smd circle
+		(at -0.6 1.2)
+		(size 0.225 0.225)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "G2" smd circle
+		(at -0.2 1.2)
+		(size 0.225 0.225)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "G3" smd circle
+		(at 0.2 1.2)
+		(size 0.225 0.225)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "G4" smd circle
+		(at 0.6 1.2)
+		(size 0.225 0.225)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/Package_BGA.3dshapes/Texas_DSBGA-28_1.9x3mm_Layout4x7_P0.4mm.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

@@ -1,0 +1,120 @@
+(footprint "L_Radial_L9.1mm_W9.1mm_Px6.35mm_Py6.35mm_Pulse_LP-25"
+	(version 20241229)
+	(generator "kicad-footprint-generator")
+	(layer "F.Cu")
+	(descr "Inductor, Radial series, Radial, pin pitch=6.35*6.35mm^2, length*width=9.14*9.14mm^2, Pulse, LP-25, http://datasheet.octopart.com/PE-54044NL-Pulse-datasheet-5313493.pdf")
+	(tags "Inductor Radial series Radial pin pitch 6.35*6.35mm^2  length 9.14mm width 9.14mm Pulse LP-25")
+	(property "Reference" "REF**"
+		(at 3.175 -8.995 0)
+		(layer "F.SilkS")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "L_Radial_L9.1mm_W9.1mm_Px6.35mm_Py6.35mm_Pulse_LP-25"
+		(at 3.175 2.645 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -1.515 -7.865)
+		(end 7.865 -7.865)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start -1.515 1.515)
+		(end -1.515 -7.865)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start 7.865 -7.865)
+		(end 7.865 1.515)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start 7.865 1.515)
+		(end -1.515 1.515)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_rect
+		(start -1.65 -8)
+		(end 8 1.65)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+	)
+	(fp_rect
+		(start -1.395 -7.745)
+		(end 7.745 1.395)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 3.175 0 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 2 2)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+	)
+	(pad "2" thru_hole circle
+		(at 6.35 -6.35)
+		(size 2 2)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/Inductor_THT.3dshapes/L_Radial_L9.1mm_W9.1mm_Px6.35mm_Py6.35mm_Pulse_LP-25.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

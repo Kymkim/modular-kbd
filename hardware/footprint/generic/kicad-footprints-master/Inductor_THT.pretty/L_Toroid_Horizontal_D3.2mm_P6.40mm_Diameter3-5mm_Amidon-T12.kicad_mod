@@ -1,0 +1,232 @@
+(footprint "L_Toroid_Horizontal_D3.2mm_P6.40mm_Diameter3-5mm_Amidon-T12"
+	(version 20241229)
+	(generator "kicad-footprint-generator")
+	(layer "F.Cu")
+	(descr "L_Toroid, Horizontal series, Radial, pin pitch=6.40mm, diameter=3.175mm, height=4mm, Diameter3-5mm, Amidon-T12")
+	(tags "L_Toroid Horizontal series Radial pin pitch 6.40mm  diameter 3.175mm height 4mm Diameter3-5mm Amidon-T12")
+	(property "Reference" "REF**"
+		(at 3.2 -2.8375 0)
+		(layer "F.SilkS")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "L_Toroid_Horizontal_D3.2mm_P6.40mm_Diameter3-5mm_Amidon-T12"
+		(at 3.2 2.8375 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_arc
+		(start 2.04763 -1.26)
+		(mid 3.2 -1.7075)
+		(end 4.35237 -1.26)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_arc
+		(start 4.35237 1.26)
+		(mid 3.2 1.7075)
+		(end 2.04763 1.26)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_circle
+		(center 3.2 0)
+		(end 3.8674 0)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+	)
+	(fp_rect
+		(start -1.25 -1.84)
+		(end 7.65 1.84)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+	)
+	(fp_line
+		(start 1.52665 0)
+		(end 2.542448 -0.176191)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 1.750836 -0.836675)
+		(end 2.718638 -0.481362)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 1.750836 0.836675)
+		(end 2.542448 0.176191)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 2.363325 -1.449164)
+		(end 3.023809 -0.657552)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 2.363325 1.449164)
+		(end 2.718638 0.481362)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 3.2 -1.67335)
+		(end 3.376191 -0.657552)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 3.2 1.67335)
+		(end 3.023809 0.657552)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 4.036675 -1.449164)
+		(end 3.681362 -0.481362)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 4.036675 1.449164)
+		(end 3.376191 0.657552)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 4.649164 -0.836675)
+		(end 3.857552 -0.176191)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 4.649164 0.836675)
+		(end 3.681362 0.481362)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 4.87335 0)
+		(end 3.857552 0.176191)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_circle
+		(center 3.2 0)
+		(end 3.9874 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+	)
+	(fp_circle
+		(center 3.2 0)
+		(end 4.7875 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 3.2 0 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 0.635 0.635)
+				(thickness 0.09525)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 2 2)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+	)
+	(pad "2" thru_hole circle
+		(at 6.4 0)
+		(size 2 2)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/Inductor_THT.3dshapes/L_Toroid_Horizontal_D3.2mm_P6.40mm_Diameter3-5mm_Amidon-T12.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

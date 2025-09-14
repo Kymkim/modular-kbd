@@ -1,0 +1,286 @@
+(footprint "LayerMarker_22_29.2x2.54mm_TextH1mm_P1.27mm_AlNum"
+	(version 20241229)
+	(generator "kicad-footprint-generator")
+	(layer "F.Cu")
+	(descr "Layer marker, 22 layers, alphanumeric ordinals, text size 1mm, pitch 1.27mm, margin 1.27mm")
+	(tags "layer order identification numbering")
+	(property "Reference" "REF**"
+		(at 0 1.27 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "LayerMarker_22_29.2x2.54mm_TextH1mm_P1.27mm_AlNum"
+		(at 0 2.54 0)
+		(layer "F.Fab")
+		(hide yes)
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr board_only exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
+	(fp_text user "1"
+		(at 0 -1.27 0)
+		(layer "F.Cu")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+			)
+		)
+	)
+	(fp_text user "M"
+		(at 26.67 -1.27 0)
+		(layer "B.Cu")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+			)
+		)
+	)
+	(fp_text user "2"
+		(at 1.27 -1.27 0)
+		(layer "In1.Cu")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+			)
+		)
+	)
+	(fp_text user "3"
+		(at 2.54 -1.27 0)
+		(layer "In2.Cu")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+			)
+		)
+	)
+	(fp_text user "4"
+		(at 3.81 -1.27 0)
+		(layer "In3.Cu")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+			)
+		)
+	)
+	(fp_text user "5"
+		(at 5.08 -1.27 0)
+		(layer "In4.Cu")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+			)
+		)
+	)
+	(fp_text user "6"
+		(at 6.35 -1.27 0)
+		(layer "In5.Cu")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+			)
+		)
+	)
+	(fp_text user "7"
+		(at 7.62 -1.27 0)
+		(layer "In6.Cu")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+			)
+		)
+	)
+	(fp_text user "8"
+		(at 8.89 -1.27 0)
+		(layer "In7.Cu")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+			)
+		)
+	)
+	(fp_text user "9"
+		(at 10.16 -1.27 0)
+		(layer "In8.Cu")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+			)
+		)
+	)
+	(fp_text user "A"
+		(at 11.43 -1.27 0)
+		(layer "In9.Cu")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+			)
+		)
+	)
+	(fp_text user "B"
+		(at 12.7 -1.27 0)
+		(layer "In10.Cu")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+			)
+		)
+	)
+	(fp_text user "C"
+		(at 13.97 -1.27 0)
+		(layer "In11.Cu")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+			)
+		)
+	)
+	(fp_text user "D"
+		(at 15.24 -1.27 0)
+		(layer "In12.Cu")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+			)
+		)
+	)
+	(fp_text user "E"
+		(at 16.51 -1.27 0)
+		(layer "In13.Cu")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+			)
+		)
+	)
+	(fp_text user "F"
+		(at 17.78 -1.27 0)
+		(layer "In14.Cu")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+			)
+		)
+	)
+	(fp_text user "G"
+		(at 19.05 -1.27 0)
+		(layer "In15.Cu")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+			)
+		)
+	)
+	(fp_text user "H"
+		(at 20.32 -1.27 0)
+		(layer "In16.Cu")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+			)
+		)
+	)
+	(fp_text user "I"
+		(at 21.59 -1.27 0)
+		(layer "In17.Cu")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+			)
+		)
+	)
+	(fp_text user "J"
+		(at 22.86 -1.27 0)
+		(layer "In18.Cu")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+			)
+		)
+	)
+	(fp_text user "K"
+		(at 24.13 -1.27 0)
+		(layer "In19.Cu")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+			)
+		)
+	)
+	(fp_text user "L"
+		(at 25.4 -1.27 0)
+		(layer "In20.Cu")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+			)
+		)
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layers "*.Cu")
+		(name "")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(keepout
+			(tracks not_allowed)
+			(vias not_allowed)
+			(pads not_allowed)
+			(copperpour not_allowed)
+			(footprints allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy -1.27 -2.54)
+				(xy 27.94 -2.54)
+				(xy 27.94 0)
+				(xy -1.27 0)
+			)
+		)
+	)
+	(embedded_fonts no)
+)
