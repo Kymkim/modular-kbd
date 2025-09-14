@@ -14,7 +14,6 @@ A customizable modular keyboard system where each key cluster is its own module,
 
 ![Numpad Rear](./assets/numpad-backv1.png)
 
-
 ## Repo Structure
 ```
 ├─firmware/ - Embedded code for the core system
