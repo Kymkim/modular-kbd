@@ -1,0 +1,341 @@
+(footprint "Samtec_FSI-110-XX-X-D_2x10_P1.0mm_Mate"
+	(version 20241229)
+	(generator "kicad-footprint-generator")
+	(layer "F.Cu")
+	(descr "Samtec FSI One-Piece Interface, 1.00 mm Pitch, Double Row, PCB Mate (source: https://suddendocs.samtec.com/prints/fsi-mating%20board.pdf)")
+	(tags "conn samtec one piece interface")
+	(property "Reference" "REF**"
+		(at 0 -6.53 0)
+		(layer "F.SilkS")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Samtec_FSI-110-XX-X-D_2x10_P1.0mm_Mate"
+		(at 0 6.53 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr exclude_from_pos_files exclude_from_bom)
+	(fp_line
+		(start -5.49 -4.6185)
+		(end -5.065 -4.6185)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start -5.49 4.6185)
+		(end -5.49 -4.6185)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start -5.065 4.6185)
+		(end -5.49 4.6185)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start -4.764138 6.066)
+		(end -4.5 5.6085)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start -4.5 5.6085)
+		(end -4.235862 6.066)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start -4.235862 6.066)
+		(end -4.764138 6.066)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start 5.065 -4.6185)
+		(end 5.49 -4.6185)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start 5.49 -4.6185)
+		(end 5.49 4.6185)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start 5.49 4.6185)
+		(end 5.065 4.6185)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start -5.88 -5.83)
+		(end -5.88 5.83)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+	)
+	(fp_line
+		(start -5.88 5.83)
+		(end 5.88 5.83)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+	)
+	(fp_line
+		(start 5.88 -5.83)
+		(end -5.88 -5.83)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+	)
+	(fp_line
+		(start 5.88 5.83)
+		(end 5.88 -5.83)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+	)
+	(fp_line
+		(start -5.38 -4.5085)
+		(end 5.38 -4.5085)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start -5.38 4.5085)
+		(end -5.38 -4.5085)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start -5 4.5085)
+		(end -4.5 3.7085)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start -4.5 3.7085)
+		(end -4 4.5085)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 5.38 -4.5085)
+		(end 5.38 4.5085)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 5.38 4.5085)
+		(end -5.38 4.5085)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -4.5 3.555)
+		(size 0.61 3.55)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.25)
+	)
+	(pad "2" smd roundrect
+		(at -4.5 -3.555)
+		(size 0.61 3.55)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.25)
+	)
+	(pad "3" smd roundrect
+		(at -3.5 3.555)
+		(size 0.61 3.55)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.25)
+	)
+	(pad "4" smd roundrect
+		(at -3.5 -3.555)
+		(size 0.61 3.55)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.25)
+	)
+	(pad "5" smd roundrect
+		(at -2.5 3.555)
+		(size 0.61 3.55)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.25)
+	)
+	(pad "6" smd roundrect
+		(at -2.5 -3.555)
+		(size 0.61 3.55)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.25)
+	)
+	(pad "7" smd roundrect
+		(at -1.5 3.555)
+		(size 0.61 3.55)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.25)
+	)
+	(pad "8" smd roundrect
+		(at -1.5 -3.555)
+		(size 0.61 3.55)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.25)
+	)
+	(pad "9" smd roundrect
+		(at -0.5 3.555)
+		(size 0.61 3.55)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.25)
+	)
+	(pad "10" smd roundrect
+		(at -0.5 -3.555)
+		(size 0.61 3.55)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.25)
+	)
+	(pad "11" smd roundrect
+		(at 0.5 3.555)
+		(size 0.61 3.55)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.25)
+	)
+	(pad "12" smd roundrect
+		(at 0.5 -3.555)
+		(size 0.61 3.55)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.25)
+	)
+	(pad "13" smd roundrect
+		(at 1.5 3.555)
+		(size 0.61 3.55)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.25)
+	)
+	(pad "14" smd roundrect
+		(at 1.5 -3.555)
+		(size 0.61 3.55)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.25)
+	)
+	(pad "15" smd roundrect
+		(at 2.5 3.555)
+		(size 0.61 3.55)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.25)
+	)
+	(pad "16" smd roundrect
+		(at 2.5 -3.555)
+		(size 0.61 3.55)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.25)
+	)
+	(pad "17" smd roundrect
+		(at 3.5 3.555)
+		(size 0.61 3.55)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.25)
+	)
+	(pad "18" smd roundrect
+		(at 3.5 -3.555)
+		(size 0.61 3.55)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.25)
+	)
+	(pad "19" smd roundrect
+		(at 4.5 3.555)
+		(size 0.61 3.55)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.25)
+	)
+	(pad "20" smd roundrect
+		(at 4.5 -3.555)
+		(size 0.61 3.55)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.25)
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/Connector_Samtec_FSI.3dshapes/Samtec_FSI-110-XX-X-D_2x10_P1.0mm_Mate.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

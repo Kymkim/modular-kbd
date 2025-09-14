@@ -1,0 +1,254 @@
+(footprint "WLCSP-12_1.403x1.555mm_Layout6x4_P0.4mm_Stagger"
+	(version 20241229)
+	(generator "kicad-footprint-generator")
+	(layer "F.Cu")
+	(descr "WLCSP-12, staggered array, 1.403x1.555mm, 12 Ball, X-staggered 6x4 Layout, 0.4mm Pitch, generated with kicad-footprint-generator ipc_bga_generator.py, http://ww1.microchip.com/downloads/en/devicedoc/atmel-8235-8-bit-avr-microcontroller-attiny20_datasheet.pdf#page=208")
+	(tags "CSP 12 0.4")
+	(solder_mask_margin 0.0325)
+	(solder_paste_margin 0.000001)
+	(property "Reference" "REF**"
+		(at 0 -1.7775 0)
+		(layer "F.SilkS")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "WLCSP-12_1.403x1.555mm_Layout6x4_P0.4mm_Stagger"
+		(at 0 1.7775 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -0.8675 0.8875)
+		(end -0.8675 -0.50875)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start -0.48875 -0.8875)
+		(end 0.8675 -0.8875)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start 0.8675 -0.8875)
+		(end 0.8675 0.8875)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start 0.8675 0.8875)
+		(end -0.8675 0.8875)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_poly
+		(pts
+			(xy -0.8675 -0.8875)
+			(xy -1.3675 -0.8875)
+			(xy -0.8675 -1.3875)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start -1.71 -1.78)
+		(end -1.71 1.78)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+	)
+	(fp_line
+		(start -1.71 1.78)
+		(end 1.71 1.78)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+	)
+	(fp_line
+		(start 1.71 -1.78)
+		(end -1.71 -1.78)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+	)
+	(fp_line
+		(start 1.71 1.78)
+		(end 1.71 -1.78)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+	)
+	(fp_line
+		(start -0.7015 -0.42675)
+		(end -0.35075 -0.7775)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start -0.7015 0.7775)
+		(end -0.7015 -0.42675)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start -0.35075 -0.7775)
+		(end 0.7015 -0.7775)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 0.7015 -0.7775)
+		(end 0.7015 0.7775)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 0.7015 0.7775)
+		(end -0.7015 0.7775)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 -90)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 0.36 0.36)
+				(thickness 0.054)
+			)
+		)
+	)
+	(pad "A1" smd circle
+		(at -0.5 -0.519615)
+		(size 0.215 0.215)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "A3" smd circle
+		(at -0.1 -0.519615)
+		(size 0.215 0.215)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "A5" smd circle
+		(at 0.3 -0.519615)
+		(size 0.215 0.215)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "B2" smd circle
+		(at -0.3 -0.173205)
+		(size 0.215 0.215)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "B4" smd circle
+		(at 0.1 -0.173205)
+		(size 0.215 0.215)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "B6" smd circle
+		(at 0.5 -0.173205)
+		(size 0.215 0.215)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "C1" smd circle
+		(at -0.5 0.173205)
+		(size 0.215 0.215)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "C3" smd circle
+		(at -0.1 0.173205)
+		(size 0.215 0.215)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "C5" smd circle
+		(at 0.3 0.173205)
+		(size 0.215 0.215)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "D2" smd circle
+		(at -0.3 0.519615)
+		(size 0.215 0.215)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "D4" smd circle
+		(at 0.1 0.519615)
+		(size 0.215 0.215)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "D6" smd circle
+		(at 0.5 0.519615)
+		(size 0.215 0.215)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/Package_CSP.3dshapes/WLCSP-12_1.403x1.555mm_Layout6x4_P0.4mm_Stagger.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

@@ -1,0 +1,9885 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "64cbbd28-59d1-42ca-ac52-e45635cfa060")
+	(paper "A4")
+	(lib_symbols
+		(symbol "PCM_Diode_AKL:1N4148W"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "1N4148W"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "PCM_Diode_SMD_AKL:D_SOD-123"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode 1N4148W"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "1N4148W_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27) (xy 1.27 0) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "1N4148W_0_2"
+				(polyline
+					(pts
+						(xy -2.54 -2.54) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.889 -0.889) (xy -1.778 0) (xy 0.889 0.889) (xy 0 -1.778) (xy -0.889 -0.889)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.778) (xy 1.778 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "1N4148W_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "1N4148W_1_2"
+				(pin passive line
+					(at -2.54 -2.54 0)
+					(length 0)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 2.54 180)
+					(length 0)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PCM_marbastlib-mx:MX_SK6812MINI-E"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "LED"
+				(at 3.175 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MX_SK6812MINI-E"
+				(at 10.16 -6.985 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "reverse mount led revmount rgb"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MX_SK6812MINI-E_0_0"
+				(text "RGB"
+					(at 2.286 -4.191 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+			)
+			(symbol "MX_SK6812MINI-E_0_1"
+				(rectangle
+					(start -5.08 5.08)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 1.778 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -3.556) (xy 1.778 -3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -1.524) (xy 1.27 -2.54) (xy 1.27 -2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -2.54) (xy 1.27 -3.556) (xy 1.27 -3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.683 -1.016) (xy 3.683 -3.556) (xy 3.683 -4.064)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.699 -1.524) (xy 2.667 -1.524) (xy 3.683 -3.556) (xy 4.699 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.699 -3.556) (xy 2.667 -3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MX_SK6812MINI-E_1_1"
+				(pin input line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "DIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "DOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "MX"
+				(at 3.048 1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "MX_SW_HS"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MX_SW_HS_CPG151101S11_0_1"
+				(polyline
+					(pts
+						(xy -2.54 2.54) (xy -1.524 1.524) (xy -1.524 1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -1.1684 1.1684)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 2.54) (xy 2.54 -0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 1.016) (xy 2.032 2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.143 -1.1938)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 -1.524) (xy 2.54 -2.54) (xy 2.54 -2.54) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -2.54 2.54 0)
+					(length 0)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -2.54 180)
+					(length 0)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PCM_marbastlib-mx:MX_stab"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "S"
+				(at -5.08 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "MX_stab"
+				(at -5.08 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "PCM_marbastlib-mx:STAB_MX_P_6.25u"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Cherry MX-style stabilizer"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cherry mx stabilizer stab"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MX_stab_0_1"
+				(rectangle
+					(start -5.08 1.27)
+					(end -2.54 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -5.08 -1.524)
+					(end -2.54 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -4.826 2.794)
+					(end -2.794 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -4.064 1.27)
+					(end -3.556 2.794)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -4.064 -1.778)
+					(end 4.064 -2.286)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -4.064 -2.286)
+					(end -3.556 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 2.54 1.27)
+					(end 5.08 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 2.54 -1.524)
+					(end 5.08 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 2.794 2.794)
+					(end 4.826 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.556 1.27)
+					(end 4.064 2.794)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 4.064 -2.286)
+					(end 3.556 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PCM_marbastlib-various:ROT_SKYLOONG_HS-Switch"
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 0 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "ROT_SKYLOONG_HS"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "PCM_marbastlib-various:ROT_SKYLOONG_HS-Switch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://skyloong.vip/products/abs-hot-swappable-knobs-madule"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "SKYLOONG hotswap encoder module"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "hotswap encoder ec6 switch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "ROT_SKYLOONG_HS-Switch_0_1"
+				(rectangle
+					(start -5.08 5.08)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 2.54) (xy -3.81 2.54) (xy -3.81 2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 0) (xy -3.81 0) (xy -3.81 -1.016) (xy -3.302 -2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -2.54) (xy -3.81 -2.54) (xy -3.81 -2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.318 0) (xy -3.81 0) (xy -3.81 1.016) (xy -3.302 2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -3.81 0)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.302 -2.032) (xy -1.27 -4.064) (xy 2.54 -4.064) (xy 4.318 -2.032) (xy 4.318 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 -1.778) (xy -0.635 1.778)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -0.381 0)
+					(radius 1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.381 -1.778) (xy -0.381 1.778)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.381 -2.794)
+					(mid -3.0988 -0.0635)
+					(end -0.381 2.667)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.127 1.778) (xy -0.127 -1.778)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 2.921) (xy -0.508 2.667) (xy 0.127 2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 -3.048) (xy -0.508 -2.794) (xy 0.127 -2.413)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 1.016) (xy 3.81 -1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 0) (xy 3.429 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 4.318 1.016)
+					(radius 0.127)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 4.318 -1.016)
+					(radius 0.127)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 2.54) (xy 4.318 2.54) (xy 4.318 1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "ROT_SKYLOONG_HS-Switch_1_1"
+				(pin passive line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(junction
+		(at 251.46 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "010b2f83-4b9d-4fb2-b526-249e84d4fd3c")
+	)
+	(junction
+		(at 81.28 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "02493c88-0de1-4f99-a84e-688d48d71434")
+	)
+	(junction
+		(at 201.93 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "02b9f0f0-d386-4506-a077-efa81617404f")
+	)
+	(junction
+		(at 100.33 128.27)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0349d9af-955c-4714-ab2c-35d2a7d920c7")
+	)
+	(junction
+		(at 81.28 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "09305d06-6da3-46ba-a571-582445628344")
+	)
+	(junction
+		(at 64.77 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "097fc939-4b89-46ff-b123-ccba83a16590")
+	)
+	(junction
+		(at 111.76 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "09903c86-539d-452f-9672-4aca3ae15217")
+	)
+	(junction
+		(at 111.76 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0a28cd24-a22c-4b68-b1eb-410199d1338a")
+	)
+	(junction
+		(at 62.23 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0d692789-90fc-491e-8d8e-4b7103f2b29e")
+	)
+	(junction
+		(at 214.63 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0d8afcfa-ceb4-43c3-95a4-882f995dc830")
+	)
+	(junction
+		(at 212.09 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0dece5e6-f460-4d7a-aee4-f97154d26c10")
+	)
+	(junction
+		(at 212.09 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "10e33dcc-4311-4c8f-b548-e83adaec7633")
+	)
+	(junction
+		(at 224.79 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1a5ee28b-efdf-4b8a-acad-42f7aa9a8797")
+	)
+	(junction
+		(at 176.53 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1ebfeaef-6251-4dae-aa63-6266cf71530b")
+	)
+	(junction
+		(at 62.23 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "23d7890e-6abc-4cf7-ac23-c0b7208c43ab")
+	)
+	(junction
+		(at 62.23 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "278dd8b3-a7a7-4ca1-a66d-ff8468c40073")
+	)
+	(junction
+		(at 240.03 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "332cce51-c400-41e6-842f-51a47b34465c")
+	)
+	(junction
+		(at 201.93 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "33fad0b8-aaa8-4efc-b3f0-47fcd3d994e8")
+	)
+	(junction
+		(at 201.93 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "353315ea-08f2-434d-8b0f-685807ed7f7b")
+	)
+	(junction
+		(at 100.33 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3808f92b-1295-4885-acd9-ed81ba25ce7a")
+	)
+	(junction
+		(at 100.33 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3ef5ef19-0069-4208-b293-7d5dc9637a1b")
+	)
+	(junction
+		(at 101.6 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "42cf89b4-b9a1-4dde-be03-de262585cf74")
+	)
+	(junction
+		(at 227.33 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4303b7b6-d2ff-489e-931b-5649148a31ff")
+	)
+	(junction
+		(at 62.23 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "501a2c4e-cb13-4341-8e15-c89be96e1a60")
+	)
+	(junction
+		(at 110.49 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "50df8252-5702-4788-a1c6-5ac1ea60c5ee")
+	)
+	(junction
+		(at 212.09 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "67043837-b575-487a-91db-a73df2f95643")
+	)
+	(junction
+		(at 227.33 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6b4c8f28-aa09-4cc0-a65f-ed467641937f")
+	)
+	(junction
+		(at 81.28 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6b9ec035-143b-4236-9e74-3f7e4d3590c8")
+	)
+	(junction
+		(at 111.76 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6beceefe-1df1-4339-b52b-ae7d45e81eaa")
+	)
+	(junction
+		(at 250.19 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6c02f13f-4677-4987-9479-f466ca508a2a")
+	)
+	(junction
+		(at 83.82 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6f6032b9-213a-497d-9994-90d476b4de8e")
+	)
+	(junction
+		(at 100.33 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7341680f-524a-4eac-bd88-395ffd35d267")
+	)
+	(junction
+		(at 201.93 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "73b07914-d562-4bf2-aee9-ba568325b353")
+	)
+	(junction
+		(at 237.49 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "75014695-5e8e-432e-99b6-875d29f3104d")
+	)
+	(junction
+		(at 100.33 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7a18becf-c2a3-4a4f-88de-ff6c207d520b")
+	)
+	(junction
+		(at 110.49 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7e21947b-3637-483a-a7fc-bd5161e76967")
+	)
+	(junction
+		(at 110.49 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7f760431-5013-47af-8ee7-ce5eaf6fad17")
+	)
+	(junction
+		(at 111.76 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "817d2dc8-c7bf-48aa-b147-fad04659ce40")
+	)
+	(junction
+		(at 111.76 161.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "829cd9c5-6293-4358-964d-95fb9b231812")
+	)
+	(junction
+		(at 81.28 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "847e444b-86cc-4f1c-a3c9-d9d25c239080")
+	)
+	(junction
+		(at 83.82 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8623df5e-6893-47a5-a023-1c22d590226f")
+	)
+	(junction
+		(at 201.93 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8926ee18-cc77-40e9-a19e-5f39a42a7dfa")
+	)
+	(junction
+		(at 100.33 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "89bac3a3-9711-4920-9a19-6cadd0b653f8")
+	)
+	(junction
+		(at 64.77 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "919b09cf-9d4e-4ec5-8e65-150254d12fdd")
+	)
+	(junction
+		(at 237.49 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "95eed336-8117-4e0a-8a58-2d6142d23c23")
+	)
+	(junction
+		(at 237.49 156.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9ef12863-fa97-40e4-a133-2086430f3003")
+	)
+	(junction
+		(at 224.79 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a07267b7-1cea-43fd-b24b-6da0e8208aad")
+	)
+	(junction
+		(at 250.19 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a3950561-bd53-4c9a-9b1f-ce993cba744c")
+	)
+	(junction
+		(at 100.33 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a66fdf3f-e386-497e-8c54-4339f57509c7")
+	)
+	(junction
+		(at 176.53 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a95edbc6-50d0-4bcc-8ac9-aef3494a2fee")
+	)
+	(junction
+		(at 81.28 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aa3b2270-3ac4-4619-b0bb-7e6196bfa2e4")
+	)
+	(junction
+		(at 100.33 176.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ab1baeb5-0438-4d12-b482-e501368c1985")
+	)
+	(junction
+		(at 110.49 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b47431e5-ab80-423c-aaf9-86fee6e53b1d")
+	)
+	(junction
+		(at 224.79 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b54546b7-eab3-49e6-b4d4-eb3726cce111")
+	)
+	(junction
+		(at 81.28 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b794f6f3-4c41-461c-9aa6-1357695d5041")
+	)
+	(junction
+		(at 250.19 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bafa337e-11b0-42bf-a587-d82af6963756")
+	)
+	(junction
+		(at 176.53 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c44290ac-807c-440b-814c-ac73408fa18e")
+	)
+	(junction
+		(at 176.53 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c66f6a89-87f5-4e52-bda4-217c317c2261")
+	)
+	(junction
+		(at 100.33 161.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c7f4b0ad-5ce7-45f4-88ec-9cac76e639c1")
+	)
+	(junction
+		(at 214.63 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cda5e453-1965-463e-bd31-95c0cc5c20ff")
+	)
+	(junction
+		(at 110.49 176.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ce2380a6-3930-4728-bcb7-828332a14fd2")
+	)
+	(junction
+		(at 237.49 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d1c4ec4e-ca2c-4e1f-8433-4d506191a4ea")
+	)
+	(junction
+		(at 212.09 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d2adbb95-7d2e-4369-93fb-66a16de1aaf5")
+	)
+	(junction
+		(at 224.79 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d38068fa-c94e-4ca5-87ba-9d59aa628ba7")
+	)
+	(junction
+		(at 237.49 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d4bf4fb3-180e-4336-a848-503c60129008")
+	)
+	(junction
+		(at 214.63 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d59efe8f-dbac-45da-a949-b86c3592ee40")
+	)
+	(junction
+		(at 81.28 128.27)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d886356e-8157-42c0-ab54-30b2ae703d92")
+	)
+	(junction
+		(at 227.33 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d9c1cad2-66ba-4399-b523-a68e92cf6556")
+	)
+	(junction
+		(at 227.33 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "da153eab-85bd-4ebc-a843-77bba09f0afb")
+	)
+	(junction
+		(at 81.28 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "df1eaf6f-3641-40ba-bd82-e751b61230cc")
+	)
+	(junction
+		(at 62.23 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e23ab917-d6ca-49e4-bd0e-3c1248976b3e")
+	)
+	(junction
+		(at 227.33 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e8ed59e0-0a47-4283-b68b-1f87f80f6e47")
+	)
+	(junction
+		(at 240.03 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e97c0ef7-0abf-490a-b95a-23d08750de5e")
+	)
+	(junction
+		(at 212.09 156.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ec0429aa-3b72-48e8-905e-eb240e8f2845")
+	)
+	(junction
+		(at 110.49 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ec099355-8ef7-4663-bc65-0a865db8e828")
+	)
+	(junction
+		(at 101.6 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ec863a72-2a86-4d41-8eef-ac6191eb8198")
+	)
+	(junction
+		(at 224.79 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ef458233-e993-4abf-b253-3396df7b3dc8")
+	)
+	(junction
+		(at 214.63 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ef9d03ae-f2c3-4b0c-9270-36f42d5fee22")
+	)
+	(junction
+		(at 100.33 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f08b3e81-c20d-448b-9ffb-df01c4d69071")
+	)
+	(junction
+		(at 111.76 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fa7b67b9-ea20-4afe-b09c-8e69f6c8c1f6")
+	)
+	(junction
+		(at 62.23 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fce905af-24f5-472d-82c3-91868a6225b4")
+	)
+	(junction
+		(at 111.76 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fcefe990-df01-4d5b-9517-63f08fb61c44")
+	)
+	(junction
+		(at 110.49 128.27)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fdf41645-bdf7-4411-a59c-ec1ed61da393")
+	)
+	(junction
+		(at 237.49 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fe784b3a-1e30-42d8-ac3c-201abd6a79aa")
+	)
+	(junction
+		(at 240.03 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "feb9bf48-6242-402f-a43c-5608495e7790")
+	)
+	(wire
+		(pts
+			(xy 100.33 78.74) (xy 81.28 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "01122f22-7293-44dd-8605-2962f13e7a70")
+	)
+	(wire
+		(pts
+			(xy 240.03 41.91) (xy 243.84 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "01885e2a-d7cf-42dd-ac5a-0c9313739f8c")
+	)
+	(wire
+		(pts
+			(xy 201.93 124.46) (xy 205.74 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02e6de2d-4573-4b28-b410-0df8acb1f575")
+	)
+	(wire
+		(pts
+			(xy 121.92 34.29) (xy 111.76 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "037b0687-bb06-4e38-86f0-7411b6aca6e0")
+	)
+	(wire
+		(pts
+			(xy 227.33 67.31) (xy 231.14 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "048052e5-f512-41cb-920b-3299aac5d9c2")
+	)
+	(wire
+		(pts
+			(xy 231.14 124.46) (xy 227.33 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04e65bd6-59fb-413f-a80b-62e9423fc896")
+	)
+	(wire
+		(pts
+			(xy 212.09 118.11) (xy 224.79 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05386001-5764-455c-8067-490bdbe182c6")
+	)
+	(wire
+		(pts
+			(xy 121.92 49.53) (xy 110.49 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "054df808-20bc-4c18-8f67-5a129cf2d097")
+	)
+	(wire
+		(pts
+			(xy 240.03 35.56) (xy 240.03 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05686aeb-af16-4c14-b3a3-6bc22ff9f752")
+	)
+	(wire
+		(pts
+			(xy 218.44 124.46) (xy 214.63 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "064c9562-1339-4cd4-b665-02a4dfcbb619")
+	)
+	(wire
+		(pts
+			(xy 62.23 49.53) (xy 43.18 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07f9946b-b81b-473a-8f24-6248aeefbe7c")
+	)
+	(wire
+		(pts
+			(xy 212.09 110.49) (xy 210.82 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0829b894-df10-41a3-aa19-059f6543e61f")
+	)
+	(wire
+		(pts
+			(xy 121.92 176.53) (xy 110.49 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "088594ed-56c1-4fb7-bdc7-a7659d70d7fd")
+	)
+	(wire
+		(pts
+			(xy 165.1 46.99) (xy 180.34 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0937cfa2-e890-4b68-9ecf-4c493062c23e")
+	)
+	(wire
+		(pts
+			(xy 110.49 49.53) (xy 110.49 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0aee0a51-fd6f-44b6-8521-4117602cc62f")
+	)
+	(wire
+		(pts
+			(xy 92.71 71.12) (xy 88.9 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0af41f4b-5c19-44bb-a24f-0c7d12bcd9a2")
+	)
+	(wire
+		(pts
+			(xy 111.76 34.29) (xy 111.76 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d383e39-1437-4f7a-b4c6-b7e5be36b6b0")
+	)
+	(wire
+		(pts
+			(xy 100.33 113.03) (xy 81.28 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0fa47b63-5c8b-4473-8e47-0c5eac4754b2")
+	)
+	(wire
+		(pts
+			(xy 110.49 78.74) (xy 110.49 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "127324ba-e4e7-45e7-8623-7788a339af0d")
+	)
+	(wire
+		(pts
+			(xy 237.49 54.61) (xy 250.19 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13a2bc60-3b44-4512-b5f8-cec50aae0ce6")
+	)
+	(wire
+		(pts
+			(xy 236.22 129.54) (xy 237.49 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13d1fe6f-967e-4d90-99f9-c731278625cf")
+	)
+	(wire
+		(pts
+			(xy 176.53 105.41) (xy 181.61 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14e65595-c19e-4a00-ab67-9b83534df607")
+	)
+	(wire
+		(pts
+			(xy 111.76 113.03) (xy 111.76 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14fc9b9e-977b-4c9d-8f84-e73f011cf8ab")
+	)
+	(wire
+		(pts
+			(xy 237.49 80.01) (xy 250.19 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1599bcfc-9f36-4d22-90f3-13d218a21f13")
+	)
+	(wire
+		(pts
+			(xy 83.82 137.16) (xy 64.77 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1619d517-5490-4604-ad62-581abe5452f5")
+	)
+	(wire
+		(pts
+			(xy 214.63 67.31) (xy 214.63 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1854b4a1-eea1-44bc-9a2b-194aafadad05")
+	)
+	(wire
+		(pts
+			(xy 214.63 41.91) (xy 218.44 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "197ccc0e-0049-4e38-9235-bdee536a8fc5")
+	)
+	(wire
+		(pts
+			(xy 224.79 54.61) (xy 237.49 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a33783b-1013-47af-9a47-e4ac5c59a5a8")
+	)
+	(wire
+		(pts
+			(xy 181.61 67.31) (xy 176.53 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1cd896a9-57f4-4ea2-8ce1-4263f388542b")
+	)
+	(wire
+		(pts
+			(xy 176.53 124.46) (xy 181.61 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1cdfd8a1-eb8a-4b8e-adfd-4e72c9d8d850")
+	)
+	(wire
+		(pts
+			(xy 81.28 102.87) (xy 62.23 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ed1ca80-2c97-43b9-b1e3-b4a7c736efe9")
+	)
+	(wire
+		(pts
+			(xy 237.49 99.06) (xy 250.19 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f8c776b-e302-45eb-bf50-5e8164f4b2c5")
+	)
+	(wire
+		(pts
+			(xy 81.28 128.27) (xy 62.23 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ffeeebf-27c2-4696-a725-bc8442eae5f4")
+	)
+	(wire
+		(pts
+			(xy 132.08 95.25) (xy 129.54 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21cef834-885f-4989-8e1d-25079598ada5")
+	)
+	(wire
+		(pts
+			(xy 201.93 41.91) (xy 205.74 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "227e1a1c-c99c-4925-9a06-f24f0f904f59")
+	)
+	(wire
+		(pts
+			(xy 218.44 86.36) (xy 214.63 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22f100bb-4a38-49a1-9e8f-718170ed207b")
+	)
+	(wire
+		(pts
+			(xy 92.71 95.25) (xy 88.9 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2356ad63-0ff3-4b46-9103-9b622254a476")
+	)
+	(wire
+		(pts
+			(xy 212.09 54.61) (xy 224.79 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2453c8a2-c256-4fa3-9a57-37d7553cb321")
+	)
+	(wire
+		(pts
+			(xy 100.33 161.29) (xy 62.23 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "257f8431-7417-4495-be69-66d436328147")
+	)
+	(wire
+		(pts
+			(xy 236.22 46.99) (xy 237.49 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25d8858a-53b4-4a7b-8d74-8dce5318c4b3")
+	)
+	(wire
+		(pts
+			(xy 248.92 91.44) (xy 250.19 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "267a8e66-93df-45bf-8768-7bb260f6bb5c")
+	)
+	(wire
+		(pts
+			(xy 100.33 87.63) (xy 81.28 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26b3dcbc-e922-49cf-880e-cbf6b55d6dfe")
+	)
+	(wire
+		(pts
+			(xy 224.79 99.06) (xy 237.49 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26d7df8a-9937-4a24-aa63-572c02b6894d")
+	)
+	(wire
+		(pts
+			(xy 201.93 35.56) (xy 201.93 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28dbba50-fec9-464d-9945-100bb735c758")
+	)
+	(wire
+		(pts
+			(xy 186.69 110.49) (xy 187.96 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b1aa236-58fa-403e-b73f-3364089997e9")
+	)
+	(wire
+		(pts
+			(xy 100.33 102.87) (xy 81.28 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ba00b2f-d30d-47d8-bcd9-969b9cce8185")
+	)
+	(wire
+		(pts
+			(xy 132.08 95.25) (xy 132.08 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2bd16e59-bf9b-4ed1-b378-a42b2e63e6de")
+	)
+	(wire
+		(pts
+			(xy 218.44 105.41) (xy 214.63 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d4be507-a5c4-47de-bcdb-0e6ee955772d")
+	)
+	(wire
+		(pts
+			(xy 35.56 95.25) (xy 33.02 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30af9a00-6011-471d-8d9b-bb9405812bf5")
+	)
+	(wire
+		(pts
+			(xy 129.54 144.78) (xy 132.08 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32fd17f0-d431-4426-b762-09eb43e327a1")
+	)
+	(wire
+		(pts
+			(xy 187.96 137.16) (xy 212.09 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3459295b-0cd9-4f94-8b42-28a2735d2fc4")
+	)
+	(wire
+		(pts
+			(xy 201.93 86.36) (xy 205.74 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34ad0739-187d-4798-8298-986d828b02fb")
+	)
+	(wire
+		(pts
+			(xy 176.53 86.36) (xy 176.53 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a1645a5-cd59-4870-8e8d-d396e421fadc")
+	)
+	(wire
+		(pts
+			(xy 111.76 34.29) (xy 100.33 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b0b800f-535f-41b6-a12f-113e27d627ef")
+	)
+	(wire
+		(pts
+			(xy 33.02 71.12) (xy 35.56 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3be02b8f-9c0b-4424-afc5-b64b536e2212")
+	)
+	(wire
+		(pts
+			(xy 62.23 63.5) (xy 43.18 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e184014-10b4-4f7c-ba53-02a2c5749dd4")
+	)
+	(wire
+		(pts
+			(xy 81.28 63.5) (xy 62.23 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "406c2659-ee03-4a7f-9cdd-76be1b1aec92")
+	)
+	(wire
+		(pts
+			(xy 237.49 118.11) (xy 237.49 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42c3fc12-8c6c-46d2-9cbd-b32c3a2064e0")
+	)
+	(wire
+		(pts
+			(xy 111.76 161.29) (xy 100.33 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45975969-fa95-4188-9f4a-189a2ebab7de")
+	)
+	(wire
+		(pts
+			(xy 33.02 71.12) (xy 33.02 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46ad65b1-abde-4657-9874-813ab68ebf74")
+	)
+	(wire
+		(pts
+			(xy 54.61 95.25) (xy 50.8 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47abf6da-9f5e-4f6c-aec5-701888d427c8")
+	)
+	(wire
+		(pts
+			(xy 186.69 72.39) (xy 187.96 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49dbfb98-c792-4f90-aec3-e604defafbdc")
+	)
+	(wire
+		(pts
+			(xy 187.96 80.01) (xy 212.09 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b9e9bd6-ace4-4c4f-8058-404406805a20")
+	)
+	(wire
+		(pts
+			(xy 240.03 41.91) (xy 240.03 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4bd9553f-6012-495c-b441-85e8fb7bd386")
+	)
+	(wire
+		(pts
+			(xy 214.63 67.31) (xy 218.44 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51d3a2bf-19b7-4714-be7e-5a3e613496b7")
+	)
+	(wire
+		(pts
+			(xy 100.33 63.5) (xy 81.28 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5286028e-40d4-4d68-a231-5d1487cd5073")
+	)
+	(wire
+		(pts
+			(xy 111.76 137.16) (xy 111.76 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53e27ac8-faac-400d-8ed1-0598bd00540b")
+	)
+	(wire
+		(pts
+			(xy 111.76 87.63) (xy 100.33 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54455024-9075-433c-b368-ed5237f6f5c8")
+	)
+	(wire
+		(pts
+			(xy 110.49 176.53) (xy 100.33 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "558643a3-b9de-4530-a83f-b969bc8a0f06")
+	)
+	(wire
+		(pts
+			(xy 210.82 72.39) (xy 212.09 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56a08888-b788-45b8-80c2-6b1deb9677e5")
+	)
+	(wire
+		(pts
+			(xy 212.09 99.06) (xy 224.79 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56ae0ff1-51cd-43c3-bf5c-162b44765a40")
+	)
+	(wire
+		(pts
+			(xy 266.7 118.11) (xy 237.49 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ac493a8-a3b4-43fa-8669-18e1787659dc")
+	)
+	(wire
+		(pts
+			(xy 201.93 41.91) (xy 201.93 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e5bc421-0d16-4166-bfa1-7ca6602443d8")
+	)
+	(wire
+		(pts
+			(xy 73.66 41.91) (xy 69.85 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66389f79-fd19-417c-a803-52a1b3dd8f41")
+	)
+	(wire
+		(pts
+			(xy 121.92 113.03) (xy 111.76 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "670dad6e-c6fa-4c9f-8540-42ea42b2d1d7")
+	)
+	(wire
+		(pts
+			(xy 64.77 152.4) (xy 43.18 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "672e2470-1704-49cc-920f-e806b7ef757e")
+	)
+	(wire
+		(pts
+			(xy 223.52 91.44) (xy 224.79 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6961585a-ae6e-4d00-83af-b6ae75a9f3b4")
+	)
+	(wire
+		(pts
+			(xy 110.49 49.53) (xy 100.33 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "698373a6-21ab-45aa-b3b1-a3e172d110a1")
+	)
+	(wire
+		(pts
+			(xy 231.14 105.41) (xy 227.33 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69a85e03-a23e-412c-a5fe-08c64e7e95be")
+	)
+	(wire
+		(pts
+			(xy 132.08 71.12) (xy 129.54 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a21a62c-bb04-4d06-ac75-840499afa610")
+	)
+	(wire
+		(pts
+			(xy 121.92 63.5) (xy 111.76 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6afb6520-4f7e-41f1-addd-25a5b7283e0a")
+	)
+	(wire
+		(pts
+			(xy 237.49 137.16) (xy 251.46 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c726d18-37f5-4f7f-932e-fb4248d98259")
+	)
+	(wire
+		(pts
+			(xy 201.93 67.31) (xy 205.74 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c8e267c-98b5-4be5-83cb-c9c2a989e68c")
+	)
+	(wire
+		(pts
+			(xy 138.43 55.88) (xy 110.49 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d7fe2ea-216e-42b3-8d78-c23964bdcc45")
+	)
+	(wire
+		(pts
+			(xy 176.53 105.41) (xy 176.53 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6daf776c-e82e-47ef-937d-0cf8e9e175bb")
+	)
+	(wire
+		(pts
+			(xy 223.52 129.54) (xy 224.79 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e2951ba-af78-4c56-b1ff-8d396d3de1b1")
+	)
+	(wire
+		(pts
+			(xy 236.22 72.39) (xy 237.49 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ee1879c-f1c1-49bd-b351-faba4568d176")
+	)
+	(wire
+		(pts
+			(xy 248.92 72.39) (xy 250.19 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6eeb0597-d7d5-4ca1-83c8-485d1d07acfe")
+	)
+	(wire
+		(pts
+			(xy 165.1 41.91) (xy 180.34 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6eeee805-8831-4ed7-aadd-99db3a2645f2")
+	)
+	(wire
+		(pts
+			(xy 100.33 49.53) (xy 81.28 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "701dad58-48fb-49f2-9519-45bb2e440308")
+	)
+	(wire
+		(pts
+			(xy 176.53 86.36) (xy 181.61 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70829709-e614-413c-a44f-e08a5d3e84c0")
+	)
+	(wire
+		(pts
+			(xy 210.82 148.59) (xy 212.09 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7320cfb5-e0b5-44eb-8ffd-08f8bafafc04")
+	)
+	(wire
+		(pts
+			(xy 248.92 46.99) (xy 250.19 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "750f677f-3658-40eb-a10e-cdc3370cfb2f")
+	)
+	(wire
+		(pts
+			(xy 195.58 46.99) (xy 195.58 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "765be6bc-0102-4d26-b2c8-4f9351c3c4c5")
+	)
+	(wire
+		(pts
+			(xy 132.08 41.91) (xy 132.08 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "771ce1b3-fdf6-4405-8de2-9eb6a9600d7e")
+	)
+	(wire
+		(pts
+			(xy 224.79 137.16) (xy 237.49 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d77ec37-ab8e-4d21-9017-bb9329ee0c31")
+	)
+	(wire
+		(pts
+			(xy 81.28 49.53) (xy 62.23 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e87a5ea-c100-41d3-88fa-ecf975fb2d5d")
+	)
+	(wire
+		(pts
+			(xy 186.69 148.59) (xy 187.96 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f62dcf7-2ef6-4c0a-8f49-a1c6af3b25cc")
+	)
+	(wire
+		(pts
+			(xy 251.46 137.16) (xy 266.7 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80e32a67-7e2a-4002-a403-c5914e76f036")
+	)
+	(wire
+		(pts
+			(xy 129.54 41.91) (xy 132.08 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83812f70-4a1e-4a2c-bd14-1c68efa41a4e")
+	)
+	(wire
+		(pts
+			(xy 81.28 78.74) (xy 62.23 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85641ebd-8a5d-4776-991b-b08c18472d7e")
+	)
+	(wire
+		(pts
+			(xy 54.61 71.12) (xy 50.8 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85832fbb-4853-406f-b72e-8c1683c3d166")
+	)
+	(wire
+		(pts
+			(xy 132.08 168.91) (xy 129.54 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88052d7f-dea3-446f-8efe-c551866af0e0")
+	)
+	(wire
+		(pts
+			(xy 231.14 143.51) (xy 227.33 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8887f040-bfe3-46fd-a138-6f00345a6a91")
+	)
+	(wire
+		(pts
+			(xy 243.84 86.36) (xy 240.03 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "888b0b27-1365-40db-9aa1-0cbb8372faae")
+	)
+	(wire
+		(pts
+			(xy 165.1 58.42) (xy 195.58 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88921972-4c4c-48c0-8d77-ad6d06cfba1f")
+	)
+	(wire
+		(pts
+			(xy 114.3 144.78) (xy 109.22 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a18c45b-0f5e-4058-9501-37729548126a")
+	)
+	(wire
+		(pts
+			(xy 73.66 95.25) (xy 69.85 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8acdb862-9f83-4908-844a-90a5a04bc96f")
+	)
+	(wire
+		(pts
+			(xy 100.33 176.53) (xy 62.23 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ae53a2c-e9e3-4aa5-b8ae-f4d8aa2c2223")
+	)
+	(wire
+		(pts
+			(xy 121.92 152.4) (xy 110.49 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c602e98-8108-4784-99f7-5fa779450045")
+	)
+	(wire
+		(pts
+			(xy 237.49 110.49) (xy 236.22 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c671e3a-8e04-4cc7-aa4b-692e9c9b6967")
+	)
+	(wire
+		(pts
+			(xy 201.93 105.41) (xy 205.74 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c8ef3e8-d721-46a3-9f72-5aed67cf25c3")
+	)
+	(wire
+		(pts
+			(xy 201.93 67.31) (xy 201.93 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d241869-db0d-4879-9e49-3f13de76d219")
+	)
+	(wire
+		(pts
+			(xy 93.98 144.78) (xy 91.44 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d412e9f-cc8b-44dc-938e-0f0c7ae91c32")
+	)
+	(wire
+		(pts
+			(xy 92.71 168.91) (xy 69.85 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e359bcb-e674-4763-810b-69bf16021298")
+	)
+	(wire
+		(pts
+			(xy 250.19 80.01) (xy 266.7 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e3bc41b-52e4-4430-b435-42a585521ffe")
+	)
+	(wire
+		(pts
+			(xy 129.54 120.65) (xy 132.08 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8eaec176-af21-4f1d-b604-a664d2868ff3")
+	)
+	(wire
+		(pts
+			(xy 227.33 67.31) (xy 227.33 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ec07e86-d94b-422e-b09e-2ad8d6004858")
+	)
+	(wire
+		(pts
+			(xy 81.28 34.29) (xy 62.23 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f0ba4cd-bc20-447a-b811-a5b302e38a49")
+	)
+	(wire
+		(pts
+			(xy 114.3 41.91) (xy 107.95 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f3107fc-3293-4f50-8a05-b8e3562eb778")
+	)
+	(wire
+		(pts
+			(xy 227.33 35.56) (xy 227.33 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "902257d7-8a4f-4c36-acd6-fc25535e5b7b")
+	)
+	(wire
+		(pts
+			(xy 110.49 78.74) (xy 100.33 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90547652-4469-485b-b364-1342f387b480")
+	)
+	(wire
+		(pts
+			(xy 210.82 91.44) (xy 212.09 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "937e73d3-0aef-4887-89b4-22d78a132f40")
+	)
+	(wire
+		(pts
+			(xy 187.96 118.11) (xy 212.09 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9406ed73-4599-4f63-b081-a77867430cfa")
+	)
+	(wire
+		(pts
+			(xy 121.92 128.27) (xy 110.49 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94127161-219c-4c5f-aaf3-6c029e4f5017")
+	)
+	(wire
+		(pts
+			(xy 111.76 137.16) (xy 101.6 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "946ffe35-a2ce-4cde-888f-4ec3d959c867")
+	)
+	(wire
+		(pts
+			(xy 210.82 46.99) (xy 212.09 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94c7b752-b67f-4cea-8072-a81b5593c23a")
+	)
+	(wire
+		(pts
+			(xy 236.22 91.44) (xy 237.49 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9502d8e6-bc54-49b7-bf4d-df024792c7e7")
+	)
+	(wire
+		(pts
+			(xy 114.3 120.65) (xy 107.95 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95efd034-3b1e-4a78-bdc1-e1dedb43cda6")
+	)
+	(wire
+		(pts
+			(xy 121.92 87.63) (xy 111.76 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "967424f4-98d6-458e-8859-70320874af29")
+	)
+	(wire
+		(pts
+			(xy 92.71 120.65) (xy 88.9 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "973089ac-0917-49cf-a402-5aecfc759d98")
+	)
+	(wire
+		(pts
+			(xy 227.33 41.91) (xy 231.14 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a8a811d-0cbb-4bbe-808f-f84be9dba69d")
+	)
+	(wire
+		(pts
+			(xy 227.33 41.91) (xy 227.33 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cc0ec1c-69b5-4d0f-ade2-d665f4b3476f")
+	)
+	(wire
+		(pts
+			(xy 224.79 118.11) (xy 237.49 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cda54dc-d5e7-4691-bfda-3ad1fa2229b1")
+	)
+	(wire
+		(pts
+			(xy 250.19 99.06) (xy 266.7 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e1ec606-ad4b-4313-96b3-01c4fe5c2c23")
+	)
+	(wire
+		(pts
+			(xy 57.15 144.78) (xy 50.8 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e3d9bd2-5792-4074-83e3-f694bfa69cd8")
+	)
+	(wire
+		(pts
+			(xy 195.58 58.42) (xy 195.58 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e6dd7c0-aee5-47be-81af-f4e97bc49ed5")
+	)
+	(wire
+		(pts
+			(xy 111.76 113.03) (xy 100.33 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9fbbe909-2a4c-4227-a6b2-e704e34c9a7b")
+	)
+	(wire
+		(pts
+			(xy 240.03 67.31) (xy 240.03 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a122ac29-4c8e-4139-beeb-a52f8d400e9f")
+	)
+	(wire
+		(pts
+			(xy 236.22 148.59) (xy 237.49 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a49603aa-b71c-42d3-8c92-e47a173ed342")
+	)
+	(wire
+		(pts
+			(xy 176.53 35.56) (xy 176.53 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5e1555c-ad0f-4953-8ac3-014458f0d0f1")
+	)
+	(wire
+		(pts
+			(xy 54.61 41.91) (xy 50.8 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6149a1c-2a5d-45b1-8683-49918115045c")
+	)
+	(wire
+		(pts
+			(xy 214.63 41.91) (xy 214.63 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a847e2f1-58d4-40f8-b795-5c6b9515090d")
+	)
+	(wire
+		(pts
+			(xy 121.92 102.87) (xy 110.49 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9259f7e-7d3a-46ad-b7b0-24933c551872")
+	)
+	(wire
+		(pts
+			(xy 223.52 72.39) (xy 224.79 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a98d8457-e0e1-4092-a5e6-7ee9b94524a7")
+	)
+	(wire
+		(pts
+			(xy 250.19 129.54) (xy 251.46 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab90627c-c1e8-49d1-939d-d157122cd2ac")
+	)
+	(wire
+		(pts
+			(xy 186.69 91.44) (xy 187.96 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "acc51ed2-25a3-4fe9-91bb-30c7fe2c1c74")
+	)
+	(wire
+		(pts
+			(xy 223.52 46.99) (xy 224.79 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "adfecacf-90a4-4bb2-9b19-47b32ab5e289")
+	)
+	(wire
+		(pts
+			(xy 250.19 54.61) (xy 266.7 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae47e60c-ffdd-448c-825f-2ba3ba9f8900")
+	)
+	(wire
+		(pts
+			(xy 240.03 67.31) (xy 243.84 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1d1eeec-5bfe-4078-8ae9-c6cf226076b8")
+	)
+	(wire
+		(pts
+			(xy 201.93 124.46) (xy 201.93 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b22ae287-94f6-4b16-ad55-6ae9d3beed89")
+	)
+	(wire
+		(pts
+			(xy 110.49 55.88) (xy 110.49 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b27596cc-443e-4170-86e7-8dec75d2cfc4")
+	)
+	(wire
+		(pts
+			(xy 62.23 34.29) (xy 43.18 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b485df1f-0407-4388-936b-1436470e3bfb")
+	)
+	(wire
+		(pts
+			(xy 101.6 137.16) (xy 83.82 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5ba4678-5c8e-4b08-a34f-c6ab5cee668a")
+	)
+	(wire
+		(pts
+			(xy 245.11 124.46) (xy 240.03 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b682788a-0b71-4f86-af8e-491659e1ab41")
+	)
+	(wire
+		(pts
+			(xy 54.61 120.65) (xy 33.02 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b74ecdbf-7bcd-4f00-8250-46bb6983bdb9")
+	)
+	(wire
+		(pts
+			(xy 165.1 44.45) (xy 180.34 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8ad2c16-ff07-461e-9245-8b8602f1dd07")
+	)
+	(wire
+		(pts
+			(xy 111.76 63.5) (xy 100.33 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b99cd98f-622d-4adb-9406-b87dac0784af")
+	)
+	(wire
+		(pts
+			(xy 111.76 53.34) (xy 111.76 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba94b975-7b2d-4017-9615-c40dd214144d")
+	)
+	(wire
+		(pts
+			(xy 110.49 152.4) (xy 101.6 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "baf049c5-d150-4e94-8994-1eb48dbb6cef")
+	)
+	(wire
+		(pts
+			(xy 176.53 124.46) (xy 176.53 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bce68cde-6b4c-44b7-88a9-b791b77976a1")
+	)
+	(wire
+		(pts
+			(xy 81.28 113.03) (xy 62.23 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bfd44a84-bdcf-4ee0-acd7-fbe62072470e")
+	)
+	(wire
+		(pts
+			(xy 33.02 41.91) (xy 35.56 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c30ece53-fcad-4d02-b02a-8acfbf4fdd0d")
+	)
+	(wire
+		(pts
+			(xy 62.23 78.74) (xy 43.18 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3287e67-a71d-4a59-9883-d4ee3bbc0a18")
+	)
+	(wire
+		(pts
+			(xy 73.66 120.65) (xy 69.85 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3393020-c2fb-4d7d-9e9d-5e90d56c41da")
+	)
+	(wire
+		(pts
+			(xy 214.63 35.56) (xy 214.63 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c39c6ca9-7c13-4996-9110-15965c7cd554")
+	)
+	(wire
+		(pts
+			(xy 231.14 86.36) (xy 227.33 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3e6f593-39a3-4831-b6bb-383a34fba0bc")
+	)
+	(wire
+		(pts
+			(xy 187.96 156.21) (xy 212.09 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6d413f4-f63c-4810-b852-35fcc73a06b7")
+	)
+	(wire
+		(pts
+			(xy 114.3 168.91) (xy 107.95 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c766f7de-26f4-4108-b278-570fca592b8b")
+	)
+	(wire
+		(pts
+			(xy 212.09 156.21) (xy 237.49 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7b536ae-6482-4a0f-95ae-f4084c699d84")
+	)
+	(wire
+		(pts
+			(xy 237.49 156.21) (xy 266.7 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c862bdfd-fc9b-42f0-8bfa-81b6b9c7e3b8")
+	)
+	(wire
+		(pts
+			(xy 33.02 144.78) (xy 33.02 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9178120-fda7-45f4-b536-291524d58167")
+	)
+	(wire
+		(pts
+			(xy 35.56 144.78) (xy 33.02 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca534eb4-d260-4a5f-b695-722b1499da3b")
+	)
+	(wire
+		(pts
+			(xy 101.6 152.4) (xy 83.82 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf1956d2-ba73-41f3-8031-5657d77981a4")
+	)
+	(wire
+		(pts
+			(xy 73.66 71.12) (xy 69.85 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cfb2be5f-0542-4736-8031-186408d15097")
+	)
+	(wire
+		(pts
+			(xy 176.53 143.51) (xy 181.61 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d05ce3ec-293e-4b70-ab03-efdf614f6dcf")
+	)
+	(wire
+		(pts
+			(xy 64.77 137.16) (xy 43.18 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d078a70d-4df0-4625-8fd3-2b96a2e72c39")
+	)
+	(wire
+		(pts
+			(xy 76.2 144.78) (xy 72.39 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3da9b87-e1e6-4bcc-bfac-4c7494e731bb")
+	)
+	(wire
+		(pts
+			(xy 227.33 143.51) (xy 227.33 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3ffe75c-9161-4273-b093-8b1d8da341d6")
+	)
+	(wire
+		(pts
+			(xy 100.33 128.27) (xy 81.28 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7283741-bd9c-4b8c-9da5-6fb144b2b5d9")
+	)
+	(wire
+		(pts
+			(xy 132.08 144.78) (xy 132.08 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d88a99af-9756-4cc6-b84b-e182ae0de9ff")
+	)
+	(wire
+		(pts
+			(xy 110.49 102.87) (xy 110.49 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8c22255-b8a4-4165-b07a-9e1dd5f61520")
+	)
+	(wire
+		(pts
+			(xy 212.09 80.01) (xy 224.79 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d976b313-ffe4-466f-899f-c3701284210c")
+	)
+	(wire
+		(pts
+			(xy 224.79 80.01) (xy 237.49 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc76f668-51a2-4a14-8fc0-9ea6b553a9e0")
+	)
+	(wire
+		(pts
+			(xy 81.28 87.63) (xy 62.23 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc8777bc-b01c-4762-ada7-038357312565")
+	)
+	(wire
+		(pts
+			(xy 92.71 41.91) (xy 88.9 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd02490c-ad17-41a0-9704-1ced57e0e071")
+	)
+	(wire
+		(pts
+			(xy 121.92 161.29) (xy 111.76 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e04ee343-2551-431e-af37-d0090ae7ec67")
+	)
+	(wire
+		(pts
+			(xy 62.23 102.87) (xy 43.18 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1d04f9a-bfaa-4df8-8789-76a31052bc64")
+	)
+	(wire
+		(pts
+			(xy 114.3 71.12) (xy 107.95 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e418f0da-9aa4-4384-b5a2-c04cc3b86269")
+	)
+	(wire
+		(pts
+			(xy 201.93 86.36) (xy 201.93 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4f7aef0-9310-46ed-935e-f75aa5bfb8f3")
+	)
+	(wire
+		(pts
+			(xy 214.63 105.41) (xy 214.63 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e537bd54-4b3b-4d0b-b1da-81e1fa1a39ee")
+	)
+	(wire
+		(pts
+			(xy 240.03 124.46) (xy 240.03 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5396fad-336d-4fc9-ad2a-861bdc5aa72c")
+	)
+	(wire
+		(pts
+			(xy 214.63 86.36) (xy 214.63 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e98aa664-f542-489d-8163-25adfee86aa5")
+	)
+	(wire
+		(pts
+			(xy 121.92 78.74) (xy 110.49 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea1fe7b7-3e9e-468f-96f3-3cb91a9f5061")
+	)
+	(wire
+		(pts
+			(xy 187.96 99.06) (xy 212.09 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ead31cb4-b93e-4324-bc87-ca909046acf4")
+	)
+	(wire
+		(pts
+			(xy 110.49 102.87) (xy 100.33 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec55ea64-ca39-4dd2-948f-f5b798b5649b")
+	)
+	(wire
+		(pts
+			(xy 110.49 128.27) (xy 100.33 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee3ec46d-3615-411f-b071-a8b52a2ccbab")
+	)
+	(wire
+		(pts
+			(xy 121.92 137.16) (xy 111.76 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee66669c-c535-494b-a266-57d0ed422468")
+	)
+	(wire
+		(pts
+			(xy 176.53 67.31) (xy 176.53 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef745684-9e99-43a5-9e0a-cad0b0d356e7")
+	)
+	(wire
+		(pts
+			(xy 83.82 152.4) (xy 64.77 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f049f0c5-fa9c-48fc-a752-8b1d1d941e6f")
+	)
+	(wire
+		(pts
+			(xy 114.3 95.25) (xy 107.95 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2f37517-a8e9-4260-a7ea-76623845cccb")
+	)
+	(wire
+		(pts
+			(xy 210.82 129.54) (xy 212.09 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f384afd3-ed85-47a2-bfe9-e4c6272cf4cc")
+	)
+	(wire
+		(pts
+			(xy 111.76 87.63) (xy 111.76 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4390418-168a-4619-a50a-e1a148d8e463")
+	)
+	(wire
+		(pts
+			(xy 100.33 34.29) (xy 81.28 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4dcd014-8d5d-4f1e-85fe-31ae7481203e")
+	)
+	(wire
+		(pts
+			(xy 186.69 129.54) (xy 187.96 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f60825f6-00b5-430d-9860-af5218f30811")
+	)
+	(wire
+		(pts
+			(xy 212.09 137.16) (xy 224.79 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f657a238-f874-4f41-921f-1977e2292132")
+	)
+	(wire
+		(pts
+			(xy 227.33 105.41) (xy 227.33 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7cf5844-b7f5-472c-a81f-a469bf710175")
+	)
+	(wire
+		(pts
+			(xy 62.23 87.63) (xy 43.18 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8033ace-51fa-4375-b3cb-e7ca319889b3")
+	)
+	(wire
+		(pts
+			(xy 138.43 53.34) (xy 111.76 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f841ee8d-acfa-4d42-94cb-cc18a2095058")
+	)
+	(wire
+		(pts
+			(xy 110.49 176.53) (xy 110.49 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f89f7b2f-5f57-4bf5-a05a-5216145f1cca")
+	)
+	(wire
+		(pts
+			(xy 224.79 110.49) (xy 223.52 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f97b1a15-e5ab-4b92-9dd1-3b164b20b441")
+	)
+	(wire
+		(pts
+			(xy 201.93 105.41) (xy 201.93 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbf5fdd4-7372-4cd9-9b4d-b17dd6be520e")
+	)
+	(wire
+		(pts
+			(xy 205.74 143.51) (xy 201.93 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc27cf21-b196-4325-9022-5ef8b41234f3")
+	)
+	(wire
+		(pts
+			(xy 111.76 63.5) (xy 111.76 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc72a92e-127a-43af-892a-0236816b3aa1")
+	)
+	(wire
+		(pts
+			(xy 110.49 128.27) (xy 110.49 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fccaafdf-a3d1-44bd-843c-d7570a4e22ca")
+	)
+	(wire
+		(pts
+			(xy 227.33 86.36) (xy 227.33 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fefdc855-e5cd-498e-b213-660de0667753")
+	)
+	(hierarchical_label "ROT_SW"
+		(shape input)
+		(at 165.1 58.42 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "02065596-7346-4a30-8e1c-d24340d978e8")
+	)
+	(hierarchical_label "ROW5"
+		(shape input)
+		(at 266.7 137.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1ce0aad3-cad9-47cb-9895-0870a6196155")
+	)
+	(hierarchical_label "ROW6"
+		(shape input)
+		(at 266.7 156.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2ac1573d-7204-498d-a33c-6bb91a561fe0")
+	)
+	(hierarchical_label "ROT+"
+		(shape input)
+		(at 165.1 41.91 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2e572dd5-55b5-4a90-806c-9feb460a4c16")
+	)
+	(hierarchical_label "COL5"
+		(shape input)
+		(at 240.03 35.56 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4049d3b4-169d-4005-b214-e2a190ac1041")
+	)
+	(hierarchical_label "COL2"
+		(shape input)
+		(at 201.93 35.56 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5ae93d30-c4bf-4c6b-ac63-6f22c74a2aa1")
+	)
+	(hierarchical_label "COL4"
+		(shape input)
+		(at 227.33 35.56 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5babbc1d-7474-4477-8dc5-4b1e0b6a8fd2")
+	)
+	(hierarchical_label "ROT_VCC"
+		(shape input)
+		(at 165.1 44.45 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6e76838e-aaa7-436f-bbd8-e4417b870814")
+	)
+	(hierarchical_label "DIN"
+		(shape input)
+		(at 33.02 41.91 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "810667d8-bb4c-4acd-8617-244c2754693b")
+	)
+	(hierarchical_label "COL1"
+		(shape input)
+		(at 176.53 35.56 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "892cbdad-4e7d-484c-aa87-d425b42cb5d5")
+	)
+	(hierarchical_label "ROW4"
+		(shape input)
+		(at 266.7 118.11 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a34527a0-22d2-4c9e-a248-dfda8e9b6777")
+	)
+	(hierarchical_label "VSS"
+		(shape input)
+		(at 138.43 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a5710f0c-a5ce-4ddb-ab0a-02f800db3853")
+	)
+	(hierarchical_label "ROT-"
+		(shape input)
+		(at 165.1 46.99 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b196812b-3d9b-4657-918e-8c1308dcf984")
+	)
+	(hierarchical_label "ROW2"
+		(shape input)
+		(at 266.7 80.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cb26deba-0dcd-4928-b520-e131d268b2e2")
+	)
+	(hierarchical_label "ROW1"
+		(shape input)
+		(at 266.7 54.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cbe2d08d-07c4-4a51-b69b-380e7e3e8f42")
+	)
+	(hierarchical_label "ROW3"
+		(shape input)
+		(at 266.7 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d8c92b85-8a51-4124-bf2d-504359540765")
+	)
+	(hierarchical_label "COL3"
+		(shape input)
+		(at 214.63 35.56 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ef744eb9-6441-4c25-9b78-b068467756b9")
+	)
+	(hierarchical_label "VDD"
+		(shape input)
+		(at 138.43 53.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f3ad3349-5250-4f35-bf14-ffe0329bab8e")
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 224.79 76.2 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0133a3aa-53b2-4592-a877-17e97a27d78a")
+		(property "Reference" "D8"
+			(at 229.87 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 227.33 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_AKL:D_SOD-123"
+			(at 224.79 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 224.79 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 224.79 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d8083eed-4f03-4aff-b874-c94a3f14d96a")
+		)
+		(pin "1"
+			(uuid "1eab354c-5b29-4dcf-a535-304c49ec7d9b")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 187.96 95.25 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "03c03eeb-73e2-493d-bc20-09cdc8bf5b4a")
+		(property "Reference" "D25"
+			(at 193.04 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 190.5 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_AKL:D_SOD-123"
+			(at 187.96 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 187.96 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 187.96 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "93751512-766c-48f1-881d-db5b15383246")
+		)
+		(pin "1"
+			(uuid "5ddb69c8-0334-4cbf-a808-bbfd364181f3")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "D25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
+		(at 233.68 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "04570110-d5f4-4d09-a56e-5447e4a0b6d8")
+		(property "Reference" "MACRO_C1"
+			(at 233.68 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SW_HS"
+			(at 233.68 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+			(at 233.68 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 233.68 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
+			(at 233.68 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "09640a5d-24d3-4e52-8be6-89e67f563491")
+		)
+		(pin "2"
+			(uuid "b531c149-dfd2-476b-97d3-89b3ed115d80")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "MACRO_C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
+		(at 208.28 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0a3c8be3-8a11-4183-875e-d30b950cb419")
+		(property "Reference" "NUM_1"
+			(at 208.28 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SW_HS"
+			(at 208.28 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+			(at 208.28 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 208.28 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
+			(at 208.28 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "558f588d-1b66-4a0d-8c0e-815021d595b4")
+		)
+		(pin "2"
+			(uuid "1ad24e74-8a85-4e15-81e6-833b5bf5c92e")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "NUM_1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
+		(at 184.15 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0f8a26af-6635-4234-a4e6-da17b3c1c738")
+		(property "Reference" "MACRO_H1"
+			(at 184.15 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SW_HS"
+			(at 184.15 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+			(at 184.15 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 184.15 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
+			(at 184.15 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "47b0f5e4-d3c6-462f-93be-e1268b5aee75")
+		)
+		(pin "2"
+			(uuid "575b7174-7feb-473c-9f5c-23c3a4550395")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "MACRO_H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 250.19 95.25 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "12660e1d-42b4-4472-be67-72e1d21689fb")
+		(property "Reference" "D14"
+			(at 255.27 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 252.73 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_AKL:D_SOD-123"
+			(at 250.19 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 250.19 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 250.19 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6b02b4d9-614d-4d1e-9dba-6fbfabb5d56f")
+		)
+		(pin "1"
+			(uuid "b4848066-d1e4-4e6a-a5ab-488fdc7cffad")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "D14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
+		(at 246.38 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "164bfbfa-196e-4228-af45-b943f8e2a6f5")
+		(property "Reference" "MACRO_D1"
+			(at 246.38 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SW_HS"
+			(at 246.38 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+			(at 246.38 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 246.38 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
+			(at 246.38 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c7fea699-f49d-435e-87e8-4460620e5ed0")
+		)
+		(pin "2"
+			(uuid "e9c68ee6-51bf-42bf-a754-333635239451")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "MACRO_D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
+		(at 184.15 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1ce31e91-544f-4a26-b029-901d48deb831")
+		(property "Reference" "MACRO_G1"
+			(at 184.15 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SW_HS"
+			(at 184.15 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+			(at 184.15 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 184.15 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
+			(at 184.15 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "81366aad-5526-4831-ad8c-c2f4087b4523")
+		)
+		(pin "2"
+			(uuid "a199a749-2470-4ec3-a386-9568ca3243ea")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "MACRO_G1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 101.6 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1fd9c9e4-2dfd-4151-b309-9c4511e3ed2e")
+		(property "Reference" "LED24"
+			(at 101.6 131.318 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 101.6 133.858 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 101.6 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 101.6 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 101.6 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8d0c68e7-506d-4128-b794-7b4f1cbcb2e2")
+		)
+		(pin "2"
+			(uuid "70e25ff8-669c-40fd-87d4-2e8d797c1aaf")
+		)
+		(pin "4"
+			(uuid "845200c1-e02a-46c6-a575-8dd372a12f3d")
+		)
+		(pin "3"
+			(uuid "af3f4fa7-aaeb-482f-820d-492cd0c46e12")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "LED24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 237.49 95.25 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "23517552-178e-43d9-b4fc-447626944d6c")
+		(property "Reference" "D13"
+			(at 242.57 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 240.03 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_AKL:D_SOD-123"
+			(at 237.49 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 237.49 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 237.49 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0586d980-d8a9-4449-a735-ff45c4435297")
+		)
+		(pin "1"
+			(uuid "8b2350f2-9833-4662-9869-b8576ce6e72a")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "D13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 100.33 71.12 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2573f3d4-31a3-4e08-b8ac-4e4e3f70b942")
+		(property "Reference" "LED9"
+			(at 100.33 57.658 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 100.33 60.198 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 100.33 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 100.33 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 100.33 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2d6dc9dc-a573-4480-ba6a-95e15015b9de")
+		)
+		(pin "2"
+			(uuid "8b3c52a1-ae5e-4d6d-8e59-247db98833dc")
+		)
+		(pin "4"
+			(uuid "f664a8c4-3ac2-4e9b-bd64-611b53111d96")
+		)
+		(pin "3"
+			(uuid "42dd0562-114a-4b6a-9812-b04abdbd4439")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "LED9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
+		(at 208.28 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "290f0ca9-397d-4585-91e6-101ac6c53390")
+		(property "Reference" "NUM_4"
+			(at 208.28 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SW_HS"
+			(at 208.28 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+			(at 208.28 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 208.28 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
+			(at 208.28 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6ba0cec6-1b56-40ca-9bb1-b9e197713e9e")
+		)
+		(pin "2"
+			(uuid "184795e0-ad04-4f16-bdbc-0b0c83e32090")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "NUM_4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
+		(at 233.68 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "30eee7ea-caee-49e3-b52c-a56fcbfdfefd")
+		(property "Reference" "NUM_3"
+			(at 233.68 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SW_HS"
+			(at 233.68 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+			(at 233.68 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 233.68 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
+			(at 233.68 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a21d3801-362b-4db1-8746-4ec04f484332")
+		)
+		(pin "2"
+			(uuid "2028189b-4d45-4329-8ed5-0f6aa1281e4d")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "NUM_3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
+		(at 184.15 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "32876d67-168c-43d8-926e-9516ba6d84f4")
+		(property "Reference" "MACRO_I1"
+			(at 184.15 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SW_HS"
+			(at 184.15 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+			(at 184.15 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 184.15 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
+			(at 184.15 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "013a38a7-0bbf-4935-81d8-856c600823de")
+		)
+		(pin "2"
+			(uuid "87191f1f-9d6e-428f-a699-0cf3991febc1")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "MACRO_I1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
+		(at 233.68 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "381f0f6a-29e2-4cba-9a24-5b4322168187")
+		(property "Reference" "NUM_10"
+			(at 233.68 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SW_HS"
+			(at 233.68 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+			(at 233.68 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 233.68 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
+			(at 233.68 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c24fc5f8-bf08-4a2c-8527-8b9f584e8e84")
+		)
+		(pin "2"
+			(uuid "5712ebbd-49da-4067-839a-51f6d9050a69")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "NUM_10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 250.19 50.8 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3923659b-2635-4a70-815b-c68b3decf44f")
+		(property "Reference" "D6"
+			(at 255.27 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 252.73 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_AKL:D_SOD-123"
+			(at 250.19 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 250.19 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 250.19 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5c9bad58-07c1-4a60-8459-a437095ccfce")
+		)
+		(pin "1"
+			(uuid "fce73840-d650-4eef-9690-9c139b1e4ad7")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 83.82 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3a5f0ace-38cc-41ba-ab1d-6ee059890fc7")
+		(property "Reference" "LED23"
+			(at 83.82 131.318 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 83.82 133.858 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 83.82 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 83.82 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b796d7f1-8ad0-4dba-855f-0488921b9889")
+		)
+		(pin "2"
+			(uuid "89f63e4a-65c7-474c-95b6-8cf06e1bbbc5")
+		)
+		(pin "4"
+			(uuid "866947ea-b5de-4a3b-a7c9-f6b8f915686a")
+		)
+		(pin "3"
+			(uuid "5b0b3ee7-9bc8-47c4-9fa3-bcdf6d718ff7")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "LED23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 224.79 133.35 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3b80e858-a211-4fde-9ab8-06990c56e6d0")
+		(property "Reference" "D19"
+			(at 229.87 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 227.33 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_AKL:D_SOD-123"
+			(at 224.79 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 224.79 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 224.79 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3d15d272-836d-40b3-9c05-5043b6fcc323")
+		)
+		(pin "1"
+			(uuid "b701dfdf-25bd-4b7e-8c68-7a099ef73609")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "D19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 237.49 114.3 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3c8cf6b9-a35f-4e23-8216-151940527958")
+		(property "Reference" "D17"
+			(at 242.57 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 240.03 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_AKL:D_SOD-123"
+			(at 237.49 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 237.49 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 237.49 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4fd6ef71-891b-42b6-aa25-a4b246b3f58b")
+		)
+		(pin "1"
+			(uuid "f77d9cf6-235d-4f85-be25-d0278209aa4f")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "D17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 43.18 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3d0bc790-52d9-4c4f-b369-0844c87f9f1e")
+		(property "Reference" "LED15"
+			(at 43.18 81.788 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 43.18 84.328 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 43.18 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 43.18 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 43.18 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b4aa05da-3efe-4e5f-92a0-7f9efa243bb0")
+		)
+		(pin "2"
+			(uuid "dc799c7a-a147-42db-b37d-faaea9f087c5")
+		)
+		(pin "4"
+			(uuid "99d85203-b3d3-47a8-ab07-a7eb96b74bc6")
+		)
+		(pin "3"
+			(uuid "1f722e41-f446-45d7-b90b-a2c6318f809a")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "LED15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 100.33 168.91 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3ed2f7a5-b2d8-453f-a297-6695939d1bd6")
+		(property "Reference" "LED20"
+			(at 100.33 155.448 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 100.33 157.988 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 100.33 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 100.33 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 100.33 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bd092964-d99d-4410-a5f7-9a83d9a1d3e4")
+		)
+		(pin "2"
+			(uuid "31b36906-13a4-40a5-a92a-ee4171df1440")
+		)
+		(pin "4"
+			(uuid "7ae77031-a018-40bd-89b9-22f13d166f70")
+		)
+		(pin "3"
+			(uuid "9c07b9f6-27bd-4373-bc4d-2eaf27d3931c")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "LED20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 100.33 41.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3f18367a-e7ab-4bf8-a918-1679dee249d2")
+		(property "Reference" "LED2"
+			(at 100.33 28.448 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 100.33 30.988 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 100.33 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 100.33 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 100.33 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a9f0b49a-adb7-4eda-9bde-f1860cf9a32b")
+		)
+		(pin "2"
+			(uuid "08df3657-167e-4859-a57a-53b1f6d3c960")
+		)
+		(pin "4"
+			(uuid "6143cec3-8f0a-4915-91bb-bace81a2d915")
+		)
+		(pin "3"
+			(uuid "c19a7e1f-48c1-41db-8542-ec639e878881")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "LED2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 43.18 41.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "417e6a0d-21f7-4ded-893d-c50349f4cc71")
+		(property "Reference" "LED5"
+			(at 43.18 28.448 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 43.18 30.988 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 43.18 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 43.18 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 43.18 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5b757dd8-d898-4532-9cc3-5e6b89fa53ef")
+		)
+		(pin "2"
+			(uuid "638b8551-7050-406b-8be6-cd66c0517202")
+		)
+		(pin "4"
+			(uuid "bf0b41bb-92da-4094-ba62-624469c3b7c1")
+		)
+		(pin "3"
+			(uuid "d0a974f5-856d-4e3a-b20c-fcaa7412f00e")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "LED5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 212.09 133.35 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "43d82dbd-a959-459a-8ef5-01ec3f31b79a")
+		(property "Reference" "D18"
+			(at 217.17 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 214.63 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_AKL:D_SOD-123"
+			(at 212.09 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 212.09 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 212.09 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "10f7552c-2ebe-42d6-9ecc-5d7ca7665dde")
+		)
+		(pin "1"
+			(uuid "44d838a3-706e-4c75-90e8-fa9f2434979f")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "D18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
+		(at 220.98 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "45d1db8f-67fb-47d3-a2f4-f09c0e38e0d9")
+		(property "Reference" "NUM_5"
+			(at 220.98 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SW_HS"
+			(at 220.98 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+			(at 220.98 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 220.98 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
+			(at 220.98 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0cc9f175-e4e8-43d8-80a5-e274412497ce")
+		)
+		(pin "2"
+			(uuid "d4c5abcb-9822-442e-b5e1-4d711a8c2225")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "NUM_5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 237.49 133.35 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4e23ad4a-3ade-426a-b3fc-392af4edb91b")
+		(property "Reference" "D20"
+			(at 242.57 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 240.03 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_AKL:D_SOD-123"
+			(at 237.49 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 237.49 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 237.49 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "94462f01-fa48-4b35-ac10-0f3437bdcc44")
+		)
+		(pin "1"
+			(uuid "3e3d0322-5f76-4b6f-b6ae-4b4dda66ee16")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "D20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 187.96 152.4 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "53520587-5eb6-4757-8b59-99da306ddd47")
+		(property "Reference" "D28"
+			(at 193.04 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 190.5 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_AKL:D_SOD-123"
+			(at 187.96 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 187.96 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 187.96 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "384c18b9-9a3a-4c9f-adda-dc0b526fa63d")
+		)
+		(pin "1"
+			(uuid "d7df9030-e52d-4a64-9a76-4593f475da64")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "D28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 250.19 76.2 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "537b6b9a-0fe2-4ce2-8555-70aa0c8b4fb1")
+		(property "Reference" "D10"
+			(at 255.27 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 252.73 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_AKL:D_SOD-123"
+			(at 250.19 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 250.19 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 250.19 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a5774ebc-75ec-424d-866e-d32374413f78")
+		)
+		(pin "1"
+			(uuid "0458d5b9-f044-463c-af1b-d20962ad1ae5")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "D10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
+		(at 220.98 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "54869f3d-a9cc-46a0-9eb1-3c4f3e82f0f5")
+		(property "Reference" "NUM_2"
+			(at 220.98 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SW_HS"
+			(at 220.98 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+			(at 220.98 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 220.98 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
+			(at 220.98 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "94f78094-7eaa-44b0-8821-95a7e095d050")
+		)
+		(pin "2"
+			(uuid "3663be6e-3346-4369-b0d3-8c904d414756")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "NUM_2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 121.92 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "58f77366-401d-4764-9c9b-850d5763a77d")
+		(property "Reference" "LED25"
+			(at 121.92 131.318 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 121.92 133.858 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 121.92 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 121.92 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "976c47f2-e7f1-4f06-a853-1689a81fafbd")
+		)
+		(pin "2"
+			(uuid "73ec0601-9f03-4a08-8d14-80039658f0bc")
+		)
+		(pin "4"
+			(uuid "af9ccba0-509a-4cc8-8a68-32d60f8e24c0")
+		)
+		(pin "3"
+			(uuid "c8f01f45-6042-48e8-95f8-2c7826fa42d0")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "LED25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
+		(at 233.68 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "65d5c4fc-b773-4299-bb4b-0b9148783218")
+		(property "Reference" "NUM_6"
+			(at 233.68 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SW_HS"
+			(at 233.68 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+			(at 233.68 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 233.68 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
+			(at 233.68 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cc31cdac-eac6-4c14-9da3-af4bbccc7572")
+		)
+		(pin "2"
+			(uuid "4c2a6877-8516-4653-92f3-5da662758359")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "NUM_6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 121.92 120.65 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "68ddcec0-82fc-44e2-bf40-3722a1f9dfce")
+		(property "Reference" "LED19"
+			(at 121.92 107.188 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 121.92 109.728 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 121.92 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 121.92 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2d283a52-4770-4e3b-a653-58bd1b0a66b6")
+		)
+		(pin "2"
+			(uuid "b153a8c2-bb5b-4eeb-83da-bdbaea23c9fb")
+		)
+		(pin "4"
+			(uuid "2023378a-23e2-43fc-8454-db16dfe12f31")
+		)
+		(pin "3"
+			(uuid "8132fa70-559c-4499-a03f-b502aaf7db8b")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "LED19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 187.96 76.2 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6fd0994f-04f5-4629-8cc5-6a469fdccd7a")
+		(property "Reference" "D24"
+			(at 193.04 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 190.5 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_AKL:D_SOD-123"
+			(at 187.96 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 187.96 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 187.96 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3290eecf-d9bc-434b-a911-b5c84acb9e59")
+		)
+		(pin "1"
+			(uuid "16f38e64-f176-48cf-85c7-689f55801e2a")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "D24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 212.09 50.8 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "716f5e2b-a1a4-40d2-9258-0313cc440edc")
+		(property "Reference" "D3"
+			(at 217.17 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 214.63 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_AKL:D_SOD-123"
+			(at 212.09 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 212.09 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 212.09 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f60903cc-c081-400d-be13-e9b792f364c0")
+		)
+		(pin "1"
+			(uuid "1cfccc27-9a2e-42d6-8871-eaaa65cdb183")
+		)
+		(instances
+			(project ""
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
+		(at 233.68 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "71950fdc-53df-43d9-bcc4-c625e042b701")
+		(property "Reference" "NUM_MULT1"
+			(at 233.68 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SW_HS"
+			(at 233.68 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+			(at 233.68 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 233.68 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
+			(at 233.68 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f4ff2f2b-7ca4-4bc0-87b7-2f4c24e40dfe")
+		)
+		(pin "2"
+			(uuid "4ce42c9e-d5fe-4d55-a3aa-e3e00f7245a3")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "NUM_MULT1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 62.23 168.91 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7523b190-7540-4ca2-9c9d-04a935cf41be")
+		(property "Reference" "LED26"
+			(at 62.23 155.448 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 62.23 157.988 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 62.23 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 62.23 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 62.23 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "698d1ee1-3b88-4dbf-974f-2a7dff2293f3")
+		)
+		(pin "2"
+			(uuid "03353b54-c61a-422e-ae94-b0c762c118d7")
+		)
+		(pin "4"
+			(uuid "7e3365bb-2238-48f8-a1e5-cd24a23bc705")
+		)
+		(pin "3"
+			(uuid "a35035ea-cb20-4c9b-8e00-e2bc48952c85")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "LED26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 212.09 76.2 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7551672b-f337-4d74-a934-a2b453557782")
+		(property "Reference" "D7"
+			(at 217.17 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 214.63 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_AKL:D_SOD-123"
+			(at 212.09 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 212.09 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 212.09 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "08df5c15-9ba9-4127-ae71-a8625b743654")
+		)
+		(pin "1"
+			(uuid "06657603-e5df-42ac-b3f9-eca9f495d803")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 100.33 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "76af5763-9399-44c4-a498-bbedcbf14668")
+		(property "Reference" "LED12"
+			(at 100.33 81.788 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 100.33 84.328 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 100.33 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 100.33 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 100.33 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4e828f96-9cac-4e67-83cb-1a8c92312ec9")
+		)
+		(pin "2"
+			(uuid "de165b2a-b6c2-4b4f-91ef-9e5026212b7f")
+		)
+		(pin "4"
+			(uuid "07f75bda-6b81-477b-a0af-693cb9bca637")
+		)
+		(pin "3"
+			(uuid "09bfe3fc-8dd4-4688-9cc8-1cc3f995df7e")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "LED12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 81.28 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "79a22889-017f-4b61-a508-61202e7e1b02")
+		(property "Reference" "LED13"
+			(at 81.28 81.788 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 81.28 84.328 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 81.28 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 81.28 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "650dad88-f0b3-47da-8629-0b6be17f20d5")
+		)
+		(pin "2"
+			(uuid "8cd3b389-d3c3-4b26-8fd7-524a6b5afc38")
+		)
+		(pin "4"
+			(uuid "89c29c2a-c371-4011-8178-67afaa7fd512")
+		)
+		(pin "3"
+			(uuid "10225a46-ec4d-4d31-88a0-41f93a797d67")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "LED13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
+		(at 220.98 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7b4d79de-83e6-4bf8-8928-10aa4fa671c3")
+		(property "Reference" "NUM_DIV1"
+			(at 220.98 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SW_HS"
+			(at 220.98 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+			(at 220.98 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 220.98 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
+			(at 220.98 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4e90b725-a4e0-4e57-acb6-f3a32e761d07")
+		)
+		(pin "2"
+			(uuid "1a6e7793-075f-4774-ad08-28de615fd359")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "NUM_DIV1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 224.79 95.25 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7b50c475-625a-46fa-9b37-abddd970d149")
+		(property "Reference" "D12"
+			(at 229.87 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 227.33 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_AKL:D_SOD-123"
+			(at 224.79 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 224.79 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 224.79 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1bcdce79-61f3-4784-85cc-c31b09f3416e")
+		)
+		(pin "1"
+			(uuid "a6e181d1-0e23-4744-9808-6a83e46bc7d4")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "D12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 62.23 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7b6a7c1d-7b0e-4b7e-8ef9-98572626e35d")
+		(property "Reference" "LED14"
+			(at 62.23 81.788 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 62.23 84.328 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 62.23 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 62.23 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 62.23 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b19a1a70-eb6d-4fa3-a940-ef38b583cea9")
+		)
+		(pin "2"
+			(uuid "86698ac9-f365-4bb8-8974-ae22f688ca75")
+		)
+		(pin "4"
+			(uuid "78931364-8278-459f-9a6b-25666c4c8d01")
+		)
+		(pin "3"
+			(uuid "dad8a7d2-0d36-42f9-b4e1-79c610eceef2")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "LED14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 212.09 114.3 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7bcdef09-f169-4f97-a67e-b4b5361138c6")
+		(property "Reference" "D15"
+			(at 217.17 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 214.63 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_AKL:D_SOD-123"
+			(at 212.09 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 212.09 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 212.09 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0ce25c6a-1d45-4968-b220-4d11821a18eb")
+		)
+		(pin "1"
+			(uuid "d4f4a7a9-19d1-49c5-8742-5f0abc10b69e")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "D15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 212.09 95.25 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "88f537b8-d8cd-4be2-8eb3-033601afac42")
+		(property "Reference" "D11"
+			(at 217.17 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 214.63 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_AKL:D_SOD-123"
+			(at 212.09 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 212.09 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 212.09 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0d44643e-a706-4641-9650-b355f01e816d")
+		)
+		(pin "1"
+			(uuid "bb5c1972-2c8e-450b-bb9d-6ae2d64f0b2a")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "D11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 237.49 76.2 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8e41580b-a036-45e9-a6f4-e69ea6f67370")
+		(property "Reference" "D9"
+			(at 242.57 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 240.03 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_AKL:D_SOD-123"
+			(at 237.49 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 237.49 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 237.49 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "32fe8531-2034-4827-97a9-c94f4578b81f")
+		)
+		(pin "1"
+			(uuid "eda8d9db-559c-4187-b298-463887118fda")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "D9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 121.92 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8f78aa94-6c1c-472c-8739-8eac1ad7fc27")
+		(property "Reference" "LED11"
+			(at 121.92 81.788 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 121.92 84.328 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 121.92 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 121.92 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "69949c53-84b4-4f15-bed5-8974f23876b3")
+		)
+		(pin "2"
+			(uuid "0292e241-423f-4ed7-8033-28ee99b6fd0f")
+		)
+		(pin "4"
+			(uuid "9c9edb46-f53c-4c06-8c8f-10f01807dc1a")
+		)
+		(pin "3"
+			(uuid "3052d03a-132b-4ebe-9cc7-182031db1197")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "LED11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 251.46 133.35 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "920e126e-ce4d-4b6b-aee9-6b859ced378f")
+		(property "Reference" "D21"
+			(at 256.54 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 254 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_AKL:D_SOD-123"
+			(at 251.46 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 251.46 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 251.46 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "fb098cf1-0175-47b7-8a49-5eba02162489")
+		)
+		(pin "1"
+			(uuid "a46e01b3-2f61-4946-800e-e1cdaf09585f")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "D21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
+		(at 208.28 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "94428564-4565-4185-8d39-8439354fcd28")
+		(property "Reference" "NUM_7"
+			(at 208.28 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SW_HS"
+			(at 208.28 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+			(at 208.28 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 208.28 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
+			(at 208.28 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4c650c7c-70a2-415e-9698-1c935bc9068d")
+		)
+		(pin "2"
+			(uuid "7547f0cc-9496-4644-9db7-3f80b28956ab")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "NUM_7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
+		(at 233.68 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "96534273-fbf0-4ed0-ab70-54689e6b120e")
+		(property "Reference" "NUM_PERIOD1"
+			(at 233.68 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SW_HS"
+			(at 233.68 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+			(at 233.68 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 233.68 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
+			(at 233.68 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b410e993-176a-43ba-93df-118af0aff760")
+		)
+		(pin "2"
+			(uuid "7d128a1c-dc6a-4470-8641-0c05fa8881ae")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "NUM_PERIOD1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
+		(at 247.65 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9860ce82-5f3f-4c27-842c-b9cc6eac7104")
+		(property "Reference" "NUM_ENTER1"
+			(at 247.65 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SW_HS"
+			(at 247.65 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+			(at 247.65 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 247.65 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
+			(at 247.65 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3b5dae18-760b-45dc-b663-3a304285dd86")
+		)
+		(pin "2"
+			(uuid "a5e577a8-a040-4c66-b25a-8a5e35d3497c")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "NUM_ENTER1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
+		(at 208.28 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9871e6b0-1d50-4020-bebb-7a217308629d")
+		(property "Reference" "NUM_0"
+			(at 208.28 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SW_HS"
+			(at 208.28 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+			(at 208.28 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 208.28 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
+			(at 208.28 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "db23c3e5-9807-40c6-a0a7-32d4c360a4a6")
+		)
+		(pin "2"
+			(uuid "bea32fd4-bfb0-4ab0-9e91-1ecfc19066a8")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "NUM_0")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 121.92 168.91 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9936daa4-e475-45c1-81b1-ca1f304d8886")
+		(property "Reference" "LED27"
+			(at 121.92 155.448 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 121.92 157.988 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 121.92 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 121.92 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6d4df86c-24de-4683-b384-759855cc0cec")
+		)
+		(pin "2"
+			(uuid "19f303d0-3e26-461d-9244-c8ea7f240eb3")
+		)
+		(pin "4"
+			(uuid "e2c8c2cf-e555-4cb5-8522-ea6abcb233a3")
+		)
+		(pin "3"
+			(uuid "20c7ec7c-cdb0-4b06-95f4-90eefe52e15d")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "LED27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
+		(at 220.98 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9a7e85b2-7bbf-440e-895d-6af39b87a65a")
+		(property "Reference" "MACRO_B1"
+			(at 220.98 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SW_HS"
+			(at 220.98 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+			(at 220.98 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 220.98 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
+			(at 220.98 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0786d724-6825-4b19-8be0-2d5da121e910")
+		)
+		(pin "2"
+			(uuid "7f5a8067-39c7-491c-a54c-b8084892671e")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "MACRO_B1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 64.77 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9a9bca09-b516-45c6-8261-d3f4f94874d1")
+		(property "Reference" "LED22"
+			(at 64.77 131.318 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 64.77 133.858 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 64.77 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 64.77 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 64.77 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f37f52e0-dcbe-4490-8ba9-1d2a96e1fa2d")
+		)
+		(pin "2"
+			(uuid "d6c23b5f-bd67-4d30-b095-08554d203fae")
+		)
+		(pin "4"
+			(uuid "a20c30a6-f0b3-49fb-8d2b-87f7acda6161")
+		)
+		(pin "3"
+			(uuid "6e0ff795-b431-46de-a8c7-4d39cfe6e429")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "LED22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_stab")
+		(at 248.92 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9ce3718c-02fe-4f65-a92e-129d95abd6b8")
+		(property "Reference" "S1"
+			(at 255.27 106.5529 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MX_stab"
+			(at 255.27 109.0929 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:STAB_MX_P_2u"
+			(at 248.92 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 248.92 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Cherry MX-style stabilizer"
+			(at 248.92 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "S1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
+		(at 184.15 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9f668a27-88c9-4b7d-b7b5-e1f71f63631e")
+		(property "Reference" "MACRO_F1"
+			(at 184.15 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SW_HS"
+			(at 184.15 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+			(at 184.15 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 184.15 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
+			(at 184.15 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "09ad9831-6d38-4d12-b733-4d6685ca58d5")
+		)
+		(pin "2"
+			(uuid "d4311a1c-de1b-4e68-889a-4011ad39e24b")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "MACRO_F1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 81.28 120.65 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a1f2c2c1-c214-422d-b4a0-56c925c218b1")
+		(property "Reference" "LED17"
+			(at 81.28 107.188 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 81.28 109.728 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 81.28 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 81.28 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "48562ac4-4950-4455-bc22-75a1fa6a2173")
+		)
+		(pin "2"
+			(uuid "d77761b5-99a5-4c22-a9e5-fa69a528d5e0")
+		)
+		(pin "4"
+			(uuid "f7f4b51b-1c28-487e-a726-266acdf89dfe")
+		)
+		(pin "3"
+			(uuid "28e2820b-40dc-4065-b3f8-879d1b2d461d")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "LED17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
+		(at 208.28 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a43a151f-ab8e-4d96-bcf4-ac87897a3fc4")
+		(property "Reference" "NUM_LOCK1"
+			(at 208.28 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SW_HS"
+			(at 208.28 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+			(at 208.28 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 208.28 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
+			(at 208.28 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7249b566-4949-47dd-b9d5-dab9f5c40259")
+		)
+		(pin "2"
+			(uuid "c8f3f44b-6007-4af3-9594-90f0759e96f0")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "NUM_LOCK1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_stab")
+		(at 219.71 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a6c3c728-89ec-4de9-9896-f757014c0e08")
+		(property "Reference" "S2"
+			(at 214.63 149.098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MX_stab"
+			(at 214.63 151.638 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:STAB_MX_P_2u"
+			(at 219.71 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 219.71 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Cherry MX-style stabilizer"
+			(at 219.71 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "S2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 237.49 50.8 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "aa9bd0f2-4da3-4e62-8b60-0a6ff3a008f5")
+		(property "Reference" "D5"
+			(at 242.57 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 240.03 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_AKL:D_SOD-123"
+			(at 237.49 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 237.49 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 237.49 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1e6d840d-8091-4b62-85ef-4585ba3728f1")
+		)
+		(pin "1"
+			(uuid "ed875854-713d-4509-85c5-38ebbfb144de")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 187.96 133.35 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b036b3a5-2be3-4694-9970-4fb2a259f212")
+		(property "Reference" "D27"
+			(at 193.04 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 190.5 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_AKL:D_SOD-123"
+			(at 187.96 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 187.96 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 187.96 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "12500561-4bd7-460d-829d-52899b4c7a35")
+		)
+		(pin "1"
+			(uuid "89ff3a8c-9350-4b04-8902-025c44023473")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "D27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-various:ROT_SKYLOONG_HS-Switch")
+		(at 187.96 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "b04a1447-1179-4d66-b20d-0cc5332b2f2d")
+		(property "Reference" "SW1"
+			(at 187.96 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ROT_SKYLOONG_HS"
+			(at 187.96 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-various:ROT_SKYLOONG_HS-Switch"
+			(at 187.96 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://skyloong.vip/products/abs-hot-swappable-knobs-madule"
+			(at 187.96 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SKYLOONG hotswap encoder module"
+			(at 187.96 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "B"
+			(uuid "b20051b7-23e6-4a8d-a998-900105f54d2a")
+		)
+		(pin "C"
+			(uuid "eb91f827-4af8-4cd4-8728-679d0cf1154a")
+		)
+		(pin "S"
+			(uuid "bab0140c-da5e-447a-b691-05653cfc3b62")
+		)
+		(pin "A"
+			(uuid "b7e55d51-6800-466d-8af7-67bce5293ce5")
+		)
+		(instances
+			(project ""
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
+		(at 220.98 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b2fdb8cf-0409-4d22-b1b8-f8b1aa580f39")
+		(property "Reference" "NUM_8"
+			(at 220.98 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SW_HS"
+			(at 220.98 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+			(at 220.98 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 220.98 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
+			(at 220.98 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c0b8361b-6e3c-4688-9634-34b367f25231")
+		)
+		(pin "2"
+			(uuid "f7d3d20d-a6b8-4b85-8cca-4808435fd00b")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "NUM_8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 237.49 152.4 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ba4717c3-fdb9-4f5b-a19f-64011e5e2983")
+		(property "Reference" "D23"
+			(at 242.57 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 240.03 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_AKL:D_SOD-123"
+			(at 237.49 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 237.49 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 237.49 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "163b6421-b905-494a-b2d0-4e6edf4d0a95")
+		)
+		(pin "1"
+			(uuid "bfc64b4e-db23-4de6-a8b4-cd2f41734f8e")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "D23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 100.33 120.65 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bc5a282c-1530-41df-ad00-5906e66a0f25")
+		(property "Reference" "LED18"
+			(at 100.33 107.188 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 100.33 109.728 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 100.33 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 100.33 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 100.33 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "258bfd04-354b-479c-ba3a-be6606c57d06")
+		)
+		(pin "2"
+			(uuid "cd65b508-68f9-4b20-929b-2cef01072a0b")
+		)
+		(pin "4"
+			(uuid "74da74c6-e15a-4beb-9921-ce30b01d222e")
+		)
+		(pin "3"
+			(uuid "e391b47a-fabe-407a-8d17-76be6873bc9e")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "LED18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 212.09 152.4 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c94b7192-44f0-46ae-8a6f-b8558554fbc5")
+		(property "Reference" "D22"
+			(at 217.17 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 214.63 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_AKL:D_SOD-123"
+			(at 212.09 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 212.09 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 212.09 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6edceaa4-9ff5-42a8-a7b6-5aab713dc839")
+		)
+		(pin "1"
+			(uuid "67dc0b42-a755-4378-935e-a8414d91132d")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "D22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 224.79 50.8 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cc726127-88ff-41a5-a711-cab3c7660493")
+		(property "Reference" "D4"
+			(at 229.87 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 227.33 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_AKL:D_SOD-123"
+			(at 224.79 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 224.79 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 224.79 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e25f6d6e-0ffd-446e-85db-7bad144a1134")
+		)
+		(pin "1"
+			(uuid "3cf83c9b-484e-4f05-ba4a-696c525116bb")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
+		(at 208.28 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cc7bdce4-a588-484c-971f-43ed8f72830b")
+		(property "Reference" "MACRO_A1"
+			(at 208.28 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SW_HS"
+			(at 208.28 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+			(at 208.28 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 208.28 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
+			(at 208.28 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0e313a67-c2ce-441f-a7ea-f9bfba3d51fa")
+		)
+		(pin "2"
+			(uuid "4a3034e3-1bae-460c-88e7-ff964fe45cc1")
+		)
+		(instances
+			(project ""
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "MACRO_A1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 195.58 50.8 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cc851d90-221e-460b-b09f-39b52bc0d98e")
+		(property "Reference" "D29"
+			(at 200.66 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 198.12 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_AKL:D_SOD-123"
+			(at 195.58 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 195.58 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 195.58 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2586a0fa-ff39-4bd9-904f-3f0d0e7be14c")
+		)
+		(pin "1"
+			(uuid "7e5c8550-190f-4e31-8745-d2ae76b44bc9")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "D29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 81.28 41.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cda862bf-b586-4a88-bb53-5ab8cfcddcf2")
+		(property "Reference" "LED3"
+			(at 81.28 28.448 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 81.28 30.988 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 81.28 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 81.28 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4f2a5d98-75ad-4b1d-a1dc-6a351b098d48")
+		)
+		(pin "2"
+			(uuid "3aeb4d8d-a0fb-4dde-8d99-c0a573bca0d6")
+		)
+		(pin "4"
+			(uuid "15b6aa3b-1822-4e3a-b551-af11d27f4db0")
+		)
+		(pin "3"
+			(uuid "953e511b-5d6c-4406-b83e-e33a029bf3c0")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "LED3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 43.18 71.12 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d03dbe4c-acca-4050-bde4-c62996f00590")
+		(property "Reference" "LED6"
+			(at 43.18 57.658 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 43.18 60.198 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 43.18 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 43.18 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 43.18 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0a2e2fe3-132f-4ef6-90e2-b342cd2e8d33")
+		)
+		(pin "2"
+			(uuid "d69fc718-6afe-4b76-a91d-a2055439fa08")
+		)
+		(pin "4"
+			(uuid "c21b31f0-8a57-44c7-9381-49178ce59859")
+		)
+		(pin "3"
+			(uuid "c792d884-f4a9-42c1-a53d-1dab62c0d491")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "LED6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 62.23 120.65 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d1ca3e75-9af4-4b49-893f-aca04ea59f9a")
+		(property "Reference" "LED16"
+			(at 62.23 107.188 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 62.23 109.728 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 62.23 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 62.23 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 62.23 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "37de1226-1039-451b-aecd-59926fffafb1")
+		)
+		(pin "2"
+			(uuid "35b4c067-563a-4760-ba1e-b4c6fa4a2ed0")
+		)
+		(pin "4"
+			(uuid "66bbefe3-98fd-49e2-822e-02dad9869b87")
+		)
+		(pin "3"
+			(uuid "7b5bcfbc-9e1d-406d-b193-38af7ac34d7b")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "LED16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 62.23 71.12 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d3a33e1e-f3e2-44ea-ac8a-cb7c0b62224a")
+		(property "Reference" "LED7"
+			(at 62.23 57.658 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 62.23 60.198 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 62.23 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 62.23 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 62.23 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "59c43794-eb0c-466c-81a3-920836671705")
+		)
+		(pin "2"
+			(uuid "11b50c1e-fff3-4d41-810e-87f02ea0e585")
+		)
+		(pin "4"
+			(uuid "c48c8b83-c591-44ee-91d1-389a0de2dcc9")
+		)
+		(pin "3"
+			(uuid "5e0c39d4-7f32-4d07-a658-a79a3b493d9f")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "LED7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 62.23 41.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d8e7947b-5bb2-4fc1-a4f6-847dc2f131bc")
+		(property "Reference" "LED4"
+			(at 62.23 28.448 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 62.23 30.988 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 62.23 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 62.23 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 62.23 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dde3bcb5-b628-4a9b-91f9-9d2e510ea31f")
+		)
+		(pin "2"
+			(uuid "2dfea6b1-50e1-451a-9abc-36820ce8d954")
+		)
+		(pin "4"
+			(uuid "bacadd6a-1dd2-439c-9c74-883346ea336a")
+		)
+		(pin "3"
+			(uuid "08cebfd2-68d6-4298-83a0-4b910a77b65f")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "LED4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 224.79 114.3 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dac5d451-a0dd-4cdf-ba33-f1707e46d17c")
+		(property "Reference" "D16"
+			(at 229.87 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 227.33 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_AKL:D_SOD-123"
+			(at 224.79 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 224.79 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 224.79 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2c989d5b-2fea-44e7-976f-61bdb75b5bbe")
+		)
+		(pin "1"
+			(uuid "47a9d9f1-146e-43ba-b2d8-0a01c4c9e626")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "D16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 43.18 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dac7346a-b010-4167-8fdb-9c0d91941d89")
+		(property "Reference" "LED21"
+			(at 43.18 131.318 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 43.18 133.858 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 43.18 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 43.18 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 43.18 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d70e7903-cba6-4b12-acd0-52ab5bbd5329")
+		)
+		(pin "2"
+			(uuid "bff6751e-7afc-4d97-9db4-47dcb3a77361")
+		)
+		(pin "4"
+			(uuid "2410787f-fea9-4eac-800a-c1e7652fa816")
+		)
+		(pin "3"
+			(uuid "8716c6d1-ab95-4e40-84f0-f5e945f18502")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "LED21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_stab")
+		(at 248.92 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ddd973a8-a0df-4313-a2f8-5926d451c302")
+		(property "Reference" "S3"
+			(at 243.84 148.844 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MX_stab"
+			(at 243.84 151.384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:STAB_MX_P_2u"
+			(at 248.92 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 248.92 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Cherry MX-style stabilizer"
+			(at 248.92 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "S3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 121.92 41.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dee203b7-42ee-4b98-9003-936a09310fc6")
+		(property "Reference" "LED1"
+			(at 121.92 28.448 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 121.92 30.988 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 121.92 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 121.92 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "42538eb3-e3d8-4c34-8dcf-2cf313a6523a")
+		)
+		(pin "2"
+			(uuid "063e328c-45c3-4080-b862-4b9928f6e758")
+		)
+		(pin "4"
+			(uuid "4ecc765a-4fea-4ebf-8940-d4c0c9ebf04c")
+		)
+		(pin "3"
+			(uuid "684ed4e5-44de-4afa-984a-1b2d67cd75f4")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "LED1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_AKL:1N4148W")
+		(at 187.96 114.3 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "df4bafed-3fdc-4898-a2b6-3a28a8e5037e")
+		(property "Reference" "D26"
+			(at 193.04 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 190.5 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_AKL:D_SOD-123"
+			(at 187.96 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.octopart.com/1N4148W-HE3-18-Vishay-datasheet-17291302.pdf"
+			(at 187.96 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library"
+			(at 187.96 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2f7a3d54-4f7d-48d3-8fb5-d97d67f55aee")
+		)
+		(pin "1"
+			(uuid "675a328c-a585-4805-bc32-f55d38346666")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "D26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
+		(at 246.38 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e536db38-4810-4e54-b8a7-517a3fd0a23c")
+		(property "Reference" "NUM_ADD1"
+			(at 246.38 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SW_HS"
+			(at 246.38 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+			(at 246.38 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 246.38 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
+			(at 246.38 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "291fbce6-9687-4cf4-9f77-a40be37233a7")
+		)
+		(pin "2"
+			(uuid "4ecd4b70-cc0b-4a9c-803a-d9fb285f1b80")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "NUM_ADD1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 81.28 71.12 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e6475c77-d9d0-400d-830e-67d85df91641")
+		(property "Reference" "LED8"
+			(at 81.28 57.658 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 81.28 60.198 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 81.28 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 81.28 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ed429df9-924f-464c-b941-6d879be197a3")
+		)
+		(pin "2"
+			(uuid "6718387e-c244-4867-9a7f-a142af532c0e")
+		)
+		(pin "4"
+			(uuid "e5460856-7c26-4e82-85c2-8e847a9a5363")
+		)
+		(pin "3"
+			(uuid "a4bb65a9-5e72-42f4-8b33-6c603740b237")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "LED8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 121.92 71.12 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ef05aa19-4aa8-4d80-b620-2dfd117a6c79")
+		(property "Reference" "LED10"
+			(at 121.92 57.658 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 121.92 60.198 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 121.92 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 121.92 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "018744a5-988d-4f23-8ff8-37ecb127b191")
+		)
+		(pin "2"
+			(uuid "e9125803-e985-4b99-87c5-35dd6f445487")
+		)
+		(pin "4"
+			(uuid "a334ce99-0488-451d-8665-a27bde55dd3b")
+		)
+		(pin "3"
+			(uuid "fd79f81f-3fb0-4338-93bb-11b4e155bd85")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "LED10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
+		(at 246.38 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fe702d2b-4af9-4145-9488-d6672b067e4c")
+		(property "Reference" "NUM_SUB1"
+			(at 246.38 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SW_HS"
+			(at 246.38 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+			(at 246.38 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 246.38 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
+			(at 246.38 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c61cbbba-4056-4134-8c5d-3f1cf7be04c2")
+		)
+		(pin "2"
+			(uuid "6d0abaae-1980-4ece-a1cc-1be7fab13dc5")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "NUM_SUB1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
+		(at 184.15 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fec703e3-40b4-4132-8eb5-22897674cf66")
+		(property "Reference" "MACRO_E1"
+			(at 184.15 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SW_HS"
+			(at 184.15 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+			(at 184.15 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 184.15 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
+			(at 184.15 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c909ccd4-15ae-4ee6-ab7e-9a5672cf5fd7")
+		)
+		(pin "2"
+			(uuid "40c865d6-ed90-42a0-903c-cff04a7af865")
+		)
+		(instances
+			(project "numpad"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "MACRO_E1")
+					(unit 1)
+				)
+			)
+		)
+	)
+)

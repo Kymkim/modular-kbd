@@ -1,0 +1,226 @@
+(footprint "ST_PowerFLAT_HV-5_8x8mm"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "High-Voltage 5-pin package, https://www.st.com/resource/en/datasheet/sctl35n65g2v.pdf")
+	(tags "PowerFLAT8x8")
+	(property "Reference" "REF**"
+		(at 0 -4.8 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "5a94e04f-6a89-4cfb-9c70-9aa33c7e3865")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "ST_PowerFLAT_HV-5_8x8mm"
+		(at 0 4.95 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "b36e0db8-d77e-40a4-92c4-28f6f932c438")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "dfedd6ed-d1e6-4835-bbf8-c3dc0d99cd63")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b6096f20-d945-4ac6-b486-94b2ba5ec49b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -3 -4.1)
+		(end 4.5 -4.1)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "95c3bfce-c677-4edf-aa60-ea6d8f822bd0")
+	)
+	(fp_line
+		(start 4.5 -4.1)
+		(end 4.5 4.1)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "dcc3be64-8291-4ea1-b216-1c95b18c26c6")
+	)
+	(fp_line
+		(start 4.5 4.1)
+		(end -4 4.1)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "344e8400-7221-4301-8a4f-3c50e00b1ff4")
+	)
+	(fp_poly
+		(pts
+			(xy -3.65 -4.25) (xy -3.89 -4.58) (xy -3.41 -4.58) (xy -3.65 -4.25)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "ca437bd3-cd05-4806-83fe-d7ebf5a071d0")
+	)
+	(fp_rect
+		(start 4.45 -4.05)
+		(end -4.45 4.05)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "724e1042-b29c-4b44-a2db-09b3555281d8")
+	)
+	(fp_line
+		(start -4 -3)
+		(end -4 4)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "f7fbf3c1-e618-456c-930f-9044e8b07573")
+	)
+	(fp_line
+		(start -4 4)
+		(end 4 4)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "929bd977-4e98-4bff-be34-18b762344bae")
+	)
+	(fp_line
+		(start -3 -4)
+		(end -4 -3)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "82e92e8a-e2a8-49f6-b3c3-cf9dc9421f3c")
+	)
+	(fp_line
+		(start 4 -4)
+		(end -3 -4)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "32b8704d-9ef2-47f1-b292-3bb9bd7079d6")
+	)
+	(fp_line
+		(start 4 4)
+		(end 4 -4)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "8dc48b90-4346-4e66-85c9-57e41722efe2")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "758bdf61-a133-4a96-955d-a012262913ed")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -3.675 -3)
+		(size 1.05 1.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.2380952381)
+		(thermal_bridge_angle 45)
+		(uuid "71b7fa46-bf11-4cfe-8a9a-6f3cb36e2be1")
+	)
+	(pad "2" smd roundrect
+		(at -3.675 -1 180)
+		(size 1.05 1.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.2380952381)
+		(thermal_bridge_angle 45)
+		(uuid "680ecc31-4801-4992-8cf8-25a559941245")
+	)
+	(pad "3" smd roundrect
+		(at -3.675 1)
+		(size 1.05 1.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.2380952381)
+		(thermal_bridge_angle 45)
+		(uuid "4c3f44b6-74a9-4038-9f3e-d29f13469ed8")
+	)
+	(pad "4" smd roundrect
+		(at -3.675 3)
+		(size 1.05 1.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.2380952381)
+		(thermal_bridge_angle 45)
+		(uuid "227a4681-9bf5-4a81-af72-6a38714a7b13")
+	)
+	(pad "5" smd roundrect
+		(at 1.825 0)
+		(size 4.75 7.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.05263157895)
+		(thermal_bridge_angle 45)
+		(uuid "57dd11f6-4d80-4583-a023-b7ce7ce29464")
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/Package_SON.3dshapes/ST_PowerFLAT_HV-5_8x8mm.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

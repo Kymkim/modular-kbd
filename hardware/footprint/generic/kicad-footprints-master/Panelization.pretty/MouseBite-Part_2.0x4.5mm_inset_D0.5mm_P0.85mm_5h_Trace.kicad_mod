@@ -1,0 +1,318 @@
+(footprint "MouseBite-Part_2.0x4.5mm_inset_D0.5mm_P0.85mm_5h_Trace"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Break slot 2mm part, standard: L=4.5mm, holes inset: recommended (no post-process), room for traces")
+	(tags "mousebite stamp slot break tab 2mm edge inset")
+	(property "Reference" "REF**"
+		(at 0 -1 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "d8439e24-6b5d-4104-842a-99e947730b39")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "MouseBite-Part_2.0x4.5mm_inset_D0.5mm_P0.85mm_5h_Trace"
+		(at 0 -1 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f4be2fd1-3c95-4c5c-b881-96f1c36f3351")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4396623e-1570-48cd-8672-aeaf1646c351")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "17f4b7de-28e1-47ab-b05f-c30a516278bc")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr board_only exclude_from_pos_files exclude_from_bom dnp)
+	(fp_arc
+		(start -2.25 -1)
+		(mid -2.542893 -0.292893)
+		(end -3.25 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "b285dc8c-76be-4357-92a0-ccef33563b2a")
+	)
+	(fp_arc
+		(start 3.25 0)
+		(mid 2.542893 -0.292893)
+		(end 2.25 -1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "856d027e-1d71-421e-b69a-c88eb68e93f3")
+	)
+	(fp_line
+		(start -2.55 0.6)
+		(end -1.7 0.6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "B.CrtYd")
+		(uuid "2674d11c-088c-4732-8a29-8c8925cf95ae")
+	)
+	(fp_line
+		(start -1.7 -0.1)
+		(end -2.55 -0.1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "B.CrtYd")
+		(uuid "ceed67ab-91b4-49a3-b0a0-134247b885f5")
+	)
+	(fp_line
+		(start 1.7 0.6)
+		(end 2.55 0.6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "B.CrtYd")
+		(uuid "450fbc06-7e10-45cc-a147-b2a24ee2fa0d")
+	)
+	(fp_line
+		(start 2.55 -0.1)
+		(end 1.7 -0.1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "B.CrtYd")
+		(uuid "0cb9a712-a2b9-4d45-905d-0e4773e9482f")
+	)
+	(fp_arc
+		(start -2.55 0.6)
+		(mid -2.9 0.25)
+		(end -2.55 -0.1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "B.CrtYd")
+		(uuid "c6ab9d7f-2a61-4ed8-81a1-d1e0b3f816b4")
+	)
+	(fp_arc
+		(start -1.7 -0.1)
+		(mid -1.35 0.25)
+		(end -1.7 0.6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "B.CrtYd")
+		(uuid "49c23786-6f8c-4036-b273-ba2ae0648b9c")
+	)
+	(fp_arc
+		(start 1.7 0.6)
+		(mid 1.35 0.25)
+		(end 1.7 -0.1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "B.CrtYd")
+		(uuid "cab91489-8a05-4481-ab07-6c5b4cca1132")
+	)
+	(fp_arc
+		(start 2.55 -0.1)
+		(mid 2.9 0.25)
+		(end 2.55 0.6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "B.CrtYd")
+		(uuid "e6afef15-95d8-4261-9cc5-04c32661aff0")
+	)
+	(fp_circle
+		(center 0 0.25)
+		(end 0.35 0.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "B.CrtYd")
+		(uuid "94cad081-99a9-43d2-8b44-268026d5d7e8")
+	)
+	(fp_line
+		(start -2.55 0.6)
+		(end -1.7 0.6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "7e1da41a-933e-4487-b2ca-f88581d15c23")
+	)
+	(fp_line
+		(start -1.7 -0.1)
+		(end -2.55 -0.1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "d2f30549-975b-4d9f-a17a-142309f044f8")
+	)
+	(fp_line
+		(start 1.7 0.6)
+		(end 2.55 0.6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "fa653dfd-3c72-48e1-93e2-c352c899c3f9")
+	)
+	(fp_line
+		(start 2.55 -0.1)
+		(end 1.7 -0.1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "df29dad3-8188-44bb-9d69-4cd70de1aa82")
+	)
+	(fp_arc
+		(start -2.55 0.6)
+		(mid -2.9 0.25)
+		(end -2.55 -0.1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "70229c6c-2027-41eb-b28e-624ad262cdce")
+	)
+	(fp_arc
+		(start -1.7 -0.1)
+		(mid -1.35 0.25)
+		(end -1.7 0.6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "e56e628c-7728-4447-be2a-147f829458e0")
+	)
+	(fp_arc
+		(start 1.7 0.6)
+		(mid 1.35 0.25)
+		(end 1.7 -0.1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "d1cc731f-2ddb-4b2b-8057-d8d341c257d5")
+	)
+	(fp_arc
+		(start 2.55 -0.1)
+		(mid 2.9 0.25)
+		(end 2.55 0.6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "0b1374f8-05e7-498d-bbda-667770a5d4c7")
+	)
+	(fp_circle
+		(center 0 0.25)
+		(end 0.35 0.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "3b9df41f-2363-4684-b9b2-aa47b4dde3ec")
+	)
+	(pad "" np_thru_hole circle
+		(at -2.55 0.25 180)
+		(size 0.5 0.5)
+		(drill 0.5)
+		(layers "F&B.Cu" "*.Mask")
+		(uuid "ced2af1e-0254-40eb-b35c-16ac35ad6ad2")
+	)
+	(pad "" np_thru_hole circle
+		(at -1.7 0.25 180)
+		(size 0.5 0.5)
+		(drill 0.5)
+		(layers "F&B.Cu" "*.Mask")
+		(uuid "3a7723df-7e8b-4735-8218-b2eab7b69d25")
+	)
+	(pad "" np_thru_hole circle
+		(at 0 0.25 180)
+		(size 0.5 0.5)
+		(drill 0.5)
+		(layers "F&B.Cu" "*.Mask")
+		(uuid "22d2a945-81f1-4f87-b842-121208189a20")
+	)
+	(pad "" np_thru_hole circle
+		(at 1.7 0.25 180)
+		(size 0.5 0.5)
+		(drill 0.5)
+		(layers "F&B.Cu" "*.Mask")
+		(uuid "a594db45-815c-4cdf-9e63-b2f813b5e3c9")
+	)
+	(pad "" np_thru_hole circle
+		(at 2.55 0.25 180)
+		(size 0.5 0.5)
+		(drill 0.5)
+		(layers "F&B.Cu" "*.Mask")
+		(uuid "e9de6d31-72bd-492a-84f4-89c00aba3658")
+	)
+	(group ""
+		(uuid "7360ef51-22f4-442b-ac82-4bb0d79e04ce")
+		(members "0b1374f8-05e7-498d-bbda-667770a5d4c7" "0cb9a712-a2b9-4d45-905d-0e4773e9482f"
+			"2674d11c-088c-4732-8a29-8c8925cf95ae" "3b9df41f-2363-4684-b9b2-aa47b4dde3ec"
+			"450fbc06-7e10-45cc-a147-b2a24ee2fa0d" "49c23786-6f8c-4036-b273-ba2ae0648b9c"
+			"70229c6c-2027-41eb-b28e-624ad262cdce" "7e1da41a-933e-4487-b2ca-f88581d15c23"
+			"94cad081-99a9-43d2-8b44-268026d5d7e8" "c6ab9d7f-2a61-4ed8-81a1-d1e0b3f816b4"
+			"cab91489-8a05-4481-ab07-6c5b4cca1132" "ceed67ab-91b4-49a3-b0a0-134247b885f5"
+			"d1cc731f-2ddb-4b2b-8057-d8d341c257d5" "d2f30549-975b-4d9f-a17a-142309f044f8"
+			"df29dad3-8188-44bb-9d69-4cd70de1aa82" "e56e628c-7728-4447-be2a-147f829458e0"
+			"e6afef15-95d8-4261-9cc5-04c32661aff0" "fa653dfd-3c72-48e1-93e2-c352c899c3f9"
+		)
+	)
+	(embedded_fonts no)
+)

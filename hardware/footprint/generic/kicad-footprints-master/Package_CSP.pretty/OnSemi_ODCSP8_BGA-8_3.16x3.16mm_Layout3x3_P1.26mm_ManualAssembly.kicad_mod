@@ -1,0 +1,246 @@
+(footprint "OnSemi_ODCSP8_BGA-8_3.16x3.16mm_Layout3x3_P1.26mm_ManualAssembly"
+	(version 20241229)
+	(generator "kicad-footprint-generator")
+	(layer "F.Cu")
+	(descr "OnSemi ODCSP8 (Case 570CS), 0.46mm pad, manual assembly variant (larger pads), 3.16x3.16mm, 8 Ball, 3x3 Layout, 1.26mm Pitch, generated with kicad-footprint-generator ipc_bga_generator.py, https://www.onsemi.com/pub/Collateral/570CS.PDF")
+	(tags "CSP 8 1.26")
+	(property "Reference" "REF**"
+		(at 0 -2.58 0)
+		(layer "F.SilkS")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "OnSemi_ODCSP8_BGA-8_3.16x3.16mm_Layout3x3_P1.26mm_ManualAssembly"
+		(at 0 2.58 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1.755 1.755)
+		(end -1.755 -0.9325)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start -0.9325 -1.755)
+		(end 1.755 -1.755)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start 1.755 -1.755)
+		(end 1.755 1.755)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start 1.755 1.755)
+		(end -1.755 1.755)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_poly
+		(pts
+			(xy -1.755 -1.755)
+			(xy -2.255 -1.755)
+			(xy -1.755 -2.255)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start 0.38 1.26)
+		(end 0.88 1.26)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 0.63 1.01)
+		(end 0.63 1.51)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -2.58 -2.58)
+		(end -2.58 2.58)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+	)
+	(fp_line
+		(start -2.58 2.58)
+		(end 2.58 2.58)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+	)
+	(fp_line
+		(start 2.58 -2.58)
+		(end -2.58 -2.58)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+	)
+	(fp_line
+		(start 2.58 2.58)
+		(end 2.58 -2.58)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+	)
+	(fp_line
+		(start -1.58 -0.79)
+		(end -0.79 -1.58)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start -1.58 1.58)
+		(end -1.58 -0.79)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start -0.79 -1.58)
+		(end 1.58 -1.58)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 1.58 -1.58)
+		(end 1.58 1.58)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 1.58 1.58)
+		(end -1.58 1.58)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 0.73 0.73)
+				(thickness 0.1095)
+			)
+		)
+	)
+	(pad "A1" smd circle
+		(at -1.26 -1.26)
+		(size 0.47 0.47)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "A2" smd circle
+		(at 0 -1.26)
+		(size 0.47 0.47)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "A3" smd circle
+		(at 1.26 -1.26)
+		(size 0.47 0.47)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "B1" smd circle
+		(at -1.26 0)
+		(size 0.47 0.47)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "B3" smd circle
+		(at 1.26 0)
+		(size 0.47 0.47)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "C1" smd circle
+		(at -1.26 1.26)
+		(size 0.47 0.47)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "C2" smd circle
+		(at 0 1.26)
+		(size 0.47 0.47)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "C3" smd circle
+		(at 1.26 1.26)
+		(size 0.47 0.47)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/Package_CSP.3dshapes/OnSemi_ODCSP8_BGA-8_3.16x3.16mm_Layout3x3_P1.26mm_ManualAssembly.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

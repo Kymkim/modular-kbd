@@ -1,0 +1,252 @@
+(footprint "LEMO-EPG.00.302.NLN"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Triaxial LEMO connector PCB elbow socket https://web.lemo.com/ged_drw/CD-EPG.00.302.NLN-01-en.pdf")
+	(tags "LEMO THT Female Jack Horizontal")
+	(property "Reference" "REF**"
+		(at 0 -4.6 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "e1163f5f-8e22-4685-9cf1-67e2540ed709")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "LEMO-EPG.00.302.NLN"
+		(at 0 4.6 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "f9573fe2-98d2-48e4-88a7-53885c7139a5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5d9d3f53-1875-4886-8ff4-7c84451c421f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a12c5c0e-5391-4a45-bba3-8c727b2a4f61")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -2.96 -3.6)
+		(end -2.96 3.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1c0ee384-17d1-402e-bf4d-a68b43d5f02c")
+	)
+	(fp_line
+		(start -2.96 3.6)
+		(end 14.74 3.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "681e2014-6d6f-4fad-ab73-a4532dc196d8")
+	)
+	(fp_line
+		(start 14.74 -3.6)
+		(end -2.96 -3.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "79b1c051-2ddf-4aac-a2a7-c678c32e5879")
+	)
+	(fp_line
+		(start 14.74 3.6)
+		(end 14.74 -3.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "40e59c5d-7f3e-48c1-9a70-04e2bb72a675")
+	)
+	(fp_line
+		(start -3 -3.6)
+		(end 4.2 -3.6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "e91889ea-e413-4b40-b9d4-76cf9470e3ab")
+	)
+	(fp_line
+		(start -3 3.6)
+		(end -3 -3.6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "feb1c5be-e71c-4681-9acf-2b9fd0968907")
+	)
+	(fp_line
+		(start 4.2 -3.6)
+		(end 4.2 3.6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "16f18455-1056-49a1-940b-92155f0259e6")
+	)
+	(fp_line
+		(start 4.2 3.6)
+		(end -3 3.6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "83955590-d0a6-47a5-a9e4-28e4090a53ad")
+	)
+	(fp_line
+		(start -2.86 -3.5)
+		(end -2.86 3.5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "56f15659-3a57-454e-99f3-8c7ad5cfb4ea")
+	)
+	(fp_line
+		(start -2.86 -3.5)
+		(end 14.64 -3.5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a2975485-a5fa-4a77-a35f-62bd3b57a5b7")
+	)
+	(fp_line
+		(start -2.86 3.5)
+		(end 14.64 3.5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "8acfab6f-ee9a-4303-9e96-b2adec5a5177")
+	)
+	(fp_line
+		(start 14.64 -3.5)
+		(end 14.64 3.5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f4d8a879-5c0c-4389-8fa9-f33e864f4d60")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -4.6 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "e1163f5f-8e22-4685-9cf1-67e2540ed709")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole roundrect
+		(at 0 0)
+		(size 1 1)
+		(drill 0.65)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.25)
+		(uuid "45f9fe9e-f25a-492d-baff-0508d697ce17")
+	)
+	(pad "2" thru_hole circle
+		(at 1.2 0)
+		(size 1 1)
+		(drill 0.65)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "6ea78ad5-3fc9-4133-88e2-3a020d776b83")
+	)
+	(pad "3" thru_hole circle
+		(at -1.94 -2.54)
+		(size 1.3 1.3)
+		(drill 0.85)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "cca0c657-7fe4-485c-b3b6-3078c10ff349")
+	)
+	(pad "3" thru_hole circle
+		(at -1.94 2.54)
+		(size 1.3 1.3)
+		(drill 0.85)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "22e95edb-c1a0-4c8f-abc7-312f9c18f60b")
+	)
+	(pad "3" thru_hole circle
+		(at 3.14 -2.54)
+		(size 1.3 1.3)
+		(drill 0.85)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "2fdd5221-9f35-4767-8a97-57dfe645dd52")
+	)
+	(pad "3" thru_hole circle
+		(at 3.14 2.54)
+		(size 1.3 1.3)
+		(drill 0.85)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "d92b07ab-8cde-458a-8435-f0412fe7c363")
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/Connector_Coaxial.3dshapes/LEMO-EPG.00.302.NLN.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

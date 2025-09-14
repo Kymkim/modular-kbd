@@ -1,0 +1,169 @@
+(footprint "GDT_Bourns_2038"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Gas Discharge Tube, 3-electrode GDT, SMD, 2038 series, https://www.bourns.com/data/global/pdfs/2038-xx-sm.pdf")
+	(tags "GDT gas discharge tube")
+	(property "Reference" "REF**"
+		(at 0.2 -3.9 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "dea65e36-e350-4695-a049-232b1ed19502")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "GDT_Bourns_2038"
+		(at 0 4 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "6c8725e1-3cbc-4561-a8cc-787f63a1782a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d9278b24-6784-4c25-8ac3-0118e47a2273")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b2bc73ba-3e3d-4a7c-aca4-e2e86d1a9655")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -2.2 -2.5)
+		(end -1.15 -2.5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7d3add82-fc8d-4ff2-9715-d8a637dadad0")
+	)
+	(fp_line
+		(start -2.2 2.5)
+		(end -1.15 2.5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3f7ce7bd-bcaf-4ffa-8f62-887a74a98de9")
+	)
+	(fp_line
+		(start 1.15 -2.5)
+		(end 2.2 -2.5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f15148cb-3896-43e5-98d9-011febe35879")
+	)
+	(fp_line
+		(start 1.15 2.5)
+		(end 2.2 2.5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1dc2393c-0449-48ba-8884-8177db26fe10")
+	)
+	(fp_rect
+		(start -4.35 -3.05)
+		(end 4.35 3.05)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "a30f9dd2-504d-4289-9f4f-fb90c1af59cd")
+	)
+	(fp_rect
+		(start -3.75 -2.5)
+		(end 3.75 2.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "566af540-252c-4b5a-8e45-7c85fb5c3ee4")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "7d1fb286-1c86-49d8-a4dd-a9bc117306b8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -3.3 0 180)
+		(size 1.6 5.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(thermal_bridge_angle 45)
+		(uuid "6a0fd2c9-d3ea-4523-944f-67dc19e0cf3b")
+	)
+	(pad "2" smd roundrect
+		(at 0 0 180)
+		(size 1.6 5.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(thermal_bridge_angle 45)
+		(uuid "97d2d902-bf1d-4aba-931a-ce8172a78288")
+	)
+	(pad "3" smd roundrect
+		(at 3.3 0 180)
+		(size 1.6 5.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(thermal_bridge_angle 45)
+		(uuid "a3661aba-5d28-41b0-a597-5deeedab46ad")
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/Fuse.3dshapes/GDT_Bourns_2038.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
