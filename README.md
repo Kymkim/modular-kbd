@@ -10,6 +10,11 @@ A customizable modular keyboard system where each key cluster is its own module,
 - 🎛️ **Configurable firmware** — master + module code, easily updated
 - ⚡ **Hotplug detection** — modules can be discovered dynamically
 
+# Numpad Module
+
+![Numpad Rear](./assets/numpad-backv1.png)
+
+
 ## Repo Structure
 ```
 ├─firmware/ - Embedded code for the core system
