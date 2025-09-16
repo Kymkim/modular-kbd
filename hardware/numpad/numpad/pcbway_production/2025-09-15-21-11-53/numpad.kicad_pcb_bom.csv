@@ -1,0 +1,26 @@
+﻿Designator,Quantity,Value,Footprint,Package,MPN,DNP,Mount_Type,Description,Specifications,Manufacturer
+"C1, C2",2,20pF,C_0805_2012Metric,,,,smt,"SMD 0805 MLCC capacitor, Alternate KiCad Library",,
+"C10, C7",2,1uF,C_0805_2012Metric,,,,smt,"SMD 0805 MLCC capacitor, Alternate KiCad Library",,
+C11,1,0.1uF,C_0805_2012Metric,,,,smt,"SMD 0805 MLCC capacitor, Alternate KiCad Library",,
+"C3, C4, C5, C6",4,100nF,C_0805_2012Metric,,,,smt,"SMD 0805 MLCC capacitor, Alternate KiCad Library",,
+C8,1,10uF,C_0805_2012Metric,,,,smt,"SMD 0805 MLCC capacitor, Alternate KiCad Library",,
+C9,1,4.7uF,C_0805_2012Metric,,,,smt,"SMD 0805 MLCC capacitor, Alternate KiCad Library",,
+D1,1,PRTR5V0U2X,SOT-143_Handsoldering,,,,smt,"SOT-143 TVS Diode Array, 2 protected lines, 5.5V, Alternate KiCAD Library",,
+"D10, D11, D12, D13, D14, D15, D16, D17, D18, D19, D20, D21, D22, D23, D24, D25, D26, D27, D28, D29, D3, D4, D5, D6, D7, D8, D9",27,1N4148W,D_SOD-123,,,,smt,"SOD-123 Diode, Small Signal, Fast Switching, 75V, 150mA, 4ns, Alternate KiCad Library",,
+D2,1,BAT60JFILM,D_SOD-323,,,,smt,Diode,,
+"EAST, NORTH, SOUTH, WEST",4,Conn_01x04,PinSocket_1x04_P2.54mm_Vertical,,1-0401FBV0T,,tht,HEADER 1x4 MALE PINS 0.100” 180deg,HEADER 1x4 MALE PINS 0.100” 180deg,TAD
+FB1,1,Ferrite_Bead,Fuse_0805_2012Metric_Pad1.15x1.40mm_BigPads,,,,smt,"Ferrite bead, Alternate KiCAD Library",,
+IC1,1,LD1117,SOT223,,LD1117S33CTR,,tht,"3.3V Voltage Regulator, SOT-223-3, Imax=0.8A, VinMax=15V, Vdrop=1V",,STMicroelectronics
+J1,1,Conn_01x06,PinSocket_1x06_P2.54mm_Horizontal,,1-0601FBV0T,,tht,HEADER 1x6 MALE PINS 0.100” 180deg,HEADER 1x6 MALE PINS 0.100” 180deg,TAD
+"LED1, LED10, LED11, LED12, LED13, LED14, LED15, LED16, LED17, LED18, LED19, LED2, LED20, LED21, LED22, LED23, LED24, LED25, LED26, LED27, LED3, LED4, LED5, LED6, LED7, LED8, LED9",27,MX_SK6812MINI-E,LED_MX_6028R,,,,smt,Reverse mount adressable LED (WS2812 protocol),,
+"MACRO_A1, MACRO_B1, MACRO_C1, MACRO_D1, MACRO_E1, MACRO_F1, MACRO_G1, MACRO_H1, MACRO_I1, NUM_0, NUM_1, NUM_10, NUM_2, NUM_3, NUM_4, NUM_5, NUM_6, NUM_7, NUM_8, NUM_ADD1, NUM_DIV1, NUM_ENTER1, NUM_LOCK1, NUM_MULT1, NUM_PERIOD1, NUM_SUB1",26,MX_SW_HS,SW_MX_HS_CPG151101S11_1u,,,,smt,"Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches",,
+"R1, R2",2,5.1k,R_0805_2012Metric,,,,smt,"SMD 0805 Chip Resistor, European Symbol, Alternate KiCad Library",,
+R10,1,DNP,R_0805_2012Metric,,,Yes,smt,"SMD 0805 Chip Resistor, European Symbol, Alternate KiCad Library",,
+R13,1,DNP,R_0805_2012Metric,,,Yes,smt,"SMD 0805 Chip Resistor, European Symbol, Alternate KiCad Library",,
+"R3, R4, R6, R7, R8, R9",6,22,R_0805_2012Metric,,,,smt,"SMD 0805 Chip Resistor, European Symbol, Alternate KiCad Library",,
+R5,1,10k,R_0805_2012Metric,,,,smt,"SMD 0805 Chip Resistor, European Symbol, Alternate KiCad Library",,
+"S1, S2, S3",3,MX_stab,STAB_MX_P_2u,,,,tht,Cherry MX-style stabilizer,,
+SW2,1,Push_Button,SW_SPST_SKQG_WithStem,,,,smt,Common 6mmx6mm Push Button,,
+U1,1,~,LQFP64-10x10mm,,,,smt,,,
+USB1,1,HRO-TYPE-C-31-M-12,HRO-TYPE-C-31-M-12-HandSoldering,,,,smt,,,
+Y1,1,8MHz,Crystal_HC52-U_Vertical,,,,tht,8Mz Crystal,,
