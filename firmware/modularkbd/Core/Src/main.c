@@ -19,6 +19,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "usb_device.h"
+#include <string.h>
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -27,18 +28,24 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-typedef struct {
-	uint8_t MODIFIER;
-	uint8_t RESERVED;
-	uint8_t KEYCODE1;
-	uint8_t KEYCODE2;
-	uint8_t KEYCODE3;
-	uint8_t KEYCODE4;
-	uint8_t KEYCODE5;
-	uint8_t KEYCODE6;
-}USBHIDReport;
+typedef struct{
+  uint8_t MODIFIER;
+  uint8_t RESERVED;
+  uint8_t KEYPRESS[13];
+}HIDReport;
 
-USBHIDReport USBREPORT = {0,0,0,0,0,0,0,0};
+typedef struct {
+	GPIO_TypeDef* GPIOx;
+	uint16_t PIN;
+}SwitchPins;
+
+
+typedef struct {
+    uint8_t buffer[256];
+    uint16_t head;
+    uint16_t tail;
+    uint16_t count;
+} HIDQueue;
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -48,10 +55,18 @@ USBHIDReport USBREPORT = {0,0,0,0,0,0,0,0};
 
 /* Private macro -------------------------------------------------------------*/
 /* USER CODE BEGIN PM */
+#define ROW 2
+#define COL 2
+#define MAXQUEUE 256
 
+#define MODE_INACTIVE 0
+#define MODE_MAINBOARD 1
+#define MODE_ACTIVE 2
+#define MODE_DEBUG 3
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
+/* USER CODE BEGIN PV */
 I2C_HandleTypeDef hi2c1;
 
 TIM_HandleTypeDef htim2;
@@ -63,11 +78,36 @@ UART_HandleTypeDef huart1;
 UART_HandleTypeDef huart2;
 UART_HandleTypeDef huart3;
 
-/* USER CODE BEGIN PV */
+// Initialize HID report properly
+HIDReport REPORT = {0, 0, {0}};
+
+// Initialize column pins array (no pointer needed)
+SwitchPins ROW_PINS[] = {
+    {GPIOC, GPIO_PIN_4},
+    {GPIOC, GPIO_PIN_5}
+};
+
+// Initialize row pins array
+SwitchPins COLUMN_PINS[] = {
+    {GPIOC, GPIO_PIN_6},
+    {GPIOC, GPIO_PIN_7}
+};
+
+// Initialize keycodes array
+uint8_t KEYCODES[2][2] = {
+    {KEY_M, KEY_I}, // 'M', 'I'
+    {KEY_K, KEY_U}  // 'K', 'U'
+};
+
+
+
 extern USBD_HandleTypeDef hUsbDeviceFS;
+
+volatile uint8_t MODE = MODE_MAINBOARD;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
+/* USER CODE BEGIN PFP */
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_TIM2_Init(void);
@@ -78,8 +118,17 @@ static void MX_USART1_UART_Init(void);
 static void MX_USART2_UART_Init(void);
 static void MX_I2C1_Init(void);
 static void MX_USART3_UART_Init(void);
-/* USER CODE BEGIN PFP */
 
+//Queue Functions (move this later as a separate c/h file)
+uint8_t Q_IsEmpty(HIDQueue* q);
+uint8_t Q_IsMax(HIDQueue*q);
+uint8_t Q_Enqueue(HIDQueue* q);
+uint8_t Q_Dequeue(HIDQueue* q);
+uint8_t Q_Peek(HIDQueue* q);
+
+void addUSBReport(uint8_t usageID);
+void matrixScan(void);
+void resetReport(void);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -131,41 +180,33 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  // 2x2 Matrix Keyboard: Rows = PC6, PC7; Cols = PC4, PC5
-  // Key mapping: [Row0-Col0]='M', [Row0-Col1]='I', [Row1-Col0]='K', [Row1-Col1]='U'
-  const uint8_t keycodes[2][2] = {
-    {0x10, 0x0C}, // 'M', 'I' (HID keycodes)
-    {0x0E, 0x18}  // 'K', 'U'
-  };
-  uint8_t prev_state[2][2] = {{1,1},{1,1}}; // Inputs are HIGH by default
   while (1)
   {
-    for (int row = 0; row < 2; row++) {
-      // Set current row LOW, other HIGH
-      HAL_GPIO_WritePin(GPIOC, GPIO_PIN_6, (row == 0) ? GPIO_PIN_RESET : GPIO_PIN_SET);
-      HAL_GPIO_WritePin(GPIOC, GPIO_PIN_7, (row == 1) ? GPIO_PIN_RESET : GPIO_PIN_SET);
-      HAL_Delay(1);
-      uint8_t col0 = HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_4);
-      uint8_t col1 = HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_5);
-      uint8_t curr_state[2] = {col0, col1};
-      for (int col = 0; col < 2; col++) {
-        if (curr_state[col] == GPIO_PIN_RESET && prev_state[row][col] == GPIO_PIN_SET) {
-          // Key pressed (edge, input goes LOW)
-          USBREPORT.KEYCODE1 = keycodes[row][col];
-          USBD_HID_SendReport(&hUsbDeviceFS, &USBREPORT, sizeof(USBREPORT));
-        }
-        if (curr_state[col] == GPIO_PIN_SET && prev_state[row][col] == GPIO_PIN_RESET) {
-          // Key released (input goes HIGH)
-          USBREPORT.KEYCODE1 = 0;
-          USBD_HID_SendReport(&hUsbDeviceFS, &USBREPORT, sizeof(USBREPORT));
-        }
-        prev_state[row][col] = curr_state[col];
-      }
-    }
-    HAL_Delay(10);
-    /* USER CODE END WHILE */
+	  if (MODE != MODE_INACTIVE){
+		  //Reset Report
+		  resetReport();
 
-    /* USER CODE BEGIN 3 */
+		  //TODO: Append Child Module Reports
+
+		  matrixScan();
+
+		  switch (MODE){
+
+		  	  case MODE_ACTIVE:
+		  		  //TODO: Send to parent
+		  		  //TODO: Check heartbeat signal from parent.
+		  		  break;
+
+		  	  case MODE_MAINBOARD:
+		  		  //Send to USB
+		  		  USBD_HID_SendReport(&hUsbDeviceFS, (uint8_t*)&REPORT, sizeof(REPORT));
+		  		  break;
+		  }
+		  //TODO: Send heartbeat signal to child nodes
+	  }else{	//INACTIVE Mode
+		  //TODO: Request parents
+	  }
+	  HAL_Delay(USBD_HID_GetPollingInterval(&hUsbDeviceFS));
   }
   /* USER CODE END 3 */
 }
@@ -510,8 +551,8 @@ static void MX_USART3_UART_Init(void)
   /* USER CODE BEGIN USART3_Init 2 */
 
   /* USER CODE END USART3_Init 2 */
-
 }
+
 
 /**
   * @brief GPIO Initialization Function
@@ -541,26 +582,26 @@ static void MX_GPIO_Init(void)
   /*Configure GPIO pins : PC4 PC5 */
   GPIO_InitStruct.Pin = GPIO_PIN_4|GPIO_PIN_5;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_PULLUP;
+  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
   /*Configure GPIO pins : PB0 PB1 PB2 PB10 */
   GPIO_InitStruct.Pin = GPIO_PIN_0|GPIO_PIN_1|GPIO_PIN_2|GPIO_PIN_10;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /*Configure GPIO pins : PC6 PC7 PC8 PC9 */
   GPIO_InitStruct.Pin = GPIO_PIN_6|GPIO_PIN_7|GPIO_PIN_8|GPIO_PIN_9;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
   /*Configure GPIO pin : PA8 */
   GPIO_InitStruct.Pin = GPIO_PIN_8;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
@@ -570,6 +611,52 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+/**
+ * @brief Returns whether the HID Queue is Full
+ * @retval uint8_t; 1 for full, 0 otherwise
+ * @param HIDQueue
+ */
+uint8_t Q_IsEmpty(HIDQueue* q){
+	return 0;
+}
+uint8_t Q_IsMax(HIDQueue*q){
+	return 0;
+}
+uint8_t Q_Enqueue(HIDQueue* q){
+	return 0;
+}
+uint8_t Q_Dequeue(HIDQueue* q){
+	return 0;
+}
+uint8_t Q_Peek(HIDQueue* q){
+	return 0;
+}
+
+void addUSBReport(uint8_t usageID){
+  if(usageID < 0x04 || usageID > 0x73) return; //Usage ID is out of bounds
+  uint16_t bit_index = usageID - 0x04; //Offset, UsageID starts with 0x04. Gives us the actual value of the bit
+  uint8_t byte_index = bit_index/8;    //Calculates which byte in the REPORT array
+  uint8_t bit_offset = bit_index%8;    //Calculates which bits in the REPORT[byte_index] should be set/unset
+  REPORT.KEYPRESS[byte_index] |= (1 << bit_offset);
+}
+
+void matrixScan(void){
+    for (uint8_t col = 0; col < COL; col++){
+        HAL_GPIO_WritePin(COLUMN_PINS[col].GPIOx, COLUMN_PINS[col].PIN, GPIO_PIN_SET);
+        HAL_Delay(1);
+        for(uint8_t row = 0; row < ROW; row++){
+            if(HAL_GPIO_ReadPin(ROW_PINS[row].GPIOx, ROW_PINS[row].PIN)){
+                addUSBReport(KEYCODES[row][col]);
+            }
+        }
+        HAL_GPIO_WritePin(COLUMN_PINS[col].GPIOx, COLUMN_PINS[col].PIN, GPIO_PIN_RESET);
+    }
+}
+
+void resetReport(void){
+	  REPORT.MODIFIER = 0;
+	  memset(REPORT.KEYPRESS, 0, sizeof(REPORT.KEYPRESS));
+}
 
 /* USER CODE END 4 */
 

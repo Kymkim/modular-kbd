@@ -37,7 +37,6 @@ Behavior in this mode includes:
 
 * **Ignoring Local Inputs**: The device does not process its own switch presses.
 * **Discovery Queries**: The device broadcasts a query to its neighbors to determine its parent.
-* **Awaiting Responses**: Active devices (Master or Modules) respond with a **depth value**—a numerical measure of distance (in hops) to the Master.
 
   * The Master has a depth of **0**.
   * Each Module reports its depth as `(parent depth + 1)`.
