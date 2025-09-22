@@ -31,7 +31,7 @@
 typedef struct{
   uint8_t MODIFIER;
   uint8_t RESERVED;
-  uint8_t KEYPRESS[13];
+  uint8_t KEYPRESS[12];
 }HIDReport;
 
 typedef struct {
@@ -39,13 +39,11 @@ typedef struct {
 	uint16_t PIN;
 }SwitchPins;
 
-
 typedef struct {
-    uint8_t buffer[256];
-    uint16_t head;
-    uint16_t tail;
-    uint16_t count;
-} HIDQueue;
+	uint16_t depth;
+	uint16_t msgType;
+	uint8_t keypress[12];
+}UARTMessage;
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -63,6 +61,8 @@ typedef struct {
 #define MODE_MAINBOARD 1
 #define MODE_ACTIVE 2
 #define MODE_DEBUG 3
+
+#define UART_RX_BUFF_SIZE 64
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
@@ -77,6 +77,17 @@ UART_HandleTypeDef huart5;
 UART_HandleTypeDef huart1;
 UART_HandleTypeDef huart2;
 UART_HandleTypeDef huart3;
+
+
+uint8_t UART1_RX_BUFF[UART_RX_BUFF_SIZE];
+uint8_t UART2_RX_BUFF[UART_RX_BUFF_SIZE];
+uint8_t UART4_RX_BUFF[UART_RX_BUFF_SIZE];
+uint8_t UART5_RX_BUFF[UART_RX_BUFF_SIZE];
+
+uint16_t UART1_BUFF_LASTPOS = 0;
+uint16_t UART2_BUFF_LASTPOS = 0;
+uint16_t UART4_BUFF_LASTPOS = 0;
+uint16_t UART5_BUFF_LASTPOS = 0;
 
 // Initialize HID report properly
 HIDReport REPORT = {0, 0, {0}};
@@ -99,11 +110,11 @@ uint8_t KEYCODES[2][2] = {
     {KEY_K, KEY_U}  // 'K', 'U'
 };
 
-
+uint16_t DEPTH = 0;
 
 extern USBD_HandleTypeDef hUsbDeviceFS;
+volatile uint8_t MODE = MODE_INACTIVE;
 
-volatile uint8_t MODE = MODE_MAINBOARD;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -119,13 +130,8 @@ static void MX_USART2_UART_Init(void);
 static void MX_I2C1_Init(void);
 static void MX_USART3_UART_Init(void);
 
-//Queue Functions (move this later as a separate c/h file)
-uint8_t Q_IsEmpty(HIDQueue* q);
-uint8_t Q_IsMax(HIDQueue*q);
-uint8_t Q_Enqueue(HIDQueue* q);
-uint8_t Q_Dequeue(HIDQueue* q);
-uint8_t Q_Peek(HIDQueue* q);
-
+void handleUARTMessages(uint8_t *data, UART_HandleTypeDef *huart);
+void UART_DMA_SendReport(UART_HandleTypeDef *huart);
 void addUSBReport(uint8_t usageID);
 void matrixScan(void);
 void resetReport(void);
@@ -176,6 +182,9 @@ int main(void)
   MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 2 */
 
+  //Enable UART RX DMA for all ports
+
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -186,25 +195,45 @@ int main(void)
 		  //Reset Report
 		  resetReport();
 
-		  //TODO: Append Child Module Reports
+		  //Query Neighbors
+		  UARTMessage query;
+		  query.depth = DEPTH;
+		  query.msgType = 0x01;
+		  memset(query.keypress, 0,sizeof(query.keypress));
+		  HAL_UART_Transmit_DMA(&huart1, (uint8_t*)&query, sizeof(query));
+		  HAL_UART_Transmit_DMA(&huart2, (uint8_t*)&query, sizeof(query));
+		  HAL_UART_Transmit_DMA(&huart4, (uint8_t*)&query, sizeof(query));
+		  HAL_UART_Transmit_DMA(&huart5, (uint8_t*)&query, sizeof(query));
 
 		  matrixScan();
 
 		  switch (MODE){
 
 		  	  case MODE_ACTIVE:
-		  		  //TODO: Send to parent
-		  		  //TODO: Check heartbeat signal from parent.
-		  		  break;
+				//TODO: Detect if a request is recieved
+				break;
 
 		  	  case MODE_MAINBOARD:
-		  		  //Send to USB
-		  		  USBD_HID_SendReport(&hUsbDeviceFS, (uint8_t*)&REPORT, sizeof(REPORT));
-		  		  break;
+				//Send to USB
+				USBD_HID_SendReport(&hUsbDeviceFS, (uint8_t*)&REPORT, sizeof(REPORT));
+				break;
 		  }
+
 		  //TODO: Send heartbeat signal to child nodes
+
+
 	  }else{	//INACTIVE Mode
-		  //TODO: Request parents
+		  //Check if the USB is enumerated/connected.
+		  if (hUsbDeviceFS.dev_state == USBD_STATE_CONFIGURED) {
+			  MODE = MODE_MAINBOARD;
+			  //Enable DMA RX
+			  HAL_UART_Receive_DMA(&huart1, UART1_RX_BUFF, UART_RX_BUFF_SIZE);
+			  HAL_UART_Receive_DMA(&huart2, UART2_RX_BUFF, UART_RX_BUFF_SIZE);
+			  HAL_UART_Receive_DMA(&huart4, UART4_RX_BUFF, UART_RX_BUFF_SIZE);
+			  HAL_UART_Receive_DMA(&huart5, UART5_RX_BUFF, UART_RX_BUFF_SIZE);
+		  }else{
+
+		  }
 	  }
 	  HAL_Delay(USBD_HID_GetPollingInterval(&hUsbDeviceFS));
   }
@@ -611,27 +640,41 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-/**
- * @brief Returns whether the HID Queue is Full
- * @retval uint8_t; 1 for full, 0 otherwise
- * @param HIDQueue
- */
-uint8_t Q_IsEmpty(HIDQueue* q){
-	return 0;
-}
-uint8_t Q_IsMax(HIDQueue*q){
-	return 0;
-}
-uint8_t Q_Enqueue(HIDQueue* q){
-	return 0;
-}
-uint8_t Q_Dequeue(HIDQueue* q){
-	return 0;
-}
-uint8_t Q_Peek(HIDQueue* q){
-	return 0;
+//UART Message Requests Goes Here
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart){
+    if(huart->Instance == USART1){
+        handleUARTMessages(UART1_RX_BUFF, huart);
+        HAL_UART_Receive_DMA(huart, UART1_RX_BUFF, UART_RX_BUFF_SIZE);
+    }
 }
 
+void handleUARTMessages(uint8_t *data, UART_HandleTypeDef *sender){
+    UARTMessage msg;
+    UARTMessage res;
+
+    // Parse incoming message
+    msg.depth = (data[0]<<8) | data[1];
+    msg.msgType = (data[2]<<8) | data[3];
+    memcpy(msg.keypress, &data[4], 12);
+
+    switch(msg.msgType){
+        case 0x01: // Request keypress
+            if (sender->gState == HAL_UART_STATE_READY) {
+                res.depth = DEPTH;
+                res.msgType = 0x10;
+                memcpy(res.keypress, &REPORT.KEYPRESS, sizeof(REPORT.KEYPRESS));
+                // Send safely using DMA
+                HAL_UART_Transmit_DMA(sender, (uint8_t *)&res, sizeof(res));
+            }
+            break;
+        case 0x10:	//Keypress recieved
+        	//Merge keypresses
+        	for (int i = 0; i < 12; i++) {
+        	    REPORT.KEYPRESS[i] |= msg.keypress[i];
+        	}
+        	break;
+    }
+}
 void addUSBReport(uint8_t usageID){
   if(usageID < 0x04 || usageID > 0x73) return; //Usage ID is out of bounds
   uint16_t bit_index = usageID - 0x04; //Offset, UsageID starts with 0x04. Gives us the actual value of the bit
