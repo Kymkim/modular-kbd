@@ -1,0 +1,129 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "a78709a7-612d-422d-97ca-ad2b463f3c34")
+	(paper "A4")
+	(lib_symbols)
+	(text "Numpad Matrix\n\nStandard numpad matrix with 4 macro buttons. \n4x6 keyboard matrix. \nUse MX-style hot swap sockets. marstlib should have them\nUse 1N4148 Diodes for each key to prevent ghosting.\nIf possible find an SMD 1N4148 Diode Package\nAdd stabilizers for the large buttons\n\nInput:\nCOL1 - COL4\n\nOutput\nROW1 - ROW6\n\n"
+		(exclude_from_sim no)
+		(at 114.046 95.504 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1a257982-b075-487c-a45b-3e42f3d00030")
+	)
+	(hierarchical_label "COL1"
+		(shape input)
+		(at 168.91 57.15 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2489cc9d-3f3f-49f3-b5f8-fca7de0bd406")
+	)
+	(hierarchical_label "ROW5"
+		(shape input)
+		(at 214.63 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2b6565a3-aed1-40b1-8bdb-7e077c868565")
+	)
+	(hierarchical_label "COL3"
+		(shape input)
+		(at 179.07 57.15 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "39f72fa4-5a13-4c27-b584-4b35e7decd41")
+	)
+	(hierarchical_label "ROW2"
+		(shape input)
+		(at 214.63 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3e384b07-13e8-47ab-854a-4749d9f7c1f2")
+	)
+	(hierarchical_label "ROW1"
+		(shape input)
+		(at 214.63 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "46575829-cb89-44d7-a910-1712e863bbc4")
+	)
+	(hierarchical_label "ROW3"
+		(shape input)
+		(at 214.63 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5927c7ba-a23d-49be-ad4c-26b7549c4aa5")
+	)
+	(hierarchical_label "ROW6"
+		(shape input)
+		(at 214.63 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7904c4f1-0a76-47a4-a64d-305fdecb43ca")
+	)
+	(hierarchical_label "COL2"
+		(shape input)
+		(at 173.99 57.15 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7c3f9e57-1e77-49a0-897c-74f99b2da1cf")
+	)
+	(hierarchical_label "ROW4"
+		(shape input)
+		(at 214.63 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "aef0586f-1483-45c4-b342-4de1dc00658b")
+	)
+	(hierarchical_label "COL4"
+		(shape input)
+		(at 184.15 57.15 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d6ddda30-e8a3-436c-8315-8c1fc1bf77f1")
+	)
+)

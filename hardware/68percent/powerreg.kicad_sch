@@ -1,0 +1,41 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "f14782a9-74f0-4b79-b235-64b38935fcc4")
+	(paper "A4")
+	(lib_symbols)
+	(text "Power Regulation.\nBuck Converter 5v to 3.3v\n"
+		(exclude_from_sim no)
+		(at 97.79 99.568 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9465db75-1792-401f-bad5-ceb4816ae4a0")
+	)
+	(hierarchical_label "3.3v"
+		(shape input)
+		(at 142.24 102.87 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9b32d2cf-97f6-491a-86fb-388101641b9e")
+	)
+	(hierarchical_label "5v"
+		(shape input)
+		(at 142.24 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bb6e74f4-ec74-4d40-9ebe-00f80b06a840")
+	)
+)
