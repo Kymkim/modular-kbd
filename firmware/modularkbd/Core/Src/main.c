@@ -113,7 +113,7 @@ uint8_t KEYCODES[2][2] = {
 uint16_t DEPTH = 0;
 
 extern USBD_HandleTypeDef hUsbDeviceFS;
-volatile uint8_t MODE = MODE_INACTIVE;
+volatile uint8_t MODE = MODE_MAINBOARD;
 
 /* USER CODE END PV */
 
@@ -128,6 +128,7 @@ static void MX_UART5_Init(void);
 static void MX_USART1_UART_Init(void);
 static void MX_USART2_UART_Init(void);
 static void MX_I2C1_Init(void);
+static void MX_DMA_Init(void);
 static void MX_USART3_UART_Init(void);
 
 void handleUARTMessages(uint8_t *data, UART_HandleTypeDef *huart);
@@ -173,6 +174,7 @@ int main(void)
   MX_GPIO_Init();
   MX_TIM2_Init();
   MX_TIM3_Init();
+  MX_DMA_Init();
   MX_UART4_Init();
   MX_UART5_Init();
   MX_USART1_UART_Init();
@@ -199,18 +201,14 @@ int main(void)
 		  UARTMessage query;
 		  query.depth = DEPTH;
 		  query.msgType = 0x01;
-		  memset(query.keypress, 0,sizeof(query.keypress));
-		  HAL_UART_Transmit_DMA(&huart1, (uint8_t*)&query, sizeof(query));
-		  HAL_UART_Transmit_DMA(&huart2, (uint8_t*)&query, sizeof(query));
-		  HAL_UART_Transmit_DMA(&huart4, (uint8_t*)&query, sizeof(query));
-		  HAL_UART_Transmit_DMA(&huart5, (uint8_t*)&query, sizeof(query));
+		  memset(query.keypress, 1,sizeof(query.keypress));
 
 		  matrixScan();
 
 		  switch (MODE){
 
 		  	  case MODE_ACTIVE:
-				//TODO: Detect if a request is recieved
+		  		HAL_UART_Transmit_DMA(&huart4, (uint8_t*)&query, sizeof(query));
 				break;
 
 		  	  case MODE_MAINBOARD:
@@ -582,6 +580,40 @@ static void MX_USART3_UART_Init(void)
   /* USER CODE END USART3_Init 2 */
 }
 
+static void MX_DMA_Init(void)
+{
+
+  /* DMA controller clock enable */
+  __HAL_RCC_DMA2_CLK_ENABLE();
+  __HAL_RCC_DMA1_CLK_ENABLE();
+
+  /* DMA interrupt init */
+  /* DMA1_Stream0_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(DMA1_Stream0_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(DMA1_Stream0_IRQn);
+  /* DMA1_Stream2_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(DMA1_Stream2_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(DMA1_Stream2_IRQn);
+  /* DMA1_Stream4_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(DMA1_Stream4_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(DMA1_Stream4_IRQn);
+  /* DMA1_Stream5_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(DMA1_Stream5_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(DMA1_Stream5_IRQn);
+  /* DMA1_Stream6_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(DMA1_Stream6_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(DMA1_Stream6_IRQn);
+  /* DMA1_Stream7_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(DMA1_Stream7_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(DMA1_Stream7_IRQn);
+  /* DMA2_Stream2_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(DMA2_Stream2_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(DMA2_Stream2_IRQn);
+  /* DMA2_Stream7_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(DMA2_Stream7_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(DMA2_Stream7_IRQn);
+
+}
 
 /**
   * @brief GPIO Initialization Function
