@@ -146,7 +146,7 @@ extern "C" {
 #define KEY_UP_ARROW       0x52
 
 // Keypad
-#define KEY_NUM_LOCK       0x53
+#define NUM_LOCK       0x53
 #define KEYPAD_SLASH       0x54
 #define KEYPAD_ASTERISK    0x55
 #define KEYPAD_MINUS       0x56

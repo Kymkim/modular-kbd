@@ -53,8 +53,8 @@ typedef struct {
 
 /* Private macro -------------------------------------------------------------*/
 /* USER CODE BEGIN PM */
-#define ROW 2
-#define COL 2
+#define ROW 6
+#define COL 5
 #define MAXQUEUE 256
 
 #define MODE_INACTIVE 0
@@ -78,6 +78,15 @@ UART_HandleTypeDef huart1;
 UART_HandleTypeDef huart2;
 UART_HandleTypeDef huart3;
 
+DMA_HandleTypeDef hdma_uart4_tx;
+DMA_HandleTypeDef hdma_uart4_rx;
+DMA_HandleTypeDef hdma_uart5_rx;
+DMA_HandleTypeDef hdma_uart5_tx;
+DMA_HandleTypeDef hdma_usart1_rx;
+DMA_HandleTypeDef hdma_usart1_tx;
+DMA_HandleTypeDef hdma_usart2_rx;
+DMA_HandleTypeDef hdma_usart2_tx;
+
 
 uint8_t UART1_RX_BUFF[UART_RX_BUFF_SIZE];
 uint8_t UART2_RX_BUFF[UART_RX_BUFF_SIZE];
@@ -93,27 +102,38 @@ uint16_t UART5_BUFF_LASTPOS = 0;
 HIDReport REPORT = {0, 0, {0}};
 
 // Initialize column pins array (no pointer needed)
-SwitchPins ROW_PINS[] = {
+SwitchPins ROW_PINS[ROW] = {
+	{GPIOB, GPIO_PIN_10},
+	{GPIOB, GPIO_PIN_2},
+	{GPIOB, GPIO_PIN_1},
+	{GPIOB, GPIO_PIN_0},
+    {GPIOC, GPIO_PIN_5},
     {GPIOC, GPIO_PIN_4},
-    {GPIOC, GPIO_PIN_5}
 };
 
 // Initialize row pins array
-SwitchPins COLUMN_PINS[] = {
-    {GPIOC, GPIO_PIN_6},
-    {GPIOC, GPIO_PIN_7}
+SwitchPins COLUMN_PINS[COL] = {
+	{GPIOA, GPIO_PIN_8},
+	{GPIOC, GPIO_PIN_9},
+	{GPIOC, GPIO_PIN_8},
+    {GPIOC, GPIO_PIN_7},
+	{GPIOC, GPIO_PIN_5}
 };
 
 // Initialize keycodes array
-uint8_t KEYCODES[2][2] = {
-    {KEY_M, KEY_I}, // 'M', 'I'
-    {KEY_K, KEY_U}  // 'K', 'U'
+uint8_t KEYCODES[ROW][COL] = {
+    {0x00,		KEY_F13, 		KEY_F14, 		KEY_F15,			KEY_F16},
+	{KEY_F17,	NUM_LOCK,		KEYPAD_SLASH,	KEYPAD_ASTERISK, 	KEYPAD_MINUS},
+	{KEY_F18, 	KEYPAD_7,		KEYPAD_8,		KEYPAD_9,			KEYPAD_PLUS},
+	{KEY_F19,	KEYPAD_4,		KEYPAD_5,		KEYPAD_6,			0x00},
+	{KEY_F20,	KEYPAD_1,		KEYPAD_2,		KEYPAD_3,			KEYPAD_ENTER},
+	{KEY_F21,	KEYPAD_0,		0x00,			KEYPAD_DOT,			0x00}
 };
 
 uint16_t DEPTH = 0;
 
 extern USBD_HandleTypeDef hUsbDeviceFS;
-volatile uint8_t MODE = MODE_MAINBOARD;
+volatile uint8_t MODE = MODE_ACTIVE;
 
 /* USER CODE END PV */
 
