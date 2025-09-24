@@ -512,7 +512,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "0460780a-4b05-4f1b-b478-d501b0453c9b")
-		(at 52.3875 33.49625 180)
+		(at 38.9725 30.95625 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_1"
 			(at -4.25 1.75 0)
@@ -2271,7 +2271,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "0c362101-dcfc-44c6-a3e4-f7482483be43")
-		(at -69.888824 91.717 180)
+		(at 314.0075 30.95625 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_HOME1"
 			(at -4.25 1.75 0)
@@ -4135,7 +4135,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "0eff4af6-0757-4055-bff5-da8ae5bae1dc")
-		(at 248.5225 33.49625 180)
+		(at 210.4225 30.95625 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_0"
 			(at -4.25 1.75 0)
@@ -7531,7 +7531,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "1abfd860-8542-4a18-a410-0d7a256e168a")
-		(at -104.188824 121.817 180)
+		(at 171.7675 50.00625 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_U1"
 			(at -4.25 1.75 0)
@@ -15438,7 +15438,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "337909fb-4cf2-4ed2-8ef9-39edcc35877c")
-		(at 78.8895 33.49625 180)
+		(at 58.0225 30.95625 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_2"
 			(at -4.25 1.75 0)
@@ -16970,7 +16970,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "36d4997c-f8b6-42fe-9687-98dc7989a848")
-		(at 210.4225 33.49625 180)
+		(at 172.3225 30.95625 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_8"
 			(at -4.25 1.75 0)
@@ -17570,7 +17570,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "3941d944-9532-4a7d-bb3d-43fbd3b1f8e3")
-		(at 172.3225 33.49625 180)
+		(at 134.2225 30.95625 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_6"
 			(at -4.25 1.75 0)
@@ -19102,12 +19102,12 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "3d823b30-94ca-4765-9d16-f1b9f6d98609")
-		(at 28.2575 33.49625 180)
+		(at 19.9 30.95625 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_ESC1"
 			(at -4.25 1.75 0)
 			(layer "B.SilkS")
-			(uuid "cd306a69-3129-4757-93e4-3dd9063a54ff")
+			(uuid "2a947abb-f1c9-4c92-b6ab-fe6b48325823")
 			(effects
 				(font
 					(size 1 1)
@@ -19119,7 +19119,7 @@
 		(property "Value" "MX_SW_HS"
 			(at 0 0 0)
 			(layer "B.Fab")
-			(uuid "625f80bd-035e-400b-aad5-07d2f89abfd8")
+			(uuid "f8d32864-57db-498f-bca6-60ced589e88c")
 			(effects
 				(font
 					(size 1 1)
@@ -19132,7 +19132,7 @@
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "3ef18ab5-7af7-43d8-b843-37193ffe864f")
+			(uuid "17f92763-b58e-4c8d-99d6-fa7835eb4b39")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19145,7 +19145,7 @@
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "f646e56c-8640-4ddd-a6e6-50ec4b4078ac")
+			(uuid "a1c7fc0d-fab6-405c-b1fc-93c9735700ad")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20034,7 +20034,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "3f173f58-684c-4cd1-8011-f26753dd6abc")
-		(at 104.2435 33.49625 180)
+		(at 77.0725 30.95625 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_3"
 			(at -4.25 1.75 0)
@@ -25519,7 +25519,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "481298cb-a1c1-4c26-8527-3ed8807b2d47")
-		(at -104.188824 91.717 180)
+		(at 133.6675 50.00625 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_T1"
 			(at -4.25 1.75 0)
@@ -26119,7 +26119,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "48e6d357-ec84-4815-9318-e35d9773dbd6")
-		(at 129.5975 33.49625 180)
+		(at 96.1225 30.95625 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_4"
 			(at -4.25 1.75 0)
@@ -28953,7 +28953,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "4fbcc218-f5ed-42cd-b91e-a8549fd8ed62")
-		(at -87.038824 136.867 180)
+		(at 57.4675 50.00625 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_Q1"
 			(at -4.25 1.75 0)
@@ -33569,7 +33569,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "6566ca5f-c408-47f1-ab32-2232af80ff5f")
-		(at -87.038824 151.917 180)
+		(at 114.6175 50.00625 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_R1"
 			(at -4.25 1.75 0)
@@ -37818,12 +37818,12 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "74ae647d-9848-49b3-931d-d6eff5a0fc73")
-		(at -104.188824 106.767 180)
+		(at 30 50.00625 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_TAB1"
 			(at -4.25 1.75 0)
 			(layer "B.SilkS")
-			(uuid "17cacfaf-bf7c-42a9-baa7-93912915c851")
+			(uuid "5cef02c8-829b-457e-baee-ebf9710b4200")
 			(effects
 				(font
 					(size 1 1)
@@ -37835,7 +37835,7 @@
 		(property "Value" "MX_SW_HS"
 			(at 0 0 0)
 			(layer "B.Fab")
-			(uuid "c406cc97-46e7-46ee-b62d-43e3382a5cdb")
+			(uuid "c18fde7f-84d4-4d72-ba07-9017afdf3096")
 			(effects
 				(font
 					(size 1 1)
@@ -37848,7 +37848,7 @@
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "5ed17478-232e-4a2f-93df-1d2532f8163a")
+			(uuid "d7a9e133-07d2-48e0-80ee-3e0a590be291")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37861,7 +37861,7 @@
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "43e418c9-bbf8-41ad-b5a6-c94bd73632aa")
+			(uuid "18b543b9-4c83-4367-8495-2e58cf583b9d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39072,7 +39072,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "79a8659a-255a-4577-9bd6-f34e692b6902")
-		(at -52.738824 136.867 180)
+		(at 95.5675 50.00625 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_E1"
 			(at -4.25 1.75 0)
@@ -49457,7 +49457,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "a03dbe7b-61f2-4aab-b05c-30ccac72195d")
-		(at -35.588824 151.917 180)
+		(at 286.0675 30.95625 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_BKSP1"
 			(at -4.25 1.75 0)
@@ -50389,7 +50389,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "a4d613e2-f9f3-4a31-a96e-c464caf584ef")
-		(at -87.038824 31.517 180)
+		(at 229.4725 30.95625 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_MINUS1"
 			(at -4.25 1.75 0)
@@ -52853,7 +52853,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "ad577c37-bce4-498f-b923-861f152c31c4")
-		(at -121.338824 61.617 180)
+		(at 152.7175 50.00625 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_Y1"
 			(at -4.25 1.75 0)
@@ -55294,7 +55294,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "b2b5f8d1-ddd7-476e-bf54-ea865183f81a")
-		(at -87.038824 121.817 180)
+		(at 248.5 30.95625 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_PLUS1"
 			(at -4.25 1.75 0)
@@ -56816,7 +56816,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "b707b566-333e-4ffc-ab5f-f0fc450f84fb")
-		(at 191.3725 33.49625 180)
+		(at 153.2725 30.95625 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_7"
 			(at -4.25 1.75 0)
@@ -59237,7 +59237,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "bfa1d042-587f-4da5-b086-d609cb60162c")
-		(at 153.2725 33.49625 180)
+		(at 115.1725 30.95625 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_5"
 			(at -4.25 1.75 0)
@@ -64163,7 +64163,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "d13ea200-9376-4129-b5a6-78e07413c2b8")
-		(at 229.4725 33.49625 180)
+		(at 191.3725 30.95625 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_9"
 			(at -4.25 1.75 0)
@@ -73565,7 +73565,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "ff83d47c-b711-4775-8c41-3b97cac217e1")
-		(at -121.338824 16.467 180)
+		(at 76.5175 50.00625 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_W1"
 			(at -4.25 1.75 0)
