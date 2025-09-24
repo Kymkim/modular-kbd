@@ -18,8 +18,12 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "dma.h"
+#include "i2c.h"
+#include "tim.h"
+#include "usart.h"
 #include "usb_device.h"
-#include <string.h>
+#include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -28,22 +32,29 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-typedef struct{
-  uint8_t MODIFIER;
-  uint8_t RESERVED;
-  uint8_t KEYPRESS[12];
-}HIDReport;
 
+// HID (Human Interface Device) report structure
 typedef struct {
-	GPIO_TypeDef* GPIOx;
-	uint16_t PIN;
-}SwitchPins;
+  uint8_t MODIFIER;       // Modifier keys (e.g., Ctrl, Shift, Alt, GUI/Win)
+  uint8_t RESERVED;       // Reserved for alignment, always set to 0
+  uint8_t KEYPRESS[12];   // Array holding up to 12 keycodes being pressed
+} HIDReport;
 
+
+// Switch pin mapping structure
 typedef struct {
-	uint16_t depth;
-	uint16_t msgType;
-	uint8_t keypress[12];
-}UARTMessage;
+  GPIO_TypeDef* GPIOx;    // Pointer to GPIO port (e.g., GPIOA, GPIOB)
+  uint16_t PIN;           // Pin number on the GPIO port
+} SwitchPins;
+
+
+// UART message structure for sending/receiving key events
+typedef struct {
+  uint16_t DEPTH;         // Custom field: could represent queue depth, layer, or message size
+  uint16_t TYPE;          // Message type identifier (defines what kind of message this is)
+  uint8_t KEYPRESS[12];   // Keypress data (similar to HIDReport, but for UART transmission)
+} UARTMessage;
+
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -56,52 +67,25 @@ typedef struct {
 #define ROW 6
 #define COL 5
 #define MAXQUEUE 256
-
 #define MODE_INACTIVE 0
 #define MODE_MAINBOARD 1
 #define MODE_ACTIVE 2
 #define MODE_DEBUG 3
-
 #define UART_RX_BUFF_SIZE 64
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
+
 /* USER CODE BEGIN PV */
-I2C_HandleTypeDef hi2c1;
-
-TIM_HandleTypeDef htim2;
-TIM_HandleTypeDef htim3;
-
-UART_HandleTypeDef huart4;
-UART_HandleTypeDef huart5;
-UART_HandleTypeDef huart1;
-UART_HandleTypeDef huart2;
-UART_HandleTypeDef huart3;
-
-DMA_HandleTypeDef hdma_uart4_tx;
-DMA_HandleTypeDef hdma_uart4_rx;
-DMA_HandleTypeDef hdma_uart5_rx;
-DMA_HandleTypeDef hdma_uart5_tx;
-DMA_HandleTypeDef hdma_usart1_rx;
-DMA_HandleTypeDef hdma_usart1_tx;
-DMA_HandleTypeDef hdma_usart2_rx;
-DMA_HandleTypeDef hdma_usart2_tx;
-
-
-uint8_t UART1_RX_BUFF[UART_RX_BUFF_SIZE];
-uint8_t UART2_RX_BUFF[UART_RX_BUFF_SIZE];
-uint8_t UART4_RX_BUFF[UART_RX_BUFF_SIZE];
-uint8_t UART5_RX_BUFF[UART_RX_BUFF_SIZE];
-
-uint16_t UART1_BUFF_LASTPOS = 0;
-uint16_t UART2_BUFF_LASTPOS = 0;
-uint16_t UART4_BUFF_LASTPOS = 0;
-uint16_t UART5_BUFF_LASTPOS = 0;
 
 // Initialize HID report properly
 HIDReport REPORT = {0, 0, {0}};
+UARTMessage RX5Msg; //Buffer for messages on uart5
+UARTMessage RX1Msg; //Buffer for messages on uart5
+UARTMessage RX2Msg; //Buffer for messages on uart5
+UARTMessage RX4Msg; //Buffer for messages on uart5
 
-// Initialize column pins array (no pointer needed)
+
 SwitchPins ROW_PINS[ROW] = {
 	{GPIOB, GPIO_PIN_10},
 	{GPIOB, GPIO_PIN_2},
@@ -111,7 +95,6 @@ SwitchPins ROW_PINS[ROW] = {
     {GPIOC, GPIO_PIN_4},
 };
 
-// Initialize row pins array
 SwitchPins COLUMN_PINS[COL] = {
 	{GPIOA, GPIO_PIN_8},
 	{GPIOC, GPIO_PIN_9},
@@ -131,31 +114,25 @@ uint8_t KEYCODES[ROW][COL] = {
 };
 
 uint16_t DEPTH = 0;
+uint16_t PORT_DEPTH[] = {0xFF, 0xFF, 0xFF, 0xFF};
+UART_HandleTypeDef* PARENT;
+UART_HandleTypeDef* PORTS[] = {&huart5, &huart1, &huart2, &huart4};
 
 extern USBD_HandleTypeDef hUsbDeviceFS;
-volatile uint8_t MODE = MODE_ACTIVE;
+volatile uint8_t MODE = MODE_INACTIVE;
 
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
-/* USER CODE BEGIN PFP */
 void SystemClock_Config(void);
-static void MX_GPIO_Init(void);
-static void MX_TIM2_Init(void);
-static void MX_TIM3_Init(void);
-static void MX_UART4_Init(void);
-static void MX_UART5_Init(void);
-static void MX_USART1_UART_Init(void);
-static void MX_USART2_UART_Init(void);
-static void MX_I2C1_Init(void);
-static void MX_DMA_Init(void);
-static void MX_USART3_UART_Init(void);
-
+/* USER CODE BEGIN PFP */
 void handleUARTMessages(uint8_t *data, UART_HandleTypeDef *huart);
 void UART_DMA_SendReport(UART_HandleTypeDef *huart);
 void addUSBReport(uint8_t usageID);
 void matrixScan(void);
 void resetReport(void);
+void sendMessage(void);
+void findBestParent();
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -192,20 +169,22 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_DMA_Init();
   MX_TIM2_Init();
   MX_TIM3_Init();
-  MX_DMA_Init();
   MX_UART4_Init();
   MX_UART5_Init();
   MX_USART1_UART_Init();
   MX_USART2_UART_Init();
   MX_I2C1_Init();
-  MX_USART3_UART_Init();
   MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 2 */
 
   //Enable UART RX DMA for all ports
-
+  HAL_UART_Receive_DMA(&huart1, (uint8_t*)&RX1Msg, sizeof(UARTMessage));
+  HAL_UART_Receive_DMA(&huart2, (uint8_t*)&RX2Msg, sizeof(UARTMessage));
+  HAL_UART_Receive_DMA(&huart4, (uint8_t*)&RX4Msg, sizeof(UARTMessage));
+  HAL_UART_Receive_DMA(&huart5, (uint8_t*)&RX5Msg, sizeof(UARTMessage));
 
   /* USER CODE END 2 */
 
@@ -213,47 +192,45 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  if (MODE != MODE_INACTIVE){
-		  //Reset Report
+	  switch (MODE){
+	  case MODE_ACTIVE:
 		  resetReport();
-
-		  //Query Neighbors
-		  UARTMessage query;
-		  query.depth = DEPTH;
-		  query.msgType = 0x01;
-		  memset(query.keypress, 1,sizeof(query.keypress));
-
 		  matrixScan();
+		  break;
 
-		  switch (MODE){
-
-		  	  case MODE_ACTIVE:
-		  		HAL_UART_Transmit_DMA(&huart4, (uint8_t*)&query, sizeof(query));
-				break;
-
-		  	  case MODE_MAINBOARD:
-				//Send to USB
-				USBD_HID_SendReport(&hUsbDeviceFS, (uint8_t*)&REPORT, sizeof(REPORT));
-				break;
-		  }
-
-		  //TODO: Send heartbeat signal to child nodes
-
-
-	  }else{	//INACTIVE Mode
-		  //Check if the USB is enumerated/connected.
-		  if (hUsbDeviceFS.dev_state == USBD_STATE_CONFIGURED) {
+	  case MODE_INACTIVE:
+		  //If the module is connected through the USB then mode is mainboard
+		  if(hUsbDeviceFS.dev_state == USBD_STATE_CONFIGURED){
 			  MODE = MODE_MAINBOARD;
-			  //Enable DMA RX
-			  HAL_UART_Receive_DMA(&huart1, UART1_RX_BUFF, UART_RX_BUFF_SIZE);
-			  HAL_UART_Receive_DMA(&huart2, UART2_RX_BUFF, UART_RX_BUFF_SIZE);
-			  HAL_UART_Receive_DMA(&huart4, UART4_RX_BUFF, UART_RX_BUFF_SIZE);
-			  HAL_UART_Receive_DMA(&huart5, UART5_RX_BUFF, UART_RX_BUFF_SIZE);
+			  DEPTH = 0;
 		  }else{
+			  //TODO: Look for a parent module...
 
+			  UARTMessage REQ;
+			  REQ.DEPTH = 0;
+			  REQ.TYPE = 0xFF;	//Message code for request is 0xFF
+			  memset(REQ.KEYPRESS, 0, sizeof(REQ.KEYPRESS));
+
+			  //Send querty for parent module
+			  HAL_UART_Transmit_DMA(&huart1, (uint8_t*)&REQ, sizeof(REQ));
+			  HAL_UART_Transmit_DMA(&huart2, (uint8_t*)&REQ, sizeof(REQ));
+			  HAL_UART_Transmit_DMA(&huart4, (uint8_t*)&REQ, sizeof(REQ));
+			  HAL_UART_Transmit_DMA(&huart5, (uint8_t*)&REQ, sizeof(REQ));
+			  HAL_Delay(500);
+			  findBestParent(); //So true...
 		  }
+		  break;
+
+	  case MODE_MAINBOARD:
+		  resetReport();
+		  matrixScan();
+		  USBD_HID_SendReport(&hUsbDeviceFS, (uint8_t*)&REPORT, sizeof(REPORT));
+		  break;
 	  }
-	  HAL_Delay(USBD_HID_GetPollingInterval(&hUsbDeviceFS));
+	  HAL_Delay(50);
+    /* USER CODE END WHILE */
+
+    /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
 }
@@ -304,429 +281,51 @@ void SystemClock_Config(void)
   }
 }
 
-/**
-  * @brief I2C1 Initialization Function
-  * @param None
-  * @retval None
-  */
-static void MX_I2C1_Init(void)
-{
-
-  /* USER CODE BEGIN I2C1_Init 0 */
-
-  /* USER CODE END I2C1_Init 0 */
-
-  /* USER CODE BEGIN I2C1_Init 1 */
-
-  /* USER CODE END I2C1_Init 1 */
-  hi2c1.Instance = I2C1;
-  hi2c1.Init.ClockSpeed = 100000;
-  hi2c1.Init.DutyCycle = I2C_DUTYCYCLE_2;
-  hi2c1.Init.OwnAddress1 = 0;
-  hi2c1.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
-  hi2c1.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
-  hi2c1.Init.OwnAddress2 = 0;
-  hi2c1.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
-  hi2c1.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
-  if (HAL_I2C_Init(&hi2c1) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /* USER CODE BEGIN I2C1_Init 2 */
-
-  /* USER CODE END I2C1_Init 2 */
-
-}
-
-/**
-  * @brief TIM2 Initialization Function
-  * @param None
-  * @retval None
-  */
-static void MX_TIM2_Init(void)
-{
-
-  /* USER CODE BEGIN TIM2_Init 0 */
-
-  /* USER CODE END TIM2_Init 0 */
-
-  TIM_MasterConfigTypeDef sMasterConfig = {0};
-  TIM_OC_InitTypeDef sConfigOC = {0};
-
-  /* USER CODE BEGIN TIM2_Init 1 */
-
-  /* USER CODE END TIM2_Init 1 */
-  htim2.Instance = TIM2;
-  htim2.Init.Prescaler = 0;
-  htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim2.Init.Period = 4294967295;
-  htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
-  htim2.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
-  if (HAL_TIM_OC_Init(&htim2) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
-  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
-  if (HAL_TIMEx_MasterConfigSynchronization(&htim2, &sMasterConfig) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  sConfigOC.OCMode = TIM_OCMODE_FORCED_ACTIVE;
-  sConfigOC.Pulse = 0;
-  sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
-  sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
-  if (HAL_TIM_OC_ConfigChannel(&htim2, &sConfigOC, TIM_CHANNEL_1) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /* USER CODE BEGIN TIM2_Init 2 */
-
-  /* USER CODE END TIM2_Init 2 */
-  HAL_TIM_MspPostInit(&htim2);
-
-}
-
-/**
-  * @brief TIM3 Initialization Function
-  * @param None
-  * @retval None
-  */
-static void MX_TIM3_Init(void)
-{
-
-  /* USER CODE BEGIN TIM3_Init 0 */
-
-  /* USER CODE END TIM3_Init 0 */
-
-  TIM_Encoder_InitTypeDef sConfig = {0};
-  TIM_MasterConfigTypeDef sMasterConfig = {0};
-
-  /* USER CODE BEGIN TIM3_Init 1 */
-
-  /* USER CODE END TIM3_Init 1 */
-  htim3.Instance = TIM3;
-  htim3.Init.Prescaler = 0;
-  htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim3.Init.Period = 65535;
-  htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
-  htim3.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
-  sConfig.EncoderMode = TIM_ENCODERMODE_TI1;
-  sConfig.IC1Polarity = TIM_ICPOLARITY_RISING;
-  sConfig.IC1Selection = TIM_ICSELECTION_DIRECTTI;
-  sConfig.IC1Prescaler = TIM_ICPSC_DIV1;
-  sConfig.IC1Filter = 0;
-  sConfig.IC2Polarity = TIM_ICPOLARITY_RISING;
-  sConfig.IC2Selection = TIM_ICSELECTION_DIRECTTI;
-  sConfig.IC2Prescaler = TIM_ICPSC_DIV1;
-  sConfig.IC2Filter = 0;
-  if (HAL_TIM_Encoder_Init(&htim3, &sConfig) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
-  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
-  if (HAL_TIMEx_MasterConfigSynchronization(&htim3, &sMasterConfig) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /* USER CODE BEGIN TIM3_Init 2 */
-
-  /* USER CODE END TIM3_Init 2 */
-
-}
-
-/**
-  * @brief UART4 Initialization Function
-  * @param None
-  * @retval None
-  */
-static void MX_UART4_Init(void)
-{
-
-  /* USER CODE BEGIN UART4_Init 0 */
-
-  /* USER CODE END UART4_Init 0 */
-
-  /* USER CODE BEGIN UART4_Init 1 */
-
-  /* USER CODE END UART4_Init 1 */
-  huart4.Instance = UART4;
-  huart4.Init.BaudRate = 115200;
-  huart4.Init.WordLength = UART_WORDLENGTH_8B;
-  huart4.Init.StopBits = UART_STOPBITS_1;
-  huart4.Init.Parity = UART_PARITY_NONE;
-  huart4.Init.Mode = UART_MODE_TX_RX;
-  huart4.Init.HwFlowCtl = UART_HWCONTROL_NONE;
-  huart4.Init.OverSampling = UART_OVERSAMPLING_16;
-  if (HAL_UART_Init(&huart4) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /* USER CODE BEGIN UART4_Init 2 */
-
-  /* USER CODE END UART4_Init 2 */
-
-}
-
-/**
-  * @brief UART5 Initialization Function
-  * @param None
-  * @retval None
-  */
-static void MX_UART5_Init(void)
-{
-
-  /* USER CODE BEGIN UART5_Init 0 */
-
-  /* USER CODE END UART5_Init 0 */
-
-  /* USER CODE BEGIN UART5_Init 1 */
-
-  /* USER CODE END UART5_Init 1 */
-  huart5.Instance = UART5;
-  huart5.Init.BaudRate = 115200;
-  huart5.Init.WordLength = UART_WORDLENGTH_8B;
-  huart5.Init.StopBits = UART_STOPBITS_1;
-  huart5.Init.Parity = UART_PARITY_NONE;
-  huart5.Init.Mode = UART_MODE_TX_RX;
-  huart5.Init.HwFlowCtl = UART_HWCONTROL_NONE;
-  huart5.Init.OverSampling = UART_OVERSAMPLING_16;
-  if (HAL_UART_Init(&huart5) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /* USER CODE BEGIN UART5_Init 2 */
-
-  /* USER CODE END UART5_Init 2 */
-
-}
-
-/**
-  * @brief USART1 Initialization Function
-  * @param None
-  * @retval None
-  */
-static void MX_USART1_UART_Init(void)
-{
-
-  /* USER CODE BEGIN USART1_Init 0 */
-
-  /* USER CODE END USART1_Init 0 */
-
-  /* USER CODE BEGIN USART1_Init 1 */
-
-  /* USER CODE END USART1_Init 1 */
-  huart1.Instance = USART1;
-  huart1.Init.BaudRate = 115200;
-  huart1.Init.WordLength = UART_WORDLENGTH_8B;
-  huart1.Init.StopBits = UART_STOPBITS_1;
-  huart1.Init.Parity = UART_PARITY_NONE;
-  huart1.Init.Mode = UART_MODE_TX_RX;
-  huart1.Init.HwFlowCtl = UART_HWCONTROL_NONE;
-  huart1.Init.OverSampling = UART_OVERSAMPLING_16;
-  if (HAL_UART_Init(&huart1) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /* USER CODE BEGIN USART1_Init 2 */
-
-  /* USER CODE END USART1_Init 2 */
-
-}
-
-/**
-  * @brief USART2 Initialization Function
-  * @param None
-  * @retval None
-  */
-static void MX_USART2_UART_Init(void)
-{
-
-  /* USER CODE BEGIN USART2_Init 0 */
-
-  /* USER CODE END USART2_Init 0 */
-
-  /* USER CODE BEGIN USART2_Init 1 */
-
-  /* USER CODE END USART2_Init 1 */
-  huart2.Instance = USART2;
-  huart2.Init.BaudRate = 115200;
-  huart2.Init.WordLength = UART_WORDLENGTH_8B;
-  huart2.Init.StopBits = UART_STOPBITS_1;
-  huart2.Init.Parity = UART_PARITY_NONE;
-  huart2.Init.Mode = UART_MODE_TX_RX;
-  huart2.Init.HwFlowCtl = UART_HWCONTROL_NONE;
-  huart2.Init.OverSampling = UART_OVERSAMPLING_16;
-  if (HAL_UART_Init(&huart2) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /* USER CODE BEGIN USART2_Init 2 */
-
-  /* USER CODE END USART2_Init 2 */
-
-}
-
-/**
-  * @brief USART3 Initialization Function
-  * @param None
-  * @retval None
-  */
-static void MX_USART3_UART_Init(void)
-{
-
-  /* USER CODE BEGIN USART3_Init 0 */
-
-  /* USER CODE END USART3_Init 0 */
-
-  /* USER CODE BEGIN USART3_Init 1 */
-
-  /* USER CODE END USART3_Init 1 */
-  huart3.Instance = USART3;
-  huart3.Init.BaudRate = 115200;
-  huart3.Init.WordLength = UART_WORDLENGTH_8B;
-  huart3.Init.StopBits = UART_STOPBITS_1;
-  huart3.Init.Parity = UART_PARITY_NONE;
-  huart3.Init.Mode = UART_MODE_TX_RX;
-  huart3.Init.HwFlowCtl = UART_HWCONTROL_NONE;
-  huart3.Init.OverSampling = UART_OVERSAMPLING_16;
-  if (HAL_UART_Init(&huart3) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /* USER CODE BEGIN USART3_Init 2 */
-
-  /* USER CODE END USART3_Init 2 */
-}
-
-static void MX_DMA_Init(void)
-{
-
-  /* DMA controller clock enable */
-  __HAL_RCC_DMA2_CLK_ENABLE();
-  __HAL_RCC_DMA1_CLK_ENABLE();
-
-  /* DMA interrupt init */
-  /* DMA1_Stream0_IRQn interrupt configuration */
-  HAL_NVIC_SetPriority(DMA1_Stream0_IRQn, 0, 0);
-  HAL_NVIC_EnableIRQ(DMA1_Stream0_IRQn);
-  /* DMA1_Stream2_IRQn interrupt configuration */
-  HAL_NVIC_SetPriority(DMA1_Stream2_IRQn, 0, 0);
-  HAL_NVIC_EnableIRQ(DMA1_Stream2_IRQn);
-  /* DMA1_Stream4_IRQn interrupt configuration */
-  HAL_NVIC_SetPriority(DMA1_Stream4_IRQn, 0, 0);
-  HAL_NVIC_EnableIRQ(DMA1_Stream4_IRQn);
-  /* DMA1_Stream5_IRQn interrupt configuration */
-  HAL_NVIC_SetPriority(DMA1_Stream5_IRQn, 0, 0);
-  HAL_NVIC_EnableIRQ(DMA1_Stream5_IRQn);
-  /* DMA1_Stream6_IRQn interrupt configuration */
-  HAL_NVIC_SetPriority(DMA1_Stream6_IRQn, 0, 0);
-  HAL_NVIC_EnableIRQ(DMA1_Stream6_IRQn);
-  /* DMA1_Stream7_IRQn interrupt configuration */
-  HAL_NVIC_SetPriority(DMA1_Stream7_IRQn, 0, 0);
-  HAL_NVIC_EnableIRQ(DMA1_Stream7_IRQn);
-  /* DMA2_Stream2_IRQn interrupt configuration */
-  HAL_NVIC_SetPriority(DMA2_Stream2_IRQn, 0, 0);
-  HAL_NVIC_EnableIRQ(DMA2_Stream2_IRQn);
-  /* DMA2_Stream7_IRQn interrupt configuration */
-  HAL_NVIC_SetPriority(DMA2_Stream7_IRQn, 0, 0);
-  HAL_NVIC_EnableIRQ(DMA2_Stream7_IRQn);
-
-}
-
-/**
-  * @brief GPIO Initialization Function
-  * @param None
-  * @retval None
-  */
-static void MX_GPIO_Init(void)
-{
-  GPIO_InitTypeDef GPIO_InitStruct = {0};
-  /* USER CODE BEGIN MX_GPIO_Init_1 */
-
-  /* USER CODE END MX_GPIO_Init_1 */
-
-  /* GPIO Ports Clock Enable */
-  __HAL_RCC_GPIOH_CLK_ENABLE();
-  __HAL_RCC_GPIOA_CLK_ENABLE();
-  __HAL_RCC_GPIOC_CLK_ENABLE();
-  __HAL_RCC_GPIOB_CLK_ENABLE();
-  __HAL_RCC_GPIOD_CLK_ENABLE();
-
-  /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOC, GPIO_PIN_6|GPIO_PIN_7|GPIO_PIN_8|GPIO_PIN_9, GPIO_PIN_RESET);
-
-  /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_RESET);
-
-  /*Configure GPIO pins : PC4 PC5 */
-  GPIO_InitStruct.Pin = GPIO_PIN_4|GPIO_PIN_5;
-  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
-  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
-
-  /*Configure GPIO pins : PB0 PB1 PB2 PB10 */
-  GPIO_InitStruct.Pin = GPIO_PIN_0|GPIO_PIN_1|GPIO_PIN_2|GPIO_PIN_10;
-  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
-  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-
-  /*Configure GPIO pins : PC6 PC7 PC8 PC9 */
-  GPIO_InitStruct.Pin = GPIO_PIN_6|GPIO_PIN_7|GPIO_PIN_8|GPIO_PIN_9;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
-
-  /*Configure GPIO pin : PA8 */
-  GPIO_InitStruct.Pin = GPIO_PIN_8;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
-
-  /* USER CODE BEGIN MX_GPIO_Init_2 */
-
-  /* USER CODE END MX_GPIO_Init_2 */
-}
-
 /* USER CODE BEGIN 4 */
 //UART Message Requests Goes Here
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart){
-    if(huart->Instance == USART1){
-        handleUARTMessages(UART1_RX_BUFF, huart);
-        HAL_UART_Receive_DMA(huart, UART1_RX_BUFF, UART_RX_BUFF_SIZE);
-    }
+	//Parse recieved message
+	if (huart->Instance == USART1) {
+	    handleUARTMessage(&RX1Msg);
+	    HAL_UART_Receive_DMA(&huart1, (uint8_t*)&RX1Msg, sizeof(UARTMessage));
+	}
+	else if (huart->Instance == USART2) {
+		handleUARTMessage(&RX2Msg);
+	    HAL_UART_Receive_DMA(&huart2, (uint8_t*)&RX2Msg, sizeof(UARTMessage));
+	}
+	else if (huart->Instance == USART4) {
+		handleUARTMessage(&RX4Msg);
+	    HAL_UART_Receive_DMA(&huart4, (uint8_t*)&RX4Msg, sizeof(UARTMessage));
+	}
+	else if (huart->Instance == USART5) {
+		handleUARTMessage(&RX5Msg);
+	    HAL_UART_Receive_DMA(&huart5, (uint8_t*)&RX5Msg, sizeof(UARTMessage));
+	}
 }
 
+void findBestParent(){
+  //Find least depth parent
+  uint16_t least_val = 0xFF;
+  UART_HandleTypeDef* least_port = NULL;
+  for(uint8_t i = 0; i < 4; i++){
+	  if(PORT_DEPTH[i]<least_val){
+		  least_port = PORTS[i];
+		  least_val = PORT_DEPTH[i];
+	  }
+  }
+
+  //Assign if valid
+  if(least_val < 0xFF){
+	  PARENT = least_port;
+	  DEPTH = least_val + 1;
+  }
+}
+
+//TODO: A function that gets called by RX Interrupt to handle messages that get sent
 void handleUARTMessages(uint8_t *data, UART_HandleTypeDef *sender){
-    UARTMessage msg;
-    UARTMessage res;
-
-    // Parse incoming message
-    msg.depth = (data[0]<<8) | data[1];
-    msg.msgType = (data[2]<<8) | data[3];
-    memcpy(msg.keypress, &data[4], 12);
-
-    switch(msg.msgType){
-        case 0x01: // Request keypress
-            if (sender->gState == HAL_UART_STATE_READY) {
-                res.depth = DEPTH;
-                res.msgType = 0x10;
-                memcpy(res.keypress, &REPORT.KEYPRESS, sizeof(REPORT.KEYPRESS));
-                // Send safely using DMA
-                HAL_UART_Transmit_DMA(sender, (uint8_t *)&res, sizeof(res));
-            }
-            break;
-        case 0x10:	//Keypress recieved
-        	//Merge keypresses
-        	for (int i = 0; i < 12; i++) {
-        	    REPORT.KEYPRESS[i] |= msg.keypress[i];
-        	}
-        	break;
-    }
+	//TODO: Handle messages coming from devices based on the message type.
 }
+
 void addUSBReport(uint8_t usageID){
   if(usageID < 0x04 || usageID > 0x73) return; //Usage ID is out of bounds
   uint16_t bit_index = usageID - 0x04; //Offset, UsageID starts with 0x04. Gives us the actual value of the bit

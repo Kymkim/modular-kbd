@@ -1,0 +1,329 @@
+/* USER CODE BEGIN Header */
+/**
+  ******************************************************************************
+  * @file           : main.c
+  * @brief          : Main program body
+  ******************************************************************************
+  * @attention
+  *
+  * Copyright (c) 2025 STMicroelectronics.
+  * All rights reserved.
+  *
+  * This software is licensed under terms that can be found in the LICENSE file
+  * in the root directory of this software component.
+  * If no LICENSE file comes with this software, it is provided AS-IS.
+  *
+  ******************************************************************************
+  */
+/* USER CODE END Header */
+/* Includes ------------------------------------------------------------------*/
+#include "main.h"
+#include "dma.h"
+#include "i2c.h"
+#include "tim.h"
+#include "usart.h"
+#include "usb_device.h"
+#include "gpio.h"
+
+/* Private includes ----------------------------------------------------------*/
+/* USER CODE BEGIN Includes */
+#include "usbd_hid.h"
+/* USER CODE END Includes */
+
+/* Private typedef -----------------------------------------------------------*/
+/* USER CODE BEGIN PTD */
+
+// HID (Human Interface Device) report structure
+typedef struct {
+  uint8_t MODIFIER;       // Modifier keys (e.g., Ctrl, Shift, Alt, GUI/Win)
+  uint8_t RESERVED;       // Reserved for alignment, always set to 0
+  uint8_t KEYPRESS[12];   // Array holding up to 12 keycodes being pressed
+} HIDReport;
+
+
+// Switch pin mapping structure
+typedef struct {
+  GPIO_TypeDef* GPIOx;    // Pointer to GPIO port (e.g., GPIOA, GPIOB)
+  uint16_t PIN;           // Pin number on the GPIO port
+} SwitchPins;
+
+
+// UART message structure for sending/receiving key events
+typedef struct {
+  uint16_t DEPTH;         // Custom field: could represent queue depth, layer, or message size
+  uint16_t TYPE;          // Message type identifier (defines what kind of message this is)
+  uint8_t KEYPRESS[12];   // Keypress data (similar to HIDReport, but for UART transmission)
+} UARTMessage;
+
+/* USER CODE END PTD */
+
+/* Private define ------------------------------------------------------------*/
+/* USER CODE BEGIN PD */
+
+/* USER CODE END PD */
+
+/* Private macro -------------------------------------------------------------*/
+/* USER CODE BEGIN PM */
+#define ROW 6
+#define COL 5
+#define MAXQUEUE 256
+#define MODE_INACTIVE 0
+#define MODE_MAINBOARD 1
+#define MODE_ACTIVE 2
+#define MODE_DEBUG 3
+#define UART_RX_BUFF_SIZE 64
+/* USER CODE END PM */
+
+/* Private variables ---------------------------------------------------------*/
+
+/* USER CODE BEGIN PV */
+
+// Initialize HID report properly
+HIDReport REPORT = {0, 0, {0}};
+
+SwitchPins ROW_PINS[ROW] = {
+	{GPIOB, GPIO_PIN_10},
+	{GPIOB, GPIO_PIN_2},
+	{GPIOB, GPIO_PIN_1},
+	{GPIOB, GPIO_PIN_0},
+    {GPIOC, GPIO_PIN_5},
+    {GPIOC, GPIO_PIN_4},
+};
+
+SwitchPins COLUMN_PINS[COL] = {
+	{GPIOA, GPIO_PIN_8},
+	{GPIOC, GPIO_PIN_9},
+	{GPIOC, GPIO_PIN_8},
+    {GPIOC, GPIO_PIN_7},
+	{GPIOC, GPIO_PIN_5}
+};
+
+// Initialize keycodes array
+uint8_t KEYCODES[ROW][COL] = {
+    {0x00,		KEY_F13, 		KEY_F14, 		KEY_F15,			KEY_F16},
+	{KEY_F17,	NUM_LOCK,		KEYPAD_SLASH,	KEYPAD_ASTERISK, 	KEYPAD_MINUS},
+	{KEY_F18, 	KEYPAD_7,		KEYPAD_8,		KEYPAD_9,			KEYPAD_PLUS},
+	{KEY_F19,	KEYPAD_4,		KEYPAD_5,		KEYPAD_6,			0x00},
+	{KEY_F20,	KEYPAD_1,		KEYPAD_2,		KEYPAD_3,			KEYPAD_ENTER},
+	{KEY_F21,	KEYPAD_0,		0x00,			KEYPAD_DOT,			0x00}
+};
+
+uint16_t DEPTH = 0;
+
+extern USBD_HandleTypeDef hUsbDeviceFS;
+volatile uint8_t MODE = MODE_INACTIVE;
+
+/* USER CODE END PV */
+
+/* Private function prototypes -----------------------------------------------*/
+void SystemClock_Config(void);
+/* USER CODE BEGIN PFP */
+void handleUARTMessages(uint8_t *data, UART_HandleTypeDef *huart);
+void UART_DMA_SendReport(UART_HandleTypeDef *huart);
+void addUSBReport(uint8_t usageID);
+void matrixScan(void);
+void resetReport(void);
+void sendMessage(void);
+/* USER CODE END PFP */
+
+/* Private user code ---------------------------------------------------------*/
+/* USER CODE BEGIN 0 */
+
+/* USER CODE END 0 */
+
+/**
+  * @brief  The application entry point.
+  * @retval int
+  */
+int main(void)
+{
+
+  /* USER CODE BEGIN 1 */
+
+  /* USER CODE END 1 */
+
+  /* MCU Configuration--------------------------------------------------------*/
+
+  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
+  HAL_Init();
+
+  /* USER CODE BEGIN Init */
+
+  /* USER CODE END Init */
+
+  /* Configure the system clock */
+  SystemClock_Config();
+
+  /* USER CODE BEGIN SysInit */
+
+  /* USER CODE END SysInit */
+
+  /* Initialize all configured peripherals */
+  MX_GPIO_Init();
+  MX_DMA_Init();
+  MX_TIM2_Init();
+  MX_TIM3_Init();
+  MX_UART4_Init();
+  MX_UART5_Init();
+  MX_USART1_UART_Init();
+  MX_USART2_UART_Init();
+  MX_I2C1_Init();
+  MX_USB_DEVICE_Init();
+  /* USER CODE BEGIN 2 */
+
+  UARTMessage REQ;
+  REQ.TYPE = 0xFF;	//Message code for request is 0xFF
+  HAL_UART_Transmit_DMA(&huart4, (uint8_t*)&REQ, sizeof(REQ));
+
+
+  /* USER CODE END 2 */
+
+  /* Infinite loop */
+  /* USER CODE BEGIN WHILE */
+  while (1)
+  {
+	  switch (MODE){
+	  case MODE_ACTIVE:
+		  resetReport();
+		  matrixScan();
+		  break;
+
+	  case MODE_INACTIVE:
+		  //If the module is connected through the USB then mode is mainboard
+		  if(hUsbDeviceFS.dev_state == USBD_STATE_CONFIGURED){
+			  MODE = MODE_MAINBOARD;
+			  DEPTH = 0;
+		  }else{
+			  //TODO: Look for a parent module...			  UARTMessage REQ;
+		  }
+		  break;
+
+	  case MODE_MAINBOARD:
+		  resetReport();
+		  matrixScan();
+		  USBD_HID_SendReport(&hUsbDeviceFS, (uint8_t*)&REPORT, sizeof(REPORT));
+		  break;
+	  }
+	  HAL_Delay(50);
+    /* USER CODE END WHILE */
+
+    /* USER CODE BEGIN 3 */
+  }
+  /* USER CODE END 3 */
+}
+
+/**
+  * @brief System Clock Configuration
+  * @retval None
+  */
+void SystemClock_Config(void)
+{
+  RCC_OscInitTypeDef RCC_OscInitStruct = {0};
+  RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
+
+  /** Configure the main internal regulator output voltage
+  */
+  __HAL_RCC_PWR_CLK_ENABLE();
+  __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE3);
+
+  /** Initializes the RCC Oscillators according to the specified parameters
+  * in the RCC_OscInitTypeDef structure.
+  */
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
+  RCC_OscInitStruct.HSEState = RCC_HSE_ON;
+  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
+  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
+  RCC_OscInitStruct.PLL.PLLM = 4;
+  RCC_OscInitStruct.PLL.PLLN = 96;
+  RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
+  RCC_OscInitStruct.PLL.PLLQ = 4;
+  RCC_OscInitStruct.PLL.PLLR = 2;
+  if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Initializes the CPU, AHB and APB buses clocks
+  */
+  RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
+                              |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
+  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
+  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV2;
+  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
+  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
+
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+}
+
+/* USER CODE BEGIN 4 */
+//UART Message Requests Goes Here
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart){
+
+}
+
+//TODO: A function that gets called by RX Interrupt to handle messages that get sent
+void handleUARTMessages(uint8_t *data, UART_HandleTypeDef *sender){
+	//TODO: Handle messages coming from devices based on the message type...
+}
+
+void addUSBReport(uint8_t usageID){
+  if(usageID < 0x04 || usageID > 0x73) return; //Usage ID is out of bounds
+  uint16_t bit_index = usageID - 0x04; //Offset, UsageID starts with 0x04. Gives us the actual value of the bit
+  uint8_t byte_index = bit_index/8;    //Calculates which byte in the REPORT array
+  uint8_t bit_offset = bit_index%8;    //Calculates which bits in the REPORT[byte_index] should be set/unset
+  REPORT.KEYPRESS[byte_index] |= (1 << bit_offset);
+}
+
+void matrixScan(void){
+    for (uint8_t col = 0; col < COL; col++){
+        HAL_GPIO_WritePin(COLUMN_PINS[col].GPIOx, COLUMN_PINS[col].PIN, GPIO_PIN_SET);
+        HAL_Delay(1);
+        for(uint8_t row = 0; row < ROW; row++){
+            if(HAL_GPIO_ReadPin(ROW_PINS[row].GPIOx, ROW_PINS[row].PIN)){
+                addUSBReport(KEYCODES[row][col]);
+            }
+        }
+        HAL_GPIO_WritePin(COLUMN_PINS[col].GPIOx, COLUMN_PINS[col].PIN, GPIO_PIN_RESET);
+    }
+}
+
+void resetReport(void){
+	  REPORT.MODIFIER = 0;
+	  memset(REPORT.KEYPRESS, 0, sizeof(REPORT.KEYPRESS));
+}
+
+/* USER CODE END 4 */
+
+/**
+  * @brief  This function is executed in case of error occurrence.
+  * @retval None
+  */
+void Error_Handler(void)
+{
+  /* USER CODE BEGIN Error_Handler_Debug */
+  /* User can add his own implementation to report the HAL error return state */
+  __disable_irq();
+  while (1)
+  {
+  }
+  /* USER CODE END Error_Handler_Debug */
+}
+#ifdef USE_FULL_ASSERT
+/**
+  * @brief  Reports the name of the source file and the source line number
+  *         where the assert_param error has occurred.
+  * @param  file: pointer to the source file name
+  * @param  line: assert_param error line source number
+  * @retval None
+  */
+void assert_failed(uint8_t *file, uint32_t line)
+{
+  /* USER CODE BEGIN 6 */
+  /* User can add his own implementation to report the file name and line number,
+     ex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
+  /* USER CODE END 6 */
+}
+#endif /* USE_FULL_ASSERT */
