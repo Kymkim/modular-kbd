@@ -117,6 +117,7 @@ uint16_t DEPTH = 0;
 uint16_t PORT_DEPTH[] = {0xFF, 0xFF, 0xFF, 0xFF};
 UART_HandleTypeDef* PARENT;
 UART_HandleTypeDef* PORTS[] = {&huart5, &huart1, &huart2, &huart4};
+								//North	 East	 South	 West
 
 extern USBD_HandleTypeDef hUsbDeviceFS;
 volatile uint8_t MODE = MODE_INACTIVE;
@@ -129,6 +130,7 @@ void SystemClock_Config(void);
 void handleUARTMessages(uint8_t *data, UART_HandleTypeDef *huart);
 void UART_DMA_SendReport(UART_HandleTypeDef *huart);
 void addUSBReport(uint8_t usageID);
+void handleUARTMessages(uint8_t *data, UART_HandleTypeDef *sender);
 void matrixScan(void);
 void resetReport(void);
 void sendMessage(void);
@@ -282,26 +284,26 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
-//UART Message Requests Goes Here
-void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart){
-	//Parse recieved message
-	if (huart->Instance == USART1) {
-	    handleUARTMessage(&RX1Msg);
-	    HAL_UART_Receive_DMA(&huart1, (uint8_t*)&RX1Msg, sizeof(UARTMessage));
-	}
-	else if (huart->Instance == USART2) {
-		handleUARTMessage(&RX2Msg);
-	    HAL_UART_Receive_DMA(&huart2, (uint8_t*)&RX2Msg, sizeof(UARTMessage));
-	}
-	else if (huart->Instance == USART4) {
-		handleUARTMessage(&RX4Msg);
-	    HAL_UART_Receive_DMA(&huart4, (uint8_t*)&RX4Msg, sizeof(UARTMessage));
-	}
-	else if (huart->Instance == USART5) {
-		handleUARTMessage(&RX5Msg);
-	    HAL_UART_Receive_DMA(&huart5, (uint8_t*)&RX5Msg, sizeof(UARTMessage));
-	}
+// UART Message Requests Goes Here
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
+    if (huart->Instance == USART1) {
+        handleUARTMessages((uint8_t*)&RX1Msg, huart);
+        HAL_UART_Receive_DMA(&huart1, (uint8_t*)&RX1Msg, sizeof(UARTMessage));
+    }
+    else if (huart->Instance == USART2) {
+        handleUARTMessages((uint8_t*)&RX2Msg, huart);
+        HAL_UART_Receive_DMA(&huart2, (uint8_t*)&RX2Msg, sizeof(UARTMessage));
+    }
+    else if (huart->Instance == UART4) {
+        handleUARTMessages((uint8_t*)&RX4Msg, huart);
+        HAL_UART_Receive_DMA(&huart4, (uint8_t*)&RX4Msg, sizeof(UARTMessage));
+    }
+    else if (huart->Instance == UART5) {
+        handleUARTMessages((uint8_t*)&RX5Msg, huart);
+        HAL_UART_Receive_DMA(&huart5, (uint8_t*)&RX5Msg, sizeof(UARTMessage));
+    }
 }
+
 
 void findBestParent(){
   //Find least depth parent
@@ -321,10 +323,41 @@ void findBestParent(){
   }
 }
 
-//TODO: A function that gets called by RX Interrupt to handle messages that get sent
-void handleUARTMessages(uint8_t *data, UART_HandleTypeDef *sender){
-	//TODO: Handle messages coming from devices based on the message type.
+// Called when UART RX interrupt completes
+void handleUARTMessages(uint8_t *data, UART_HandleTypeDef *sender) {
+    UARTMessage msg;
+    UARTMessage reply;
+
+    // Parse incoming message into struct
+    memcpy(&msg, data, sizeof(UARTMessage));
+
+    switch(msg.TYPE) {
+
+        // Parent request reply
+        case 0xAA:
+            if(sender == &huart5) {
+                PORT_DEPTH[0] = msg.DEPTH;
+            } else if(sender == &huart1) {
+                PORT_DEPTH[1] = msg.DEPTH;
+            } else if(sender == &huart2) {
+                PORT_DEPTH[2] = msg.DEPTH;
+            } else if(sender == &huart4) {
+                PORT_DEPTH[3] = msg.DEPTH;
+            }
+            break;
+
+        // Requested to be a parent
+        case 0xFF:
+            reply.TYPE = 0xAA;
+            reply.DEPTH = DEPTH;   // use your local DEPTH
+            memset(reply.KEYPRESS, 0, sizeof(reply.KEYPRESS));
+
+            HAL_UART_Transmit(sender, (uint8_t*)&reply, sizeof(reply), HAL_MAX_DELAY);
+            break;
+
+    }
 }
+
 
 void addUSBReport(uint8_t usageID){
   if(usageID < 0x04 || usageID > 0x73) return; //Usage ID is out of bounds
