@@ -105,7 +105,7 @@
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
 		(tenting front back)
-		(grid_origin 147.6375 50.00625)
+		(grid_origin 33.3375 47.625)
 		(pcbplotparams
 			(layerselection 0x00000000_00000000_55555555_5755f5ff)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
@@ -284,10 +284,2030 @@
 	(net 135 "/COL13")
 	(net 136 "/COL15")
 	(net 137 "unconnected-(U1-PC4-Pad24)")
+	(footprint "PCM_marbastlib-mx:STAB_MX_2.25u"
+		(layer "F.Cu")
+		(uuid "3a43ecc8-a917-4d25-9d16-822bfb942d1a")
+		(at 311.94375 161.9511)
+		(descr "Footprint for Cherry Clip/Screw in type stabilizers, 2.25u")
+		(property "Reference" "S4"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "54ff08bf-59e7-4bc2-94ec-2e99595bf4f1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "MX_stab"
+			(at 0 8.128 0)
+			(layer "Cmts.User")
+			(uuid "f0d5db20-7a0a-4174-b36c-d75e98fa671d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9abb087a-beca-494b-a9fe-7db308032c65")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Cherry MX-style stabilizer"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7b3d098e-dd7b-45c6-990c-a6859ef1a3ba")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/1d905906-6e74-4741-8b2e-53dc470a7c79/5c93856a-791f-4ae0-b646-afdeb59965ce")
+		(sheetname "/Keymatrix/")
+		(sheetfile "matrixrot.kicad_sch")
+		(attr through_hole exclude_from_pos_files)
+		(fp_line
+			(start -21.43125 -9.525)
+			(end -21.43125 9.525)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "e714bc62-5e80-458d-95d7-e41b548d42d9")
+		)
+		(fp_line
+			(start -21.43125 -9.525)
+			(end 21.43125 -9.525)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "7d6db00b-e7ec-4576-baec-e5f2399bc483")
+		)
+		(fp_line
+			(start -21.43125 9.525)
+			(end 21.43125 9.525)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "b10c856d-e058-4492-bc16-d782145dee69")
+		)
+		(fp_line
+			(start -7 -7)
+			(end -5 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "e6434bbd-81a8-4cdf-aafa-296f947929a7")
+		)
+		(fp_line
+			(start -7 -5)
+			(end -7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "42fcef47-6c1e-4a4b-9c3e-ac455708e4e4")
+		)
+		(fp_line
+			(start -7 7)
+			(end -7 5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "a4edec4e-940b-41de-b7d2-f2c37e687f44")
+		)
+		(fp_line
+			(start -5 7)
+			(end -7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "467ca677-1dc9-4e8e-9783-804a0e3cf894")
+		)
+		(fp_line
+			(start 5 -7)
+			(end 7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "af526969-e976-4a0e-bd25-631bb80e7447")
+		)
+		(fp_line
+			(start 5 7)
+			(end 7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "f3541221-0dc7-48f0-9f05-523e844f02be")
+		)
+		(fp_line
+			(start 7 -7)
+			(end 7 -5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "8eef92f3-d7c7-4515-8d0c-5128f88fd15a")
+		)
+		(fp_line
+			(start 7 7)
+			(end 7 5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "fc84eed7-1d8a-4262-a4c0-e11c9c74130e")
+		)
+		(fp_line
+			(start 21.43125 -9.525)
+			(end 21.43125 9.525)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "092fa993-67f1-494e-8eb8-2dd1ad4824be")
+		)
+		(fp_line
+			(start -15.28125 -5.499999)
+			(end -15.28125 7.500001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "38ef8d0a-d8dc-4578-aad6-370e1b5db3ed")
+		)
+		(fp_line
+			(start -14.78125 -5.999999)
+			(end -9.03125 -5.999999)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "bad2efa2-9a7d-40b0-a6a0-924e560f4cea")
+		)
+		(fp_line
+			(start -14.78125 8.000001)
+			(end -9.03125 8.000001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "4485c0ca-e172-4057-95ae-1af1d3c85a28")
+		)
+		(fp_line
+			(start -8.53125 -5.499999)
+			(end -8.53125 7.500001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "57403960-f1a0-4dcb-8362-d180fcc6216b")
+		)
+		(fp_line
+			(start 8.53125 -5.499999)
+			(end 8.53125 7.500001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "b3f14628-1fba-4cab-bfad-519486da56dd")
+		)
+		(fp_line
+			(start 9.03125 -5.999999)
+			(end 14.780039 -5.999999)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "65689fe2-70b2-48e6-8fc9-5b9154edfdff")
+		)
+		(fp_line
+			(start 9.03125 8.000001)
+			(end 14.78125 8.000001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "9e47325c-5fbb-4688-aea3-5d1224bf4121")
+		)
+		(fp_line
+			(start 15.280039 -5.499999)
+			(end 15.28125 7.500001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "5ec616f2-0f11-4592-82a2-737de25a3e87")
+		)
+		(fp_arc
+			(start -15.28125 -5.499999)
+			(mid -15.134803 -5.853552)
+			(end -14.78125 -5.999999)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "9dbfbe67-1b12-4f09-9ef2-e2413e1ee751")
+		)
+		(fp_arc
+			(start -14.78125 8.000001)
+			(mid -15.134803 7.853554)
+			(end -15.28125 7.500001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "3b1f2bd6-d566-4836-8615-3547a417697c")
+		)
+		(fp_arc
+			(start -9.03125 -5.999999)
+			(mid -8.677697 -5.853552)
+			(end -8.53125 -5.499999)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "9f17bfc2-8d87-4f52-99cc-70c3debc105a")
+		)
+		(fp_arc
+			(start -8.53125 7.500001)
+			(mid -8.677697 7.853554)
+			(end -9.03125 8.000001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "e8d4465b-ab3b-4257-a59f-c71304032ec5")
+		)
+		(fp_arc
+			(start 8.53125 -5.499999)
+			(mid 8.677697 -5.853552)
+			(end 9.03125 -5.999999)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "75e75ff2-16bb-4fab-aaa5-1252ecf4c32a")
+		)
+		(fp_arc
+			(start 9.03125 8.000001)
+			(mid 8.677697 7.853554)
+			(end 8.53125 7.500001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "5d3e0d22-ee4b-4b42-a56b-26eca81523ff")
+		)
+		(fp_arc
+			(start 14.780039 -5.999999)
+			(mid 15.133592 -5.853552)
+			(end 15.280039 -5.499999)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "83c39105-ff26-4032-a8aa-f7c9f3cd6471")
+		)
+		(fp_arc
+			(start 15.28125 7.500001)
+			(mid 15.134803 7.853554)
+			(end 14.78125 8.000001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "96d0a127-d331-48d2-bc86-e2f38c2a1309")
+		)
+		(fp_circle
+			(center -11.90625 -6.985)
+			(end -9.90625 -6.985)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "0ecc1c94-bd50-4b95-a688-fb1b11740b0b")
+		)
+		(fp_circle
+			(center 11.90625 -6.985)
+			(end 13.90625 -6.985)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "78745eee-de79-4d65-89c7-628d44725a89")
+		)
+		(pad "" np_thru_hole circle
+			(at -11.90625 -6.985)
+			(size 3.048 3.048)
+			(drill 3.048)
+			(layers "*.Cu" "*.Mask")
+			(uuid "f8c9a513-0760-4f8a-bc71-64a54b1f3600")
+		)
+		(pad "" np_thru_hole circle
+			(at -11.90625 8.255)
+			(size 3.9878 3.9878)
+			(drill 3.9878)
+			(layers "*.Cu" "*.Mask")
+			(uuid "6e36f301-d5a2-41ca-8ddf-02ff95961e6c")
+		)
+		(pad "" np_thru_hole circle
+			(at 11.90625 -6.985)
+			(size 3.048 3.048)
+			(drill 3.048)
+			(layers "*.Cu" "*.Mask")
+			(uuid "a5c0bb61-4fbf-4e5e-8bbf-234f4c04ea74")
+		)
+		(pad "" np_thru_hole circle
+			(at 11.90625 8.255)
+			(size 3.9878 3.9878)
+			(drill 3.9878)
+			(layers "*.Cu" "*.Mask")
+			(uuid "f39efc3e-7daa-47ee-bc99-669add6de725")
+		)
+		(group ""
+			(uuid "2b2a63fb-02bb-4fb2-8905-a8fc663a0883")
+			(members "38ef8d0a-d8dc-4578-aad6-370e1b5db3ed" "3b1f2bd6-d566-4836-8615-3547a417697c"
+				"4485c0ca-e172-4057-95ae-1af1d3c85a28" "57403960-f1a0-4dcb-8362-d180fcc6216b"
+				"9dbfbe67-1b12-4f09-9ef2-e2413e1ee751" "9f17bfc2-8d87-4f52-99cc-70c3debc105a"
+				"bad2efa2-9a7d-40b0-a6a0-924e560f4cea" "e8d4465b-ab3b-4257-a59f-c71304032ec5"
+			)
+		)
+		(group ""
+			(uuid "2d3ba4ad-b417-4e63-bded-67c6f8deff8c")
+			(members "5d3e0d22-ee4b-4b42-a56b-26eca81523ff" "5ec616f2-0f11-4592-82a2-737de25a3e87"
+				"65689fe2-70b2-48e6-8fc9-5b9154edfdff" "75e75ff2-16bb-4fab-aaa5-1252ecf4c32a"
+				"83c39105-ff26-4032-a8aa-f7c9f3cd6471" "96d0a127-d331-48d2-bc86-e2f38c2a1309"
+				"9e47325c-5fbb-4688-aea3-5d1224bf4121" "b3f14628-1fba-4cab-bfad-519486da56dd"
+			)
+		)
+		(embedded_fonts no)
+	)
+	(footprint "PCM_marbastlib-mx:STAB_MX_P_2u"
+		(layer "F.Cu")
+		(uuid "60a289b3-ab28-46ea-b5c4-b80e487ebca6")
+		(at 340.81375 141.5972)
+		(descr "Footprint for Cherry Clip/Screw in type stabilizers, 2u")
+		(property "Reference" "S3"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "8006ae13-e815-442f-8cc5-50a3107f2d5e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "MX_stab"
+			(at 0 8.128 0)
+			(layer "Cmts.User")
+			(uuid "81656fd0-f41b-4db7-9d47-2a84d1c0ce7a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2da8d931-6425-40aa-8021-9a4f4a060d91")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Cherry MX-style stabilizer"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6b609d30-d3b7-47c9-8394-9b88af5c2cbb")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/1d905906-6e74-4741-8b2e-53dc470a7c79/ff644859-52b8-4e6c-a042-074acf0a4a45")
+		(sheetname "/Keymatrix/")
+		(sheetfile "matrixrot.kicad_sch")
+		(attr through_hole exclude_from_pos_files)
+		(fp_line
+			(start -19.05 -9.525)
+			(end -19.05 9.525)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "c7d44b5f-2997-48fc-bebf-9422d89754db")
+		)
+		(fp_line
+			(start -19.05 -9.525)
+			(end 19.05 -9.525)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "903b7fff-6646-4a8b-bd93-30c6269b5240")
+		)
+		(fp_line
+			(start -19.05 9.525)
+			(end 19.05 9.525)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "c9ea3a7a-4bfb-4556-a66e-c93131d7323f")
+		)
+		(fp_line
+			(start -7 -7)
+			(end -5 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "fddad61e-33fe-4138-b1e4-64a3b9afa08e")
+		)
+		(fp_line
+			(start -7 -5)
+			(end -7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "f6ba4f3d-28a1-4e96-8eb3-0a897adce9ec")
+		)
+		(fp_line
+			(start -7 7)
+			(end -7 5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "435182dc-4faf-4256-a8ce-3cb4fa1dcd87")
+		)
+		(fp_line
+			(start -5 7)
+			(end -7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "01e8ba71-2c42-433b-b6db-9d5d81dc825f")
+		)
+		(fp_line
+			(start 5 -7)
+			(end 7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "2fa1e1a8-49da-4cfd-bc03-e745717c34d0")
+		)
+		(fp_line
+			(start 5 7)
+			(end 7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "2f2492bc-36ad-4e12-8493-49122cfb8885")
+		)
+		(fp_line
+			(start 7 -7)
+			(end 7 -5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "90e22c13-988d-4730-8eb8-64a1d4942f9c")
+		)
+		(fp_line
+			(start 7 7)
+			(end 7 5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "2f80e135-1495-4edc-8341-37552ed0fda9")
+		)
+		(fp_line
+			(start 19.05 -9.525)
+			(end 19.05 9.525)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "50f16240-7dc4-4f86-b08f-b3533b38b011")
+		)
+		(fp_line
+			(start -15.28125 -5.499999)
+			(end -15.28125 7.500001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "e97886dd-60aa-4bab-9701-a24db1837592")
+		)
+		(fp_line
+			(start -14.78125 -5.999999)
+			(end -9.03125 -5.999999)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "5d509685-e886-401e-97c0-2326ddc80365")
+		)
+		(fp_line
+			(start -14.78125 8.000001)
+			(end -9.03125 8.000001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "44edeacd-d96e-4e21-90fe-09c61b0372cf")
+		)
+		(fp_line
+			(start -8.53125 -5.499999)
+			(end -8.53125 7.500001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "aa6fb6f3-ad90-4e9a-9827-3f03e0000607")
+		)
+		(fp_line
+			(start 8.53125 -5.499999)
+			(end 8.53125 7.500001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "e386e6e8-58f6-40f7-8aac-65cd35170678")
+		)
+		(fp_line
+			(start 9.03125 -5.999999)
+			(end 14.780039 -5.999999)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "bdb3a87a-2e4b-40aa-84c0-781fecc19810")
+		)
+		(fp_line
+			(start 9.03125 8.000001)
+			(end 14.78125 8.000001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "97b0c193-84d3-45d3-9adc-941bbf1526cd")
+		)
+		(fp_line
+			(start 15.280039 -5.499999)
+			(end 15.28125 7.500001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "97c5ee4c-1467-4d15-9bd8-e80e000cd803")
+		)
+		(fp_arc
+			(start -15.28125 -5.499999)
+			(mid -15.134803 -5.853552)
+			(end -14.78125 -5.999999)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "c28bee00-b016-4003-8f97-560a40de05cb")
+		)
+		(fp_arc
+			(start -14.78125 8.000001)
+			(mid -15.134803 7.853554)
+			(end -15.28125 7.500001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "6a761428-2d23-4756-bc8e-11ca9994a80b")
+		)
+		(fp_arc
+			(start -9.03125 -5.999999)
+			(mid -8.677697 -5.853552)
+			(end -8.53125 -5.499999)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "0e2b8d42-a1c8-41ed-9e5a-f2661ec5a3f9")
+		)
+		(fp_arc
+			(start -8.53125 7.500001)
+			(mid -8.677697 7.853554)
+			(end -9.03125 8.000001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "a1477f31-4970-4183-8977-f0af44bf2d1d")
+		)
+		(fp_arc
+			(start 8.53125 -5.499999)
+			(mid 8.677697 -5.853552)
+			(end 9.03125 -5.999999)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "ceb5b5d8-44b2-4160-a107-aa78a710bad9")
+		)
+		(fp_arc
+			(start 9.03125 8.000001)
+			(mid 8.677697 7.853554)
+			(end 8.53125 7.500001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "a7e0a77f-ac5f-4204-977c-98d598b689c3")
+		)
+		(fp_arc
+			(start 14.780039 -5.999999)
+			(mid 15.133592 -5.853552)
+			(end 15.280039 -5.499999)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "43b77c76-c870-4b28-a659-bbbad8f5ab58")
+		)
+		(fp_arc
+			(start 15.28125 7.500001)
+			(mid 15.134803 7.853554)
+			(end 14.78125 8.000001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "b66a2c93-2f2b-4e78-b116-6b5b38d5af59")
+		)
+		(pad "" thru_hole circle
+			(at -11.90625 -6.985)
+			(size 4 4)
+			(drill 3.048)
+			(layers "*.Cu" "B.Mask")
+			(remove_unused_layers no)
+			(uuid "ce2906cc-1c74-4ccb-9344-a34f107e3a5a")
+		)
+		(pad "" np_thru_hole circle
+			(at -11.90625 8.255)
+			(size 3.9878 3.9878)
+			(drill 3.9878)
+			(layers "*.Cu" "*.Mask")
+			(uuid "5a856e81-c71c-4c50-9149-203146344e88")
+		)
+		(pad "" thru_hole circle
+			(at 11.90625 -6.985)
+			(size 4 4)
+			(drill 3.048)
+			(layers "*.Cu" "B.Mask")
+			(remove_unused_layers no)
+			(uuid "25fb8f06-410f-4b05-a1ca-5cd98dd2ae2b")
+		)
+		(pad "" np_thru_hole circle
+			(at 11.90625 8.255)
+			(size 3.9878 3.9878)
+			(drill 3.9878)
+			(layers "*.Cu" "*.Mask")
+			(uuid "cdd472f1-23d2-473f-8dab-91370dff4b94")
+		)
+		(group ""
+			(uuid "24adc471-5f64-45ec-b1a8-8cfad685321c")
+			(members "43b77c76-c870-4b28-a659-bbbad8f5ab58" "97b0c193-84d3-45d3-9adc-941bbf1526cd"
+				"97c5ee4c-1467-4d15-9bd8-e80e000cd803" "a7e0a77f-ac5f-4204-977c-98d598b689c3"
+				"b66a2c93-2f2b-4e78-b116-6b5b38d5af59" "bdb3a87a-2e4b-40aa-84c0-781fecc19810"
+				"ceb5b5d8-44b2-4160-a107-aa78a710bad9" "e386e6e8-58f6-40f7-8aac-65cd35170678"
+			)
+		)
+		(group ""
+			(uuid "c1a98fa0-09ac-4a4b-9b16-e5b51471cb55")
+			(members "0e2b8d42-a1c8-41ed-9e5a-f2661ec5a3f9" "44edeacd-d96e-4e21-90fe-09c61b0372cf"
+				"5d509685-e886-401e-97c0-2326ddc80365" "6a761428-2d23-4756-bc8e-11ca9994a80b"
+				"a1477f31-4970-4183-8977-f0af44bf2d1d" "aa6fb6f3-ad90-4e9a-9827-3f03e0000607"
+				"c28bee00-b016-4003-8f97-560a40de05cb" "e97886dd-60aa-4bab-9701-a24db1837592"
+			)
+		)
+		(embedded_fonts no)
+	)
+	(footprint "PCM_marbastlib-mx:STAB_MX_P_6.25u"
+		(layer "F.Cu")
+		(uuid "758769ba-3cac-4a4a-930f-c323d36df1cd")
+		(at 349.98375 121.3672)
+		(descr "Footprint for Cherry Clip/Screw in type stabilizers, 6.25u")
+		(property "Reference" "S2"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "53c7662f-5a5c-4dd6-8781-bcbcba6094af")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "MX_stab"
+			(at 0 8.128 0)
+			(layer "Cmts.User")
+			(uuid "79fa08c6-df55-4e46-a46e-b51caf308744")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "da84c4f3-f96e-493c-a25e-6af14a52c3f8")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Cherry MX-style stabilizer"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ff320d98-c22c-4178-8ea5-3076f7abd7d5")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/1d905906-6e74-4741-8b2e-53dc470a7c79/4ccd7bab-11f7-41fd-a1ae-2500f4735d14")
+		(sheetname "/Keymatrix/")
+		(sheetfile "matrixrot.kicad_sch")
+		(attr through_hole exclude_from_pos_files)
+		(fp_line
+			(start -59.53125 -9.525)
+			(end -59.53125 9.525)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "180f815d-f175-491d-a434-431b602e80a3")
+		)
+		(fp_line
+			(start -59.53125 -9.525)
+			(end 59.53125 -9.525)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "a0bb5b76-3f53-4ae0-9355-bccde0c7f04c")
+		)
+		(fp_line
+			(start -59.53125 9.525)
+			(end 59.53125 9.525)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "2d013ce9-1dbe-4f9e-bc06-a995e392e9fb")
+		)
+		(fp_line
+			(start -7 -7)
+			(end -5 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "3e097fc8-5032-4cf2-aa82-76950ac2c969")
+		)
+		(fp_line
+			(start -7 -5)
+			(end -7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "541ed6c8-4619-41e0-b7d5-579950a3fe22")
+		)
+		(fp_line
+			(start -7 7)
+			(end -7 5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "2de0f8d3-b9fc-4ee0-b3fa-14d7ea36004f")
+		)
+		(fp_line
+			(start -5 7)
+			(end -7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "3d0a8304-5409-4ead-b35f-6e85c0f2003d")
+		)
+		(fp_line
+			(start 5 -7)
+			(end 7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "e7ff79dc-52f2-48e5-b538-233d901454e1")
+		)
+		(fp_line
+			(start 5 7)
+			(end 7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "30dfb4c7-cd35-46fc-b64a-fef6925d839a")
+		)
+		(fp_line
+			(start 7 -7)
+			(end 7 -5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "8612f507-72bf-48cc-a602-423961af608b")
+		)
+		(fp_line
+			(start 7 7)
+			(end 7 5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "1d601c50-04fc-430e-87a3-902ce0a7a2fc")
+		)
+		(fp_line
+			(start 59.53125 -9.525)
+			(end 59.53125 9.525)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "e84b1f5f-7d83-4855-a775-f80cf45e4094")
+		)
+		(fp_line
+			(start -53.38125 -5.499999)
+			(end -53.38125 7.500001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "0117806d-91c8-4e65-8d2c-92fd11e14840")
+		)
+		(fp_line
+			(start -52.88125 -5.999999)
+			(end -47.13125 -5.999999)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "9cb90672-e48c-44f4-a1cb-7fa37c69b97c")
+		)
+		(fp_line
+			(start -52.88125 8.000001)
+			(end -47.13125 8.000001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "0956a5e9-9645-48b2-8b7c-ec3213538cd0")
+		)
+		(fp_line
+			(start -46.63125 -5.499999)
+			(end -46.63125 7.500001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "aa1cddbd-5c74-4dee-9c70-05b179fed3e9")
+		)
+		(fp_line
+			(start 46.63125 -5.499999)
+			(end 46.63125 7.500001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "40043043-5792-4e6c-8318-732f7a02ea52")
+		)
+		(fp_line
+			(start 47.13125 -5.999999)
+			(end 52.880039 -5.999999)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "036a1589-a4da-420e-b51d-b97a7ac1457f")
+		)
+		(fp_line
+			(start 47.13125 8.000001)
+			(end 52.88125 8.000001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "1db39fa0-d92c-4017-b61e-fa1746bd0f0b")
+		)
+		(fp_line
+			(start 53.380039 -5.499999)
+			(end 53.38125 7.500001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "7300b4bf-bd8a-4bb2-8b12-5da330fefd9a")
+		)
+		(fp_arc
+			(start -53.38125 -5.499999)
+			(mid -53.234803 -5.853552)
+			(end -52.88125 -5.999999)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "db2242ab-06b5-4ffa-bf27-25db3732911c")
+		)
+		(fp_arc
+			(start -52.88125 8.000001)
+			(mid -53.234803 7.853554)
+			(end -53.38125 7.500001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "c752dda9-aa7d-49c7-9620-d12fa8c8bde3")
+		)
+		(fp_arc
+			(start -47.13125 -5.999999)
+			(mid -46.777697 -5.853552)
+			(end -46.63125 -5.499999)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "90d4451d-10b0-4052-a2c4-e2cc82555072")
+		)
+		(fp_arc
+			(start -46.63125 7.500001)
+			(mid -46.777697 7.853554)
+			(end -47.13125 8.000001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "e6802058-8de8-47c4-8a84-8f4e630e63d6")
+		)
+		(fp_arc
+			(start 46.63125 -5.499999)
+			(mid 46.777697 -5.853552)
+			(end 47.13125 -5.999999)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "124a666d-5671-4b69-8aff-55640656a43e")
+		)
+		(fp_arc
+			(start 47.13125 8.000001)
+			(mid 46.777697 7.853554)
+			(end 46.63125 7.500001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "8b70a908-b471-4f5b-a566-052ad30160bd")
+		)
+		(fp_arc
+			(start 52.880039 -5.999999)
+			(mid 53.233592 -5.853552)
+			(end 53.380039 -5.499999)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "9ff8dc54-1248-4545-a664-8776d5a11db0")
+		)
+		(fp_arc
+			(start 53.38125 7.500001)
+			(mid 53.234803 7.853554)
+			(end 52.88125 8.000001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "4844c18a-4dcf-4258-b1fe-582b83576510")
+		)
+		(pad "" thru_hole circle
+			(at -50.00625 -6.985)
+			(size 4 4)
+			(drill 3.048)
+			(layers "*.Cu" "B.Mask")
+			(remove_unused_layers no)
+			(uuid "10bff96e-5721-4a56-a13d-7d1395542398")
+		)
+		(pad "" np_thru_hole circle
+			(at -50.00625 8.255)
+			(size 3.9878 3.9878)
+			(drill 3.9878)
+			(layers "*.Cu" "*.Mask")
+			(uuid "2681faed-d424-4cd5-b4b4-b48fa9bd42f0")
+		)
+		(pad "" thru_hole circle
+			(at 50.00625 -6.985)
+			(size 4 4)
+			(drill 3.048)
+			(layers "*.Cu" "B.Mask")
+			(remove_unused_layers no)
+			(uuid "8cae10c2-cd5a-4c5e-82e8-12f64b543172")
+		)
+		(pad "" np_thru_hole circle
+			(at 50.00625 8.255)
+			(size 3.9878 3.9878)
+			(drill 3.9878)
+			(layers "*.Cu" "*.Mask")
+			(uuid "8fd57c3a-7bb3-4b78-8502-428cbecc591b")
+		)
+		(group ""
+			(uuid "0c3ea6aa-03ad-4bb7-9e56-fcd6edd61df1")
+			(members "0117806d-91c8-4e65-8d2c-92fd11e14840" "0956a5e9-9645-48b2-8b7c-ec3213538cd0"
+				"90d4451d-10b0-4052-a2c4-e2cc82555072" "9cb90672-e48c-44f4-a1cb-7fa37c69b97c"
+				"aa1cddbd-5c74-4dee-9c70-05b179fed3e9" "c752dda9-aa7d-49c7-9620-d12fa8c8bde3"
+				"db2242ab-06b5-4ffa-bf27-25db3732911c" "e6802058-8de8-47c4-8a84-8f4e630e63d6"
+			)
+		)
+		(group ""
+			(uuid "e7fdb137-e329-4a0b-b1be-083d0a9dbd1c")
+			(members "036a1589-a4da-420e-b51d-b97a7ac1457f" "124a666d-5671-4b69-8aff-55640656a43e"
+				"1db39fa0-d92c-4017-b61e-fa1746bd0f0b" "40043043-5792-4e6c-8318-732f7a02ea52"
+				"4844c18a-4dcf-4258-b1fe-582b83576510" "7300b4bf-bd8a-4bb2-8b12-5da330fefd9a"
+				"8b70a908-b471-4f5b-a566-052ad30160bd" "9ff8dc54-1248-4545-a664-8776d5a11db0"
+			)
+		)
+		(embedded_fonts no)
+	)
+	(footprint "PCM_marbastlib-mx:STAB_MX_2u"
+		(layer "F.Cu")
+		(uuid "9db92155-4abf-4b34-9e70-0ad38a7508a4")
+		(at 311.94375 182.245)
+		(descr "Footprint for Cherry Clip/Screw in type stabilizers, 2u")
+		(property "Reference" "S5"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "485a2b2a-b1f7-4d13-98ce-f5385016c50a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "MX_stab"
+			(at 0 8.128 0)
+			(layer "Cmts.User")
+			(uuid "3a548e18-c514-4b7d-bbab-fe16d1da47d1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5eb50f91-f75e-4fc3-b9a0-aae0023b8b55")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Cherry MX-style stabilizer"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f5193fa8-ece8-409c-83b1-8b94fe8ae79d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/1d905906-6e74-4741-8b2e-53dc470a7c79/1678c1a8-43fc-4942-a4b1-df27938731c6")
+		(sheetname "/Keymatrix/")
+		(sheetfile "matrixrot.kicad_sch")
+		(attr through_hole exclude_from_pos_files)
+		(fp_line
+			(start -19.05 -9.525)
+			(end -19.05 9.525)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "b658b75d-a732-4efa-801b-2cb2ee9ff44e")
+		)
+		(fp_line
+			(start -19.05 -9.525)
+			(end 19.05 -9.525)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "0b347f58-0a73-4c5d-b827-0c937d5c36ff")
+		)
+		(fp_line
+			(start -19.05 9.525)
+			(end 19.05 9.525)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "57124f3d-906a-4aaa-9b98-6eeea7ad4a1f")
+		)
+		(fp_line
+			(start -7 -7)
+			(end -5 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "834b6560-13d8-400c-bf93-92a0690d976b")
+		)
+		(fp_line
+			(start -7 -5)
+			(end -7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "84928b58-7e4b-491f-9953-08fa0478f9d3")
+		)
+		(fp_line
+			(start -7 7)
+			(end -7 5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "5441d1d6-b5de-4a34-855d-dbf4980377e1")
+		)
+		(fp_line
+			(start -5 7)
+			(end -7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "09c66dc8-70f2-489d-ab9c-a41760ad62e6")
+		)
+		(fp_line
+			(start 5 -7)
+			(end 7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "334f2a08-5110-4bf4-a5d9-19df63870b11")
+		)
+		(fp_line
+			(start 5 7)
+			(end 7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "3385ee41-af74-4549-8a8f-6ebc42f86cc7")
+		)
+		(fp_line
+			(start 7 -7)
+			(end 7 -5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "78dff7c0-7017-472e-994e-8db80ec1553b")
+		)
+		(fp_line
+			(start 7 7)
+			(end 7 5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "d4714a79-d9f8-41ed-8e99-574e8d86cb1f")
+		)
+		(fp_line
+			(start 19.05 -9.525)
+			(end 19.05 9.525)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "98263d9c-a8cb-4212-a336-c1afcaf15e37")
+		)
+		(fp_line
+			(start -15.28125 -5.499999)
+			(end -15.28125 7.500001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "e9ddba45-dfa1-4179-b5c0-49af34fc401e")
+		)
+		(fp_line
+			(start -14.78125 -5.999999)
+			(end -9.03125 -5.999999)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "2a61a6a9-8e10-481f-9140-c38dfbe54ca3")
+		)
+		(fp_line
+			(start -14.78125 8.000001)
+			(end -9.03125 8.000001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "8db1af4e-b203-4f6a-84cc-9edbdca54ba9")
+		)
+		(fp_line
+			(start -8.53125 -5.499999)
+			(end -8.53125 7.500001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "5294cff0-6f69-46a9-b616-4276f839c1f0")
+		)
+		(fp_line
+			(start 8.53125 -5.499999)
+			(end 8.53125 7.500001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "b9e07a0b-161f-4bb3-9bd5-d3417c0dfd97")
+		)
+		(fp_line
+			(start 9.03125 -5.999999)
+			(end 14.780039 -5.999999)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "4149b6fe-4c5f-49d3-95ec-c2b38dffd4b4")
+		)
+		(fp_line
+			(start 9.03125 8.000001)
+			(end 14.78125 8.000001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "35cf7060-20d2-4cbc-af5c-808dbb53129a")
+		)
+		(fp_line
+			(start 15.280039 -5.499999)
+			(end 15.28125 7.500001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "9d632be9-586c-460e-9792-9c3f89fcbd89")
+		)
+		(fp_arc
+			(start -15.28125 -5.499999)
+			(mid -15.134803 -5.853552)
+			(end -14.78125 -5.999999)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "ed721057-0403-4106-b149-bcd2d2971c97")
+		)
+		(fp_arc
+			(start -14.78125 8.000001)
+			(mid -15.134803 7.853554)
+			(end -15.28125 7.500001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "93b85c8d-a9b8-479a-b8b4-d77be84df80d")
+		)
+		(fp_arc
+			(start -9.03125 -5.999999)
+			(mid -8.677697 -5.853552)
+			(end -8.53125 -5.499999)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "42552908-73e2-46bc-bd91-43013dd3d2d5")
+		)
+		(fp_arc
+			(start -8.53125 7.500001)
+			(mid -8.677697 7.853554)
+			(end -9.03125 8.000001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "26aedef4-66e5-4c7a-a80c-c6d6d269ac0e")
+		)
+		(fp_arc
+			(start 8.53125 -5.499999)
+			(mid 8.677697 -5.853552)
+			(end 9.03125 -5.999999)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "e3fa5808-e95f-43a0-841e-1131d3bdfaaa")
+		)
+		(fp_arc
+			(start 9.03125 8.000001)
+			(mid 8.677697 7.853554)
+			(end 8.53125 7.500001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "91698464-9dbc-4442-9937-801477885fac")
+		)
+		(fp_arc
+			(start 14.780039 -5.999999)
+			(mid 15.133592 -5.853552)
+			(end 15.280039 -5.499999)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "2d97be71-4812-4d93-a6f7-959f1e7871a1")
+		)
+		(fp_arc
+			(start 15.28125 7.500001)
+			(mid 15.134803 7.853554)
+			(end 14.78125 8.000001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "1c3ad9e1-1595-445f-a383-96d19c8141c6")
+		)
+		(fp_circle
+			(center -11.90625 -6.985)
+			(end -9.90625 -6.985)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "eca01f6b-b0ef-4694-b4df-7f4eaab21068")
+		)
+		(fp_circle
+			(center 11.90625 -6.985)
+			(end 13.90625 -6.985)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "1758faf2-dd5e-49ff-a6a4-c051af774ce8")
+		)
+		(pad "" np_thru_hole circle
+			(at -11.90625 -6.985)
+			(size 3.048 3.048)
+			(drill 3.048)
+			(layers "*.Cu" "*.Mask")
+			(uuid "2c054ec8-1ae8-4305-87b0-105e92648a9c")
+		)
+		(pad "" np_thru_hole circle
+			(at -11.90625 8.255)
+			(size 3.9878 3.9878)
+			(drill 3.9878)
+			(layers "*.Cu" "*.Mask")
+			(uuid "e71b8b37-f292-4c12-8ee0-5e606085ed88")
+		)
+		(pad "" np_thru_hole circle
+			(at 11.90625 -6.985)
+			(size 3.048 3.048)
+			(drill 3.048)
+			(layers "*.Cu" "*.Mask")
+			(uuid "60be0c8b-af25-41ea-aa55-f33be20ffddd")
+		)
+		(pad "" np_thru_hole circle
+			(at 11.90625 8.255)
+			(size 3.9878 3.9878)
+			(drill 3.9878)
+			(layers "*.Cu" "*.Mask")
+			(uuid "a9bd8920-a26e-4544-8f13-0e905c832419")
+		)
+		(group ""
+			(uuid "8d8294a8-f0e4-4fb6-9b64-5bae046f9183")
+			(members "26aedef4-66e5-4c7a-a80c-c6d6d269ac0e" "2a61a6a9-8e10-481f-9140-c38dfbe54ca3"
+				"42552908-73e2-46bc-bd91-43013dd3d2d5" "5294cff0-6f69-46a9-b616-4276f839c1f0"
+				"8db1af4e-b203-4f6a-84cc-9edbdca54ba9" "93b85c8d-a9b8-479a-b8b4-d77be84df80d"
+				"e9ddba45-dfa1-4179-b5c0-49af34fc401e" "ed721057-0403-4106-b149-bcd2d2971c97"
+			)
+		)
+		(group ""
+			(uuid "ee08703d-6cac-4a61-b062-10f7f333ade4")
+			(members "1c3ad9e1-1595-445f-a383-96d19c8141c6" "2d97be71-4812-4d93-a6f7-959f1e7871a1"
+				"35cf7060-20d2-4cbc-af5c-808dbb53129a" "4149b6fe-4c5f-49d3-95ec-c2b38dffd4b4"
+				"91698464-9dbc-4442-9937-801477885fac" "9d632be9-586c-460e-9792-9c3f89fcbd89"
+				"b9e07a0b-161f-4bb3-9bd5-d3417c0dfd97" "e3fa5808-e95f-43a0-841e-1131d3bdfaaa"
+			)
+		)
+		(embedded_fonts no)
+	)
+	(footprint "PCM_marbastlib-mx:STAB_MX_2.25u"
+		(layer "F.Cu")
+		(uuid "e4154308-e42b-4828-8cb9-abe7dc2b6f62")
+		(at 311.94375 141.6572)
+		(descr "Footprint for Cherry Clip/Screw in type stabilizers, 2.25u")
+		(property "Reference" "S1"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "9d0db2cd-cf72-4af5-9a1f-5f7d204a25f9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "MX_stab"
+			(at 0 8.128 0)
+			(layer "Cmts.User")
+			(uuid "5b7830ce-98c5-4b81-b05f-cdc82508a514")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3d9eef52-d4f2-4513-b880-e5abd3dc403e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Cherry MX-style stabilizer"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "469b415f-eb01-48f2-a3f8-bbeadc4d6e43")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/1d905906-6e74-4741-8b2e-53dc470a7c79/2f67347c-b64d-479a-89ef-06f87f1a5bf2")
+		(sheetname "/Keymatrix/")
+		(sheetfile "matrixrot.kicad_sch")
+		(attr through_hole exclude_from_pos_files)
+		(fp_line
+			(start -21.43125 -9.525)
+			(end -21.43125 9.525)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "85833ffd-b24d-4544-8a04-ade78950f454")
+		)
+		(fp_line
+			(start -21.43125 -9.525)
+			(end 21.43125 -9.525)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "1cca1a34-99a8-4987-958a-f19505dc73f6")
+		)
+		(fp_line
+			(start -21.43125 9.525)
+			(end 21.43125 9.525)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "4c120bdd-9951-4477-af38-745085d9dde9")
+		)
+		(fp_line
+			(start -7 -7)
+			(end -5 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "5395eb99-e127-450d-9747-40dadede344d")
+		)
+		(fp_line
+			(start -7 -5)
+			(end -7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "38ff2644-5cf8-473d-887f-076156cd53d3")
+		)
+		(fp_line
+			(start -7 7)
+			(end -7 5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "7aa94899-7dc9-4c55-8f17-8a6d81b95436")
+		)
+		(fp_line
+			(start -5 7)
+			(end -7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "66efe44f-343d-4ee3-a5a9-ffb97e9933f8")
+		)
+		(fp_line
+			(start 5 -7)
+			(end 7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "833647ae-a4e4-4b7d-b5ef-c7cc7b788a82")
+		)
+		(fp_line
+			(start 5 7)
+			(end 7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "de5751b3-0a95-4469-a6a3-0ba00feb5c52")
+		)
+		(fp_line
+			(start 7 -7)
+			(end 7 -5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "7a347e90-4e94-40b4-9448-8a1f5c26fcf2")
+		)
+		(fp_line
+			(start 7 7)
+			(end 7 5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "37dab8da-4bcd-47a4-a516-8c16018423b7")
+		)
+		(fp_line
+			(start 21.43125 -9.525)
+			(end 21.43125 9.525)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "92469093-6554-42ed-aa61-adce5149826a")
+		)
+		(fp_line
+			(start -15.28125 -5.499999)
+			(end -15.28125 7.500001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "78a8ca68-fd4d-4c4f-997d-9266ef7bbfe3")
+		)
+		(fp_line
+			(start -14.78125 -5.999999)
+			(end -9.03125 -5.999999)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "fb51e67a-fbb5-48cc-a5dd-21378eb76989")
+		)
+		(fp_line
+			(start -14.78125 8.000001)
+			(end -9.03125 8.000001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "4671a8b6-f1f7-4a32-9a72-915adc356934")
+		)
+		(fp_line
+			(start -8.53125 -5.499999)
+			(end -8.53125 7.500001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "7929f715-a970-442b-9dc1-d2d0a436b236")
+		)
+		(fp_line
+			(start 8.53125 -5.499999)
+			(end 8.53125 7.500001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "bec08ea6-91ac-4f8a-a88f-0a40b42a9ef9")
+		)
+		(fp_line
+			(start 9.03125 -5.999999)
+			(end 14.780039 -5.999999)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "d1b1a702-eaa2-4802-a67d-70fbcb25b661")
+		)
+		(fp_line
+			(start 9.03125 8.000001)
+			(end 14.78125 8.000001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "254b0e55-e087-4ea0-af7f-31f10d93fda2")
+		)
+		(fp_line
+			(start 15.280039 -5.499999)
+			(end 15.28125 7.500001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "5edee5f0-aead-450d-8397-cba9ad5f9d51")
+		)
+		(fp_arc
+			(start -15.28125 -5.499999)
+			(mid -15.134803 -5.853552)
+			(end -14.78125 -5.999999)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "09178fc7-d8fb-4990-bc01-827346fd7ffe")
+		)
+		(fp_arc
+			(start -14.78125 8.000001)
+			(mid -15.134803 7.853554)
+			(end -15.28125 7.500001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "15f7c983-bf01-446f-82d3-b1c68c4a77af")
+		)
+		(fp_arc
+			(start -9.03125 -5.999999)
+			(mid -8.677697 -5.853552)
+			(end -8.53125 -5.499999)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "ff2e2ddc-f0ee-4017-871f-376db12af330")
+		)
+		(fp_arc
+			(start -8.53125 7.500001)
+			(mid -8.677697 7.853554)
+			(end -9.03125 8.000001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "fe7b2a28-c18b-4332-bd06-ccdef326a1d8")
+		)
+		(fp_arc
+			(start 8.53125 -5.499999)
+			(mid 8.677697 -5.853552)
+			(end 9.03125 -5.999999)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "f9b52e6d-b462-4388-926d-0417c806f9d8")
+		)
+		(fp_arc
+			(start 9.03125 8.000001)
+			(mid 8.677697 7.853554)
+			(end 8.53125 7.500001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "fead9bdb-77eb-4802-b5c6-e3e402aabd6c")
+		)
+		(fp_arc
+			(start 14.780039 -5.999999)
+			(mid 15.133592 -5.853552)
+			(end 15.280039 -5.499999)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "396c1a07-a701-45b2-8bcb-8ab2e2598693")
+		)
+		(fp_arc
+			(start 15.28125 7.500001)
+			(mid 15.134803 7.853554)
+			(end 14.78125 8.000001)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Eco2.User")
+			(uuid "ccf45c0e-04bb-4cb7-a81e-21dc5f81f6e7")
+		)
+		(fp_circle
+			(center -11.90625 -6.985)
+			(end -9.90625 -6.985)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "90c3ec83-e262-4b74-b916-a9d87599bb50")
+		)
+		(fp_circle
+			(center 11.90625 -6.985)
+			(end 13.90625 -6.985)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "a4028027-af07-482f-93e5-5fc174fa7ed2")
+		)
+		(pad "" np_thru_hole circle
+			(at -11.90625 -6.985)
+			(size 3.048 3.048)
+			(drill 3.048)
+			(layers "*.Cu" "*.Mask")
+			(uuid "5061a26e-587f-4588-a741-f36da0ef1fff")
+		)
+		(pad "" np_thru_hole circle
+			(at -11.90625 8.255)
+			(size 3.9878 3.9878)
+			(drill 3.9878)
+			(layers "*.Cu" "*.Mask")
+			(uuid "4b96d7dc-5224-4c1a-ac2c-86eb66101fff")
+		)
+		(pad "" np_thru_hole circle
+			(at 11.90625 -6.985)
+			(size 3.048 3.048)
+			(drill 3.048)
+			(layers "*.Cu" "*.Mask")
+			(uuid "5fe4709b-1d31-4df2-8466-d82f97d396dd")
+		)
+		(pad "" np_thru_hole circle
+			(at 11.90625 8.255)
+			(size 3.9878 3.9878)
+			(drill 3.9878)
+			(layers "*.Cu" "*.Mask")
+			(uuid "524cdfc9-dafe-4167-b110-344a96c2efdd")
+		)
+		(group ""
+			(uuid "ba8976c3-38c9-44bd-92c8-cbdb04f5c3e8")
+			(members "254b0e55-e087-4ea0-af7f-31f10d93fda2" "396c1a07-a701-45b2-8bcb-8ab2e2598693"
+				"5edee5f0-aead-450d-8397-cba9ad5f9d51" "bec08ea6-91ac-4f8a-a88f-0a40b42a9ef9"
+				"ccf45c0e-04bb-4cb7-a81e-21dc5f81f6e7" "d1b1a702-eaa2-4802-a67d-70fbcb25b661"
+				"f9b52e6d-b462-4388-926d-0417c806f9d8" "fead9bdb-77eb-4802-b5c6-e3e402aabd6c"
+			)
+		)
+		(group ""
+			(uuid "f57fb6d5-4b3d-4b2e-8b85-07f72168af56")
+			(members "09178fc7-d8fb-4990-bc01-827346fd7ffe" "15f7c983-bf01-446f-82d3-b1c68c4a77af"
+				"4671a8b6-f1f7-4a32-9a72-915adc356934" "78a8ca68-fd4d-4c4f-997d-9266ef7bbfe3"
+				"7929f715-a970-442b-9dc1-d2d0a436b236" "fb51e67a-fbb5-48cc-a5dd-21378eb76989"
+				"fe7b2a28-c18b-4332-bd06-ccdef326a1d8" "ff2e2ddc-f0ee-4017-871f-376db12af330"
+			)
+		)
+		(embedded_fonts no)
+	)
 	(footprint "PCM_Resistor_SMD_AKL:R_0805_2012Metric"
 		(layer "B.Cu")
 		(uuid "000dfb7f-44a5-494a-9ac5-86a31c02a7b5")
-		(at -40.389 193.232 180)
+		(at -45.1515 205.13825 180)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), Alternate KiCad Library")
 		(tags "resistor")
 		(property "Reference" "R6"
@@ -512,7 +2532,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "0460780a-4b05-4f1b-b478-d501b0453c9b")
-		(at 38.9725 30.95625 180)
+		(at 52.41 47.625 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_1"
 			(at -4.25 1.75 0)
@@ -1112,7 +3132,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "07d97887-3d68-41b5-baa7-0223135ce058")
-		(at 228.9175 50.00625 180)
+		(at 242.355 66.675 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_P1"
 			(at -4.25 1.75 0)
@@ -1712,7 +3732,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "08c66f77-924a-4d2e-9524-8d6859589a49")
-		(at -151.269 23.292 180)
+		(at -156.0315 35.19825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D36"
@@ -2044,7 +4064,7 @@
 	(footprint "PCM_Capacitor_SMD_AKL:C_0805_2012Metric"
 		(layer "B.Cu")
 		(uuid "0b66a852-1c14-4fa4-8c13-5d1453dd8247")
-		(at -17.821682 166.122 180)
+		(at -22.584182 178.02825 180)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), Alternate KiCad Library")
 		(tags "capacitor")
 		(property "Reference" "C8"
@@ -2271,7 +4291,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "0c362101-dcfc-44c6-a3e4-f7482483be43")
-		(at 314.0075 30.95625 180)
+		(at 327.445 47.625 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_HOME1"
 			(at -4.25 1.75 0)
@@ -2871,7 +4891,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "0c466174-f6ad-4447-88f8-34b613a531cf")
-		(at -163.109 15.092 180)
+		(at -167.8715 26.99825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D55"
@@ -3203,7 +5223,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "0d5996d3-c527-4ced-ba83-23b93bf5898a")
-		(at -35.588824 61.617 180)
+		(at -40.351324 73.52325 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_/1"
 			(at -4.25 1.75 0)
@@ -3803,7 +5823,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "0e6be63a-2e90-437a-8423-cee0c6138c76")
-		(at -169.029 19.192 180)
+		(at -173.7915 31.09825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D71"
@@ -4135,7 +6155,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "0eff4af6-0757-4055-bff5-da8ae5bae1dc")
-		(at 210.4225 30.95625 180)
+		(at 223.86 47.625 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_0"
 			(at -4.25 1.75 0)
@@ -4735,7 +6755,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "0f0a302b-9e61-4803-b2bb-f2fcbddc5f00")
-		(at -87.038824 16.467 180)
+		(at -91.801324 28.37325 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_M1"
 			(at -4.25 1.75 0)
@@ -5335,7 +7355,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "103083a8-148f-46d5-a7ec-4092d6e327ad")
-		(at -151.269 31.492 180)
+		(at -156.0315 43.39825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D38"
@@ -5667,7 +7687,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "14d35ec0-14c4-49e1-8ec1-126cf16dd61c")
-		(at -139.429 47.892 180)
+		(at -144.1915 59.79825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D22"
@@ -5999,7 +8019,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "14e1ea2c-3aa2-430a-b5f6-807d40ac5552")
-		(at -104.188824 151.917 180)
+		(at -108.951324 163.82325 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_V1"
 			(at -4.25 1.75 0)
@@ -6599,7 +8619,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "1808d732-6308-4fed-9a40-4f3e83482fee")
-		(at -69.888824 151.917 180)
+		(at -74.651324 163.82325 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_L1"
 			(at -4.25 1.75 0)
@@ -7199,7 +9219,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "18c63fa8-037f-40eb-a6f9-c19116f705a4")
-		(at -145.349 35.592 180)
+		(at -150.1115 47.49825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D29"
@@ -7531,7 +9551,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "1abfd860-8542-4a18-a410-0d7a256e168a")
-		(at 171.7675 50.00625 180)
+		(at 185.205 66.675 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_U1"
 			(at -4.25 1.75 0)
@@ -8131,7 +10151,7 @@
 	(footprint "PCM_Resistor_SMD_AKL:R_0805_2012Metric"
 		(layer "B.Cu")
 		(uuid "1e80dffe-ad70-418b-bd1d-84d0bf4f2f84")
-		(at -44.909 196.352 180)
+		(at -49.6715 208.25825 180)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), Alternate KiCad Library")
 		(tags "resistor")
 		(property "Reference" "R13"
@@ -8356,7 +10376,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "1f235bbc-b84f-4010-978f-5ab149c5dbf4")
-		(at -104.188824 16.467 180)
+		(at -108.951324 28.37325 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_RARROW1"
 			(at -4.25 1.75 0)
@@ -8956,7 +10976,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "1fdd6bda-1b73-4e7a-b7ae-4e1c33843811")
-		(at -139.429 31.492 180)
+		(at -144.1915 43.39825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D18"
@@ -9288,7 +11308,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "23126ec3-755e-49bf-a560-de34106f1381")
-		(at -133.509 10.992 180)
+		(at -138.2715 22.89825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D3"
@@ -9620,7 +11640,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "24f328ab-5a93-40db-86e8-6400f22bccc9")
-		(at -52.738824 46.567 180)
+		(at -57.501324 58.47325 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_CTRL1"
 			(at -4.25 1.75 0)
@@ -10220,7 +12240,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "2590d1db-20f0-4dd1-babc-dcda530ae558")
-		(at -145.349 10.992 180)
+		(at -150.1115 22.89825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D23"
@@ -10552,7 +12572,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "273b5807-ee6d-4783-a26f-2a69711ae8b6")
-		(at -104.188824 76.667 180)
+		(at -108.951324 88.57325 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_SPACE1"
 			(at -4.25 1.75 0)
@@ -11152,7 +13172,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "27a8fdd3-b992-44dd-ac1e-5668d165b0d9")
-		(at -52.738824 76.667 180)
+		(at -57.501324 88.57325 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_D1"
 			(at -4.25 1.75 0)
@@ -11752,7 +13772,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "2824508d-e2b5-423a-95f4-7759545667cb")
-		(at -163.109 31.492 180)
+		(at -167.8715 43.39825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D59"
@@ -12084,7 +14104,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "2ae8ae32-da78-42f9-a5d0-0f58d7e8aa63")
-		(at -169.029 10.992 180)
+		(at -173.7915 22.89825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D65"
@@ -12416,7 +14436,7 @@
 	(footprint "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
 		(layer "B.Cu")
 		(uuid "2b99cee9-9bfc-4339-8b42-d93d232fb9e3")
-		(at -27.184 163.767 180)
+		(at -31.9465 175.67325 180)
 		(descr "Through hole straight socket strip, 1x04, 2.54mm pitch, single row (from Kicad 4.0.7), script generated")
 		(tags "Through hole socket strip THT 1x04 2.54mm single row")
 		(property "Reference" "North1"
@@ -12738,7 +14758,7 @@
 	(footprint "PCM_Resistor_SMD_AKL:R_0805_2012Metric"
 		(layer "B.Cu")
 		(uuid "2c24d111-3c30-47b4-a242-52072e4c3b5d")
-		(at -40.389 190.112 180)
+		(at -45.1515 202.01825 180)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), Alternate KiCad Library")
 		(tags "resistor")
 		(property "Reference" "R5"
@@ -12963,7 +14983,7 @@
 	(footprint "PCM_Resistor_SMD_AKL:R_0805_2012Metric"
 		(layer "B.Cu")
 		(uuid "2dfb4817-9ec8-4e4e-9975-2f62e3c6f7ef")
-		(at -44.909 193.232 180)
+		(at -49.6715 205.13825 180)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), Alternate KiCad Library")
 		(tags "resistor")
 		(property "Reference" "R10"
@@ -13188,7 +15208,7 @@
 	(footprint "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
 		(layer "B.Cu")
 		(uuid "2ecd76c3-b8ca-4609-8e0c-b51657eb67f2")
-		(at -36.384 163.767 180)
+		(at -41.1465 175.67325 180)
 		(descr "Through hole straight socket strip, 1x04, 2.54mm pitch, single row (from Kicad 4.0.7), script generated")
 		(tags "Through hole socket strip THT 1x04 2.54mm single row")
 		(property "Reference" "West1"
@@ -13510,7 +15530,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "2f7b129a-47ac-4c46-a941-4bd5c3748830")
-		(at -151.269 39.692 180)
+		(at -156.0315 51.59825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D40"
@@ -13842,7 +15862,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "2f8db6d0-59a6-4b43-a974-7fb59c841e29")
-		(at -121.338824 46.567 180)
+		(at -126.101324 58.47325 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_X1"
 			(at -4.25 1.75 0)
@@ -14442,7 +16462,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "304f41f2-0255-420f-8a3e-6b5142b8ea60")
-		(at -145.349 23.292 180)
+		(at -150.1115 35.19825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D26"
@@ -14774,7 +16794,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "31b12493-d8d1-42c3-aa48-1c921754c7c5")
-		(at -163.109 43.792 180)
+		(at -167.8715 55.69825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D62"
@@ -15106,7 +17126,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "336f18b2-eb1d-4cab-aad1-32650b83d9d5")
-		(at -139.429 27.392 180)
+		(at -144.1915 39.29825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D17"
@@ -15438,7 +17458,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "337909fb-4cf2-4ed2-8ef9-39edcc35877c")
-		(at 58.0225 30.95625 180)
+		(at 71.46 47.625 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_2"
 			(at -4.25 1.75 0)
@@ -16038,7 +18058,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "339d6ca4-cddd-4429-a147-a59e410cebdc")
-		(at -139.429 15.092 180)
+		(at -144.1915 26.99825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D14"
@@ -16370,7 +18390,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "33a906f8-94cf-4f4d-943a-491caed35eed")
-		(at -69.888824 76.667 180)
+		(at -74.651324 88.57325 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_H1"
 			(at -4.25 1.75 0)
@@ -16970,7 +18990,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "36d4997c-f8b6-42fe-9687-98dc7989a848")
-		(at 172.3225 30.95625 180)
+		(at 185.76 47.625 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_8"
 			(at -4.25 1.75 0)
@@ -17570,7 +19590,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "3941d944-9532-4a7d-bb3d-43fbd3b1f8e3")
-		(at 134.2225 30.95625 180)
+		(at 147.66 47.625 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_6"
 			(at -4.25 1.75 0)
@@ -18170,7 +20190,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "3972ca5f-61ea-4617-ac77-f8f2ff945dac")
-		(at -151.269 47.892 180)
+		(at -156.0315 59.79825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D42"
@@ -18502,7 +20522,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "3baf838c-6073-405e-ad81-08396b99cc1a")
-		(at -69.888824 46.567 180)
+		(at -74.651324 58.47325 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_FN1"
 			(at -4.25 1.75 0)
@@ -19102,7 +21122,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "3d823b30-94ca-4765-9d16-f1b9f6d98609")
-		(at 19.9 30.95625 180)
+		(at 33.3375 47.625 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_ESC1"
 			(at -4.25 1.75 0)
@@ -19702,7 +21722,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "3e7581eb-ba76-47fa-af5a-aaf45363d4f7")
-		(at -151.269 10.992 180)
+		(at -156.0315 22.89825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D33"
@@ -20034,7 +22054,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "3f173f58-684c-4cd1-8011-f26753dd6abc")
-		(at 77.0725 30.95625 180)
+		(at 90.51 47.625 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_3"
 			(at -4.25 1.75 0)
@@ -20634,7 +22654,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "3f39341c-2931-4fc8-ae09-6e0f5ae1e376")
-		(at -35.588824 91.717 180)
+		(at -40.351324 103.62325 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_A1"
 			(at -4.25 1.75 0)
@@ -21234,7 +23254,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "3f457a37-df0f-406f-bfe2-53ca2628d901")
-		(at 209.87 50.00625 180)
+		(at 223.3075 66.675 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_O1"
 			(at -4.25 1.75 0)
@@ -21834,7 +23854,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "40992160-2e42-4e9b-a97a-1c1f0c6701d8")
-		(at -151.269 19.192 180)
+		(at -156.0315 31.09825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D35"
@@ -22166,7 +24186,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "40e350f6-97c4-4824-988e-370180410ff1")
-		(at -52.738824 91.717 180)
+		(at -57.501324 103.62325 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_DARROW1"
 			(at -4.25 1.75 0)
@@ -22766,7 +24786,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "419ebfae-959b-442d-b911-05a9f7a2e20b")
-		(at -87.038824 46.567 180)
+		(at -91.801324 58.47325 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_N1"
 			(at -4.25 1.75 0)
@@ -23366,7 +25386,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "429cea8e-8232-478e-a2e7-1eb115399112")
-		(at -169.029 23.292 180)
+		(at -173.7915 35.19825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D72"
@@ -23698,7 +25718,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "42f9baea-1a38-4874-a6a7-cd23f08ea821")
-		(at -133.509 47.892 180)
+		(at -138.2715 59.79825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D12"
@@ -24030,7 +26050,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "4340d866-d682-4552-bbb7-280338364f3c")
-		(at -157.189 15.092 180)
+		(at -161.9515 26.99825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D44"
@@ -24362,7 +26382,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "4445fa8a-ce30-4d0d-9c96-cca9b5dc5f9f")
-		(at -133.509 15.092 180)
+		(at -138.2715 26.99825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D4"
@@ -24694,7 +26714,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "44c1099d-4982-411c-8e17-4ae014605c87")
-		(at -52.738824 121.817 180)
+		(at -57.501324 133.72325 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_DEL1"
 			(at -4.25 1.75 0)
@@ -25294,7 +27314,7 @@
 	(footprint "PCM_Resistor_SMD_AKL:R_0805_2012Metric"
 		(layer "B.Cu")
 		(uuid "45702056-2079-4cd0-8c9e-0175dc08c50b")
-		(at -35.869 196.352 180)
+		(at -40.6315 208.25825 180)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), Alternate KiCad Library")
 		(tags "resistor")
 		(property "Reference" "R3"
@@ -25519,7 +27539,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "481298cb-a1c1-4c26-8527-3ed8807b2d47")
-		(at 133.6675 50.00625 180)
+		(at 147.105 66.675 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_T1"
 			(at -4.25 1.75 0)
@@ -26119,7 +28139,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "48e6d357-ec84-4815-9318-e35d9773dbd6")
-		(at 96.1225 30.95625 180)
+		(at 109.56 47.625 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_4"
 			(at -4.25 1.75 0)
@@ -26719,7 +28739,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "4a6f7644-b319-4c84-86ba-4e8d2ffb9bc2")
-		(at -151.269 35.592 180)
+		(at -156.0315 47.49825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D39"
@@ -27051,7 +29071,7 @@
 	(footprint "PCM_Capacitor_SMD_AKL:C_0805_2012Metric"
 		(layer "B.Cu")
 		(uuid "4b5c0773-fb42-4df0-a673-fcce08271a09")
-		(at -12.939894 178.602 180)
+		(at -17.702394 190.50825 180)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), Alternate KiCad Library")
 		(tags "capacitor")
 		(property "Reference" "C6"
@@ -27278,7 +29298,7 @@
 	(footprint "PCM_Resistor_SMD_AKL:R_0805_2012Metric"
 		(layer "B.Cu")
 		(uuid "4bfbc03b-0059-431e-9663-03215ea92d49")
-		(at -40.389 196.352 180)
+		(at -45.1515 208.25825 180)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), Alternate KiCad Library")
 		(tags "resistor")
 		(property "Reference" "R7"
@@ -27503,7 +29523,7 @@
 	(footprint "PCM_Capacitor_SMD_AKL:C_0805_2012Metric"
 		(layer "B.Cu")
 		(uuid "4cd884e3-cf3c-45de-a6fb-ecdb444af5b5")
-		(at -12.939894 166.122 180)
+		(at -17.702394 178.02825 180)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), Alternate KiCad Library")
 		(tags "capacitor")
 		(property "Reference" "C2"
@@ -27730,7 +29750,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "4cfbe0fb-fa28-4607-a055-4123d7a507a3")
-		(at -139.429 35.592 180)
+		(at -144.1915 47.49825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D19"
@@ -28062,7 +30082,7 @@
 	(footprint "PCM_Capacitor_SMD_AKL:C_0805_2012Metric"
 		(layer "B.Cu")
 		(uuid "4cfcec0e-c84b-4b92-b059-ced75de7e165")
-		(at -17.821682 169.242 180)
+		(at -22.584182 181.14825 180)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), Alternate KiCad Library")
 		(tags "capacitor")
 		(property "Reference" "C9"
@@ -28289,7 +30309,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "4dc8d405-02e8-4ae3-85d4-6377a82293aa")
-		(at -157.189 31.492 180)
+		(at -161.9515 43.39825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D48"
@@ -28621,7 +30641,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "4f1497d9-ffcd-415a-824d-a4879374630c")
-		(at -145.349 27.392 180)
+		(at -150.1115 39.29825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D27"
@@ -28953,7 +30973,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "4fbcc218-f5ed-42cd-b91e-a8549fd8ed62")
-		(at 57.4675 50.00625 180)
+		(at 66.675 66.675 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_Q1"
 			(at -4.25 1.75 0)
@@ -29553,7 +31573,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "508c8b6e-d9b1-428e-a959-5079cf26a507")
-		(at -104.188824 136.867 180)
+		(at -108.951324 148.77325 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_UARROW1"
 			(at -4.25 1.75 0)
@@ -30153,7 +32173,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "528e1029-17ce-4e6a-88fa-2668294496e4")
-		(at -151.269 43.792 180)
+		(at -156.0315 55.69825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D41"
@@ -30485,7 +32505,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "52dde66a-6daf-4f77-ab5b-f2b4e454232f")
-		(at -133.509 35.592 180)
+		(at -138.2715 47.49825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D9"
@@ -30817,7 +32837,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "54b9f55a-02c2-4490-b28b-5fc42a6bdb35")
-		(at -133.509 19.192 180)
+		(at -138.2715 31.09825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D5"
@@ -31149,7 +33169,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "5552a74e-c099-4f2d-bcf2-45458b9cdd1a")
-		(at -133.509 43.792 180)
+		(at -138.2715 55.69825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D11"
@@ -31481,7 +33501,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "565b1e20-11f3-4188-917a-c73659756586")
-		(at -163.109 35.592 180)
+		(at -167.8715 47.49825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D60"
@@ -31813,7 +33833,7 @@
 	(footprint "PCM_Capacitor_SMD_AKL:C_0805_2012Metric"
 		(layer "B.Cu")
 		(uuid "568ef8e3-df28-4001-b525-aaf1d9811e60")
-		(at -12.939894 172.362 180)
+		(at -17.702394 184.26825 180)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), Alternate KiCad Library")
 		(tags "capacitor")
 		(property "Reference" "C4"
@@ -32040,7 +34060,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "587a6d2a-7ae7-4a7f-842e-fff37ea83096")
-		(at -163.109 10.992 180)
+		(at -167.8715 22.89825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D54"
@@ -32372,7 +34392,7 @@
 	(footprint "Type-C.pretty-master:HRO-TYPE-C-31-M-12-HandSoldering"
 		(layer "B.Cu")
 		(uuid "600dfc2c-ac8d-4fc2-bb2f-719c203f92ed")
-		(at -43.979 171.362 180)
+		(at -48.7415 183.26825 180)
 		(property "Reference" "USB1"
 			(at 0 10.2 0)
 			(layer "B.SilkS")
@@ -32637,7 +34657,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "6212371b-89df-4556-baa1-a75658aecdd1")
-		(at -133.509 23.292 180)
+		(at -138.2715 35.19825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D6"
@@ -32969,7 +34989,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "63e476d1-d6f5-46f3-885e-bebf57b956fb")
-		(at -35.588824 106.767 180)
+		(at -40.351324 118.67325 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_ALT1"
 			(at -4.25 1.75 0)
@@ -33569,7 +35589,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "6566ca5f-c408-47f1-ab32-2232af80ff5f")
-		(at 114.6175 50.00625 180)
+		(at 128.055 66.675 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_R1"
 			(at -4.25 1.75 0)
@@ -34169,7 +36189,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "6617eddb-fd24-46f7-b51c-4e59fd536bf6")
-		(at 248 50.00625 180)
+		(at 261.4375 66.675 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_[1"
 			(at -4.25 1.75 0)
@@ -34769,7 +36789,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "668dd5fe-90ff-47dc-9d57-7a131f98d49d")
-		(at -169.029 35.592 180)
+		(at -173.7915 47.49825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D75"
@@ -35101,7 +37121,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "686dcea7-02d9-4ae2-bd2b-7a8b01fb3f23")
-		(at -69.888824 136.867 180)
+		(at -74.651324 148.77325 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_K1"
 			(at -4.25 1.75 0)
@@ -35701,7 +37721,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "6b612ec1-5651-4768-99d3-3fe1517854f0")
-		(at -104.188824 46.567 180)
+		(at -108.951324 58.47325 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_SHIFT1"
 			(at -4.25 1.75 0)
@@ -36301,7 +38321,7 @@
 	(footprint "PCM_marbastlib-various:SW_SPST_SKQG_WithStem"
 		(layer "B.Cu")
 		(uuid "6ee5041d-01c2-44ef-a4eb-09bc783f5da5")
-		(at -15.274 183.537 180)
+		(at -20.0365 195.44325 180)
 		(descr "ALPS 5.2mm Square Low-profile Type (Surface Mount) SKQG Series, With stem, http://www.alps.com/prod/info/E/HTML/Tact/SurfaceMount/SKQG/SKQGAFE010.html")
 		(tags "SPST Button Switch")
 		(property "Reference" "SW2"
@@ -36770,7 +38790,7 @@
 			)
 			(polygon
 				(pts
-					(xy -16.274 182.237) (xy -19.274 182.237) (xy -19.274 184.837) (xy -16.274 184.837)
+					(xy -21.0365 194.14325) (xy -24.0365 194.14325) (xy -24.0365 196.74325) (xy -21.0365 196.74325)
 				)
 			)
 		)
@@ -36802,7 +38822,7 @@
 			)
 			(polygon
 				(pts
-					(xy -11.274 182.237) (xy -14.274 182.237) (xy -14.274 184.837) (xy -11.274 184.837)
+					(xy -16.0365 194.14325) (xy -19.0365 194.14325) (xy -19.0365 196.74325) (xy -16.0365 196.74325)
 				)
 			)
 		)
@@ -36822,7 +38842,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "6f5bd415-a32f-461c-8cf6-ed19d02fdc84")
-		(at -163.109 27.392 180)
+		(at -167.8715 39.29825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D58"
@@ -37154,7 +39174,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "6fb6bf71-168c-46e2-a4f0-6ab2c6799761")
-		(at -139.429 39.692 180)
+		(at -144.1915 51.59825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D20"
@@ -37486,7 +39506,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "74485c87-0d5b-434c-88bd-e900196eedee")
-		(at -139.429 19.192 180)
+		(at -144.1915 31.09825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D15"
@@ -37818,7 +39838,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "74ae647d-9848-49b3-931d-d6eff5a0fc73")
-		(at 30 50.00625 180)
+		(at 38.1 66.675 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_TAB1"
 			(at -4.25 1.75 0)
@@ -38418,7 +40438,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-323"
 		(layer "B.Cu")
 		(uuid "74f34839-2bbd-4fdb-ae41-92b2f1d35c2b")
-		(at -27.639 198.092 180)
+		(at -32.4015 209.99825 180)
 		(descr "SOD-323, Alternate KiCad Library")
 		(tags "SOD-323")
 		(property "Reference" "D2"
@@ -38740,7 +40760,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "782f52c5-2bb1-41b3-9bf1-df981e944b4c")
-		(at -157.189 43.792 180)
+		(at -161.9515 55.69825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D52"
@@ -39072,7 +41092,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "79a8659a-255a-4577-9bd6-f34e692b6902")
-		(at 95.5675 50.00625 180)
+		(at 109.005 66.675 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_E1"
 			(at -4.25 1.75 0)
@@ -39672,7 +41692,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "834c1dd2-efdb-4b79-8f45-a2157810891a")
-		(at -121.338824 31.517 180)
+		(at -126.101324 43.42325 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_WIN1"
 			(at -4.25 1.75 0)
@@ -40272,7 +42292,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "837b93c0-7506-46cc-a660-cee58e65085b")
-		(at -157.189 47.892 180)
+		(at -161.9515 59.79825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D53"
@@ -40604,7 +42624,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "83ee422c-65e6-4638-80c8-1a11d2b7e6a4")
-		(at -35.588824 136.867 180)
+		(at -40.351324 148.77325 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_B1"
 			(at -4.25 1.75 0)
@@ -41204,7 +43224,7 @@
 	(footprint "PCM_Resistor_SMD_AKL:R_0805_2012Metric"
 		(layer "B.Cu")
 		(uuid "850da7ca-95ec-4ec2-bce3-b3770d4bb14f")
-		(at -35.869 193.232 180)
+		(at -40.6315 205.13825 180)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), Alternate KiCad Library")
 		(tags "resistor")
 		(property "Reference" "R2"
@@ -41429,7 +43449,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "854e69ce-3c90-4d93-9a43-5dc62dd83b4c")
-		(at -52.738824 61.617 180)
+		(at -57.501324 73.52325 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_CTRL2"
 			(at -4.25 1.75 0)
@@ -42029,7 +44049,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "8609121a-01cf-4f09-a961-8ba1f5a4a834")
-		(at -69.888824 61.617 180)
+		(at -74.651324 73.52325 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_G1"
 			(at -4.25 1.75 0)
@@ -42629,7 +44649,7 @@
 	(footprint "PCM_Capacitor_SMD_AKL:C_0805_2012Metric"
 		(layer "B.Cu")
 		(uuid "88e263d9-7421-40ab-b305-21527e34222f")
-		(at -17.821682 172.362 180)
+		(at -22.584182 184.26825 180)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), Alternate KiCad Library")
 		(tags "capacitor")
 		(property "Reference" "C10"
@@ -42856,7 +44876,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "89b77ee6-8248-4609-9944-eb5bb8ddbd7c")
-		(at -104.188824 31.517 180)
+		(at -108.951324 43.42325 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_S1"
 			(at -4.25 1.75 0)
@@ -43456,7 +45476,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "8f8c7755-6b61-41dc-88c2-1ac1a08f9e81")
-		(at -139.429 23.292 180)
+		(at -144.1915 35.19825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D16"
@@ -43788,7 +45808,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "909d58ba-5faf-40ae-9994-0f2448d572a5")
-		(at -87.038824 91.717 180)
+		(at -91.801324 103.62325 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_PGDN1"
 			(at -4.25 1.75 0)
@@ -44388,7 +46408,7 @@
 	(footprint "PCM_Capacitor_SMD_AKL:C_0805_2012Metric"
 		(layer "B.Cu")
 		(uuid "91619cc6-eeb1-42ba-a882-5332c0cfc1df")
-		(at -17.821682 175.482 180)
+		(at -22.584182 187.38825 180)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), Alternate KiCad Library")
 		(tags "capacitor")
 		(property "Reference" "C11"
@@ -44615,7 +46635,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "9323a22c-8d86-40d4-937b-0a8f8414339c")
-		(at -157.189 19.192 180)
+		(at -161.9515 31.09825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D45"
@@ -44947,7 +46967,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "93459440-f6cf-40f4-8fbd-0e25a0f8d282")
-		(at -52.738824 31.517 180)
+		(at 42.8625 85.725 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_CAPS1"
 			(at -4.25 1.75 0)
@@ -45547,7 +47567,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "93f7b841-8ee1-4465-b878-a4054c12fbd4")
-		(at -69.888824 31.517 180)
+		(at -74.651324 43.42325 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_F1"
 			(at -4.25 1.75 0)
@@ -46147,7 +48167,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "9413a74b-731c-4c21-8f74-9930c0b9f0f6")
-		(at 190.8 50.00625 180)
+		(at 204.2375 66.675 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_I1"
 			(at -4.25 1.75 0)
@@ -46747,7 +48767,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "94226e26-892b-4b08-a3f8-60891c37aa65")
-		(at -157.189 39.692 180)
+		(at -161.9515 51.59825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D51"
@@ -47079,7 +49099,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "94a2ec3d-1491-4886-afd0-c9125e982349")
-		(at -145.349 15.092 180)
+		(at -150.1115 26.99825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D24"
@@ -47411,7 +49431,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "968233fe-b30e-4a93-9a2c-8d856fd9860a")
-		(at 290.5125 50.00625 180)
+		(at 303.95 66.675 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_\\1"
 			(at -4.25 1.75 0)
@@ -48011,7 +50031,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "9866fcce-a5c2-4745-8420-1e0dc2c3f326")
-		(at -163.109 47.892 180)
+		(at -167.8715 59.79825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D64"
@@ -48343,7 +50363,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "986d27e7-3977-405d-b1e7-f5e72a54b0d3")
-		(at -157.189 35.592 180)
+		(at -161.9515 47.49825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D50"
@@ -48675,7 +50695,7 @@
 	(footprint "PCM_Resistor_SMD_AKL:R_0805_2012Metric"
 		(layer "B.Cu")
 		(uuid "99d4d3ed-d081-4425-aa84-18455422f1c8")
-		(at -44.909 190.112 180)
+		(at -49.6715 202.01825 180)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), Alternate KiCad Library")
 		(tags "resistor")
 		(property "Reference" "R9"
@@ -48900,7 +50920,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "9bf59e70-a011-4a78-be70-fc9cefe3827f")
-		(at -145.349 43.792 180)
+		(at -150.1115 55.69825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D31"
@@ -49232,7 +51252,7 @@
 	(footprint "PCM_Fuse_AKL:Fuse_0805_2012Metric_Pad1.15x1.40mm_BigPads"
 		(layer "B.Cu")
 		(uuid "9dc39ee3-982f-4175-b2f8-503bd38612b8")
-		(at -22.819 197.902 180)
+		(at -27.5815 209.80825 180)
 		(descr "Fuse SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), Alternate KiCAD Library")
 		(tags "fuse big pads")
 		(property "Reference" "FB1"
@@ -49457,7 +51477,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "a03dbe7b-61f2-4aab-b05c-30ccac72195d")
-		(at 286.0675 30.95625 180)
+		(at 299.505 47.625 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_BKSP1"
 			(at -4.25 1.75 0)
@@ -50057,7 +52077,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "a4948f74-9ae2-44fe-8cb3-3df716ea0841")
-		(at -145.349 19.192 180)
+		(at -150.1115 31.09825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D25"
@@ -50389,7 +52409,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "a4d613e2-f9f3-4a31-a96e-c464caf584ef")
-		(at 229.4725 30.95625 180)
+		(at 242.91 47.625 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_MINUS1"
 			(at -4.25 1.75 0)
@@ -50989,7 +53009,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "a87bfc77-2bbf-4314-90a1-45e22ae3d919")
-		(at -169.029 15.092 180)
+		(at -173.7915 26.99825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D68"
@@ -51321,7 +53341,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "a92325fe-00dd-46e5-a2ac-b8141a8d1146")
-		(at -54.5525 -4.60375 180)
+		(at -59.315 7.3025 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_,1"
 			(at -4.25 1.75 0)
@@ -51921,7 +53941,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "ab052e1f-0711-42ef-8952-7b4024b5e2b3")
-		(at -157.189 27.392 180)
+		(at -161.9515 39.29825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D47"
@@ -52253,7 +54273,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "ac63ea69-ebaf-4b93-9431-6999ffd34dc8")
-		(at -35.588824 76.667 180)
+		(at -40.351324 88.57325 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_;1"
 			(at -4.25 1.75 0)
@@ -52853,7 +54873,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "ad577c37-bce4-498f-b923-861f152c31c4")
-		(at 152.7175 50.00625 180)
+		(at 166.155 66.675 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_Y1"
 			(at -4.25 1.75 0)
@@ -53453,7 +55473,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "afa99148-c8a5-4350-893b-ff1e08f65946")
-		(at -157.189 23.292 180)
+		(at -161.9515 35.19825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D46"
@@ -53785,7 +55805,7 @@
 	(footprint "PCM_Package_TO_SOT_SMD_AKL:SOT-143_Handsoldering"
 		(layer "B.Cu")
 		(uuid "b0ecf570-9ad0-4e4e-8286-7ee10f232d9e")
-		(at -14.5515 198.637 180)
+		(at -19.314 210.54325 180)
 		(descr "SOT-143 Handsoldering, Alternate KiCad Library")
 		(tags "SOT-143 Handsoldering")
 		(property "Reference" "D1"
@@ -54058,7 +56078,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "b0f97626-3fc5-4f8b-a7e1-b5abdf6b67cc")
-		(at -151.269 15.092 180)
+		(at -156.0315 26.99825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D34"
@@ -54390,7 +56410,7 @@
 	(footprint "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Horizontal"
 		(layer "B.Cu")
 		(uuid "b13cea87-10e3-4372-8250-25d430b3bdcd")
-		(at -31.334 176.017 180)
+		(at -36.0965 187.92325 180)
 		(descr "Through hole angled socket strip, 1x06, 2.54mm pitch, 8.51mm socket length, single row (from Kicad 4.0.7), script generated")
 		(tags "Through hole angled socket strip THT 1x06 2.54mm single row")
 		(property "Reference" "J1"
@@ -55294,7 +57314,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "b2b5f8d1-ddd7-476e-bf54-ea865183f81a")
-		(at 248.5 30.95625 180)
+		(at 261.9375 47.625 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_PLUS1"
 			(at -4.25 1.75 0)
@@ -55894,7 +57914,7 @@
 	(footprint "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
 		(layer "B.Cu")
 		(uuid "b4f1e43b-b724-4579-bf07-02da4abfe7cd")
-		(at -22.584 163.767 180)
+		(at -27.3465 175.67325 180)
 		(descr "Through hole straight socket strip, 1x04, 2.54mm pitch, single row (from Kicad 4.0.7), script generated")
 		(tags "Through hole socket strip THT 1x04 2.54mm single row")
 		(property "Reference" "East1"
@@ -56216,7 +58236,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "b5093143-7f50-4155-90ec-674e59897cb3")
-		(at -52.738824 16.467 180)
+		(at -57.501324 28.37325 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_C1"
 			(at -4.25 1.75 0)
@@ -56816,7 +58836,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "b707b566-333e-4ffc-ab5f-f0fc450f84fb")
-		(at 153.2725 30.95625 180)
+		(at 166.71 47.625 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_7"
 			(at -4.25 1.75 0)
@@ -57416,7 +59436,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "b774e38e-349b-423d-a34f-0580edda0b0e")
-		(at -145.349 39.692 180)
+		(at -150.1115 51.59825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D30"
@@ -57748,7 +59768,7 @@
 	(footprint "PCM_Resistor_SMD_AKL:R_0805_2012Metric"
 		(layer "B.Cu")
 		(uuid "b9b59f1a-381d-419d-9785-a48a514e093e")
-		(at -35.869 199.472 180)
+		(at -40.6315 211.37825 180)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), Alternate KiCad Library")
 		(tags "resistor")
 		(property "Reference" "R4"
@@ -57973,7 +59993,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "bac3c50c-5c3a-4098-899b-baa029d73831")
-		(at -121.338824 76.667 180)
+		(at -126.101324 88.57325 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_Z1"
 			(at -4.25 1.75 0)
@@ -58573,7 +60593,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "bd910c09-df33-4811-8e61-4d6d228b904e")
-		(at -151.269 27.392 180)
+		(at -156.0315 39.29825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D37"
@@ -58905,7 +60925,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "bf2a5e87-e058-4236-84af-cb6949e2d594")
-		(at -139.429 43.792 180)
+		(at -144.1915 55.69825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D21"
@@ -59237,7 +61257,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "bfa1d042-587f-4da5-b086-d609cb60162c")
-		(at 115.1725 30.95625 180)
+		(at 128.61 47.625 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_5"
 			(at -4.25 1.75 0)
@@ -59837,7 +61857,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "c1f28c43-3e04-4d66-90f3-9cb7f18c36a4")
-		(at -157.189 10.992 180)
+		(at -161.9515 22.89825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D43"
@@ -60169,7 +62189,7 @@
 	(footprint "footprints:LQFP64-10x10mm"
 		(layer "B.Cu")
 		(uuid "c341d8a6-d701-447f-8d07-c29738d375e6")
-		(at -41.1123 181.1231 180)
+		(at -45.8748 193.02935 180)
 		(tags "STM32F446RET6 ")
 		(property "Reference" "U1"
 			(at 0 0 0)
@@ -61245,7 +63265,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "c34b0e7a-65a5-431c-861a-adc1b7171962")
-		(at -139.429 10.992 180)
+		(at -144.1915 22.89825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D13"
@@ -61577,7 +63597,7 @@
 	(footprint "PCM_Capacitor_SMD_AKL:C_0805_2012Metric"
 		(layer "B.Cu")
 		(uuid "c5925efe-4a12-4abe-83d2-cfb276bf8b1e")
-		(at -12.939894 175.482 180)
+		(at -17.702394 187.38825 180)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), Alternate KiCad Library")
 		(tags "capacitor")
 		(property "Reference" "C5"
@@ -61804,7 +63824,7 @@
 	(footprint "PCM_Capacitor_SMD_AKL:C_0805_2012Metric"
 		(layer "B.Cu")
 		(uuid "caa7f542-52ce-438c-b8e4-db0116fab214")
-		(at -17.821682 163.002 180)
+		(at -22.584182 174.90825 180)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), Alternate KiCad Library")
 		(tags "capacitor")
 		(property "Reference" "C7"
@@ -62031,7 +64051,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "cb75fc20-8c80-420e-adc0-6d059d2f7152")
-		(at -35.588824 16.467 180)
+		(at -40.351324 28.37325 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_'1"
 			(at -4.25 1.75 0)
@@ -62631,7 +64651,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "cd03bce1-91f5-46db-a43f-cf25f40fcb21")
-		(at -169.029 31.492 180)
+		(at -173.7915 43.39825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D74"
@@ -62963,7 +64983,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "ce7b7a75-8dd0-4229-9949-2819d3b30d67")
-		(at -35.588824 121.817 180)
+		(at -40.351324 133.72325 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_ALT2"
 			(at -4.25 1.75 0)
@@ -63563,7 +65583,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "ceec849f-e6a6-43e5-b182-3fb1dd686cc6")
-		(at -69.888824 121.817 180)
+		(at -74.651324 133.72325 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_J1"
 			(at -4.25 1.75 0)
@@ -64163,7 +66183,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "d13ea200-9376-4129-b5a6-78e07413c2b8")
-		(at 191.3725 30.95625 180)
+		(at 204.81 47.625 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_9"
 			(at -4.25 1.75 0)
@@ -64763,7 +66783,7 @@
 	(footprint "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
 		(layer "B.Cu")
 		(uuid "d15e3a23-0c31-4b0f-91a3-e052d9dee58a")
-		(at -31.784 163.767 180)
+		(at -36.5465 175.67325 180)
 		(descr "Through hole straight socket strip, 1x04, 2.54mm pitch, single row (from Kicad 4.0.7), script generated")
 		(tags "Through hole socket strip THT 1x04 2.54mm single row")
 		(property "Reference" "South1"
@@ -65085,7 +67105,7 @@
 	(footprint "PCM_Crystal_AKL:Crystal_HC52-U_Vertical"
 		(layer "B.Cu")
 		(uuid "d2c26a48-118a-4c96-bddd-fb8aad33b018")
-		(at -23.384 193.617 180)
+		(at -28.1465 205.52325 180)
 		(descr "Crystal THT HC-52/U, http://www.kvg-gmbh.de/assets/uploads/files/product_pdfs/XS71xx.pdf, Alternate KiCad Library")
 		(tags "THT crystal HC-52/U")
 		(property "Reference" "Y1"
@@ -65447,7 +67467,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "d6f1209c-b574-4432-ab42-639930c4ac89")
-		(at 267 50.00625 180)
+		(at 280.4375 66.675 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_]1"
 			(at -4.25 1.75 0)
@@ -66047,7 +68067,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "d808ab90-cda1-4814-927c-fedfafcb346a")
-		(at -104.188824 61.617 180)
+		(at -108.951324 73.52325 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_SHIFT2"
 			(at -4.25 1.75 0)
@@ -66647,7 +68667,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "d891079d-63e4-493d-bbb6-32326f94b976")
-		(at -169.029 39.692 180)
+		(at -173.7915 51.59825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D76"
@@ -66979,7 +68999,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "d8b11ef3-0012-4873-8701-575f6ea139b0")
-		(at -52.738824 106.767 180)
+		(at -57.501324 118.67325 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_DARROW2"
 			(at -4.25 1.75 0)
@@ -67579,7 +69599,7 @@
 	(footprint "PCM_Resistor_SMD_AKL:R_0805_2012Metric"
 		(layer "B.Cu")
 		(uuid "dac3be5c-bd1b-43d0-a7d4-7c3d02576f50")
-		(at -35.869 190.112 180)
+		(at -40.6315 202.01825 180)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), Alternate KiCad Library")
 		(tags "resistor")
 		(property "Reference" "R1"
@@ -67804,7 +69824,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "db394feb-f53d-424e-bee0-190376326818")
-		(at -133.509 27.392 180)
+		(at -138.2715 39.29825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D7"
@@ -68136,7 +70156,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "dd09799d-a3fb-4f5a-bf35-3f6aa202aa77")
-		(at -145.349 31.492 180)
+		(at -150.1115 43.39825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D28"
@@ -68468,7 +70488,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "de361b36-2ed8-4149-9356-6a7557077e91")
-		(at -145.349 47.892 180)
+		(at -150.1115 59.79825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D32"
@@ -68800,7 +70820,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "e01c7c2c-2db9-496f-a344-6db55cfc3d3b")
-		(at -163.109 23.292 180)
+		(at -167.8715 35.19825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D57"
@@ -69132,7 +71152,7 @@
 	(footprint "PCM_Capacitor_SMD_AKL:C_0805_2012Metric"
 		(layer "B.Cu")
 		(uuid "e786af02-8d62-430f-bea6-5d2c15b63567")
-		(at -12.939894 163.002 180)
+		(at -17.702394 174.90825 180)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), Alternate KiCad Library")
 		(tags "capacitor")
 		(property "Reference" "C1"
@@ -69359,7 +71379,7 @@
 	(footprint "PCM_Resistor_SMD_AKL:R_0805_2012Metric"
 		(layer "B.Cu")
 		(uuid "eb2964dc-f557-44fa-893b-779a9224361d")
-		(at -40.389 199.472 180)
+		(at -45.1515 211.37825 180)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), Alternate KiCad Library")
 		(tags "resistor")
 		(property "Reference" "R8"
@@ -69584,7 +71604,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "eb4f14f0-b107-4a94-a17d-02466bb661f6")
-		(at -52.738824 151.917 180)
+		(at -57.501324 163.82325 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_ENTER1"
 			(at -4.25 1.75 0)
@@ -70184,7 +72204,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "ebedddbc-27c4-415e-9e10-6bf2aabcb359")
-		(at -133.509 39.692 180)
+		(at -138.2715 51.59825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D10"
@@ -70516,7 +72536,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "f0996015-6303-4e5c-b447-544ed94c703f")
-		(at -133.509 31.492 180)
+		(at -138.2715 43.39825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D8"
@@ -70848,7 +72868,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "f216b85a-945c-43b7-90de-bf0d5356651d")
-		(at -163.109 19.192 180)
+		(at -167.8715 31.09825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D56"
@@ -71180,7 +73200,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "f3b401fc-a096-4cf3-ae2b-1f2d0ae8fbd5")
-		(at -163.109 39.692 180)
+		(at -167.8715 51.59825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D61"
@@ -71512,7 +73532,7 @@
 	(footprint "PCM_4ms_Package_SOT:SOT223"
 		(layer "B.Cu")
 		(uuid "f78a514e-0598-416d-9e49-25cee811ad10")
-		(at -14.574 191.637 180)
+		(at -19.3365 203.54325 180)
 		(descr "SOT-223")
 		(property "Reference" "IC1"
 			(at -1.05 4.38 0)
@@ -71806,7 +73826,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "f790a006-3463-4190-a5c5-bead8d6c7229")
-		(at -87.038824 106.767 180)
+		(at -91.801324 118.67325 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_PGUP1"
 			(at -4.25 1.75 0)
@@ -72406,7 +74426,7 @@
 	(footprint "PCM_Capacitor_SMD_AKL:C_0805_2012Metric"
 		(layer "B.Cu")
 		(uuid "f827e5a1-61a6-456e-866b-a048267f9faa")
-		(at -12.939894 169.242 180)
+		(at -17.702394 181.14825 180)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), Alternate KiCad Library")
 		(tags "capacitor")
 		(property "Reference" "C3"
@@ -72633,7 +74653,7 @@
 	(footprint "PCM_Diode_SMD_AKL:D_SOD-123"
 		(layer "B.Cu")
 		(uuid "f9d5d4de-750d-4a0b-965b-99135cc3026a")
-		(at -169.029 27.392 180)
+		(at -173.7915 39.29825 180)
 		(descr "SOD-123, Alternate KiCad Library")
 		(tags "SOD-123")
 		(property "Reference" "D73"
@@ -72965,7 +74985,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "fa5390f2-3b84-41df-b8ff-d18cccde8d99")
-		(at -35.588824 46.567 180)
+		(at -40.351324 58.47325 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_.1"
 			(at -4.25 1.75 0)
@@ -73565,7 +75585,7 @@
 	(footprint "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
 		(layer "B.Cu")
 		(uuid "ff83d47c-b711-4775-8c41-3b97cac217e1")
-		(at 76.5175 50.00625 180)
+		(at 89.955 66.675 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_W1"
 			(at -4.25 1.75 0)
