@@ -187,7 +187,6 @@ int main(void)
   HAL_UART_Receive_DMA(&huart2, (uint8_t*)&RX2Msg, sizeof(UARTMessage));
   HAL_UART_Receive_DMA(&huart4, (uint8_t*)&RX4Msg, sizeof(UARTMessage));
   HAL_UART_Receive_DMA(&huart5, (uint8_t*)&RX5Msg, sizeof(UARTMessage));
-
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -198,6 +197,11 @@ int main(void)
 	  case MODE_ACTIVE:
 		  resetReport();
 		  matrixScan();
+		  UARTMessage UARTREPORT;
+		  UARTREPORT.DEPTH = DEPTH;
+		  UARTREPORT.TYPE = 0xEE;
+		  memcpy(UARTREPORT.KEYPRESS, REPORT.KEYPRESS, sizeof(UARTREPORT.KEYPRESS));
+		  HAL_UART_Transmit_DMA(PARENT, (uint8_t*)&UARTREPORT, sizeof(UARTREPORT));
 		  break;
 
 	  case MODE_INACTIVE:
@@ -228,7 +232,11 @@ int main(void)
 		  matrixScan();
 		  USBD_HID_SendReport(&hUsbDeviceFS, (uint8_t*)&REPORT, sizeof(REPORT));
 		  break;
+
+	  default:
+		  break;
 	  }
+
 	  HAL_Delay(50);
     /* USER CODE END WHILE */
 
@@ -287,19 +295,19 @@ void SystemClock_Config(void)
 // UART Message Requests Goes Here
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
     if (huart->Instance == USART1) {
-        handleUARTMessages((uint8_t*)&RX1Msg, huart);
+        handleUARTMessages((uint8_t*)&RX1Msg, &huart1);
         HAL_UART_Receive_DMA(&huart1, (uint8_t*)&RX1Msg, sizeof(UARTMessage));
     }
     else if (huart->Instance == USART2) {
-        handleUARTMessages((uint8_t*)&RX2Msg, huart);
+        handleUARTMessages((uint8_t*)&RX2Msg, &huart2);
         HAL_UART_Receive_DMA(&huart2, (uint8_t*)&RX2Msg, sizeof(UARTMessage));
     }
     else if (huart->Instance == UART4) {
-        handleUARTMessages((uint8_t*)&RX4Msg, huart);
+        handleUARTMessages((uint8_t*)&RX4Msg, &huart4);
         HAL_UART_Receive_DMA(&huart4, (uint8_t*)&RX4Msg, sizeof(UARTMessage));
     }
     else if (huart->Instance == UART5) {
-        handleUARTMessages((uint8_t*)&RX5Msg, huart);
+        handleUARTMessages((uint8_t*)&RX5Msg, &huart5);
         HAL_UART_Receive_DMA(&huart5, (uint8_t*)&RX5Msg, sizeof(UARTMessage));
     }
 }
@@ -320,6 +328,8 @@ void findBestParent(){
   if(least_val < 0xFF){
 	  PARENT = least_port;
 	  DEPTH = least_val + 1;
+	  MODE = MODE_ACTIVE;
+	  HAL_Delay(500);
   }
 }
 
@@ -348,12 +358,20 @@ void handleUARTMessages(uint8_t *data, UART_HandleTypeDef *sender) {
 
         // Requested to be a parent
         case 0xFF:
-            reply.TYPE = 0xAA;
-            reply.DEPTH = DEPTH;   // use your local DEPTH
-            memset(reply.KEYPRESS, 0, sizeof(reply.KEYPRESS));
-
-            HAL_UART_Transmit(sender, (uint8_t*)&reply, sizeof(reply), HAL_MAX_DELAY);
+        	if(MODE!=MODE_INACTIVE){
+				reply.TYPE = 0xAA;
+				reply.DEPTH = DEPTH;   // use your local DEPTH
+				memset(reply.KEYPRESS, 0, sizeof(reply.KEYPRESS));
+				HAL_UART_Transmit_DMA(sender, (uint8_t*)&reply, sizeof(reply));
+        	}
             break;
+
+        case 0xEE:
+        	//TODO: Append message to the thingy
+        	break;
+
+        default:
+        	break;
 
     }
 }
