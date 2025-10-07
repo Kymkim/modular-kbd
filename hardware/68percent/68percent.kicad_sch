@@ -4692,16 +4692,6 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 132.08) (xy 162.56 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0c365f9b-ec33-45c0-bcaa-f753e4bca3a2")
-	)
-	(wire
-		(pts
 			(xy 147.32 77.47) (xy 147.32 88.9)
 		)
 		(stroke
@@ -5079,16 +5069,6 @@
 			(type default)
 		)
 		(uuid "4cca7c1a-d12a-4d5b-8dd4-4401bb342c6d")
-	)
-	(wire
-		(pts
-			(xy 154.94 132.08) (xy 154.94 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4d52ae93-a4ca-4383-bb89-91e9056bf0db")
 	)
 	(wire
 		(pts
@@ -5789,16 +5769,6 @@
 			(type default)
 		)
 		(uuid "a21450c8-f3ae-43eb-a9d5-11adce89c1f1")
-	)
-	(wire
-		(pts
-			(xy 160.02 132.08) (xy 160.02 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a53cb74b-b460-44ad-b050-031ab179966a")
 	)
 	(wire
 		(pts
@@ -6670,16 +6640,6 @@
 		)
 		(uuid "4908fc84-621c-47df-aa9c-5c6724d4e267")
 	)
-	(label "ROT_TIMA"
-		(at 162.56 151.13 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "49a74743-1f19-4803-95ce-65fbcfcf3666")
-	)
 	(label "COL3"
 		(at 237.49 26.67 270)
 		(effects
@@ -7060,6 +7020,16 @@
 		)
 		(uuid "98066d23-6bbb-440b-b346-e60179dceea1")
 	)
+	(label "RGB_DATAIN"
+		(at 237.49 113.03 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9fa75837-02a6-4f2b-8b4a-bf84097a30c4")
+	)
 	(label "UART_RX_WEST"
 		(at 212.09 106.68 180)
 		(effects
@@ -7270,16 +7240,6 @@
 		)
 		(uuid "e9b26d3d-3813-4e99-8ea8-af0648067087")
 	)
-	(label "ROT_SW"
-		(at 154.94 147.32 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ecce62bc-b4cc-48bb-a6e3-988ce1c4f4c4")
-	)
 	(label "UART_RX_SOUTH"
 		(at 53.34 92.71 0)
 		(effects
@@ -7309,16 +7269,6 @@
 			(justify right bottom)
 		)
 		(uuid "f325fd11-511d-4af8-8e04-8af1e81ceee5")
-	)
-	(label "ROT_TIMB"
-		(at 160.02 151.13 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "fe355360-6bef-43f4-a60d-7c9f0aed2700")
 	)
 	(symbol
 		(lib_id "PCM_4ms_Power-symbol:GND")
@@ -11698,6 +11648,48 @@
 				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82"
 					(reference "#PWR07")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 241.3 93.98)
+		(size 36.83 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "0330dd45-2776-4667-9e47-eb2dbca2bb32")
+		(property "Sheetname" "RGB Lights"
+			(at 241.3 93.2684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "untitled.kicad_sch"
+			(at 241.3 114.8846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "68percent"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82"
+					(page "3")
 				)
 			)
 		)

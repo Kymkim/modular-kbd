@@ -4063,7 +4063,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_Plated_1.25u"
 			(at 81.28 135.89 0)
 			(effects
 				(font
@@ -4200,7 +4200,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1.5u"
 			(at 220.98 74.93 0)
 			(effects
 				(font
@@ -4884,7 +4884,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_Plated_1.75u"
 			(at 195.58 115.57 0)
 			(effects
 				(font
@@ -5635,7 +5635,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_Plated_1.25u"
 			(at 55.88 135.89 0)
 			(effects
 				(font
@@ -6695,70 +6695,6 @@
 			(project "68percent"
 				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
 					(reference "KEY_L1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PCM_marbastlib-mx:MX_stab")
-		(at 208.28 115.57 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "51fc25a2-8ccb-4202-adf4-9296b7e634f4")
-		(property "Reference" "S3"
-			(at 214.63 114.1729 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MX_stab"
-			(at 214.63 116.7129 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "PCM_marbastlib-mx:STAB_MX_P_2u"
-			(at 208.28 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 208.28 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Cherry MX-style stabilizer"
-			(at 208.28 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project ""
-				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
-					(reference "S3")
 					(unit 1)
 				)
 			)
@@ -8300,7 +8236,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_Plated_1.25u"
 			(at 68.58 135.89 0)
 			(effects
 				(font
@@ -8611,6 +8547,69 @@
 			(project "68percent"
 				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
 					(reference "KEY_T1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_stab")
+		(at 208.28 116.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8d5b1b13-433e-4172-99dd-087f80a0e93a")
+		(property "Reference" "S3"
+			(at 206.756 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MX_stab"
+			(at 206.756 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:STAB_MX_P_2u"
+			(at 208.28 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 208.28 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Cherry MX-style stabilizer"
+			(at 208.28 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "68percent"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "S3")
 					(unit 1)
 				)
 			)
@@ -9031,7 +9030,7 @@
 	)
 	(symbol
 		(lib_id "PCM_marbastlib-mx:MX_stab")
-		(at 38.1 119.38 0)
+		(at 35.56 124.46 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9040,7 +9039,7 @@
 		(fields_autoplaced yes)
 		(uuid "93b94b08-0cc9-494f-899a-9d796e095412")
 		(property "Reference" "S1"
-			(at 44.45 117.9829 0)
+			(at 41.91 123.0629 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9049,7 +9048,7 @@
 			)
 		)
 		(property "Value" "MX_stab"
-			(at 44.45 120.5229 0)
+			(at 41.91 125.6029 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9057,8 +9056,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-mx:STAB_MX_P_6.25u"
-			(at 38.1 119.38 0)
+		(property "Footprint" "PCM_marbastlib-mx:STAB_MX_2.25u"
+			(at 35.56 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9067,7 +9066,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 38.1 119.38 0)
+			(at 35.56 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9076,7 +9075,7 @@
 			)
 		)
 		(property "Description" "Cherry MX-style stabilizer"
-			(at 38.1 119.38 0)
+			(at 35.56 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9325,7 +9324,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_Plated_1.25u"
 			(at 119.38 135.89 0)
 			(effects
 				(font
@@ -12584,7 +12583,7 @@
 	)
 	(symbol
 		(lib_id "PCM_marbastlib-mx:MX_stab")
-		(at 138.43 140.97 0)
+		(at 146.05 139.7 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12592,7 +12591,7 @@
 		(dnp no)
 		(uuid "eef9331e-0bf5-4f92-a54f-c0b6635718b4")
 		(property "Reference" "S2"
-			(at 132.08 142.1131 0)
+			(at 139.7 140.8431 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12601,7 +12600,7 @@
 			)
 		)
 		(property "Value" "MX_stab"
-			(at 132.08 139.5731 0)
+			(at 139.7 138.3031 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12609,8 +12608,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-mx:STAB_MX_P_2.75u"
-			(at 138.43 140.97 0)
+		(property "Footprint" "PCM_marbastlib-mx:STAB_MX_P_6.25u"
+			(at 146.05 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12619,7 +12618,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 138.43 140.97 0)
+			(at 146.05 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12628,7 +12627,7 @@
 			)
 		)
 		(property "Description" "Cherry MX-style stabilizer"
-			(at 138.43 140.97 0)
+			(at 146.05 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
