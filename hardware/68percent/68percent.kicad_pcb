@@ -359,7 +359,7 @@
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), Alternate KiCad Library")
 		(tags "resistor")
 		(property "Reference" "R6"
-			(at 0 -1.7 90)
+			(at 0 0 90)
 			(layer "F.SilkS")
 			(uuid "1a4d7388-cce8-47be-ad6c-b7deb3473471")
 			(effects
@@ -579,7 +579,7 @@
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), Alternate KiCad Library")
 		(tags "capacitor")
 		(property "Reference" "C8"
-			(at 0 -1.68 90)
+			(at 0 0 90)
 			(layer "F.SilkS")
 			(uuid "b9cc3c54-3f56-4b44-b0b0-fccf67d3cb14")
 			(effects
@@ -1193,7 +1193,7 @@
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), Alternate KiCad Library")
 		(tags "resistor")
 		(property "Reference" "R13"
-			(at 0 -1.7 0)
+			(at 0 0 0)
 			(layer "F.SilkS")
 			(uuid "7e2dbdfe-2825-4fc0-88ff-39816bdc3db6")
 			(effects
@@ -2073,7 +2073,7 @@
 			(net 40 "/COL1")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "8faedc3d-a97b-4927-be64-e0faa9c2a6ec")
+			(uuid "20ea3544-e482-4dac-b589-0a5f07b6e3b0")
 		)
 		(pad "2" thru_hole circle
 			(at 2.54 -5.08)
@@ -2094,7 +2094,7 @@
 			(net 22 "Net-(D21-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "f4ab533d-1b0f-494e-87ad-ba070400dadf")
+			(uuid "417961db-bd34-4a29-a862-7cb6ba79c0d0")
 		)
 		(embedded_fonts no)
 		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_MX.wrl"
@@ -2776,7 +2776,7 @@
 			(net 129 "/COL6")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "1373cd35-a2b8-4044-a88a-897b9e92ed5f")
+			(uuid "10066390-3540-4ed3-b05a-95c1ef17f6b0")
 		)
 		(pad "2" thru_hole circle
 			(at 2.54 -5.08)
@@ -2797,7 +2797,7 @@
 			(net 110 "Net-(D68-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "740424e6-75c4-465f-91d7-45367ce05b4a")
+			(uuid "0f1d08b1-2fce-4bb1-a90a-7ff0178be488")
 		)
 		(embedded_fonts no)
 		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_MX.wrl"
@@ -3133,7 +3133,7 @@
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), Alternate KiCad Library")
 		(tags "resistor")
 		(property "Reference" "R5"
-			(at 0 -1.7 90)
+			(at 0 0 90)
 			(layer "F.SilkS")
 			(uuid "1b0b1e27-0057-40c7-965d-60076d2eaa42")
 			(effects
@@ -3353,7 +3353,7 @@
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), Alternate KiCad Library")
 		(tags "resistor")
 		(property "Reference" "R10"
-			(at 0 -1.7 90)
+			(at 0 0 90)
 			(layer "F.SilkS")
 			(uuid "c074172f-dec6-4e31-aca0-252ff3fd5a02")
 			(effects
@@ -4691,7 +4691,7 @@
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), Alternate KiCad Library")
 		(tags "resistor")
 		(property "Reference" "R3"
-			(at 0 -2.890625 0)
+			(at 0 0 0)
 			(layer "F.SilkS")
 			(uuid "3737fdda-a472-4d0f-838d-b044c7258d2b")
 			(effects
@@ -5303,7 +5303,7 @@
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), Alternate KiCad Library")
 		(tags "capacitor")
 		(property "Reference" "C6"
-			(at 0 -1.68 90)
+			(at 0 0 90)
 			(layer "F.SilkS")
 			(uuid "1a55091a-5a2d-4c04-af10-3fe9274a4457")
 			(effects
@@ -5525,7 +5525,7 @@
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), Alternate KiCad Library")
 		(tags "resistor")
 		(property "Reference" "R7"
-			(at 0 -1.7 0)
+			(at 0 0 0)
 			(layer "F.SilkS")
 			(uuid "6efa0e9f-bfb3-46ea-aff7-fdece434af2d")
 			(effects
@@ -5745,7 +5745,7 @@
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), Alternate KiCad Library")
 		(tags "capacitor")
 		(property "Reference" "C2"
-			(at 0 -1.68 90)
+			(at 0 0 90)
 			(layer "F.SilkS")
 			(uuid "d5e053fc-b0b1-4ff5-a9d5-a071f3af1144")
 			(effects
@@ -5967,7 +5967,7 @@
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), Alternate KiCad Library")
 		(tags "capacitor")
 		(property "Reference" "C9"
-			(at 0 -1.68 90)
+			(at 0 0 90)
 			(layer "F.SilkS")
 			(uuid "546369ec-5542-4ada-a25c-309b2a7e27ec")
 			(effects
@@ -6189,7 +6189,7 @@
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), Alternate KiCad Library")
 		(tags "capacitor")
 		(property "Reference" "C4"
-			(at 0 -1.68 90)
+			(at 0 0 90)
 			(layer "F.SilkS")
 			(uuid "99578d07-81bd-456d-9e08-9215cee46341")
 			(effects
@@ -7071,7 +7071,7 @@
 			(net 37 "/COL3")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "fee33f78-edd7-4914-8af2-b0b30e277cb9")
+			(uuid "8a2f7a36-8435-4170-99e8-8b7ac5659a06")
 		)
 		(pad "2" thru_hole circle
 			(at 2.54 -5.08)
@@ -7092,7 +7092,7 @@
 			(net 109 "Net-(D65-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "afcd778e-5321-438b-a1d8-dd13d26d1517")
+			(uuid "d540152d-1614-48c0-98a9-2783648a0445")
 		)
 		(embedded_fonts no)
 		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_MX.wrl"
@@ -7114,7 +7114,7 @@
 		(descr "ALPS 5.2mm Square Low-profile Type (Surface Mount) SKQG Series, With stem, http://www.alps.com/prod/info/E/HTML/Tact/SurfaceMount/SKQG/SKQGAFE010.html")
 		(tags "SPST Button Switch")
 		(property "Reference" "SW2"
-			(at 0 -3.6 90)
+			(at 0 0 90)
 			(layer "F.SilkS")
 			(uuid "305da86f-b2a6-4d56-8489-f76f9abca736")
 			(effects
@@ -7526,7 +7526,7 @@
 			(roundrect_rratio 0.25)
 			(net 46 "/NRST")
 			(pintype "passive")
-			(uuid "c613fa16-8266-4acd-8ca2-62f70b59ac80")
+			(uuid "c4ec0eee-7f7d-4b7c-9596-410e56c866a1")
 		)
 		(pad "2" smd roundrect
 			(at -3.1 1.85 90)
@@ -7544,7 +7544,7 @@
 			(roundrect_rratio 0.25)
 			(net 1 "GND")
 			(pintype "passive")
-			(uuid "a59b2a54-5b92-41ac-92e7-2564da20dc8b")
+			(uuid "a2ddbedc-dbaf-4fa0-806b-4e88bf851c75")
 		)
 		(zone
 			(net 0)
@@ -7630,7 +7630,7 @@
 		(descr "SOD-323, Alternate KiCad Library")
 		(tags "SOD-323")
 		(property "Reference" "D2"
-			(at 0 -2.0405 90)
+			(at 0 0 90)
 			(layer "F.SilkS")
 			(uuid "55acae05-d7fa-410d-afc6-1fd41274a7a3")
 			(effects
@@ -8999,7 +8999,7 @@
 			(net 36 "/COL2")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "f2774b30-e2ca-4f81-ade8-475d481d9a48")
+			(uuid "22d79a10-ed86-4c78-9bec-d8deb53af05a")
 		)
 		(pad "2" thru_hole circle
 			(at 2.54 -5.08)
@@ -9020,7 +9020,7 @@
 			(net 107 "Net-(D64-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "3d6fa1e2-1b4e-4869-ba5a-d57500c15ae2")
+			(uuid "2e00c007-28c1-4350-b381-1e7fb45d4d07")
 		)
 		(embedded_fonts no)
 		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_MX.wrl"
@@ -9042,7 +9042,7 @@
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), Alternate KiCad Library")
 		(tags "resistor")
 		(property "Reference" "R2"
-			(at 0 -1.7 90)
+			(at 0 0 90)
 			(layer "F.SilkS")
 			(uuid "923f5ab1-a1a3-417e-b060-4ec7526c4cd3")
 			(effects
@@ -9262,7 +9262,7 @@
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), Alternate KiCad Library")
 		(tags "capacitor")
 		(property "Reference" "C10"
-			(at 0 -1.68 90)
+			(at 0 0 90)
 			(layer "F.SilkS")
 			(uuid "597dd1cb-335c-4d8a-bf89-b6442c7b8e64")
 			(effects
@@ -9484,7 +9484,7 @@
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), Alternate KiCad Library")
 		(tags "capacitor")
 		(property "Reference" "C11"
-			(at 0 -1.68 90)
+			(at 0 0 90)
 			(layer "F.SilkS")
 			(uuid "a1a19d09-e8bd-464f-9a55-c965c3d01446")
 			(effects
@@ -9706,7 +9706,7 @@
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), Alternate KiCad Library")
 		(tags "resistor")
 		(property "Reference" "R9"
-			(at 0 -1.7 90)
+			(at 0 0 90)
 			(layer "F.SilkS")
 			(uuid "251251c1-3b9f-4672-ae25-737c31014bd2")
 			(effects
@@ -9926,7 +9926,7 @@
 		(descr "Fuse SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), Alternate KiCAD Library")
 		(tags "fuse big pads")
 		(property "Reference" "FB1"
-			(at 0 -1.8 0)
+			(at 0 0 0)
 			(layer "F.SilkS")
 			(uuid "579348de-11c3-44fc-8c41-9ddd4f8d79e9")
 			(effects
@@ -10146,7 +10146,7 @@
 		(descr "SOT-143 Handsoldering, Alternate KiCad Library")
 		(tags "SOT-143 Handsoldering")
 		(property "Reference" "D1"
-			(at -0.02 -2.38 0)
+			(at 0 0 0)
 			(layer "F.SilkS")
 			(uuid "3f28d599-04df-4edf-a0f8-dc265b936be9")
 			(effects
@@ -10728,7 +10728,7 @@
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), Alternate KiCad Library")
 		(tags "resistor")
 		(property "Reference" "R4"
-			(at 0 -1.7 0)
+			(at 0 0 0)
 			(layer "F.SilkS")
 			(uuid "3b063250-27ca-4075-9f5e-d5bc8f580b8b")
 			(effects
@@ -11608,7 +11608,7 @@
 			(net 125 "/COL12")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "a8d4124c-aa84-423d-a1a7-3b8956784233")
+			(uuid "00247105-9ce6-4608-b87a-a64eb8db1ed4")
 		)
 		(pad "2" thru_hole circle
 			(at 2.54 -5.08)
@@ -11629,7 +11629,7 @@
 			(net 102 "Net-(D60-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "fc476289-0192-48d1-a82a-8db5e90bb41a")
+			(uuid "04fef1e2-80c0-427f-9aae-1e37fe347a74")
 		)
 		(embedded_fonts no)
 		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_MX.wrl"
@@ -12722,7 +12722,7 @@
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), Alternate KiCad Library")
 		(tags "capacitor")
 		(property "Reference" "C5"
-			(at 0 -1.68 90)
+			(at 0 0 90)
 			(layer "F.SilkS")
 			(uuid "d6e16fd2-fae0-4df2-b149-64134c0ded24")
 			(effects
@@ -12944,7 +12944,7 @@
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), Alternate KiCad Library")
 		(tags "capacitor")
 		(property "Reference" "C7"
-			(at 0 -1.68 90)
+			(at 0 0 90)
 			(layer "F.SilkS")
 			(uuid "e92db7aa-e14f-44df-b50b-3f4b9768b5de")
 			(effects
@@ -13480,7 +13480,7 @@
 		(descr "Crystal THT HC-52/U, http://www.kvg-gmbh.de/assets/uploads/files/product_pdfs/XS71xx.pdf, Alternate KiCad Library")
 		(tags "THT crystal HC-52/U")
 		(property "Reference" "Y1"
-			(at 1.9 -2.85 0)
+			(at 1.8267 -2.553 0)
 			(layer "F.SilkS")
 			(uuid "9288ed03-ff68-4122-8748-ebb39d064ed0")
 			(effects
@@ -13837,7 +13837,7 @@
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), Alternate KiCad Library")
 		(tags "resistor")
 		(property "Reference" "R1"
-			(at 0 -1.7 90)
+			(at 0 0 90)
 			(layer "F.SilkS")
 			(uuid "355ff1c9-c87c-4db8-b2e6-64e393af298d")
 			(effects
@@ -14057,7 +14057,7 @@
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), Alternate KiCad Library")
 		(tags "capacitor")
 		(property "Reference" "C1"
-			(at 0 -1.68 90)
+			(at 0 0 90)
 			(layer "F.SilkS")
 			(uuid "62990875-37fd-48f8-9fd9-6ee548f142d2")
 			(effects
@@ -14279,7 +14279,7 @@
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), Alternate KiCad Library")
 		(tags "resistor")
 		(property "Reference" "R8"
-			(at 0 -1.7 0)
+			(at 0 0 0)
 			(layer "F.SilkS")
 			(uuid "68fd7a12-27bf-4881-ab2c-349f1afecd0d")
 			(effects
@@ -14498,7 +14498,7 @@
 		(at 57.1513 71.25)
 		(descr "SOT-223")
 		(property "Reference" "IC1"
-			(at -1.05 -4.38 0)
+			(at 0 0 0)
 			(layer "F.SilkS")
 			(uuid "6d92f81c-0547-4222-bf14-50ba9862597c")
 			(effects
@@ -14510,7 +14510,7 @@
 			)
 		)
 		(property "Value" "LD1117-3.3V-SOT223"
-			(at -3.65 7.95 0)
+			(at -4.2913 3.7 0)
 			(layer "F.SilkS")
 			(uuid "a2c27ff2-4ffd-4277-aaed-18d19a4e8e7c")
 			(effects
@@ -14789,7 +14789,7 @@
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), Alternate KiCad Library")
 		(tags "capacitor")
 		(property "Reference" "C3"
-			(at 0 -1.68 90)
+			(at 0 0 90)
 			(layer "F.SilkS")
 			(uuid "5825ee4b-b414-4672-bf96-e024d74cf89c")
 			(effects
@@ -16115,7 +16115,7 @@
 			(net 36 "/COL2")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "ab9bc20d-b7c0-42a8-8987-d1323b073714")
+			(uuid "2f224639-b8df-4811-b0b7-fd1aae4c1a4c")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -16125,7 +16125,7 @@
 			(net 36 "/COL2")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "ab9bc20d-b7c0-42a8-8987-d1323b073714")
+			(uuid "8bd6f0c4-85a0-4c25-879a-dbde6ff915a7")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -16144,7 +16144,7 @@
 			(net 5 "Net-(D4-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "39c74018-3b31-4ce8-8a06-bbfbde1ce4a3")
+			(uuid "6d38f3a0-f00c-4ea3-a103-7eaf57a8ac9d")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -16156,7 +16156,7 @@
 			(net 5 "Net-(D4-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "39c74018-3b31-4ce8-8a06-bbfbde1ce4a3")
+			(uuid "f58e9900-29f2-4a9a-a566-390a749dacfc")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -17282,7 +17282,7 @@
 			(net 128 "/COL11")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "c88d76a8-e199-400f-92bd-9f2d12c9fa1c")
+			(uuid "85c78b05-4f5e-4013-b7d1-508bde0269fd")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -17292,7 +17292,7 @@
 			(net 128 "/COL11")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "c88d76a8-e199-400f-92bd-9f2d12c9fa1c")
+			(uuid "3952febd-5c40-4dd9-b299-d8eff7f6758e")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -17311,7 +17311,7 @@
 			(net 27 "Net-(D31-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "c47981e6-a313-4d48-bc86-75f4f5190dba")
+			(uuid "8c4b44b6-49e7-4ea2-b83e-b6a2e3d8d459")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -17323,7 +17323,7 @@
 			(net 27 "Net-(D31-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "c47981e6-a313-4d48-bc86-75f4f5190dba")
+			(uuid "15764f00-523a-4a4f-af42-4c9b786dbe9f")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -17345,7 +17345,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D36"
-			(at 0 2.06 90)
+			(at 0.2344 -0.0081 90)
 			(layer "B.SilkS")
 			(uuid "5d6bf493-e093-4529-8f2d-19ea0be2c2f9")
 			(effects
@@ -17357,7 +17357,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.0756 -0.0781 90)
 			(layer "B.SilkS")
 			(uuid "cd2a00d8-5a5f-46fb-8e0a-b83366774f94")
 			(effects
@@ -17562,7 +17562,7 @@
 		(at 347.27 97.6312 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_HOME1"
-			(at -4.25 1.75 0)
+			(at -6.77 1.6612 0)
 			(layer "B.SilkS")
 			(uuid "89a44998-fbba-4cc3-80eb-19970034fa99")
 			(effects
@@ -18100,7 +18100,7 @@
 			(net 134 "/COL15")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "14818922-9274-444c-8a7c-7b279cbd86ab")
+			(uuid "07e00950-cee2-4140-bfca-ec085a69179e")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -18110,7 +18110,7 @@
 			(net 134 "/COL15")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "14818922-9274-444c-8a7c-7b279cbd86ab")
+			(uuid "b09426ae-fab8-4be9-be0d-72baa8d330d6")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -18129,7 +18129,7 @@
 			(net 18 "Net-(D17-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "9681fe3d-791c-482f-a0c7-5bf2db7d937b")
+			(uuid "bf1a8714-10b1-446a-a129-972c392b3e95")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -18141,7 +18141,7 @@
 			(net 18 "Net-(D17-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "9681fe3d-791c-482f-a0c7-5bf2db7d937b")
+			(uuid "33b230c3-af16-4c90-8d5a-eb36798c762a")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -18163,7 +18163,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D55"
-			(at 0 2.06 90)
+			(at 0.1744 0.0113 90)
 			(layer "B.SilkS")
 			(uuid "7988888d-f8f9-479d-9ad6-08f012c9f843")
 			(effects
@@ -18175,7 +18175,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -7.9656 -0.0487 90)
 			(layer "B.SilkS")
 			(uuid "bddb8d35-9f5e-4cc2-b2f3-6608df3137be")
 			(effects
@@ -19485,7 +19485,7 @@
 			(net 128 "/COL11")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "a9353eff-b69d-46a9-9609-a7529ebdd4f4")
+			(uuid "d23acb3d-167a-4b00-9c78-32a33335eaf6")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -19495,7 +19495,7 @@
 			(net 128 "/COL11")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "a9353eff-b69d-46a9-9609-a7529ebdd4f4")
+			(uuid "a988c5fc-1371-462e-ab70-d470d2a09261")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -19514,7 +19514,7 @@
 			(net 98 "Net-(D59-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "f1e28f46-1a28-41e7-8309-6e4efc9cf1c9")
+			(uuid "65e90f0d-fc80-4017-b767-2c76180c0a4b")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -19526,7 +19526,7 @@
 			(net 98 "Net-(D59-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "f1e28f46-1a28-41e7-8309-6e4efc9cf1c9")
+			(uuid "b1647e85-aa62-48a8-ab14-7dbb44407885")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -19548,7 +19548,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D71"
-			(at 0 2.06 90)
+			(at 0.1944 0.0031 90)
 			(layer "B.SilkS")
 			(uuid "1d620d20-3c25-41b0-9ff4-62af13020c84")
 			(effects
@@ -19560,7 +19560,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.1056 0.0031 90)
 			(layer "B.SilkS")
 			(uuid "9e5a5599-7ec8-42e9-902b-d153d1ca7c6d")
 			(effects
@@ -20303,7 +20303,7 @@
 			(net 128 "/COL11")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "0b28ab7d-2806-461d-969b-88b60b868a57")
+			(uuid "08540a55-5f93-4883-a685-ad576459fc4f")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -20313,7 +20313,7 @@
 			(net 128 "/COL11")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "0b28ab7d-2806-461d-969b-88b60b868a57")
+			(uuid "9fe4e92a-7095-4f22-91b6-35952a5a4700")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -20332,7 +20332,7 @@
 			(net 14 "Net-(D13-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "9cae159f-53d7-43a9-ad1e-b319cdbc6c94")
+			(uuid "04b90129-a270-4482-8447-d63ff2b21efd")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -20344,7 +20344,7 @@
 			(net 14 "Net-(D13-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "9cae159f-53d7-43a9-ad1e-b319cdbc6c94")
+			(uuid "9329058d-ae5b-473b-8435-96e1a63431e4")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -20365,7 +20365,7 @@
 		(at 218.6825 154.7812 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_M1"
-			(at -4.25 1.75 0)
+			(at -4.5675 1.6212 0)
 			(layer "B.SilkS")
 			(uuid "6b8c4978-8fa7-4452-9d7f-0abfffbe5d82")
 			(effects
@@ -20903,7 +20903,7 @@
 			(net 131 "/COL8")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "29db55e5-a9ff-4d64-9b61-0eaa837236c1")
+			(uuid "4cbedad2-3b36-4dd9-8dc0-727d1d60b9bd")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -20913,7 +20913,7 @@
 			(net 131 "/COL8")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "29db55e5-a9ff-4d64-9b61-0eaa837236c1")
+			(uuid "61020064-99dd-4835-a1c3-45ea0051ac47")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -20932,7 +20932,7 @@
 			(net 77 "Net-(D56-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "abea43b5-e720-4c0e-9e69-ee4d1993d21d")
+			(uuid "dc69401b-adbe-4dc4-bb1f-c7680d09a113")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -20944,7 +20944,7 @@
 			(net 77 "Net-(D56-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "abea43b5-e720-4c0e-9e69-ee4d1993d21d")
+			(uuid "db5a15a4-26ea-404a-baa1-ba356a4bf382")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -20966,7 +20966,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D38"
-			(at 0 2.06 90)
+			(at 0.2144 -0.0219 90)
 			(layer "B.SilkS")
 			(uuid "5030ff02-414d-4c9f-953a-d02eb3bc7045")
 			(effects
@@ -20978,7 +20978,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.0656 -0.0619 90)
 			(layer "B.SilkS")
 			(uuid "10d1b056-c389-4d6a-a7b0-c435e6857b70")
 			(effects
@@ -21751,7 +21751,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D22"
-			(at 0 2.06 90)
+			(at 0.2144 -0.0294 90)
 			(layer "B.SilkS")
 			(uuid "e8f7cbf9-8e62-4efd-8214-e6144cabe3d8")
 			(effects
@@ -21763,7 +21763,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.0556 -0.0894 90)
 			(layer "B.SilkS")
 			(uuid "7f97d96d-3fd1-46f6-90e3-ca8cc0f79d8f")
 			(effects
@@ -22506,7 +22506,7 @@
 			(net 39 "/COL5")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "bbf6b4e8-917e-4a51-996b-6fb2f7ad5ceb")
+			(uuid "65be24f7-b2e2-45c9-a389-fdf76deaea9e")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -22516,7 +22516,7 @@
 			(net 39 "/COL5")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "bbf6b4e8-917e-4a51-996b-6fb2f7ad5ceb")
+			(uuid "678dcbf1-2920-4346-8263-3cd7d4c054ad")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -22535,7 +22535,7 @@
 			(net 74 "Net-(D53-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "67ed79da-037c-4e11-81fb-24abfc04a591")
+			(uuid "1997eb3b-8886-4cb5-91da-6c16bd4d0803")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -22547,7 +22547,7 @@
 			(net 74 "Net-(D53-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "67ed79da-037c-4e11-81fb-24abfc04a591")
+			(uuid "9d32334d-445a-4e94-8e41-7ac90e564ea7")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -25374,7 +25374,7 @@
 			(net 127 "/COL10")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "509c854e-c52c-459c-912b-ac3bddebde0b")
+			(uuid "b62fd09d-9cd4-4185-b609-c28feadc6f38")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -25384,7 +25384,7 @@
 			(net 127 "/COL10")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "509c854e-c52c-459c-912b-ac3bddebde0b")
+			(uuid "e861ff75-8327-4705-bf9e-ccb92ccec72f")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -25403,7 +25403,7 @@
 			(net 66 "Net-(D44-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "5eed22fc-8b2a-4fae-ba2e-c8f03aabc3a1")
+			(uuid "0845309f-7754-4298-a906-8985c7f874f6")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -25415,7 +25415,7 @@
 			(net 66 "Net-(D44-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "5eed22fc-8b2a-4fae-ba2e-c8f03aabc3a1")
+			(uuid "2437f960-3415-4689-97e0-73db422d0218")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -25437,7 +25437,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D29"
-			(at 0 2.06 90)
+			(at 0.1544 0.0225 90)
 			(layer "B.SilkS")
 			(uuid "53469c34-0ac1-40bb-ba68-18a2a35dbdc5")
 			(effects
@@ -25449,7 +25449,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.2556 -0.0275 90)
 			(layer "B.SilkS")
 			(uuid "461527fb-bfb9-4349-acff-c235a6b0b3d0")
 			(effects
@@ -26192,7 +26192,7 @@
 			(net 131 "/COL8")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "db1861f6-b969-42d4-a958-8b965598ca6c")
+			(uuid "e5294609-4c23-42e4-831e-759053c4e62f")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -26202,7 +26202,7 @@
 			(net 131 "/COL8")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "db1861f6-b969-42d4-a958-8b965598ca6c")
+			(uuid "d33cd913-e465-4c78-b7fa-99b8f95ff5b8")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -26221,7 +26221,7 @@
 			(net 34 "Net-(D28-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "2876acf6-b36b-4163-bed4-6f4454bcfab1")
+			(uuid "0e926353-f705-4c65-85a7-de7d81c6c49d")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -26233,7 +26233,7 @@
 			(net 34 "Net-(D28-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "2876acf6-b36b-4163-bed4-6f4454bcfab1")
+			(uuid "3451b098-e31f-49e0-9520-5bb445c7e400")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -26821,7 +26821,7 @@
 		(at 347.27 173.8312 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_RARROW1"
-			(at -4.25 1.75 0)
+			(at -6.92 1.7812 0)
 			(layer "B.SilkS")
 			(uuid "7eb92430-b0a0-450c-9799-03ff9210764a")
 			(effects
@@ -27359,7 +27359,7 @@
 			(net 134 "/COL15")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "ec59be3f-f174-4363-8cda-a16a2cdd9a62")
+			(uuid "de71e2e3-6a67-4182-80bd-20713415a55e")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -27369,7 +27369,7 @@
 			(net 134 "/COL15")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "ec59be3f-f174-4363-8cda-a16a2cdd9a62")
+			(uuid "3f562ff2-bc39-4c84-b86d-b05bbc384fb0")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -27388,7 +27388,7 @@
 			(net 124 "Net-(D76-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "d4730347-f64a-43d3-a52d-01a32fb223e4")
+			(uuid "0c573e7f-d2c5-40ac-a523-a19f8d0b6335")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -27400,7 +27400,7 @@
 			(net 124 "Net-(D76-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "d4730347-f64a-43d3-a52d-01a32fb223e4")
+			(uuid "ee5cb903-e7f4-483f-9864-bc95166e6a1f")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -27422,7 +27422,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D18"
-			(at 0 2.06 90)
+			(at 0.2144 0.0425 90)
 			(layer "B.SilkS")
 			(uuid "884a4d9e-f496-4da4-8260-57d5dc003925")
 			(effects
@@ -27434,7 +27434,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.0356 0.0425 90)
 			(layer "B.SilkS")
 			(uuid "1d22fae4-78c0-48b0-8f2e-9fc2b15453e0")
 			(effects
@@ -27640,9 +27640,9 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D3"
-			(at 0 2.06 90)
+			(at 0.1044 -0.0387 90)
 			(layer "B.SilkS")
-			(uuid "3f6c0af8-6381-4b53-9074-f0c4fa19e435")
+			(uuid "a4e318fa-f731-47ac-ba1c-e0611fe25531")
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -27652,9 +27652,9 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.0056 -0.1187 90)
 			(layer "B.SilkS")
-			(uuid "0c2b1efe-fe1b-4294-a067-daa26e7205d7")
+			(uuid "11bab31c-0f7e-40ea-af71-59090074be5f")
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -27667,7 +27667,7 @@
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "0e67caec-7744-4568-b60b-6b2aa4575eee")
+			(uuid "58a0caa2-a212-4efa-ae78-cb8ceb0371ff")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27680,7 +27680,7 @@
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "429c4cd3-839b-46d6-b00c-f75a5d9d30c0")
+			(uuid "85bf4eb2-9f98-4e75-992a-82b7a57fd9f9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28425,7 +28425,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D23"
-			(at 0 2.06 90)
+			(at 0.2044 -0.0212 90)
 			(layer "B.SilkS")
 			(uuid "1cd3aecf-31d0-42c3-8e08-a98f8728463b")
 			(effects
@@ -28437,7 +28437,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.0856 -0.1212 90)
 			(layer "B.SilkS")
 			(uuid "e779e92a-267a-4743-9a3e-5fac4961d4aa")
 			(effects
@@ -29180,7 +29180,7 @@
 			(net 38 "/COL4")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "da6e190a-341c-4662-93a0-86c873f92870")
+			(uuid "118db3e0-f35c-47e4-be24-0f7facca3377")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -29190,7 +29190,7 @@
 			(net 38 "/COL4")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "da6e190a-341c-4662-93a0-86c873f92870")
+			(uuid "77eed843-34f8-4661-8d1f-faebe5cd9012")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -29209,7 +29209,7 @@
 			(net 60 "Net-(D38-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "c49e2c87-4d7d-4bc8-9405-677f2450a284")
+			(uuid "0f0ac5f9-6eef-4bc7-a41f-98640cb93111")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -29221,7 +29221,7 @@
 			(net 60 "Net-(D38-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "c49e2c87-4d7d-4bc8-9405-677f2450a284")
+			(uuid "052857ea-68ea-4318-9dde-49a1b51d152c")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -29243,7 +29243,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D59"
-			(at 0 2.06 90)
+			(at 0.1644 0.0081 90)
 			(layer "B.SilkS")
 			(uuid "aa94ff24-c397-460f-851f-3ff1831321cd")
 			(effects
@@ -29255,7 +29255,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.1656 -0.0619 90)
 			(layer "B.SilkS")
 			(uuid "2111dd3f-2a8f-42b8-9ef8-f02377bbd1f2")
 			(effects
@@ -29461,7 +29461,7 @@
 		(descr "Add-on for regular choc-footprints with 6028 reverse mount LED")
 		(tags "kailh choc 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "LED61"
-			(at 0 2.6 0)
+			(at 0.4299 1.5308 0)
 			(layer "B.SilkS")
 			(uuid "00c5886b-183c-4c49-aeb9-1da30a057154")
 			(effects
@@ -30028,7 +30028,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D65"
-			(at 0 2.06 90)
+			(at 0.2044 -0.0075 90)
 			(layer "B.SilkS")
 			(uuid "887c7628-9b8f-4967-83f0-7ae678dd02ce")
 			(effects
@@ -30040,7 +30040,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -7.9956 -0.0175 90)
 			(layer "B.SilkS")
 			(uuid "c1b24951-cb67-48eb-8ecf-005f59abcfcc")
 			(effects
@@ -30813,7 +30813,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D40"
-			(at 0 2.06 90)
+			(at 0.2044 -0.0581 90)
 			(layer "B.SilkS")
 			(uuid "e93655f0-b7fa-4bab-8322-c2f9612918d0")
 			(effects
@@ -30825,7 +30825,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.1856 -0.0681 90)
 			(layer "B.SilkS")
 			(uuid "87e9aa60-6086-4030-8f08-f57b709a5f3f")
 			(effects
@@ -31568,7 +31568,7 @@
 			(net 37 "/COL3")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "53495bdf-32aa-4c30-80fc-db842121b288")
+			(uuid "ce4c919c-3430-4502-96cb-ed142b2dacb2")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -31578,7 +31578,7 @@
 			(net 37 "/COL3")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "53495bdf-32aa-4c30-80fc-db842121b288")
+			(uuid "66e4903c-1655-4aa3-8aff-cb300fe67285")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -31597,7 +31597,7 @@
 			(net 72 "Net-(D51-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "b229eec5-9233-461b-8100-479c883036c5")
+			(uuid "4a9bc00a-6890-48fd-aa03-8a0ca339d437")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -31609,7 +31609,7 @@
 			(net 72 "Net-(D51-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "b229eec5-9233-461b-8100-479c883036c5")
+			(uuid "16d0d0c4-faf0-4170-b767-27b1fcf25bef")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -31631,7 +31631,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D26"
-			(at 0 2.06 90)
+			(at 0.2544 -0.0394 90)
 			(layer "B.SilkS")
 			(uuid "19ce0e38-19ea-47fb-8b87-756724eae811")
 			(effects
@@ -31643,7 +31643,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.2256 -0.0094 90)
 			(layer "B.SilkS")
 			(uuid "33ba32c9-20da-43a5-9e23-a7cf1a8fedb6")
 			(effects
@@ -32416,7 +32416,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D62"
-			(at 0 2.06 90)
+			(at 0.1644 -0.02 90)
 			(layer "B.SilkS")
 			(uuid "bfcfdec5-28ed-4966-b316-74ff5d6910a3")
 			(effects
@@ -32428,7 +32428,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.0756 0.03 90)
 			(layer "B.SilkS")
 			(uuid "106637ef-d5c0-4ff9-a815-464037f87ba6")
 			(effects
@@ -32634,7 +32634,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D17"
-			(at 0 2.06 90)
+			(at 0.2944 -0.0637 90)
 			(layer "B.SilkS")
 			(uuid "4d7f6f98-7305-4cad-b6c0-4fd5b462bfd7")
 			(effects
@@ -32646,7 +32646,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.1356 0.1163 90)
 			(layer "B.SilkS")
 			(uuid "ba01f953-48ad-4312-b2f8-20c7676bdfca")
 			(effects
@@ -33389,7 +33389,7 @@
 			(net 37 "/COL3")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "1e81c70e-8436-49c9-ba45-55be5be7c8d6")
+			(uuid "b18cc605-f011-49d4-8475-daeafd36991d")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -33399,7 +33399,7 @@
 			(net 37 "/COL3")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "1e81c70e-8436-49c9-ba45-55be5be7c8d6")
+			(uuid "cd1a96c3-99bb-408a-99bf-502d124cfb73")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -33418,7 +33418,7 @@
 			(net 6 "Net-(D5-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "bdd99a67-caf8-4db3-8b7d-83693c65edba")
+			(uuid "1dad1a03-4b29-4f04-abc1-c1b394e79266")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -33430,7 +33430,7 @@
 			(net 6 "Net-(D5-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "bdd99a67-caf8-4db3-8b7d-83693c65edba")
+			(uuid "f2766468-168a-4608-b22c-edf4dda47a8d")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -33452,7 +33452,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D14"
-			(at 0 2.06 90)
+			(at 0.1544 -0.0337 90)
 			(layer "B.SilkS")
 			(uuid "779c2302-6ee7-4d38-aae8-e3c3cc2807d9")
 			(effects
@@ -33464,7 +33464,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.1956 0.0463 90)
 			(layer "B.SilkS")
 			(uuid "205c37ed-d423-4554-9fa6-ef96654a6cdd")
 			(effects
@@ -34207,7 +34207,7 @@
 			(net 130 "/COL7")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "bccca72f-c2ee-4d7a-aec0-b2389c450a19")
+			(uuid "b664765e-4221-496a-a23f-cac60c90c9dd")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -34217,7 +34217,7 @@
 			(net 130 "/COL7")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "bccca72f-c2ee-4d7a-aec0-b2389c450a19")
+			(uuid "40c2bf28-7eaa-4402-93a5-0b7a666bd0fe")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -34236,7 +34236,7 @@
 			(net 63 "Net-(D41-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "6b6e3868-4f8d-4349-99ab-dad9c1c54e20")
+			(uuid "35123837-5761-4611-abc0-51631767eced")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -34248,7 +34248,7 @@
 			(net 63 "Net-(D41-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "6b6e3868-4f8d-4349-99ab-dad9c1c54e20")
+			(uuid "82593279-fc64-471b-afc0-569a21a08ee0")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -34807,7 +34807,7 @@
 			(net 126 "/COL9")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "2a9ee421-66d3-4e3b-acb0-493606e01511")
+			(uuid "f98bdd55-ebad-4dc7-a1a0-34436da1452b")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -34817,7 +34817,7 @@
 			(net 126 "/COL9")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "2a9ee421-66d3-4e3b-acb0-493606e01511")
+			(uuid "b129d25b-d6d2-482c-b44f-3beceb253db4")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -34836,7 +34836,7 @@
 			(net 12 "Net-(D11-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "ace8535b-731b-40ca-b877-c767473c1791")
+			(uuid "7f7d1328-41ec-4fe6-9e5d-ca0488ee5f6a")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -34848,7 +34848,7 @@
 			(net 12 "Net-(D11-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "ace8535b-731b-40ca-b877-c767473c1791")
+			(uuid "30710bea-c0e3-43c9-8048-321e0456abf3")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -36541,7 +36541,7 @@
 			(net 130 "/COL7")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "62cd74ba-8c3c-46b0-91bb-e3555cbfd5b8")
+			(uuid "b3661046-8ed3-4eca-bfc7-31d2111a6a32")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -36551,7 +36551,7 @@
 			(net 130 "/COL7")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "62cd74ba-8c3c-46b0-91bb-e3555cbfd5b8")
+			(uuid "11105e18-5804-429b-87a1-8c9bddf78301")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -36570,7 +36570,7 @@
 			(net 10 "Net-(D9-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "23ede7e6-779f-4272-8774-013fef8105e4")
+			(uuid "ebccc631-112f-461f-9b9f-12bd9ab14b96")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -36582,7 +36582,7 @@
 			(net 10 "Net-(D9-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "23ede7e6-779f-4272-8774-013fef8105e4")
+			(uuid "1e86fb48-10e4-472d-a70a-f1edbbf5a2d9")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -36604,7 +36604,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D42"
-			(at 0 2.06 90)
+			(at 0.1344 -0.0031 90)
 			(layer "B.SilkS")
 			(uuid "02927879-9762-4fdc-9a15-0ea153bdc353")
 			(effects
@@ -36616,7 +36616,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.0656 -0.0231 90)
 			(layer "B.SilkS")
 			(uuid "0ff33a2d-3dc7-4a02-b008-c2b71b9a357b")
 			(effects
@@ -37388,7 +37388,7 @@
 		(at 271.07 173.8312 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_FN1"
-			(at -4.25 1.75 0)
+			(at -5.29 1.6112 0)
 			(layer "B.SilkS")
 			(uuid "2505a8ef-9950-4e55-9982-f0976b536a3f")
 			(effects
@@ -37926,7 +37926,7 @@
 			(net 128 "/COL11")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "0dfbcc49-7cd6-4cee-8dc7-82dc88446335")
+			(uuid "bacf9d63-dd56-45cd-ab0f-d5449b974b17")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -37936,7 +37936,7 @@
 			(net 128 "/COL11")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "0dfbcc49-7cd6-4cee-8dc7-82dc88446335")
+			(uuid "3b91fee8-bdcb-47fe-a26e-a44050c61028")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -37955,7 +37955,7 @@
 			(net 113 "Net-(D72-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "357644a3-a3f7-45d4-8fc3-f00f1f7fac3f")
+			(uuid "3ea95811-db26-4680-95e4-041eed2cc2f6")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -37967,7 +37967,7 @@
 			(net 113 "Net-(D72-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "357644a3-a3f7-45d4-8fc3-f00f1f7fac3f")
+			(uuid "e0600934-5a30-4bb5-b0e9-725b66bfbe0d")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -37988,7 +37988,7 @@
 		(at 61.445 97.6312 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_ESC1"
-			(at -4.25 1.75 0)
+			(at -5.475 1.7312 0)
 			(layer "B.SilkS")
 			(uuid "5220af3f-74ae-4b5b-8778-93f4fa612c16")
 			(effects
@@ -38526,7 +38526,7 @@
 			(net 40 "/COL1")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "08823712-d7db-495e-88e8-0f4141530ea7")
+			(uuid "4c3d7dbf-75a0-43a2-8fbe-5b117f8b2299")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -38536,7 +38536,7 @@
 			(net 40 "/COL1")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "08823712-d7db-495e-88e8-0f4141530ea7")
+			(uuid "369253dc-98c3-4f7f-9149-ed34ec7a0eff")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -38555,7 +38555,7 @@
 			(net 4 "Net-(D3-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "5cbc8716-cf1f-4d75-a60c-2cf4f271c0af")
+			(uuid "393fa13b-bd3d-4bf9-93cc-eec6f626ee3b")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -38567,7 +38567,7 @@
 			(net 4 "Net-(D3-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "5cbc8716-cf1f-4d75-a60c-2cf4f271c0af")
+			(uuid "7eb9ddc0-7526-49f6-9db4-06e47adbd8d3")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -38589,7 +38589,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D33"
-			(at 0 2.06 90)
+			(at 0.2344 -0.0962 90)
 			(layer "B.SilkS")
 			(uuid "ff7515f2-e265-4292-88f6-6e451f822b9c")
 			(effects
@@ -38601,7 +38601,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.1956 0.0038 90)
 			(layer "B.SilkS")
 			(uuid "9ebbfa7b-28fc-406c-ab60-f5ff74316743")
 			(effects
@@ -39344,7 +39344,7 @@
 			(net 38 "/COL4")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "b9709f4b-1b92-4138-98e8-0cf2185e2b86")
+			(uuid "68378d8f-d64a-4eee-901c-206b7886d15c")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -39354,7 +39354,7 @@
 			(net 38 "/COL4")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "b9709f4b-1b92-4138-98e8-0cf2185e2b86")
+			(uuid "b913118e-a6ec-49fa-b918-eaae8d2d3b1a")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -39373,7 +39373,7 @@
 			(net 7 "Net-(D6-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "61cbf50c-5c3f-4455-82fe-cb8ef7f47073")
+			(uuid "f45344bd-b1e3-4f85-925e-c5e2c77fc7b2")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -39385,7 +39385,7 @@
 			(net 7 "Net-(D6-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "61cbf50c-5c3f-4455-82fe-cb8ef7f47073")
+			(uuid "2c40bf67-9a50-4db2-a52a-afe70a95c10e")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -39944,7 +39944,7 @@
 			(net 36 "/COL2")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "2742fdc7-6787-49c1-aaac-8e743b22caa6")
+			(uuid "40fddba2-0172-4d6e-aa5a-c247bda86fac")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -39954,7 +39954,7 @@
 			(net 36 "/COL2")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "2742fdc7-6787-49c1-aaac-8e743b22caa6")
+			(uuid "ceef429f-4f6b-43bf-b5c7-f38b3f34b180")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -39973,7 +39973,7 @@
 			(net 58 "Net-(D36-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "cf7f0f72-48b6-4a54-b95d-6b33a59104ea")
+			(uuid "9af62b54-e6e9-4076-bd66-704204fc71b2")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -39985,7 +39985,7 @@
 			(net 58 "Net-(D36-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "cf7f0f72-48b6-4a54-b95d-6b33a59104ea")
+			(uuid "ef0e81fa-11ca-47d2-afc5-f9448ae9089e")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -40544,7 +40544,7 @@
 			(net 127 "/COL10")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "aecc7fd3-f8f2-4470-9dd7-cbe96ff8230b")
+			(uuid "92a24c45-6250-4b27-bd40-5cadd30e1603")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -40554,7 +40554,7 @@
 			(net 127 "/COL10")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "aecc7fd3-f8f2-4470-9dd7-cbe96ff8230b")
+			(uuid "9c3bbefd-6f7c-46a3-becb-f90c51e4af3e")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -40573,7 +40573,7 @@
 			(net 26 "Net-(D30-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "5c9ca58b-f479-4b1f-afee-29d3b1ce2525")
+			(uuid "4b17a57f-d6aa-4aad-9f33-c8fc0cdd61f8")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -40585,7 +40585,7 @@
 			(net 26 "Net-(D30-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "5c9ca58b-f479-4b1f-afee-29d3b1ce2525")
+			(uuid "067b8ece-53c1-4890-9777-b8b5e0d5058e")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -40607,7 +40607,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D35"
-			(at 0 2.06 90)
+			(at 0.1144 -0.0525 90)
 			(layer "B.SilkS")
 			(uuid "f7a343d5-69ae-4781-86a9-8514c52df9ee")
 			(effects
@@ -40619,7 +40619,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.2356 -0.0225 90)
 			(layer "B.SilkS")
 			(uuid "fb16eb47-df45-4e5f-a7f5-94f8c6712e86")
 			(effects
@@ -40824,7 +40824,7 @@
 		(at 309.17 173.8312 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_DARROW1"
-			(at -4.25 1.75 0)
+			(at -6.82 1.7312 0)
 			(layer "B.SilkS")
 			(uuid "caa1fde9-8f6c-4500-acfa-1be3691a35ed")
 			(effects
@@ -41362,7 +41362,7 @@
 			(net 133 "/COL13")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "a426b6bf-fe4e-4a52-882e-6cde9ea0cff4")
+			(uuid "c7d14f9f-7224-4e5f-9c60-72281ad0e336")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -41372,7 +41372,7 @@
 			(net 133 "/COL13")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "a426b6bf-fe4e-4a52-882e-6cde9ea0cff4")
+			(uuid "6f04b2f2-0225-42ad-88d1-993c46ed76e9")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -41391,7 +41391,7 @@
 			(net 122 "Net-(D74-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "bebe1c1e-1ac9-4639-b8c1-2f0d2d2da9ab")
+			(uuid "353d9eac-7e53-497b-806e-ccf7ac4534c7")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -41403,7 +41403,7 @@
 			(net 122 "Net-(D74-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "bebe1c1e-1ac9-4639-b8c1-2f0d2d2da9ab")
+			(uuid "24a59028-914e-489b-a345-ba512ab7e5db")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -41424,7 +41424,7 @@
 		(at 199.6325 154.7812 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_N1"
-			(at -4.25 1.75 0)
+			(at -4.5675 1.6912 0)
 			(layer "B.SilkS")
 			(uuid "c0414aaf-ec36-4c85-998f-b84c0c9194bf")
 			(effects
@@ -41962,7 +41962,7 @@
 			(net 130 "/COL7")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "fa43467b-8d0b-4003-9e7c-55a3c8985ac1")
+			(uuid "c8787775-6d7f-45b2-ab3c-4baa48191594")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -41972,7 +41972,7 @@
 			(net 130 "/COL7")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "fa43467b-8d0b-4003-9e7c-55a3c8985ac1")
+			(uuid "f0c37942-ed5a-4730-907c-905a812bce1c")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -41991,7 +41991,7 @@
 			(net 76 "Net-(D55-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "262cb235-ae76-4f2f-9b3e-536e8f751851")
+			(uuid "7fa2be57-9386-43a1-9449-bf86f5c4f2e1")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -42003,7 +42003,7 @@
 			(net 76 "Net-(D55-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "262cb235-ae76-4f2f-9b3e-536e8f751851")
+			(uuid "d9862261-22c9-4f7d-966c-ba20a17d6865")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -42025,7 +42025,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D72"
-			(at 0 2.06 90)
+			(at 0.2144 -0.0106 90)
 			(layer "B.SilkS")
 			(uuid "967247ff-2276-4914-9b92-2f8457b47a47")
 			(effects
@@ -42037,7 +42037,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.1456 -0.0106 90)
 			(layer "B.SilkS")
 			(uuid "fda901a5-2ad8-4555-8fec-67608352764d")
 			(effects
@@ -42243,7 +42243,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D12"
-			(at 0 2.06 90)
+			(at 0.1644 0.0181 90)
 			(layer "B.SilkS")
 			(uuid "5492e699-53be-4823-8d68-9c449bfe2952")
 			(effects
@@ -42255,7 +42255,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.1656 -0.1019 90)
 			(layer "B.SilkS")
 			(uuid "4f2220b1-e847-4fe8-922e-a59194789c39")
 			(effects
@@ -42461,7 +42461,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D44"
-			(at 0 2.06 90)
+			(at 0.1944 -0.0594 90)
 			(layer "B.SilkS")
 			(uuid "2a139b2b-2dff-4941-a55b-38384f2b80e3")
 			(effects
@@ -42473,7 +42473,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.1256 0.0306 90)
 			(layer "B.SilkS")
 			(uuid "1f881eec-b88a-46a2-8515-0e75cc3488cc")
 			(effects
@@ -42679,9 +42679,9 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D4"
-			(at 0 2.06 90)
+			(at -0.0656 -0.0606 90)
 			(layer "B.SilkS")
-			(uuid "192d3c71-2595-4f1d-947f-cbe1da4a797e")
+			(uuid "aaa12f5b-46aa-428d-b518-c4d9dae21dd0")
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -42691,9 +42691,9 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.0556 -0.1506 90)
 			(layer "B.SilkS")
-			(uuid "750649aa-35fd-44ae-9d2e-58008dcb1e53")
+			(uuid "78bfbdb5-7316-4e0f-831e-8aa94cf124b1")
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -42706,7 +42706,7 @@
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "86d77253-761e-454b-a01a-d678db152175")
+			(uuid "f37f8fd4-eed4-497e-995d-4c058b698d61")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42719,7 +42719,7 @@
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "9dea23f0-f9bb-40ba-8b82-6c8d127bc569")
+			(uuid "98529185-4675-4d77-963a-82d1b558e9bd")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42896,7 +42896,7 @@
 		(at 347.27 116.6812 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_DEL1"
-			(at -4.25 1.75 0)
+			(at -5.73 1.8212 0)
 			(layer "B.SilkS")
 			(uuid "8de09b67-e24c-466a-924d-719964cf6bb8")
 			(effects
@@ -43434,7 +43434,7 @@
 			(net 134 "/COL15")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "9072daae-2c5e-491a-815d-e6bf7bd45f86")
+			(uuid "67cc4072-54c9-475b-b5cf-2fb6b9e4292b")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -43444,7 +43444,7 @@
 			(net 134 "/COL15")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "9072daae-2c5e-491a-815d-e6bf7bd45f86")
+			(uuid "bdd33b7e-3204-4658-ad62-a3d35d731791")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -43463,7 +43463,7 @@
 			(net 54 "Net-(D35-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "c9a5d161-0dcb-4122-9cf6-1d2596833aa5")
+			(uuid "7629b18a-f5ad-44be-870f-2c865de1bb59")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -43475,7 +43475,7 @@
 			(net 54 "Net-(D35-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "c9a5d161-0dcb-4122-9cf6-1d2596833aa5")
+			(uuid "47dfe99d-f1be-4a91-b52e-e851bc6c9802")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -44034,7 +44034,7 @@
 			(net 129 "/COL6")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "ccbbfb3c-20e7-4630-9ac9-fff331ad07a7")
+			(uuid "af0ff157-b74c-4a99-9a0e-cf2550d57f22")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -44044,7 +44044,7 @@
 			(net 129 "/COL6")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "ccbbfb3c-20e7-4630-9ac9-fff331ad07a7")
+			(uuid "750c88d7-281d-48ae-89e4-c374d6a69c49")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -44063,7 +44063,7 @@
 			(net 32 "Net-(D26-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "2947eb7a-c32b-42db-9fcd-3942803b2bb9")
+			(uuid "940748fe-e526-48bc-90a9-c20ded6da0cd")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -44075,7 +44075,7 @@
 			(net 32 "Net-(D26-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "2947eb7a-c32b-42db-9fcd-3942803b2bb9")
+			(uuid "322c1c20-f1ea-4ae1-a159-c16bb79bf6c3")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -44634,7 +44634,7 @@
 			(net 39 "/COL5")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "43c44c85-938d-4bf7-8f20-b0556c9a91d3")
+			(uuid "f1564d77-54c0-42c3-9552-b07ddfcb7e34")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -44644,7 +44644,7 @@
 			(net 39 "/COL5")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "43c44c85-938d-4bf7-8f20-b0556c9a91d3")
+			(uuid "b08ac893-93e8-4aa6-b562-3e332708b22b")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -44663,7 +44663,7 @@
 			(net 8 "Net-(D7-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "8771467e-f728-4ff3-84ff-a2101ef00080")
+			(uuid "e13dac6b-74eb-4949-86bc-2d849fc23503")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -44675,7 +44675,7 @@
 			(net 8 "Net-(D7-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "8771467e-f728-4ff3-84ff-a2101ef00080")
+			(uuid "510da76a-8480-49f3-b531-04afb13aacf1")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -45264,7 +45264,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D39"
-			(at 0 2.06 90)
+			(at 0.2044 0.005 90)
 			(layer "B.SilkS")
 			(uuid "33d15a2b-367e-4d64-a50c-0cb94fbc7a8e")
 			(effects
@@ -45276,7 +45276,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.1556 -0.025 90)
 			(layer "B.SilkS")
 			(uuid "e0e106b5-916c-4c26-8b44-06d3813a7645")
 			(effects
@@ -46049,7 +46049,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D19"
-			(at 0 2.06 90)
+			(at 0.2544 -0.0562 90)
 			(layer "B.SilkS")
 			(uuid "03dede33-118a-4be5-9e07-23090e557104")
 			(effects
@@ -46061,7 +46061,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.0656 -0.0462 90)
 			(layer "B.SilkS")
 			(uuid "830d3aa3-4823-47d2-929c-a9d375e98c7c")
 			(effects
@@ -46267,7 +46267,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D48"
-			(at 0 2.06 90)
+			(at 0.3244 -0.0112 90)
 			(layer "B.SilkS")
 			(uuid "f8f2e4eb-8384-4e04-b527-8c3910955b22")
 			(effects
@@ -46279,7 +46279,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.1356 -0.0812 90)
 			(layer "B.SilkS")
 			(uuid "14ce22df-60cc-48c4-89ba-6310abf2e7ee")
 			(effects
@@ -46485,7 +46485,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D27"
-			(at 0 2.06 90)
+			(at 0.2144 0.0188 90)
 			(layer "B.SilkS")
 			(uuid "867088e6-6d13-491b-a88a-131dd9629d30")
 			(effects
@@ -46497,7 +46497,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.1556 0.0388 90)
 			(layer "B.SilkS")
 			(uuid "2652e38f-8c6d-42cf-82e2-744f820f786f")
 			(effects
@@ -47240,7 +47240,7 @@
 			(net 36 "/COL2")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "e3389014-fa7d-465d-b3ac-c7b4bdb35beb")
+			(uuid "bea524d8-a2a0-461c-8e53-0d1be9eb0d34")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -47250,7 +47250,7 @@
 			(net 36 "/COL2")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "e3389014-fa7d-465d-b3ac-c7b4bdb35beb")
+			(uuid "58040421-787f-4867-a734-58d9cf48606d")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -47269,7 +47269,7 @@
 			(net 23 "Net-(D22-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "80b3839b-e9f6-41fc-8656-a6aead1edfef")
+			(uuid "47dfc961-7bf3-48f2-96c0-245414861ecf")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -47281,7 +47281,7 @@
 			(net 23 "Net-(D22-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "80b3839b-e9f6-41fc-8656-a6aead1edfef")
+			(uuid "0c1fa828-bf26-4dd2-9d43-b478b877af91")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -47302,7 +47302,7 @@
 		(at 328.22 154.7812 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_UARROW1"
-			(at -4.25 1.75 0)
+			(at -6.82 1.7212 0)
 			(layer "B.SilkS")
 			(uuid "fb0a94a3-24fc-4def-9375-f07debde30d3")
 			(effects
@@ -47840,7 +47840,7 @@
 			(net 132 "/COL14")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "2bc5ae75-e953-47c9-b62a-e4c45392851b")
+			(uuid "6fc32ca7-3bcf-4655-ac00-ef6c49af8a49")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -47850,7 +47850,7 @@
 			(net 132 "/COL14")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "2bc5ae75-e953-47c9-b62a-e4c45392851b")
+			(uuid "a5d0dae4-f16a-484c-a2ae-b841f4d6e096")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -47869,7 +47869,7 @@
 			(net 103 "Net-(D61-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "8cc9dce1-9014-46bd-bc02-cf77d6f208a9")
+			(uuid "44b29ef1-ebc9-455a-99b7-1b9683a05d31")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -47881,7 +47881,7 @@
 			(net 103 "Net-(D61-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "8cc9dce1-9014-46bd-bc02-cf77d6f208a9")
+			(uuid "9e26ddbe-ac33-4061-b250-8f5592c6a7f8")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -47903,7 +47903,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D41"
-			(at 0 2.06 90)
+			(at 0.1744 -0.02 90)
 			(layer "B.SilkS")
 			(uuid "0809ae5c-f056-4960-a8e8-3f38ca8612a9")
 			(effects
@@ -47915,7 +47915,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.0756 0.04 90)
 			(layer "B.SilkS")
 			(uuid "69f361f7-8ca0-4a1f-98fc-e7af3d54053d")
 			(effects
@@ -48121,7 +48121,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D9"
-			(at 0 2.06 90)
+			(at 0.0244 -0.0825 90)
 			(layer "B.SilkS")
 			(uuid "26c2df8c-8838-497d-aa3d-81e590ad7165")
 			(effects
@@ -48133,7 +48133,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.2356 0.0075 90)
 			(layer "B.SilkS")
 			(uuid "170e3209-422e-4bd5-8d45-582a4a2b987e")
 			(effects
@@ -48906,7 +48906,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D5"
-			(at 0 2.06 90)
+			(at 0.0144 -0.0525 90)
 			(layer "B.SilkS")
 			(uuid "e689a423-609f-45dd-bb09-dd67ac493495")
 			(effects
@@ -48918,7 +48918,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -7.9956 -0.0125 90)
 			(layer "B.SilkS")
 			(uuid "f676574b-22f5-40d1-865f-392b692d1e7f")
 			(effects
@@ -49691,7 +49691,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D11"
-			(at 0 2.06 90)
+			(at 0.1944 0.0013 90)
 			(layer "B.SilkS")
 			(uuid "ce457db0-bd1b-4424-90bf-60c11d5b4524")
 			(effects
@@ -49703,7 +49703,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.1956 0.0013 90)
 			(layer "B.SilkS")
 			(uuid "1ae7b777-8647-4adc-9ee6-5a5643610d4b")
 			(effects
@@ -50476,7 +50476,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D60"
-			(at 0 2.06 90)
+			(at 0.2544 0.03 90)
 			(layer "B.SilkS")
 			(uuid "e28c2feb-5c37-414c-b41c-90318faf781f")
 			(effects
@@ -50488,7 +50488,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.2156 0.01 90)
 			(layer "B.SilkS")
 			(uuid "2f59b44e-7970-4d04-ad28-4d16a213ab8b")
 			(effects
@@ -51261,7 +51261,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D54"
-			(at 0 2.06 90)
+			(at 0.1444 -0.0269 90)
 			(layer "B.SilkS")
 			(uuid "27200f07-b647-43eb-b061-42168ba0c9fd")
 			(effects
@@ -51273,7 +51273,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.1656 0.0631 90)
 			(layer "B.SilkS")
 			(uuid "ed6167ff-c062-4928-bb25-015ebd6a6c93")
 			(effects
@@ -52278,7 +52278,7 @@
 			(net 1 "GND")
 			(pinfunction "SHIELD")
 			(pintype "input")
-			(uuid "47611b51-6442-48e1-83ec-c9e2f484f329")
+			(uuid "9c09e06b-4261-4fa0-823f-30067f24b476")
 		)
 		(pad "13" thru_hole oval
 			(at 4.32 2.6)
@@ -52289,7 +52289,7 @@
 			(net 1 "GND")
 			(pinfunction "SHIELD")
 			(pintype "input")
-			(uuid "47611b51-6442-48e1-83ec-c9e2f484f329")
+			(uuid "4b4483f4-d9c4-409c-bc8a-01baaa09da2a")
 		)
 		(pad "13" thru_hole oval
 			(at 4.32 6.78)
@@ -52300,7 +52300,7 @@
 			(net 1 "GND")
 			(pinfunction "SHIELD")
 			(pintype "input")
-			(uuid "47611b51-6442-48e1-83ec-c9e2f484f329")
+			(uuid "f512888d-3ea0-4be3-98e5-08d4c7d762fd")
 		)
 		(embedded_fonts no)
 	)
@@ -52878,7 +52878,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D6"
-			(at 0 2.06 90)
+			(at -0.0356 -0.0544 90)
 			(layer "B.SilkS")
 			(uuid "bc12f879-d6c4-491a-8c80-1be139003256")
 			(effects
@@ -52890,7 +52890,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.1456 -0.0744 90)
 			(layer "B.SilkS")
 			(uuid "f6347828-bdc3-4eb7-bbdd-ee94132e33d0")
 			(effects
@@ -54779,7 +54779,7 @@
 			(net 39 "/COL5")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "1b9613d6-ea9a-43e1-bedd-98229f6ba3fd")
+			(uuid "4f29a9ad-cb61-4bdd-911e-d9fb6fec9985")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -54789,7 +54789,7 @@
 			(net 39 "/COL5")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "1b9613d6-ea9a-43e1-bedd-98229f6ba3fd")
+			(uuid "f1e61636-493f-49ed-a792-b8c8abc1e4fe")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -54808,7 +54808,7 @@
 			(net 31 "Net-(D25-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "7200f06f-bb82-49b9-a1d5-096ace876b93")
+			(uuid "d6c7e99a-db88-499c-bd3f-dfd534f5764e")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -54820,7 +54820,7 @@
 			(net 31 "Net-(D25-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "7200f06f-bb82-49b9-a1d5-096ace876b93")
+			(uuid "4268d915-1d0a-4c60-9549-ebbe945fcbb7")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -55379,7 +55379,7 @@
 			(net 125 "/COL12")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "96fd6cd6-4f11-4a7d-bc19-f336af229098")
+			(uuid "a77dc746-d795-438e-9d55-e8a211a38198")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -55389,7 +55389,7 @@
 			(net 125 "/COL12")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "96fd6cd6-4f11-4a7d-bc19-f336af229098")
+			(uuid "64bd5140-1fd6-4cd7-a102-539938202ea6")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -55408,7 +55408,7 @@
 			(net 28 "Net-(D32-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "3cf7f6fb-40e6-4d3f-a801-7c96a487c513")
+			(uuid "2b4a3fe2-ef79-4134-ba3b-2924072f9737")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -55420,7 +55420,7 @@
 			(net 28 "Net-(D32-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "3cf7f6fb-40e6-4d3f-a801-7c96a487c513")
+			(uuid "ceea06a7-bca9-4e76-aa05-19f496974449")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -55442,7 +55442,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D75"
-			(at 0 2.06 90)
+			(at 0.2744 -0.0869 90)
 			(layer "B.SilkS")
 			(uuid "5aae3bbd-9b1e-436a-8fcd-dcbb83584340")
 			(effects
@@ -55454,7 +55454,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.1356 0.0931 90)
 			(layer "B.SilkS")
 			(uuid "dc7378b8-7099-452e-8c57-64fa58cd076a")
 			(effects
@@ -56197,7 +56197,7 @@
 			(net 126 "/COL9")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "7b93a6d4-287f-43d1-8a16-b77cd2152c2b")
+			(uuid "3866ab12-ec50-4f4b-aca9-24a1ea6b9c15")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -56207,7 +56207,7 @@
 			(net 126 "/COL9")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "7b93a6d4-287f-43d1-8a16-b77cd2152c2b")
+			(uuid "83ed6b6f-53c6-4f56-b7a6-245950162a36")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -56226,7 +56226,7 @@
 			(net 65 "Net-(D43-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "099956ba-7805-404b-9edb-329b91582343")
+			(uuid "6371f80f-90cb-4221-babd-77720aaa9e4e")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -56238,7 +56238,7 @@
 			(net 65 "Net-(D43-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "099956ba-7805-404b-9edb-329b91582343")
+			(uuid "045b8ddb-739b-4a1d-a9ea-c34c82b6fb3b")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -56826,7 +56826,7 @@
 		(at 73.4263 154.7812 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_SHIFT1"
-			(at -4.25 1.75 0)
+			(at -6.1937 1.5212 0)
 			(layer "B.SilkS")
 			(uuid "367cc612-94bb-4935-9670-36cbeccce544")
 			(effects
@@ -57364,7 +57364,7 @@
 			(net 40 "/COL1")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "9a088b85-25ba-4fe2-aa95-8d63917f5b03")
+			(uuid "c0f2d5cd-91c3-48d5-9338-e28cdffe4b24")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -57374,7 +57374,7 @@
 			(net 40 "/COL1")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "9a088b85-25ba-4fe2-aa95-8d63917f5b03")
+			(uuid "e692fc95-fb57-44ff-85c4-3b75892ef258")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -57393,7 +57393,7 @@
 			(net 21 "Net-(D20-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "ab57b2a8-3f71-4e46-956d-a0efb27a1fcd")
+			(uuid "130e7849-5849-41b9-a206-2e550311f8a5")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -57405,7 +57405,7 @@
 			(net 21 "Net-(D20-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "ab57b2a8-3f71-4e46-956d-a0efb27a1fcd")
+			(uuid "6065ccd0-98bb-4566-97ca-eade43948035")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -57427,7 +57427,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D58"
-			(at 0 2.06 90)
+			(at 0.1644 -0.0481 90)
 			(layer "B.SilkS")
 			(uuid "fca08253-89ef-474a-a7b0-66eff5131312")
 			(effects
@@ -57439,7 +57439,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.1556 0.0019 90)
 			(layer "B.SilkS")
 			(uuid "4c012272-0070-48de-a6aa-36d8c70184c5")
 			(effects
@@ -57645,7 +57645,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D20"
-			(at 0 2.06 90)
+			(at 0.2544 -0.085 90)
 			(layer "B.SilkS")
 			(uuid "ca9bbb3b-b6a1-46b2-8da6-d3078f4da0fa")
 			(effects
@@ -57657,7 +57657,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.0656 0.125 90)
 			(layer "B.SilkS")
 			(uuid "9f2a2583-59ea-4e7d-984e-bab737462e9b")
 			(effects
@@ -58997,7 +58997,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D15"
-			(at 0 2.06 90)
+			(at 0.1844 -0.0775 90)
 			(layer "B.SilkS")
 			(uuid "5f06954c-cc01-4caa-b7e5-2c8a3778e1e3")
 			(effects
@@ -59009,7 +59009,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.1656 0.0525 90)
 			(layer "B.SilkS")
 			(uuid "a3fef554-a362-482d-a44c-e3a1bf73a576")
 			(effects
@@ -60319,7 +60319,7 @@
 			(net 40 "/COL1")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "97791898-83e0-4a37-880d-2da1bf3f6f93")
+			(uuid "07961cc0-77ee-436e-836b-8662bb9fe2b8")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -60329,7 +60329,7 @@
 			(net 40 "/COL1")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "97791898-83e0-4a37-880d-2da1bf3f6f93")
+			(uuid "9fd6747c-b87b-497a-b167-700d5546daa1")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -60348,7 +60348,7 @@
 			(net 19 "Net-(D18-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "1e210325-5c19-4723-b21d-e346b2ea8ace")
+			(uuid "7f206989-c815-4a96-a274-f2c5f2206f96")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -60360,7 +60360,7 @@
 			(net 19 "Net-(D18-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "1e210325-5c19-4723-b21d-e346b2ea8ace")
+			(uuid "85fcfdc5-2ead-4aab-a43c-3c887be3bf44")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -60378,11 +60378,11 @@
 	(footprint "PCM_4ms_Diode:D_DO-35_P7.62mm_Horizontal"
 		(layer "B.Cu")
 		(uuid "782f52c5-2bb1-41b3-9bf1-df981e944b4c")
-		(at 174.6294 67.8656 -90)
+		(at 174.62 67.86 -90)
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D52"
-			(at 0 2.06 90)
+			(at 0.24 -0.02 90)
 			(layer "B.SilkS")
 			(uuid "a497bf71-4e87-49c4-a589-d7130cd03d0f")
 			(effects
@@ -60394,7 +60394,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.06 -0.04 90)
 			(layer "B.SilkS")
 			(uuid "5776cf89-746d-43ec-b89f-b34f52b63aa9")
 			(effects
@@ -61137,7 +61137,7 @@
 			(net 38 "/COL4")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "0596dc1b-12bb-44a7-8dc0-35104e7e9e78")
+			(uuid "96c3ba21-1bec-42f4-b0a3-9f88cd1c7485")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -61147,7 +61147,7 @@
 			(net 38 "/COL4")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "0596dc1b-12bb-44a7-8dc0-35104e7e9e78")
+			(uuid "7d91ca17-665a-407f-8786-c8bb92111b1d")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -61166,7 +61166,7 @@
 			(net 30 "Net-(D24-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "36425d5b-8997-4c97-a5e9-6e2697efae1b")
+			(uuid "9bb9e876-154d-4e3e-a8cb-69704063f716")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -61178,7 +61178,7 @@
 			(net 30 "Net-(D24-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "36425d5b-8997-4c97-a5e9-6e2697efae1b")
+			(uuid "9ff5ae32-8e24-4939-b6c8-c9313d7cce1c")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -61767,7 +61767,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D53"
-			(at 0 2.06 90)
+			(at 0.1844 -0.0137 90)
 			(layer "B.SilkS")
 			(uuid "6c891334-9161-4d64-afbb-b61ca35045ca")
 			(effects
@@ -61779,7 +61779,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.2156 0.0863 90)
 			(layer "B.SilkS")
 			(uuid "78c1c23e-1201-4dd4-882f-b3020d6467a1")
 			(effects
@@ -62522,7 +62522,7 @@
 			(net 129 "/COL6")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "d8aaf34f-4919-46ca-b99d-93444de8411f")
+			(uuid "6bd6571f-3e3a-497e-99d8-3a247c22f1c0")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -62532,7 +62532,7 @@
 			(net 129 "/COL6")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "d8aaf34f-4919-46ca-b99d-93444de8411f")
+			(uuid "a46f7e65-ece5-469e-81af-3b2b1c9a13c1")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -62551,7 +62551,7 @@
 			(net 75 "Net-(D54-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "f030bd7f-95bb-400a-8a5e-e6c40fc215ef")
+			(uuid "8d69243b-6e88-4126-bf1f-ffa3ff95ffee")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -62563,7 +62563,7 @@
 			(net 75 "Net-(D54-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "f030bd7f-95bb-400a-8a5e-e6c40fc215ef")
+			(uuid "7ccc8340-881b-476f-af6a-49d87ccf9fb1")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -62584,7 +62584,7 @@
 		(at 290.12 173.8312 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_CTRL2"
-			(at -4.25 1.75 0)
+			(at -5.81 1.7112 0)
 			(layer "B.SilkS")
 			(uuid "678a18b6-319e-4fc2-8113-10f3cab8a2df")
 			(effects
@@ -63122,7 +63122,7 @@
 			(net 125 "/COL12")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "5002509c-6e1e-4e56-83fa-ac6cac92a0ad")
+			(uuid "ea4ee3ed-be9e-4e10-9a3c-bd883c07a9f3")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -63132,7 +63132,7 @@
 			(net 125 "/COL12")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "5002509c-6e1e-4e56-83fa-ac6cac92a0ad")
+			(uuid "72c280a8-24f1-4f9d-baaf-fc6fa79df96e")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -63151,7 +63151,7 @@
 			(net 114 "Net-(D73-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "46e7a6cf-cc55-4232-8679-abe9ce8062f4")
+			(uuid "495d2b20-00b2-4ded-a183-80b2749d5f29")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -63163,7 +63163,7 @@
 			(net 114 "Net-(D73-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "46e7a6cf-cc55-4232-8679-abe9ce8062f4")
+			(uuid "cd56e90f-091d-4a4a-a596-dc1a121fb450")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -63722,7 +63722,7 @@
 			(net 129 "/COL6")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "99ea887b-873e-4a21-be0c-d70640156cd7")
+			(uuid "c0af7050-3dc3-4577-a6e6-e31ed1590d18")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -63732,7 +63732,7 @@
 			(net 129 "/COL6")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "99ea887b-873e-4a21-be0c-d70640156cd7")
+			(uuid "c3d78e90-cda5-4398-9da8-7a4c8400ec46")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -63751,7 +63751,7 @@
 			(net 62 "Net-(D40-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "ce1b796c-a3c7-4c78-8cab-c4e473d85487")
+			(uuid "310fa45f-3666-4291-85e0-90a9893142ca")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -63763,7 +63763,7 @@
 			(net 62 "Net-(D40-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "ce1b796c-a3c7-4c78-8cab-c4e473d85487")
+			(uuid "c278b9cf-2bf4-4226-8c24-4d89edbee251")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -64889,7 +64889,7 @@
 			(net 37 "/COL3")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "0682b4fd-790d-4f02-8662-e6a4941482a6")
+			(uuid "d1ead028-1a50-4d3a-8599-2b7afae915e5")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -64899,7 +64899,7 @@
 			(net 37 "/COL3")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "0682b4fd-790d-4f02-8662-e6a4941482a6")
+			(uuid "11dadef1-3ed1-48aa-8eac-658de570647f")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -64918,7 +64918,7 @@
 			(net 59 "Net-(D37-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "265a51ad-78c5-45b6-b537-230f2600f5a3")
+			(uuid "6213c829-66a8-40e0-b49a-05155a2daa18")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -64930,7 +64930,7 @@
 			(net 59 "Net-(D37-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "265a51ad-78c5-45b6-b537-230f2600f5a3")
+			(uuid "43517e63-746e-418b-930e-d356d5d03c9e")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -64952,7 +64952,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D16"
-			(at 0 2.06 90)
+			(at 0.1944 -0.0506 90)
 			(layer "B.SilkS")
 			(uuid "26749b4b-0e4c-46f7-bc86-d03740b575a2")
 			(effects
@@ -64964,7 +64964,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.1856 0.0294 90)
 			(layer "B.SilkS")
 			(uuid "8cc398fc-dee6-407d-b9f3-36c0dae0ec03")
 			(effects
@@ -65169,7 +65169,7 @@
 		(at 347.27 154.7812 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_PGDN1"
-			(at -4.25 1.75 0)
+			(at -6.33 1.7612 0)
 			(layer "B.SilkS")
 			(uuid "07221e81-14e9-4900-95cc-40542c60e8f0")
 			(effects
@@ -65707,7 +65707,7 @@
 			(net 134 "/COL15")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "1eeaaf6a-3e9c-4fea-a5a8-739fae6eb77a")
+			(uuid "08212f6d-9c84-48ea-92cd-b8a8d61570e9")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -65717,7 +65717,7 @@
 			(net 134 "/COL15")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "1eeaaf6a-3e9c-4fea-a5a8-739fae6eb77a")
+			(uuid "1300536a-27fd-461e-88dc-59c38d84f793")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -65736,7 +65736,7 @@
 			(net 104 "Net-(D62-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "cfcb1056-4fb5-483d-a007-7fcaab3d2554")
+			(uuid "ad1f9548-b5e8-43fd-94c4-235de314251b")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -65748,7 +65748,7 @@
 			(net 104 "Net-(D62-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "cfcb1056-4fb5-483d-a007-7fcaab3d2554")
+			(uuid "300bb686-1486-4111-a9e2-d4fce632314c")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -66337,7 +66337,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D45"
-			(at 0 2.06 90)
+			(at 0.1444 -0.0431 90)
 			(layer "B.SilkS")
 			(uuid "7084457b-45be-4bec-9afe-c6408aeeb430")
 			(effects
@@ -66349,7 +66349,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.2156 -0.0431 90)
 			(layer "B.SilkS")
 			(uuid "09f8188a-276d-4ce3-9b5d-2590cb085f59")
 			(effects
@@ -66554,7 +66554,7 @@
 		(at 68.6638 135.7312 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_CAPS1"
-			(at -4.25 1.75 0)
+			(at -6.1362 1.6312 0)
 			(layer "B.SilkS")
 			(uuid "ac36cf11-7ecf-48ac-85d8-6fd0ad7b8fb3")
 			(effects
@@ -67092,7 +67092,7 @@
 			(net 40 "/COL1")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "d63d16be-178b-41fd-ac13-4692c86fecad")
+			(uuid "d4a2dcc5-48c9-462e-9673-890367d4b3e4")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -67102,7 +67102,7 @@
 			(net 40 "/COL1")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "d63d16be-178b-41fd-ac13-4692c86fecad")
+			(uuid "bc975f29-f6c5-4bec-be2b-bc1c14e50066")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -67121,7 +67121,7 @@
 			(net 20 "Net-(D19-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "bd2c48c3-7268-445e-84a0-5fce13515e0c")
+			(uuid "b1c10296-b3e1-4784-a2a9-d0a15f3723b4")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -67133,7 +67133,7 @@
 			(net 20 "Net-(D19-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "bd2c48c3-7268-445e-84a0-5fce13515e0c")
+			(uuid "6e7f6c1e-92e6-413f-81ee-52a955aca812")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -67155,7 +67155,7 @@
 		(descr "Add-on for regular choc-footprints with 6028 reverse mount LED")
 		(tags "kailh choc 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "LED62"
-			(at 0 2.6 0)
+			(at 0.0202 1.7508 0)
 			(layer "B.SilkS")
 			(uuid "d67e6ff9-16a3-4b2f-bab2-71eb5610420c")
 			(effects
@@ -68259,7 +68259,7 @@
 			(net 39 "/COL5")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "2dcdc05f-9b0d-4432-9e12-8527075e06cb")
+			(uuid "7d84b3ed-2826-4025-b97f-a1feab231ae2")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -68269,7 +68269,7 @@
 			(net 39 "/COL5")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "2dcdc05f-9b0d-4432-9e12-8527075e06cb")
+			(uuid "cbfea9a4-acc8-4e14-842e-c46b98ce815f")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -68288,7 +68288,7 @@
 			(net 61 "Net-(D39-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "cda38053-f594-4143-a6b8-7fdf5b4386d5")
+			(uuid "0dc0e18d-6f66-4653-93e8-abbc0515665b")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -68300,7 +68300,7 @@
 			(net 61 "Net-(D39-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "cda38053-f594-4143-a6b8-7fdf5b4386d5")
+			(uuid "b95068d3-5238-425a-b706-27e8cef04b89")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -68859,7 +68859,7 @@
 			(net 126 "/COL9")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "0fea3f47-eef8-468d-8eef-6505b85f93e1")
+			(uuid "1c3e4531-aca3-444b-99dd-ff2f59d8808e")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -68869,7 +68869,7 @@
 			(net 126 "/COL9")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "0fea3f47-eef8-468d-8eef-6505b85f93e1")
+			(uuid "ee662581-dbb3-4dbe-a1dd-7885cd8296b9")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -68888,7 +68888,7 @@
 			(net 25 "Net-(D29-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "79c43af5-7e01-4ec3-bc2a-21b2e21f53a7")
+			(uuid "b047fb78-c0cc-4293-a14e-a219ab546810")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -68900,7 +68900,7 @@
 			(net 25 "Net-(D29-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "79c43af5-7e01-4ec3-bc2a-21b2e21f53a7")
+			(uuid "2cf84d71-8c85-4884-991c-a1911777de77")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -68922,7 +68922,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D51"
-			(at 0 2.06 90)
+			(at 0.2244 -0.0187 90)
 			(layer "B.SilkS")
 			(uuid "df04032e-9c24-45c6-be8b-e0eb1ad6f984")
 			(effects
@@ -68934,7 +68934,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.0356 -0.0187 90)
 			(layer "B.SilkS")
 			(uuid "6bc3dcdc-a4cb-4b95-8509-242308493e8a")
 			(effects
@@ -69140,7 +69140,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D24"
-			(at 0 2.06 90)
+			(at 0.2344 0.0169 90)
 			(layer "B.SilkS")
 			(uuid "c1ab20ae-fc16-4bd4-bc37-ceada5c3bfb7")
 			(effects
@@ -69152,7 +69152,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.0856 -0.0731 90)
 			(layer "B.SilkS")
 			(uuid "15209d88-1b6a-4b38-a4b1-2ecca84eecc7")
 			(effects
@@ -70492,7 +70492,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D64"
-			(at 0 2.06 90)
+			(at 0.2344 -0.0256 90)
 			(layer "B.SilkS")
 			(uuid "7345f3e8-dfa2-483e-b2a1-6479d91b28f9")
 			(effects
@@ -70504,7 +70504,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -7.9756 -0.0256 90)
 			(layer "B.SilkS")
 			(uuid "18165d09-97a2-4ffa-943a-03b8fa3678d2")
 			(effects
@@ -70710,7 +70710,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D50"
-			(at 0 2.06 90)
+			(at 0.2144 -0.0369 90)
 			(layer "B.SilkS")
 			(uuid "e4bfb9d0-1c42-472c-9f53-8e633201dac9")
 			(effects
@@ -70722,7 +70722,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.0556 -0.0569 90)
 			(layer "B.SilkS")
 			(uuid "002b4a0e-40bb-476d-870b-a2e9c11f7acf")
 			(effects
@@ -71495,7 +71495,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D31"
-			(at 0 2.06 90)
+			(at 0.2944 -0.0244 90)
 			(layer "B.SilkS")
 			(uuid "f919ad3b-8291-40a8-b19d-32761c9b8563")
 			(effects
@@ -71507,7 +71507,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.1856 0.0156 90)
 			(layer "B.SilkS")
 			(uuid "a7e381e2-dc68-46a1-91a2-e15268098914")
 			(effects
@@ -72279,7 +72279,7 @@
 		(at 318.695 97.6312 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_BKSP1"
-			(at -4.25 1.75 0)
+			(at -6.425 1.6612 0)
 			(layer "B.SilkS")
 			(uuid "3095bc59-633d-44b3-a2b9-3abe396c970a")
 			(effects
@@ -72817,7 +72817,7 @@
 			(net 132 "/COL14")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "0a4e832e-a1fb-40d6-9cc0-bfa10c77f436")
+			(uuid "21a935f6-4e67-49dd-9c52-1d6c3f7dfc3c")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -72827,7 +72827,7 @@
 			(net 132 "/COL14")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "0a4e832e-a1fb-40d6-9cc0-bfa10c77f436")
+			(uuid "677a42e1-a014-4162-82f1-19775ae5d614")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -72846,7 +72846,7 @@
 			(net 17 "Net-(D16-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "b734b3a5-89ab-4785-b0ad-991099a104d8")
+			(uuid "038e0450-84f9-48c0-a38b-9687dc634828")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -72858,7 +72858,7 @@
 			(net 17 "Net-(D16-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "b734b3a5-89ab-4785-b0ad-991099a104d8")
+			(uuid "59a56719-70d8-4d7c-8036-e93896ce2d49")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -74014,7 +74014,7 @@
 		(descr "Add-on for regular choc-footprints with 6028 reverse mount LED")
 		(tags "kailh choc 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "LED56"
-			(at 0 2.6 0)
+			(at 0.1813 1.1262 0)
 			(layer "B.SilkS")
 			(uuid "fcbf1c59-0e5e-4670-8b12-f54862e7465f")
 			(effects
@@ -74577,11 +74577,11 @@
 	(footprint "PCM_4ms_Diode:D_DO-35_P7.62mm_Horizontal"
 		(layer "B.Cu")
 		(uuid "a4948f74-9ae2-44fe-8cb3-3df716ea0841")
-		(at 182.9638 67.8656 -90)
+		(at 182.95 67.86 -90)
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D25"
-			(at 0 2.06 90)
+			(at 0.19 -0.06 90)
 			(layer "B.SilkS")
 			(uuid "c44503f7-a798-437a-9753-47853cf0301e")
 			(effects
@@ -74593,7 +74593,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.19 -0.07 90)
 			(layer "B.SilkS")
 			(uuid "232ff69f-de1a-4024-bcbd-0da4bdc1fd90")
 			(effects
@@ -74798,7 +74798,7 @@
 		(at 271.0175 97.6312 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_MINUS1"
-			(at -4.25 1.75 0)
+			(at -6.4625 1.7912 0)
 			(layer "B.SilkS")
 			(uuid "9f58152f-d02e-43d7-b6fd-c4be90aab8d5")
 			(effects
@@ -75336,7 +75336,7 @@
 			(net 125 "/COL12")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "4ad849f6-98c6-45c2-a7bf-17aeb387de04")
+			(uuid "962b29fe-9123-4aac-9991-a9375ae6e39b")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -75346,7 +75346,7 @@
 			(net 125 "/COL12")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "4ad849f6-98c6-45c2-a7bf-17aeb387de04")
+			(uuid "cb0871aa-7ea3-4003-8c51-133d52ce4b5b")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -75365,7 +75365,7 @@
 			(net 15 "Net-(D14-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "ad1a5369-47e6-4dc2-91f5-d9d2eaeb5824")
+			(uuid "eb540f6b-bc95-4706-a632-800dc3058407")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -75377,7 +75377,7 @@
 			(net 15 "Net-(D14-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "ad1a5369-47e6-4dc2-91f5-d9d2eaeb5824")
+			(uuid "afda9c20-3b02-4d9e-a726-fb3bd6e1feef")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -75966,7 +75966,7 @@
 		(descr "Add-on for regular choc-footprints with 6028 reverse mount LED")
 		(tags "kailh choc 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "LED60"
-			(at 0 2.6 0)
+			(at 0.294 1.3761 0)
 			(layer "B.SilkS")
 			(uuid "1d1a3ee5-b005-482a-bb4e-3896290cfed4")
 			(effects
@@ -76533,7 +76533,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D68"
-			(at 0 2.06 90)
+			(at 0.1444 -0.0256 90)
 			(layer "B.SilkS")
 			(uuid "8ccf3305-7ddd-4137-889d-a2a25c28fd85")
 			(effects
@@ -76545,7 +76545,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.0956 0.0144 90)
 			(layer "B.SilkS")
 			(uuid "87d899fc-8add-4686-9ac5-3ee8cb6e22ec")
 			(effects
@@ -77288,7 +77288,7 @@
 			(net 126 "/COL9")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "32276c26-1ef1-479f-8ee7-7547688c8e2d")
+			(uuid "3dd78cdf-5245-437b-b491-450560b6b7a5")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -77298,7 +77298,7 @@
 			(net 126 "/COL9")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "32276c26-1ef1-479f-8ee7-7547688c8e2d")
+			(uuid "2096c0a6-7aa4-40be-ab54-3627df50336d")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -77317,7 +77317,7 @@
 			(net 78 "Net-(D57-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "59316ff4-ddfb-423b-98b9-7557ee589b60")
+			(uuid "6d302fc8-d86b-4450-be29-921cdfe9cf3d")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -77329,7 +77329,7 @@
 			(net 78 "Net-(D57-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "59316ff4-ddfb-423b-98b9-7557ee589b60")
+			(uuid "87dd9a5d-ee88-4318-87cf-55b5a3abb00b")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -77918,9 +77918,9 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D47"
-			(at 0 2.06 90)
+			(at 0.1844 0.005 90)
 			(layer "B.SilkS")
-			(uuid "c5a4dab0-227c-47f0-9266-be9f7f46ccd4")
+			(uuid "36b249c5-05dd-41fa-81e4-dc8cf9f791b8")
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -77930,9 +77930,9 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.1456 0.055 90)
 			(layer "B.SilkS")
-			(uuid "703bbe05-bea5-41c7-9302-b7e72ba21a38")
+			(uuid "ad36f552-2f51-4d4f-82d3-c9df4015adab")
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -77945,7 +77945,7 @@
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "c4e97a82-36e2-4e51-affa-31f80f4578ce")
+			(uuid "2754813a-ffd6-4da3-91eb-f108deaf0f94")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -77958,7 +77958,7 @@
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "d55de81b-f46f-4bd5-88e5-a0c8b99523de")
+			(uuid "63ffac8f-5782-4359-b23d-d50b880c1ea6")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -79240,7 +79240,7 @@
 			(net 128 "/COL11")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "e4cf56c9-8ff8-43c7-ad6c-4a0c058845b5")
+			(uuid "4c090d09-055e-453c-a8d5-eb1f293cd070")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -79250,7 +79250,7 @@
 			(net 128 "/COL11")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "e4cf56c9-8ff8-43c7-ad6c-4a0c058845b5")
+			(uuid "30be3249-3818-401e-a3c1-7f5b6f00f431")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -79269,7 +79269,7 @@
 			(net 67 "Net-(D45-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "130e019e-c034-4ac5-bb48-82a3438830ee")
+			(uuid "e803b855-7e45-4b03-9479-1b8f71e75eb8")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -79281,7 +79281,7 @@
 			(net 67 "Net-(D45-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "130e019e-c034-4ac5-bb48-82a3438830ee")
+			(uuid "53625832-2ee8-4ae0-93c8-294e6395f65c")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -79840,7 +79840,7 @@
 			(net 130 "/COL7")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "9faf64de-c04c-4af1-b0a0-acaf2b5465fe")
+			(uuid "26f477d3-e438-4378-be01-d422360e9716")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -79850,7 +79850,7 @@
 			(net 130 "/COL7")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "9faf64de-c04c-4af1-b0a0-acaf2b5465fe")
+			(uuid "32d5c4c7-130a-4c11-8c53-4ce29c8c1494")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -79869,7 +79869,7 @@
 			(net 33 "Net-(D27-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "7a3d0c74-8e2a-4ccd-b6fc-01e52c2613dc")
+			(uuid "78eb8ad8-2d73-4771-a1b5-814a4dde0daa")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -79881,7 +79881,7 @@
 			(net 33 "Net-(D27-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "7a3d0c74-8e2a-4ccd-b6fc-01e52c2613dc")
+			(uuid "bc2743f2-3b0c-4367-b122-81ad58aeb970")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -81037,7 +81037,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D46"
-			(at 0 2.06 90)
+			(at 0.2944 0.0188 90)
 			(layer "B.SilkS")
 			(uuid "681d6089-c428-446f-a605-e46250243712")
 			(effects
@@ -81049,7 +81049,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.2356 -0.0512 90)
 			(layer "B.SilkS")
 			(uuid "dc3a18ca-7132-4169-996b-c006ee8842fd")
 			(effects
@@ -81255,7 +81255,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D34"
-			(at 0 2.06 90)
+			(at 0.2144 -0.0394 90)
 			(layer "B.SilkS")
 			(uuid "58310baf-bcad-4483-90ff-6dae8464a14a")
 			(effects
@@ -81267,7 +81267,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.1556 -0.0594 90)
 			(layer "B.SilkS")
 			(uuid "f04aeed7-7aef-43dd-9557-1d9f9ec89757")
 			(effects
@@ -82377,7 +82377,7 @@
 		(descr "Add-on for regular choc-footprints with 6028 reverse mount LED")
 		(tags "kailh choc 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "LED59"
-			(at 0 2.6 0)
+			(at 0.1965 1.2861 0)
 			(layer "B.SilkS")
 			(uuid "dc03c95c-db32-4151-bd49-eef921451b9d")
 			(effects
@@ -82943,7 +82943,7 @@
 		(at 290.045 97.6312 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_PLUS1"
-			(at -4.25 1.75 0)
+			(at -6.215 1.6412 0)
 			(layer "B.SilkS")
 			(uuid "32a56334-2eb5-460a-a5ff-ca30a2040ba7")
 			(effects
@@ -83481,7 +83481,7 @@
 			(net 133 "/COL13")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "3b21d0b3-ff0b-4288-936b-e94b7b7313b2")
+			(uuid "f89c5c03-742b-4c1b-ba2d-67d20d8b98b7")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -83491,7 +83491,7 @@
 			(net 133 "/COL13")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "3b21d0b3-ff0b-4288-936b-e94b7b7313b2")
+			(uuid "b7045f0f-f878-4873-9e97-03b8c92472a0")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -83510,7 +83510,7 @@
 			(net 16 "Net-(D15-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "85a1f908-443f-4f80-b620-b95a6b58b637")
+			(uuid "62663db9-52cc-47b3-9a5e-42798d6a12bd")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -83522,7 +83522,7 @@
 			(net 16 "Net-(D15-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "85a1f908-443f-4f80-b620-b95a6b58b637")
+			(uuid "42c85341-f2b1-4f40-812a-7c3c42b4ffd8")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -84081,7 +84081,7 @@
 			(net 38 "/COL4")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "74f03469-0417-48ba-99ee-fbbcba670a6d")
+			(uuid "35390e1c-6750-4532-b0ec-471fa2ad2c7a")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -84091,7 +84091,7 @@
 			(net 38 "/COL4")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "74f03469-0417-48ba-99ee-fbbcba670a6d")
+			(uuid "90231850-23d3-4d1c-84b1-d043991e885d")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -84110,7 +84110,7 @@
 			(net 73 "Net-(D52-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "03a8609b-0b04-47af-8155-dd4f60b95d99")
+			(uuid "334ab741-b02d-4d0e-a4b3-7135751e1caf")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -84122,7 +84122,7 @@
 			(net 73 "Net-(D52-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "03a8609b-0b04-47af-8155-dd4f60b95d99")
+			(uuid "bb7e06c0-ddee-44bd-9dda-d2bf137c1c34")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -84681,7 +84681,7 @@
 			(net 131 "/COL8")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "9c2cbd6f-65f4-4441-8fc2-e7ec98d9f88a")
+			(uuid "d3e3f826-b9b5-4c8d-85a3-3eca9598c981")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -84691,7 +84691,7 @@
 			(net 131 "/COL8")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "9c2cbd6f-65f4-4441-8fc2-e7ec98d9f88a")
+			(uuid "ed04b90d-17c4-40d3-89b7-58e773162539")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -84710,7 +84710,7 @@
 			(net 11 "Net-(D10-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "1da53258-abe8-4ea4-aa58-761c00ac5ce9")
+			(uuid "c48e0c69-3c01-45c2-9b91-ac0215ad8a75")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -84722,7 +84722,7 @@
 			(net 11 "Net-(D10-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "1da53258-abe8-4ea4-aa58-761c00ac5ce9")
+			(uuid "2fa86eed-366d-4add-984b-6719368666f9")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -84744,7 +84744,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D30"
-			(at 0 2.06 90)
+			(at 0.1944 -0.0406 90)
 			(layer "B.SilkS")
 			(uuid "c3b3c10e-56f3-4e5e-99ba-4e2adb6548a5")
 			(effects
@@ -84756,7 +84756,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.1756 0.0294 90)
 			(layer "B.SilkS")
 			(uuid "30220559-fb4d-42f3-9564-95bc5c9b29b3")
 			(effects
@@ -86066,7 +86066,7 @@
 			(net 36 "/COL2")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "c00fe53e-0c4b-4a12-bd74-f02bac54d3dd")
+			(uuid "e7f8b4f6-0542-402b-90a7-eb0350799684")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -86076,7 +86076,7 @@
 			(net 36 "/COL2")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "c00fe53e-0c4b-4a12-bd74-f02bac54d3dd")
+			(uuid "74988bf0-b1ab-48c4-b689-a529ab2b5840")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -86095,7 +86095,7 @@
 			(net 71 "Net-(D50-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "bef94f19-07c8-4c49-8082-263a8e9f8724")
+			(uuid "0c850cbc-ff0c-4ca7-a5a8-b0a0a0cb7010")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -86107,7 +86107,7 @@
 			(net 71 "Net-(D50-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "bef94f19-07c8-4c49-8082-263a8e9f8724")
+			(uuid "32fbfac1-a786-496c-8292-2adca57ef16c")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -86696,7 +86696,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D37"
-			(at 0 2.06 90)
+			(at 0.2044 -0.02 90)
 			(layer "B.SilkS")
 			(uuid "d9434960-b179-4329-bca7-b56c65d839c7")
 			(effects
@@ -86708,7 +86708,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.1456 -0.12 90)
 			(layer "B.SilkS")
 			(uuid "0780c5f8-ca84-48d1-8ee1-4a61f085babb")
 			(effects
@@ -87481,7 +87481,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D21"
-			(at 0 2.06 90)
+			(at 0.2544 -0.0437 90)
 			(layer "B.SilkS")
 			(uuid "110569d5-8fef-4fd1-aad6-c7c0f5a15b38")
 			(effects
@@ -87493,7 +87493,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -7.9156 0.1263 90)
 			(layer "B.SilkS")
 			(uuid "89773808-81c9-4fb4-95ee-b7d831ea5f98")
 			(effects
@@ -88236,7 +88236,7 @@
 			(net 129 "/COL6")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "bc27a1f3-9237-4b64-94d9-73db6a97dabe")
+			(uuid "b257b44e-f3dd-438f-9f5e-088b78bb232b")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -88246,7 +88246,7 @@
 			(net 129 "/COL6")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "bc27a1f3-9237-4b64-94d9-73db6a97dabe")
+			(uuid "77a5827c-d568-4f66-8b8b-0b02890562f8")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -88265,7 +88265,7 @@
 			(net 9 "Net-(D8-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "57a1d596-a7a5-4539-a0b4-e0b31b8cda58")
+			(uuid "fc6eaa02-2a01-46df-8f77-68184fb2adb4")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -88277,7 +88277,7 @@
 			(net 9 "Net-(D8-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "57a1d596-a7a5-4539-a0b4-e0b31b8cda58")
+			(uuid "fad237d2-f6ad-4598-9504-4f6194dd994c")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -88299,7 +88299,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D43"
-			(at 0 2.06 90)
+			(at 0.1744 0.0038 90)
 			(layer "B.SilkS")
 			(uuid "cc2a9ae9-f8cf-4faf-bcfe-357635161076")
 			(effects
@@ -88311,7 +88311,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.2356 -0.0662 90)
 			(layer "B.SilkS")
 			(uuid "a42c3c5f-ee82-49ca-992f-27c1d5eb4f1d")
 			(effects
@@ -89084,7 +89084,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D13"
-			(at 0 2.06 90)
+			(at 0.2344 -0.0756 90)
 			(layer "B.SilkS")
 			(uuid "aed361a8-fdde-49d9-af41-8c84fbb3a565")
 			(effects
@@ -89096,7 +89096,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.2156 0.1244 90)
 			(layer "B.SilkS")
 			(uuid "56f245a7-a306-494b-ba8a-d3506bedb7b6")
 			(effects
@@ -93808,7 +93808,7 @@
 			(net 125 "/COL12")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "43ceadf2-b5c9-4256-a657-786493f2253a")
+			(uuid "850d2124-d5ba-4b2d-934b-0694cc3f05f8")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -93818,7 +93818,7 @@
 			(net 125 "/COL12")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "43ceadf2-b5c9-4256-a657-786493f2253a")
+			(uuid "0d90e2f1-6897-4b85-8b59-5a6f8183b68a")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -93837,7 +93837,7 @@
 			(net 68 "Net-(D46-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "2fd23fbc-fa9d-428e-8210-924e21968f44")
+			(uuid "e0007fcf-a7ad-474a-b418-da15cd3ac795")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -93849,7 +93849,7 @@
 			(net 68 "Net-(D46-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "2fd23fbc-fa9d-428e-8210-924e21968f44")
+			(uuid "267de1f6-bf1e-423f-9ed5-ef60d3c75d90")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -93871,7 +93871,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D74"
-			(at 0 2.06 90)
+			(at 0.2344 -0.0437 90)
 			(layer "B.SilkS")
 			(uuid "76eed5c4-a6d3-41a8-883b-9bd78eaa6eaf")
 			(effects
@@ -93883,7 +93883,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.0856 0.0663 90)
 			(layer "B.SilkS")
 			(uuid "e71c6dca-92a1-469d-b8c0-0636e47d5b1b")
 			(effects
@@ -94088,7 +94088,7 @@
 		(at 252.02 173.8312 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_ALT2"
-			(at -4.25 1.75 0)
+			(at -5.35 1.5812 0)
 			(layer "B.SilkS")
 			(uuid "3943f08a-394f-48e6-a056-08acd14c0e84")
 			(effects
@@ -94626,7 +94626,7 @@
 			(net 127 "/COL10")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "7fcf7887-f9de-4814-8ba9-7692b598e285")
+			(uuid "f8d56728-03ae-46d7-9c90-07f532390ea6")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -94636,7 +94636,7 @@
 			(net 127 "/COL10")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "7fcf7887-f9de-4814-8ba9-7692b598e285")
+			(uuid "64d72525-dcf6-45c0-b902-f9c6aa512e4e")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -94655,7 +94655,7 @@
 			(net 112 "Net-(D71-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "17c01de2-a144-46b4-a409-5dc74559587b")
+			(uuid "9b0ed941-d50b-4bb4-9f69-548df7b62d58")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -94667,7 +94667,7 @@
 			(net 112 "Net-(D71-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "17c01de2-a144-46b4-a409-5dc74559587b")
+			(uuid "39258972-1c3b-4348-9420-3994275a2ed6")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -95226,7 +95226,7 @@
 			(net 131 "/COL8")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "e0f518d2-a23b-49b2-8291-544056e9bc33")
+			(uuid "317c3c5a-67dc-4904-bfa9-a5d085c2cfd8")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -95236,7 +95236,7 @@
 			(net 131 "/COL8")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "e0f518d2-a23b-49b2-8291-544056e9bc33")
+			(uuid "a3217915-ddeb-4cc5-88df-07f4fce97daa")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -95255,7 +95255,7 @@
 			(net 64 "Net-(D42-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "fe6a2422-c78c-49ff-9963-a91cd4525910")
+			(uuid "9f07f1f0-67c1-4b7e-9144-29ee98f16771")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -95267,7 +95267,7 @@
 			(net 64 "Net-(D42-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "fe6a2422-c78c-49ff-9963-a91cd4525910")
+			(uuid "be47f51b-94c0-4ccc-9449-9add13b1066c")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -95826,7 +95826,7 @@
 			(net 127 "/COL10")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "31cada3b-2899-41d8-bb7b-5e79f596e419")
+			(uuid "1fdd4cf1-c3ef-4a43-938d-2e864f6e0813")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -95836,7 +95836,7 @@
 			(net 127 "/COL10")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "31cada3b-2899-41d8-bb7b-5e79f596e419")
+			(uuid "3649a695-7dfa-4b03-99cb-ee2f21037b2b")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -95855,7 +95855,7 @@
 			(net 13 "Net-(D12-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "62068983-cdfd-45cf-bbad-3ab62ed8c7fb")
+			(uuid "6c605d9f-33b9-41a9-a530-4f0867b00795")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -95867,7 +95867,7 @@
 			(net 13 "Net-(D12-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "62068983-cdfd-45cf-bbad-3ab62ed8c7fb")
+			(uuid "6700d2d1-c65b-4f95-98ab-9b6cf1a18e90")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -96426,7 +96426,7 @@
 			(net 132 "/COL14")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "446f544b-b7db-432b-a277-d9941e227e2a")
+			(uuid "ae447fd0-b0c2-4af2-86be-a65e4f379ba5")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -96436,7 +96436,7 @@
 			(net 132 "/COL14")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "446f544b-b7db-432b-a277-d9941e227e2a")
+			(uuid "c712470c-f795-46f8-a73b-2217d236c853")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -96455,7 +96455,7 @@
 			(net 35 "Net-(D34-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "784b26e5-bac5-42d5-81ad-e09377325afd")
+			(uuid "10152fa1-ea82-4c5c-aa19-1132b7a99d12")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -96467,7 +96467,7 @@
 			(net 35 "Net-(D34-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "784b26e5-bac5-42d5-81ad-e09377325afd")
+			(uuid "6c0e9f58-180d-4cb1-a650-69605fb5ddfc")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -97026,7 +97026,7 @@
 			(net 133 "/COL13")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "69745a89-0acb-4937-831c-a4280c803279")
+			(uuid "d1a99e96-a2d8-4fe3-8639-190987a78193")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -97036,7 +97036,7 @@
 			(net 133 "/COL13")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "69745a89-0acb-4937-831c-a4280c803279")
+			(uuid "4be88ff6-bbe3-463a-b042-05a8135b2f63")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -97055,7 +97055,7 @@
 			(net 29 "Net-(D33-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "4e3acb5e-c3fd-4a9b-908a-6071d9237b01")
+			(uuid "8af5ebb3-7e27-4d7b-b4ba-d0656b1a0953")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -97067,7 +97067,7 @@
 			(net 29 "Net-(D33-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "4e3acb5e-c3fd-4a9b-908a-6071d9237b01")
+			(uuid "fc279d04-7a3a-4060-82ea-b08b20871aa4")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -97089,7 +97089,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D76"
-			(at 0 2.06 90)
+			(at 0.2144 -0.0087 90)
 			(layer "B.SilkS")
 			(uuid "15dff73c-417a-4f95-9a31-15a2bfbb1369")
 			(effects
@@ -97101,7 +97101,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.2356 0.0713 90)
 			(layer "B.SilkS")
 			(uuid "4db66322-87af-475e-9d46-7a93053d9889")
 			(effects
@@ -97306,9 +97306,9 @@
 		(at 328.22 173.8312 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_DARROW2"
-			(at -4.25 1.75 0)
+			(at -6.91 1.7012 0)
 			(layer "B.SilkS")
-			(uuid "b2f5d858-ab43-471e-bd21-00679e24d3a2")
+			(uuid "bdc6b365-257d-4390-b7fe-7122157242f8")
 			(effects
 				(font
 					(size 1 1)
@@ -97320,7 +97320,7 @@
 		(property "Value" "MX_SW_HS"
 			(at 0 0 0)
 			(layer "B.Fab")
-			(uuid "4b0b2fb2-2c7e-41f9-b776-332ff269d255")
+			(uuid "5a903c17-1cc3-487a-b498-962d5972a5b7")
 			(effects
 				(font
 					(size 1 1)
@@ -97333,7 +97333,7 @@
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "2d26a1c1-13f5-4f5e-a112-05bc2538320c")
+			(uuid "53408d97-0690-4c6f-9bbc-b324c042e8c9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -97346,7 +97346,7 @@
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "92a82a11-b95a-42e1-892c-90b38d3a93f6")
+			(uuid "fd083b14-1abf-4bf9-9d0a-82f64de270a5")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -97844,7 +97844,7 @@
 			(net 132 "/COL14")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "7b7c23d5-cd1f-4908-8b5a-c0a49f300e5a")
+			(uuid "ff136bd1-bbd1-4bdf-b17a-57489a34b522")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -97854,7 +97854,7 @@
 			(net 132 "/COL14")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "7b7c23d5-cd1f-4908-8b5a-c0a49f300e5a")
+			(uuid "247e9fe0-7ce0-4176-964f-641cd581f383")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -97873,7 +97873,7 @@
 			(net 123 "Net-(D75-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "e318239a-6979-4dd4-bf5c-aa74c575215e")
+			(uuid "d970cc92-38b1-4822-84d7-aa55d6b78765")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -97885,7 +97885,7 @@
 			(net 123 "Net-(D75-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "e318239a-6979-4dd4-bf5c-aa74c575215e")
+			(uuid "faa4e38e-79f4-42c0-ba82-55158633f104")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -97907,7 +97907,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D7"
-			(at 0 2.06 90)
+			(at 0.0144 -0.0075 90)
 			(layer "B.SilkS")
 			(uuid "e0c8b494-01cd-4932-a026-f76dc49c715b")
 			(effects
@@ -97919,7 +97919,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.1356 -0.0875 90)
 			(layer "B.SilkS")
 			(uuid "64ed98b3-d60d-4663-a781-5b3f24432298")
 			(effects
@@ -98125,7 +98125,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D28"
-			(at 0 2.06 90)
+			(at 0.1544 -0.1244 90)
 			(layer "B.SilkS")
 			(uuid "2809cb12-ec74-45d0-9d4f-c715150ce861")
 			(effects
@@ -98137,7 +98137,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.0656 -0.0044 90)
 			(layer "B.SilkS")
 			(uuid "2fd377d0-1d72-4643-9ef4-dbf2e01759c1")
 			(effects
@@ -98343,7 +98343,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D32"
-			(at 0 2.06 90)
+			(at 0.2544 -0.0225 90)
 			(layer "B.SilkS")
 			(uuid "c4ba35d5-d33b-464a-88b3-e341c1ecb455")
 			(effects
@@ -98355,7 +98355,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.1456 -0.1025 90)
 			(layer "B.SilkS")
 			(uuid "5b614417-e067-4c86-8d22-698024fbc2ef")
 			(effects
@@ -98561,7 +98561,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D57"
-			(at 0 2.06 90)
+			(at 0.1744 -0.005 90)
 			(layer "B.SilkS")
 			(uuid "5faa2b4e-07c0-47eb-bd6f-4e314e9a15cb")
 			(effects
@@ -98573,7 +98573,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.2156 0.065 90)
 			(layer "B.SilkS")
 			(uuid "0c4f9735-8693-42eb-b68a-dafd6084513b")
 			(effects
@@ -99912,7 +99912,7 @@
 		(at 316.3138 135.7312 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_ENTER1"
-			(at -4.25 1.75 0)
+			(at -6.6062 1.7812 0)
 			(layer "B.SilkS")
 			(uuid "06531bc9-8da5-41fd-abfc-5077fddf7c66")
 			(effects
@@ -100450,7 +100450,7 @@
 			(net 133 "/COL13")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "549699e7-ce92-409e-9e1f-2e546a62af87")
+			(uuid "6053cc18-6ddd-4ffb-b586-0de7ae1d88f7")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -100460,7 +100460,7 @@
 			(net 133 "/COL13")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "549699e7-ce92-409e-9e1f-2e546a62af87")
+			(uuid "b8edb5c1-e218-4728-b86b-f460d152169d")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -100479,7 +100479,7 @@
 			(net 69 "Net-(D47-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "cb81f125-dd20-4dfc-abf9-b79cd9bf4c14")
+			(uuid "0a21f690-b701-4043-b71b-a36101083b44")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -100491,7 +100491,7 @@
 			(net 69 "Net-(D47-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "cb81f125-dd20-4dfc-abf9-b79cd9bf4c14")
+			(uuid "a54b3b72-4519-4959-8b13-533465b1a575")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -100513,7 +100513,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D10"
-			(at 0 2.06 90)
+			(at 0.1544 -0.0156 90)
 			(layer "B.SilkS")
 			(uuid "1c448156-5d2a-44e6-acb1-76be793d66bf")
 			(effects
@@ -100525,7 +100525,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.0656 -0.0056 90)
 			(layer "B.SilkS")
 			(uuid "364688f9-7b14-42e1-a7d9-026ffbd7ccf1")
 			(effects
@@ -101298,7 +101298,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D8"
-			(at 0 2.06 90)
+			(at -0.0156 -0.0306 90)
 			(layer "B.SilkS")
 			(uuid "acc76c19-9375-451e-bac1-855eb4e810c2")
 			(effects
@@ -101310,7 +101310,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.2656 -0.0106 90)
 			(layer "B.SilkS")
 			(uuid "eaac154b-28e2-492a-a717-1edbc7be0370")
 			(effects
@@ -102083,7 +102083,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D56"
-			(at 0 2.06 90)
+			(at 0.1744 -0.0219 90)
 			(layer "B.SilkS")
 			(uuid "062b1436-8d8f-4c35-b6e6-bcca8ffa7ed5")
 			(effects
@@ -102095,7 +102095,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -7.9856 -0.0519 90)
 			(layer "B.SilkS")
 			(uuid "285c343e-e7a5-4d86-85bd-3eb23e049bff")
 			(effects
@@ -102301,7 +102301,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D61"
-			(at 0 2.06 90)
+			(at 0.2944 0.0319 90)
 			(layer "B.SilkS")
 			(uuid "4110eeb7-1175-41bf-a98b-fa5513b1931a")
 			(effects
@@ -102313,7 +102313,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.1556 0.0019 90)
 			(layer "B.SilkS")
 			(uuid "bb3ff14b-a90e-4769-a5db-1be176f3861c")
 			(effects
@@ -103085,7 +103085,7 @@
 		(at 347.27 135.7312 180)
 		(descr "Footprint for Cherry MX style switches with Kailh hotswap socket")
 		(property "Reference" "KEY_PGUP1"
-			(at -4.25 1.75 0)
+			(at -6.88 1.7612 0)
 			(layer "B.SilkS")
 			(uuid "56cb6cdb-9626-479f-af8d-e812f73f260b")
 			(effects
@@ -103623,7 +103623,7 @@
 			(net 134 "/COL15")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "939ed30f-05d5-4ebb-b81b-e055208e2759")
+			(uuid "35f719bb-4eb3-4507-8bca-d72403c8eea8")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -103633,7 +103633,7 @@
 			(net 134 "/COL15")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "939ed30f-05d5-4ebb-b81b-e055208e2759")
+			(uuid "9bf5a41e-ae84-45ea-96b2-8e5b7a8c1e37")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -103652,7 +103652,7 @@
 			(net 70 "Net-(D48-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "115af180-daa0-445a-b747-8b5f9d3bbbf2")
+			(uuid "617f30fc-6d40-438e-8d5d-126e4c0a5ef6")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -103664,7 +103664,7 @@
 			(net 70 "Net-(D48-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "115af180-daa0-445a-b747-8b5f9d3bbbf2")
+			(uuid "3b531f8a-982a-4056-91ba-6ec01d9ec36d")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -104253,7 +104253,7 @@
 		(descr "D, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "D DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D73"
-			(at 0 2.06 90)
+			(at 0.2344 -0.1187 90)
 			(layer "B.SilkS")
 			(uuid "cbdbace1-cf08-4631-ab4e-36008c5859db")
 			(effects
@@ -104265,7 +104265,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.06 90)
+			(at -8.2356 -0.0387 90)
 			(layer "B.SilkS")
 			(uuid "c747f563-5bd9-4d2f-8001-6976e26d75ae")
 			(effects
@@ -105575,7 +105575,7 @@
 			(net 127 "/COL10")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "b6a3c657-8122-48fa-bcfd-8f23b3654b78")
+			(uuid "ec3c4bbc-3f0c-48ae-bb53-e66b721abe9a")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -105585,7 +105585,7 @@
 			(net 127 "/COL10")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "b6a3c657-8122-48fa-bcfd-8f23b3654b78")
+			(uuid "5548de6c-7d2f-42fd-8a40-62b552e5aca3")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -105604,7 +105604,7 @@
 			(net 79 "Net-(D58-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "ccd16cd5-4c95-4ec6-9f20-0c78400421dd")
+			(uuid "f8949821-c4fb-4435-80d4-65dcc4b81306")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -105616,7 +105616,7 @@
 			(net 79 "Net-(D58-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "ccd16cd5-4c95-4ec6-9f20-0c78400421dd")
+			(uuid "0e47e28f-154f-47e5-b612-bc5746c31f7d")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
@@ -107309,7 +107309,7 @@
 			(net 37 "/COL3")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "c775f113-722b-49c3-a82e-d09c9047ade5")
+			(uuid "38fe194d-81c0-4432-a57b-727b99573f14")
 		)
 		(pad "1" smd roundrect
 			(at 7.36 2.54 180)
@@ -107319,7 +107319,7 @@
 			(net 37 "/COL3")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "c775f113-722b-49c3-a82e-d09c9047ade5")
+			(uuid "90439ae9-391e-4079-bc09-c8165d8424fe")
 		)
 		(pad "2" smd roundrect
 			(at -6.09 5.08 180)
@@ -107338,7 +107338,7 @@
 			(net 24 "Net-(D23-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "0c2e52db-37f8-4b81-ad2c-af86af40ef13")
+			(uuid "c5303f2d-25fd-4025-b367-42e0294fd023")
 		)
 		(pad "2" thru_hole circle
 			(at -2.54 5.08 180)
@@ -107350,7 +107350,7 @@
 			(net 24 "Net-(D23-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "0c2e52db-37f8-4b81-ad2c-af86af40ef13")
+			(uuid "9b58eebe-0407-4546-a1c2-6030cbad8a25")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG151101S11_MX.step"
