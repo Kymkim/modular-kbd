@@ -4622,6 +4622,16 @@
 	)
 	(wire
 		(pts
+			(xy 237.49 111.76) (xy 237.49 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02f26d5e-f208-4852-831f-33981d6c61c3")
+	)
+	(wire
+		(pts
 			(xy 43.18 58.42) (xy 49.53 58.42)
 		)
 		(stroke
@@ -6309,6 +6319,16 @@
 			(type default)
 		)
 		(uuid "f134bcc4-4d57-4cd8-a1b2-4fe2f3604f8a")
+	)
+	(wire
+		(pts
+			(xy 241.3 111.76) (xy 237.49 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2d50c5d-23ff-4ca6-9c6b-30baf9349883")
 	)
 	(wire
 		(pts
@@ -11684,6 +11704,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "RGB IN" input
+			(at 241.3 111.76 180)
+			(uuid "2bc0b118-22f4-44df-9631-a4ce548bbecf")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
