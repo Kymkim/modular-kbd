@@ -187,6 +187,7 @@ int main(void)
   HAL_UART_Receive_DMA(&huart2, (uint8_t*)&RX2Msg, sizeof(UARTMessage));
   HAL_UART_Receive_DMA(&huart4, (uint8_t*)&RX4Msg, sizeof(UARTMessage));
   HAL_UART_Receive_DMA(&huart5, (uint8_t*)&RX5Msg, sizeof(UARTMessage));
+  HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_1);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -254,7 +255,7 @@ void SystemClock_Config(void)
   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
 
-  /** Configure the main internal regulator output voltage
+  /** Configure the main internal regulator out put  voltage
   */
   __HAL_RCC_PWR_CLK_ENABLE();
   __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE3);
@@ -368,6 +369,11 @@ void handleUARTMessages(uint8_t *data, UART_HandleTypeDef *sender) {
 
         case 0xEE:
         	//TODO: Append message to the thingy
+        	if(MODE!=MODE_INACTIVE){
+        		 for (int i = 0; i < sizeof(REPORT.KEYPRESS); i++) {
+        			 REPORT.KEYPRESS[i] |= msg.KEYPRESS[i]; // bitwise merge keys
+        		 }
+        	}
         	break;
 
         default:
