@@ -218,7 +218,7 @@ int main(void)
 			  REQ.TYPE = 0xFF;	//Message code for request is 0xFF
 			  memset(REQ.KEYPRESS, 0, sizeof(REQ.KEYPRESS));
 
-			  //Send query for parent module
+			  //Send query' for parent module
 			  HAL_UART_Transmit_DMA(&huart1, (uint8_t*)&REQ, sizeof(REQ));
 			  HAL_UART_Transmit_DMA(&huart2, (uint8_t*)&REQ, sizeof(REQ));
 			  HAL_UART_Transmit_DMA(&huart4, (uint8_t*)&REQ, sizeof(REQ));
