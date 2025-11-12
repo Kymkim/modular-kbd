@@ -118,6 +118,7 @@ uint16_t PORT_DEPTH[] = {0xFF, 0xFF, 0xFF, 0xFF};
 UART_HandleTypeDef* PARENT;
 UART_HandleTypeDef* PORTS[] = {&huart5, &huart1, &huart2, &huart4};
 								//North	 East	 South	 West
+UARTMessage reportBuff;
 
 extern USBD_HandleTypeDef hUsbDeviceFS;
 volatile uint8_t MODE = MODE_INACTIVE;
@@ -217,7 +218,7 @@ int main(void)
 			  REQ.TYPE = 0xFF;	//Message code for request is 0xFF
 			  memset(REQ.KEYPRESS, 0, sizeof(REQ.KEYPRESS));
 
-			  //Send querty for parent module
+			  //Send query for parent module
 			  HAL_UART_Transmit_DMA(&huart1, (uint8_t*)&REQ, sizeof(REQ));
 			  HAL_UART_Transmit_DMA(&huart2, (uint8_t*)&REQ, sizeof(REQ));
 			  HAL_UART_Transmit_DMA(&huart4, (uint8_t*)&REQ, sizeof(REQ));
@@ -230,6 +231,10 @@ int main(void)
 	  case MODE_MAINBOARD:
 		  resetReport(); //Something related to this making the key stick. Likely due to race conditions
 		  matrixScan(); //Removing resetReport() makes the modules inputs works but makes the key stick
+		  //Merge the bufer to the key report
+		  for(int i = 0; i < sizeof(reportBuff.KEYPRESS); i++){
+			  REPORT.KEYPRESS[i] |= reportBuff.KEYPRESS[i];
+		  }
 		  USBD_HID_SendReport(&hUsbDeviceFS, (uint8_t*)&REPORT, sizeof(REPORT));
 		  break;
 
@@ -237,7 +242,7 @@ int main(void)
 		  break;
 	  }
 
-	  HAL_Delay(50);
+	  HAL_Delay();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -386,9 +391,7 @@ void handleUARTMessages(uint8_t *data, UART_HandleTypeDef *sender) {
         case 0xEE:
         	//TODO: Append message to the thingy
         	if(MODE!=MODE_INACTIVE){
-        		 for (int i = 0; i < sizeof(REPORT.KEYPRESS); i++) {
-        			 REPORT.KEYPRESS[i] |= msg.KEYPRESS[i]; // bitwise merge keys
-        		 }
+        		memcpy(msg.KEYPRESS, reportBuff.KEYPRESS, sizeof(reply.KEYPRESS));
         	}
         	break;
 
