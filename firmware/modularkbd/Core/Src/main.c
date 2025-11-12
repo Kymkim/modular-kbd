@@ -38,7 +38,7 @@ typedef struct {
   uint8_t MODIFIER;       // Modifier keys (e.g., Ctrl, Shift, Alt, GUI/Win)
   uint8_t RESERVED;       // Reserved for alignment, always set to 0
   uint8_t KEYPRESS[12];   // Array holding up to 12 keycodes being pressed
-} HIDReport;
+} __attribute__((packed)) HIDReport;
 
 
 // Switch pin mapping structure
@@ -53,7 +53,7 @@ typedef struct {
   uint16_t DEPTH;         // Custom field: could represent queue depth, layer, or message size
   uint16_t TYPE;          // Message type identifier (defines what kind of message this is)
   uint8_t KEYPRESS[12];   // Keypress data (similar to HIDReport, but for UART transmission)
-} UARTMessage;
+} __attribute__((packed)) UARTMessage;
 
 /* USER CODE END PTD */
 
@@ -100,7 +100,7 @@ SwitchPins COLUMN_PINS[COL] = {
 	{GPIOC, GPIO_PIN_9},
 	{GPIOC, GPIO_PIN_8},
     {GPIOC, GPIO_PIN_7},
-	{GPIOC, GPIO_PIN_5}
+	{GPIOC, GPIO_PIN_6}
 };
 
 // Initialize keycodes array
@@ -187,7 +187,6 @@ int main(void)
   HAL_UART_Receive_DMA(&huart2, (uint8_t*)&RX2Msg, sizeof(UARTMessage));
   HAL_UART_Receive_DMA(&huart4, (uint8_t*)&RX4Msg, sizeof(UARTMessage));
   HAL_UART_Receive_DMA(&huart5, (uint8_t*)&RX5Msg, sizeof(UARTMessage));
-  HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_1);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -229,8 +228,8 @@ int main(void)
 		  break;
 
 	  case MODE_MAINBOARD:
-		  resetReport();
-		  matrixScan();
+		  resetReport(); //Something related to this making the key stick. Likely due to race conditions
+		  matrixScan(); //Removing resetReport() makes the modules inputs works but makes the key stick
 		  USBD_HID_SendReport(&hUsbDeviceFS, (uint8_t*)&REPORT, sizeof(REPORT));
 		  break;
 
@@ -312,6 +311,23 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
         HAL_UART_Receive_DMA(&huart5, (uint8_t*)&RX5Msg, sizeof(UARTMessage));
     }
 }
+
+void HAL_UART_ErrorCallback(UART_HandleTypeDef *huart) {
+    // Restart DMA on error
+    if (huart->Instance == USART1) {
+        HAL_UART_Receive_DMA(&huart1, (uint8_t*)&RX1Msg, sizeof(UARTMessage));
+    }
+    else if (huart->Instance == USART2) {
+        HAL_UART_Receive_DMA(&huart2, (uint8_t*)&RX2Msg, sizeof(UARTMessage));
+    }
+    else if (huart->Instance == UART4) {
+        HAL_UART_Receive_DMA(&huart4, (uint8_t*)&RX4Msg, sizeof(UARTMessage));
+    }
+    else if (huart->Instance == UART5) {
+        HAL_UART_Receive_DMA(&huart5, (uint8_t*)&RX5Msg, sizeof(UARTMessage));
+    }
+}
+
 
 
 void findBestParent(){
