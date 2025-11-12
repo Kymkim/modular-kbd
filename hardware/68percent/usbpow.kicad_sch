@@ -1,0 +1,52 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "3cb9f3e3-5e6a-4c23-8d8d-52b5ae63fbaf")
+	(paper "A4")
+	(lib_symbols)
+	(text "USB Receptacle. Needs to be a USB C connector.\nESD Protection would be nice\nAdd a diode to prevent backflow from other 5v sources (i.e. modules)\nMake sure D+/D- are differential lines"
+		(exclude_from_sim no)
+		(at 101.346 90.932 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b8671ba6-87fa-4960-bcc3-fbddf17f4d76")
+	)
+	(hierarchical_label "D-"
+		(shape input)
+		(at 177.8 72.39 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5cbd4a5a-ac39-4a2d-a0ad-0c3ce3f9d635")
+	)
+	(hierarchical_label "D+"
+		(shape input)
+		(at 177.8 67.31 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "80d42395-23c2-4264-878d-42f2e81a4374")
+	)
+	(hierarchical_label "5v"
+		(shape input)
+		(at 177.8 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b70746ac-3765-45c4-a69a-b93b10cc6628")
+	)
+)

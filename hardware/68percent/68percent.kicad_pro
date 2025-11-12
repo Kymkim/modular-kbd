@@ -63,17 +63,35 @@
           "width": 0.8
         }
       ],
+<<<<<<< HEAD
       "drc_exclusions": [],
+=======
+      "drc_exclusions": [
+        [
+          "starved_thermal|86345000|62115601|64ba6b94-7dc4-4d5b-8cfc-a023f0fb7e02|46435096-ba52-4903-afbe-e937b67b5c4a|F.Cu",
+          ""
+        ]
+      ],
+>>>>>>> hardware-65percent
       "meta": {
         "version": 2
       },
       "rule_severities": {
+<<<<<<< HEAD
         "annular_width": "error",
         "clearance": "error",
         "connection_width": "warning",
         "copper_edge_clearance": "error",
         "copper_sliver": "warning",
         "courtyards_overlap": "error",
+=======
+        "annular_width": "ignore",
+        "clearance": "error",
+        "connection_width": "warning",
+        "copper_edge_clearance": "ignore",
+        "copper_sliver": "warning",
+        "courtyards_overlap": "ignore",
+>>>>>>> hardware-65percent
         "creepage": "error",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
@@ -84,7 +102,11 @@
         "footprint_filters_mismatch": "ignore",
         "footprint_symbol_mismatch": "warning",
         "footprint_type_mismatch": "ignore",
+<<<<<<< HEAD
         "hole_clearance": "error",
+=======
+        "hole_clearance": "ignore",
+>>>>>>> hardware-65percent
         "hole_to_hole": "warning",
         "holes_co_located": "warning",
         "invalid_outline": "error",
@@ -667,6 +689,13 @@
     [
       "1d905906-6e74-4741-8b2e-53dc470a7c79",
       "Keymatrix"
+<<<<<<< HEAD
+=======
+    ],
+    [
+      "0330dd45-2776-4667-9e47-eb2dbca2bb32",
+      "RGB Lights"
+>>>>>>> hardware-65percent
     ]
   ],
   "text_variables": {}

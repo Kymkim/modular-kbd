@@ -4063,7 +4063,11 @@
 				)
 			)
 		)
+<<<<<<< HEAD
 		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+=======
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_Plated_1.25u"
+>>>>>>> hardware-65percent
 			(at 81.28 135.89 0)
 			(effects
 				(font
@@ -4200,7 +4204,11 @@
 				)
 			)
 		)
+<<<<<<< HEAD
 		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+=======
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1.5u"
+>>>>>>> hardware-65percent
 			(at 220.98 74.93 0)
 			(effects
 				(font
@@ -4884,7 +4892,11 @@
 				)
 			)
 		)
+<<<<<<< HEAD
 		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+=======
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_Plated_1.75u"
+>>>>>>> hardware-65percent
 			(at 195.58 115.57 0)
 			(effects
 				(font
@@ -5635,7 +5647,11 @@
 				)
 			)
 		)
+<<<<<<< HEAD
 		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+=======
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_Plated_1.25u"
+>>>>>>> hardware-65percent
 			(at 55.88 135.89 0)
 			(effects
 				(font
@@ -5882,6 +5898,7 @@
 		)
 	)
 	(symbol
+<<<<<<< HEAD
 		(lib_id "PCM_marbastlib-mx:MX_stab")
 		(at 220.98 99.06 0)
 		(unit 1)
@@ -5945,6 +5962,8 @@
 		)
 	)
 	(symbol
+=======
+>>>>>>> hardware-65percent
 		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
 		(at 208.28 95.25 0)
 		(unit 1)
@@ -6491,6 +6510,7 @@
 		)
 	)
 	(symbol
+<<<<<<< HEAD
 		(lib_id "PCM_marbastlib-mx:MX_stab")
 		(at 143.51 139.7 0)
 		(unit 1)
@@ -6555,6 +6575,8 @@
 		)
 	)
 	(symbol
+=======
+>>>>>>> hardware-65percent
 		(lib_id "PCM_Diode_AKL:1N4148W")
 		(at 198.12 142.24 270)
 		(unit 1)
@@ -8089,7 +8111,11 @@
 				(justify right)
 			)
 		)
+<<<<<<< HEAD
 		(property "Footprint" "PCM_Diode_SMD_AKL:D_SOD-123"
+=======
+		(property "Footprint" "PCM_Diode_THT_AKL:D_DO-35_SOD27_P7.62mm_Horizontal"
+>>>>>>> hardware-65percent
 			(at 96.52 60.96 0)
 			(effects
 				(font
@@ -8363,7 +8389,11 @@
 				)
 			)
 		)
+<<<<<<< HEAD
 		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+=======
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_Plated_1.25u"
+>>>>>>> hardware-65percent
 			(at 68.58 135.89 0)
 			(effects
 				(font
@@ -8680,6 +8710,72 @@
 		)
 	)
 	(symbol
+<<<<<<< HEAD
+=======
+		(lib_id "PCM_marbastlib-mx:MX_stab")
+		(at 208.28 116.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8d5b1b13-433e-4172-99dd-087f80a0e93a")
+		(property "Reference" "S3"
+			(at 206.756 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MX_stab"
+			(at 206.756 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:STAB_MX_P_2u"
+			(at 208.28 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 208.28 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Cherry MX-style stabilizer"
+			(at 208.28 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "68percent"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "S3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+>>>>>>> hardware-65percent
 		(lib_id "PCM_Diode_AKL:1N4148W")
 		(at 71.12 142.24 270)
 		(unit 1)
@@ -9094,15 +9190,26 @@
 	)
 	(symbol
 		(lib_id "PCM_marbastlib-mx:MX_stab")
+<<<<<<< HEAD
 		(at 39.37 120.65 0)
+=======
+		(at 35.56 124.46 0)
+>>>>>>> hardware-65percent
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+<<<<<<< HEAD
 		(uuid "93c7c81f-a3ab-4c0b-bb9d-73eae870398b")
 		(property "Reference" "LeftStab1"
 			(at 35.56 113.284 0)
+=======
+		(fields_autoplaced yes)
+		(uuid "93b94b08-0cc9-494f-899a-9d796e095412")
+		(property "Reference" "S1"
+			(at 41.91 123.0629 0)
+>>>>>>> hardware-65percent
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9111,7 +9218,11 @@
 			)
 		)
 		(property "Value" "MX_stab"
+<<<<<<< HEAD
 			(at 35.56 115.824 0)
+=======
+			(at 41.91 125.6029 0)
+>>>>>>> hardware-65percent
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9119,8 +9230,13 @@
 				(justify left)
 			)
 		)
+<<<<<<< HEAD
 		(property "Footprint" "PCM_marbastlib-mx:STAB_MX_P_2.25u"
 			(at 39.37 120.65 0)
+=======
+		(property "Footprint" "PCM_marbastlib-mx:STAB_MX_2.25u"
+			(at 35.56 124.46 0)
+>>>>>>> hardware-65percent
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9129,7 +9245,11 @@
 			)
 		)
 		(property "Datasheet" ""
+<<<<<<< HEAD
 			(at 39.37 120.65 0)
+=======
+			(at 35.56 124.46 0)
+>>>>>>> hardware-65percent
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9138,7 +9258,11 @@
 			)
 		)
 		(property "Description" "Cherry MX-style stabilizer"
+<<<<<<< HEAD
 			(at 39.37 120.65 0)
+=======
+			(at 35.56 124.46 0)
+>>>>>>> hardware-65percent
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9147,9 +9271,15 @@
 			)
 		)
 		(instances
+<<<<<<< HEAD
 			(project "68percent"
 				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
 					(reference "LeftStab1")
+=======
+			(project ""
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "S1")
+>>>>>>> hardware-65percent
 					(unit 1)
 				)
 			)
@@ -9387,7 +9517,11 @@
 				)
 			)
 		)
+<<<<<<< HEAD
 		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+=======
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_Plated_1.25u"
+>>>>>>> hardware-65percent
 			(at 119.38 135.89 0)
 			(effects
 				(font
@@ -9499,6 +9633,7 @@
 		)
 	)
 	(symbol
+<<<<<<< HEAD
 		(lib_id "PCM_marbastlib-mx:MX_stab")
 		(at 246.38 58.42 0)
 		(unit 1)
@@ -9562,6 +9697,8 @@
 		)
 	)
 	(symbol
+=======
+>>>>>>> hardware-65percent
 		(lib_id "PCM_Diode_AKL:1N4148W")
 		(at 223.52 81.28 270)
 		(unit 1)
@@ -9795,7 +9932,11 @@
 				(justify right)
 			)
 		)
+<<<<<<< HEAD
 		(property "Footprint" "PCM_Diode_SMD_AKL:D_SOD-123"
+=======
+		(property "Footprint" "PCM_4ms_Diode:D_DO-35_P7.62mm_Horizontal"
+>>>>>>> hardware-65percent
 			(at 58.42 60.96 0)
 			(effects
 				(font
@@ -9975,6 +10116,73 @@
 		)
 	)
 	(symbol
+<<<<<<< HEAD
+=======
+		(lib_id "PCM_marbastlib-mx:MX_stab")
+		(at 220.98 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "af972c0f-6e96-4756-b25b-143313580e39")
+		(property "Reference" "S4"
+			(at 227.33 93.8529 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MX_stab"
+			(at 227.33 96.3929 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:STAB_MX_P_2.25u"
+			(at 220.98 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Cherry MX-style stabilizer"
+			(at 220.98 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "S4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+>>>>>>> hardware-65percent
 		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
 		(at 233.68 74.93 0)
 		(unit 1)
@@ -12512,6 +12720,73 @@
 		)
 	)
 	(symbol
+<<<<<<< HEAD
+=======
+		(lib_id "PCM_marbastlib-mx:MX_stab")
+		(at 220.98 31.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e7176b98-73ca-4dca-9202-098fd5c88eef")
+		(property "Reference" "S5"
+			(at 227.33 30.3529 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MX_stab"
+			(at 227.33 32.8929 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:STAB_MX_P_2u"
+			(at 220.98 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Cherry MX-style stabilizer"
+			(at 220.98 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "68percent"
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "S5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+>>>>>>> hardware-65percent
 		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
 		(at 106.68 74.93 0)
 		(unit 1)
@@ -12580,6 +12855,72 @@
 		)
 	)
 	(symbol
+<<<<<<< HEAD
+=======
+		(lib_id "PCM_marbastlib-mx:MX_stab")
+		(at 146.05 139.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "eef9331e-0bf5-4f92-a54f-c0b6635718b4")
+		(property "Reference" "S2"
+			(at 139.7 140.8431 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "MX_stab"
+			(at 139.7 138.3031 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:STAB_MX_P_6.25u"
+			(at 146.05 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 146.05 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Cherry MX-style stabilizer"
+			(at 146.05 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/a3d0d559-cac8-4859-ad0f-79ad0c1a1a82/1d905906-6e74-4741-8b2e-53dc470a7c79"
+					(reference "S2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+>>>>>>> hardware-65percent
 		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
 		(at 55.88 115.57 0)
 		(unit 1)
@@ -12923,6 +13264,7 @@
 		)
 	)
 	(symbol
+<<<<<<< HEAD
 		(lib_id "PCM_marbastlib-mx:MX_stab")
 		(at 208.28 116.84 0)
 		(unit 1)
@@ -12986,6 +13328,8 @@
 		)
 	)
 	(symbol
+=======
+>>>>>>> hardware-65percent
 		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
 		(at 208.28 54.61 0)
 		(unit 1)
