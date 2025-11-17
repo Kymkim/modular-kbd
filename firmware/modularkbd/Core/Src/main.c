@@ -123,6 +123,9 @@ UARTMessage reportBuff;
 extern USBD_HandleTypeDef hUsbDeviceFS;
 volatile uint8_t MODE = MODE_INACTIVE;
 
+UARTMessage uartBuffer;
+volatile int uartUpdateFlag = 0;
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -229,11 +232,14 @@ int main(void)
 		  break;
 
 	  case MODE_MAINBOARD:
-		  resetReport(); //Something related to this making the key stick. Likely due to race conditions
-		  matrixScan(); //Removing resetReport() makes the modules inputs works but makes the key stick
-		  //Merge the bufer to the key report
-		  for(int i = 0; i < sizeof(reportBuff.KEYPRESS); i++){
-			  REPORT.KEYPRESS[i] |= reportBuff.KEYPRESS[i];
+		  resetReport();
+		  matrixScan();//Something related to this making the key stick. Likely due to race conditions
+		  if(uartUpdateFlag){
+			  for(int i = 0; i < 12; i++){
+				  REPORT.KEYPRESS[i] |= uartBuffer.KEYPRESS[i];
+			  }
+			  uartUpdateFlag = 0;
+			  memset(uartBuffer.KEYPRESS, 0, 12);
 		  }
 		  USBD_HID_SendReport(&hUsbDeviceFS, (uint8_t*)&REPORT, sizeof(REPORT));
 		  break;
@@ -242,7 +248,7 @@ int main(void)
 		  break;
 	  }
 
-	  HAL_Delay();
+	  HAL_Delay(100);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -390,9 +396,12 @@ void handleUARTMessages(uint8_t *data, UART_HandleTypeDef *sender) {
 
         case 0xEE:
         	//TODO: Append message to the thingy
-        	if(MODE!=MODE_INACTIVE){
-        		memcpy(msg.KEYPRESS, reportBuff.KEYPRESS, sizeof(reply.KEYPRESS));
-        	}
+            if (MODE != MODE_INACTIVE) {
+                for (int i = 0; i < sizeof(REPORT.KEYPRESS); i++) {
+                    uartBuffer.KEYPRESS[i] |= msg.KEYPRESS[i];
+                }
+                uartUpdateFlag = 1;
+            }
         	break;
 
         default:
