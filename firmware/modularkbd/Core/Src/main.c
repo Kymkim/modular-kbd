@@ -123,6 +123,11 @@ UARTMessage reportBuff;
 extern USBD_HandleTypeDef hUsbDeviceFS;
 volatile uint8_t MODE = MODE_INACTIVE;
 
+UARTMessage uartBuffer;
+volatile int uartUpdateFlag = 0;
+// Encoder state (TIM3 in encoder mode on PA6/PA7)
+volatile int32_t LAST_ENCODER_COUNT = 0;
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -133,6 +138,7 @@ void UART_DMA_SendReport(UART_HandleTypeDef *huart);
 void addUSBReport(uint8_t usageID);
 void handleUARTMessages(uint8_t *data, UART_HandleTypeDef *sender);
 void matrixScan(void);
+void encoderProcess(void);
 void resetReport(void);
 void sendMessage(void);
 void findBestParent();
@@ -188,6 +194,9 @@ int main(void)
   HAL_UART_Receive_DMA(&huart2, (uint8_t*)&RX2Msg, sizeof(UARTMessage));
   HAL_UART_Receive_DMA(&huart4, (uint8_t*)&RX4Msg, sizeof(UARTMessage));
   HAL_UART_Receive_DMA(&huart5, (uint8_t*)&RX5Msg, sizeof(UARTMessage));
+  // Start TIM3 encoder (PA6/PA7) so we can read encoder delta
+  HAL_TIM_Encoder_Start(&htim3, TIM_CHANNEL_ALL);
+  LAST_ENCODER_COUNT = __HAL_TIM_GET_COUNTER(&htim3);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -198,6 +207,7 @@ int main(void)
 	  case MODE_ACTIVE:
 		  resetReport();
 		  matrixScan();
+		  encoderProcess();
 		  UARTMessage UARTREPORT;
 		  UARTREPORT.DEPTH = DEPTH;
 		  UARTREPORT.TYPE = 0xEE;
@@ -229,11 +239,15 @@ int main(void)
 		  break;
 
 	  case MODE_MAINBOARD:
-		  resetReport(); //Something related to this making the key stick. Likely due to race conditions
-		  matrixScan(); //Removing resetReport() makes the modules inputs works but makes the key stick
-		  //Merge the bufer to the key report
-		  for(int i = 0; i < sizeof(reportBuff.KEYPRESS); i++){
-			  REPORT.KEYPRESS[i] |= reportBuff.KEYPRESS[i];
+		  resetReport();
+		  matrixScan();//Something related to this making the key stick. Likely due to race conditions
+		  encoderProcess();
+		  if(uartUpdateFlag){
+			  for(int i = 0; i < 12; i++){
+				  REPORT.KEYPRESS[i] |= uartBuffer.KEYPRESS[i];
+			  }
+			  uartUpdateFlag = 0;
+			  memset(uartBuffer.KEYPRESS, 0, 12);
 		  }
 		  USBD_HID_SendReport(&hUsbDeviceFS, (uint8_t*)&REPORT, sizeof(REPORT));
 		  break;
@@ -242,7 +256,7 @@ int main(void)
 		  break;
 	  }
 
-	  HAL_Delay();
+	  HAL_Delay(100);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -390,9 +404,12 @@ void handleUARTMessages(uint8_t *data, UART_HandleTypeDef *sender) {
 
         case 0xEE:
         	//TODO: Append message to the thingy
-        	if(MODE!=MODE_INACTIVE){
-        		memcpy(msg.KEYPRESS, reportBuff.KEYPRESS, sizeof(reply.KEYPRESS));
-        	}
+            if (MODE != MODE_INACTIVE) {
+                for (int i = 0; i < sizeof(REPORT.KEYPRESS); i++) {
+                    uartBuffer.KEYPRESS[i] |= msg.KEYPRESS[i];
+                }
+                uartUpdateFlag = 1;
+            }
         	break;
 
         default:
@@ -421,6 +438,31 @@ void matrixScan(void){
         }
         HAL_GPIO_WritePin(COLUMN_PINS[col].GPIOx, COLUMN_PINS[col].PIN, GPIO_PIN_RESET);
     }
+}
+
+// Read TIM3 encoder counter, calculate delta and add corresponding keycodes
+void encoderProcess(void){
+  int32_t cnt = (int32_t)__HAL_TIM_GET_COUNTER(&htim3);
+  int32_t diff = cnt - LAST_ENCODER_COUNT;
+  // TIM3 configured as 16-bit counter (period 65535). Fix wrap-around.
+  if(diff > 32767) diff -= 65536;
+  if(diff < -32768) diff += 65536;
+  if(diff > 0){
+    int steps = diff;
+    if(steps > 10) steps = 10; // cap bursts
+    for(int i = 0; i < steps; i++){
+      // CW -> KEYCODES[0][0]
+      addUSBReport(KEYCODES[0][0]);
+    }
+  }else if(diff < 0){
+    int steps = -diff;
+    if(steps > 10) steps = 10;
+    for(int i = 0; i < steps; i++){
+      // CCW -> KEYCODES[0][1]
+      addUSBReport(KEYCODES[0][1]);
+    }
+  }
+  LAST_ENCODER_COUNT = cnt;
 }
 
 void resetReport(void){
@@ -460,3 +502,4 @@ void assert_failed(uint8_t *file, uint32_t line)
   /* USER CODE END 6 */
 }
 #endif /* USE_FULL_ASSERT */
+
