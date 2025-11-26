@@ -102,7 +102,7 @@ bool pq_pop(PacketQueue *q, uint8_t out_packet[PACKET_SIZE]){
 /* Private macro -------------------------------------------------------------*/
 /* USER CODE BEGIN PM */
 #define ROW 5
-#define COL 8
+#define COL 15
 #define MAXQUEUE 256
 #define MODE_INACTIVE 0
 #define MODE_MAINBOARD 1
@@ -146,17 +146,15 @@ SwitchPins COLUMN_PINS[COL] = {
 
 // Initialize keycodes array
 uint8_t KEYCODES[ROW][COL] = {
-    { KEY_GRAVE, KEY_1, KEY_2, KEY_3, KEY_4, KEY_5, KEY_6, KEY_7, KEY_8, KEY_9, KEY_0, KEY_BACKSPACE, KEY_HOME },
+    { KEY_ESC, KEY_1, KEY_2, KEY_3, KEY_4, KEY_5, KEY_6, KEY_7, KEY_8, KEY_9, KEY_0, KEY_MINUS, KEY_EQUAL, KEY_BACKSPACE, KEY_HOME },
 
-    { KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F },
+    { KEY_TAB, KEY_Q, KEY_W, KEY_E, KEY_R, KEY_T, KEY_Y, KEY_U, KEY_I, KEY_O, KEY_P, KEY_LEFT_BRACKET, KEY_RIGHT_BRACKET, KEY_BACKSLASH, KEY_INSERT },
 
-    { KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F },
+    { KEY_CAPS_LOCK, KEY_A, KEY_S, KEY_D, KEY_F, KEY_G, KEY_H, KEY_J, KEY_K, KEY_L, KEY_SEMICOLON, KEY_APOSTROPHE, KEY_ENTER, KEY_PAGE_UP, 0X00 },
 
-    { KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F },
+    { KEY_LEFT_SHIFT, KEY_Z, KEY_X, KEY_C, KEY_V, KEY_B, KEY_N, KEY_M, KEY_COMMA, KEY_PERIOD, KEY_SLASH, KEY_RIGHT_SHIFT, KEY_UP_ARROW, KEY_END },
 
-    { KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F },
-
-    { KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F }
+    {KEY_LEFT_CTRL, 0X00, KEY_LEFT_ALT, KEY_SPACE, KEY_RIGHT ALT, 0X00, KEY_RIGHT_CTRL, KEY_LEFT_ARROW, KEY_DOWN_ARROW, KEY_RIGHT_ARROW}
 };
 
 uint16_t DEPTH = 0;
@@ -615,4 +613,5 @@ void assert_failed(uint8_t *file, uint32_t line)
   /* USER CODE END 6 */
 }
 #endif /* USE_FULL_ASSERT */
+
 
