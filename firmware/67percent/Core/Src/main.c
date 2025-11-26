@@ -101,8 +101,8 @@ bool pq_pop(PacketQueue *q, uint8_t out_packet[PACKET_SIZE]){
 
 /* Private macro -------------------------------------------------------------*/
 /* USER CODE BEGIN PM */
-#define ROW 6
-#define COL 5
+#define ROW 5
+#define COL 8
 #define MAXQUEUE 256
 #define MODE_INACTIVE 0
 #define MODE_MAINBOARD 1
@@ -125,30 +125,38 @@ UARTMessage RX4Msg; //Buffer for messages on uart5
 
 
 SwitchPins ROW_PINS[ROW] = {
-	{GPIOB, GPIO_PIN_10},
+    {GPIOB, GPIO_PIN_10},
 	{GPIOB, GPIO_PIN_2},
 	{GPIOB, GPIO_PIN_1},
-	{GPIOB, GPIO_PIN_0},
-    {GPIOC, GPIO_PIN_5},
-    {GPIOC, GPIO_PIN_4},
+	{GPIOB, GPIO_PIN_O},
+	{GPIOC, GPIO_PIN_5},
 };
 
 SwitchPins COLUMN_PINS[COL] = {
-	{GPIOA, GPIO_PIN_8},
-	{GPIOC, GPIO_PIN_9},
-	{GPIOC, GPIO_PIN_8},
+	{GPIOB, GPIO_PIN_13},
+	{GPIOB, GPIO_PIN_14},
+	{GPIOB, GPIO_PIN_15},
+	{GPIOC, GPIO_PIN_6},
     {GPIOC, GPIO_PIN_7},
-	{GPIOC, GPIO_PIN_6}
+	{GPIOC, GPIO_PIN_8},
+	{GPIOC, GPIO_PIN_9},
+	{GPIOA, GPIO_PIN_8}
+
 };
 
 // Initialize keycodes array
 uint8_t KEYCODES[ROW][COL] = {
-    {0x00,		KEY_F13, 		KEY_F14, 		KEY_F15,			KEY_F16},
-	{KEY_F17,	NUM_LOCK,		KEYPAD_SLASH,	KEYPAD_ASTERISK, 	KEYPAD_MINUS},
-	{KEY_F18, 	KEYPAD_7,		KEYPAD_8,		KEYPAD_9,			KEYPAD_PLUS},
-	{KEY_F19,	KEYPAD_4,		KEYPAD_5,		KEYPAD_6,			0x00},
-	{KEY_F20,	KEYPAD_1,		KEYPAD_2,		KEYPAD_3,			KEYPAD_ENTER},
-	{KEY_F21,	KEYPAD_0,		0x00,			KEYPAD_DOT,			0x00}
+    { KEY_GRAVE, KEY_1, KEY_2, KEY_3, KEY_4, KEY_5, KEY_6, KEY_7, KEY_8, KEY_9, KEY_0, KEY_BACKSPACE, KEY_HOME },
+
+    { KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F },
+
+    { KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F },
+
+    { KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F },
+
+    { KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F },
+
+    { KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F, KEY_F }
 };
 
 uint16_t DEPTH = 0;
