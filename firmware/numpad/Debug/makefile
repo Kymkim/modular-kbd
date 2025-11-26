@@ -38,34 +38,34 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := modularkbd
+BUILD_ARTIFACT_NAME := numpad
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-modularkbd.elf \
+numpad.elf \
 
 MAP_FILES += \
-modularkbd.map \
+numpad.map \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-modularkbd.list \
+numpad.list \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: modularkbd.elf secondary-outputs
+main-build: numpad.elf secondary-outputs
 
 # Tool invocations
-modularkbd.elf modularkbd.map: $(OBJS) $(USER_OBJS) /home/ukim/Projects/modular-kbd/firmware/modularkbd/STM32F446RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "modularkbd.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/ukim/Projects/modular-kbd/firmware/modularkbd/STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="modularkbd.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+numpad.elf numpad.map: $(OBJS) $(USER_OBJS) /home/ukim/Projects/modular-kbd/firmware/numpad/STM32F446RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "numpad.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/ukim/Projects/modular-kbd/firmware/numpad/STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="numpad.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -74,14 +74,14 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-modularkbd.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "modularkbd.list"
+numpad.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "numpad.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) default.size.stdout modularkbd.elf modularkbd.list modularkbd.map
+	-$(RM) default.size.stdout numpad.elf numpad.list numpad.map
 	-@echo ' '
 
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)

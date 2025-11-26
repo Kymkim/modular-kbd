@@ -109,6 +109,15 @@ bool pq_pop(PacketQueue *q, uint8_t out_packet[PACKET_SIZE]){
 #define MODE_DEBUG 3
 #define UART_RX_BUFF_SIZE 64
 #define QUEUE_SIZ 8
+
+#define LED_COUNT 8 //Adjust this based on how many leds we have daisy chained
+#define BYTES_PER_LED 3 //The neopixel needs 3 bytes G R B
+#define BITS_PER_LED (BYTES_PER_LED * 8)
+#define LED_BUFFER_SIZE (LED_COUNT * BITS_PER_LED)
+#define T0H 3
+#define T1H 4
+
+uint16_t led_buffer[LED_BUFFER_SIZE]; //Contains the colors that is going to get send
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
@@ -191,6 +200,9 @@ void resetReport(void);
 void sendMessage(void);
 void findBestParent();
 void mergeChild();
+void setRGBcolor(int index, uint8_t r, uint8_t g, uint8_t b);
+void sendRGBcolor();
+void RGBProcess();
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -313,13 +325,46 @@ int main(void)
 	  default:
 		  break;
 	  }
-
+	  RGBProcess();
 	  HAL_Delay(20);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
+}
+
+void RGBProcess(){
+	uint8_t red = 255;
+	uint8_t blue = 256/2;
+	uint8_t green = 0;
+	for(int i = 0; i < LED_COUNT; i++){
+		setRGBcolor(i, red, blue, green);
+		red += 10;
+		blue+= 10;
+		green += 10;
+	}
+	sendRGBcolor();
+}
+//Sets each bit in the buffer that is going to get sent thru PWM DMA
+void setRGBcolor(int index, uint8_t r, uint8_t g, uint8_t b)
+{
+    uint8_t colors[3] = {g, r, b};
+
+    for (int c = 0; c < 3; c++) {
+        for (int bit = 0; bit < 8; bit++) {
+            if (colors[c] & (1 << (7 - bit))) {
+                led_buffer[index * 24 + (c * 8 + bit)] = T1H;
+            } else {
+                led_buffer[index * 24 + (c * 8 + bit)] = T0H;
+            }
+        }
+    }
+}
+
+//Sends whats on the buffer thru DMA
+void sendRGBcolor(){
+    HAL_TIM_PWM_Start_DMA(&htim2, TIM_CHANNEL_1,(uint32_t*)led_buffer,LED_BUFFER_SIZE);
 }
 
 void mergeChild(){
