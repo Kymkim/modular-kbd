@@ -128,7 +128,7 @@ SwitchPins ROW_PINS[ROW] = {
     {GPIOB, GPIO_PIN_10},
 	{GPIOB, GPIO_PIN_2},
 	{GPIOB, GPIO_PIN_1},
-	{GPIOB, GPIO_PIN_O},
+	{GPIOB, GPIO_PIN_0},
 	{GPIOC, GPIO_PIN_5},
 };
 
@@ -143,7 +143,6 @@ SwitchPins COLUMN_PINS[COL] = {
 	{GPIOA, GPIO_PIN_8}
 
 };
-
 // Initialize keycodes array
 uint8_t KEYCODES[ROW][COL] = {
     { KEY_ESC, KEY_1, KEY_2, KEY_3, KEY_4, KEY_5, KEY_6, KEY_7, KEY_8, KEY_9, KEY_0, KEY_MINUS, KEY_EQUAL, KEY_BACKSPACE, KEY_HOME },
