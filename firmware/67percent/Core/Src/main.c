@@ -140,7 +140,14 @@ SwitchPins COLUMN_PINS[COL] = {
     {GPIOC, GPIO_PIN_7},
 	{GPIOC, GPIO_PIN_8},
 	{GPIOC, GPIO_PIN_9},
-	{GPIOA, GPIO_PIN_8}
+	{GPIOA, GPIO_PIN_8},
+	{GPIOA, GPIO_PIN_15},
+	{GPIOC, GPIO_PIN_10},
+	{GPIOC, GPIO_PIN_11},
+	{GPIOB, GPIO_PIN_4},
+	{GPIOB, GPIO_PIN_5},
+	{GPIOB, GPIO_PIN_6},
+	{GPIOB, GPIO_PIN_7}
 
 };
 // Initialize keycodes array
@@ -149,11 +156,11 @@ uint8_t KEYCODES[ROW][COL] = {
 
     { KEY_TAB, KEY_Q, KEY_W, KEY_E, KEY_R, KEY_T, KEY_Y, KEY_U, KEY_I, KEY_O, KEY_P, KEY_LEFT_BRACKET, KEY_RIGHT_BRACKET, KEY_BACKSLASH, KEY_INSERT },
 
-    { KEY_CAPS_LOCK, KEY_A, KEY_S, KEY_D, KEY_F, KEY_G, KEY_H, KEY_J, KEY_K, KEY_L, KEY_SEMICOLON, KEY_APOSTROPHE, KEY_ENTER, KEY_PAGE_UP, 0X00 },
+    { KEY_CAPS_LOCK, KEY_A, KEY_S, KEY_D, KEY_F, KEY_G, KEY_H, KEY_J, KEY_K, KEY_L, KEY_SEMICOLON, KEY_APOSTROPHE, KEY_ENTER, 0x00, KEY_PAGE_UP},
 
-    { KEY_LEFT_SHIFT, KEY_Z, KEY_X, KEY_C, KEY_V, KEY_B, KEY_N, KEY_M, KEY_COMMA, KEY_PERIOD, KEY_SLASH, KEY_RIGHT_SHIFT, KEY_UP_ARROW, KEY_END, 0x00 },
+    { KEY_LEFT_SHIFT, KEY_Z, KEY_X, KEY_C, KEY_V, KEY_B, KEY_N, KEY_M, KEY_COMMA, KEY_PERIOD, KEY_SLASH, KEY_RIGHT_SHIFT, 0x00, KEY_UP_ARROW, KEY_PAGE_DOWN},
 
-    {KEY_LEFT_CTRL, 0X00, KEY_LEFT_ALT, KEY_SPACE, KEY_RIGHT_ALT, 0X00, KEY_RIGHT_CTRL, KEY_LEFT_ARROW, KEY_DOWN_ARROW, KEY_RIGHT_ARROW, 0x00, 0x00, 0x00, 0x00, 0x00}
+    {KEY_LEFT_CTRL, 0x00,   KEY_LEFT_ALT, 0x00, 0x00, KEY_SPACE, 0x00, 0x00, 0x00, KEY_RIGHT_ALT, 0x00, KEY_RIGHT_CTRL, KEY_LEFT_ARROW, KEY_DOWN_ARROW, KEY_RIGHT_ARROW}
 };
 
 uint16_t DEPTH = 0;
@@ -240,7 +247,6 @@ int main(void)
   MX_UART5_Init();
   MX_USART1_UART_Init();
   MX_USART2_UART_Init();
-  MX_I2C1_Init();
   MX_USB_DEVICE_Init();
   MX_PWM_Init();
   /* USER CODE BEGIN 2 */
@@ -523,10 +529,18 @@ void handleUARTMessages(uint8_t *data, UART_HandleTypeDef *sender) {
 
 
 void addUSBReport(uint8_t usageID){
-  if(usageID < 0x04 || usageID > 0x73) return; //Usage ID is out of bounds
-  uint16_t bit_index = usageID - 0x04; //Offset, UsageID starts with 0x04. Gives us the actual value of the bit
-  uint8_t byte_index = bit_index/8;    //Calculates which byte in the REPORT array
-  uint8_t bit_offset = bit_index%8;    //Calculates which bits in the REPORT[byte_index] should be set/unset
+  // Modifiers (0xE0 - 0xE7) go in REPORT.MODIFIER
+  if(usageID >= 0xE0 && usageID <= 0xE7){
+    uint8_t mod_bit = usageID - 0xE0; // 0..7
+    REPORT.MODIFIER |= (1 << mod_bit);
+    return;
+  }
+
+  // Regular keys (0x04 - 0x73) go in bitmap KEYPRESS[]
+  if(usageID < 0x04 || usageID > 0x73) return; //Usage ID out of bounds for bitmap
+  uint16_t bit_index = usageID - 0x04; // Offset from 0x04
+  uint8_t byte_index = bit_index/8;    // Byte within bitmap
+  uint8_t bit_offset = bit_index%8;    // Bit within byte
   REPORT.KEYPRESS[byte_index] |= (1 << bit_offset);
 }
 
@@ -577,7 +591,8 @@ void encoderProcess(void){
 }
 
 void resetReport(void){
-	memset(REPORT.KEYPRESS, 0, sizeof(REPORT.KEYPRESS));
+  REPORT.MODIFIER = 0;
+  memset(REPORT.KEYPRESS, 0, sizeof(REPORT.KEYPRESS));
 }
 
 /* USER CODE END 4 */
