@@ -64,8 +64,8 @@ all: main-build
 main-build: 67.elf secondary-outputs
 
 # Tool invocations
-67.elf 67.map: $(OBJS) $(USER_OBJS) C:\Users\Adron\OneDrive\Documents\GitHub\modular-kbd\firmware\67percent\STM32F446RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "67.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\Adron\OneDrive\Documents\GitHub\modular-kbd\firmware\67percent\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="67.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+67.elf 67.map: $(OBJS) $(USER_OBJS) /home/ukim/Projects/modular-kbd/firmware/67percent/STM32F446RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "67.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/ukim/Projects/modular-kbd/firmware/67percent/STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="67.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

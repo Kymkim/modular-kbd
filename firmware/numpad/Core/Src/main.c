@@ -279,7 +279,7 @@ int main(void)
 		  resetReport();
 		  matrixScan();
 		  mergeChild();
-		  //encoderProcess();
+		  encoderProcess();
 		  if(KEYSTATE_CHANGED_FLAG == 1){
 			  UARTMessage UARTREPORT;
 			  UARTREPORT.DEPTH = DEPTH;
@@ -318,7 +318,7 @@ int main(void)
 		  resetReport();
 		  matrixScan();//Something related to this making the key stick. Likely due to race conditions
 		  mergeChild();
-		  //encoderProcess();
+		  encoderProcess();
 		  USBD_HID_SendReport(&hUsbDeviceFS, (uint8_t*)&REPORT, sizeof(REPORT));
 		  break;
 
@@ -326,7 +326,7 @@ int main(void)
 		  break;
 	  }
 	  RGBProcess();
-	  HAL_Delay(20);
+	  HAL_Delay(1);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -598,14 +598,14 @@ void encoderProcess(void){
     if(steps > 10) steps = 10; // cap bursts
     for(int i = 0; i < steps; i++){
       // CW -> KEYCODES[0][0]
-      addUSBReport(KEYCODES[0][0]);
+      addUSBReport(KEY_RIGHT_ARROW);
     }
   }else if(diff < 0){
     int steps = -diff;
     if(steps > 10) steps = 10;
     for(int i = 0; i < steps; i++){
       // CCW -> KEYCODES[0][1]
-      addUSBReport(KEYCODES[0][1]);
+      addUSBReport(KEY_LEFT_ARROW);
     }
   }
   LAST_ENCODER_COUNT = cnt;
